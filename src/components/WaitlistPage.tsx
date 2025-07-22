@@ -43,8 +43,8 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                Enter your email address, and we'll let you know when your spot
-                is ready.
+                Enter your email address, and we&apos;ll let you know when your
+                spot is ready.
               </p>
             </div>
 
