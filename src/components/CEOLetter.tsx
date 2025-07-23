@@ -47,34 +47,35 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Most of the work gets done by 3 specialized AIs who each do one
-                of the 3 tasks. Then a trained human who you pick takes care of
-                the last mile
+                Some Execs get us to highlight emails where there&apos;s an
+                opportunity to celebrate their team&apos;s success. Some Execs
+                show us how to create decks in the style their CEO prefers. And
+                some Execs get us to listen to customer service calls then
+                report back
               </p>
 
               <p>
-                One example of a popular way other C-Suite Execs use hndl is to
-                triage emails to highlight emails where there&apos;s an
-                opportunity to celebrate your team&apos;s success
+                Most of the work gets done by 3 specialized AIs which have each
+                been built for doing one specific task and only for C-Suite
+                Execs. Part of the reason hndl does such a good job is that each
+                of these AIs is so specialized
               </p>
 
               <p>
-                Another example is that Execs show us how to create decks in the
-                style their CEO prefers then they get hndl to create decks for
-                meetings where their CEO is participating
+                But another reason you can trust hndl is that there&apos;s a
+                human who takes care of the last mile. This human does the parts
+                which AI can&apos;t do well. Which means that we do these 3
+                tasks better than any AI tool. And often better than if you
+                delegated the task to someone on your team
               </p>
 
               <p>
-                Or Execs will get hndl to listen in on sales calls and customer
-                service calls then report back with counter-intuitive
-                perspectives from customers
-              </p>
-
-              <p>
-                There&apos;s now a way for C-Suite Execs to use AI to do tasks{" "}
+                With hndl there&apos;s now a way for C-Suite Execs to get 3
+                important and time consuming tasks done with just a few clicks
+                and in a way that&apos;s so good that the{" "}
                 <strong>
-                  with just a few clicks and in a way that&apos;s better than if
-                  you did them yourself
+                  results might sometimes even be better than if you did the
+                  work yourself
                 </strong>
               </p>
             </div>

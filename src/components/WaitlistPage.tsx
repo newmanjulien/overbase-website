@@ -55,7 +55,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-4 text-lg border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
+                  className="w-full px-6 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                   placeholder="Work email"
                   required
                 />
@@ -64,7 +64,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gray-900 hover:bg-gray-900 text-white px-8 py-4 text-lg rounded-full"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-lg rounded-full"
               >
                 Submit
               </Button>
@@ -82,24 +82,24 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 30% 40%, rgba(255,255,255,0.15) 0%, transparent 60%)",
-              animation: "float1 18s ease-in-out infinite",
+                "radial-gradient(circle at 30% 40%, rgba(255,255,255,0.15) 0%, transparent 30%)",
+              animation: "float1 9s ease-in-out infinite",
             }}
           ></div>
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0%, transparent 55%)",
-              animation: "float2 22s ease-in-out infinite",
+                "radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0%, transparent 65%)",
+              animation: "float2 11s ease-in-out infinite",
             }}
           ></div>
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 80%)",
-              animation: "float3 26s ease-in-out infinite",
+                "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 90%)",
+              animation: "float3 13s ease-in-out infinite",
             }}
           ></div>
         </div>

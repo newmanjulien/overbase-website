@@ -46,7 +46,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
               <Button
                 onClick={onHome}
                 size="lg"
-                className="flex-1 bg-transparent hover:bg-transparent text-gray-900 px-8 py-4 text-lg rounded-full"
+                className="flex-1 bg-transparent hover:bg-gray-100 text-gray-900 px-8 py-3 text-lg rounded-full"
               >
                 Go Home
               </Button>
@@ -54,7 +54,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
               <Button
                 onClick={handleTwitterClick}
                 size="lg"
-                className="flex-1 bg-gray-50 hover:bg-gray-50 text-gray-900 px-8 py-4 text-lg rounded-full"
+                className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-900 px-8 py-3 text-lg rounded-full"
               >
                 Follow us on X
               </Button>
@@ -72,24 +72,24 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 30% 40%, rgba(255,255,255,0.15) 0%, transparent 60%)",
-              animation: "float1 18s ease-in-out infinite",
+                "radial-gradient(circle at 30% 40%, rgba(255,255,255,0.15) 0%, transparent 30%)",
+              animation: "float1 9s ease-in-out infinite",
             }}
           ></div>
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0%, transparent 55%)",
-              animation: "float2 22s ease-in-out infinite",
+                "radial-gradient(circle at 70% 60%, rgba(255,255,255,0.08) 0%, transparent 65%)",
+              animation: "float2 11s ease-in-out infinite",
             }}
           ></div>
           <div
             className="absolute inset-0"
             style={{
               background:
-                "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 80%)",
-              animation: "float3 26s ease-in-out infinite",
+                "radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 90%)",
+              animation: "float3 13s ease-in-out infinite",
             }}
           ></div>
         </div>
@@ -110,7 +110,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
 
         {/* Animation keyframes */}
         <style>{`
-         @keyframes float1 {
+          @keyframes float1 {
             0%, 100% { transform: translate(0, 0) scale(1.3); }
             25% { transform: translate(25px, -30px) scale(1.5); }
             50% { transform: translate(-15px, 25px) scale(2); }
