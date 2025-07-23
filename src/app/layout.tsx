@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "hndl — reclaim your day",
-  description: "AI + human concierges for C-Suite SaaS execs",
+  title: "hndl",
+  description: "Task handler for C-Suite Execs",
 };
 
 export default function RootLayout({
