@@ -1,7 +1,5 @@
-import { useState } from "react";
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import Logo from "./ui/Logo";
+import { useEffect } from "react";
 
 interface WaitlistPageProps {
   onBack: () => void;
@@ -9,13 +7,17 @@ interface WaitlistPageProps {
 }
 
 export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
-  const [email, setEmail] = useState("");
+  useEffect(() => {
+    // global flag to make sure we only run once
+    const alreadyLoaded = (window as any).__LL_WIDGET_LOADED;
+    if (alreadyLoaded) return;
+    (window as any).__LL_WIDGET_LOADED = true;
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Navigate to confirmation page
-    onSubmit();
-  };
+    const script = document.createElement("script");
+    script.src = "https://getlaunchlist.com/js/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
 
   return (
     <div className="min-h-screen flex">
@@ -47,28 +49,11 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                 work for you
               </p>
             </div>
-
-            <form onSubmit={handleSubmit} className="space-y-8">
-              <div className="space-y-3">
-                <Input
-                  id="email"
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
-                  placeholder="Work email"
-                  required
-                />
-              </div>
-
-              <Button
-                type="submit"
-                size="lg"
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-md rounded-full"
-              >
-                Submit
-              </Button>
-            </form>
+            <div
+              className="launchlist-widget"
+              data-key-id="8hHK8D"
+              data-height="180px"
+            ></div>
           </div>
         </div>
       </div>
