@@ -26,7 +26,6 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header onJoinWaitlist={showWaitlist} />
       <HeroSection onJoinWaitlist={showWaitlist} />
       <CEOLetter />
       <Footer />
