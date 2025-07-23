@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
-import Logo from "@/components/ui/Logo";
+import Logo from "./ui/Logo";
 
 interface WaitlistPageProps {
   onBack: () => void;

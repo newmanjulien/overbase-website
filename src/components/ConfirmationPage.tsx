@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import Logo from "@/components/ui/Logo";
+import Logo from "./ui/Logo";
 
 interface ConfirmationPageProps {
   onHome: () => void;
