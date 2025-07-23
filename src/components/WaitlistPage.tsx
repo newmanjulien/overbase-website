@@ -64,7 +64,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-lg rounded-full"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-md rounded-full"
               >
                 Submit
               </Button>
