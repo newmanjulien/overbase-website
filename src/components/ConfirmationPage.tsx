@@ -33,10 +33,11 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-8 text-center">
               <h1 className="text-3xl md:text-4xl text-gray-900 tracking-tight font-bold">
-                You&apos;re on the list
+                We&apos;ll reach out soon
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                You&apos;ll receive an email when your spot is ready.
+                Thank you for signing up and we look forward to collaborating
+                soon
               </p>
             </div>
 
