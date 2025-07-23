@@ -56,16 +56,16 @@ export function CEOLetter() {
 
               <p>
                 Most of the work gets done by 3 specialized AIs which have each
-                been built for doing one specific task and only for C-Suite
-                Execs. Part of the reason hndl does such a good job is that each
-                of these AIs is so specialized
+                been built for doing one specific task for C-Suite Execs. And
+                part of the reason hndl does such a good job is that each of
+                these AIs is so specialized
               </p>
 
               <p>
                 But another reason you can trust hndl is that there&apos;s a
                 human who takes care of the last mile. This human does the parts
                 which AI can&apos;t do well. Which means that we do these 3
-                tasks better than any AI tool. And often better than if you
+                tasks better than any AI tool. And usually better than if you
                 delegated the task to someone on your team
               </p>
 
