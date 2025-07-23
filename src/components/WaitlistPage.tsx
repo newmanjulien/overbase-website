@@ -38,7 +38,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
         {/* Form content */}
         <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 -mt-16">
           <div className="w-full max-w-xs space-y-8">
-            <div className="space-y-8">
+            <div className="space-y-8 text-center">
               <h1 className="text-3xl md:text-4xl text-gray-900 tracking-tight">
                 Join the waitlist
               </h1>
