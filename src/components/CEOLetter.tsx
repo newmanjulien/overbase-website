@@ -21,7 +21,7 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                As a C-Suite Exec in a fast growing SaaS business. You are one
+                As a C-Suite Exec in a fast growing tech business. You are one
                 of the busiest people in the world. No matter what you do there
                 just aren&apos;t enough hours in your day
               </p>
