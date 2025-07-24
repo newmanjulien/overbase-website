@@ -56,9 +56,9 @@ export function CEOLetter() {
 
               <p>
                 Most of the work gets done by 3 specialized AIs which have each
-                been built for doing one specific task for C-Suite Execs. And
-                part of the reason hndl does such a good job is that each of
-                these AIs is so specialized
+                been built for doing one specific task. And part of the reason
+                hndl does such a good job is that each of these AIs is so
+                specialized
               </p>
 
               <p>
