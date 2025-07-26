@@ -21,69 +21,74 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                As a C-Suite Exec in a fast growing tech business. You are one
-                of the busiest people in the world. No matter what you do there
-                just aren&apos;t enough hours in your day
+                As the CEO of a SaaS startup. You are one of the busiest people
+                in the world. No matter what you do there just aren&apos;t
+                enough hours in your day
               </p>
 
               <p>
-                You&apos;re the best at your job. You have an amazing team who
-                supports you. And you may even have a world class EA. But the
-                truth is that you need more support than a growing company can
-                give you
+                Your cofounders are killing it. You have an amazing team. And
+                you may even have a world class EA or a Chief of Staff. But
+                there still aren&apos;t enough hours in your day no matter what
               </p>
 
               <p>
-                With hndl you can now{" "}
+                With hndl you can now actually{" "}
                 <strong>
-                  get more hours in your day easily, quickly, reliably
+                  actually get more done easily, fast and reliably
                 </strong>
               </p>
 
               <p>
                 We combine AI & humans to handle 3 of your most important and
-                time consuming tasks: triaging emails, creating decks and
-                gathering internal data
+                time consuming tasks. We (1) triage your emails and Slack
+                messages, (2) update your team after you finish calls, (3)
+                gather data so you make better decisions
               </p>
 
               <p>
-                Some Execs get us to highlight emails where there&apos;s an
-                opportunity to celebrate their team&apos;s success. Some Execs
-                show us how to create decks in the style their CEO prefers. And
-                some Execs get us to listen to customer service calls then
-                report back
+                We built 3 specialized AIs who each take care of one of the
+                tasks
               </p>
 
               <p>
-                Most of the work gets done by 3 specialized AIs which have each
-                been built for doing one specific task. And part of the reason
-                hndl does such a good job is that each of these AIs is so
-                specialized
-              </p>
-
-              <p>
-                But another reason you can trust hndl is that there&apos;s a
-                human who takes care of the last mile. This human does the parts
-                which AI can&apos;t do well. Which means that we do these 3
-                tasks better than any AI tool. And usually better than if you
-                delegated the task to someone on your team
-              </p>
-
-              <p>
-                With hndl there&apos;s now a way for C-Suite Execs to get 3
-                important and time consuming tasks done with just a few clicks
-                and in a way that&apos;s so good that the{" "}
+                And what's unique is that{" "}
                 <strong>
-                  results might sometimes even be better than if you did the
-                  work yourself
+                  our AIs can call on a human to do the parts which AI
+                  can&apos;t do well
                 </strong>
+              </p>
+
+              <p>
+                For example, you might tell hndl to use your LinkedIn to DM a
+                few people who would have a perspective on a question you're
+                trying to figure out. Our AI could do most of that. But LinkedIn
+                won't let AIs use your account to send DMs. So the AI will call
+                on a human for help
+              </p>
+
+              <p>
+                Or another example, you might tell hndl to find all the emails
+                where there&apos;s an opportunity for you to highlight the
+                success of one of your team members. The AI might do a good
+                enough job of finding the right emails. But you might get better
+                results if a human reviews the AI's work
+              </p>
+
+              <p>
+                <strong>
+                  With hndl you know that everything is done reliably and just
+                  how you want it.
+                </strong>{" "}
+                Our workflow creator lets you give detailed instructions to the
+                AI. Then the AI is built so it QAs the work which the humans do
               </p>
             </div>
 
             {/* Signature */}
             <div className="mt-8 pt-6 border-t border-gray-200">
               <div className="text-lg text-gray-900 mb-2">Julien Newman</div>
-              <div className="text-sm text-gray-500">CEO & Founder</div>
+              <div className="text-sm text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>
