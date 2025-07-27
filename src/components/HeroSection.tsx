@@ -34,7 +34,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             href="https://cal.com/juliennewman/15min"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Schedule a call with our CEO"
+            aria-label="Demo with our CEO"
           >
             <Button
               size="lg"
