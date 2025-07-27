@@ -30,39 +30,41 @@ export function CEOLetter() {
 
               <p>
                 You have a great team who supports you. You might have
-                cofounders who you rely on and trust. And you might have a world
-                class EA or a superstar Chief of Staff. But you&apos;re still
-                drowning in work
+                cofounders who you rely on and trust completely. And you might
+                have a world class EA or a superstar Chief of Staff. But
+                you&apos;re still drowning in work and you need a boost
               </p>
 
               <p>
                 hndl is the first AI agent that is good enough to help you get
-                unbusy easily, quickly and reliably. Because hndl is the{" "}
-                <strong>only AI agent who can make human calls</strong>
+                unbusy easily, quickly and reliably. Because{" "}
+                <strong>
+                  hndl is the only AI agent who can make human calls
+                </strong>
               </p>
 
               <p>
-                Other AI agents make tools calls to get work done for you. And
-                hndl does that too. What&apos;s special is that our AI can also
-                call on a human to do parts of the task
+                Like all agents, our AI makes tools calls. But what&apos;s
+                special is that our AI can also call on a human to do parts of
+                the task
               </p>
 
               <p>
                 For example, you might tell hndl to help with something which
                 involves using your LinkedIn to send DMs. Most of the work can
                 be done using tool calls. But LinkedIn won&apos;t let AIs log
-                into your account and send DMs. So the agent will call on a
-                human to do that part
+                into your account and send DMs. So the AI will call on a human
+                to do that part
               </p>
 
               <p>
-                Or another example, you might want your agent to do a task which
-                the AI can&apos;t do good enough. But where you'd get good
+                Or another example, you might want your agent to do a task where
+                the AI can&apos;t do a good enough job. But where you'd get good
                 results if a human reviews the AI&apos;s work
               </p>
 
               <p>
-                Today, hndl helps with two tasks: (1) triaging emails and Slack
+                Today, hndl helps with two tasks: (1) triaging emails or Slack
                 messages and (2) gathering data to help you make decisions.
                 We're focused on just those two tasks to be sure we do them
                 perfectly
@@ -70,7 +72,7 @@ export function CEOLetter() {
 
               <p>
                 But we&apos;re building the AI agent who is actually going to be
-                able to help with all your most time consuming and important
+                able to help with all of your most time consuming and important
                 work
               </p>
             </div>
@@ -78,7 +80,7 @@ export function CEOLetter() {
             {/* Signature */}
             <div className="mt-8 pt-6 border-t border-gray-200">
               <div className="text-lg text-gray-900 mb-2">Julien Newman</div>
-              <div className="text-sm text-gray-500">Founder & CEO</div>
+              <div className="text-md text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>

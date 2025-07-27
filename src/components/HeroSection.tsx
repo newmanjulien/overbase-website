@@ -14,7 +14,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-xl text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
+        <p className="text-lg text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
           Get unbusy with the first AI agent that can{" "}
           <strong>make both tool calls and human calls</strong>
         </p>
@@ -30,13 +30,19 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
           </Button>
 
           {/* Second button */}
-          <Button
-            onClick={onJoinWaitlist}
-            size="lg"
-            className="bg-gray-50 hover:bg-gray-100 text-black px-8 py-3 text-lg rounded-full"
+          <a
+            href="https://cal.com/juliennewman/15min"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Schedule a call with our CEO"
           >
-            Talk to our CEO
-          </Button>
+            <Button
+              size="lg"
+              className="bg-gray-50 hover:bg-gray-100 text-black px-8 py-3 text-lg rounded-full"
+            >
+              Talk to our CEO
+            </Button>
+          </a>
         </div>
       </div>
     </section>

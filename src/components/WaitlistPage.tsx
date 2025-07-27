@@ -27,7 +27,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
             type="button"
             aria-label="Go back"
             onClick={onBack}
-            className="h-11 w-auto"
+            className="h-12 w-auto"
           >
             <div className="h-full aspect-[1000/550]">
               <Logo />
