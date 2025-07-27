@@ -16,8 +16,8 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
         {/* Subtitle */}
         <p className="text-xl text-gray-600 leading-relaxed max-w-lg text-center md:text-left">
           SaaS startup CEOs like you have way too much work.{" "}
-          <strong>We combine AI & humans</strong> to help with 3 time consuming
-          and important tasks
+          <strong>We combine AI & humans</strong> to help with 3 of your most
+          time consuming and important tasks
         </p>
 
         {/* CTA Button */}

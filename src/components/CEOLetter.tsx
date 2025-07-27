@@ -34,9 +34,7 @@ export function CEOLetter() {
 
               <p>
                 With hndl you can now actually{" "}
-                <strong>
-                  actually get more done easily, fast and reliably
-                </strong>
+                <strong>get more done easily, quickly and reliably</strong>
               </p>
 
               <p>
@@ -62,9 +60,9 @@ export function CEOLetter() {
               <p>
                 For example, you might tell hndl to use your LinkedIn to DM a
                 few people who would have a perspective on a question you're
-                trying to figure out. Our AI could do most of that. But LinkedIn
-                won't let AIs use your account to send DMs. So the AI will call
-                on a human for help
+                trying to figure out. Our AI could do most of that using normal
+                tool calls. But LinkedIn won't let AIs use your account to send
+                DMs. So the AI will call on a human for help
               </p>
 
               <p>
