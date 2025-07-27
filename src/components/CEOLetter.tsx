@@ -21,51 +21,57 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                You&apos;'re a busy executive and there just aren&apos;t enough
-                hours in your day. No matter what you do.
+                You&apos;re a busy executive and there{" "}
+                <strong>
+                  just aren&apos;t enough hours in your day no matter what you
+                  do
+                </strong>
               </p>
 
               <p>
                 You have a great team who supports you. You might have
-                cofounders you rely on and trust. And you might have a world
-                class EA or a super effective Chief of Staff. But you&apos;re
-                still drowning in work
+                cofounders who you rely on and trust. And you might have a world
+                class EA or a superstar Chief of Staff. But you&apos;re still
+                drowning in work
               </p>
 
               <p>
-                hndl is the only AI agent that is good enough to help you get
-                unbusy easily, quickly and reliably. Because hndl is{" "}
-                <strong>the first AI agent who can make human calls</strong>
+                hndl is the first AI agent that is good enough to help you get
+                unbusy easily, quickly and reliably. Because hndl is the{" "}
+                <strong>only AI agent who can make human calls</strong>
               </p>
 
               <p>
                 Other AI agents make tools calls to get work done for you. And
-                hndl can do that too. What&apos;s special is that our AI can
-                also call on a human to do parts of the task when only a human
-                can do it
+                hndl does that too. What&apos;s special is that our AI can also
+                call on a human to do parts of the task
               </p>
 
               <p>
-                For example, you might tell hndl to do something which involves
-                using your LinkedIn account to send DMs. Most of the work can be
-                done using normal tool calls. But LinkedIn won&apos;t let AIs
-                actually log into your account and send DMs. So the AI will call
-                on a human to do that part
+                For example, you might tell hndl to help with something which
+                involves using your LinkedIn to send DMs. Most of the work can
+                be done using tool calls. But LinkedIn won&apos;t let AIs log
+                into your account and send DMs. So the agent will call on a
+                human to do that part
               </p>
 
               <p>
                 Or another example, you might want your agent to do a task which
-                the AI can do good-enough. But you might get better results if a
-                human reviews the AI&apos;s work
+                the AI can&apos;t do good enough. But where you'd get good
+                results if a human reviews the AI&apos;s work
               </p>
 
               <p>
-                <strong>
-                  With hndl you know that everything is done reliably and just
-                  how you want it.
-                </strong>{" "}
-                Our workflow creator lets you give detailed instructions to the
-                AI. Then the AI is built so it QAs the work which the humans do
+                Today, hndl helps with two tasks: (1) triaging emails and Slack
+                messages and (2) gathering data to help you make decisions.
+                We're focused on just those two tasks to be sure we do them
+                perfectly
+              </p>
+
+              <p>
+                But we&apos;re building the AI agent who is actually going to be
+                able to help with all your most time consuming and important
+                work
               </p>
             </div>
 
