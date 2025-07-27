@@ -7,7 +7,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="h-11 w-auto flex items-center">
-            <div className="h-full aspect-[1000/550]">
+            <div className="h-full aspect-[1000/600]">
               <Logo />
             </div>
           </div>

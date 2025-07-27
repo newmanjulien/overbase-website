@@ -21,57 +21,42 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                As the CEO of a SaaS startup. You are one of the busiest people
-                in the world. No matter what you do there just aren&apos;t
-                enough hours in your day
+                You&apos;'re a busy executive and there just aren&apos;t enough
+                hours in your day. No matter what you do.
               </p>
 
               <p>
-                Your cofounders are killing it. You have an amazing team. And
-                you may even have a world class EA or a Chief of Staff. But
-                there still aren&apos;t enough hours in your day no matter what
+                You have a great team who supports you. You might have
+                cofounders you rely on and trust. And you might have a world
+                class EA or a super effective Chief of Staff. But you&apos;re
+                still drowning in work
               </p>
 
               <p>
-                With hndl you can now actually{" "}
-                <strong>get more done easily, quickly and reliably</strong>
+                hndl is the only AI agent that is good enough to help you get
+                unbusy easily, quickly and reliably. Because hndl is{" "}
+                <strong>the first AI agent who can make human calls</strong>
               </p>
 
               <p>
-                We combine AI & humans to handle 3 of your most important and
-                time consuming tasks. We (1) triage your emails and Slack
-                messages, (2) update your team after you finish calls, (3)
-                gather data so you make better decisions
+                Other AI agents make tools calls to get work done for you. And
+                hndl can do that too. What&apos;s special is that our AI can
+                also call on a human to do parts of the task when only a human
+                can do it
               </p>
 
               <p>
-                We built 3 specialized AIs who each take care of one of the
-                tasks
+                For example, you might tell hndl to do something which involves
+                using your LinkedIn account to send DMs. Most of the work can be
+                done using normal tool calls. But LinkedIn won&apos;t let AIs
+                actually log into your account and send DMs. So the AI will call
+                on a human to do that part
               </p>
 
               <p>
-                And what&apos;s unique is that{" "}
-                <strong>
-                  our AIs can call on a human to do the parts which AI
-                  can&apos;t do well
-                </strong>
-              </p>
-
-              <p>
-                For example, you might tell hndl to use your LinkedIn to DM a
-                few people who would have a perspective on a question
-                you&apos;re trying to figure out. Our AI could do most of that
-                using normal tool calls. But LinkedIn won&apos;t let AIs use
-                your account to send DMs. So the AI will call on a human for
-                help
-              </p>
-
-              <p>
-                Or another example, you might tell hndl to find all the emails
-                where there&apos;s an opportunity for you to highlight the
-                success of one of your team members. The AI might do a good
-                enough job of finding the right emails. But you might get better
-                results if a human reviews the AI&apos;s work
+                Or another example, you might want your agent to do a task which
+                the AI can do good-enough. But you might get better results if a
+                human reviews the AI&apos;s work
               </p>
 
               <p>
