@@ -50,7 +50,7 @@ export function CEOLetter() {
               </p>
 
               <p>
-                And what's unique is that{" "}
+                And what&apos;s unique is that{" "}
                 <strong>
                   our AIs can call on a human to do the parts which AI
                   can&apos;t do well
@@ -59,10 +59,11 @@ export function CEOLetter() {
 
               <p>
                 For example, you might tell hndl to use your LinkedIn to DM a
-                few people who would have a perspective on a question you're
-                trying to figure out. Our AI could do most of that using normal
-                tool calls. But LinkedIn won't let AIs use your account to send
-                DMs. So the AI will call on a human for help
+                few people who would have a perspective on a question
+                you&apos;re trying to figure out. Our AI could do most of that
+                using normal tool calls. But LinkedIn won&apos;t let AIs use
+                your account to send DMs. So the AI will call on a human for
+                help
               </p>
 
               <p>
@@ -70,7 +71,7 @@ export function CEOLetter() {
                 where there&apos;s an opportunity for you to highlight the
                 success of one of your team members. The AI might do a good
                 enough job of finding the right emails. But you might get better
-                results if a human reviews the AI's work
+                results if a human reviews the AI&apos;s work
               </p>
 
               <p>
