@@ -22,7 +22,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
             onClick={onHome}
             className="h-12 w-auto"
           >
-            <div className="h-full aspect-[1000/550]">
+            <div className="h-full aspect-[1000/600]">
               <Logo />
             </div>
           </button>
