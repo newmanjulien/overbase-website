@@ -24,7 +24,7 @@ export async function POST(req: Request) {
       to: email,
       cc: "julien@hndlai.com",
       subject: "hndl waitlist",
-      text: "Thank you for joining the waitlist. I'll be in touch soon :)",
+      text: "Thank you for joining the waitlist. I'll be in touch soon.\n\nLet me know if you have questions or want a demo :)\n\n--\n\njulien\n@hndl",
     });
 
     return NextResponse.json({ success: true });
