@@ -1,11 +1,11 @@
 "use client";
 import { useState } from "react";
-import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
-import { CEOLetter } from "@/components/CEOLetter";
-import { Footer } from "@/components/Footer";
-import { WaitlistPage } from "@/components/WaitlistPage";
-import { ConfirmationPage } from "@/components/ConfirmationPage";
+import { Header } from "../components/Header";
+import { HeroSection } from "../components/HeroSection";
+import { CEOLetter } from "../components/CEOLetter";
+import { Footer } from "../components/Footer";
+import { WaitlistPage } from "../components/WaitlistPage";
+import { ConfirmationPage } from "../components/ConfirmationPage";
 
 export default function Page() {
   const [currentPage, setCurrentPage] = useState<
@@ -26,7 +26,7 @@ export default function Page() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header />
+      <Header onJoinWaitlist={showWaitlist} />
       <HeroSection onJoinWaitlist={showWaitlist} />
       <CEOLetter />
       <Footer />

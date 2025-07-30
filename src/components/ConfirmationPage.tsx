@@ -20,9 +20,9 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
             type="button"
             aria-label="Go back to home"
             onClick={onHome}
-            className="h-11 w-auto"
+            className="h-12 w-auto"
           >
-            <div className="h-full aspect-[1000/550]">
+            <div className="h-full aspect-[1000/600]">
               <Logo />
             </div>
           </button>
@@ -46,7 +46,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
               <Button
                 onClick={onHome}
                 size="lg"
-                className="flex-1 bg-transparent hover:bg-gray-100 text-gray-900 px-8 py-3 text-md rounded-full"
+                className="flex-1 bg-transparent hover:bg-gray-100 text-gray-900 p-6 text-md rounded-lg"
               >
                 Go Home
               </Button>
@@ -54,7 +54,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
               <Button
                 onClick={handleTwitterClick}
                 size="lg"
-                className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-900 px-8 py-3 text-md rounded-full"
+                className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-900 p-6 text-md rounded-lg"
               >
                 Follow us on X
               </Button>

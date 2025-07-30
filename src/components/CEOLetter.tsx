@@ -21,69 +21,93 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                As a C-Suite Exec in a fast growing tech business. You are one
-                of the busiest people in the world. No matter what you do there
-                just aren&apos;t enough hours in your day
+                As a startup founder. You&apos;re one of the busiest people in
+                the world
               </p>
 
               <p>
-                You&apos;re the best at your job. You have an amazing team who
-                supports you. And you may even have a world class EA. But the
-                truth is that you need more support than a growing company can
-                give you
+                You have cofounders who you trust and rely on. You have a top
+                notch team who supports you. And you might even have an EA or a
+                Chief of Staff who makes your life so much easier
               </p>
 
               <p>
-                With hndl you can now{" "}
-                <strong>
-                  get more hours in your day easily, quickly, reliably
-                </strong>
+                But there still{" "}
+                <span
+                  style={{
+                    backgroundColor: "rgba(255, 0, 0, 0.1)",
+                    color: "black",
+                    padding: "2px 3px",
+                  }}
+                >
+                  aren&apos;t enough hours in each day
+                </span>
               </p>
 
               <p>
-                We combine AI & humans to handle 3 of your most important and
-                time consuming tasks: triaging emails, creating decks and
-                gathering internal data
+                Imagine if you could take 3 time consuming tasks. Then make them
+                easy and quick in a way that&apos;s totally reliable
               </p>
 
               <p>
-                Some Execs get us to highlight emails where there&apos;s an
-                opportunity to celebrate their team&apos;s success. Some Execs
-                show us how to create decks in the style their CEO prefers. And
-                some Execs get us to listen to customer service calls then
-                report back
+                <strong>Email & Slack: </strong>You spend most of your day
+                answering emails and/or Slack messages. Which means you&apos;re
+                not doing everything else. Let us triage your emails and Slack
+                so you spend less time on unimportant stuff and never miss
+                important messages
               </p>
 
               <p>
-                Most of the work gets done by 3 specialized AIs which have each
-                been built for doing one specific task. And part of the reason
-                hndl does such a good job is that each of these AIs is so
-                specialized
+                <strong>Investor updates & board decks:</strong> Communicating
+                with your investors is key to getting their help and support.
+                But it takes a ridiculous amount of time. Let us gather the data
+                you need. Then prepare investor updates and board decks in the
+                format you prefer
               </p>
 
               <p>
-                But another reason you can trust hndl is that there&apos;s a
-                human who takes care of the last mile. This human does the parts
-                which AI can&apos;t do well. Which means that we do these 3
-                tasks better than any AI tool. And usually better than if you
-                delegated the task to someone on your team
+                <strong>Internal research: </strong>Knowing what&apos;s actually
+                going on in your business is surprisingly hard. But it&apos;s
+                also everything. What are customers saying? Why aren&apos;t
+                prospects converting? Which team member is killing it? Let us
+                collaborate with your team to get you the information you need
               </p>
 
               <p>
-                With hndl there&apos;s now a way for C-Suite Execs to get 3
-                important and time consuming tasks done with just a few clicks
-                and in a way that&apos;s so good that the{" "}
-                <strong>
-                  results might sometimes even be better than if you did the
-                  work yourself
-                </strong>
+                Ok. Let&apos;s be honest. AI can&apos;t actually do any of those
+                tasks in a way that&apos;s good enough to be useful
+              </p>
+
+              <p>
+                But hndl can do these 3 tasks in a way that&apos;s so good and
+                reliable that we might sometimes do it better than if you did
+                the work yourself
+              </p>
+
+              <p>
+                We get this level of quality by combining what AI does best with
+                what humans do best
+              </p>
+
+              <p>
+                Our AI does most of its work with tool calls. Just like all
+                other AI agents. The difference is that hndl is the first and
+                only AI agent that can also make human calls. In other words,
+                our AI calls on humans to do the parts humans do best (then it
+                QAs the work those humans do)
+              </p>
+
+              <p>
+                Join our waitlist and I&apos;ll be in touch quickly to help you
+                get set up. I still onboard every founder personally and will do
+                everything I can to make hndl work for you
               </p>
             </div>
 
             {/* Signature */}
             <div className="mt-8 pt-6 border-t border-gray-200">
               <div className="text-lg text-gray-900 mb-2">Julien Newman</div>
-              <div className="text-sm text-gray-500">CEO & Founder</div>
+              <div className="text-md text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>
