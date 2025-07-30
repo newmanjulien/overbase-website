@@ -43,8 +43,8 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                We still onboard folks one at a time to be sure we make hndl
-                work for you
+                We still onboard founders one at a time to be sure we make hndl
+                works for you
               </p>
             </div>
 
@@ -64,7 +64,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-6 text-md rounded-lg"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white p-6 text-md rounded-lg"
               >
                 Submit
               </Button>

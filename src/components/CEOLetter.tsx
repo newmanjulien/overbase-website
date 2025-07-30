@@ -45,8 +45,8 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Imagine if there was a way to take 3 time consuming tasks then
-                make them easy and quick in a way that&apos;s totally reliable
+                Imagine if you could take 3 time consuming tasks. Then make them
+                easy and quick in a way that&apos;s totally reliable
               </p>
 
               <p>
@@ -69,35 +69,32 @@ export function CEOLetter() {
                 <strong>Internal research: </strong>Knowing what&apos;s actually
                 going on in your business is surprisingly hard. But it&apos;s
                 also everything. What are customers saying? Why aren&apos;t
-                prospects converting? Which team member is actually killing it?
-                Let us collaborate with your team to get you the information you
-                need
+                prospects converting? Which team member is killing it? Let us
+                collaborate with your team to get you the information you need
               </p>
 
               <p>
                 Ok. Let&apos;s be honest. AI can&apos;t actually do any of those
-                tasks in a way that&apos;s good enough to be useful. It&apos;s
-                almost impossible to delegate these tasks to even the smartest
-                people on your team
+                tasks in a way that&apos;s good enough to be useful
               </p>
 
               <p>
-                But hndl can actually do these 3 tasks in a way that&apos;s so
-                good and reliable that we might sometimes do it better than if
-                you did the work yourself
+                But hndl can do these 3 tasks in a way that&apos;s so good and
+                reliable that we might sometimes do it better than if you did
+                the work yourself
               </p>
 
               <p>
-                The way we get this level of quality is by combining what AI
-                does best with what humans do best
+                We get this level of quality by combining what AI does best with
+                what humans do best
               </p>
 
               <p>
-                Our AI agent does most of its work with tool calls like all
-                other AI agents. The difference is that hndl is the first AI
-                agent that can also make human calls. In other words, our AI
-                calls on humans to do the parts humans do better (then it QAs
-                the work those humans do)
+                Our AI does most of its work with tool calls. Just like all
+                other AI agents. The difference is that hndl is the first and
+                only AI agent that can also make human calls. In other words,
+                our AI calls on humans to do the parts humans do best (then it
+                QAs the work those humans do)
               </p>
 
               <p>
