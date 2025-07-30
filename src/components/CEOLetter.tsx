@@ -21,7 +21,7 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                As a startup founder. You&apos;re one of the busiest people in
+                As a startup founder, you&apos;re one of the busiest people in
                 the world
               </p>
 
