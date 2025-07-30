@@ -55,7 +55,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-3 text-sm border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
+                  className="w-full px-6 py-5 text-md border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                   placeholder="Work email"
                   required
                 />
@@ -64,7 +64,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-md rounded-full"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white px-8 py-6 text-md rounded-lg"
               >
                 Submit
               </Button>

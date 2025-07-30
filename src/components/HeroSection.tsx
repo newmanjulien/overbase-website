@@ -89,11 +89,11 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             <Button
               onClick={onJoinWaitlist}
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-3 text-lg rounded-full"
+              className="bg-gray-900 hover:bg-gray-800 text-white px-8 py-6 text-lg rounded-lg"
             >
               <span className="inline-flex items-center gap-2">
                 Join waitlist
-                <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-700 text-white text-sm font-bold">
+                <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-md bg-gray-700 text-white text-sm font-bold">
                   W
                 </span>
               </span>
@@ -107,11 +107,11 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             >
               <Button
                 size="lg"
-                className="bg-gray-50 hover:bg-gray-100 text-black px-8 py-3 text-lg rounded-full"
+                className="bg-gray-50 hover:bg-gray-100 text-black px-8 py-6 text-lg rounded-lg"
               >
                 <span className="inline-flex items-center gap-2">
                   Demo with founder
-                  <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 text-black text-sm font-bold">
+                  <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-md bg-gray-200 text-black text-sm font-bold">
                     F
                   </span>
                 </span>
