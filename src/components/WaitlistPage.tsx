@@ -11,10 +11,26 @@ interface WaitlistPageProps {
 export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
   const [email, setEmail] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Navigate to confirmation page
-    onSubmit();
+
+    try {
+      const res = await fetch("/api/send-waitlist-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) throw new Error(data.error || "Something went wrong");
+
+      // If the email was sent successfully, navigate
+      onSubmit(); // this pushes to the next page (e.g., /waitlist/confirmation)
+    } catch (err) {
+      console.error("Email send failed:", err);
+      alert("Oops, something went wrong. Please try again.");
+    }
   };
 
   return (
@@ -44,7 +60,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
                 We still onboard founders one at a time to be sure we make hndl
-                works for you
+                work for you
               </p>
             </div>
 
