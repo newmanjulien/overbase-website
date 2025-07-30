@@ -21,59 +21,89 @@ export function CEOLetter() {
             {/* Letter content */}
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                You&apos;re a busy executive and there{" "}
-                <strong>
-                  just aren&apos;t enough hours in your day no matter what you
-                  do
-                </strong>
+                As a startup founder. You&apos;re one of the busiest people in
+                the world
               </p>
 
               <p>
-                You have a great team who supports you. You might have
-                cofounders who you rely on and trust completely. And you might
-                have a world class EA or a superstar Chief of Staff. But
-                you&apos;re still drowning in work and you need a boost
+                You have cofounders who you trust and rely on. You have a top
+                notch team who supports you. And you might even have an EA or a
+                Chief of Staff who makes your life so much easier
               </p>
 
               <p>
-                hndl is the first AI agent that is good enough to help you get
-                unbusy easily, quickly and reliably. Because{" "}
-                <strong>
-                  hndl is the only AI agent who can make human calls
-                </strong>
+                But there still{" "}
+                <span
+                  style={{
+                    backgroundColor: "rgba(255, 0, 0, 0.1)",
+                    color: "black",
+                    padding: "2px 3px",
+                  }}
+                >
+                  aren&apos;t enough hours in each day
+                </span>
               </p>
 
               <p>
-                Like all agents, our AI makes tools calls. But what&apos;s
-                special is that our AI can also call on a human to do parts of
-                the task
+                Imagine if there was a way to take 3 time consuming tasks then
+                make them easy and quick in a way that&apos;s totally reliable
               </p>
 
               <p>
-                For example, you might tell hndl to help with something which
-                involves using your LinkedIn to send DMs. Most of the work can
-                be done using tool calls. But LinkedIn won&apos;t let AIs log
-                into your account and send DMs. So the AI will call on a human
-                to do that part
+                <strong>Email & Slack: </strong>You spend most of your day
+                answering emails and/or Slack messages. Which means you&apos;re
+                not doing everything else. Let us triage your emails and Slack
+                so you spend less time on unimportant stuff and never miss
+                important messages
               </p>
 
               <p>
-                Or another example, you might want your agent to do a task where
-                the AI can&apos;t do a good enough job. But where you'd get good
-                results if a human reviews the AI&apos;s work
+                <strong>Investor updates & board decks:</strong> Communicating
+                with your investors is key to getting their help and support.
+                But it takes a ridiculous amount of time. Let us gather the data
+                you need. Then prepare investor updates and board decks in the
+                format you prefer
               </p>
 
               <p>
-                Today, hndl helps with two tasks: (1) triaging emails or Slack
-                messages and (2) gathering data to help you make decisions.
-                We're focused on just those two tasks to be sure we do them
-                perfectly
+                <strong>Internal research: </strong>Knowing what&apos;s actually
+                going on in your business is surprisingly hard. But it&apos;s
+                also everything. What are customers saying? Why aren&apos;t
+                prospects converting? Which team member is actually killing it?
+                Let us collaborate with your team to get you the information you
+                need
               </p>
 
               <p>
-                But we&apos;re building the AI agent who is actually going to be
-                able to help with all of your most time consuming and important
-                work
+                Ok. Let&apos;s be honest. AI can&apos;t actually do any of those
+                tasks in a way that&apos;s good enough to be useful. It&apos;s
+                almost impossible to delegate these tasks to even the smartest
+                people on your team
+              </p>
+
+              <p>
+                But hndl can actually do these 3 tasks in a way that&apos;s so
+                good and reliable that we might sometimes do it better than if
+                you did the work yourself
+              </p>
+
+              <p>
+                The way we get this level of quality is by combining what AI
+                does best with what humans do best
+              </p>
+
+              <p>
+                Our AI agent does most of its work with tool calls like all
+                other AI agents. The difference is that hndl is the first AI
+                agent that can also make human calls. In other words, our AI
+                calls on humans to do the parts humans do better (then it QAs
+                the work those humans do)
+              </p>
+
+              <p>
+                Join our waitlist and I&apos;ll be in touch quickly to help you
+                get set up. I still onboard every founder personally and will do
+                everything I can to make hndl work for you
               </p>
             </div>
 

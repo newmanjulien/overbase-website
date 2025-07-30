@@ -72,7 +72,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
   // );
 
   return (
-    <section className="min-h-screen flex justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
+    <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
@@ -80,7 +80,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             Startup founders are way too busy
           </h1>
 
-          <p className="text-lg text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
+          <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
             Get unbusy with the only AI agent that can{" "}
             <strong>make both tool calls and human calls</strong>
           </p>
@@ -93,7 +93,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             >
               <span className="inline-flex items-center gap-2">
                 Join waitlist
-                <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-700 text-white text-sm font-bold">
+                <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-700 text-white text-sm font-bold">
                   W
                 </span>
               </span>
@@ -111,7 +111,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
               >
                 <span className="inline-flex items-center gap-2">
                   Demo with founder
-                  <span className="inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 text-black text-sm font-bold">
+                  <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 text-black text-sm font-bold">
                     F
                   </span>
                 </span>
@@ -120,11 +120,11 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
           </div>
         </div>
 
-        {/* RIGHT: Full-height image (Desktop only) */}
+        {/* RIGHT: Image (Desktop only) */}
         <div className="hidden xl:block">
           <img
             src="/point.png"
-            alt="Founders AI agent"
+            alt="AI agent"
             className="w-full h-full object-cover rounded-xl"
           />
         </div>
