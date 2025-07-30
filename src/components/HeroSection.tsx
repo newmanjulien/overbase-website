@@ -29,7 +29,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
   //       </h1>
 
   //       <p className="text-lg text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
-  //         Get unbusy with the only AI agent that can{" "}
+  //         Get unbusy with the first AI agent that can{" "}
   //         <strong>make both tool calls and human calls</strong>
   //       </p>
 
@@ -81,7 +81,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Get unbusy with the first and only AI agent that can{" "}
+            Get unbusy with the first AI agent that can{" "}
             <strong>make both tool calls and human calls</strong>
           </p>
 
