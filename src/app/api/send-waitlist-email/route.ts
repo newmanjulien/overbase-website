@@ -20,10 +20,11 @@ export async function POST(req: Request) {
   try {
     // Send the email
     await transporter.sendMail({
-      from: `"HNDL Waitlist" <${process.env.SMTP_USER}>`,
+      from: `"Julien @ hndl" <${process.env.SMTP_USER}>`,
       to: email,
-      subject: "You're on the HNDL waitlist",
-      text: "Thanks for joining the waitlist! We'll be in touch soon.",
+      cc: "julien@hndlai.com",
+      subject: "hndl waitlist",
+      text: "Thank you for joining the waitlist. I'll be in touch soon :)",
     });
 
     return NextResponse.json({ success: true });
