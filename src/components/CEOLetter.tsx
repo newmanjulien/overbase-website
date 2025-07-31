@@ -46,7 +46,7 @@ export function CEOLetter() {
 
               <p>
                 Imagine if you could take 3 time consuming tasks. Then make them
-                easy and quick in a way that&apos;s totally reliable
+                easy and quick
               </p>
 
               <p>
@@ -74,14 +74,11 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Ok. Let&apos;s be honest. AI can&apos;t actually do any of those
-                tasks in a way that&apos;s good enough to be useful
+                What you&apos;re thinking is that AI can't actually do any of those tasks in a way that&apos;s good enough to be useful
               </p>
 
               <p>
-                But hndl can do these 3 tasks in a way that&apos;s so good and
-                reliable that we might sometimes do it better than if you did
-                the work yourself
+                And hndl is the first AI agent that actually can
               </p>
 
               <p>
@@ -91,9 +88,11 @@ export function CEOLetter() {
 
               <p>
                 Our AI does most of its work with tool calls. Just like all
-                other AI agents. The difference is that hndl is the first AI agent that can also make human calls. In other words,
-                our AI calls on humans to do the parts which humans do best (then it
-                QAs the work those humans did)
+                other AI agents
+               </p>  
+
+               <p>
+                The difference is that hndl is the first AI agent that can also make human calls. Which means that the AI calls on humans to do parts of the work when it enounters parts a human would do better (then the AI QAs the work the human did)
               </p>
 
               <p>
