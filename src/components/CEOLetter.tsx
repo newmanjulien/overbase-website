@@ -74,7 +74,7 @@ export function CEOLetter() {
               </p>
 
               <p>
-                What you&apos;re thinking is that AI can't actually do any of those tasks in a way that&apos;s good enough to be useful
+                What you&apos;re thinking is that AI can&apos;t actually do any of those tasks in a way that&apos;s good enough to be useful
               </p>
 
               <p>
