@@ -25,7 +25,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
   //   <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
   //     <div className="flex flex-col items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0">
   //       <h1 className="text-6xl lg:text-7xl text-gray-900 tracking-tight text-center md:text-left font-bold">
-  //         Startup founders are way too busy
+  //         Startup CEOs are way too busy
   //       </h1>
 
   //       <p className="text-lg text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
@@ -52,7 +52,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
   //           href="https://cal.com/juliennewman/15min"
   //           target="_blank"
   //           rel="noopener noreferrer"
-  //           aria-label="Demo with our founders"
+  //           aria-label="Demo with our CEO"
   //         >
   //           <Button
   //             size="lg"
