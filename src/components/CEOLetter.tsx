@@ -78,11 +78,11 @@ export function CEOLetter() {
               </p>
 
               <p>
-                And hndl is the first AI agent that actually can
+                And you&apos;re right because hndl is the first AI agent that actually can
               </p>
 
               <p>
-                We get this level of quality by combining what AI does best with
+                The reason hndl can do these tasks is that we combine what AI does best with
                 what humans do best
               </p>
 
@@ -92,7 +92,7 @@ export function CEOLetter() {
                </p>  
 
                <p>
-                The difference is that hndl is the first AI agent that can also make human calls. Which means that the AI calls on humans to do parts of the work when it enounters parts a human would do better (then the AI QAs the work the human did)
+                The difference is that hndl is the first AI agent that can also make human calls. In other words, our AI calls on humans to do parts of the work when a human would do better a better job (then the AI QAs the work the human did)
               </p>
 
               <p>
