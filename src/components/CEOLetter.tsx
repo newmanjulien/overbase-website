@@ -74,15 +74,7 @@ export function CEOLetter() {
               </p>
 
               <p>
-                What you&apos;re thinking is that AI can&apos;t actually do any of those tasks in a way that&apos;s good enough to be useful
-              </p>
-
-              <p>
-                And you&apos;re right because hndl is the first AI agent that actually can
-              </p>
-
-              <p>
-                The reason hndl can do these tasks is that we combine what AI does best with
+                hndl is the first AI agent that actually can do those 3 tasks in a way that&apos;s good enough to be useful. Because we hndl is the first AI agent which combines what AI does best with
                 what humans do best
               </p>
 
