@@ -20,7 +20,7 @@ export async function POST(req: Request) {
   try {
     // Send the email
     await transporter.sendMail({
-      from: `"Julien @ hndl" <${process.env.SMTP_USER}>`,
+      from: `"Julien Newman" <${process.env.SMTP_USER}>`,
       to: email,
       cc: "julien@hndlai.com",
       subject: "hndl waitlist",
