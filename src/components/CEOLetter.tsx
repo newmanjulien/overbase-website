@@ -68,7 +68,7 @@ export function CEOLetter() {
               <p>
                 <strong>Internal research: </strong>Knowing what&apos;s actually
                 going on in your business is surprisingly hard. But it&apos;s
-                also everything. What are customers saying? Why aren&apos;t
+                also the most important part of your job. What are customers saying? Why aren&apos;t
                 prospects converting? Which team member is killing it? Let us
                 collaborate with your team to get you the information you need
               </p>
