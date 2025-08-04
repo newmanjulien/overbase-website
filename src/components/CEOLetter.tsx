@@ -74,17 +74,17 @@ export function CEOLetter() {
               </p>
 
               <p>
-                hndl is the first AI agent that actually can do those 3 tasks in a way that&apos;s good enough to be useful. Because we hndl is the first AI agent which combines what AI does best with
+                hndl is the first AI agent that actually can do those 3 tasks in a way that&apos;s good enough to be useful. Because hndl is the first AI agent which combines what AI does best with
                 what humans do best
               </p>
 
               <p>
-                Our AI does most of its work with tool calls. Just like all
+                Our AI does most of its work with tool calls. Like
                 other AI agents
                </p>  
 
                <p>
-                The difference is that hndl is the first AI agent that can also make human calls. In other words, our AI calls on humans to do parts of the work when a human would do a better job (then the AI QAs the work the human did)
+                The difference is that hndl is the first AI agent that can also make human calls. In other words, our AI calls on humans to do parts of the work when a human would do a better job
               </p>
 
               <p>
