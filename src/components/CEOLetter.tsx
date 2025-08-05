@@ -42,7 +42,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  aren&apos;t enough hours in each day
+                  aren&apos;t enough hours in the day
                 </span>
                 .
               </p>
