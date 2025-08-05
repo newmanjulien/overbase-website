@@ -97,7 +97,7 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Check out this <a href="https://youtube.com/@blitzscaling" target="_blank" class="black-text">Q&A if you have questions</a>. Or join our waitlist and I&apos;ll be in touch quickly to help you
+                Check out this <a href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da" target="_blank" class="black-text">Q&A if you have questions</a>. Or join our waitlist and I&apos;ll be in touch quickly to help you
                 get set up. I still onboard every founder personally and will do
                 everything I can to make hndl work for you
               </p>
