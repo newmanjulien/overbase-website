@@ -83,8 +83,17 @@ export function CEOLetter() {
                 other AI agents
                </p>  
 
-               <p>
-                The difference is that hndl is the first AI agent that can also make human calls. In other words, our AI calls on humans to do parts of the work when a human would do a better job
+              <p>
+                The difference is that hndl is the first AI agent that can also make human calls. In other words, our {" "}
+                <span
+                  style={{
+                    backgroundColor: "rgba(255, 0, 0, 0.1)",
+                    color: "black",
+                    padding: "2px 3px",
+                  }}
+                >
+                  AI calls on humans to do parts of the work
+                </span>
               </p>
 
               <p>
