@@ -1,6 +1,6 @@
 export function CEOLetter() {
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
       <div className="max-w-4xl mx-auto">
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
