@@ -97,7 +97,11 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Check out this <a href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da" target="_blank">Q&A</a> if you have questions. Check out this <a href="https://www.figma.com/deck/hzRpBLPMQkgbZ1KEP09941/hndl?node-id=3828-33&t=mdIOiRjX2bfl6k82-1" target="_blank">deck</a> if you want to understand our vision. Or join our waitlist and I&apos;ll be in touch quickly to help you
+                Check out this <a href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da" target="_blank">Q&A</a> if you have questions. Check out this <a href="https://www.figma.com/deck/hzRpBLPMQkgbZ1KEP09941/hndl?node-id=3828-33&t=mdIOiRjX2bfl6k82-1" target="_blank">deck</a> if you want to understand our vision
+              </p>
+
+              <p>
+                Or join our waitlist and I&apos;ll be in touch quickly to help you
                 get set up. I still onboard every founder personally and will do
                 everything I can to make hndl work for you
               </p>
