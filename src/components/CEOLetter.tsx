@@ -1,9 +1,3 @@
-import React from "react";
-
-interface CEOLetterProps {
-  onJoinWaitlist: () => void;
-}
-
 export function CEOLetter() {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
@@ -102,3 +96,16 @@ Check out this <a href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321
                 get set up. I still onboard every founder personally and will do
                 everything I can to make hndl work for you
               </p>
+            </div>
+
+            {/* Signature */}
+            <div className="mt-8 pt-6 border-t border-gray-200">
+              <div className="text-lg text-gray-900 mb-2">Julien Newman</div>
+              <div className="text-md text-gray-500">Founder & CEO</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
