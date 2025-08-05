@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Button } from "./ui/button";
+import Image from "next/image";
 
 interface HeroSectionProps {
   onJoinWaitlist: () => void;
@@ -72,10 +73,13 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
 
         {/* RIGHT: Image (Desktop only) */}
         <div className="hidden xl:block">
-          <img
+          <Image
             src="/point.png"
             alt="AI agent"
+            width={800} // will be overridden by Tailwind classes
+            height={600} // just needs to be proportional
             className="w-full h-full object-cover rounded-xl"
+            priority
           />
         </div>
       </div>
