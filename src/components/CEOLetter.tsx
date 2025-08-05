@@ -1,3 +1,7 @@
+interface CEOLetterProps {
+  onJoinWaitlist: () => void;
+}
+
 export function CEOLetter() {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
@@ -96,6 +100,18 @@ Check out this <a href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321
                 get set up. I still onboard every founder personally and will do
                 everything I can to make hndl work for you
               </p>
+
+//               <p>
+//                 Or join our{" "}
+//                 <button
+//                   onClick={onJoinWaitlist}
+//                   type="button"
+//                   className="text-blue-600 underline hover:text-blue-800 cursor-pointer bg-transparent border-0 p-0 font-inherit"
+//                 >
+//                   waitlist
+//                 </button>{" "}
+//                 and I&apos;ll be in touch quickly to help you get set up. I still onboard every founder personally and will do everything I can to make hndl work for you
+//               </p>
             </div>
 
             {/* Signature */}
