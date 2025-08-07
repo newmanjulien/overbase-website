@@ -113,9 +113,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   waitlist
                 </button>{" "}
-                and I&apos;ll be in touch quickly to help you get set up. I
-                 onboard every user personally and will do everything I
-                can to make hndl work for you.
+                and I&apos;ll be in touch quickly to help you get set up.
               </p>
             </div>
 
