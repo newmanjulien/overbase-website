@@ -24,13 +24,13 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 You&apos;re the CEO of a venture-backed startup. Which means
-                you&apos;re one of the busiest people in the world.
+                you&apos;re one of the busiest people in the world
               </p>
 
               <p>
                 You have co-founders who you trust and rely on. You have a
                 top-notch team who supports you. And you might even have an EA
-                or a Chief of Staff who makes your life so much easier.
+                or a Chief of Staff who makes your life so much easier
               </p>
 
               <p>
@@ -44,12 +44,11 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   aren&apos;t enough hours in the day
                 </span>
-                .
               </p>
 
               <p>
                 Imagine if you could take 3 time-consuming tasks. Then make them
-                easy and quick.
+                easy and quick
               </p>
 
               <p>
@@ -57,42 +56,40 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 answering emails and/or Slack messages. Which means you&apos;re
                 not doing everything else. Let us triage your emails and Slack
                 so you spend less time on unimportant stuff and never miss
-                important messages.
+                important messages
               </p>
 
               <p>
-                <strong>Investor updates & board decks:</strong> Communicating
-                with your investors is key to getting their help and support.
-                But it takes a ridiculous amount of time. Let us gather the data
-                you need. Then prepare investor updates and board decks in the
-                format you prefer.
+                <strong>After sales calls:</strong> Customers want to talk to
+                you and you love talking to them. But it&apos;s hard to do all
+                the work that comes after each sales call. Let us update your
+                CRM, follow up, make sure action items get done, etc
               </p>
 
               <p>
-                <strong>Internal research:</strong> Knowing what&apos;s actually
-                going on in your business is surprisingly hard. But it&apos;s
-                also the most important part of your job. What are customers
-                saying? Why aren&apos;t prospects converting? Which team member
-                is killing it? Let us collaborate with your team to get you the
-                information you need.
+                <strong>Customer success:</strong> Staying involved in your
+                customer success and customer support motions lets you stay
+                close to users. But it&apos;s hard to keep up with the
+                repetitive parts. Let us help answer customer questions, prepare
+                calls, gather data for customer check-ins
               </p>
 
               <p>
                 hndl is the first AI agent that actually can do those 3 tasks in
                 a way that&apos;s good enough to be useful. Because hndl is the
-                first AI agent which combines what AI does best with what humans
-                do best.
+                first AI agent that combines what AI does best with what humans
+                do best
               </p>
 
               <p>
                 Our AI does most of its work with tool calls. Like other AI
-                agents.
+                agents
               </p>
 
               <p>
                 The difference is that hndl is the first AI agent that can also
                 make human calls. In other words, our AI calls on humans to do
-                parts of the work.
+                parts of the work
               </p>
 
               <p>
@@ -113,7 +110,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   waitlist
                 </button>{" "}
-                and I&apos;ll be in touch quickly to help you get set up.
+                and I&apos;ll be in touch quickly to help you get set up
               </p>
             </div>
 
