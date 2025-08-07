@@ -71,7 +71,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 customer success and customer support motions lets you stay
                 close to users. But it&apos;s hard to keep up with the
                 repetitive parts. Let us help answer customer questions, prepare
-                calls, gather data for customer check-ins
+                calls, gather data for check-ins with customers, etc.
               </p>
 
               <p>
