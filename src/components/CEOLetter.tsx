@@ -105,20 +105,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   Q&A
                 </a>{" "}
-                if you have questions. Check out this{" "}
-                <a
-                  href="https://www.figma.com/deck/hzRpBLPMQkgbZ1KEP09941/hndl?node-id=3828-33&t=mdIOiRjX2bfl6k82-1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-blue-600 underline hover:text-blue-800"
-                >
-                  deck
-                </a>{" "}
-                if you want to understand our vision.
-              </p>
-
-              <p>
-                Or join our{" "}
+                if you have questions. Or join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
