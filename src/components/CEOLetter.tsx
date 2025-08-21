@@ -22,19 +22,23 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
             </div>
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
+              <p>Great customer support is the backbone of your business</p>
+
               <p>
-                You&apos;re the CEO of a venture-backed startup. Which means
-                you&apos;re one of the busiest people in the world
+                It's one of the main reasons customers buy from you. It's one of
+                the main reasons your customers stay or come back. Great
+                customer support is one of the keys to why you're growing so
+                fast
               </p>
 
               <p>
-                You have co-founders who you trust and rely on. You have a
-                top-notch team who supports you. And you might even have an EA
-                or a Chief of Staff who makes your life so much easier
+                But customer support is a lot of work. Which is why you hired a
+                small team to help you. Maybe this team is outsourced. Maybe
+                they're in-house
               </p>
 
               <p>
-                But there still{" "}
+                Either way, one thing is for sure. Damn it's{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -42,54 +46,72 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  aren&apos;t enough hours in the day
+                  hard to get your customer support team to do a good job
                 </span>
               </p>
 
               <p>
-                Imagine if you could take 3 time-consuming tasks. Then make them
-                easy and quick
+                You're not alone. Startups have always struggled with scaling
+                customer support. And founders have always done a way better job
+                than anyone else at taking care of their customers
               </p>
 
               <p>
-                <strong>Email & Slack:</strong> You spend most of your day
-                answering emails and/or Slack messages. Which means you&apos;re
-                not doing everything else. Let us triage your emails and Slack
-                so you spend less time on unimportant stuff and never miss
-                important messages
+                Which is why today, the best startups are doing founder-only
+                customer support
+              </p>
+
+              <p>Founder-only!? No customer support team at all?</p>
+
+              <p>
+                You heard right. There's now a way to scale how you do customer
+                support that is so good and so easy that you can actually do
+                everything yourself
               </p>
 
               <p>
-                <strong>After sales calls:</strong> Customers want to talk to
-                you and you love talking to them. But it&apos;s hard to do all
-                the work that comes after each sales call. Let us update your
-                CRM, follow up, make sure action items get done, etc
+                hndl gives you 3 AI agents who you easily customize so the AI
+                does the work exactly how you'd do it personally
               </p>
 
               <p>
-                <strong>Customer success:</strong> Staying involved in your
-                customer success and customer support motions lets you stay
-                close to users. But it&apos;s hard to keep up with the
-                repetitive parts. Let us help answer customer questions, prepare
-                calls, gather data for check-ins with customers, etc.
+                <strong>1) Email Reply Agent -</strong> Replies to customer
+                emails in the same way you&apos;d reply
               </p>
 
               <p>
-                hndl is the first AI agent that actually can do those 3 tasks in
-                a way that&apos;s good enough to be useful. Because hndl is the
-                first AI agent that combines what AI does best with what humans
-                do best
+                <strong>2) Customer Chat Agent -</strong> Logs into whatever
+                helpdesk software you use and chat with customers the way you
+                would chat with customers
               </p>
 
               <p>
-                Our AI does most of its work with tool calls. Like other AI
-                agents
+                <strong>3) Ticket resolver Agent -</strong> Resolves even the
+                hardest customer problems the way you'd resolve those problems
               </p>
 
               <p>
-                The difference is that hndl is the first AI agent that can also
-                make human calls. In other words, our AI calls on humans to do
-                parts of the work
+                What's unique about our AI is that it knows what parts of the
+                work it can do better than humans (almost everything). And it
+                knows what parts a human would do better than an AI (a few
+                critical parts)
+              </p>
+
+              <p>
+                What's unique about hndl is that we built a marketplace of
+                vetted humans who are trained at helping an AI do the work it
+                can't do well
+              </p>
+
+              <p>
+                This means the AI does most of the work. But the AI also knows
+                when to ask one of the humans in our marketplace to help (and
+                the AI also knows how to QA the work those humans did)
+              </p>
+
+              <p>
+                And it's this unique combination of AI and human which creates
+                the quality you need for founder-only customer support
               </p>
 
               <p>
