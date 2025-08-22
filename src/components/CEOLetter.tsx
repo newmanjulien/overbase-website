@@ -22,23 +22,24 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
             </div>
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
-              <p>Great customer support is the backbone of your business</p>
-
               <p>
-                It's one of the main reasons customers buy from you. It's one of
-                the main reasons your customers stay or come back. Great
-                customer support is one of the keys to why you're growing so
-                fast
+                Great customer support is the backbone of your B2B marketplace
               </p>
 
               <p>
-                But customer support is a lot of work. Which is why you hired a
-                small team to help you. Maybe this team is outsourced. Maybe
-                they're in-house
+                It might be one of the reasons customers buy from you. It's
+                almost certainly one of the reasons customers come back
               </p>
 
               <p>
-                Either way, one thing is for sure. Damn it's{" "}
+                But customer support is a lot of work. And you can't do it all
+                on your own. You may have tried hiring people to help. And you
+                may have tried some of the new AI tools
+              </p>
+
+              <p>
+                But you're likely finding what most B2B marketplace founders
+                find:{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -46,72 +47,55 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  hard to get your customer support team to do a good job
+                  offloading customer support is hard and the results just
+                  aren't good
                 </span>
               </p>
 
               <p>
-                You're not alone. Startups have always struggled with scaling
-                customer support. And founders have always done a way better job
-                than anyone else at taking care of their customers
+                hndl is a new, different and better way of doing customer
+                support emails for your B2B marketplace
               </p>
 
               <p>
-                Which is why today, the best startups are doing founder-only
-                customer support
-              </p>
-
-              <p>Founder-only!? No customer support team at all?</p>
-
-              <p>
-                You heard right. There's now a way to scale how you do customer
-                support that is so good and so easy that you can actually do
-                everything yourself
+                We take care of your customer support emails in a way that's{" "}
+                <strong>
+                  as good as if you and your cofounders were answering the
+                  emails yourselves
+                </strong>
               </p>
 
               <p>
-                hndl gives you 3 AI agents who you easily customize so the AI
-                does the work exactly how you'd do it personally
+                The reason hndl is so good is because of the unique way we blend
+                AI with humans
               </p>
 
               <p>
-                <strong>1) Email Reply Agent -</strong> Replies to customer
-                emails in the same way you&apos;d reply
+                hndl is the first AI that knows what parts of the work it can do
+                better than humans vs. what parts a human do better than AI
               </p>
 
               <p>
-                <strong>2) Customer Chat Agent -</strong> Logs into whatever
-                helpdesk software you use and chat with customers the way you
-                would chat with customers
+                You set up hndl in the same way you'd set up any other customer
+                support AI. You give instructions to the AI and tailor it for
+                your specific business. Then the AI does the work just like any
+                other customer support AI
               </p>
 
               <p>
-                <strong>3) Ticket resolver Agent -</strong> Resolves even the
-                hardest customer problems the way you'd resolve those problems
+                Except that the hndl AI knows which parts of your instructions
+                it cannot do well
               </p>
 
               <p>
-                What's unique about our AI is that it knows what parts of the
-                work it can do better than humans (almost everything). And it
-                knows what parts a human would do better than an AI (a few
-                critical parts)
+                And for the parts which AI cannot do well, the AI gets one of
+                the humans from hndl's marketplace to help it do the work
               </p>
 
               <p>
-                What's unique about hndl is that we built a marketplace of
-                vetted humans who are trained at helping an AI do the work it
-                can't do well
-              </p>
-
-              <p>
-                This means the AI does most of the work. But the AI also knows
-                when to ask one of the humans in our marketplace to help (and
-                the AI also knows how to QA the work those humans did)
-              </p>
-
-              <p>
-                And it's this unique combination of AI and human which creates
-                the quality you need for founder-only customer support
+                The result is that your customer support emails easily get
+                answered exactly how you'd answer them. You don't need to hire
+                anyone. And everything gets done perfectly
               </p>
 
               <p>
@@ -120,25 +104,28 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                   href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 underline hover:text-blue-800"
+                  className="font-normal text-blue-600 underline hover:text-blue-800"
                 >
                   Q&A
                 </a>{" "}
-                if you have questions. Or join our{" "}
+                if you have questions. Join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
-                  className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
+                  className="font-normal text-blue-600 underline hover:text-blue-800 cursor-pointer"
                 >
                   waitlist
                 </button>{" "}
-                and I&apos;ll be in touch quickly to help you get set up
+                and I&apos;ll be in touch quickly to help you get set up. Or
+                just email me at: julien@hndlai.com
               </p>
             </div>
 
             {/* Signature */}
             <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="text-lg text-gray-900 mb-2">Julien Newman</div>
+              <div className="font-medium text-lg text-gray-900 mb-2">
+                Julien Newman
+              </div>
               <div className="text-md text-gray-500">Founder & CEO</div>
             </div>
           </div>
