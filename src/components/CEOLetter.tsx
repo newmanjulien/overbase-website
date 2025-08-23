@@ -25,12 +25,12 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Scaling your B2B Marketplace&apos;s customer support seems like
-                a daunting task
+                Scaling customer support is one of the hardest parts of building
+                your B2B Marketplace
               </p>
 
               <p>
-                You&apos;ll need to hire endlessly.{" "}
+                You need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -39,13 +39,13 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                   }}
                 >
                   Customer support agents to take care of customers. Managers to
-                  manage the agents. Even more managers to manage the managers
+                  manage the agents. More managers to manage the managers
                 </span>
               </p>
 
               <p>
-                And the alternative seems to be low quality outsourcing
-                companies. Or AIs that just frustrate your customers
+                And the alternatives seem to be low quality outsourcing. Or AIs
+                that frustrate your customers
               </p>
 
               <p>It doesn&apos;t need to be like this</p>
@@ -65,23 +65,28 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 automatically. Just like with any other customer support AI tool
               </p>
 
-              <p>The thing that&apos;s different is hndl&apos;s router</p>
-
               <p>
-                Our router automatically breaks down your instructions into
-                microtasks. Then decides whether to assign each microtask to an
-                AI or to a human
+                What&apos;s different is hndl&apos;s router which breaks down
+                the instructions you gave into microtasks. Then decides whether
+                to assign each microtask to an AI or to a human
               </p>
 
               <p>
                 The router assigns most microtasks to AI. But when it&apos;s
                 best to get a human involved, the router assigns the microtask
-                to a human from our pool of handlers
+                to a human from our pool of vetted and trained handlers
               </p>
 
               <p>
-                The result is that your customer support work easily gets done
-                in the highest quality way possible
+                The result is that customer support easily gets done in the
+                highest quality way
+              </p>
+
+              <p>
+                We&apos;re an early stage business and that means we currently
+                only help you answer customer support emails. But long term
+                we&apos;ll help you make your entire customer support stack
+                founder-only
               </p>
 
               <p>
@@ -94,7 +99,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   Q&A
                 </a>{" "}
-                if you have questions. Or join our{" "}
+                if you have questions or join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
