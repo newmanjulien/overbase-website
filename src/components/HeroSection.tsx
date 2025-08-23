@@ -31,8 +31,8 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
             Grow your B2B marketplace to $1B
           </h1>
 
-          <p className="text-xl text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            ...without ever adding any customer support headcount
+          <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
+            ...without ever adding any more customer support headcount
           </p>
 
           <div className="flex items-center space-x-4">

@@ -26,7 +26,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
                 Scaling your B2B Marketplace's customer support beyond your
-                current team seems impossible
+                current team seems like a daunting task
               </p>
 
               <p>
@@ -44,8 +44,9 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                The alternatives are janky AIs that just frustrate customers. Or
-                low quality outsourcing companies
+                And the alternative seems to be low quality outsourcing
+                companies. Or more recently, AIs that don't really work and
+                frustrate customers
               </p>
 
               <p>It doesn't need to be like this</p>
@@ -65,7 +66,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                If it's just you and your cofounders. You can scale to $1B
+                And if it's just you and your cofounders. You can scale to $1B
                 without ever hiring anyone ever
               </p>
 
@@ -75,21 +76,19 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 tool
               </p>
 
+              <p>The only thing that's different is our router</p>
+
               <p>
-                The only thing that's different is our router which works in the
-                background
+                This router automatically breaks your instructions down into
+                microtasks. Then decides whether to assign each microtask to an
+                AI or to a human
               </p>
 
               <p>
-                This router breaks your instructions down into microtasks. Then
-                decides whether to assign each microtask to an AI or to a human
-              </p>
-
-              <p>
-                AI does a better job of most of the microtasks so the router
-                assigns most of them to AI. But sometimes it's best to get a
-                human involved and the router assigns the microtask to a human
-                from our pool of "handlers"
+                The router assigns most microtasks to AI. But when it's best to
+                get a human involved, the router assigns the microtask to a
+                human from our pool of "handlers" in a way that doesn't require
+                any work (or hiring) from you
               </p>
 
               <p>
@@ -102,7 +101,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   Q&A
                 </a>{" "}
-                or join our{" "}
+                if you have questions. Or join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
@@ -110,7 +109,6 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   waitlist
                 </button>{" "}
-                and I&apos;ll be in touch quickly
               </p>
             </div>
 
