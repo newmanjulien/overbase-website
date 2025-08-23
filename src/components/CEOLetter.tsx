@@ -54,31 +54,21 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 <strong className="font-semibold">
                   hndl is the first founder-only customer support system.
                 </strong>{" "}
-                Software that takes care of your B2B Marketplace's customers so
-                well that you can scale customer support without ever hiring
+                Our software takes care of your B2B Marketplace&apos;s customers
+                so well that you can scale customer support without ever hiring
                 anyone else
               </p>
 
               <p>
-                If you already have a customer support team. You&apos;ll never
-                need to hire anyone beyond your current team
-              </p>
-
-              <p>
-                And if it&apos;s just you and your cofounders. You can scale to
-                $1B without ever hiring anyone ever
-              </p>
-
-              <p>
                 The way hndl works is simple, easy and familiar. You give
-                instructions to an AI. Just like with any other customer support
-                AI tool
+                instructions and context to an AI then the work gets done
+                automatically. Just like with any other customer support AI tool
               </p>
 
-              <p>The only thing that&apos;s different is our router</p>
+              <p>The thing that&apos;s different is hndl&apos;s router</p>
 
               <p>
-                This router automatically breaks your instructions down into
+                Our router automatically breaks down your instructions into
                 microtasks. Then decides whether to assign each microtask to an
                 AI or to a human
               </p>
@@ -86,8 +76,12 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               <p>
                 The router assigns most microtasks to AI. But when it&apos;s
                 best to get a human involved, the router assigns the microtask
-                to a human from our pool of &quot;handlers&quot; in a way that
-                doesn&apos;t require any work (or hiring) from you
+                to a human from our pool of handlers
+              </p>
+
+              <p>
+                The result is that your customer support work easily gets done
+                in the highest quality way possible
               </p>
 
               <p>
@@ -108,6 +102,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   waitlist
                 </button>{" "}
+                if you&apos;re interested
               </p>
             </div>
 
