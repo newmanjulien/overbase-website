@@ -21,25 +21,16 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </div>
             </div>
 
-            <div className="space-y-6 text-gray-900 leading-relaxed">
+            <div className="mt-8 pt-6 border-t border-gray-200"></div>
+
+            <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Great customer support is the backbone of your B2B marketplace
+                Scaling your B2B Marketplace's customer support beyond your
+                current team seems impossible
               </p>
 
               <p>
-                It might be one of the reasons customers buy from you. It's
-                almost certainly one of the reasons customers come back
-              </p>
-
-              <p>
-                But customer support is a lot of work. And you can't do it all
-                on your own. You may have tried hiring people to help. And you
-                may have tried some of the new AI tools
-              </p>
-
-              <p>
-                But you're likely finding what most B2B marketplace founders
-                find:{" "}
+                You'll need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -47,55 +38,40 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  offloading customer support is hard and the results just
-                  aren't good
+                  Hire agents to take care of customers. Hire managers to manage
+                  the agents. Hire more managers to manage the managers
                 </span>
               </p>
 
               <p>
-                hndl is a new, different and better way of doing customer
-                support emails for your B2B marketplace
+                The only alternative are janky AIs that just frustrate customers
+              </p>
+
+              <p>It doesn't need to be like this</p>
+
+              <p>
+                <strong className="font-semibold">
+                  hndl is building the first founder-only customer support
+                  system for B2B Marketplaces.
+                </strong>{" "}
+                Software that takes care of your customers so well that you can
+                scale customer support without ever hiring anyone else
               </p>
 
               <p>
-                We take care of your customer support emails in a way that's{" "}
-                <strong>
-                  as good as if you and your cofounders were answering the
-                  emails yourselves
-                </strong>
+                If you already have a customer support team. You'll never need
+                to hire anyone beyond your current team
               </p>
 
               <p>
-                The reason hndl is so good is because of the unique way we blend
-                AI with humans
+                If it's just you and your cofounders. You can scale to $1B
+                without ever hiring anyone ever
               </p>
 
               <p>
-                hndl is the first AI that knows what parts of the work it can do
-                better than humans vs. what parts a human do better than AI
-              </p>
-
-              <p>
-                You set up hndl in the same way you'd set up any other customer
-                support AI. You give instructions to the AI and tailor it for
-                your specific business. Then the AI does the work just like any
-                other customer support AI
-              </p>
-
-              <p>
-                Except that the hndl AI knows which parts of your instructions
-                it cannot do well
-              </p>
-
-              <p>
-                And for the parts which AI cannot do well, the AI gets one of
-                the humans from hndl's marketplace to help it do the work
-              </p>
-
-              <p>
-                The result is that your customer support emails easily get
-                answered exactly how you'd answer them. You don't need to hire
-                anyone. And everything gets done perfectly
+                We started by helping B2B Marketplace founders answer customer
+                support emails. And later we will help you with your full
+                customer support stack
               </p>
 
               <p>
@@ -122,11 +98,11 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
             </div>
 
             {/* Signature */}
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="font-medium text-lg text-gray-900 mb-2">
+            <div className="mt-8">
+              <div className="font-medium text-xl text-gray-900 mb-2">
                 Julien Newman
               </div>
-              <div className="text-md text-gray-500">Founder & CEO</div>
+              <div className="text-lg text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>
