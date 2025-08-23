@@ -96,12 +96,12 @@
   /* Global text selection */
   ::selection {
     background-color: #d0e7ff; /* light blue background */
-    color: #0070f3; /* blue text */
+    color: #0066d6; /* blue text */
   }
 
   ::-moz-selection {
     background-color: #d0e7ff;
-    color: #0070f3;
+    color: #0066d6;
   }
 }
 
