@@ -21,75 +21,74 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </div>
             </div>
 
-            <div className="space-y-6 text-gray-900 leading-relaxed">
+            <div className="mt-8 pt-6 border-t border-gray-200"></div>
+
+            <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                You&apos;re the CEO of a venture-backed startup. Which means
-                you&apos;re one of the busiest people in the world
+                Scaling your B2B Marketplace&apos;s customer support beyond your
+                current team seems like a daunting task
               </p>
 
               <p>
-                You have co-founders who you trust and rely on. You have a
-                top-notch team who supports you. And you might even have an EA
-                or a Chief of Staff who makes your life so much easier
-              </p>
-
-              <p>
-                But there still{" "}
+                You&apos;ll need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
-                    color: "black",
+                    color: "#FF5437",
                     padding: "2px 3px",
                   }}
                 >
-                  aren&apos;t enough hours in the day
+                  Agents to take care of customers. Managers to manage the
+                  agents. Even more managers to manage the managers
                 </span>
               </p>
 
               <p>
-                Imagine if you could take 3 time-consuming tasks. Then make them
-                easy and quick
+                And the alternative seems to be low quality outsourcing
+                companies. Or more recently, AIs that just frustrate your
+                customers
+              </p>
+
+              <p>It doesn&apos;t need to be like this</p>
+
+              <p>
+                <strong className="font-semibold">
+                  hndl is building the first founder-only customer support
+                  system for B2B Marketplaces.
+                </strong>{" "}
+                Software that takes care of your customers so well that you can
+                scale customer support without ever hiring anyone else
               </p>
 
               <p>
-                <strong>Email & Slack:</strong> You spend most of your day
-                answering emails and/or Slack messages. Which means you&apos;re
-                not doing everything else. Let us triage your emails and Slack
-                so you spend less time on unimportant stuff and never miss
-                important messages
+                If you already have a customer support team. You&apos;ll never
+                need to hire anyone beyond your current team
               </p>
 
               <p>
-                <strong>After sales calls:</strong> Customers want to talk to
-                you and you love talking to them. But it&apos;s hard to do all
-                the work that comes after each sales call. Let us update your
-                CRM, follow up, make sure action items get done, etc
+                And if it&apos;s just you and your cofounders. You can scale to
+                $1B without ever hiring anyone ever
               </p>
 
               <p>
-                <strong>Customer success:</strong> Staying involved in your
-                customer success and customer support motions lets you stay
-                close to users. But it&apos;s hard to keep up with the
-                repetitive parts. Let us help answer customer questions, prepare
-                calls, gather data for check-ins with customers, etc.
+                The way hndl works is simple, easy and familiar. You give
+                instructions to an AI just like any other customer support AI
+                tool
+              </p>
+
+              <p>The only thing that&apos;s different is our router</p>
+
+              <p>
+                This router automatically breaks your instructions down into
+                microtasks. Then decides whether to assign each microtask to an
+                AI or to a human
               </p>
 
               <p>
-                hndl is the first AI agent that actually can do those 3 tasks in
-                a way that&apos;s good enough to be useful. Because hndl is the
-                first AI agent that combines what AI does best with what humans
-                do best
-              </p>
-
-              <p>
-                Our AI does most of its work with tool calls. Like other AI
-                agents
-              </p>
-
-              <p>
-                The difference is that hndl is the first AI agent that can also
-                make human calls. In other words, our AI calls on humans to do
-                parts of the work
+                The router assigns most microtasks to AI. But when it&apos;s
+                best to get a human involved, the router assigns the microtask
+                to a human from our pool of &quot;handlers&quot; in a way that
+                doesn&apos;t require any work (or hiring) from you
               </p>
 
               <p>
@@ -98,7 +97,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                   href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-blue-600 underline hover:text-blue-800"
+                  className="font-normal text-blue-600 underline hover:text-blue-800"
                 >
                   Q&A
                 </a>{" "}
@@ -106,18 +105,19 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
-                  className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
+                  className="font-normal text-blue-600 underline hover:text-blue-800 cursor-pointer"
                 >
                   waitlist
                 </button>{" "}
-                and I&apos;ll be in touch quickly to help you get set up
               </p>
             </div>
 
             {/* Signature */}
-            <div className="mt-8 pt-6 border-t border-gray-200">
-              <div className="text-lg text-gray-900 mb-2">Julien Newman</div>
-              <div className="text-md text-gray-500">Founder & CEO</div>
+            <div className="mt-8">
+              <div className="font-semibold text-lg text-gray-900 mb-1">
+                Julien Newman
+              </div>
+              <div className="text-md text-gray-600">Founder & CEO</div>
             </div>
           </div>
         </div>

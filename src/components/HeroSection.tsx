@@ -28,12 +28,11 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
           <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight text-center md:text-left font-bold">
-            Startup CEOs are way too busy
+            Grow your B2B marketplace to $1B
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Get unbusy with the first AI agent that can{" "}
-            <strong>make both tool calls and human calls</strong>
+            ...without ever adding any more customer support headcount
           </p>
 
           <div className="flex items-center space-x-4">
@@ -61,7 +60,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
                 className="bg-gray-50 hover:bg-gray-100 text-black p-6 text-lg rounded-lg"
               >
                 <span className="inline-flex items-center gap-2">
-                  Demo with founder
+                  Demo with our CEO
                   <span className="hidden md:inline-flex items-center justify-center w-6 h-6 rounded-md bg-gray-200 text-black text-sm font-bold">
                     F
                   </span>
