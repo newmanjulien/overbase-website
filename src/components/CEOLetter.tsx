@@ -44,7 +44,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                The only alternative are janky AIs that just frustrate customers
+                The alternatives are janky AIs that just frustrate customers. Or
+                low quality outsourcing companies
               </p>
 
               <p>It doesn't need to be like this</p>
@@ -69,9 +70,26 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                We started by helping B2B Marketplace founders answer customer
-                support emails. And later we will help you with your full
-                customer support stack
+                The way hndl works is simple, easy and familiar. You give
+                instructions to an AI just like any other customer support AI
+                tool
+              </p>
+
+              <p>
+                The only thing that's different is our router which works in the
+                background
+              </p>
+
+              <p>
+                This router breaks your instructions down into microtasks. Then
+                decides whether to assign each microtask to an AI or to a human
+              </p>
+
+              <p>
+                AI does a better job of most of the microtasks so the router
+                assigns most of them to AI. But sometimes it's best to get a
+                human involved and the router assigns the microtask to a human
+                from our pool of "handlers"
               </p>
 
               <p>
@@ -84,7 +102,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   Q&A
                 </a>{" "}
-                if you have questions. Join our{" "}
+                or join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
@@ -92,17 +110,16 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   waitlist
                 </button>{" "}
-                and I&apos;ll be in touch quickly to help you get set up. Or
-                just email me at: julien@hndlai.com
+                and I&apos;ll be in touch quickly
               </p>
             </div>
 
             {/* Signature */}
             <div className="mt-8">
-              <div className="font-medium text-xl text-gray-900 mb-2">
+              <div className="font-semibold text-lg text-gray-900 mb-1">
                 Julien Newman
               </div>
-              <div className="text-lg text-gray-500">Founder & CEO</div>
+              <div className="text-md text-gray-600">Founder & CEO</div>
             </div>
           </div>
         </div>

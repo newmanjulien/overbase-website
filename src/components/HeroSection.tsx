@@ -32,7 +32,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
           </h1>
 
           <p className="text-xl text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            ...without adding any customer support headcount
+            ...without ever adding any customer support headcount
           </p>
 
           <div className="flex items-center space-x-4">
