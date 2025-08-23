@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "hndl",
-  description: "Task handler for C-Suite Execs",
+  title: "hndl › founder-only",
+  description: "Founder-only customer support",
   icons: "/favicon.ico",
 };
 

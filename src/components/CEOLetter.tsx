@@ -25,31 +25,31 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Scaling your B2B Marketplace's customer support beyond your
+                Scaling your B2B Marketplace&apos;s customer support beyond your
                 current team seems like a daunting task
               </p>
 
               <p>
-                You'll need to hire endlessly.{" "}
+                You&apos;ll need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
-                    color: "black",
+                    color: "#FF5437",
                     padding: "2px 3px",
                   }}
                 >
-                  Hire agents to take care of customers. Hire managers to manage
-                  the agents. Hire more managers to manage the managers
+                  Agents to take care of customers. Managers to manage the
+                  agents. Even more managers to manage the managers
                 </span>
               </p>
 
               <p>
                 And the alternative seems to be low quality outsourcing
-                companies. Or more recently, AIs that don't really work and
-                frustrate customers
+                companies. Or more recently, AIs that just frustrate your
+                customers
               </p>
 
-              <p>It doesn't need to be like this</p>
+              <p>It doesn&apos;t need to be like this</p>
 
               <p>
                 <strong className="font-semibold">
@@ -61,13 +61,13 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                If you already have a customer support team. You'll never need
-                to hire anyone beyond your current team
+                If you already have a customer support team. You&apos;ll never
+                need to hire anyone beyond your current team
               </p>
 
               <p>
-                And if it's just you and your cofounders. You can scale to $1B
-                without ever hiring anyone ever
+                And if it&apos;s just you and your cofounders. You can scale to
+                $1B without ever hiring anyone ever
               </p>
 
               <p>
@@ -76,7 +76,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 tool
               </p>
 
-              <p>The only thing that's different is our router</p>
+              <p>The only thing that&apos;s different is our router</p>
 
               <p>
                 This router automatically breaks your instructions down into
@@ -85,10 +85,10 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                The router assigns most microtasks to AI. But when it's best to
-                get a human involved, the router assigns the microtask to a
-                human from our pool of "handlers" in a way that doesn't require
-                any work (or hiring) from you
+                The router assigns most microtasks to AI. But when it&apos;s
+                best to get a human involved, the router assigns the microtask
+                to a human from our pool of &quot;handlers&quot; in a way that
+                doesn&apos;t require any work (or hiring) from you
               </p>
 
               <p>

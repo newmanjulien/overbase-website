@@ -92,6 +92,17 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Global text selection */
+  ::selection {
+    background-color: #d0e7ff; /* light blue background */
+    color: #0070f3; /* blue text */
+  }
+
+  ::-moz-selection {
+    background-color: #d0e7ff;
+    color: #0070f3;
+  }
 }
 
 /**
