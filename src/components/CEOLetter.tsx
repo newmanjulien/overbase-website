@@ -38,8 +38,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  Agents to take care of customers. Managers to manage the
-                  agents. Even more managers to manage the managers
+                  Customer support agents to take care of customers. Managers to
+                  manage the agents. Even more managers to manage the managers
                 </span>
               </p>
 
