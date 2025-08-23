@@ -9,8 +9,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
           {/* Background papers – stack effect */}
-          <div className="absolute inset-0 bg-white rounded-lg shadow-lg transform rotate-1 scale-[1.02] border border-gray-200"></div>
-          <div className="absolute inset-0 bg-white rounded-lg shadow-md transform -rotate-1 scale-[1.01] border border-gray-200"></div>
+          <div className="absolute inset-0 bg-white rounded-lg shadow-lg transform -rotate-1 scale-[1.02] translate-x-1 translate-y-1 border border-gray-200"></div>
+          <div className="absolute inset-0 bg-white rounded-lg shadow-md transform rotate-2 scale-[1.015] -translate-x-1 translate-y-0.5 border border-gray-200"></div>
           <div className="absolute inset-0 bg-gray-100 rounded-lg shadow-sm transform rotate-0.5 scale-[1.005] border border-gray-200"></div>
 
           {/* Main letter */}
@@ -25,8 +25,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Scaling your B2B Marketplace&apos;s customer support beyond your
-                current team seems like a daunting task
+                Scaling your B2B Marketplace&apos;s customer support seems like
+                a daunting task
               </p>
 
               <p>
@@ -38,48 +38,37 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  Agents to take care of customers. Managers to manage the
-                  agents. Even more managers to manage the managers
+                  Customer support agents to take care of customers. Managers to
+                  manage the agents. Even more managers to manage the managers
                 </span>
               </p>
 
               <p>
                 And the alternative seems to be low quality outsourcing
-                companies. Or more recently, AIs that just frustrate your
-                customers
+                companies. Or AIs that just frustrate your customers
               </p>
 
               <p>It doesn&apos;t need to be like this</p>
 
               <p>
                 <strong className="font-semibold">
-                  hndl is building the first founder-only customer support
-                  system for B2B Marketplaces.
+                  hndl is the first founder-only customer support system.
                 </strong>{" "}
-                Software that takes care of your customers so well that you can
-                scale customer support without ever hiring anyone else
-              </p>
-
-              <p>
-                If you already have a customer support team. You&apos;ll never
-                need to hire anyone beyond your current team
-              </p>
-
-              <p>
-                And if it&apos;s just you and your cofounders. You can scale to
-                $1B without ever hiring anyone ever
+                Our software takes care of your B2B Marketplace&apos;s customers
+                so well that you can scale customer support without ever hiring
+                anyone else
               </p>
 
               <p>
                 The way hndl works is simple, easy and familiar. You give
-                instructions to an AI just like any other customer support AI
-                tool
+                instructions and context to an AI then the work gets done
+                automatically. Just like with any other customer support AI tool
               </p>
 
-              <p>The only thing that&apos;s different is our router</p>
+              <p>The thing that&apos;s different is hndl&apos;s router</p>
 
               <p>
-                This router automatically breaks your instructions down into
+                Our router automatically breaks down your instructions into
                 microtasks. Then decides whether to assign each microtask to an
                 AI or to a human
               </p>
@@ -87,8 +76,12 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               <p>
                 The router assigns most microtasks to AI. But when it&apos;s
                 best to get a human involved, the router assigns the microtask
-                to a human from our pool of &quot;handlers&quot; in a way that
-                doesn&apos;t require any work (or hiring) from you
+                to a human from our pool of handlers
+              </p>
+
+              <p>
+                The result is that your customer support work easily gets done
+                in the highest quality way possible
               </p>
 
               <p>
@@ -109,6 +102,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   waitlist
                 </button>{" "}
+                if you&apos;re interested
               </p>
             </div>
 
