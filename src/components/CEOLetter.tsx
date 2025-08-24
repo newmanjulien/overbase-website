@@ -38,8 +38,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  Customer support agents to take care of customers. Managers to
-                  manage the agents. More managers to manage the managers
+                  Customer support agents. Managers to manage the agents. More
+                  managers to manage the managers
                 </span>
               </p>
 
@@ -61,14 +61,14 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
               <p>
                 The way hndl works is simple, easy and familiar. You give
-                instructions and context to an AI then the work gets done
+                instructions and context to an AI. Then the work gets done
                 automatically. Just like with any other customer support AI tool
               </p>
 
               <p>
-                What&apos;s different is hndl&apos;s router which breaks down
-                the instructions you gave into microtasks. Then decides whether
-                to assign each microtask to an AI or to a human
+                What&apos;s different is our router which breaks your
+                instructions down into microtasks. Then decides to assign each
+                microtask to AI or to a human
               </p>
 
               <p>
@@ -78,8 +78,12 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                The result is that customer support easily gets done in the
-                highest quality way
+                The result is a{" "}
+                <strong className="font-semibold">
+                  perfectly optimized combination of AI and humans. Which does
+                  customer support better and more easily than any other
+                  approach
+                </strong>
               </p>
 
               <p>
@@ -99,7 +103,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   Q&A
                 </a>{" "}
-                if you have questions or join our{" "}
+                if you have questions. Or join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
