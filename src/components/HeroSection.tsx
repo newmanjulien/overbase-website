@@ -27,7 +27,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
-          <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight text-center md:text-left font-semibold">
+          <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight text-center md:text-left font-bold">
             Grow your B2B marketplace to $1B
           </h1>
 
