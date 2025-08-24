@@ -30,7 +30,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                You will need to hire endlessly.{" "}
+                You need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -38,8 +38,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                     padding: "2px 3px",
                   }}
                 >
-                  Customer support agents to take care of customers. Managers to
-                  manage the agents. More managers to manage the managers
+                  Customer support agents. Managers to manage the agents. More
+                  managers to manage the managers
                 </span>
               </p>
 
@@ -66,9 +66,9 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                What&apos;s different is hndl&apos;s router which breaks down
-                the instructions you gave into microtasks. Then decides whether
-                to assign each microtask to an AI or to a human
+                What&apos;s different is our router which breaks your
+                instructions down into microtasks. Then decides to assign each
+                microtask to AI or to a human
               </p>
 
               <p>
@@ -78,9 +78,12 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                The result is a perfectly optimized combination of AI and
-                humans. Which does customer support better and more easily than
-                any other approach
+                The result is a{" "}
+                <strong className="font-semibold">
+                  perfectly optimized combination of AI and humans. Which does
+                  customer support better and more easily than any other
+                  approach
+                </strong>
               </p>
 
               <p>
