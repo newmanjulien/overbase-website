@@ -30,7 +30,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                You need to hire endlessly.{" "}
+                You will need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -61,7 +61,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
               <p>
                 The way hndl works is simple, easy and familiar. You give
-                instructions and context to an AI then the work gets done
+                instructions and context to an AI. Then the work gets done
                 automatically. Just like with any other customer support AI tool
               </p>
 
@@ -78,8 +78,9 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                The result is that customer support easily gets done in the
-                highest quality way
+                The result is a perfectly optimized combination of AI and
+                humans. Which does customer support better and more easily than
+                any other approach
               </p>
 
               <p>
@@ -99,7 +100,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 >
                   Q&A
                 </a>{" "}
-                if you have questions or join our{" "}
+                if you have questions. Or join our{" "}
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
