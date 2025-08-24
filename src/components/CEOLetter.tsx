@@ -67,7 +67,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
               <p>
                 What&apos;s different is our router. It breaks your instructions
-                down into microtasks then assigns each microtask to AI or to a
+                down into microtasks. Then it assigns each microtask to AI or to a
                 human
               </p>
 
