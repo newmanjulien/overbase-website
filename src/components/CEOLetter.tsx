@@ -87,13 +87,6 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               </p>
 
               <p>
-                We&apos;re an early stage business and that means we currently
-                only help you answer customer support emails. But long term
-                we&apos;ll help you make your entire customer support stack
-                founder-only
-              </p>
-
-              <p>
                 Check out this{" "}
                 <a
                   href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da"
