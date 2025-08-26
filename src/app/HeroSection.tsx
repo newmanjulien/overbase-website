@@ -1,17 +1,18 @@
+"use client";
+
 import { useEffect } from "react";
-import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
+import { Button } from "../components/ui/button";
 import Image from "next/image";
 
-interface HeroSectionProps {
-  onJoinWaitlist: () => void;
-}
+export function HeroSection() {
+  const router = useRouter();
 
-export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
   // Handle keyboard press for "w" and for "f"
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
       if (e.key.toLowerCase() === "w") {
-        onJoinWaitlist();
+        router.push("/waitlist");
       }
 
       if (e.key.toLowerCase() === "f") {
@@ -20,7 +21,7 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
     };
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
-  }, [onJoinWaitlist]);
+  }, [router]);
 
   return (
     <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
@@ -32,13 +33,13 @@ export function HeroSection({ onJoinWaitlist }: HeroSectionProps) {
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Grow your startup to $1B without ever adding any more customer
-            support headcount
+            Grow your startup to $1B without adding more customer support
+            headcount
           </p>
 
           <div className="flex items-center space-x-4">
             <Button
-              onClick={onJoinWaitlist}
+              onClick={() => router.push("/waitlist")}
               size="lg"
               className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-lg rounded-lg"
             >

@@ -1,8 +1,9 @@
-interface CEOLetterProps {
-  onJoinWaitlist: () => void;
-}
+"use client";
+import { useRouter } from "next/navigation";
 
-export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
+export function CEOLetter() {
+  const router = useRouter();
+
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
       <div className="max-w-4xl mx-auto">
@@ -99,7 +100,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 if you have questions. Or join our{" "}
                 <button
                   type="button"
-                  onClick={onJoinWaitlist}
+                  onClick={() => router.push("/waitlist")}
                   className="font-normal text-blue-600 underline hover:text-blue-800 cursor-pointer"
                 >
                   waitlist
