@@ -25,8 +25,8 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Scaling customer support is one of the hardest parts of building
-                your B2B Marketplace
+                Scaling customer support is one of the biggest headaches for
+                growing startups
               </p>
 
               <p>
@@ -54,36 +54,36 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
                 <strong className="font-semibold">
                   hndl is the first founder-only customer support system.
                 </strong>{" "}
-                Our software takes care of your B2B Marketplace&apos;s customers
-                so well that you can scale customer support without ever hiring
-                anyone else
+                Our software takes care of your startup&apos;s customers so well
+                that you can scale customer support without ever hiring anyone
+                else
               </p>
 
               <p>
-                The way hndl works is simple, easy and familiar. You give
-                instructions and context to an AI. Then the work gets done
-                automatically. Just like with any other customer support AI tool
+                The way hndl works is simple, easy and familiar. It&apos;s just
+                kust like with any agentic AI
               </p>
 
               <p>
-                What&apos;s different is our router. It breaks your instructions
-                down into microtasks. Then it assigns each microtask to AI or to a
-                human
+                What&apos;s different is that hndl&apos;s AI can get help from
+                humans
               </p>
 
               <p>
-                The router assigns most microtasks to AI. But when it&apos;s
-                best to get a human involved, the router assigns the microtask
-                to a human from our pool of vetted and trained handlers
+                When you give instructions to our AI, it knows which parts it
+                can do well. And which parts a human would be a lot better
               </p>
 
               <p>
-                The result is a{" "}
-                <strong className="font-semibold">
-                  perfectly optimized combination of AI and humans. Which does
-                  customer support better and more easily than any other
-                  approach
-                </strong>
+                The AI has access to hndl's pool of human workers who are
+                specialized in doing one-off tasks our AI delegates to them. And
+                the AI gets those humans to take care of the tasks which humans
+                do better than AI
+              </p>
+
+              <p>
+                The result is an AI-lead system which does your customer support
+                so well you'll never hire anyone else
               </p>
 
               <p>
@@ -113,7 +113,7 @@ export function CEOLetter({ onJoinWaitlist }: CEOLetterProps) {
               <div className="font-semibold text-lg text-gray-900 mb-1">
                 Julien Newman
               </div>
-              <div className="text-md text-gray-600">Founder & CEO</div>
+              <div className="text-md text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>
