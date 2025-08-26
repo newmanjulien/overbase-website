@@ -1,34 +1,14 @@
-"use client";
-import { useState } from "react";
-import { Header } from "../components/Header";
-import { HeroSection } from "../components/HeroSection";
-import { CEOLetter } from "../components/CEOLetter";
-import { Footer } from "../components/Footer";
-import { WaitlistPage } from "../components/WaitlistPage";
-import { ConfirmationPage } from "../components/ConfirmationPage";
+import { Header } from "./Header";
+import { HeroSection } from "./HeroSection";
+import { CEOLetter } from "./CEOLetter";
+import { Footer } from "./Footer";
 
-export default function Page() {
-  const [currentPage, setCurrentPage] = useState<
-    "home" | "waitlist" | "confirmation"
-  >("home");
-
-  const showWaitlist = () => setCurrentPage("waitlist");
-  const showHome = () => setCurrentPage("home");
-  const showConfirmation = () => setCurrentPage("confirmation");
-
-  if (currentPage === "waitlist") {
-    return <WaitlistPage onBack={showHome} onSubmit={showConfirmation} />;
-  }
-
-  if (currentPage === "confirmation") {
-    return <ConfirmationPage onHome={showHome} />;
-  }
-
+export default function HomePage() {
   return (
     <div className="min-h-screen bg-white">
-      <Header onJoinWaitlist={showWaitlist} />
-      <HeroSection onJoinWaitlist={showWaitlist} />
-      <CEOLetter onJoinWaitlist={showWaitlist} />
+      <Header />
+      <HeroSection />
+      <CEOLetter />
       <Footer />
     </div>
   );

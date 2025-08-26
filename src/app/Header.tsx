@@ -1,11 +1,12 @@
-import Logo from "./ui/Logo";
-import { Button } from "./ui/button";
+"use client";
+import { useRouter } from "next/navigation";
 
-interface HeaderProps {
-  onJoinWaitlist: () => void;
-}
+import Logo from "../components/ui/Logo";
+import { Button } from "../components/ui/button";
 
-export function Header({ onJoinWaitlist }: HeaderProps) {
+export function Header() {
+  const router = useRouter();
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
@@ -21,7 +22,7 @@ export function Header({ onJoinWaitlist }: HeaderProps) {
           <Button
             size="lg"
             className="bg-gray-900 hover:bg-gray-800 text-white rounded-lg text-base"
-            onClick={onJoinWaitlist}
+            onClick={() => router.push("/waitlist")}
           >
             Join waitlist
           </Button>
