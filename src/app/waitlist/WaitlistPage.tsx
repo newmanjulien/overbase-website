@@ -1,15 +1,17 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
-
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
-import Logo from "../..//components/ui/Logo";
+import Logo from "../../components/ui/Logo";
 import { AnimatedBackground } from "../../components/AnimatedBackground";
 
-export function WaitlistPage() {
-  const router = useRouter();
+interface WaitlistPageProps {
+  onBack: () => void;
+  onSubmit: () => void;
+}
+
+export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -27,7 +29,7 @@ export function WaitlistPage() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Something went wrong");
 
-      router.push("/waitlist/confirmation");
+      onSubmit(); // call parent callback
     } catch (err) {
       console.error("Email send failed:", err);
       alert("Oops, something went wrong. Please try again.");
@@ -45,7 +47,7 @@ export function WaitlistPage() {
           <button
             type="button"
             aria-label="Go back"
-            onClick={() => router.push("/")}
+            onClick={onBack} // call parent callback
             className="h-12 w-auto"
           >
             <div className="h-full aspect-[1000/600]">
@@ -119,6 +121,7 @@ export function WaitlistPage() {
         </div>
       </div>
 
+      {/* Right side - Animated background */}
       <AnimatedBackground />
     </div>
   );

@@ -1,9 +1,11 @@
+"use client";
+
 import { Button } from "../../../components/ui/button";
 import Logo from "../../../components/ui/Logo";
 import { AnimatedBackground } from "../../../components/AnimatedBackground";
 
 interface ConfirmationPageProps {
-  onHome: () => void;
+  onHome: () => void; // parent controls navigation
 }
 
 export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
@@ -20,7 +22,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
           <button
             type="button"
             aria-label="Go back to home"
-            onClick={onHome}
+            onClick={onHome} // parent callback
             className="h-12 w-auto"
           >
             <div className="h-full aspect-[1000/600]">
@@ -45,7 +47,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
             {/* Two buttons side by side */}
             <div className="flex gap-4">
               <Button
-                onClick={onHome}
+                onClick={onHome} // parent callback
                 size="lg"
                 className="flex-1 bg-transparent hover:bg-gray-100 text-gray-900 p-6 text-md rounded-lg"
               >
@@ -64,6 +66,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
         </div>
       </div>
 
+      {/* Right side - Animated background */}
       <AnimatedBackground />
     </div>
   );

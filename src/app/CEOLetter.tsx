@@ -76,7 +76,7 @@ export function CEOLetter() {
               </p>
 
               <p>
-                The AI has access to hndl's pool of human workers who are
+                The AI has access to hndl&apos;s pool of human workers who are
                 specialized in doing one-off tasks our AI delegates to them. And
                 the AI gets those humans to take care of the tasks which humans
                 do better than AI
@@ -84,7 +84,7 @@ export function CEOLetter() {
 
               <p>
                 The result is an AI-lead system which does your customer support
-                so well you'll never hire anyone else
+                so well you&apos;ll never hire anyone else
               </p>
 
               <p>
