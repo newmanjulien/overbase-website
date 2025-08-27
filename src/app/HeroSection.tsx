@@ -28,16 +28,25 @@ export function HeroSection() {
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
-          <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight text-center md:text-left font-bold">
-            Founder-only customer support
+          <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
+            Customer Success{" "}
+            <span
+              style={{
+                backgroundColor: "rgba(255, 0, 0, 0.1)",
+                color: "#FF5437",
+                padding: "2px 3px",
+              }}
+            >
+              with Zero Hiring
+            </span>
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Grow your startup to $1B without adding more customer support
-            headcount
+            Accelerate revenue with the best Customer Success without hiring a
+            single new Customer Success Manager
           </p>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 mt-2">
             <Button
               onClick={() => router.push("/waitlist")}
               size="lg"

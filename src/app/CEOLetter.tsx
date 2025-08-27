@@ -26,8 +26,13 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Scaling customer support is one of the biggest headaches for
-                growing startups
+                Scaling customer success is turning you into a service business
+                when you're supposed to be a tech startup
+              </p>
+
+              <p>
+                And the alternatives seem to be low quality outsourcing. Or AIs
+                that frustrate your customers
               </p>
 
               <p>
