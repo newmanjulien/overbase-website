@@ -65,7 +65,7 @@ export function CEOLetter() {
               <p>
                 We built a pool of vetted humans in low cost geographies who are
                 specialized in doing one-off tasks delegated by an AI. And your
-                AI agent can easily put these humans to work through a simple
+                AI agent can easily get these humans to help it through a simple
                 API call
               </p>
 
