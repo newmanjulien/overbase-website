@@ -27,14 +27,14 @@ export function CEOLetter() {
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
                 Your business has significantly less revenue than it should
-                because you're not offering enterprise-grade Customer Success to
-                all your customers
+                because you&apos;re not offering enterprise-grade Customer
+                Success to all your customers
               </p>
 
               <p>
                 <strong className="font-semibold">
-                  Your team is doing Customer Success, they're just not doing it
-                  well
+                  Your team is doing Customer Success, they&apos;re just not
+                  doing it well
                 </strong>
               </p>
 
@@ -46,24 +46,24 @@ export function CEOLetter() {
 
               <p>
                 And the result is that customer churn is higher than it should
-                be. Your renewal rate is lower than it should. And you're not
-                getting the upsell expansions you would with enterprise-grade
-                Customer Success
+                be. Your renewal rate is lower than it should. And you&apos;re
+                not getting the upsell expansions you would with
+                enterprise-grade Customer Success
               </p>
 
-              <p>You're not alone</p>
+              <p>You&apos;re not alone</p>
               <p>
                 {" "}
                 Most SaaS businesses struggle with this. The problem is that{" "}
                 <strong className="font-semibold">
-                  your unit economics don't allow you to hire enough Customer
-                  Success Managers
+                  your unit economics don&apos;t allow you to hire enough
+                  Customer Success Managers
                 </strong>
               </p>
 
               <p>
-                hndl is building Customer Success automation that's so good you
-                can offer enterprise-grade Customer Success to all your
+                hndl is building Customer Success automation that&apos;s so good
+                you can offer enterprise-grade Customer Success to all your
                 customers at any scale without ever hiring another Customer
                 Success Manager
               </p>
@@ -75,14 +75,16 @@ export function CEOLetter() {
               </p>
 
               <p>
-                What's different about hndl is that we have humans in the loop
+                What&apos;s different about hndl is that we have humans in the
+                loop
               </p>
 
               <p>
-                You give instructions to hndl's AI agents and the AI does your
-                Customer Success work. The reason the AI does such great work is
-                that when it encounters a task which humans would do better. It
-                asks one of the Customer Success Experts at hndl HQ to help
+                You give instructions to hndl&apos;s AI agents and the AI does
+                your Customer Success work. The reason the AI does such great
+                work is that when it encounters a task which humans would do
+                better. It asks one of the Customer Success Experts at hndl HQ
+                to help
               </p>
 
               <p>
