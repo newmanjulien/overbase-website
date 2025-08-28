@@ -26,8 +26,8 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                It's amazing what the AI agent your startup built can do. But
-                it's also amazing what your AI agent cannot do
+                It&apos;s amazing what the AI agent your startup built can do.
+                But it&apos;s also amazing what your AI agent cannot do
               </p>
 
               <p>
@@ -42,10 +42,10 @@ export function CEOLetter() {
                   the LLM tech
                 </span>
                 and the crazy thing is that the tasks which your AI agent just
-                can't seem to do are tasks which any human would find easy
+                can&apos;t seem to do are tasks which any human would find easy
               </p>
 
-              <p>It doesn't need to be like this</p>
+              <p>It doesn&apos;t need to be like this</p>
 
               <p>
                 <strong className="font-semibold">
@@ -58,8 +58,8 @@ export function CEOLetter() {
 
               <p>
                 The way hndl works is similar to data labeling services like
-                Scale AI. But our humans are not training your AI. They're
-                helping your AI agent do it's job
+                Scale AI. But our humans are not training your AI. They&apos;re
+                helping your AI agent do it&apos;s job
               </p>
 
               <p>
@@ -70,10 +70,10 @@ export function CEOLetter() {
               </p>
 
               <p>
-                There's 0 management work for you. You're in full control of
-                which humans are working on which of your tasks. And from the
-                perspective of your users, they can't tell that there's a human
-                in the loop at all
+                There&apos;s 0 management work for you just an API. You&apos;re
+                in full control of which humans are working on which of your
+                tasks. And from the perspective of your users, they can&apos;t
+                tell that there&apos;s a human in the loop at all
               </p>
 
               <p>
