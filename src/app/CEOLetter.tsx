@@ -45,7 +45,7 @@ export function CEOLetter() {
                 can&apos;t seem to do are tasks which any human would find easy
               </p>
 
-              <p>It doesn&apos;t need to be like this</p>
+              <p>hndl&apos;s humans-as-a-service changes this</p>
 
               <p>
                 <strong className="font-semibold">
