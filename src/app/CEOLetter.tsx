@@ -26,17 +26,11 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Scaling customer success is turning you into a service business
-                when you're supposed to be a tech startup
+                It's amazing what the AI agent your startup built can do. But
+                it's also amazing what your AI agent cannot do
               </p>
 
               <p>
-                And the alternatives seem to be low quality outsourcing. Or AIs
-                that frustrate your customers
-              </p>
-
-              <p>
-                You need to hire endlessly.{" "}
                 <span
                   style={{
                     backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -44,52 +38,47 @@ export function CEOLetter() {
                     padding: "2px 3px",
                   }}
                 >
-                  Customer support agents. Managers to manage the agents. More
-                  managers to manage the managers
+                  Your product is constantly struggling against the limits of
+                  the LLM tech
                 </span>
+                and the crazy thing is that the tasks which your AI agent just
+                can't seem to do are tasks which any human would find easy
               </p>
 
-              <p>
-                And the alternatives seem to be low quality outsourcing. Or AIs
-                that frustrate your customers
-              </p>
-
-              <p>It doesn&apos;t need to be like this</p>
+              <p>It doesn't need to be like this</p>
 
               <p>
                 <strong className="font-semibold">
-                  hndl is the first founder-only customer support system.
+                  hndl is a way to easily make your AI agent 10x smarter
+                  overnight.
                 </strong>{" "}
-                Our software takes care of your startup&apos;s customers so well
-                that you can scale customer support without ever hiring anyone
-                else
+                Our API lets your AI agent programmatically get a human to do
+                any small one-off task which the AI needs help with
               </p>
 
               <p>
-                The way hndl works is simple, easy and familiar. It&apos;s just
-                kust like with any agentic AI
+                The way hndl works is similar to data labeling services like
+                Scale AI. But our humans are not training your AI. They're
+                helping your AI agent do it's job
               </p>
 
               <p>
-                What&apos;s different is that hndl&apos;s AI can get help from
-                humans
+                We built a pool of vetted humans in low cost geographies who are
+                specialized in doing one-off tasks delegated by an AI. And your
+                AI agent can easily put these humans to work through a simple
+                API call
               </p>
 
               <p>
-                When you give instructions to our AI, it knows which parts it
-                can do well. And which parts a human would be a lot better
+                There's 0 management work for you. You're in full control of
+                which humans are working on which of your tasks. And from the
+                perspective of your users, they can't tell that there's a human
+                in the loop at all
               </p>
 
               <p>
-                The AI has access to hndl&apos;s pool of human workers who are
-                specialized in doing one-off tasks our AI delegates to them. And
-                the AI gets those humans to take care of the tasks which humans
-                do better than AI
-              </p>
-
-              <p>
-                The result is an AI-lead system which does your customer support
-                so well you&apos;ll never hire anyone else
+                Plus the work is always reliable because we give your AI tools
+                to QA the work our humans did
               </p>
 
               <p>
