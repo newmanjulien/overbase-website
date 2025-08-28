@@ -27,9 +27,9 @@ export function HeroSection() {
     <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
-        <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-xl mx-auto md:mx-0 py-12 md:py-0">
+        <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
           <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
-            Easily get humans{" "}
+            Customer Success{" "}
             <span
               style={{
                 backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -37,13 +37,13 @@ export function HeroSection() {
                 padding: "2px 3px",
               }}
             >
-              as-a-service
+              with Zero Hiring
             </span>
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            <strong>Make your AI agent 10X smarter</strong> by programmatically
-            combining what AIs do well with what humans do well
+            Increase revenue by giving enterprise-grade Customer Success to all
+            customers <strong>without hiring any more CSMs</strong>
           </p>
 
           <div className="flex items-center space-x-4 mt-2">

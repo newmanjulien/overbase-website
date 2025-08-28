@@ -26,59 +26,63 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                It&apos;s amazing what the AI agent your startup built can do.
-                But it&apos;s also amazing what your AI agent cannot do
+                Your business has significantly less revenue than it should
+                because you're not offering enterprise-grade Customer Success to
+                all your customers
               </p>
-
-              <p>
-                <span
-                  style={{
-                    backgroundColor: "rgba(255, 0, 0, 0.1)",
-                    color: "#FF5437",
-                    padding: "2px 3px",
-                  }}
-                >
-                  Your product is constantly struggling against the limits of
-                  the LLM tech
-                </span>
-                and the crazy thing is that the tasks which your AI agent just
-                can&apos;t seem to do are tasks which any human would find easy
-              </p>
-
-              <p>hndl&apos;s humans-as-a-service changes this</p>
 
               <p>
                 <strong className="font-semibold">
-                  hndl is a way to easily make your AI agent 10x smarter
-                  overnight.
-                </strong>{" "}
-                Our API lets your AI agent programmatically get a human to do
-                any small one-off task which the AI needs help with
+                  Your team is doing Customer Success, they're just not doing it
+                  well
+                </strong>
               </p>
 
               <p>
-                The way hndl works is similar to data labeling services like
-                Scale AI. But our humans are not training your AI. They&apos;re
-                helping your AI agent do it&apos;s job
+                Because your Customer Success Managers are getting bogged down
+                by high volume, low level transactional conversations with
+                customers. Instead of spending time on upselling and renewals
               </p>
 
               <p>
-                We built a pool of vetted humans in low cost geographies who are
-                specialized in doing one-off tasks delegated by an AI. And your
-                AI agent can easily get these humans to help it through a simple
-                API call
+                And the result is that customer churn is higher than it should
+                be. Your renewal rate is lower than it should. And you're not
+                getting the upsell expansions you would with enterprise-grade
+                Customer Success
+              </p>
+
+              <p>You're not alone</p>
+              <p>
+                {" "}
+                Most SaaS businesses struggle with this. The problem is that{" "}
+                <strong className="font-semibold">
+                  your unit economics don't allow you to hire enough Customer
+                  Success Managers
+                </strong>
               </p>
 
               <p>
-                There&apos;s 0 management work for you just an API. You&apos;re
-                in full control of which humans are working on which of your
-                tasks. And from the perspective of your users, they can&apos;t
-                tell that there&apos;s a human in the loop at all
+                hndl is building Customer Success automation that's so good you
+                can offer enterprise-grade Customer Success to all your
+                customers at any scale without ever hiring another Customer
+                Success Manager
               </p>
 
               <p>
-                Plus the work is always reliable because we give your AI tools
-                to QA the work our humans did
+                hndl is easy, quick and intuitive to set up. You set up our AI
+                agents using a familiar workflow UI which lets you program and
+                customize the AI for your business
+              </p>
+
+              <p>
+                What's different about hndl is that we have humans in the loop
+              </p>
+
+              <p>
+                You give instructions to hndl's AI agents and the AI does your
+                Customer Success work. The reason the AI does such great work is
+                that when it encounters a task which humans would do better. It
+                asks one of the Customer Success Experts at hndl HQ to help
               </p>
 
               <p>

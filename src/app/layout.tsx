@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "hndl › humans-as-a-service",
-  description: "Founder-only customer support",
+  title: "hndl › zero hiring",
+  description: "Zero Hiring Customer Success",
   icons: "/favicon.ico",
 };
 
