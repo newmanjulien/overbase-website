@@ -69,9 +69,9 @@ export function CEOLetter() {
               </p>
 
               <p>
-                hndl is easy, quick and intuitive to set up. You set up our AI
-                agents using a familiar workflow UI which lets you program and
-                customize the AI for your business
+                hndl is easy, quick and intuitive. You simply set up AI agents
+                using a familiar workflow UI which lets you program the AI for
+                your business
               </p>
 
               <p>
@@ -80,11 +80,10 @@ export function CEOLetter() {
               </p>
 
               <p>
-                You give instructions to hndl&apos;s AI agents and the AI does
+                You give instructions to hndl&apos;s AI agents then the AI does
                 your Customer Success work. The reason the AI does such great
-                work is that when it encounters a task which humans would do
-                better. It asks one of the Customer Success Experts at hndl HQ
-                to help
+                work is it can ask one of the Customer Success Experts at hndl
+                HQ for help when it encounters tasks it can&apos;t do well
               </p>
 
               <p>
