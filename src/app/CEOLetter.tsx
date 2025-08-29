@@ -26,38 +26,40 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Your business has significantly less revenue than it should
-                because you&apos;re not offering enterprise-grade Customer
-                Success to all your customers
-              </p>
-
-              <p>
-                Your Customer Success Managers are getting bogged down in low
-                level transactional conversations with customers. And they
-                don&apos;t have time for upselling and renewals
-              </p>
-
-              <p>
-                The result is that customer churn is higher than it should be.
-                Your renewal rate is lower than it should. And you&apos;re not
-                getting the upsell expansions you would with enterprise-grade
-                Customer Success
-              </p>
-
-              <p>
-                You&apos;re not alone. Most SaaS businesses struggle with this.
-                The problem is that{" "}
+                Your business might have significantly less revenue than it
+                should if{" "}
                 <strong className="font-semibold">
-                  your unit economics don&apos;t allow you to hire enough
-                  Customer Success Managers
+                  your unit economics don&apos;t let you hire enough Customer
+                  Success Managers
                 </strong>
               </p>
 
               <p>
+                Your Customer Success Managers may be getting bogged down in low
+                level transactional conversations with customers. And they may
+                not have time for upselling and renewals
+              </p>
+
+              <p>
+                The result could be that customer churn is higher than it should
+                be. Your renewal rate might be lower than it should. And you may
+                not be getting the upsell expansions you would with
+                enterprise-grade Customer Success
+              </p>
+
+              <p>
+                ...not to mention that you might be burning out your Customer
+                Success team
+              </p>
+
+              <p>
                 hndl is building Customer Success automation that&apos;s so good
-                you can now offer enterprise-grade Customer Success to all your
-                customers at any scale without ever hiring another Customer
-                Success Manager
+                you can now give enterprise-grade Customer Success to all your
+                customers{" "}
+                <strong className="font-semibold">
+                  at any scale without ever hiring another Customer Success
+                  Manager
+                </strong>
               </p>
 
               <p>
@@ -65,19 +67,13 @@ export function CEOLetter() {
                 customize AI agents using a familiar workflow UI
               </p>
 
-              <p>
-                What&apos;s different about hndl is that{" "}
-                <strong className="font-semibold">
-                  we have humans in the loop{" "}
-                </strong>
-              </p>
+              <p>What&apos;s different is that we have humans in the loop </p>
 
               <p>
-                You give instructions to hndl&apos;s AI agents then the AI does
-                your Customer Success work. The reason the AI does such great
-                work is that it can ask one of the Customer Success Experts who
-                work at hndl HQ for help when it encounters tasks AIs can&apos;t
-                do well
+                You give instructions to hndl&apos;s AI agents. And almost all
+                the work is done by AI. But when the AI encounters tasks AIs
+                can&apos;t do well, it delegates that task to one of the
+                Customer Success Experts who work at hndl HQ
               </p>
 
               <p>
@@ -98,7 +94,6 @@ export function CEOLetter() {
                 >
                   waitlist
                 </button>{" "}
-                if you&apos;re interested
               </p>
             </div>
 

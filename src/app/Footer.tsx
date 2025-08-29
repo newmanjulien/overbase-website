@@ -5,7 +5,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           {/* Copyright */}
           <div className="text-sm text-gray-600">
-            hndl ai, inc. 3000 Sand Hill Rd, Menlo Park
+            hndl ai, inc. 600 California St, San Francisco
           </div>
 
           {/* Links */}
