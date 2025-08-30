@@ -6,7 +6,7 @@ export function CEOLetter() {
 
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-3xl mx-auto">
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
           {/* Background papers – stack effect */}
@@ -17,7 +17,7 @@ export function CEOLetter() {
           {/* Main letter */}
           <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 z-10">
             <div className="mb-8">
-              <div className="text-xl text-gray-900 font-bold">
+              <div className="text-xl text-gray-900 font-semibold">
                 Introducing hndl
               </div>
             </div>
@@ -26,31 +26,26 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Your business might have significantly less revenue than it
-                should if{" "}
-                <strong className="font-semibold">
-                  your unit economics don&apos;t let you hire enough Customer
-                  Success Managers
+                Your unit economics don't let you offer white glove onboarding
+                to your customers. And that means your customer churn is higher
+                than it should be
+              </p>
+
+              <p>
+                You might have some Customer Success Managers who help new
+                customers. Or you might have a fully self-serve process
+              </p>
+
+              <p>
+                <strong className="font-medium">
+                  But your ACV doesn't let you hire the amount of quality
+                  Customer Success Managers you'd need{" "}
                 </strong>
+                to help customers get set up for success in the white glove
+                manner which would reduce churn and increase increase revenue
               </p>
 
-              <p>
-                Your Customer Success Managers may be getting bogged down in low
-                level transactional conversations with customers. And they may
-                not have time for upselling and renewals
-              </p>
-
-              <p>
-                The result could be that customer churn is higher than it should
-                be. Your renewal rate might be lower than it should. And you may
-                not be getting the upsell expansions you would with
-                enterprise-grade Customer Success
-              </p>
-
-              <p>
-                ...not to mention that you might be burning out your Customer
-                Success team
-              </p>
+              <p>That could change overnight</p>
 
               <p>
                 hndl is building Customer Success automation that&apos;s so good

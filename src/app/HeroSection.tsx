@@ -28,8 +28,7 @@ export function HeroSection() {
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-2xl mx-auto md:mx-0 py-12 md:py-0">
-          <h1 className="text-6xl md:text-7xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
-            Customer Success{" "}
+          <h1 className="text-7xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
             <span
               style={{
                 backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -37,13 +36,14 @@ export function HeroSection() {
                 padding: "2px 3px",
               }}
             >
-              with Zero Hiring
-            </span>
+              Whitest & Gloviest
+            </span>{" "}
+            Onboarding
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Increase revenue by giving enterprise-grade Customer Success to all
-            customers <strong>without hiring any more CSMs</strong>
+            Give the most white glove onboarding to your customers{" "}
+            <strong>without hiring more Customer Success Managers</strong>
           </p>
 
           <div className="flex items-center space-x-4 mt-2">
