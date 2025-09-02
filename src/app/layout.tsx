@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "hndl › white glove onboarding",
-  description: "The most white glove customer onboarding",
+  title: "hndl › white glove advocacy",
+  description: "The most white glove customer advocacy",
   icons: "/favicon.ico",
 };
 

@@ -38,12 +38,12 @@ export function HeroSection() {
             >
               Whitest & Gloviest
             </span>{" "}
-            Onboarding
+            customer advocacy
           </h1>
 
           <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
-            Give the most white glove onboarding to your customers{" "}
-            <strong>without hiring more Customer Success Managers</strong>
+            Handle your customers' critical issues, resolve conflicts and manage
+            escalations <strong>in the most white glove manner</strong>
           </p>
 
           <div className="flex items-center space-x-4 mt-2">
