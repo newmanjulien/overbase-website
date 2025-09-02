@@ -53,12 +53,12 @@ export function CEOLetter() {
                   hndl is an assistant that makes your personal life unbusy.
                 </strong>{" "}
                 We take care of an unlimited amount of busy-ness in your
-                personal life for $900 per month
+                personal life for $500 per month
               </p>
 
               <p>
                 Haven&apos;t filed taxes for 3 years? We&apos;ll figure it out.
-                Running low on laundry detergent? We&apos;ll get some for you?
+                Running low on laundry detergent? We&apos;ll get some for you
                 Babysitter cancelled at the last minute? We&apos;re here to help
               </p>
 

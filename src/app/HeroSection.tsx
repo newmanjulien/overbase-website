@@ -24,7 +24,7 @@ export function HeroSection() {
   }, [router]);
 
   return (
-    <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-7xl mx-auto pt-16">
+    <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-5xl mx-auto pt-16">
       <div className="w-full md:flex md:items-stretch gap-12">
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-xl mx-auto md:mx-0 py-12 md:py-0">
@@ -41,7 +41,7 @@ export function HeroSection() {
             </span>{" "}
           </h1>
 
-          <p className="text-lg text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
+          <p className="text-xl text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
             You&apos;re way too busy at work so lets at least{" "}
             <strong>make your personal life unbusy</strong>
           </p>
