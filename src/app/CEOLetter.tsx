@@ -26,49 +26,56 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
               <p>
-                Your unit economics don't let you offer white glove onboarding
-                to your customers. And that means your customer churn is higher
-                than it should be
+                Work is insane. You might have a boss who's hard to deal with.
+                Or demanding customers. Or you might just have ambitious KPIs
+                you need to hit
               </p>
 
               <p>
-                You might have some Customer Success Managers who help new
-                customers. Or you might have a fully self-serve process
+                Which is why you can't afford for your personal life to be just
+                as busy
+              </p>
+
+              <p>
+                But lets be honest. Your personal life is just as busy as your
+                work
+              </p>
+
+              <p>
+                You might have a large home you need to take care of. Aging
+                parents. Or you might have kids who need you. And what's for
+                sure is that there's at least some paperwork which you just
+                don't have time to get to
               </p>
 
               <p>
                 <strong className="font-medium">
-                  But your ACV doesn't let you hire the amount of quality
-                  Customer Success Managers you'd need{" "}
-                </strong>
-                to help customers get set up for success in the white glove
-                manner which would reduce churn and increase increase revenue
-              </p>
-
-              <p>That could change overnight</p>
-
-              <p>
-                hndl is building Customer Success automation that&apos;s so good
-                you can now give enterprise-grade Customer Success to all your
-                customers{" "}
-                <strong className="font-semibold">
-                  at any scale without ever hiring another Customer Success
-                  Manager
-                </strong>
+                  hndl is an assistant that makes your personal life unbusy.
+                </strong>{" "}
+                We take care of an unlimited amount of busy-ness in your
+                personal life for $900 per month
               </p>
 
               <p>
-                hndl is easy, quick and intuitive. You simply set up and
-                customize AI agents using a familiar workflow UI
+                Haven't files taxes for 3 years, we'll figure it out. Running
+                low on laundry detergent, we'll get some for you. Babysitter
+                cancelled at the last minute, we're here to help
               </p>
 
-              <p>What&apos;s different is that we have humans in the loop </p>
+              <p>
+                You're assigned a single named assistant who is available 24/7
+              </p>
 
               <p>
-                You give instructions to hndl&apos;s AI agents. And almost all
-                the work is done by AI. But when the AI encounters tasks AIs
-                can&apos;t do well, it delegates that task to one of the
-                Customer Success Experts who work at hndl HQ
+                Your assistants is vetted, works in-person from our high
+                security HQ and uses encrypted storage which let's them offer
+                you a secure service
+              </p>
+
+              <p>
+                And your assistant is supported by a specialized AI system which
+                is designed to let them get stuff done for you faster and more
+                reliably
               </p>
 
               <p>
