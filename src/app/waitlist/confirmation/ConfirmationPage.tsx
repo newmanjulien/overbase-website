@@ -23,7 +23,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
             type="button"
             aria-label="Go back to home"
             onClick={onHome} // parent callback
-            className="h-12 w-auto"
+            className="h-11 w-auto"
           >
             <div className="h-full aspect-[1000/600]">
               <Logo />
