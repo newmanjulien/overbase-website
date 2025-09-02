@@ -41,7 +41,7 @@ export function HeroSection() {
             </span>{" "}
           </h1>
 
-          <p className="text-lg text-gray-900 leading-relaxed max-w-lg text-center md:text-left">
+          <p className="text-lg text-gray-700 leading-relaxed max-w-lg text-center md:text-left">
             You&apos;re way too busy at work so lets at least{" "}
             <strong>make your personal life unbusy</strong>
           </p>

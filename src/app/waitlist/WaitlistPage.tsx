@@ -64,8 +64,8 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                We still onboard new B2B marketplaces one at a time to be sure
-                we make hndl work for you
+                We still onboard new clients one at a time to be sure we make
+                hndl work for you
               </p>
             </div>
 
