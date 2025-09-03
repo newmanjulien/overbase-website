@@ -17,14 +17,14 @@ export function CEOLetter() {
           {/* Main letter */}
           <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 z-10">
             <div className="mb-8">
-              <div className="text-xl text-gray-900 font-semibold">
+              <div className="text-lg text-gray-900 font-semibold">
                 Introducing hndl
               </div>
             </div>
 
             <div className="mt-8 pt-6 border-t border-gray-200"></div>
 
-            <div className="space-y-6 text-gray-900 text-lg leading-relaxed">
+            <div className="space-y-6 text-gray-900 text-md leading-relaxed">
               <p>
                 Work is insane. You might have a boss who&apos;s hard to deal
                 with. Or demanding customers. Or you might just have ambitious
