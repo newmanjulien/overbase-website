@@ -50,33 +50,28 @@ export function CEOLetter() {
 
               <p>
                 <strong className="font-medium">
-                  hndl is an assistant that makes your personal life unbusy.
+                  hndl is a Chief of Staff for your personal life.
                 </strong>{" "}
-                We take care of an unlimited amount of busy-ness in your
-                personal life for $500 per month
+                Donec fermentum. Pellentesque malesuada nulla a mi
               </p>
 
               <p>
-                Haven&apos;t filed taxes for 3 years? We&apos;ll figure it out.
-                Running low on laundry detergent? We&apos;ll get some for you
-                Babysitter cancelled at the last minute? We&apos;re here to help
+                Sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                ullamco laboris nisi ut aliquip ex ea commodo consequat
               </p>
 
               <p>
-                With hndl, you&apos;re assigned a team of 2 named assistants
-                (who you can meet) and who are available 24/7
+                Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit anim id est laborum
               </p>
 
               <p>
-                Your assistants are vetted, work in-person from our high
-                security HQ and use encrypted storage which let&apos;s them
-                offer you a secure service
-              </p>
-
-              <p>
-                And your assistants are supported by a specialized AI system
-                which is designed to let them get stuff done for you faster and
-                more reliably
+                Duis ac tellus et risus vulputate vehicula. Donec lobortis risus
+                a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue,
+                eros est euismod turpis, id tincidunt sapien risus a quam
               </p>
 
               <p>
