@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FACT › Customer Success answers",
+  title: "FACT › Customer Success data",
   description:
-    "FACT is a Customer Success tool that lets CSMs easily ask questions then quickly get a complete and accurate answer",
+    "Request any Customer Success data then easily get the complete, up-to-date and accurate data you need",
   icons: "/favicon.ico",
 };
 

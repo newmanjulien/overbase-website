@@ -28,15 +28,13 @@ export function CEOLetter() {
               <p>
                 Doing Customer Success well means knowing better than everyone
                 else what's going on with your customers. But how can you do
-                that when it's so hard for CSMs to get customer data?
+                that when it's so hard for you to get customer data?
               </p>
 
               <p>
                 The data you need to prepare for your next QBR, understand the
-                health of an account or make the case for an expansion is{" "}
-                <strong className="font-medium">
-                  all over the place, hard to access and often outdated
-                </strong>
+                health of an account or make the case for an expansion is all
+                over the place, hard to access and often outdated
               </p>
 
               <p>
@@ -44,39 +42,45 @@ export function CEOLetter() {
                 Linear for open tickets. Look in Gainsight to understand the
                 account history. Beg the dev team to help you get some more
                 niche data you can't get otherwise. Then double check in other
-                places because that data might actually be outdated
+                places because all that data might actually be outdated
+              </p>
+
+              <p>
+                {" "}
+                <strong className="font-medium">
+                  Why is it so hard to get the data you need?
+                </strong>
               </p>
 
               <p>
                 <strong className="font-medium">
                   {" "}
-                  How can you do your actual job
+                  And why are you spending so much time trying (and often
+                  failing) to figure out what's going on with your customers?
                 </strong>{" "}
-                if you're spending all your time trying to figure out what's
-                going on?
+                Instead of helping customers achieve their goals, strengthening
+                your relationships, ensuring renewals and setting the stage for
+                expansions
               </p>
 
               <p>
-                FACT lets CSMs request any Customer Success data then easily get
-                the accurate, up-to-date and complete data they need
+                With FACT, you can now request any Customer Success data then
+                easily get the complete, up-to-date and accurate data you need
               </p>
 
               <p>
                 We use all your data from all your platforms and tools.
-                Structured data from Posthog, Gainsight, etc. And also from call
-                transcripts, Slack, emails, Notion, etc.
+                Structured data from Posthog, Gainsight, etc. Unstructured data
+                from call transcripts, Slack, emails, Notion, etc. And we also
+                check external data to be sure everything is up-to date. For
+                example, we'll check LinkedIn to see if your champion changed
+                jobs
               </p>
 
               <p>
-                Then we check external data to be sure everything is up-to date.
-                For example, we'll check LinkedIn to see if your champion
-                changed jobs
-              </p>
-
-              <p>
-                And you always be the highest quality results because there's a
-                human in the loop who double checks the data before you receive
-                it
+                We also make sure you always get the highest quality results
+                because FACT has a human in the loop who double checks the data
+                before you receive it
               </p>
 
               <p>
