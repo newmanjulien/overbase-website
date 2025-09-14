@@ -18,7 +18,7 @@ export function CEOLetter() {
           <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 z-10">
             <div className="mb-8">
               <div className="text-lg text-gray-900 font-semibold">
-                Introducing hndl
+                Introducing FACT
               </div>
             </div>
 
@@ -26,52 +26,57 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-md leading-relaxed">
               <p>
-                Work is insane. You might have a boss who&apos;s hard to deal
-                with. Or demanding customers. Or you might just have ambitious
-                KPIs you need to hit
+                Doing Customer Success well means knowing better than everyone
+                else what's going on with your customers. But how can you do
+                that when it's so hard for CSMs to get customer data?
               </p>
 
               <p>
-                Which is why you can&apos;t afford for your personal life to be
-                just as busy
+                The data you need to prepare for your next QBR, understand the
+                health of an account or make the case for an expansion is{" "}
+                <strong className="font-medium">
+                  all over the place, hard to access and often outdated
+                </strong>
               </p>
 
               <p>
-                But lets be honest. Your personal life is just as busy as your
-                work
-              </p>
-
-              <p>
-                You might have a large home you need to take care of. Aging
-                parents. Or you might have kids who need you. And what&apos;s
-                for sure is that there&apos;s at least some paperwork which you
-                just don&apos;t have time to get to
+                You need to query Posthog to get usage data. Check Pylon and
+                Linear for open tickets. Look in Gainsight to understand the
+                account history. Beg the dev team to help you get some more
+                niche data you can't get otherwise. Then double check in other
+                places because that data might actually be outdated
               </p>
 
               <p>
                 <strong className="font-medium">
-                  hndl is a Chief of Staff for your personal life.
+                  {" "}
+                  How can you do your actual job
                 </strong>{" "}
-                Donec fermentum. Pellentesque malesuada nulla a mi
+                if you're spending all your time trying to figure out what's
+                going on?
               </p>
 
               <p>
-                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat
+                FACT lets CSMs request any Customer Success data then easily get
+                the accurate, up-to-date and complete data they need
               </p>
 
               <p>
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum
+                We use all your data from all your platforms and tools.
+                Structured data from Posthog, Gainsight, etc. And also from call
+                transcripts, Slack, emails, Notion, etc.
               </p>
 
               <p>
-                Duis ac tellus et risus vulputate vehicula. Donec lobortis risus
-                a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue,
-                eros est euismod turpis, id tincidunt sapien risus a quam
+                Then we check external data to be sure everything is up-to date.
+                For example, we'll check LinkedIn to see if your champion
+                changed jobs
+              </p>
+
+              <p>
+                And you always be the highest quality results because there's a
+                human in the loop who double checks the data before you receive
+                it
               </p>
 
               <p>
@@ -92,6 +97,7 @@ export function CEOLetter() {
                 >
                   waitlist
                 </button>{" "}
+                if you want to try it out
               </p>
             </div>
 

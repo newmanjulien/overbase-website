@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "hndl › personal chief of staff",
-  description: "Chief of Staff for your personal life",
+  title: "FACT › Customer Success answers",
+  description:
+    "FACT is a Customer Success tool that lets CSMs easily ask questions then quickly get a complete and accurate answer",
   icons: "/favicon.ico",
 };
 

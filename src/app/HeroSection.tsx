@@ -29,21 +29,21 @@ export function HeroSection() {
         {/* LEFT: Content */}
         <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-lg mx-auto md:mx-0 py-12 md:py-0">
           <h1 className="text-6xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
-            Chief of Staff for your{" "}
+            Stop looking for{" "}
             <span
               style={{
                 backgroundColor: "rgba(255, 0, 0, 0.1)",
-                color: "#FF5437",
+                color: "#FC3636",
                 padding: "2px 3px",
               }}
             >
-              personal life
+              customer data
             </span>{" "}
           </h1>
 
-          <p className="text-lg text-gray-700 max-w-lg text-center md:text-left">
-            Get a Chief of Staff who brings strategic thinking to your personal
-            life and makes everything work seamlessly
+          <p className="text-lg text-gray-600 font-medium max-w-lg text-center md:text-left">
+            Request any Customer Success data then easily get the accurate,
+            up-to-date and complete data you need
           </p>
 
           <div className="flex items-center space-x-4 mt-2">

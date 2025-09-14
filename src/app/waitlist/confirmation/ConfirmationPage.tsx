@@ -1,14 +1,16 @@
 "use client";
 
 import { Button } from "../../../components/ui/button";
-import Logo from "../../../components/ui/Logo";
+import { useRouter } from "next/navigation";
+import Image from "next/image"; // <- missing import for logo
 import { AnimatedBackground } from "../../../components/AnimatedBackground";
 
 interface ConfirmationPageProps {
-  onHome: () => void; // parent controls navigation
+  onBack: () => void; // add this prop
+  onHome: () => void; // keep existing
 }
 
-export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
+export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
   const handleTwitterClick = () => {
     window.open("https://x.com/hndlai", "_blank");
   };
@@ -17,17 +19,10 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
     <div className="min-h-screen flex">
       {/* Left side - Content */}
       <div className="flex-1 flex flex-col bg-white">
-        {/* Header with logo */}
-        <div className="px-6 md:px-12 lg:px-24 py-8">
-          <button
-            type="button"
-            aria-label="Go back to home"
-            onClick={onHome} // parent callback
-            className="h-11 w-auto"
-          >
-            <div className="h-full aspect-[1000/600]">
-              <Logo />
-            </div>
+        {/* Header with logo back button */}
+        <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
+          <button type="button" aria-label="Go back" onClick={onBack}>
+            <Image src="/logo.png" alt="" width={107} height={64} priority />
           </button>
         </div>
 
@@ -47,7 +42,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
             {/* Two buttons side by side */}
             <div className="flex gap-4">
               <Button
-                onClick={onHome} // parent callback
+                onClick={onHome}
                 size="lg"
                 className="flex-1 bg-transparent hover:bg-gray-100 text-gray-900 p-6 text-md rounded-lg"
               >

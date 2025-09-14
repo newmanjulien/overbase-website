@@ -1,9 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
-import Logo from "../../components/ui/Logo";
 import { AnimatedBackground } from "../../components/AnimatedBackground";
 
 interface WaitlistPageProps {
@@ -14,6 +15,7 @@ interface WaitlistPageProps {
 export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,16 +45,9 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
       {/* Left side - Form */}
       <div className="flex-1 flex flex-col bg-white">
         {/* Header with logo */}
-        <div className="px-6 md:px-12 lg:px-24 py-8">
-          <button
-            type="button"
-            aria-label="Go back"
-            onClick={onBack} // call parent callback
-            className="h-11 w-auto"
-          >
-            <div className="h-full aspect-[1000/600]">
-              <Logo />
-            </div>
+        <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
+          <button type="button" aria-label="Go back" onClick={onBack}>
+            <Image src="/logo.png" alt="" width={107} height={64} priority />
           </button>
         </div>
 
@@ -64,8 +59,8 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                We still onboard new clients one at a time to be sure we make
-                hndl work for you
+                We onboard new Customer Success team one at a time to be sure
+                FACT works for you
               </p>
             </div>
 
