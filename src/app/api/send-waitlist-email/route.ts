@@ -22,9 +22,9 @@ export async function POST(req: Request) {
     await transporter.sendMail({
       from: `"Julien Newman" <${process.env.SMTP_USER}>`,
       to: email,
-      cc: "julien@hndlai.com",
-      subject: "hndl waitlist",
-      text: "Thank you for joining the waitlist. I'll be in touch soon.\n\nLet me know if you have questions or want a demo :)\n\n--\n\njulien\n@hndl",
+      cc: "julien@juliennewman.com",
+      subject: "Overbase waitlist",
+      text: "Thank you for joining the waitlist. I'll be in touch soon.\n\nLet me know if you have questions or want a demo :)\n\n--\n\njulien\nhttp://www.juliennewman.com/ / https://www.linkedin.com/company/blitzscaling/",
     });
 
     return NextResponse.json({ success: true });
