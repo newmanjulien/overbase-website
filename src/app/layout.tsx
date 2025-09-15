@@ -4,8 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Easy Customer Success data",
   description:
-    "Request any Customer Success data then easily get the complete, up-to-date and accurate data you need",
-  icons: "/favicon.ico",
+    "Easily get complete, up-to-date and accurate Customer Success data",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
