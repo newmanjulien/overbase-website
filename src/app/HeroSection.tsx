@@ -60,9 +60,10 @@ export function HeroSection() {
 
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 xl:px-24 pt-16">
-      <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-8">
+      <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-22">
         {/* LEFT: headings + buttons */}
         <div className="w-full max-w-lg text-center xl:text-left">
+          {/* Heading */}
           <h1 className="text-6xl text-gray-900 tracking-tight leading-tight font-bold">
             Customer Success{" "}
             <span
@@ -76,6 +77,7 @@ export function HeroSection() {
             </span>
           </h1>
 
+          {/* Subheading */}
           <h2 className="mt-6 text-lg text-gray-600 font-medium">
             Easily get complete, up-to-date and accurate data about customers
           </h2>
@@ -86,16 +88,23 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT: graphic */}
-        <div className="w-full max-w-xl flex justify-center xl:justify-end">
-          <Graphic />
+        {/* RIGHT: graphic (DESKTOP only) */}
+        <div className="hidden xl:flex justify-center xl:justify-end">
+          <div className="w-[350px]">
+            <Graphic />
+          </div>
         </div>
       </div>
 
-      {/* Mobile: show buttons AFTER the graphic */}
+      {/* Mobile: show buttons BEFORE the graphic */}
       <div className="w-full max-w-6xl mx-auto xl:hidden mt-6">
         <div className="w-full max-w-lg mx-auto">
           <CtaButtons />
+        </div>
+        <div className="mt-12 flex justify-center">
+          <div className="w-full max-w-lg px-4">
+            <Graphic />
+          </div>
         </div>
       </div>
     </section>

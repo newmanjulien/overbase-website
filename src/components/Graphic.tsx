@@ -41,8 +41,10 @@ export function Graphic() {
 
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-[350px] bg-white border border-gray-200 rounded-xl shadow-md p-6">
+      <div className="w-full bg-white border border-gray-200 rounded-xl shadow-md p-6">
         <div className="w-full bg-gray-100 rounded-lg px-4 py-3 text-gray-700 text-base whitespace-pre-wrap">
+          {/* Show placeholder only when no text is typed yet */}
+          {index === 0 && <span className="invisible">A</span>}
           {texts[currentTextIndex].slice(0, index)}
         </div>
       </div>
