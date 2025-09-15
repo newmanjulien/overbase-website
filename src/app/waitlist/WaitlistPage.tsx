@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
-import { AnimatedBackground } from "../../components/AnimatedBackground";
 
 interface WaitlistPageProps {
   onHome: () => void;
@@ -62,7 +61,7 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
         <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 -mt-16">
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-8 text-center">
-              <h1 className="text-3xl md:text-4xl text-gray-900 tracking-tight font-bold">
+              <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-bold">
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
@@ -128,8 +127,19 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
         </div>
       </div>
 
-      {/* Right side - Animated background */}
-      <AnimatedBackground />
+      {/* Right side - Video background */}
+      <div className="flex-1 relative">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover filter grayscale"
+        >
+          <source src="/auth.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
     </div>
   );
 }
