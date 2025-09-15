@@ -8,7 +8,7 @@ export default function WaitlistRoute() {
 
   return (
     <WaitlistPage
-      onBack={() => router.push("/")}
+      onHome={() => router.push("/")}
       onSubmit={() => router.push("/waitlist/confirmation")}
     />
   );

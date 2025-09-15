@@ -13,11 +13,12 @@ export function Header() {
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
           <div className="h-8 w-auto flex items-center">
-            <div className="h-full aspect-[1000/600] relative">
+            <div className="h-full">
               <Image
                 src="/logo.png"
                 alt="Logo"
-                fill
+                width={55}
+                height={32}
                 className="object-contain"
                 priority
               />

@@ -5,11 +5,10 @@ import Image from "next/image";
 import { AnimatedBackground } from "../../../components/AnimatedBackground";
 
 interface ConfirmationPageProps {
-  onBack: () => void;
   onHome: () => void;
 }
 
-export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
+export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
   const handleTwitterClick = () => {
     window.open("https://x.com/hndlai", "_blank");
   };
@@ -20,18 +19,13 @@ export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
       <div className="flex-1 flex flex-col bg-white">
         {/* Header with logo back button */}
         <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
-          <button
-            type="button"
-            aria-label="Go back"
-            onClick={onBack}
-            className="w-14 h-auto"
-          >
+          <button type="button" aria-label="Go back" onClick={onHome}>
             <Image
               src="/logo.png"
               alt="Overbase logo"
-              width={107}
-              height={64}
-              className="w-full h-auto"
+              width={55}
+              height={32}
+              className="object-contain"
               priority
             />
           </button>

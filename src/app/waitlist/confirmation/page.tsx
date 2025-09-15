@@ -6,10 +6,5 @@ import { ConfirmationPage } from "./ConfirmationPage";
 export default function ConfirmationRoute() {
   const router = useRouter();
 
-  return (
-    <ConfirmationPage
-      onHome={() => router.push("/")}
-      onBack={() => router.back()}
-    />
-  );
+  return <ConfirmationPage onHome={() => router.push("/")} />;
 }

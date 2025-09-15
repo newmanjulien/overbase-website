@@ -7,11 +7,11 @@ import { Input } from "../../components/ui/input";
 import { AnimatedBackground } from "../../components/AnimatedBackground";
 
 interface WaitlistPageProps {
-  onBack: () => void;
+  onHome: () => void;
   onSubmit: () => void;
 }
 
-export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
+export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -46,18 +46,13 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
       <div className="flex-1 flex flex-col bg-white">
         {/* Header with logo */}
         <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
-          <button
-            type="button"
-            aria-label="Go back"
-            onClick={onBack}
-            className="w-14 h-auto"
-          >
+          <button type="button" aria-label="Go back" onClick={onHome}>
             <Image
               src="/logo.png"
               alt="Overbase logo"
-              width={107}
-              height={64}
-              className="w-full h-auto"
+              width={55}
+              height={32}
+              className="object-contain"
               priority
             />
           </button>
