@@ -5,6 +5,14 @@ import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
 import { Graphic } from "../components/Graphic";
 
+// Displayed in the graphic
+const TEXTS = [
+  "I have an upcoming QBR with the Docusign account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
+  "Check if the Docusign account has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
+  "Look at all of my accounts to see if any of the champions changed jobs. Do this by checking LinkedIn",
+  "Look at the usage data from all my accounts to find the 10 accounts where there's been the largest drop in usage",
+];
+
 // Utility: Skip shortcuts when typing in editable fields
 function shouldIgnoreShortcut(target: EventTarget | null): boolean {
   if (!(target instanceof HTMLElement)) return false;
@@ -128,7 +136,7 @@ export function HeroSection() {
         {/* === Right Section: Graphic (Desktop only) === */}
         <div className="hidden xl:flex justify-center xl:justify-end">
           <div className="w-[350px]">
-            <Graphic />
+            <Graphic texts={TEXTS} />
           </div>
         </div>
       </div>
@@ -140,7 +148,7 @@ export function HeroSection() {
         </div>
         <div className="mt-12 flex justify-center">
           <div className="w-full max-w-lg px-4">
-            <Graphic />
+            <Graphic texts={TEXTS} />
           </div>
         </div>
       </div>
