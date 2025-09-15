@@ -1,13 +1,12 @@
 "use client";
 
 import { Button } from "../../../components/ui/button";
-import { useRouter } from "next/navigation";
-import Image from "next/image"; // <- missing import for logo
+import Image from "next/image";
 import { AnimatedBackground } from "../../../components/AnimatedBackground";
 
 interface ConfirmationPageProps {
-  onBack: () => void; // add this prop
-  onHome: () => void; // keep existing
+  onBack: () => void;
+  onHome: () => void;
 }
 
 export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
@@ -21,8 +20,20 @@ export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
       <div className="flex-1 flex flex-col bg-white">
         {/* Header with logo back button */}
         <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
-          <button type="button" aria-label="Go back" onClick={onBack}>
-            <Image src="/logo.png" alt="" width={107} height={64} priority />
+          <button
+            type="button"
+            aria-label="Go back"
+            onClick={onBack}
+            className="w-14 h-auto"
+          >
+            <Image
+              src="/logo.png"
+              alt="Overbase logo"
+              width={107}
+              height={64}
+              className="w-full h-auto"
+              priority
+            />
           </button>
         </div>
 
@@ -44,7 +55,7 @@ export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
               <Button
                 onClick={onHome}
                 size="lg"
-                className="flex-1 bg-transparent hover:bg-gray-100 text-gray-900 p-6 text-md rounded-lg"
+                className="flex-1 bg-gray-900 hover:bg-gray-800 text-white p-6 text-md rounded-lg"
               >
                 Go Home
               </Button>
@@ -53,6 +64,7 @@ export function ConfirmationPage({ onBack, onHome }: ConfirmationPageProps) {
                 onClick={handleTwitterClick}
                 size="lg"
                 className="flex-1 bg-gray-50 hover:bg-gray-100 text-gray-900 p-6 text-md rounded-lg"
+                aria-label="Follow us on Twitter"
               >
                 Follow us on X
               </Button>

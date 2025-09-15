@@ -65,7 +65,7 @@ export function HeroSection() {
         <div className="w-full max-w-lg text-center xl:text-left">
           {/* Heading */}
           <h1 className="text-6xl text-gray-900 tracking-tight leading-tight font-bold">
-            Customer Success{" "}
+            Customer Success needs{" "}
             <span
               style={{
                 backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -73,7 +73,7 @@ export function HeroSection() {
                 padding: "2px 3px",
               }}
             >
-              needs easy data
+              easy data
             </span>
           </h1>
 

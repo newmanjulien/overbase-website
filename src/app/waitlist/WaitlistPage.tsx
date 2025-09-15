@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
@@ -15,11 +14,12 @@ interface WaitlistPageProps {
 export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
-  const router = useRouter();
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
+    setError(null);
 
     try {
       const res = await fetch("/api/send-waitlist-email", {
@@ -34,7 +34,7 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
       onSubmit(); // call parent callback
     } catch (err) {
       console.error("Email send failed:", err);
-      alert("Oops, something went wrong. Please try again.");
+      setError("Oops, something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
@@ -46,8 +46,20 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
       <div className="flex-1 flex flex-col bg-white">
         {/* Header with logo */}
         <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
-          <button type="button" aria-label="Go back" onClick={onBack}>
-            <Image src="/logo.png" alt="" width={107} height={64} priority />
+          <button
+            type="button"
+            aria-label="Go back"
+            onClick={onBack}
+            className="w-14 h-auto"
+          >
+            <Image
+              src="/logo.png"
+              alt="Overbase logo"
+              width={107}
+              height={64}
+              className="w-full h-auto"
+              priority
+            />
           </button>
         </div>
 
@@ -59,13 +71,16 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                We onboard new Customer Success team one at a time to be sure
-                FACT works for you
+                We onboard Customer Success teams one at a time to be sure
+                Overbase works for you
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="space-y-3">
+                <label htmlFor="email" className="sr-only">
+                  Work email
+                </label>
                 <Input
                   id="email"
                   type="email"
@@ -74,7 +89,9 @@ export function WaitlistPage({ onBack, onSubmit }: WaitlistPageProps) {
                   className="w-full px-6 py-5 text-md border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                   placeholder="Work email"
                   required
+                  disabled={loading}
                 />
+                {error && <p className="text-red-600 text-sm mt-1">{error}</p>}
               </div>
 
               <Button

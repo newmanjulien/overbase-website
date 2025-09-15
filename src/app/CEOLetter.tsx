@@ -73,6 +73,13 @@ export function CEOLetter() {
               </p>
 
               <p>
+                Requesting data in a rinse-and-repeat way is simple and
+                intuitive with our calendar interface. You can easily schedule
+                recurring requests for data which align with customer meetings
+                or deadlines
+              </p>
+
+              <p>
                 Overbase uses all your data from all your platforms and tools.
                 Structured data from Posthog, Pylon, Gainsight, etc.
                 Unstructured data from Gong, Slack, Gmail, Notion, etc. And we
