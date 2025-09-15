@@ -1,34 +1,50 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, memo } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
 import { Graphic } from "../components/Graphic";
 
-export function HeroSection() {
+// Utility: Skip shortcuts when typing in editable fields
+function shouldIgnoreShortcut(target: EventTarget | null): boolean {
+  if (!(target instanceof HTMLElement)) return false;
+  return (
+    target.isContentEditable ||
+    target.tagName === "INPUT" ||
+    target.tagName === "TEXTAREA" ||
+    (target as HTMLInputElement).type === "text"
+  );
+}
+
+// Small reusable component for displaying a hotkey badge
+function HotkeyBadge({
+  keyChar,
+  variant = "dark",
+}: {
+  keyChar: string;
+  variant?: "dark" | "light";
+}) {
+  const baseClasses =
+    "hidden xl:inline-flex items-center justify-center w-6 h-6 rounded-md text-sm font-bold";
+  const variantClasses =
+    variant === "dark" ? "bg-gray-700 text-white" : "bg-gray-200 text-black";
+
+  return <span className={`${baseClasses} ${variantClasses}`}>{keyChar}</span>;
+}
+
+// CTA Buttons (memoized to avoid re-rendering unnecessarily)
+const CtaButtons = memo(function CtaButtons({
+  waitlistRef,
+  demoRef,
+}: {
+  waitlistRef: React.RefObject<HTMLButtonElement | null>;
+  demoRef: React.RefObject<HTMLAnchorElement | null>;
+}) {
   const router = useRouter();
-  const waitlistRef = useRef<HTMLButtonElement | null>(null);
-  const demoRef = useRef<HTMLAnchorElement | null>(null);
 
-  // Handle keyboard press for "w" and "f"
-  useEffect(() => {
-    const handleKeyPress = (e: KeyboardEvent) => {
-      if (e.key.toLowerCase() === "w" && waitlistRef.current) {
-        waitlistRef.current.focus();
-        waitlistRef.current.click();
-      }
-      if (e.key.toLowerCase() === "f" && demoRef.current) {
-        demoRef.current.focus();
-        demoRef.current.click();
-      }
-    };
-    window.addEventListener("keydown", handleKeyPress);
-    return () => window.removeEventListener("keydown", handleKeyPress);
-  }, []);
-
-  const CtaButtons = () => (
+  return (
     <div className="flex items-center justify-center xl:justify-start gap-4 mt-2">
-      {/* Waitlist button (real button) */}
+      {/* Waitlist button */}
       <Button
         ref={waitlistRef}
         onClick={() => router.push("/waitlist")}
@@ -37,13 +53,11 @@ export function HeroSection() {
       >
         <span className="inline-flex items-center gap-2">
           Join waitlist
-          <span className="hidden xl:inline-flex items-center justify-center w-6 h-6 rounded-md bg-gray-700 text-white text-sm font-bold">
-            W
-          </span>
+          <HotkeyBadge keyChar="W" variant="dark" />
         </span>
       </Button>
 
-      {/* Demo button (anchor styled as button via asChild) */}
+      {/* Demo button */}
       <Button
         asChild
         size="lg"
@@ -58,21 +72,42 @@ export function HeroSection() {
         >
           <span className="inline-flex items-center gap-2">
             Demo with our CEO
-            <span className="hidden xl:inline-flex items-center justify-center w-6 h-6 rounded-md bg-gray-200 text-black text-sm font-bold">
-              F
-            </span>
+            <HotkeyBadge keyChar="F" variant="light" />
           </span>
         </a>
       </Button>
     </div>
   );
+});
+
+export function HeroSection() {
+  const waitlistRef = useRef<HTMLButtonElement | null>(null);
+  const demoRef = useRef<HTMLAnchorElement | null>(null);
+
+  // Global keyboard shortcuts ("w" = waitlist, "f" = demo)
+  useEffect(() => {
+    const handleKeyPress = (e: KeyboardEvent) => {
+      if (shouldIgnoreShortcut(e.target)) return;
+
+      if (e.key.toLowerCase() === "w" && waitlistRef.current) {
+        waitlistRef.current.focus();
+        waitlistRef.current.click();
+      }
+      if (e.key.toLowerCase() === "f" && demoRef.current) {
+        demoRef.current.focus();
+        demoRef.current.click();
+      }
+    };
+
+    window.addEventListener("keydown", handleKeyPress);
+    return () => window.removeEventListener("keydown", handleKeyPress);
+  }, []);
 
   return (
     <section className="min-h-screen flex flex-col justify-center px-6 xl:px-24 pt-14">
       <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24">
-        {/* LEFT: headings + buttons */}
+        {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-lg text-center xl:text-left">
-          {/* Heading */}
           <h1 className="text-6xl text-gray-900 tracking-tight leading-tight font-bold">
             Customer Success needs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
@@ -80,18 +115,17 @@ export function HeroSection() {
             </span>
           </h1>
 
-          {/* Subheading */}
           <h2 className="mt-6 text-lg text-gray-600 font-medium">
             Easily get complete, up-to-date and accurate data about customers
           </h2>
 
-          {/* Desktop: keep buttons directly under headings */}
+          {/* Desktop buttons */}
           <div className="hidden xl:block mt-6">
-            <CtaButtons />
+            <CtaButtons waitlistRef={waitlistRef} demoRef={demoRef} />
           </div>
         </div>
 
-        {/* RIGHT: graphic (DESKTOP only) */}
+        {/* === Right Section: Graphic (Desktop only) === */}
         <div className="hidden xl:flex justify-center xl:justify-end">
           <div className="w-[350px]">
             <Graphic />
@@ -99,10 +133,10 @@ export function HeroSection() {
         </div>
       </div>
 
-      {/* Mobile: show buttons BEFORE the graphic */}
+      {/* === Mobile Layout === */}
       <div className="w-full max-w-6xl mx-auto xl:hidden mt-6">
         <div className="w-full max-w-lg mx-auto">
-          <CtaButtons />
+          <CtaButtons waitlistRef={waitlistRef} demoRef={demoRef} />
         </div>
         <div className="mt-12 flex justify-center">
           <div className="w-full max-w-lg px-4">
