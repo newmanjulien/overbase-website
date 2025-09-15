@@ -11,8 +11,8 @@ export function CEOLetter() {
         <div className="relative mx-auto max-w-3xl">
           {/* Background papers – stack effect */}
           <div className="absolute inset-0 bg-white rounded-lg shadow-lg transform -rotate-1 scale-[1.02] translate-x-1 translate-y-1 border border-gray-200"></div>
-          <div className="absolute inset-0 bg-white rounded-lg shadow-md transform rotate-2 scale-[1.015] -translate-x-1 translate-y-0.5 border border-gray-200"></div>
-          <div className="absolute inset-0 bg-gray-100 rounded-lg shadow-sm transform rotate-0.5 scale-[1.005] border border-gray-200"></div>
+          <div className="absolute inset-0 bg-white rounded-lg shadow-md transform rotate-[2deg] scale-[1.015] -translate-x-1 translate-y-0.5 border border-gray-200"></div>
+          <div className="absolute inset-0 bg-gray-100 rounded-lg shadow-sm transform rotate-[0.5deg] scale-[1.005] border border-gray-200"></div>
 
           {/* Main letter */}
           <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 z-10">
@@ -24,7 +24,7 @@ export function CEOLetter() {
 
             <div className="mt-8 pt-6 border-t border-gray-200"></div>
 
-            <div className="space-y-6 text-gray-900 text-md leading-relaxed">
+            <div className="space-y-6 text-gray-900 text-base leading-relaxed">
               <p>
                 Being good at Customer Success means knowing what's going on
                 with your customers better than everyone else. But how can you
@@ -49,7 +49,6 @@ export function CEOLetter() {
               </p>
 
               <p>
-                {" "}
                 <strong className="font-medium">
                   What's going on? Why is it so hard to get the data you need to
                   do your job?
@@ -58,7 +57,6 @@ export function CEOLetter() {
 
               <p>
                 <strong className="font-medium">
-                  {" "}
                   And why are you spending so much time trying (and often
                   failing) to figure out what's going on with your customers?
                 </strong>{" "}
@@ -121,7 +119,7 @@ export function CEOLetter() {
               <div className="font-semibold text-lg text-gray-900 mb-1">
                 Julien Newman
               </div>
-              <div className="text-md text-gray-500">Founder & CEO</div>
+              <div className="text-base text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>

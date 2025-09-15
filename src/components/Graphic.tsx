@@ -1,53 +1,41 @@
 "use client";
 
-import { useEffect, useState, useMemo } from "react";
+import { useEffect, useState } from "react";
 
-export function Graphic() {
-  const texts = useMemo(
-    () => [
-      "I have an upcoming QBR with the Docusign account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
-      "Check if Docusign has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
-      "Look at all of my accounts to see if any of the champions changed jobs. Do this by checking LinkedIn",
-      "Look at the usage data from all my accounts to find the 10 accounts where there's been the largest drop in usage",
-    ],
-    []
-  );
+const TEXTS = [
+  "I have an upcoming QBR with the Docusign account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
+  "Check if Docusign has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
+  "Look at all of my accounts to see if any of the champions changed jobs. Do this by checking LinkedIn",
+  "Look at the usage data from all my accounts to find the 10 accounts where there's been the largest drop in usage",
+];
 
-  const [index, setIndex] = useState(0);
+export function Graphic({ typingSpeedMs = 50, holdMs = 2000 }) {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [isTypingDone, setIsTypingDone] = useState(false);
+  const [charIndex, setCharIndex] = useState(0);
 
-  // Typing effect
+  const fullText = TEXTS[currentTextIndex];
+
   useEffect(() => {
-    if (!isTypingDone && index < texts[currentTextIndex].length) {
+    if (charIndex < fullText.length) {
       const timeout = setTimeout(() => {
-        setIndex((prev) => prev + 1);
-      }, 20);
+        setCharIndex((i) => i + 1);
+      }, typingSpeedMs);
       return () => clearTimeout(timeout);
-    }
-    if (index === texts[currentTextIndex].length) {
-      setIsTypingDone(true);
-    }
-  }, [index, isTypingDone, currentTextIndex, texts]);
-
-  // Wait after finishing typing, then cycle to next text
-  useEffect(() => {
-    if (isTypingDone) {
+    } else {
       const hold = setTimeout(() => {
-        setIndex(0);
-        setIsTypingDone(false);
-        setCurrentTextIndex((prev) => (prev + 1) % texts.length);
-      }, 5000);
+        setCharIndex(0);
+        setCurrentTextIndex((i) => (i + 1) % TEXTS.length);
+      }, holdMs);
       return () => clearTimeout(hold);
     }
-  }, [isTypingDone, texts.length]);
+  }, [charIndex, fullText, typingSpeedMs, holdMs]);
 
   return (
     <div className="w-full h-full flex items-center justify-center">
       <div className="w-full bg-white border border-gray-200 rounded-xl shadow-md p-6">
         <div className="w-full bg-gray-100 rounded-lg px-4 py-3 text-gray-700 text-base whitespace-pre-wrap">
-          {index === 0 && <span className="invisible">A</span>}
-          {texts[currentTextIndex].slice(0, index)}
+          {fullText.slice(0, charIndex)}
+          <span className="[animation:blink_1s_steps(1)_infinite]">|</span>
         </div>
       </div>
     </div>
