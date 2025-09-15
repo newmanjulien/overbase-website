@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
-import Image from "next/image";
+import { Graphic } from "../components/Graphic";
 
 export function HeroSection() {
   const router = useRouter();
@@ -25,11 +25,11 @@ export function HeroSection() {
 
   return (
     <section className="min-h-screen flex items-center md:items-stretch justify-center px-6 md:px-12 lg:px-24 max-w-6xl mx-auto pt-16">
-      <div className="w-full md:flex md:items-stretch gap-12">
+      <div className="w-full flex flex-col xl:flex-row md:items-stretch gap-28">
         {/* LEFT: Content */}
-        <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-lg mx-auto md:mx-0 py-12 md:py-0">
+        <div className="flex flex-col justify-center items-center md:items-start space-y-8 max-w-lg mx-auto md:mx-0 py-12 md:py-0 order-1">
           <h1 className="text-6xl text-gray-900 tracking-tight leading-tight text-center md:text-left font-bold">
-            Customer Success needs{" "}
+            Customer Success{" "}
             <span
               style={{
                 backgroundColor: "rgba(255, 0, 0, 0.1)",
@@ -37,13 +37,12 @@ export function HeroSection() {
                 padding: "2px 3px",
               }}
             >
-              good data
+              needs easy data
             </span>{" "}
           </h1>
 
           <p className="text-lg text-gray-600 font-medium max-w-lg text-center md:text-left">
-            Request any Customer Success data then easily get the complete,
-            up-to-date and accurate data you need
+            Easily get complete, up-to-date and accurate data about customers
           </p>
 
           <div className="flex items-center space-x-4 mt-2">
@@ -81,16 +80,9 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* RIGHT: Image (Desktop only) */}
-        <div className="hidden xl:block">
-          <Image
-            src="/point.png"
-            alt="AI agent"
-            width={800} // will be overridden by Tailwind classes
-            height={600} // just needs to be proportional
-            className="w-full h-full object-cover rounded-xl"
-            priority
-          />
+        {/* RIGHT: Graphic (moves under heading on small screens, beside on desktop) */}
+        <div className="order-2 flex justify-center mt-8 xl:mt-0">
+          <Graphic />
         </div>
       </div>
     </section>

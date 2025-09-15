@@ -18,7 +18,7 @@ export function CEOLetter() {
           <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 z-10">
             <div className="mb-8">
               <div className="text-lg text-gray-900 font-semibold">
-                Introducing FACT
+                Introducing Overbase
               </div>
             </div>
 
@@ -26,29 +26,33 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-md leading-relaxed">
               <p>
-                Doing Customer Success well means knowing better than everyone
-                else what's going on with your customers. But how can you do
-                that when it's so hard for you to get customer data?
+                Being good at Customer Success means knowing what's going on
+                with your customers better than everyone else. But how can you
+                do that when it's so hard to get the data you need about your
+                customers?
               </p>
 
               <p>
-                The data you need to prepare for your next QBR, understand the
-                health of an account or make the case for an expansion is all
-                over the place, hard to access and often outdated
+                The data you need to prepare for your next QBR. The data you
+                need to understand the health of an account. The data you need
+                to make the case for an expansion. That data is all over the
+                place, hard to access and often outdated
               </p>
 
               <p>
-                You need to query Posthog to get usage data. Check Pylon and
-                Linear for open tickets. Look in Gainsight to understand the
-                account history. Beg the dev team to help you get some more
-                niche data you can't get otherwise. Then double check in other
-                places because all that data might actually be outdated
+                You might be constantly querying Posthog to get usage data.
+                Checking Pylon and Linear for open tickets. Looking in Gainsight
+                to understand the account history. Potentially even begging the
+                dev team to help you get some more niche data. Then you might
+                need to also double check a lot of that data because it could
+                actually be outdated
               </p>
 
               <p>
                 {" "}
                 <strong className="font-medium">
-                  Why is it so hard to get the data you need?
+                  What's going on? Why is it so hard to get the data you need to
+                  do your job?
                 </strong>
               </p>
 
@@ -64,23 +68,23 @@ export function CEOLetter() {
               </p>
 
               <p>
-                With FACT, you can now request any Customer Success data then
-                easily get the complete, up-to-date and accurate data you need
+                With Overbase, you now easily request any Customer Success data.
+                Then you quickly get the complete, up-to-date and accurate data
               </p>
 
               <p>
-                We use all your data from all your platforms and tools.
-                Structured data from Posthog, Gainsight, etc. Unstructured data
-                from call transcripts, Slack, emails, Notion, etc. And we also
+                Overbase uses all your data from all your platforms and tools.
+                Structured data from Posthog, Pylon, Gainsight, etc.
+                Unstructured data from Gong, Slack, Gmail, Notion, etc. And we
                 check external data to be sure everything is up-to date. For
                 example, we'll check LinkedIn to see if your champion changed
                 jobs
               </p>
 
               <p>
-                We also make sure you always get the highest quality results
-                because FACT has a human in the loop who double checks the data
-                before you receive it
+                We also have a human in the loop who double checks the data
+                before you receive it. That way you always get the highest
+                quality results
               </p>
 
               <p>

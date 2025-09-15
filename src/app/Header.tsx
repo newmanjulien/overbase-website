@@ -12,11 +12,11 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex items-center justify-between h-14">
           {/* Logo */}
-          <div className="h-16 w-auto flex items-center">
+          <div className="h-8 w-auto flex items-center">
             <div className="h-full aspect-[1000/600] relative">
               <Image
                 src="/logo.png"
-                alt="FactCX Logo"
+                alt="Logo"
                 fill
                 className="object-contain"
                 priority
