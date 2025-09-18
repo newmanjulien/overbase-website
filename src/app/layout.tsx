@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Easiest Customer Success data",
+  title: "Overbase › Customer Success data",
   description:
     "Easily get complete, up-to-date and accurate Customer Success data",
   icons: {
