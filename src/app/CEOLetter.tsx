@@ -119,7 +119,7 @@ export function CEOLetter() {
               <div className="font-semibold text-base text-gray-900 mb-1">
                 Julien Newman
               </div>
-              <div className="text-sm text-gray-500">CEO & CCO</div>
+              <div className="text-sm text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>
