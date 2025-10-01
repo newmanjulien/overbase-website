@@ -26,7 +26,7 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-base leading-relaxed">
               <p>
-                Being good at Customer Success means knowing what's going on
+                Being a worldclass Customer Success Manager means knowing what's going on
                 with your customers better than everyone else. But how can you
                 do that when it's so hard to get the data you need about your
                 customers?
@@ -50,7 +50,7 @@ export function CEOLetter() {
 
               <p>
                 <strong className="font-medium">
-                  What's going on? Why is it so hard to get the data you need to
+                  Why is it so hard to get the data you need to
                   do your job?
                 </strong>
               </p>
@@ -68,13 +68,6 @@ export function CEOLetter() {
               <p>
                 With Overbase, you now easily request any Customer Success data.
                 Then you quickly get the complete, up-to-date and accurate data
-              </p>
-
-              <p>
-                Requesting data in a rinse-and-repeat way is simple and
-                intuitive with our calendar interface. You can easily schedule
-                recurring requests for data which align with customer meetings
-                or deadlines
               </p>
 
               <p>
