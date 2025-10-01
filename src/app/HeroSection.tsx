@@ -7,8 +7,8 @@ import { Graphic } from "../components/Graphic";
 
 // Displayed in the graphic
 const TEXTS = [
-  "I have an upcoming QBR with the Docusign account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
-  "Check if the Docusign account has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
+  "I have an upcoming QBR with the Acme Corp account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
+  "Check if the Acme Corp account has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
   "Look at all of my accounts to see if any of the champions changed jobs. Do this by checking LinkedIn",
   "Look at the usage data from all my accounts to find the 10 accounts where there's been the largest drop in usage",
 ];
