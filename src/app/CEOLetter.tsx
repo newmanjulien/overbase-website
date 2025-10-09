@@ -86,16 +86,7 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Check out this{" "}
-                <a
-                  href="https://hndl.notion.site/Q-A-246226f80dd38065a1eac0e6321967da"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-normal text-blue-600 underline hover:text-blue-800"
-                >
-                  Q&A
-                </a>{" "}
-                if you have questions. Or join our{" "}
+                Join our{" "}
                 <button
                   type="button"
                   onClick={() => router.push("/waitlist")}
