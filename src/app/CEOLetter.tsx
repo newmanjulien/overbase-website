@@ -71,18 +71,16 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Overbase uses all your data from all your platforms and tools.
+                You easily request any customer using our simple and intuitive interface.
+              </p>
+                
+                <p>Then Overbase has AI agents which gather any data from all your platforms and tools.
                 Structured data from Posthog, Pylon, Gainsight, etc.
-                Unstructured data from Gong, Slack, Gmail, Notion, etc. And we
-                check external data to be sure everything is up-to date. For
-                example, we'll check LinkedIn to see if your champion changed
-                jobs
+                Unstructured data from Gong, Slack, Gmail, Notion, etc
               </p>
 
               <p>
-                We also have a human in the loop who double checks the data
-                before you receive it. That way you always get the highest
-                quality results
+                And we guarante complete and acurate results by having human data scientists review the data before you see it
               </p>
 
               <p>
