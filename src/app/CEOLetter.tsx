@@ -26,10 +26,10 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 text-base leading-relaxed">
               <p>
-                Being a worldclass Customer Success Manager means knowing what's going on
-                with your customers better than everyone else. But how can you
-                do that when it's so hard to get the data you need about your
-                customers?
+                Being a world class Customer Success Manager means knowing
+                what's going on with your customers better than everyone else.
+                But boy is that hard to do when it's so hard to get the data you
+                need about your customers?
               </p>
 
               <p>
@@ -50,37 +50,29 @@ export function CEOLetter() {
 
               <p>
                 <strong className="font-medium">
-                  Why is it so hard to get the data you need to
-                  do your job?
+                  Why is it so hard to get the data you need to do your job?
                 </strong>
               </p>
 
+              <p>With Overbase, you can now easily get any customer data</p>
+
               <p>
-                <strong className="font-medium">
-                  And why are you spending so much time trying (and often
-                  failing) to figure out what's going on with your customers?
-                </strong>{" "}
-                Instead of helping customers achieve their goals, strengthening
-                your relationships, ensuring renewals and setting the stage for
-                expansions
+                You simply explain what data you need in Plain English. Then an
+                AI agent quickly and automatically gathers the data in a way
+                that's both complete and accurate
               </p>
 
               <p>
-                With Overbase, you now easily request any Customer Success data.
-                Then you quickly get the complete, up-to-date and accurate data
+                This AI agent can gather data from all of your platforms and
+                tools. It can get structured data from Posthog, Pylon,
+                Gainsight, etc. But also unstructured data from Gong, Slack,
+                Gmail, Notion, etc
               </p>
 
               <p>
-                You easily request any customer using our simple and intuitive interface.
-              </p>
-                
-                <p>Then Overbase has AI agents which gather any data from all your platforms and tools.
-                Structured data from Posthog, Pylon, Gainsight, etc.
-                Unstructured data from Gong, Slack, Gmail, Notion, etc
-              </p>
-
-              <p>
-                And we guarante complete and acurate results by having human data scientists review the data before you see it
+                And to guarantee the quality of the data, one of Overbase's
+                human data scientists reviews the data which the AI agent
+                gathered
               </p>
 
               <p>
