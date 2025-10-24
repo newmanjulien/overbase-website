@@ -15,7 +15,7 @@ export function CEOLetter() {
           <div className="absolute inset-0 bg-gray-100 rounded-lg shadow-sm transform rotate-[0.5deg] scale-[1.005] border border-gray-200"></div>
 
           {/* Main letter */}
-          <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 z-10">
+          <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 border border-gray-200 z-10">
             <div className="mb-8">
               <div className="text-lg text-gray-900 font-semibold">
                 Introducing Overbase
@@ -28,15 +28,14 @@ export function CEOLetter() {
               <p>
                 Being a world class Customer Success Manager means knowing
                 what's going on with your customers better than everyone else.
-                But boy is that hard to do when it's so hard to get the data you
-                need about your customers?
+                But boy is that hard to do when customer data isn't easy to get
               </p>
 
               <p>
-                The data you need to prepare for your next QBR. The data you
-                need to understand the health of an account. The data you need
-                to make the case for an expansion. That data is all over the
-                place, hard to access and often outdated
+                The data you need to prepare for your next QBR, to understand
+                the health of an account, to make the case for an expansion.
+                That data is all over the place, hard to access and often
+                outdated
               </p>
 
               <p>
@@ -44,20 +43,20 @@ export function CEOLetter() {
                 Checking Pylon and Linear for open tickets. Looking in Gainsight
                 to understand the account history. Potentially even begging the
                 dev team to help you get some more niche data. Then you might
-                need to also double check a lot of that data because it could
-                actually be outdated
+                need to also double check much of that data because it could be
+                outdated
               </p>
 
               <p>
                 <strong className="font-medium">
-                  Why is it so hard to get the data you need to do your job?
+                  Why is it so hard to get the data you need?
                 </strong>
               </p>
 
-              <p>With Overbase, you can now easily get any customer data</p>
+              <p>With Overbase, CSMs can now easily get any customer data</p>
 
               <p>
-                You simply explain what data you need in Plain English. Then an
+                You simply explain what data you need in plain English. Then an
                 AI agent quickly and automatically gathers the data in a way
                 that's both complete and accurate
               </p>
@@ -71,8 +70,13 @@ export function CEOLetter() {
 
               <p>
                 And to guarantee the quality of the data, one of Overbase's
-                human data scientists reviews the data which the AI agent
-                gathered
+                human data scientists always reviews the data which the AI agent
+                gathered for you
+              </p>
+
+              <p>
+                The result is that you get customer data with close to 0 effort.
+                And that data is always accurate and complete
               </p>
 
               <p>
