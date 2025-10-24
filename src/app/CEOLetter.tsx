@@ -94,7 +94,7 @@ export function CEOLetter() {
 
             {/* Signature */}
             <div className="mt-8">
-              <div className="font-semibold text-base text-gray-900 mb-1">
+              <div className="font-semibold text-base text-gray-600 mb-1">
                 Julien Newman
               </div>
               <div className="text-sm text-gray-500">Founder & CEO</div>

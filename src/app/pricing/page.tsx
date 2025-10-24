@@ -140,7 +140,7 @@ export default function PricingPage() {
 
               <Button
                 // onClick={onJoinWaitlist}
-                className={`w-full mt-6 rounded-lg py-5 ${
+                className={`w-full mt-6 rounded-lg py-6 ${
                   tier.highlighted
                     ? "bg-gray-900 hover:bg-gray-800 text-white"
                     : "bg-gray-100 hover:bg-gray-50 text-gray-900"
