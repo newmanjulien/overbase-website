@@ -24,7 +24,7 @@ export function CEOLetter() {
 
             <div className="mt-8 pt-6 border-t border-gray-200"></div>
 
-            <div className="space-y-6 text-gray-900 text-base leading-relaxed">
+            <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
                 Being a world class Customer Success Manager means knowing
                 what's going on with your customers better than everyone else.

@@ -104,9 +104,9 @@ export default function PricingPage() {
           {tiers.map((tier, index) => (
             <div
               key={index}
-              className={`relative flex flex-col rounded-2xl border-2 p-6 ${
+              className={`relative flex flex-col rounded-2xl border-1 p-6 ${
                 tier.highlighted
-                  ? "border-gray-900 shadow-xl scale-105"
+                  ? "border-gray-900 shadow-xl scale-105 border-2"
                   : "border-gray-100"
               }`}
             >
@@ -122,9 +122,9 @@ export default function PricingPage() {
                 <h3 className="text-xl text-gray-900">{tier.name}</h3>
                 <div className="flex items-baseline gap-2">
                   <span className="text-4xl text-gray-900">{tier.price}</span>
-                  <span className="text-sm text-gray-600">/ {tier.period}</span>
+                  <span className="text-sm text-gray-900">/ {tier.period}</span>
                 </div>
-                <p className="text-sm text-gray-600 min-h-[2.5rem]">
+                <p className="text-sm text-gray-900 min-h-[2.5rem]">
                   {tier.description}
                 </p>
               </div>
@@ -132,8 +132,8 @@ export default function PricingPage() {
               <div className="flex-1 mt-6 space-y-3">
                 {tier.features.map((feature, featureIndex) => (
                   <div key={featureIndex} className="flex items-start gap-2">
-                    <Check className="w-4 h-4 text-gray-900 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">{feature}</span>
+                    <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-sm text-gray-600">{feature}</span>
                   </div>
                 ))}
               </div>
@@ -167,7 +167,7 @@ export default function PricingPage() {
               value="item-1"
               className="border border-gray-200 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 How does the 14-day trial work?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
@@ -183,7 +183,7 @@ export default function PricingPage() {
               value="item-2"
               className="border border-gray-200 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 Can I upgrade or downgrade my plan?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
@@ -198,7 +198,7 @@ export default function PricingPage() {
               value="item-3"
               className="border border-gray-200 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 What happens if I exceed my plan's limits?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
@@ -213,7 +213,7 @@ export default function PricingPage() {
               value="item-4"
               className="border border-gray-200 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 How does the AI + human combination work?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
@@ -229,7 +229,7 @@ export default function PricingPage() {
               value="item-5"
               className="border border-gray-200 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 Is my data secure and confidential?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
@@ -245,7 +245,7 @@ export default function PricingPage() {
               value="item-6"
               className="ring ring-gray-200 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 What's included in Enterprise pricing?
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
