@@ -13,16 +13,62 @@ interface Tier {
   highlighted: boolean;
 }
 
-interface PricingProps {
-  tiers: Tier[];
-}
+export default function Pricing() {
+  const tiers: Tier[] = [
+    {
+      name: "Starter",
+      price: "$1,500",
+      period: "customer per year",
+      description:
+        "Pay $1,500 per customer but get reimbursed if the customer churns",
+      features: [
+        "1 user",
+        "Unlimited data requests",
+        "Unlimited connectors",
+        "Churn guarantee",
+        "Your data is never used for training our AI",
+        "GDPR compliance",
+      ],
+      cta: "Join waitlist",
+      highlighted: false,
+    },
+    {
+      name: "Team",
+      price: "$2,000",
+      period: "customer per year",
+      description:
+        "Pay $2,000 per customer but get reimbursed if the customer churns",
+      features: [
+        "Everything in Starter",
+        "Unlimited users",
+        "Shared team templates",
+        "Requests can cover multiple customers",
+        "Requests can pull public data",
+      ],
+      cta: "Join waitlist",
+      highlighted: true,
+    },
+    {
+      name: "Enterprise",
+      price: "$3,000",
+      period: "customer per year",
+      description:
+        "Pay $3,000 per customer but get reimbursed if the customer churns",
+      features: [
+        "Everything in Team",
+        "SAML/OIDC SSO",
+        "Dedicated support and SLAs",
+        "Custom NDAs with each Overbase team member who has access to your data",
+      ],
+      cta: "Join waitlist",
+      highlighted: false,
+    },
+  ];
 
-export default function Pricing({ tiers }: PricingProps) {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       {/* Title */}
-      {/* <section className="pt-40 pb-30 text-center space-y-6 max-w-3xl"> */}
-      <section className="pt-40 pb-30 text-center space-y-6 max-w-4xl mx-auto">
+      <section className="pt-42 pb-32 text-center space-y-6 max-w-4xl mx-auto">
         <h1 className="text-3xl md:text-6xl text-gray-900 font-bold">
           $0 if your customer churns
         </h1>
@@ -30,8 +76,8 @@ export default function Pricing({ tiers }: PricingProps) {
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-bold">
             Giving CSMs easy data increases renewals
           </span>{" "}
-          reliably and consistently. We’ll reimburse you if your customer churns
-          while you're using Overbase.
+          reliably and consistently. Which is why we’ll reimburse you the whole
+          amount you paid if your customer churns while you're using Overbase.
         </p>
       </section>
 
@@ -57,7 +103,9 @@ export default function Pricing({ tiers }: PricingProps) {
             <div className="space-y-3">
               <h3 className="text-xl text-gray-900">{tier.name}</h3>
               <div className="flex items-baseline gap-2">
-                <span className="text-4xl text-gray-900">{tier.price}</span>
+                <span className="text-4xl text-gray-900 font-semibold">
+                  {tier.price}
+                </span>
                 <span className="text-sm text-gray-900">/ {tier.period}</span>
               </div>
               <p className="text-sm text-gray-900 min-h-[2.5rem]">
