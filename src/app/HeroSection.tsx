@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, memo } from "react";
-import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
 import { Graphic } from "../components/Graphic";
 
@@ -44,18 +43,20 @@ function HotkeyBadge({
 const CtaButtons = memo(function CtaButtons({
   waitlistRef,
   demoRef,
+  onJoinWaitlist,
+  onDemo,
 }: {
   waitlistRef: React.RefObject<HTMLButtonElement | null>;
-  demoRef: React.RefObject<HTMLAnchorElement | null>;
+  demoRef: React.RefObject<HTMLButtonElement | null>;
+  onJoinWaitlist: () => void;
+  onDemo: () => void;
 }) {
-  const router = useRouter();
-
   return (
     <div className="flex items-center justify-center xl:justify-start gap-4 mt-2">
       {/* Waitlist button */}
       <Button
         ref={waitlistRef}
-        onClick={() => router.push("/waitlist")}
+        onClick={onJoinWaitlist}
         size="lg"
         className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-base rounded-lg"
       >
@@ -67,30 +68,29 @@ const CtaButtons = memo(function CtaButtons({
 
       {/* Demo button */}
       <Button
-        asChild
+        ref={demoRef}
+        onClick={onDemo}
         size="lg"
         className="bg-gray-50 hover:bg-gray-100 text-black p-6 text-base rounded-lg"
       >
-        <a
-          ref={demoRef}
-          href="https://cal.com/juliennewman/15min"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Demo with our CEO"
-        >
-          <span className="inline-flex items-center gap-2">
-            Demo with our CEO
-            <HotkeyBadge keyChar="F" variant="light" />
-          </span>
-        </a>
+        <span className="inline-flex items-center gap-2">
+          Demo with our CEO
+          <HotkeyBadge keyChar="F" variant="light" />
+        </span>
       </Button>
     </div>
   );
 });
 
-export function HeroSection() {
+export function HeroSection({
+  onJoinWaitlist,
+  onDemo,
+}: {
+  onJoinWaitlist: () => void;
+  onDemo: () => void;
+}) {
   const waitlistRef = useRef<HTMLButtonElement | null>(null);
-  const demoRef = useRef<HTMLAnchorElement | null>(null);
+  const demoRef = useRef<HTMLButtonElement | null>(null);
 
   // Global keyboard shortcuts ("w" = waitlist, "f" = demo)
   useEffect(() => {
@@ -130,7 +130,12 @@ export function HeroSection() {
 
           {/* Desktop buttons */}
           <div className="hidden xl:block mt-6">
-            <CtaButtons waitlistRef={waitlistRef} demoRef={demoRef} />
+            <CtaButtons
+              waitlistRef={waitlistRef}
+              demoRef={demoRef}
+              onJoinWaitlist={onJoinWaitlist}
+              onDemo={onDemo}
+            />
           </div>
         </div>
 
@@ -145,7 +150,12 @@ export function HeroSection() {
       {/* === Mobile Layout === */}
       <div className="w-full max-w-6xl mx-auto xl:hidden mt-6">
         <div className="w-full max-w-lg mx-auto">
-          <CtaButtons waitlistRef={waitlistRef} demoRef={demoRef} />
+          <CtaButtons
+            waitlistRef={waitlistRef}
+            demoRef={demoRef}
+            onJoinWaitlist={onJoinWaitlist}
+            onDemo={onDemo}
+          />
         </div>
         <div className="mt-12 flex justify-center">
           <div className="w-full max-w-lg px-4">

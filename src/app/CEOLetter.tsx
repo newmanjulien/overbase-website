@@ -1,9 +1,6 @@
 "use client";
-import { useRouter } from "next/navigation";
 
-export function CEOLetter() {
-  const router = useRouter();
-
+export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
       <div className="max-w-3xl mx-auto">
@@ -83,7 +80,7 @@ export function CEOLetter() {
                 Join our{" "}
                 <button
                   type="button"
-                  onClick={() => router.push("/waitlist")}
+                  onClick={onJoinWaitlist}
                   className="font-normal text-blue-600 underline hover:text-blue-800 cursor-pointer"
                 >
                   waitlist
