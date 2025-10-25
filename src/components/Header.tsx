@@ -59,20 +59,20 @@ export function Header({
           </div>
 
           {/* Right side buttons */}
-          <div className="flex items-center gap-8">
+          <div className="flex items-center gap-7">
             <button
               onClick={onPricingClick}
               className={`text-sm font-medium transition-colors ${
                 isPricingPage
-                  ? "text-gray-900 font-medium"
-                  : "text-gray-700 hover:text-gray-900"
+                  ? "text-gray-900"
+                  : "text-gray-900 hover:text-[#FC3636]"
               }`}
             >
               Pricing
             </button>
 
             <Button
-              size="default"
+              size="sm"
               className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm"
               onClick={onJoinWaitlist}
             >

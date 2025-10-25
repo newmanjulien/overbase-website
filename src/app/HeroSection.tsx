@@ -6,7 +6,7 @@ import { Graphic } from "../components/Graphic";
 
 // Displayed in the graphic
 const TEXTS = [
-  "I have an upcoming QBR with the Acme Corp account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
+  "I have a QBR with the Acme Corp account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
   "Check if the Acme Corp account has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
   "Look at all of my accounts to see if any of the champions changed jobs. Do this by checking LinkedIn",
   "Look at the usage data from all my accounts to find the 10 accounts where there's been the largest drop in usage",
@@ -115,15 +115,15 @@ export function HeroSection({
     <section className="min-h-screen flex flex-col justify-center px-6 xl:px-24 pt-14">
       <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-lg text-center xl:text-left">
-          <h1 className="text-6xl text-gray-900 tracking-tight leading-tight font-bold">
+        <div className="w-full max-w-md text-center xl:text-left">
+          <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
             Customer Success needs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
               easy data
             </span>
           </h1>
 
-          <h2 className="mt-6 text-lg text-gray-600 font-medium">
+          <h2 className="mt-6 text-md text-gray-600 font-medium">
             Easily get accurate customer data that's gathered by AI agents then
             reviewed by human data scientists
           </h2>
