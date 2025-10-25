@@ -21,31 +21,31 @@ export default function FAQ() {
           {[
             {
               q: "How does Overbase's pricing work?",
-              a: "Start using hndl immediately with full access to your chosen plan's features. No credit card required. If you're satisfied after the trial, simply add your payment information to continue. Otherwise, your account will automatically pause with no charges.",
+              a: "Our pricing is simple. You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers",
             },
             {
               q: "Do I pay a fee for each customer or for each user?",
-              a: "Yes, you can change your plan at any time. When upgrading, you'll get immediate access to new features and we'll prorate the billing. When downgrading, the change takes effect at the start of your next billing cycle.",
+              a: "For each customer. There's no per user fee. You pay a flat annual fee for each customer. Then you get unlimited data requests about those customers",
             },
             {
               q: "Do you reimburse me if my customer churns?",
-              a: "We'll notify you when you're approaching your plan limits. You can either upgrade or purchase additional capacity. We never cut off service unexpectedly—your workflow comes first.",
+              a: "Yes. You get churn protection when you purchase 2 or 3 years of Overbase service. We reimburse all the money you gave us if the customer churns during the period of the contract you purchased",
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
-              a: "Absolutely. We use enterprise-grade encryption for all data. Our team signs NDAs, and we're SOC 2 Type II compliant. Enterprise plans include SSO and custom retention policies.",
+              a: "Unlimited. You can request any amount of data with no cap about the customers you add to Overbase",
             },
             {
               q: "Can an unlimited number of CSMs use Overbase or is there a per user fee?",
-              a: "Absolutely. We use enterprise-grade encryption for all data. Our team signs NDAs, and we're SOC 2 Type II compliant. Enterprise plans include SSO and custom retention policies.",
+              a: "There's no user cap or per user fee for Team and Enterprise plans. The Starter plan is designed for a Chief of Staff or a dedicated Data Science team member who handles all data for CSMs. The Team and Enterprise plans are designed for CSMs to get their own data. The Starter plan allows 1 user and doesn't have collaboration features. The Team and Enterprise plans include unlimited users",
             },
             {
               q: "How secure and compliant is Overbase?",
-              a: "Enterprise plans are customized and include unlimited usage, dedicated teams, API access, advanced security, and SLA guarantees.",
+              a: "Overbase is safer than all other data systems. We store 0 of your business' data and only access it when needed. We are also GDPR and SOC2 compliant. And you can get enterprise-ready security features like SAML/OIDC SSO with the Enterprise plan",
             },
             {
               q: "Does Overbase use my data to train your AI?",
-              a: "Enterprise plans are customized and include unlimited usage, dedicated teams, API access, advanced security, and SLA guarantees.",
+              a: "No. We do not use your data to train our AI. We also do not store any of your data",
             },
           ].map((item, i) => (
             <AccordionItem
