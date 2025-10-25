@@ -64,8 +64,8 @@ export function Header({
               onClick={onPricingClick}
               className={`text-sm font-medium transition-colors ${
                 isPricingPage
-                  ? "text-gray-900"
-                  : "text-gray-900 hover:text-[#FC3636]"
+                  ? "text-gray-800"
+                  : "text-gray-800 hover:text-[#FC3636]"
               }`}
             >
               Pricing

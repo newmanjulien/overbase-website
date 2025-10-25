@@ -72,8 +72,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                The result is that you get customer data with close to 0 effort.
-                And that data is always accurate and complete
+                The result is that you go to 1 single place to get any customer
+                data. You get that data with close to 0 effort. And the data is
+                always accurate and complete
               </p>
 
               <p>
