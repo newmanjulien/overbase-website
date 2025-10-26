@@ -21,9 +21,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   const tiers: Tier[] = [
     {
       name: "Starter",
-      price: "$700",
+      price: "$1,000",
       period: "customer per year",
-      description: "Pay $700 per customer or pay $0 if the customer churns",
+      description: "Pay $1,000 per customer or pay $0 if the customer churns",
       features: [
         "1 user",
         "Unlimited data requests",
@@ -37,9 +37,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Team",
-      price: "$900",
+      price: "$1,500",
       period: "customer per year",
-      description: "Pay $900 per customer or pay $0 if the customer churns",
+      description: "Pay $1,500 per customer or pay $0 if the customer churns",
       features: [
         "Everything in Starter",
         "Unlimited users",
@@ -52,9 +52,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Enterprise",
-      price: "$1,500",
+      price: "$2,500",
       period: "customer per year",
-      description: "Pay $1,500 per customer or pay $0 if the customer churns",
+      description: "Pay $2,500 per customer or pay $0 if the customer churns",
       features: [
         "Everything in Team",
         "SAML/OIDC SSO",
