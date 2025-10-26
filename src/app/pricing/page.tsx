@@ -5,6 +5,7 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import Pricing from "./Pricing";
 import FAQ from "./FAQ";
+import { ROICalculator } from "./ROI";
 
 export default function PricingPage() {
   const router = useRouter();
@@ -16,6 +17,7 @@ export default function PricingPage() {
         onJoinWaitlist={() => router.push("/waitlist")} // 👈 join waitlist button
       />{" "}
       <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
+      <ROICalculator />
       <FAQ />
       <Footer />
     </div>

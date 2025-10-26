@@ -21,15 +21,15 @@ export default function FAQ() {
           {[
             {
               q: "How does Overbase's pricing work?",
-              a: "Our pricing is simple. You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers",
+              a: "You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers. The shortest countract length is 2 years",
             },
             {
-              q: "Do I pay a fee for each customer or for each user?",
-              a: "For each customer. There's no per user fee. You pay a flat annual fee for each customer. Then you get unlimited data requests about those customers",
+              q: "What's the shortest contract length?",
+              a: "The shortest contract length is 2 years. And you pay upfront for the 2 years",
             },
             {
               q: "Do you reimburse me if my customer churns?",
-              a: "Yes. You get churn protection when you purchase 2 or 3 years of Overbase service. We reimburse all the money you gave us if the customer churns during the period of the contract you purchased",
+              a: "Yes. You pay us for the duration of your contract. Then we reimburse all the money you gave us if the customer churns during that time",
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
