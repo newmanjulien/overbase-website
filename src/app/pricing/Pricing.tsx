@@ -74,10 +74,10 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
-            Giving CSMs easy data increases renewals
+            Overbase reduces churn by +50%
           </span>{" "}
           which is why we’ll reimburse you if your customer churns while you're
-          using Overbase
+          using our tech
         </p>
       </section>
 
