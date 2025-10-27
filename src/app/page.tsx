@@ -18,7 +18,7 @@ export default function HomePage() {
       <HeroSection
         onJoinWaitlist={() => router.push("/waitlist")}
         onDemo={() =>
-          window.open("https://cal.com/juliennewman/15min", "_blank")
+          window.open("https://cal.com/juliennewman/10min", "_blank")
         }
       />
       <CEOLetter onJoinWaitlist={() => router.push("/waitlist")} />
