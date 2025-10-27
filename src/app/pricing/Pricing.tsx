@@ -85,7 +85,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
         {tiers.map((tier, index) => (
           <div
             key={index}
-            className={`relative flex flex-col rounded-2xl border-1 p-6 ${
+            className={`relative flex flex-col rounded-3xl border-1 p-6 ${
               tier.highlighted
                 ? "border-gray-900 shadow-xl scale-105 border-2"
                 : "border-gray-100"

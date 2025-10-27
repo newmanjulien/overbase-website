@@ -29,19 +29,19 @@ export default function FAQ() {
             },
             {
               q: "Do you reimburse me if my customer churns?",
-              a: "Yes. You pay us for the duration of your contract. Then we reimburse all the money you gave us if the customer churns during that time",
+              a: "Yes. You pay us. Then we reimburse all the money you gave us if the customer churns during your contract with Overbase",
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
-              a: "Unlimited. You can request any amount of data with no cap about the customers you add to Overbase",
+              a: "Unlimited. You can request any amount of data with no cap",
             },
             {
-              q: "Can an unlimited number of CSMs use Overbase or is there a per user fee?",
-              a: "There's no user cap or per user fee for Team and Enterprise plans. The Starter plan is designed for a Chief of Staff or a dedicated Data Science team member who handles all data for CSMs. The Team and Enterprise plans are designed for CSMs to get their own data. The Starter plan allows 1 user and doesn't have collaboration features. The Team and Enterprise plans include unlimited users",
+              q: "Can an unlimited number of CSMs use Overbase?",
+              a: "There's no user cap or per user fee for Team and Enterprise plans. The Starter plan only has 1 user",
             },
             {
               q: "How secure and compliant is Overbase?",
-              a: "Overbase is safer than all other data systems. We store 0 of your business' data and only access it when needed. We are also GDPR and SOC2 compliant. And you can get enterprise-ready security features like SAML/OIDC SSO with the Enterprise plan",
+              a: "Overbase is safer than all other data systems. This is because we're the only data system that stores 0 of your data. We are also GDPR and SOC2 compliant. You can also get enterprise-ready security features like SAML/OIDC SSO with the Enterprise plan",
             },
             {
               q: "Does Overbase use my data to train your AI?",

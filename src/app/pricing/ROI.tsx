@@ -23,7 +23,7 @@ export function ROICalculator() {
           Calculate the revenue you'd get by using Overbase
         </p>
       </div>
-      <Card className="p-6 md:p-9 bg-white border-1 border-gray-100 rounded-3xl shadow-none">
+      <Card className="p-6 md:p-9 bg-white border-1 border-gray-100 rounded-4xl shadow-none">
         <div className="space-y-10">
           {/* Number of customers slider */}
           <div className="space-y-4">
@@ -37,7 +37,7 @@ export function ROICalculator() {
               value={[numberOfCustomers]}
               onValueChange={(value) => setNumberOfCustomers(value[0])}
               min={50}
-              max={1000}
+              max={900}
               step={10}
               className="w-full"
             />
@@ -50,7 +50,7 @@ export function ROICalculator() {
                 Average ACV of your customers
               </label>
               <span className="font-medium text-gray-900">
-                ${averageACV.toLocaleString("en-US")}
+                ${averageACV.toLocaleString("en-US")} ACV
               </span>
             </div>
             <Slider
@@ -82,7 +82,7 @@ export function ROICalculator() {
           {/* Results */}
           <div className="pt-8 border-t-1 border-gray-100">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="text-center p-4 bg-gray-50 rounded-xl">
+              <div className="text-center p-4 bg-gray-50 rounded-2xl">
                 <div className="text-sm text-gray-600 mb-2">
                   Currently lost to churn
                 </div>
@@ -91,7 +91,7 @@ export function ROICalculator() {
                 </div>
               </div>
 
-              <div className="text-center p-4 bg-gray-50 rounded-xl">
+              <div className="text-center p-4 bg-gray-50 rounded-2xl">
                 <div className="text-sm text-gray-600 mb-2">
                   Churn with Overbase{" "}
                 </div>
@@ -100,7 +100,7 @@ export function ROICalculator() {
                 </div>
               </div>
 
-              <div className="text-center p-4 bg-gray-900 rounded-xl">
+              <div className="text-center p-4 bg-gray-900 rounded-2xl">
                 <div className="text-sm text-gray-400 mb-2">
                   Extra revenue you'd get
                 </div>

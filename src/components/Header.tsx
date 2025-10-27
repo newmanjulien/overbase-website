@@ -59,7 +59,7 @@ export function Header({
           </div>
 
           {/* Right side buttons */}
-          <div className="flex items-center gap-7">
+          <div className="flex items-center gap-6">
             <button
               onClick={onPricingClick}
               className={`text-sm font-medium transition-colors ${
