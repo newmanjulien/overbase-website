@@ -17,7 +17,6 @@ export default function PricingPage() {
         onJoinWaitlist={() => router.push("/waitlist")} // 👈 join waitlist button
       />{" "}
       <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
-      <ROICalculator />
       <FAQ />
       <Footer />
     </div>

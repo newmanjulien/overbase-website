@@ -23,7 +23,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       name: "Starter",
       price: "$700",
       period: "customer per year",
-      description: "Pay $700 per customer or pay $0 if the customer churns",
+      description:
+        "For a single Data Scientist or Chief of Staff who supports the CS team",
       features: [
         "1 user",
         "Unlimited data requests",
@@ -39,7 +40,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       name: "Team",
       price: "$900",
       period: "customer per year",
-      description: "Pay $900 per customer or pay $0 if the customer churns",
+      description:
+        "So everyone on the Customer Success team can easily get their own data",
       features: [
         "Everything in Starter",
         "Unlimited users",
@@ -54,7 +56,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       name: "Enterprise",
       price: "$1,500",
       period: "customer per year",
-      description: "Pay $1,500 per customer or pay $0 if the customer churns",
+      description:
+        "For large enterprises who need the best security and support",
       features: [
         "Everything in Team",
         "SAML/OIDC SSO",
@@ -70,14 +73,14 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <section className="pt-36 pb-28 text-center space-y-6 max-w-2xl mx-auto">
         <h1 className="text-5xl text-gray-900 font-semibold">
-          $0 if your customer churns
+          Easy, secure and reliable
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
+          AI agents easily and securely gather any data from any platform then{" "}
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
-            Overbase reduces churn by +50%
+            human data scientists review the data
           </span>{" "}
-          which is why we’ll reimburse you if your customer churns while you're
-          using our tech
+          to make sure it's reliable and complete
         </p>
       </section>
 

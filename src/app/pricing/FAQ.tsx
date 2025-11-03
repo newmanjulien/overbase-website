@@ -21,19 +21,15 @@ export default function FAQ() {
           {[
             {
               q: "How does Overbase's pricing work?",
-              a: "You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers. The shortest countract length is 2 years",
-            },
-            {
-              q: "What's the shortest contract length?",
-              a: "The shortest contract length is 2 years. And you pay upfront for the 2 years",
-            },
-            {
-              q: "Do you reimburse me if my customer churns?",
-              a: "Yes. You pay us. Then we reimburse all the money you gave us if the customer churns during your contract with Overbase",
+              a: "You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers",
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
               a: "Unlimited. You can request any amount of data with no cap",
+            },
+            {
+              q: "Do I pay per customer or per user?",
+              a: "Per customer. You pay for each customer you add to Overbase",
             },
             {
               q: "Can an unlimited number of CSMs use Overbase?",
@@ -41,7 +37,7 @@ export default function FAQ() {
             },
             {
               q: "How secure and compliant is Overbase?",
-              a: "Overbase is safer than all other data systems. This is because we're the only data system that stores 0 of your data. We are also GDPR and SOC2 compliant. You can also get enterprise-ready security features like SAML/OIDC SSO with the Enterprise plan",
+              a: "Overbase is designed for safety and compliance. We're the only data system that stores 0 of your data. We are also GDPR and SOC2 compliant. You can also get enterprise-ready security features like SAML/OIDC SSO with the Enterprise plan",
             },
             {
               q: "Does Overbase use my data to train your AI?",
