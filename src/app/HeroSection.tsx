@@ -124,7 +124,7 @@ export function HeroSection({
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Easily get accurate customer data that's gathered by AI agents then
+            Easily get reliable customer data that's gathered by AI agents then
             reviewed by human data scientists
           </h2>
 
