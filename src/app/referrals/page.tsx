@@ -3,10 +3,9 @@
 import { useRouter } from "next/navigation";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import Pricing from "./Pricing";
-import FAQ from "./FAQ";
+import { Referrals } from "./Referrals";
 
-export default function PricingPage() {
+export default function ReferralsPage() {
   const router = useRouter();
 
   return (
@@ -15,8 +14,7 @@ export default function PricingPage() {
         onLogoClick={() => router.push("/")} // 👈 makes the logo go home
         onJoinWaitlist={() => router.push("/waitlist")} // 👈 join waitlist button
       />{" "}
-      <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
-      <FAQ />
+      <Referrals />
       <Footer />
     </div>
   );
