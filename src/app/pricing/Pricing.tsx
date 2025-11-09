@@ -21,10 +21,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   const tiers: Tier[] = [
     {
       name: "Starter",
-      price: "$700",
+      price: "$400",
       period: "customer per year",
-      description:
-        "For a single Data Scientist or Chief of Staff who supports the CS team",
+      description: "For a Data Scientist or Chief of Staff who supports a team",
       features: [
         "1 user",
         "Unlimited data requests",
@@ -38,10 +37,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Team",
-      price: "$900",
+      price: "$500",
       period: "customer per year",
-      description:
-        "So everyone on the Customer Success team can easily get their own data",
+      description: "So everyone on the team can easily get their own data",
       features: [
         "Everything in Starter",
         "Unlimited users",
@@ -54,10 +52,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Enterprise",
-      price: "$1,500",
+      price: "$900",
       period: "customer per year",
-      description:
-        "For large enterprises who need the best security and support",
+      description: "For large enterprises who need extra security and support",
       features: [
         "Everything in Team",
         "SAML/OIDC SSO",

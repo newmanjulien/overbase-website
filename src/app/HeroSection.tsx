@@ -117,15 +117,15 @@ export function HeroSection({
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
-            Customer Success needs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
-              easy data
-            </span>
+              It's too hard
+            </span>{" "}
+            to get customer data
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Easily get reliable customer data that's gathered by AI agents then
-            reviewed by human data scientists
+            Let AI agents easily get your customer data instead of relying on
+            complex legacy data systems
           </h2>
 
           {/* Desktop buttons */}
