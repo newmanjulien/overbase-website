@@ -28,16 +28,16 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Our businesses have way too much customer data which has made it
-                remarkably hard - and often just impossible - to know what's
-                going on with our customers
+                Our businesses have way too much customer data. And our data is
+                in too many silos. Which has made it remarkably hard - and often
+                just impossible - to know what's going on with our customers
               </p>
 
               <p>
-                But adding many more layers of complication is clearly not the
-                way to reduce complication. And creating yet another database
-                can't possibly make things better. Even if that extra database
-                is marketed as a "single source of truth"
+                But adding more layers of complication is not the way to reduce
+                complication. And creating yet another database can't possibly
+                make things better. Even if that extra database is a "single
+                source of truth"
               </p>
 
               <p>
@@ -65,14 +65,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 And to guarantee the quality of the data, one of Overbase's
-                human data scientists always reviews the data which the AI agent
-                gathered for you to be sure the AI did it properly
+                human data scientists always reviews the data to be sure the AI
+                did everything properly
               </p>
 
               <p>
-                The result is that getting customer data becomes so simple and
-                intuitive that even the least technical person can quickly and
-                easily do everything on their own
+                The result is that getting data becomes so simple that even the
+                least technical person can quickly and easily get any data in
+                just a few seconds
               </p>
 
               <p>
