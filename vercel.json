@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/raffle",
+      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSckXVOiaNwzx8rNQSxrGoMdv3ulxzTLIBhokbUYvex4wykTBQ/viewform?usp=header",
+      "permanent": true
+    }
+  ]
+}
