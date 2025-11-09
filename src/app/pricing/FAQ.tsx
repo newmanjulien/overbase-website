@@ -24,16 +24,16 @@ export default function FAQ() {
               a: "You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers",
             },
             {
+              q: "Do humans review the data before I get it?",
+              a: "Yes. AI agents gather and format your data then a human data scientist reviews it before it's sent to you. This lets us guarantee reliable results you can trust",
+            },
+            {
+              q: "Why do humans review my data?",
+              a: "Having humans in the loop guarantees reliable results you can trust. AI can do almost all the work. But it just isn't good enough yet for reliable results",
+            },
+            {
               q: "Do I get unlimited data requests or is there a cap?",
               a: "Unlimited. You can request any amount of data with no cap",
-            },
-            {
-              q: "Do I pay per customer or per user?",
-              a: "Per customer. You pay for each customer you add to Overbase",
-            },
-            {
-              q: "Can an unlimited number of CSMs use Overbase?",
-              a: "There's no user cap or per user fee for Team and Enterprise plans. The Starter plan only has 1 user",
             },
             {
               q: "How secure and compliant is Overbase?",
