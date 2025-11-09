@@ -57,16 +57,17 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                AI agents can easily gather data from all of your platforms and
-                tools with close to 0 setup. Agents easily get structured data
-                from Posthog, Zendesk, Salesforce, etc. But also unstructured
-                data from Gong, Slack, Gmail, Notion, etc
+                AI agents gather data from all of your platforms and tools with
+                close to 0 setup. Agents get structured data from Posthog,
+                Zendesk, Salesforce, etc. But also unstructured data from Gong,
+                Slack, Gmail, Notion, etc
               </p>
 
               <p>
                 And to guarantee the quality of the data, one of Overbase's
-                human data scientists always reviews the data to be sure the AI
-                did everything properly
+                human data scientists reviews the data to be sure the AI did
+                everything properly (AIs still make too many mistakes to be all
+                that useful on their own)
               </p>
 
               <p>
