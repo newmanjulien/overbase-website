@@ -70,9 +70,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                The result is that you go to 1 single place to get any customer
-                data. You get that data with close to 0 effort. And the data is
-                always accurate and complete
+                The result is that getting customer data becomes so simple and
+                intuitive that even the least technical person can quickly and
+                easily do everything on their own
               </p>
 
               <p>
