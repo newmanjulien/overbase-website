@@ -28,28 +28,28 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Our businesses have way too much customer data. And our data is
-                in too many silos. Which has made it remarkably hard - and often
-                just impossible - to know what's going on with our customers
+                Businesses have too much customer data. And this data is in too
+                many silos. Which has made it hard - and often just impossible -
+                to know what's going on with our customers
               </p>
 
               <p>
-                But adding more layers of complication is not the way to reduce
-                complication. And creating yet another database can't possibly
-                make things better. Even if that extra database is a "single
-                source of truth"
+                You've probably seen first hand how complex and expensive legacy
+                solutions often just make things worse. Adding more layers of
+                complication is not the way to reduce complication
               </p>
 
               <p>
                 <strong className="font-medium">
-                  There's got to be an easy way of getting customer data
+                  There's got to be an easy way of knowing what's going on with
+                  customers
                 </strong>
               </p>
 
               <p>
                 <strong className="font-medium">
-                  Overbase is the first data system that uses AI agents to fetch
-                  customer data.
+                  Overbase is the first data system that uses AI agents to
+                  easily get any customer data.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
                 quickly and automatically gathers the data in a way that's
@@ -57,29 +57,15 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                AI agents gather data from all of your platforms and tools with
-                close to 0 setup. Agents get structured data from Posthog,
-                Zendesk, Salesforce, etc. But also unstructured data from Gong,
-                Slack, Gmail, Notion, etc
+                Our AI agents can gather data from anywhere with close to 0
+                setup. Agents get structured data from Posthog, Zendesk,
+                Salesforce, etc. But also unstructured data from Gong, Slack,
+                Gmail, Notion, etc
               </p>
 
               <p>
                 And to guarantee the quality of the data, one of Overbase's
-                human data scientists reviews the data to be sure the AI did
-                everything properly (AIs still make too many mistakes to be all
-                that useful on their own)
-              </p>
-
-              <p>
-                The result is that getting data becomes so simple that even the
-                least technical person can quickly and easily get any data in
-                just a few seconds
-              </p>
-
-              <p>
-                And to top it off, this agentic architecture is more secure and
-                compliant than all existing systems because we don't store any
-                of your data
+                human data scientists reviews the data before you get it
               </p>
 
               <p>
