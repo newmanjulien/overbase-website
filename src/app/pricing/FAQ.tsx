@@ -25,11 +25,11 @@ export default function FAQ() {
             },
             {
               q: "Do humans review the data before I get it?",
-              a: "Yes. AI agents gather and format your data then a human data scientist reviews it before it's sent to you. This lets us guarantee reliable results you can trust",
+              a: "Yes. AI agents gather and format your data. Then we guarantee reliable results you can trust by having a human data scientist reviews the data before it's sent to you",
             },
             {
               q: "Why do humans review my data?",
-              a: "Having humans in the loop guarantees reliable results you can trust. AI can do almost all the work. But it just isn't good enough yet for reliable results",
+              a: "Having humans in the loop guarantees reliable results you can trust. AI can do almost all the work. But AI isn't yet reliable enough",
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
