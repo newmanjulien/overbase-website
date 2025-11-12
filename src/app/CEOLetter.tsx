@@ -30,19 +30,20 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               <p>
                 Businesses have too much customer data. And this data is in too
                 many silos. Which has made it hard - and often just impossible -
-                to know what's going on with our customers
+                to know what's going on with customers
               </p>
 
               <p>
-                You've probably seen first hand how complex and expensive legacy
-                solutions often just make things worse. Adding more layers of
-                complication is not the way to reduce complication
+                You might have seen first hand that legacy data solutions often
+                just make it harder to get data about customers. Those legacy
+                solutions are expensive, slow to set up and they usually add so
+                much complexity that data ends up getting harder not easier
               </p>
 
               <p>
                 <strong className="font-medium">
-                  There's got to be an easy way of knowing what's going on with
-                  customers
+                  There's got to be a simple and quick way to make customer data
+                  easy
                 </strong>
               </p>
 
@@ -57,15 +58,22 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Our AI agents can gather data from anywhere with close to 0
-                setup. Agents get structured data from Posthog, Zendesk,
-                Salesforce, etc. But also unstructured data from Gong, Slack,
-                Gmail, Notion, etc
+                AI agents can gather data from anywhere. Agents can get
+                structured data from Posthog, Zendesk, Salesforce, etc. But also
+                unstructured data from Gong, Slack, Gmail, Notion, etc
               </p>
 
               <p>
-                And to guarantee the quality of the data, one of Overbase's
-                human data scientists reviews the data before you get it
+                And there's close to 0 setup. AI agents can get any data from
+                anywhere using any approach. Even if the only way to get the
+                data is to log in using the same interface humans do
+              </p>
+
+              <p>
+                And Overbase guarantees quality by getting one of our human data
+                scientists to review the data before you get it. Because AI
+                isn't quite at the level yet where you can rely on it all the
+                time
               </p>
 
               <p>
