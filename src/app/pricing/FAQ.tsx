@@ -25,11 +25,11 @@ export default function FAQ() {
             },
             {
               q: "Do humans review the data before I get it?",
-              a: "Yes. AI agents gather and format your data. Then we guarantee reliable results you can trust by having a human data scientist reviews the data before it's sent to you",
+              a: "Yes. AI agents gather and format your data. Then we guarantee reliable results you can trust by having a human data scientist review the data before it's sent to you",
             },
             {
-              q: "Why do humans review my data?",
-              a: "Having humans in the loop guarantees reliable results you can trust. AI can do almost all the work. But AI isn't yet reliable enough",
+              q: "Is there a minimum purchase?",
+              a: "Yes. POCs can be as small as you'd like. But for a full engagement, you typically purchase no less than 100 customers for 2 years. This is the minimum for most businesses to be able to measure ROI",
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
