@@ -19,7 +19,7 @@ export function Referrals() {
               Get an iPhone
             </h1>
             <p className="text-lg text-gray-600 font-medium leading-relaxed">
-              Help us build the future of Customer Success. When your referral
+              Help us build the future of enterprise data. When your referral
               joins, you both receive an iPhone 17 as a thank you
             </p>
           </div>
@@ -93,7 +93,7 @@ export function Referrals() {
                 Why we value your referrals
               </h2>
               <p className="text-md text-gray-600 leading-relaxed">
-                Overbase is a community-driven business. All our product ideas
+                Overbase is a community-driven project. All our product ideas
                 come from our community. And almost all our customers come from
                 our community
               </p>

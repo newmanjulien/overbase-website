@@ -13,6 +13,7 @@ export default function ReferralsPage() {
       <Header
         onLogoClick={() => router.push("/")} // 👈 makes the logo go home
         onJoinWaitlist={() => router.push("/waitlist")} // 👈 join waitlist button
+        onPricingClick={() => router.push("/pricing")}
       />{" "}
       <Referrals />
       <Footer />
