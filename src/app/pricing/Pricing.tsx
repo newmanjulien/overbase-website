@@ -43,9 +43,9 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       features: [
         "Everything in Starter",
         "Unlimited users",
-        "Shared team templates",
+        "Team templates",
+        "Share data with colleagues",
         "Requests can cover multiple customers",
-        "Requests can pull public data",
       ],
       cta: "Join waitlist",
       highlighted: true,
