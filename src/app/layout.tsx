@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Overbase › Customer Success data",
+  title: "Overbase › Agentic database",
   description:
-    "Easily get complete, up-to-date and accurate Customer Success data",
+    "Easily get complete and accurate data by replacing APIs with AI agents",
   icons: {
     icon: "/favicon.ico",
   },

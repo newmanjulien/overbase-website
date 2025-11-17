@@ -28,10 +28,6 @@ export default function FAQ() {
               a: "Yes. AI agents gather and format your data. Then we guarantee reliable results you can trust by having a human data scientist review the data before it's sent to you",
             },
             {
-              q: "Is there a minimum purchase?",
-              a: "Yes. POCs can be as small as you'd like. But for a full engagement, you typically purchase no less than 100 customers for 2 years. This is the minimum for most businesses to be able to measure ROI",
-            },
-            {
               q: "Do I get unlimited data requests or is there a cap?",
               a: "Unlimited. You can request any amount of data with no cap",
             },
