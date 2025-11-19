@@ -19,56 +19,11 @@ interface PricingProps {
 
 export default function Pricing({ onJoinWaitlist }: PricingProps) {
   const tiers: Tier[] = [
-    // {
-    //   name: "Starter",
-    //   price: "$500",
-    //   period: "customer per year",
-    //   description: "For a Data Scientist or Chief of Staff who supports a team",
-    //   features: [
-    //     "1 user",
-    //     "Unlimited data requests",
-    //     "Unlimited connectors",
-    //     "Your data is never used for training our AI",
-    //     "0 of your data is stored by Overbase",
-    //     "GDPR and SOC2 compliant",
-    //   ],
-    //   cta: "Join waitlist",
-    //   highlighted: false,
-    // },
-    // {
-    //   name: "Team",
-    //   price: "$600",
-    //   period: "customer per year",
-    //   description: "So everyone on the team can easily get their own data",
-    //   features: [
-    //     "Everything in Starter",
-    //     "Unlimited users",
-    //     "Team templates",
-    //     "Share data with colleagues",
-    //     "Requests can cover multiple customers",
-    //   ],
-    //   cta: "Join waitlist",
-    //   highlighted: true,
-    // },
-    // {
-    //   name: "Enterprise",
-    //   price: "$900",
-    //   period: "customer per year",
-    //   description: "For large enterprises who need extra security and support",
-    //   features: [
-    //     "Everything in Team",
-    //     "SAML/OIDC SSO",
-    //     "Dedicated support and SLAs",
-    //     "Custom NDAs with each Overbase team member who has access to your data",
-    //   ],
-    //   cta: "Join waitlist",
-    //   highlighted: false,
-    // },
     {
       name: "Starter",
       price: "$5,000",
       period: "user per month",
-      description: "For the easiest, most reliable and most secure data",
+      description: "Unlimited data from an unlimited amount of data sources",
       features: [
         "Unlimited data requests",
         "Unlimited connectors",
@@ -83,7 +38,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       name: "Team",
       price: "$6,000",
       period: "user per month",
-      description: "For teams who share insights and collaborate",
+      description:
+        "For teams who share insights and want to easily collaborate",
       features: [
         "Everything in Starter",
         "1 login for you and 1 login for your EA",
@@ -113,10 +69,10 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <section className="pt-36 pb-28 text-center space-y-6 max-w-2xl mx-auto">
         <h1 className="text-5xl text-gray-900 font-semibold">
-          Easy, secure and reliable
+          Unlimited customer data
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
-          AI agents easily and securely gather any data from any platform then{" "}
+          AI agents securely gather any customer data from anywhere then{" "}
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
             human data scientists review the data
           </span>{" "}

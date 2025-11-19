@@ -21,7 +21,7 @@ export default function FAQ() {
           {[
             {
               q: "How does Overbase's pricing work?",
-              a: "You pay a flat annual fee for each customer which you add to Overbase. Then you get unlimited data requests about those customers",
+              a: "You pay a monthly fee for each user. Then each user can make an unlimited amount of data requests",
             },
             {
               q: "Do humans review the data before I get it?",
@@ -29,7 +29,7 @@ export default function FAQ() {
             },
             {
               q: "Do I get unlimited data requests or is there a cap?",
-              a: "Unlimited. You can request any amount of data with no cap",
+              a: "Unlimited. Each user can request any amount of data with no cap",
             },
             {
               q: "How secure and compliant is Overbase?",

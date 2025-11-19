@@ -50,30 +50,27 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               <p>
                 <strong className="font-medium">
                   Overbase is the first data system that uses AI agents to
-                  easily get any customer data.
+                  easily get any customer data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
-                quickly and automatically gathers the data in a way that's
-                reliable, secure and complete
+                quickly gathers the data you need in a reliable and complete way
               </p>
 
               <p>
                 AI agents can gather data from anywhere. Agents can get
-                structured data from Posthog, Zendesk, Salesforce, etc. But also
+                structured data from Posthog, Zendesk, Salesforce, Snowflake, etc. But also
                 unstructured data from Gong, Slack, Gmail, Notion, etc
               </p>
 
               <p>
-                And there's close to 0 setup. AI agents can get any data from
+                There's close to 0 setup. AI agents can get any data from
                 anywhere using any approach. Even if the only way to get the
                 data is to log in using the same interface humans do
               </p>
 
               <p>
-                And Overbase guarantees quality by getting one of our human data
-                scientists to review the data before you get it. Because AI
-                isn't quite at the level yet where you can rely on it all the
-                time
+                And while AI can't yet gather data in a reliably high quality way, Overbase guarantees quality by getting one of our human data
+                scientists to review the data before you get it
               </p>
 
               <p>
