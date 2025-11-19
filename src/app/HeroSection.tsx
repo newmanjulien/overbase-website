@@ -6,10 +6,11 @@ import { Graphic } from "../components/Graphic";
 
 // Displayed in the graphic
 const TEXTS = [
-  "I have a QBR with the Acme Corp account. Can you update the numbers in the attached deck? (it's the deck from our last QBR)",
-  "Check if the Acme Corp account has any support tickets or bug reports. Tell me what happened to each one. Especially if they aren't resolved",
-  "Look at all of my accounts to see if any of the champions changed jobs. Do this by checking LinkedIn",
-  "Look at the usage data from all my accounts to find the 10 accounts where there's been the largest drop in usage",
+  "Calculate NRR and GRR for our enterprise accounts",
+  "I'm presenting to the Board. Please update all the data in the attached deck",
+  "Analyze the Gong recordings of all our discovery calls to find the 5 most common objections in the past 7 days",
+  "Look over the customer support chats on Intercom and tell me if there are any emerging problems",
+  "Look at Docusign to find all the new contracts we signed with customers in the past 7 days. Then tell me which reps are closing the most deals",
 ];
 
 // Utility: Skip shortcuts when typing in editable fields
@@ -120,11 +121,11 @@ export function HeroSection({
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
               It's too hard
             </span>{" "}
-            to get customer data
+            to get the data you need
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Let AI agents easily get any customer data you need instead of
+            Let AI agents easily get any data you need instead of
             relying on legacy data systems
           </h2>
 

@@ -28,29 +28,29 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Businesses have too much customer data. And this data is in too
+                Businesses have too much data. And this data is in too
                 many silos. Which has made it hard - and often just impossible -
-                to know what's going on with customers
+                to know what's going on
               </p>
 
               <p>
                 You might have seen first hand that legacy data solutions often
-                just make it harder to get data about customers. Those legacy
+                just make it harder to get the data you need. Those legacy
                 solutions are expensive, slow to set up and they usually add so
                 much complexity that data ends up getting harder not easier
               </p>
 
               <p>
                 <strong className="font-medium">
-                  There's got to be a simple and quick way to make customer data
-                  easy
+                  There's got to be a simple and quick way to make it easy to get the data
+                  you need
                 </strong>
               </p>
 
               <p>
                 <strong className="font-medium">
                   Overbase is the first data system that uses AI agents to
-                  easily get any customer data from anywhere.
+                  easily get any data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
                 quickly gathers the data you need in a reliable and complete way
