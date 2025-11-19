@@ -63,8 +63,7 @@ export function Referrals() {
                 2. They try Overbase
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                When someone tries Overbase by adding 1 or more customers,
-                you've earned a reward
+                You've earned a reward when someone tries Overbase for 1 month or more
               </p>
             </div>
 
