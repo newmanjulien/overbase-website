@@ -124,8 +124,8 @@ export function HeroSection({
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Let AI agents easily get customer data for you instead of relying on
-            complex legacy data systems
+            Let AI agents easily get any customer data you need instead of
+            relying on legacy data systems
           </h2>
 
           {/* Desktop buttons */}
