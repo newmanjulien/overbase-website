@@ -66,7 +66,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     // },
     {
       name: "Starter",
-      price: "$7,000",
+      price: "$5,000",
       period: "user per month",
       description: "For the easiest, most reliable and most secure data",
       features: [
@@ -81,22 +81,21 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Team",
-      price: "$9,000",
+      price: "$6,000",
       period: "user per month",
       description: "For teams who share insights and collaborate",
       features: [
         "Everything in Starter",
         "1 login for you and 1 login for your EA",
         "Share prompt templates with colleagues",
-        "Share data and findings with colleagues",
-        "Requests can use external data",
+        "Share data with colleagues",
       ],
       cta: "Join waitlist",
       highlighted: true,
     },
     {
       name: "Enterprise",
-      price: "$12,000",
+      price: "$9,000",
       period: "user per month",
       description: "For large enterprises who need extra security and support",
       features: [
