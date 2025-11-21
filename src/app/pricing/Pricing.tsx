@@ -11,6 +11,8 @@ interface Tier {
   features: string[];
   cta: string;
   highlighted: boolean;
+  tokenLimit?: string;
+  tokenLimitFull?: string;
 }
 
 interface PricingProps {
@@ -21,12 +23,16 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   const tiers: Tier[] = [
     {
       name: "Starter",
-      price: "$5,000",
+      price: "$6,000",
       period: "user per month",
-      description: "Unlimited data from an unlimited amount of data sources",
+      description:
+        "For unlimited data requests from an unlimited amount of datasources",
+      tokenLimit: "10m",
+      tokenLimitFull: "10 million tokens per request",
       features: [
         "Unlimited data requests",
-        "Unlimited connectors",
+        "Unlimited datasources",
+        "Human data scientist reviews data",
         "Your data is never used for training our AI",
         "0 of your data is stored by Overbase",
         "GDPR and SOC2 compliant",
@@ -36,29 +42,34 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Team",
-      price: "$6,000",
+      price: "$9,000",
       period: "user per month",
       description:
         "For teams who share insights and want to easily collaborate",
+      tokenLimit: "100m",
+      tokenLimitFull: "100 million tokens per request",
       features: [
         "Everything in Starter",
-        "1 login for you and 1 login for your EA",
+        "1 login for you and 1 seperate login for your assistant or Chief of Staff",
         "Share prompt templates with colleagues",
-        "Share data with colleagues",
+        "Share results with colleagues",
+        "Share datasources with colleagues",
       ],
       cta: "Join waitlist",
       highlighted: true,
     },
     {
       name: "Enterprise",
-      price: "$9,000",
+      price: "$15,000",
       period: "user per month",
-      description: "For large enterprises who need extra security and support",
+      description: "For the best results, extra security and extra compliance",
+      tokenLimit: "1b",
+      tokenLimitFull: "1 billion tokens per request",
       features: [
         "Everything in Team",
         "SAML/OIDC SSO",
         "Dedicated support and SLAs",
-        "Custom NDAs with each Overbase team member who has access to your data",
+        "Custom NDAs with each Overbase data scientist who has access to or reviews your data",
       ],
       cta: "Join waitlist",
       highlighted: false,
@@ -69,7 +80,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <section className="pt-36 pb-28 text-center space-y-6 max-w-2xl mx-auto">
         <h1 className="text-5xl text-gray-900 font-semibold">
-          Unlimited, reliable and secure
+          Easy, reliable and secure
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
           AI agents securely gather any data from anywhere then{" "}
@@ -109,6 +120,20 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
               <p className="text-sm text-gray-900 min-h-[2.5rem]">
                 {tier.description}
               </p>
+            </div>
+
+            <div className="mt-6 border-t-2 border-b-2 border-gray-900 py-5">
+              <div className="flex items-center justify-between">
+                <div className="space-y-1">
+                  <p className="text-xs text-gray-500 uppercase tracking-wider">
+                    Token limit
+                  </p>
+                  <p className="text-sm text-gray-900">{tier.tokenLimitFull}</p>
+                </div>
+                <div className="text-3xl text-gray-900 tracking-tight">
+                  {tier.tokenLimit}
+                </div>
+              </div>
             </div>
 
             <div className="flex-1 mt-6 space-y-3">

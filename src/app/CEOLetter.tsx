@@ -28,22 +28,22 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Businesses have too much data. And this data is in too
-                many silos. Which has made it hard - and often just impossible -
-                to know what's going on
+                Businesses have too much data. And this data is in too many
+                silos. Which has made it hard - and often just impossible - to
+                know what's going on
               </p>
 
               <p>
-                You might have seen first hand that legacy data solutions often
+                You might have seen first hand that legacy data systems often
                 just make it harder to get the data you need. Those legacy
-                solutions are expensive, slow to set up and they usually add so
-                much complexity that data ends up getting harder not easier
+                systems are expensive, slow to set up and they usually add so
+                much complexity that data ends up getting harder and dirtier
+                (not easier and better)
               </p>
 
               <p>
                 <strong className="font-medium">
-                  There's got to be a simple and quick way to make it easy to get the data
-                  you need
+                  There's got to be a way to easily get the data you need
                 </strong>
               </p>
 
@@ -58,8 +58,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 AI agents can gather data from anywhere. Agents can get
-                structured data from Posthog, Zendesk, Salesforce, Snowflake, etc. But also
-                unstructured data from Gong, Slack, Gmail, Notion, etc
+                structured data from Posthog, Zendesk, Salesforce, Snowflake,
+                etc. But also unstructured data from Gong, Slack, Gmail, Notion,
+                etc
               </p>
 
               <p>
@@ -69,8 +70,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                And while AI can't yet gather data in a reliably high quality way, Overbase guarantees quality by getting one of our human data
-                scientists to review the data before you get it
+                And while AI can't yet gather data in a reliably high quality
+                way, Overbase guarantees quality by getting one of our human
+                data scientists to coordinate the AI agents and review the data
               </p>
 
               <p>
