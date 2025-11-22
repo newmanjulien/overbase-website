@@ -13,7 +13,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       price: "$5,000",
       period: "user per month",
       description:
-        "For unlimited data requests from an unlimited amount of datasources",
+        "For easy, secure and reliable data that's reviewed by humans",
       tokenLimit: "10m",
       tokenLimitFull: "10 million tokens per request",
       features: [
@@ -49,7 +49,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       name: "Enterprise",
       price: "$9,000",
       period: "user per month",
-      description: "For the best results, extra security and extra compliance",
+      description:
+        "For the hardest data requests and the most strict security standards",
       tokenLimit: "100m",
       tokenLimitFull: "100 million tokens per request",
       features: [

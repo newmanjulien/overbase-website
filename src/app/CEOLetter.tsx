@@ -51,8 +51,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   easily get any data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
-                quickly gathers the data you need in a secure, reliable and
-                complete way
+                quickly gathers the data in a secure, reliable and complete way
               </p>
 
               <p>
@@ -69,9 +68,10 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                And while AI can't yet gather data in a reliably high quality
-                way, Overbase guarantees quality by getting one of our human
-                data scientists to coordinate the AI agents and review the data
+                And while AI alone can't yet gather data in a reliably high
+                quality way, Overbase guarantees quality today by getting one of
+                our human data scientists to coordinate the AI agents and review
+                the data
               </p>
 
               <p>

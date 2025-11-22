@@ -55,7 +55,7 @@ export default function FAQ() {
 
             {
               q: "Do I need 100 million tokens per request?",
-              a: "Most of the time you do not. Overbase typically uses ~1 million tokens per request. And most ChatGPT conversations you've had likely used a few hundred tokens. But some of the most advanced requests can require tens of millions of tokens to complete in a reliable and complete way",
+              a: "Most of the time you do not. Overbase typically uses less than 1 million tokens per request which is sufficient to get any data from anywhere in a reliable and complete way. And most ChatGPT conversations you've had likely used a few hundred tokens. But requests can require tens of millions of tokens if you work in the largest enterprises with the most siloed data",
             },
             {
               q: "What does 100 million tokens actually mean?",
