@@ -10,7 +10,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   const tiers: Tier[] = [
     {
       name: "Starter",
-      price: "$6,000",
+      price: "$5,000",
       period: "user per month",
       description:
         "For unlimited data requests from an unlimited amount of datasources",
@@ -29,12 +29,12 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Team",
-      price: "$9,000",
+      price: "$6,000",
       period: "user per month",
       description:
         "For teams who share insights and want to easily collaborate",
-      tokenLimit: "100m",
-      tokenLimitFull: "100 million tokens per request",
+      tokenLimit: "50m",
+      tokenLimitFull: "50 million tokens per request",
       features: [
         "Everything in Starter",
         "1 login for you and 1 separate login for your assistant or Chief of Staff",
@@ -47,11 +47,11 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Enterprise",
-      price: "$15,000",
+      price: "$9,000",
       period: "user per month",
       description: "For the best results, extra security and extra compliance",
-      tokenLimit: "1b",
-      tokenLimitFull: "1 billion tokens per request",
+      tokenLimit: "100m",
+      tokenLimitFull: "100 million tokens per request",
       features: [
         "Everything in Team",
         "SAML/OIDC SSO",

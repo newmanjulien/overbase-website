@@ -21,7 +21,7 @@ export default function FAQ() {
           {[
             {
               q: "How does Overbase's pricing work?",
-              a: "You pay a monthly fee for each user. Then each user can make an unlimited amount of data requests",
+              a: "You pay a flat monthly fee for each user. Then each user can make an unlimited amount of data requests. A data request is when you request that we gather, analyze and present data you need",
             },
             {
               q: "Do humans review the data before I get it?",
@@ -33,15 +33,33 @@ export default function FAQ() {
             },
             {
               q: "Why does Overbase cost thousands of dollars per user?",
-              a: "Because we spend so much money on tokens. As a point of reference, 1 billion OpenAI tokens costs $10,000. Collecting data in a reliable and complete manner means running multiple AI agents in parallel then picking the best result. And these AI agents can run for several hours. We expect that this cost will drop dramatically as LLMs get better. But collecting data in a reliable and useful way will remain expensive for several years",
+              a: (
+                <span>
+                  Because we spend so much money on tokens. As a point of
+                  reference,{" "}
+                  <a
+                    href="https://openrouter.ai/openai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
+                  >
+                    100 million OpenAI tokens costs us $1,000
+                  </a>
+                  . Collecting data in a reliable and complete manner means
+                  running multiple AI agents in parallel then picking the best
+                  result. And these AI agents can run for several hours. This
+                  cost will drop as LLMs get better.
+                </span>
+              ),
+            },
+
+            {
+              q: "Do I need 100 million tokens per request?",
+              a: "Most of the time you do not. Overbase typically uses ~1 million tokens per request. And most ChatGPT conversations you've had likely used a few hundred tokens. But some of the most advanced requests can require tens of millions of tokens to complete in a reliable and complete way",
             },
             {
-              q: "Do I need 1 billion tokens per request?",
-              a: "Most of the time you do not. Overbase typically uses ~1 million tokens per request. And most ChatGPT conversations use a few hundred tokens. But some of the most advanced requests can require hundreds of millions of tokens to complete in a high quality way",
-            },
-            {
-              q: "What does 1 billion tokens actually mean?",
-              a: "Even 10 million tokens is likely exponentially more horsepower than any other AI tool you've ever used. And it's this horsepower that lets us get actually reliable and useful results. Overbase uses a lot of tokens because we break each of your data requests down into several subtasks, we run multiple AI agents for each of those subtasks and each of those multiple agents runs for many hours. Combined with human review and coordination, the result is like having a dozen of the world's best data scientists working for you full-time data",
+              q: "What does 100 million tokens actually mean?",
+              a: "Even 10 million tokens is likely more horsepower than any AI tool you've used. And it's this horsepower that lets us get actually reliable and useful results. Overbase breaks each of your data requests down into several subtasks, we run multiple AI agents for each of those subtasks and each of those multiple agents runs for many hours",
             },
           ].map((item, i) => (
             <AccordionItem

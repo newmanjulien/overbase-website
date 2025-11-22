@@ -34,11 +34,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                You might have seen first hand that legacy data systems often
-                just make it harder to get the data you need. Those legacy
-                systems are expensive, slow to set up and they usually add so
-                much complexity that data ends up getting harder and dirtier
-                (not easier and better)
+                Legacy data systems often make it harder to get the data you
+                need. They usually add so much complexity that data ends up
+                getting harder and dirtier
               </p>
 
               <p>
@@ -53,14 +51,15 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   easily get any data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
-                quickly gathers the data you need in a reliable and complete way
+                quickly gathers the data you need in a secure, reliable and
+                complete way
               </p>
 
               <p>
                 AI agents can gather data from anywhere. Agents can get
                 structured data from Posthog, Zendesk, Salesforce, Snowflake,
-                etc. But also unstructured data from Gong, Slack, Gmail, Notion,
-                etc
+                S3, etc. But also unstructured data from Gong, Slack, Gmail,
+                Teams, Notion, etc
               </p>
 
               <p>
