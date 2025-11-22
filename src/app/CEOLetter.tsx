@@ -28,52 +28,50 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Businesses have too much customer data. And this data is in too
-                many silos. Which has made it hard - and often just impossible -
-                to know what's going on with customers
+                Businesses have too much data. And this data is in too many
+                silos. Which has made it hard - and often just impossible - to
+                know what's going on
               </p>
 
               <p>
-                You might have seen first hand that legacy data solutions often
-                just make it harder to get data about customers. Those legacy
-                solutions are expensive, slow to set up and they usually add so
-                much complexity that data ends up getting harder not easier
+                Legacy data systems often make it harder to get the data you
+                need. They usually add so much complexity that data ends up
+                getting harder and dirtier
               </p>
 
               <p>
                 <strong className="font-medium">
-                  There's got to be a simple and quick way to make customer data
-                  easy
+                  There's got to be a way to easily get the data you need
                 </strong>
               </p>
 
               <p>
                 <strong className="font-medium">
                   Overbase is the first data system that uses AI agents to
-                  easily get any customer data.
+                  easily get any data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
-                quickly and automatically gathers the data in a way that's
-                reliable, secure and complete
+                quickly gathers the data in a secure, reliable and complete way
               </p>
 
               <p>
                 AI agents can gather data from anywhere. Agents can get
-                structured data from Posthog, Zendesk, Salesforce, etc. But also
-                unstructured data from Gong, Slack, Gmail, Notion, etc
+                structured data from Posthog, Zendesk, Salesforce, Snowflake,
+                S3, etc. But also unstructured data from Gong, Slack, Gmail,
+                Teams, Notion, etc
               </p>
 
               <p>
-                And there's close to 0 setup. AI agents can get any data from
+                There's close to 0 setup. AI agents can get any data from
                 anywhere using any approach. Even if the only way to get the
                 data is to log in using the same interface humans do
               </p>
 
               <p>
-                And Overbase guarantees quality by getting one of our human data
-                scientists to review the data before you get it. Because AI
-                isn't quite at the level yet where you can rely on it all the
-                time
+                And while AI alone can't yet gather data in a reliably high
+                quality way, Overbase guarantees quality today by getting one of
+                our human data scientists to coordinate the AI agents and review
+                the data
               </p>
 
               <p>

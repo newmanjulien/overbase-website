@@ -65,8 +65,7 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
                 Join the waitlist
               </h1>
               <p className="text-md text-gray-900 leading-relaxed">
-                We onboard businesses one at a time to be sure Overbase works
-                for you
+                We onboard users one at a time to be sure Overbase works for you
               </p>
             </div>
 
