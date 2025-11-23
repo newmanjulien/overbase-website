@@ -29,7 +29,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 Businesses have too much data. And this data is in too many
-                silos. Which has made it hard - and often just impossible - to
+                silos. Which has made it hard — and often just impossible - to
                 know what's going on
               </p>
 
@@ -84,7 +84,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                if you want to try it out
+                to try it out
               </p>
             </div>
 

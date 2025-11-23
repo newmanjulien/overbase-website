@@ -29,7 +29,7 @@ export default function FAQ() {
             },
             {
               q: "Why do you use so many tokens?",
-              a: "Overbase breaks each data request down into several subtasks, we run multiple AI agents for each of those subtasks and each of those multiple agents runs for many hours. This uses millions of tokens. And it sometimes uses tens of millions of tokens when you work in a large enterprise with siloed data",
+              a: "Overbase breaks each data request down into several subtasks. We run multiple AI agents for each of those subtasks. And each of those multiple agents runs for many hours. This uses millions of tokens. And it sometimes uses tens of millions of tokens when you work in a large enterprise with siloed data",
             },
             {
               q: "Do humans review the data before I get it?",
