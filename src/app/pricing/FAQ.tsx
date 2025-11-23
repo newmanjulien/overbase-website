@@ -20,16 +20,20 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "How does Overbase's pricing work?",
-              a: "You pay a flat monthly fee for each user. Then each user can make an unlimited amount of data requests. A data request is when you request that we gather, analyze and present data you need",
+              q: "Can users make an unlimited amount of data requests?",
+              a: "Yes. Unlimited. Each user can request any amount of data with no cap. There is a limit on the number of tokens which we use to complete each request but that limit is extremely high",
+            },
+            {
+              q: "How does the token limit work?",
+              a: "It's a limit on how many tokens Overbase uses for each request. But it doesn't stop you from making an unlimited amount of requests. In other words, you can make an unlimited amount of requests but there's a limit to how complex each request can be",
+            },
+            {
+              q: "Why do you use so many tokens?",
+              a: "Overbase breaks each data request down into several subtasks, we run multiple AI agents for each of those subtasks and each of those multiple agents runs for many hours. This uses millions of tokens. And it sometimes uses tens of millions of tokens when you work in a large enterprise with siloed data",
             },
             {
               q: "Do humans review the data before I get it?",
               a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents and review the data before it's sent to you",
-            },
-            {
-              q: "Do I get unlimited data requests or is there a cap?",
-              a: "Unlimited. Each user can request any amount of data with no cap. There is a limit on the number of tokens which we use to complete each request but that limit is extremely high",
             },
             {
               q: "Why does Overbase cost thousands of dollars per user?",
@@ -51,15 +55,6 @@ export default function FAQ() {
                   cost will drop as LLMs get better.
                 </span>
               ),
-            },
-
-            {
-              q: "Do I need 100 million tokens per request?",
-              a: "Most of the time you do not. Overbase typically uses less than 1 million tokens per request which is sufficient to get any data from anywhere in a reliable and complete way. And most ChatGPT conversations you've had likely used a few hundred tokens. But requests can require tens of millions of tokens if you work in the largest enterprises with the most siloed data",
-            },
-            {
-              q: "What does 100 million tokens actually mean?",
-              a: "Even 10 million tokens is likely more horsepower than any AI tool you've used. And it's this horsepower that lets us get actually reliable and useful results. Overbase breaks each of your data requests down into several subtasks, we run multiple AI agents for each of those subtasks and each of those multiple agents runs for many hours",
             },
           ].map((item, i) => (
             <AccordionItem

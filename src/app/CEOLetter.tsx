@@ -51,7 +51,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   easily get any data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
-                quickly gathers the data in a secure, reliable and complete way
+                quickly gathers the data in a fully secure, reliable and
+                complete way
               </p>
 
               <p>

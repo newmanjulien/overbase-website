@@ -13,7 +13,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       price: "$5,000",
       period: "user per month",
       description:
-        "For easy, secure and reliable data that's reviewed by humans",
+        "For easy, secure and reliable agentic data that's reviewed by humans",
       tokenLimit: "10m",
       tokenLimitFull: "10 million tokens per request",
       features: [

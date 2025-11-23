@@ -32,7 +32,7 @@ export function HeroSection({
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Let AI agents easily get any data from anywhere in a secure,
+            Let AI agents easily get any data from anywhere in a fully secure,
             reliable and complete way
           </h2>
 
