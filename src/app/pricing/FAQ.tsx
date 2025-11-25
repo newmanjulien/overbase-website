@@ -39,28 +39,19 @@ export default function FAQ() {
               q: "Why does Overbase cost thousands of dollars per user?",
               a: (
                 <span>
-                  Because we spend so much on tokens. 50 million OpenAI tokens{" "}
-                  <a
-                    href="https://openrouter.ai/openai/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
-                  >
-                    costs $500
-                  </a>{" "}
-                  or it{" "}
+                  Because we spend so much on tokens. 50 million Anthropic
+                  tokens{" "}
                   <a
                     href="https://openrouter.ai/anthropic"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
                   >
-                    costs $1,750
+                    costs $1,750.
                   </a>{" "}
-                  in Anthropic tokens. Collecting data in a reliable and
-                  complete manner means running multiple AI agents in parallel
-                  then picking the best result. And these AI agents can run for
-                  several hours
+                  Collecting data in a reliable and complete manner means
+                  running multiple AI agents in parallel then picking the best
+                  result. And these AI agents can run for several hours
                 </span>
               ),
             },
