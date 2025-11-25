@@ -29,14 +29,6 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
           : "border-gray-100 border"
       }`}
     >
-      {tier.highlighted && (
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-          <span className="bg-gray-900 text-white px-3 py-1 rounded-sm text-xs">
-            Most Popular
-          </span>
-        </div>
-      )}
-
       <div className="space-y-3">
         <h3 className="text-xl text-gray-900">{tier.name}</h3>
         <div className="flex items-baseline gap-2">
