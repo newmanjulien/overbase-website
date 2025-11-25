@@ -30,7 +30,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
       }`}
     >
       <div className="space-y-3">
-        <h3 className="text-xl text-gray-900">{tier.name}</h3>
+        <h3 className="text-lg text-gray-900">{tier.name}</h3>
         <div className="flex items-baseline gap-2">
           <span className="text-4xl text-gray-900 font-medium">
             {tier.price}
