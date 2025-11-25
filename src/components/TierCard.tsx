@@ -58,10 +58,22 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
         </div>
       )}
 
-      <div className="flex-1 mt-6 space-y-3">
+      {/* <div className="flex-1 mt-6 space-y-3">
         {tier.features.map((feature, i) => (
           <div key={i} className="flex items-start gap-2">
             <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
+            <span className="text-sm text-gray-600">{feature}</span>
+          </div>
+        ))}
+      </div> */}
+
+      <div className="flex-1 mt-6 space-y-3">
+        {tier.features.map((feature, i) => (
+          <div key={i} className="flex items-start gap-2">
+            {/* Only render check for features after the first one */}
+            {i !== 0 && (
+              <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
+            )}
             <span className="text-sm text-gray-600">{feature}</span>
           </div>
         ))}

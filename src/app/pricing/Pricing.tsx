@@ -17,8 +17,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       tokenLimit: "10m",
       tokenLimitFull: "10 million tokens per request",
       features: [
+        "Includes",
         "Unlimited data requests",
-        "Unlimited datasources",
         "Human data scientist reviews data",
         "Your data is never used for training our AI",
         "0 of your data is stored by Overbase",
@@ -36,7 +36,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       tokenLimit: "50m",
       tokenLimitFull: "50 million tokens per request",
       features: [
-        "Everything in Starter",
+        "Everything in Starter plus",
         "1 login for you and 1 separate login for your assistant or Chief of Staff",
         "Share prompt templates with colleagues",
         "Share results with colleagues",
@@ -54,7 +54,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       tokenLimit: "100m",
       tokenLimitFull: "100 million tokens per request",
       features: [
-        "Everything in Team",
+        "Everything in Team plus",
         "SAML/OIDC SSO",
         "Dedicated support and SLAs",
         "Custom NDAs with each Overbase data scientist who has access to or reviews your data",
