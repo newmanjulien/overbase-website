@@ -33,26 +33,34 @@ export default function FAQ() {
             },
             {
               q: "Do humans review the data before I get it?",
-              a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents and review the data before it's sent to you",
+              a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents then review and correct the data before it's sent to you",
             },
             {
               q: "Why does Overbase cost thousands of dollars per user?",
               a: (
                 <span>
-                  Because we spend so much money on tokens. As a point of
-                  reference,{" "}
+                  Because we spend so much on tokens. 50 million OpenAI tokens{" "}
                   <a
                     href="https://openrouter.ai/openai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
                   >
-                    100 million OpenAI tokens costs us $1,000
-                  </a>
-                  . Collecting data in a reliable and complete manner means
-                  running multiple AI agents in parallel then picking the best
-                  result. And these AI agents can run for several hours. This
-                  cost will drop as LLMs get better.
+                    costs $500
+                  </a>{" "}
+                  or it{" "}
+                  <a
+                    href="https://openrouter.ai/anthropic"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
+                  >
+                    costs $1,750
+                  </a>{" "}
+                  in Anthropic tokens. Collecting data in a reliable and
+                  complete manner means running multiple AI agents in parallel
+                  then picking the best result. And these AI agents can run for
+                  several hours
                 </span>
               ),
             },

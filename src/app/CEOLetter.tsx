@@ -23,20 +23,16 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
-                ELT, ETL or CDP? Reverse ETL? Data lake? Data warehouse? What
-                are these things and why can't you just get the data you need?
-              </p>
-
-              <p>
                 Businesses have too much data. And this data is in too many
-                silos. Which has made it hard — and often just impossible - to
-                know what's going on
+                silos. Which has made it way too hard for you to know what's
+                going on
               </p>
 
               <p>
-                Legacy data systems often make it harder to get the data you
-                need. They usually add so much complexity that data ends up
-                getting harder and dirtier
+                Legacy data systems often add so much complexity that data ends
+                up getting harder to access. ELT, ETL or CDP? Reverse ETL? Data
+                lake? Data warehouse? What are these things and why can't you
+                just get the data you need?
               </p>
 
               <p>
@@ -51,8 +47,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   easily get any data from anywhere.
                 </strong>{" "}
                 You simply explain what you need in plain English. Then an agent
-                quickly gathers the data in a fully secure, reliable and
-                complete way
+                quickly gathers the data in a secure, reliable and complete way
               </p>
 
               <p>
@@ -70,8 +65,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 And while AI alone can't yet gather data in a reliably high
-                quality way, Overbase guarantees quality today by getting one of
-                our human data scientists to coordinate the AI agents and review
+                quality way, Overbase guarantees reliable and complete data by
+                getting one of our human data scientists to review and correct
                 the data
               </p>
 
@@ -84,7 +79,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                to try it out
+                to get the first actually easy data
               </p>
             </div>
 

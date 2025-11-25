@@ -9,7 +9,7 @@ const TEXTS = [
   "I'm presenting to the Board. Please update all the data in the attached deck",
   "Analyze the Gong recordings of all our discovery calls to find the 5 most common objections in the past 7 days",
   "Look over the customer support chats on Intercom and tell me if there are any emerging problems",
-  "Look at Docusign to find all the new contracts we signed with customers in the past 7 days. Then tell me which reps are closing the most deals",
+  "Look at Docusign to find all the new contracts we signed with customers in the past 7 days. Then tell me how this doesn't align with our closed deals in Salesforce",
 ];
 
 export function HeroSection({
@@ -25,15 +25,15 @@ export function HeroSection({
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
+            Easily get any data{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
-              It's too hard
-            </span>{" "}
-            to get the data you need
+              from anywhere
+            </span>
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Let AI agents easily get any data from anywhere in a fully secure,
-            reliable and complete way
+            Ask in plain English then AI agents get any data you need from
+            anywhere
           </h2>
 
           {/* Desktop buttons */}
