@@ -6,36 +6,18 @@ import { Button } from "./ui/button";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
-  onJoinWaitlist: () => void;
   logoSrc?: string; // optional custom logo
+  onLogoClick?: () => void;
+  onPricingClick?: () => void;
+  onJoinWaitlist?: () => void;
 }
-
-// --- When on home page ---
-interface HeaderOnHome extends BaseHeaderProps {
-  onLogoClick?: never;
-  onPricingClick: () => void;
-}
-
-// --- When on pricing page ---
-interface HeaderOnPricing extends BaseHeaderProps {
-  onLogoClick: () => void;
-  onPricingClick?: never;
-}
-
-// --- For all other routes ---
-interface HeaderDefault extends BaseHeaderProps {
-  onLogoClick: () => void;
-  onPricingClick: () => void;
-}
-
-type HeaderProps = HeaderOnHome | HeaderOnPricing | HeaderDefault;
 
 export function Header({
-  onLogoClick,
-  onJoinWaitlist,
-  onPricingClick,
   logoSrc,
-}: HeaderProps) {
+  onLogoClick,
+  onPricingClick,
+  onJoinWaitlist,
+}: BaseHeaderProps) {
   const pathname = usePathname();
   const isPricingPage = pathname === "/pricing";
 
@@ -62,24 +44,28 @@ export function Header({
 
           {/* Right side buttons */}
           <div className="flex items-center gap-6">
-            <button
-              onClick={onPricingClick}
-              className={`text-sm font-medium transition-colors ${
-                isPricingPage
-                  ? "text-gray-600"
-                  : "text-gray-600 hover:text-[#FC3636]"
-              }`}
-            >
-              Pricing
-            </button>
+            {onPricingClick && (
+              <button
+                onClick={onPricingClick}
+                className={`text-sm font-medium transition-colors ${
+                  isPricingPage
+                    ? "text-gray-600"
+                    : "text-gray-600 hover:text-[#FC3636]"
+                }`}
+              >
+                Pricing
+              </button>
+            )}
 
-            <Button
-              size="sm"
-              className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm"
-              onClick={onJoinWaitlist}
-            >
-              Join waitlist
-            </Button>
+            {onJoinWaitlist && (
+              <Button
+                size="sm"
+                className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm"
+                onClick={onJoinWaitlist}
+              >
+                Join waitlist
+              </Button>
+            )}
           </div>
         </div>
       </div>

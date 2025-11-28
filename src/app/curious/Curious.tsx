@@ -40,8 +40,8 @@ export function Curious({}) {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="px-6 md:px-12 lg:px-24 pt-32 pb-20 max-w-7xl mx-auto text-center">
-        <h1 className="text-7xl text-gray-900 text-medium mb-5 mt-3">
+      <section className="px-6 md:px-12 lg:px-24 pt-32 pb-16 max-w-7xl mx-auto text-center">
+        <h1 className="text-7xl text-gray-900 text-bold mb-4">
           Curious Leadership
         </h1>
         <p className="text-xl text-gray-600 text-medium leading-relaxed">
@@ -50,14 +50,14 @@ export function Curious({}) {
       </section>
 
       {/* Quotes Section */}
-      <section className="px-6 md:px-12 lg:px-24 py-4 max-w-7xl mx-auto">
+      <section className="px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
         <div className="relative">
           <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-transparent via-gray-300 to-transparent transform -translate-x-1/2" />
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
-            <div className="text-center md:text-right space-y-6">
+            <div className="text-center md:text-right space-y-4">
               <div className="inline-block">
                 <svg
-                  className="w-12 h-12 text-gray-300 mb-4"
+                  className="w-12 h-12 text-gray-300 mb-2"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -72,10 +72,10 @@ export function Curious({}) {
                 <p className="text-lg text-gray-600 tracking-wide">Socrates</p>
               </div>
             </div>
-            <div className="text-center md:text-left space-y-6">
+            <div className="text-center md:text-left space-y-4">
               <div className="inline-block">
                 <svg
-                  className="w-12 h-12 text-gray-300 mb-4"
+                  className="w-12 h-12 text-gray-300 mb-2"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >

@@ -10,12 +10,7 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Header
-        logoSrc="/logo_marble.png"
-        onLogoClick={() => router.push("/")}
-        onJoinWaitlist={() => router.push("/waitlist")}
-        onPricingClick={() => router.push("/pricing")}
-      />{" "}
+      <Header logoSrc="/logo_marble.png" onLogoClick={() => router.push("/")} />{" "}
       <Curious />
       <Footer />
     </div>
