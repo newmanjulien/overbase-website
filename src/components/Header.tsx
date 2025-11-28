@@ -7,6 +7,7 @@ import { Button } from "./ui/button";
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
   onJoinWaitlist: () => void;
+  logoSrc?: string; // optional custom logo
 }
 
 // --- When on home page ---
@@ -33,6 +34,7 @@ export function Header({
   onLogoClick,
   onJoinWaitlist,
   onPricingClick,
+  logoSrc,
 }: HeaderProps) {
   const pathname = usePathname();
   const isPricingPage = pathname === "/pricing";
@@ -49,7 +51,7 @@ export function Header({
             onClick={onLogoClick}
           >
             <Image
-              src="/logo.png"
+              src={logoSrc ?? "/logo.png"}
               alt="Logo"
               width={54}
               height={32}

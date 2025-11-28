@@ -12,9 +12,9 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-white">
       <Header
-        onLogoClick={() => router.push("/")} // 👈 makes the logo go home
-        onJoinWaitlist={() => router.push("/waitlist")} // 👈 join waitlist button
-      />{" "}
+        onLogoClick={() => router.push("/")}
+        onJoinWaitlist={() => router.push("/waitlist")}
+      />
       <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
       <FAQ />
       <Footer />
