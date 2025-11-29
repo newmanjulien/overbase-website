@@ -32,10 +32,6 @@ export default function FAQ() {
               a: "Overbase breaks each data request down into several subtasks. We run multiple AI agents for each of those subtasks. And each of those multiple agents runs for many hours. This uses millions of tokens. And it sometimes uses tens of millions of tokens when you work in a large enterprise with siloed data",
             },
             {
-              q: "Do humans review the data before I get it?",
-              a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents then review and correct the data before it's sent to you",
-            },
-            {
               q: "Why does Overbase cost thousands of dollars per user?",
               a: (
                 <span>
@@ -54,6 +50,14 @@ export default function FAQ() {
                   result. And these AI agents can run for several hours
                 </span>
               ),
+            },
+            {
+              q: "Do humans review the data before I get it?",
+              a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents then review and correct the data before it's sent to you",
+            },
+            {
+              q: "Why do you need a human review?",
+              a: "Because AI isn't good enough yet. AI agents can do a lot of work. But they're far from good enough to do complex work on their own. We use humans to coordinate agents. And also to review and correct results",
             },
           ].map((item, i) => (
             <AccordionItem

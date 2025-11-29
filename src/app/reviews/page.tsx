@@ -3,9 +3,9 @@
 import { useRouter } from "next/navigation";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import { Referrals } from "./Referrals";
+import Reviews from "./Reviews";
 
-export default function ReferralsPage() {
+export default function ReviewsPage() {
   const router = useRouter();
 
   return (
@@ -14,8 +14,8 @@ export default function ReferralsPage() {
         onLogoClick={() => router.push("/")}
         onJoinWaitlist={() => router.push("/waitlist")}
         onPricingClick={() => router.push("/pricing")}
-      />{" "}
-      <Referrals />
+      />
+      <Reviews />
       <Footer />
     </div>
   );
