@@ -79,7 +79,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                to get the first actually easy data
+                to get the first actually easy and reliable data system
               </p>
             </div>
 

@@ -13,7 +13,7 @@ export function Video() {
           <video
             className="w-full h-full object-cover"
             controls
-            poster="/modern-database-dashboard-dark-theme-preview.jpg"
+            poster="/kenny.png"
           >
             <source
               src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
