@@ -13,7 +13,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       price: "$5,000",
       period: "user per month",
       description:
-        "For easy, secure and reliable data that's reviewed by humans",
+        "For easy, reliable and trustworthy data that's reviewed by humans",
       tokenLimit: "10m",
       tokenLimitFull: "10 million tokens per request",
       features: [
@@ -68,14 +68,14 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <section className="pt-36 pb-28 text-center space-y-6 max-w-2xl mx-auto">
         <h1 className="text-5xl text-gray-900 font-semibold">
-          Easy, reliable and secure
+          Easy, reliable and trustwothy
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
-          AI agents easily and securely gather any data from anywhere then a{" "}
+          AI agents easily gather any data from anywhere then a{" "}
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
             human data scientist reviews the data
           </span>{" "}
-          to make sure it's reliable and complete
+          to make sure it's reliable, complete and trustworthy
         </p>
       </section>
 

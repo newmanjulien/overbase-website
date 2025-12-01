@@ -3,11 +3,9 @@
 import { useRouter } from "next/navigation";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
-import Pricing from "./Pricing";
-import { Video } from "./Video";
-import FAQ from "./FAQ";
+import Reviews from "./Reviews";
 
-export default function PricingPage() {
+export default function ReviewsPage() {
   const router = useRouter();
 
   return (
@@ -15,10 +13,9 @@ export default function PricingPage() {
       <Header
         onLogoClick={() => router.push("/")}
         onJoinWaitlist={() => router.push("/waitlist")}
-        onPricingClick="static"
+        onPricingClick={() => router.push("/pricing")}
       />
-      <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
-      <FAQ />
+      <Reviews />
       <Footer />
     </div>
   );
