@@ -28,10 +28,10 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Structured data is siloed, hard to access and often isn't
-                up-to-date, accurate or trustworthy. Most of the insight you
-                need is usually only available in an unstructured way which
-                isn't captured by your current systems
+                Structured data is hard to access and often isn't up-to-date,
+                accurate or trustworthy. Most of the insight you need is usually
+                only available in an unstructured way which isn't captured by
+                your data systems
               </p>
 
               <p>
@@ -44,9 +44,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   Overbase is the first data system that uses AI agents to
                   easily get any data from anywhere.
                 </strong>{" "}
-                You simply explain what data you need in plain English. Then an
-                AI agent quickly gathers trustworthy and accurate data in a
-                secure, reliable and complete way
+                You simply ask in plain English. Then an AI agent gathers
+                trustworthy and accurate data in a secure, reliable and complete
+                way
               </p>
 
               <p>
@@ -58,15 +58,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               <p>
                 AI agents can also get unstructured data from Gong, Slack,
                 Gmail, Teams, Notion, etc. Then analyze, filter and format it so
-                you get insight in a structured way that's simple to understand
-                and use
+                you get insight in a way that's simple to understand and use
               </p>
 
               <p>
-                And AI agents can also gather data from the humans on your team
-                by asking them. And by making it quick and easy for your team to
-                provide updates by voice, text message or whatever format is
-                most simple for them
+                And AI agents can also gather data from the humans on your team.
+                Because AI agents can ask them. And because we make it quick and
+                easy for your team to provide updates by voice, text message or
+                whatever format is most simple for them
               </p>
 
               <p>
