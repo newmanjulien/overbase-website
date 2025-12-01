@@ -23,22 +23,20 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
-                Businesses have too much data. And this data is in too many
-                silos. Which has made it way too hard for you to know what's
-                going on
+                Large businesses have too much data in too many silos. Which
+                makes it hard for you to know what's going on
               </p>
 
               <p>
-                Legacy data systems often add so much complexity that data ends
-                up getting harder to access. ELT, ETL or CDP? Reverse ETL? Data
-                lake? Data warehouse? What are these things and why can't you
-                just get the data you need?
+                Structured data is siloed, hard to access and often isn't
+                up-to-date, accurate or trustworthy. Most of the insight you
+                need is usually only available in an unstructured way which
+                isn't captured by your current systems
               </p>
 
               <p>
-                <strong className="font-medium">
-                  There's got to be a way to easily get the data you need
-                </strong>
+                And often the only way to know what you need to know ends up
+                being to talk to the humans on your team
               </p>
 
               <p>
@@ -46,28 +44,29 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   Overbase is the first data system that uses AI agents to
                   easily get any data from anywhere.
                 </strong>{" "}
-                You simply explain what you need in plain English. Then an agent
-                quickly gathers the data in a secure, reliable and complete way
+                You simply explain what data you need in plain English. Then an
+                AI agent quickly gathers trustworthy and accurate data in a
+                secure, reliable and complete way
               </p>
 
               <p>
-                AI agents can gather data from anywhere. Agents can get
-                structured data from Posthog, Zendesk, Salesforce, Snowflake,
-                S3, etc. But also unstructured data from Gong, Slack, Gmail,
-                Teams, Notion, etc
+                AI agents can get structured data from Posthog, Zendesk,
+                Salesforce, Snowflake, S3, etc. And present it to you in the
+                format you prefer
               </p>
 
               <p>
-                There's close to 0 setup. AI agents can get any data from
-                anywhere using any approach. Even if the only way to get the
-                data is to log in using the same interface humans do
+                AI agents can also get unstructured data from Gong, Slack,
+                Gmail, Teams, Notion, etc. Then analyze, filter and format it so
+                you get insight in a structured way that's simple to understand
+                and use
               </p>
 
               <p>
-                And while AI alone can't yet gather data in a reliably high
-                quality way, Overbase guarantees reliable and complete data by
-                getting one of our human data scientists to review and correct
-                the data
+                And AI agents can also gather data from the humans on your team
+                by asking them. And by making it quick and easy for your team to
+                provide updates by voice, text message or whatever format is
+                most simple for them
               </p>
 
               <p>
@@ -79,7 +78,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                to get the first actually easy and reliable data system
+                to try the first easy and reliable data system
               </p>
             </div>
 
