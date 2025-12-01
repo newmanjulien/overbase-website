@@ -64,8 +64,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               <p>
                 And AI agents can also gather data from the humans on your team.
                 Because AI agents can ask them. And because we make it quick and
-                easy for your team to provide updates by voice, text message or
-                whatever format is most simple for them
+                easy for your team to provide updates with voice, text message
+                or whatever format is most simple for them
               </p>
 
               <p>
@@ -77,7 +77,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                to try the first easy and reliable data system
+                to try the first agentic data system
               </p>
             </div>
 
