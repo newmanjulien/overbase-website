@@ -20,15 +20,19 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "Can users make an unlimited amount of data requests?",
+              q: "Can I make an unlimited amount of data requests?",
               a: "Yes. Unlimited. Each user can request any amount of data with no cap. There is a limit on the number of tokens which we use to complete each request but that limit is extremely high",
             },
             {
-              q: "How does the token limit work?",
-              a: "It's a limit on how many tokens Overbase uses for each request. But it doesn't stop you from making an unlimited amount of requests. In other words, you can make an unlimited amount of requests but there's a limit to how complex each request can be",
+              q: "Does this include unstructured data?",
+              a: "Yes. You can request data from any unstructured datasource and get insight in a simple and intuitive format. Unstructured datasources include places like Docusign, Slack, Gong, etc.",
             },
             {
-              q: "Why do you use so many tokens?",
+              q: "Does this include data from the people on my team?",
+              a: "Yes. You can request data which only the people on your team know. And we'll ask them in a way where it's quick and easy for them to give you and update",
+            },
+            {
+              q: "Why does Overbase use so many tokens?",
               a: "Overbase breaks each data request down into several subtasks. We run multiple AI agents for each of those subtasks. And each of those multiple agents runs for many hours. This uses millions of tokens. And it sometimes uses tens of millions of tokens when you work in a large enterprise with siloed data",
             },
             {
@@ -54,10 +58,6 @@ export default function FAQ() {
             {
               q: "Do humans review the data before I get it?",
               a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents then review and correct the data before it's sent to you",
-            },
-            {
-              q: "Why do you need a human review?",
-              a: "Because AI isn't good enough yet. AI agents can do a lot of work. But they're far from good enough to do complex work on their own. We use humans to coordinate agents. And also to review and correct results",
             },
           ].map((item, i) => (
             <AccordionItem

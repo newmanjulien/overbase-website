@@ -42,10 +42,10 @@ export function Curious({}) {
       {/* Hero Section */}
       <section className="px-6 md:px-12 lg:px-24 pt-32 pb-16 max-w-7xl mx-auto text-center">
         <h1 className="text-7xl text-gray-900 text-bold mb-4">
-          Curious Leadership
+          Curious Executives
         </h1>
         <p className="text-xl text-gray-600 text-medium leading-relaxed">
-          Roundtable discussions with execs from the best businesses
+          Roundtables with curious execs from the best businesses
         </p>
       </section>
 

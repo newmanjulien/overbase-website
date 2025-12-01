@@ -28,15 +28,15 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Structured data is hard to access and often isn't up-to-date,
-                accurate or trustworthy. Most of the insight you need is usually
-                only available in an unstructured way which isn't captured by
-                your data systems
+                Structured data might be hard to access and might often not be
+                up-to-date, accurate or trustworthy. Most of the insight you
+                need may only be available in an unstructured way which isn't
+                captured by your data systems
               </p>
 
               <p>
-                And often the only way to know what you need to know ends up
-                being to talk to the humans on your team
+                And it's likely that the only way to get the information you
+                need might often be to just talk to the people on your team
               </p>
 
               <p>
@@ -45,8 +45,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   easily get any data from anywhere.
                 </strong>{" "}
                 You simply ask in plain English. Then an AI agent gathers
-                trustworthy and accurate data in a secure, reliable and complete
-                way
+                trustworthy and accurate data in a reliable and complete way
               </p>
 
               <p>
@@ -62,7 +61,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                And AI agents can also gather data from the humans on your team.
+                And AI agents can also gather data from the people on your team.
                 Because AI agents can ask them. And because we make it quick and
                 easy for your team to provide updates with voice, text message
                 or whatever format is most simple for them
