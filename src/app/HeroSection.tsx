@@ -7,7 +7,7 @@ import { Graphic } from "../components/Graphic";
 const TEXTS = [
   "Get all the data we need for the monthly forecast",
   "We're short this quarter. What deals could we pull in from next quarter?",
-  "I'm presenting to the Board. Please update all the data in the attached deck",
+  "I'm presenting to the Board. Update all the data in the attached deck",
   "Analyze the Gong recordings of all our discovery calls to find the 5 most common objections in the past 7 days",
   "Look at Docusign to find all the new contracts we signed with customers in the past 7 days. Then tell me how this doesn't align with our closed deals in Salesforce",
 ];
