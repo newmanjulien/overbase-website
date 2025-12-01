@@ -33,8 +33,8 @@ export function HeroSection({
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Ask in plain English then AI agents get any data you need from
-            anywhere
+            The easiest way to get any data when you work in a large, complex
+            and siloed business
           </h2>
 
           {/* Desktop buttons */}

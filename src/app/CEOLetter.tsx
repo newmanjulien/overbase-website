@@ -28,15 +28,10 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Structured data might be hard to access and might often not be
-                up-to-date, accurate or trustworthy. Most of the insight you
-                need may only be available in an unstructured way which isn't
-                captured by your data systems
-              </p>
-
-              <p>
-                And it's likely that the only way to get the information you
-                need might often be to just talk to the people on your team
+                Structured data might not be up-to-date, accurate or
+                trustworthy. Unstructured data may not be captured by your
+                systems. And you might need to just talk to people on your team
+                to get the information you actually need
               </p>
 
               <p>
