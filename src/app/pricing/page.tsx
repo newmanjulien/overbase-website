@@ -18,7 +18,6 @@ export default function PricingPage() {
         onPricingClick="static"
       />
       <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
-      <Video />
       <FAQ />
       <Footer />
     </div>
