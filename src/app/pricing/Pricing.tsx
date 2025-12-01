@@ -18,7 +18,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       tokenLimitFull: "10 million tokens per request",
       features: [
         "Includes",
-        "Unlimited data requests",
+        "Unlimited structured & unstructured data",
         "Human data scientist reviews data",
         "Your data is never used for training our AI",
         "0 of your data is stored by Overbase",
@@ -37,7 +37,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       tokenLimitFull: "25 million tokens per request",
       features: [
         "Everything in Starter plus",
-        "1 login for you and 1 separate login for your assistant or Chief of Staff",
+        "1 login for you and 1 separate login for your Chief of Staff or ops team",
         "Share prompt templates with colleagues",
         "Share results with colleagues",
         "Share datasources with colleagues",
