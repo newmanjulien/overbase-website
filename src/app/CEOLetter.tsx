@@ -28,10 +28,23 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Structured data might not be up-to-date, accurate or
-                trustworthy. Unstructured data may not be captured by your
-                systems. And you might need to just talk to people on your team
-                to get the information you actually need
+                Structured data might be out-of-date and inaccurate.
+                Unstructured data may not be captured by your systems. And in
+                real life, you might have to just talk to people on your team to
+                get the information you need
+              </p>
+
+              <p>
+                This means that your Chief of Staff or ops team work overtime
+                gathering data at the end of the month. Or they need to
+                frantically search for data when there's an urgent situation
+              </p>
+
+              <p>
+                <strong className="font-medium">
+                  In the end, everyone's energy is constantly spent trying to
+                  figure out what's going on. And you don't really ever know{" "}
+                </strong>
               </p>
 
               <p>

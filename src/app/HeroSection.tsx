@@ -26,14 +26,14 @@ export function HeroSection({
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
-            Easily get any data{" "}
+            The only easy way to{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
-              from anywhere
+              get any data
             </span>
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            The easiest way to get any data when you work in a large, complex
+            Easily get any data from anywhere when you work in a large, complex
             and siloed business
           </h2>
 
