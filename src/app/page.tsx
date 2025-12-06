@@ -13,7 +13,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       <Header
         onJoinWaitlist={() => router.push("/waitlist")}
-        onPricingClick={() => router.push("/pricing")}
+        // onPricingClick={() => router.push("/pricing")}
       />
       <HeroSection
         onJoinWaitlist={() => router.push("/waitlist")}
