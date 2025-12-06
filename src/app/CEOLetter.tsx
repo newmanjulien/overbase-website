@@ -37,23 +37,25 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 You might sometimes forecast wrong because you can’t get actual
                 visibility. Opportunities and problems may be hidden in the
                 numbers you're getting. And when there’s a problem you need to
-                solve it might be hard to know how to solve it
-              </p>
-
-              <p>
-                <strong className="font-medium">
-                  There's got to be an easy way to get trustworthy internal data
-                </strong>
+                solve, it might be hard to know how to solve it
               </p>
 
               <p>
                 <strong className="font-medium">
                   Overbase is the first data system that uses AI agents to
-                  easily get any internal data.
-                </strong>{" "}
-                You simply ask in plain English. Then an AI agent gathers
-                trustworthy and accurate internal data in a reliable and
-                complete way
+                  easily get any internal data
+                </strong>
+              </p>
+
+              <p>
+                <strong className="font-medium">
+                  You simply ask in plain English. Then AI agents get you
+                  trustworthy and accurate internal data.{" "}
+                </strong>
+                Even when the data is dirty or siloed. Even when you're looking
+                for historical data where the labeling and structure change over
+                time. And even if this data doesn't exist in a structured
+                database
               </p>
 
               <p>
