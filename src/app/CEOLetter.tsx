@@ -28,10 +28,10 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Structured data might be out-of-date and inaccurate.
-                Unstructured data may not be captured by your systems. And in
-                real life, you might have to just talk to people on your team to
-                get the information you need
+                Structured data might be out-of-date and inaccurate. The most
+                important unstructured data may not get captured by your
+                systems. And a lot of the information you need might only live
+                in the heads of the people on your team
               </p>
 
               <p>
@@ -58,21 +58,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 AI agents can get structured data from Posthog, Zendesk,
-                Salesforce, Snowflake, S3, etc. And present it to you in the
-                format you prefer
+                Salesforce, S3, etc. AI agents can get unstructured data from
+                Gong, Slack, Gmail, Teams, Notion, etc.
               </p>
 
               <p>
-                AI agents can also get unstructured data from Gong, Slack,
-                Gmail, Teams, Notion, etc. Then analyze, filter and format it so
-                you get insight in a way that's simple to understand and use
-              </p>
-
-              <p>
-                And AI agents can also gather data from the people on your team.
-                Because AI agents can ask them. And because we make it quick and
-                easy for your team to provide updates with voice, text message
-                or whatever format is most simple for them
+                And AI agents can also get data from the people on your team. By
+                asking them and by making it quick and easy for your team to
+                provide updates through voice, text message, sharing links, etc
               </p>
 
               <p>
