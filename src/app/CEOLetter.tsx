@@ -52,10 +52,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                   You simply ask in plain English. Then AI agents get you
                   trustworthy and accurate internal data.{" "}
                 </strong>
-                Even when the data is dirty or siloed. Even when you're looking
-                for historical data where the labeling and structure change over
-                time. And even if this data doesn't exist in a structured
-                database
+                Even when the data is dirty or siloed. And even if it’s
+                historical data where the labeling and structure change over
+                time
               </p>
 
               <p>
