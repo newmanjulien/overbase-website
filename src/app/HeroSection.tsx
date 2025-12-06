@@ -26,15 +26,15 @@ export function HeroSection({
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
-            The only easy way to{" "}
+            The easy way to get{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
-              get any data
+              any internal data
             </span>
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Easily get any data from anywhere when you work in a large, complex
-            and siloed business
+            Easily get any internal data when you work in a large, complex and
+            siloed business
           </h2>
 
           {/* Desktop buttons */}
