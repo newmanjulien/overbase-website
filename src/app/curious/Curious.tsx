@@ -1,37 +1,38 @@
 import { useState } from "react";
 import { Play } from "lucide-react";
+import Image from "next/image";
 
 export function Curious({}) {
   const episodes = [
     {
       id: 1,
       title: "David Kenny, CEO at Nielsen",
-      thumbnail: "kenny.png",
-      src: "kenny.mp4",
+      thumbnail: "/kenny.png",
+      src: "/kenny.mp4",
     },
     {
       id: 2,
       title: "Dylan Field, CEO at Figma",
-      thumbnail: "field.png",
-      src: "field.mp4",
+      thumbnail: "/field.png",
+      src: "/field.mp4",
     },
     {
       id: 3,
       title: "Mark Roberge, CRO at Hubspot",
-      thumbnail: "roberge.png",
-      src: "roberge.mp4",
+      thumbnail: "/roberge.png",
+      src: "/roberge.mp4",
     },
     {
       id: 4,
       title: "Arthur Sadoun, CEO at Publicis",
-      thumbnail: "sadoun.png",
-      src: "sadoun.mp4",
+      thumbnail: "/sadoun.png",
+      src: "/sadoun.mp4",
     },
     {
       id: 5,
       title: "Nick Mehta, CEO at Gainsight",
-      thumbnail: "mehta.png",
-      src: "mehta.mp4",
+      thumbnail: "/mehta.png",
+      src: "/mehta.mp4",
     },
   ];
 
@@ -110,11 +111,14 @@ export function Curious({}) {
                   />
                 ) : (
                   <>
-                    <img
+                    <Image
                       src={episode.thumbnail}
                       alt={episode.title}
-                      className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-all duration-500 group-hover:scale-105"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
+
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300" />
                     <div
                       className="absolute inset-0 flex items-center justify-center"

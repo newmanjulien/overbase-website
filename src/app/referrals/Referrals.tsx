@@ -1,6 +1,7 @@
 "use client";
 
 import { Gift, Users, Smartphone, CheckCircle2 } from "lucide-react";
+import Image from "next/image";
 
 export function Referrals() {
   return (
@@ -25,10 +26,13 @@ export function Referrals() {
           </div>
           <div className="flex justify-center lg:justify-end">
             <div className="relative w-full max-w-md">
-              <img
+              <Image
                 src="https://images.macrumors.com/t/B-OH6huBi4ps9IbiRKadZxSPmP4=/800x0/smart/article-new/2025/09/iphone-17-models.jpg?lossy"
                 alt="iPhone Pro"
-                className="w-full h-auto rounded-2xl shadow-2xl"
+                className="rounded-2xl shadow-2xl"
+                width={800}
+                height={600}
+                priority
               />
             </div>
           </div>
@@ -63,7 +67,8 @@ export function Referrals() {
                 2. They try Overbase
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                You've earned a reward when someone tries Overbase for 1 month or more
+                You've earned a reward when someone tries Overbase for 1 month
+                or more
               </p>
             </div>
 

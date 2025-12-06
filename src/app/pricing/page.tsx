@@ -4,7 +4,7 @@ import { useRouter } from "next/navigation";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import Pricing from "./Pricing";
-import { Video } from "./Video";
+// import { Video } from "./Video";
 import FAQ from "./FAQ";
 
 export default function PricingPage() {

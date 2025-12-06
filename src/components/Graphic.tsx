@@ -19,10 +19,12 @@ export function Graphic({
   const isTyping = charIndex < fullText.length;
 
   // Reset when the texts list changes
+  const textsKey = hasTexts ? texts.join("|") : "";
+
   useEffect(() => {
     setCurrentTextIndex(0);
     setCharIndex(0);
-  }, [JSON.stringify(texts)]);
+  }, [textsKey]);
 
   useEffect(() => {
     if (!hasTexts) return;
