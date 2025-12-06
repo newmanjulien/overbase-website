@@ -24,36 +24,36 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
             <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
                 Large businesses have too much data in too many silos. Which
-                makes it hard for you to know what's going on
+                makes it hard for you to know what's going on in your
+                organization
               </p>
 
               <p>
-                Structured data might be out-of-date and inaccurate. The most
-                important unstructured data may not get captured by your
-                systems. And a lot of the information you need might only live
-                in the heads of the people on your team
+                And you can’t properly forecast and deliver. If you can’t truly
+                know what’s going on
               </p>
 
               <p>
-                This means that your Chief of Staff or ops team work overtime
-                gathering data at the end of the month. Or they need to
-                frantically search for data when there's an urgent situation
+                You might sometimes forecast wrong because you can’t get actual
+                visibility. Opportunities and problems may be hidden in the
+                numbers you're getting. And when there’s a problem you need to
+                solve it might be hard to know how to solve it
               </p>
 
               <p>
                 <strong className="font-medium">
-                  In the end, everyone's energy is constantly spent trying to
-                  figure out what's going on. And you don't really ever know{" "}
+                  There's got to be an easy way to get trustworthy internal data
                 </strong>
               </p>
 
               <p>
                 <strong className="font-medium">
                   Overbase is the first data system that uses AI agents to
-                  easily get any data from anywhere.
+                  easily get any internal data.
                 </strong>{" "}
                 You simply ask in plain English. Then an AI agent gathers
-                trustworthy and accurate data in a reliable and complete way
+                trustworthy and accurate internal data in a reliable and
+                complete way
               </p>
 
               <p>
@@ -63,9 +63,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                And AI agents can also get data from the people on your team. By
-                asking them and by making it quick and easy for your team to
-                provide updates through voice, text message, sharing links, etc
+                And AI agents can also get data from the people on your team.
+                Because AI agents can simply ask them
               </p>
 
               <p>
