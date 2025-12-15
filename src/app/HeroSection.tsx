@@ -5,12 +5,10 @@ import { Graphic } from "../components/Graphic";
 
 // Displayed in the graphic
 const TEXTS = [
-  "Get all the data we need for the monthly forecast",
-  "We're short this quarter. What deals could we pull in from next quarter?",
-  "Ask the AE and the CSM who are working the Acme Corp account for an update on the account's status",
-  "I'm presenting to the Board. Update all the data in the attached deck",
-  "Analyze the Gong recordings of all our discovery calls to find the 5 most common objections in the past 7 days",
-  "Look at Docusign to find all the new contracts we signed with customers in the past 7 days. Then tell me how this doesn't align with our closed deals in Salesforce",
+  "EMEA is telling me they’ll hit their forecast. How likely is that? Where are their weakest spots",
+  "Take the deals which are projected to close next month. Review the related emails and Gong recordings. Give me revised confidence scores for each one",
+  "Which deals from next quarter could we pull forward if we gave them a discount?",
+  "Which team is over-performing but I can’t tell in the new APAC numbers?",
 ];
 
 export function HeroSection({
@@ -26,15 +24,14 @@ export function HeroSection({
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
-            The easy way to get{" "}
+            How C-Suite Execs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
-              any internal data
+              get answers
             </span>
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Easily get any internal data when you work in a large, complex and
-            siloed business
+            Get the answers you need to pinpoint the right actions to take
           </h2>
 
           {/* Desktop buttons */}

@@ -23,49 +23,56 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
-                Large businesses have too much data in too many silos. Which
-                makes it hard for you to know what's going on in your
-                organization
+                You have questions when you look at your dashboards, your
+                reports and your CRM. And you need to answer those questions to
+                get at the root cause of what’s happening in your organization
               </p>
 
               <p>
-                And you can’t properly forecast and deliver. If you can’t truly
-                know what’s going on
-              </p>
-
-              <p>
-                You might sometimes forecast wrong because you can’t get actual
-                visibility. Opportunities and problems may be hidden in the
-                numbers you're getting. And when there’s a problem you need to
-                solve, it might be hard to know how to solve it
-              </p>
-
-              <p>
+                But the information you need to get answers you trust is in too
+                many systems.{" "}
                 <strong className="font-medium">
-                  Overbase is the first data system that uses AI agents to
-                  easily get any internal data
+                  And getting to the bottom of what’s actually happening is slow
+                  and hard
                 </strong>
               </p>
 
               <p>
                 <strong className="font-medium">
-                  You simply ask in plain English. Then AI agents get you
-                  trustworthy and accurate internal data.{" "}
+                  Overbase lets C-Suite Execs easily ask questions in plain
+                  English.{" "}
                 </strong>
-                Even when the data is dirty or siloed. And even if it’s
-                historical data where the labeling and structure change over
-                time
+                Then get reliable answers that truly go in-depth and let you
+                understand enough to take action
               </p>
 
               <p>
-                AI agents can get structured data from Posthog, Zendesk,
-                Salesforce, S3, etc. AI agents can get unstructured data from
-                Gong, Slack, Gmail, Teams, Notion, etc.
+                We answer in-depth and accurately because we use AI agents to
+                get data
               </p>
 
               <p>
-                And AI agents can also get data from the people on your team.
-                Because AI agents can simply ask them
+                Legacy disconnected systems make it hard to get answers. Which
+                is why you need to ask an analyst to manually gather data for
+                you when your question crosses more than 1 tool or platform
+              </p>
+
+              <p>
+                AI agents make all your tools and platforms talk to each other.
+                Which lets us easily get you answers from the most disconnected
+                data
+              </p>
+
+              <p>
+                Agents can easily get structured or unstructured data from any
+                of your tools and platforms. Agents can easily get data from
+                people on your team in a way that's quick and seamless for them
+              </p>
+
+              <p>
+                With Overbase, your team will spend less time producing reports
+                and inputting data. And you will get the answers you need to
+                pinpoint the right actions to take
               </p>
 
               <p>
@@ -77,7 +84,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                to try the first agentic data system
+                to easily get the answers you need
               </p>
             </div>
 
