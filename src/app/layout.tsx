@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "How C-Suite Execs get answers",
+  title: "Overbase › get answers",
   description:
-    "Easily get complete and accurate data by replacing APIs with AI agents",
+    "C-Suite Execs get the answers they need to pinpoint the right actions to take",
   icons: {
     icon: "/favicon.ico",
   },
