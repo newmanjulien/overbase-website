@@ -53,20 +53,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 Legacy disconnected systems make it hard to get answers. Which
-                is why you need to ask an analyst to manually gather data for
-                you when your question crosses more than 1 tool or platform
+                is why you might need to ask an analyst to manually gather data
+                for you when your question crosses more than 1 tool or platform
               </p>
 
               <p>
                 AI agents make all your tools and platforms talk to each other.
                 Which lets us easily get you answers from the most disconnected
                 data
-              </p>
-
-              <p>
-                Agents can easily get structured or unstructured data from any
-                of your tools and platforms. Agents can easily get data from
-                people on your team in a way that's quick and seamless for them
               </p>
 
               <p>

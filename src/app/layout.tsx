@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Overbase › get answers",
+  title: "Overbase › Get answers",
   description:
     "C-Suite Execs get the answers they need to pinpoint the right actions to take",
   icons: {
