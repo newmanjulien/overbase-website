@@ -11,8 +11,7 @@ export interface Tier {
   features: string[];
   cta: string;
   highlighted: boolean;
-  tokenLimit?: string;
-  tokenLimitFull?: string;
+  answersPerMonth?: number;
 }
 
 interface TierCardProps {
@@ -42,30 +41,16 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
         </p>
       </div>
 
-      {tier.tokenLimit && tier.tokenLimitFull && (
-        <div className="mt-6 border-t-2 border-b-2 border-gray-900 py-5">
-          <div className="flex items-center justify-between">
-            <div className="space-y-1">
-              <p className="text-xs text-gray-500 uppercase tracking-wider">
-                Token limit
-              </p>
-              <p className="text-sm text-gray-900">{tier.tokenLimitFull}</p>
+      {tier.answersPerMonth && (
+        <div className="mt-6 py-4 bg-gray-50 rounded-lg">
+          <div className="text-center space-y-1">
+            <div className="text-2xl text-gray-900">
+              {tier.answersPerMonth.toLocaleString()} answers
             </div>
-            <div className="text-3xl text-gray-900 tracking-tight">
-              {tier.tokenLimit}
-            </div>
+            <p className="text-xs text-gray-500 tracking-wide">per month</p>
           </div>
         </div>
       )}
-
-      {/* <div className="flex-1 mt-6 space-y-3">
-        {tier.features.map((feature, i) => (
-          <div key={i} className="flex items-start gap-2">
-            <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
-            <span className="text-sm text-gray-600">{feature}</span>
-          </div>
-        ))}
-      </div> */}
 
       <div className="flex-1 mt-6 space-y-3">
         {tier.features.map((feature, i) => (
