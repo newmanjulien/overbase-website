@@ -108,7 +108,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
           >
             Annual
             <span className="ml-2 inline-flex items-center rounded-full bg-gray-900 px-2 py-0.5 text-xs text-white">
-              -25%
+              -33%
             </span>
           </button>
         </div>

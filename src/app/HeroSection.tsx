@@ -31,7 +31,8 @@ export function HeroSection({
           </h1>
 
           <h2 className="mt-6 text-md text-gray-600 font-medium">
-            Get the answers you need to pinpoint the right actions to take
+            Get the in-depth answers you need to pinpoint the right actions to
+            take
           </h2>
 
           {/* Desktop buttons */}
