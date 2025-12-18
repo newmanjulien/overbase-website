@@ -23,9 +23,9 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
-                You have questions when you look at your dashboards, your
-                reports and your CRM. And you need to answer those questions to
-                get at the root cause of what’s happening in your organization
+                You have questions when you look at your dashboards and your
+                reports. And you need to answer those questions to get at the
+                root cause of what’s happening in your organization
               </p>
 
               <p>
