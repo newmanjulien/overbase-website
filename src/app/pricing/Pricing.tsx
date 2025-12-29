@@ -87,10 +87,10 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
 
       {/* Billing Toggle */}
       <div className="pt-8 flex items-center justify-center mb-12">
-        <div className="inline-flex items-center gap-3 bg-gray-50 rounded-full p-1.5 border border-gray-100">
+        <div className="inline-flex items-center gap-3 bg-gray-50 rounded-2xl p-1.5 border border-gray-100">
           <button
             onClick={() => setBillingCycle("monthly")}
-            className={`relative px-6 py-2.5 rounded-full text-sm transition-all duration-300 ${
+            className={`relative px-6 py-2.5 rounded-xl text-sm transition-all duration-300 ${
               billingCycle === "monthly"
                 ? "bg-white text-gray-900 shadow-sm"
                 : "text-gray-600 hover:text-gray-900"
@@ -100,16 +100,13 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
           </button>
           <button
             onClick={() => setBillingCycle("annual")}
-            className={`relative px-6 py-2.5 rounded-full text-sm transition-all duration-300 ${
+            className={`relative px-6 py-2.5 rounded-xl text-sm transition-all duration-300 ${
               billingCycle === "annual"
                 ? "bg-white text-gray-900 shadow-sm"
                 : "text-gray-600 hover:text-gray-900"
             }`}
           >
-            Annual
-            <span className="ml-2 inline-flex items-center rounded-full bg-gray-900 px-2 py-0.5 text-xs text-white">
-              -33%
-            </span>
+            Annual (3 months free)
           </button>
         </div>
       </div>

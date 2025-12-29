@@ -59,8 +59,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 AI agents make all your tools and platforms talk to each other.
-                Which lets us easily get you answers from the most disconnected
-                data
+                Which lets us easily get you answers from even the most
+                disconnected data
               </p>
 
               <p>
