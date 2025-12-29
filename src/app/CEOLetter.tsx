@@ -87,7 +87,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   pricing
                 </Link>{" "}
-                if you might be curious
+                if you're curious
               </p>
             </div>
 
