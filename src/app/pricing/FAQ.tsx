@@ -20,44 +20,24 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "Can I make an unlimited amount of data requests?",
-              a: "Yes. Unlimited. Each user can request any amount of data with no cap. There is a limit on the number of tokens which we use to complete each request but that limit is extremely high",
+              q: "How many questions can I ask per month?",
+              a: "Up to 100 questions per month with the enterprise tier. You can ask up to 100 questions each month and we get you the most reliable answers",
             },
             {
-              q: "Does this include unstructured data?",
-              a: "Yes. You can request data from any unstructured datasource and get insight in a simple and intuitive format. Unstructured datasources include places like Docusign, Slack, Gong, etc.",
+              q: "Can I ask follow up questions for free?",
+              a: "Yes. You can ask an unlimited number of follow up questions to really get to the root cause of what's happening",
             },
             {
-              q: "Does this include data from the people on my team?",
-              a: "Yes. You can request data which only the people on your team know. And we'll ask them in a way where it's quick and easy for them to give you and update",
+              q: "How do you get reliable answers when others don't?",
+              a: "By using exponentially more tokens and by having humans in the loop. Overbase runs the most advanced AI agents to gather and analyze your data. These agents can run for days on end, complete the most complex tasks and they can consume millions of tokens for each question. Then we get human data scientists to coordinate those agents and review their work each step of the way",
             },
             {
-              q: "Why does Overbase use so many tokens?",
-              a: "Overbase breaks each data request down into several subtasks. We run multiple AI agents for each of those subtasks. And each of those multiple agents runs for many hours. This uses millions of tokens. And it sometimes uses tens of millions of tokens when you work in a large enterprise with siloed data",
+              q: "How do you access data from our systems?",
+              a: "Safely, reliably and easily. AI agents can access any of your systems using APIs and tradional connectors. Or AI agents can also simply log in using the same credentials your team uses. AI agents can also quickly access and convert unstructured data",
             },
             {
-              q: "Why does Overbase cost thousands of dollars per user?",
-              a: (
-                <span>
-                  Because we spend so much on tokens. 50 million Anthropic
-                  tokens{" "}
-                  <a
-                    href="https://openrouter.ai/anthropic"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 underline hover:text-blue-800 cursor-pointer"
-                  >
-                    costs $1,750.
-                  </a>{" "}
-                  Collecting data in a reliable and complete manner means
-                  running multiple AI agents in parallel then picking the best
-                  result. And these AI agents can run for several hours
-                </span>
-              ),
-            },
-            {
-              q: "Do humans review the data before I get it?",
-              a: "Yes. AI agents gather, analyze and format your data. Then we guarantee reliable results by having a human data scientist coordinate the agents then review and correct the data before it's sent to you",
+              q: "How do you get data from people on my team?",
+              a: "By making it easy for your team to share data. We contact team members using their preferred channel: email, Slack, text message, etc. Then we let them share data in whatever format is easiest: sending a screenshot, voice notes, sharing a file, etc.",
             },
           ].map((item, i) => (
             <AccordionItem

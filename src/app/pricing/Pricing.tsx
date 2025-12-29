@@ -1,6 +1,6 @@
 "use client";
 
-import TierCard from "../../components/TierCard";
+import TierCard, { feature } from "../../components/TierCard";
 import { useState } from "react";
 
 interface PricingProps {
@@ -19,15 +19,17 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       priceAnnual: "$3,000",
       period: "user per month",
       description:
-        "For easy, reliable and trustworthy data that's reviewed by humans",
+        "For reliable and trustworthy answers that are reviewed by humans",
       answersPerMonth: 10,
       features: [
-        "Includes",
-        "Unlimited structured & unstructured data",
-        "Human data scientist reviews data",
-        "Your data is never used for training our AI",
-        "0 of your data is stored by Overbase",
-        "GDPR and SOC2 compliant",
+        feature(
+          "AI agents use up to 1 million tokens per question",
+          "sparkles"
+        ),
+        feature("Human data scientists review answers", "award"),
+        feature("Connect to all your datasources in minutes", "zap"),
+        feature("Your data is never used to train our AI", "lock"),
+        feature("0 of your data is stored by Overbase", "shield"),
       ],
       cta: "Join waitlist",
       highlighted: false,
@@ -41,11 +43,14 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
         "For teams who share insights and need to collaborate more easily",
       answersPerMonth: 50,
       features: [
-        "Everything in Starter plus",
-        "1 login for you and 1 separate login for your Chief of Staff or ops team",
-        "Share prompt templates with colleagues",
-        "Share results with colleagues",
-        "Share datasources with colleagues",
+        feature("Everything in Starter plus", "none"),
+        feature(
+          "1 login for you and 1 separate login for your Chief of Staff or ops team",
+          "users"
+        ),
+        feature("Share templates and datasources with colleagues", "network"),
+        feature("Guided migration and onboarding", "login"),
+        feature("Dedicated Slack channel", "slack"),
       ],
       cta: "Join waitlist",
       highlighted: true,
@@ -56,13 +61,20 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       priceAnnual: "$9,000",
       period: "user per month",
       description:
-        "For the hardest data requests and the most strict security standards",
+        "For the hardest questions and the most strict security standards",
       answersPerMonth: 100,
       features: [
-        "Everything in Team plus",
-        "SAML/OIDC SSO",
-        "Dedicated support and SLAs",
-        "Custom NDAs with each Overbase data scientist who has access to or reviews your data",
+        feature("Everything in Team plus", "none"),
+        feature(
+          "AI agents use up to 10 million tokens per question",
+          "sparkles"
+        ),
+        feature("Support offered by our CEO", "phone"),
+        feature("SAML/OIDC SSO", "lock"),
+        feature(
+          "Custom NDAs with each Overbase data scientist who reviews your data",
+          "shield"
+        ),
       ],
       cta: "Join waitlist",
       highlighted: false,
@@ -72,16 +84,17 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-7xl mx-auto">
       {/* Header */}
-      <section className="pt-36 pb-6 text-center space-y-6 max-w-2xl mx-auto">
+      <section className="pt-36 pb-6 text-center space-y-6 max-w-3xl mx-auto">
         <h1 className="text-5xl text-gray-900 font-semibold">
-          Easy, reliable and trustworthy
+          Reliable answers that go in-depth
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
-          AI agents gather data from anywhere, then a{" "}
+          Our advanced AI agents use{" "}
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
-            human data scientist reviews it
+            millions of tokens to answer each of your questions
           </span>{" "}
-          to ensure it's reliable.
+          then a human data scientist reviews the answer to make sure it's
+          reliable
         </p>
       </section>
 

@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
@@ -78,7 +80,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 >
                   waitlist
                 </button>{" "}
-                to easily get the answers you need
+                or check out our{" "}
+                <Link
+                  href="/pricing"
+                  className="font-normal text-blue-600 underline hover:text-blue-800"
+                >
+                  pricing
+                </Link>{" "}
+                if you might be curious
               </p>
             </div>
 

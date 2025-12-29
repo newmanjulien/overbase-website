@@ -1,14 +1,55 @@
 "use client";
 
 import { Button } from "./ui/button";
-import { Check } from "lucide-react";
+import {
+  Check,
+  Shield,
+  Lock,
+  Zap,
+  Users,
+  Users2,
+  Sparkles,
+  Slack,
+  LogIn,
+  Network,
+  Phone,
+  Award,
+} from "lucide-react";
+import { ReactNode } from "react";
+
+// Icon types that can be used for features
+export type FeatureIcon =
+  | "check"
+  | "shield"
+  | "lock"
+  | "zap"
+  | "users"
+  | "users2"
+  | "sparkles"
+  | "slack"
+  | "login"
+  | "network"
+  | "phone"
+  | "award"
+  | "none";
+
+// Feature can be a string (backwards compatible) or an object with text and optional icon
+export interface Feature {
+  text: string;
+  icon?: FeatureIcon;
+}
+
+// Helper for better DX - no need for "as const"
+export function feature(text: string, icon?: FeatureIcon): Feature {
+  return { text, icon };
+}
 
 export interface Tier {
   name: string;
   price: string;
   period: string;
   description: string;
-  features: string[];
+  features: (string | Feature)[];
   cta: string;
   highlighted: boolean;
   answersPerMonth?: number;
@@ -17,6 +58,45 @@ export interface Tier {
 interface TierCardProps {
   tier: Tier;
   onJoinWaitlist: () => void;
+}
+
+// Helper to render the appropriate icon
+function FeatureIconComponent({
+  icon,
+}: {
+  icon: FeatureIcon | undefined;
+}): ReactNode {
+  const className = "w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5";
+
+  switch (icon) {
+    case "none":
+      return null;
+    case "shield":
+      return <Shield className={className} />;
+    case "lock":
+      return <Lock className={className} />;
+    case "zap":
+      return <Zap className={className} />;
+    case "users":
+      return <Users className={className} />;
+    case "users2":
+      return <Users2 className={className} />;
+    case "sparkles":
+      return <Sparkles className={className} />;
+    case "slack":
+      return <Slack className={className} />;
+    case "login":
+      return <LogIn className={className} />;
+    case "network":
+      return <Network className={className} />;
+    case "phone":
+      return <Phone className={className} />;
+    case "award":
+      return <Award className={className} />;
+    case "check":
+    default:
+      return <Check className={className} />;
+  }
 }
 
 export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
@@ -53,15 +133,18 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
       )}
 
       <div className="flex-1 mt-6 space-y-3">
-        {tier.features.map((feature, i) => (
-          <div key={i} className="flex items-start gap-2">
-            {/* Only render check for features after the first one */}
-            {i !== 0 && (
-              <Check className="w-4 h-4 text-gray-600 flex-shrink-0 mt-0.5" />
-            )}
-            <span className="text-sm text-gray-600">{feature}</span>
-          </div>
-        ))}
+        {tier.features.map((feature, i) => {
+          const isObject = typeof feature === "object";
+          const text = isObject ? feature.text : feature;
+          const icon = isObject ? feature.icon : "check";
+
+          return (
+            <div key={i} className="flex items-start gap-2">
+              <FeatureIconComponent icon={icon} />
+              <span className="text-sm text-gray-600">{text}</span>
+            </div>
+          );
+        })}
       </div>
 
       <Button
