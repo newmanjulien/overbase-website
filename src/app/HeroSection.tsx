@@ -19,7 +19,7 @@ export function HeroSection({
   onDemo: () => void;
 }) {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 xl:px-24 pt-14">
+    <section className="flex flex-col px-6 xl:px-24 pt-32">
       <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
@@ -42,7 +42,7 @@ export function HeroSection({
               onClick={onJoinWaitlist}
               variant="dark"
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-base rounded-lg"
+              className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg"
             >
               Join waitlist
             </HotkeyButton>
@@ -52,7 +52,7 @@ export function HeroSection({
               onClick={onDemo}
               variant="light"
               size="lg"
-              className="bg-gray-50 hover:bg-gray-100 text-black p-6 text-base rounded-lg"
+              className="bg-gray-50 hover:bg-gray-100 text-black p-5 text-base rounded-lg"
             >
               Demo with our CEO
             </HotkeyButton>
@@ -74,7 +74,7 @@ export function HeroSection({
           onClick={onJoinWaitlist}
           variant="dark"
           size="lg"
-          className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-base rounded-lg w-full max-w-lg"
+          className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg w-full max-w-lg"
         >
           Join waitlist
         </HotkeyButton>
@@ -84,7 +84,7 @@ export function HeroSection({
           onClick={onDemo}
           variant="light"
           size="lg"
-          className="bg-gray-50 hover:bg-gray-100 text-black p-6 text-base rounded-lg w-full max-w-lg"
+          className="bg-gray-50 hover:bg-gray-100 text-black p-5 text-base rounded-lg w-full max-w-lg"
         >
           Demo with our CEO
         </HotkeyButton>

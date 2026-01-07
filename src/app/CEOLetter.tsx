@@ -4,24 +4,24 @@ import Link from "next/link";
 
 export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-gray-50/50">
+    <section className="py-24 px-6 md:px-12 lg:px-24 bg-white">
       <div className="max-w-3xl mx-auto">
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
           {/* Background papers – stack effect */}
-          <div className="absolute inset-0 bg-white rounded-lg shadow-lg transform -rotate-1 scale-[1.02] translate-x-1 translate-y-1 border border-gray-200"></div>
-          <div className="absolute inset-0 bg-white rounded-lg shadow-md transform rotate-[2deg] scale-[1.015] -translate-x-1 translate-y-0.5 border border-gray-200"></div>
-          <div className="absolute inset-0 bg-gray-100 rounded-lg shadow-sm transform rotate-[0.5deg] scale-[1.005] border border-gray-200"></div>
+          <div className="absolute inset-0 bg-white rounded-lg shadow-md transform -rotate-1 scale-[1.02] translate-x-1 translate-y-1 border border-gray-100"></div>
+          <div className="absolute inset-0 bg-white rounded-lg shadow-sm transform rotate-[2deg] scale-[1.015] -translate-x-1 translate-y-0.5 border border-gray-100"></div>
+          <div className="absolute inset-0 bg-gray-50 rounded-lg shadow transform rotate-[0.5deg] scale-[1.005] border border-gray-100"></div>
 
           {/* Main letter */}
-          <div className="relative bg-white rounded-lg shadow-xl p-8 md:p-12 border border-gray-200 z-10">
-            <div className="mb-8">
+          <div className="relative bg-white rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
+            <div className="mb-7">
               <div className="text-lg text-gray-900 font-semibold">
                 Introducing Overbase
               </div>
             </div>
 
-            <div className="mt-8 pt-6 border-t border-gray-200"></div>
+            <div className="pt-6 border-t border-gray-100"></div>
 
             <div className="space-y-6 text-gray-600 text-base leading-relaxed">
               <p>
@@ -41,11 +41,15 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
               <p>
                 <strong className="font-medium">
-                  Overbase lets C-Suite Execs easily ask questions in plain
-                  English.{" "}
+                  And that means you sometimes might not know what you need to
+                  know for make the right decisions
                 </strong>
-                Then get reliable answers that truly go in-depth and let you
-                understand enough to take action
+              </p>
+
+              <p>
+                Overbase lets C-Suite Execs easily ask questions in plain
+                English. Then get reliable answers that truly go in-depth and
+                let you understand enough to take action
               </p>
 
               <p>

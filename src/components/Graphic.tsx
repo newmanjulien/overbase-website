@@ -56,8 +56,8 @@ export function Graphic({
 
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-full bg-white border border-gray-200 rounded-3xl shadow-md p-6">
-        <div className="w-full bg-gray-100 rounded-2xl px-4 py-3 text-gray-700 text-sm whitespace-pre-wrap">
+      <div className="w-full bg-white border border-gray-200/60 rounded-2xl p-4">
+        <div className="w-full bg-gray-100/60 rounded-lg px-4 py-3 text-gray-700 text-sm whitespace-pre-wrap">
           {fullText.slice(0, charIndex)}
           {!isTyping && (
             <span className="animate-[blink_1s_step-start_infinite]">|</span>
