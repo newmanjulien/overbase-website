@@ -9,7 +9,7 @@ import {
 
 export default function FAQ() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-24 bg-gray-50/50">
+    <section className="px-6 md:px-12 lg:px-24 py-24">
       <div className="max-w-3xl mx-auto space-y-12">
         <div className="text-center space-y-4">
           <h2 className="text-4xl text-gray-900 font-medium">
@@ -43,7 +43,7 @@ export default function FAQ() {
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="ring ring-gray-200 rounded-xl px-6 bg-white"
+              className="ring ring-gray-100 rounded-lg px-6 bg-white"
             >
               <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
                 {item.q}

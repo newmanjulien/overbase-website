@@ -51,7 +51,7 @@ export interface Tier {
   description: string;
   features: (string | Feature)[];
   cta: string;
-  highlighted: boolean;
+  highlighted?: boolean;
   answersPerMonth?: number;
 }
 
@@ -102,7 +102,7 @@ function FeatureIconComponent({
 export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
   return (
     <div
-      className={`relative flex flex-col rounded-3xl p-6 ${
+      className={`relative flex flex-col rounded-xl p-6 ${
         tier.highlighted
           ? "border-gray-900 shadow-xl scale-105 border-2"
           : "border-gray-100 border"
@@ -149,7 +149,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
 
       <Button
         onClick={onJoinWaitlist}
-        className={`w-full mt-6 rounded-lg py-6 ${
+        className={`w-full mt-6 rounded-lg py-2 ${
           tier.highlighted
             ? "bg-gray-900 hover:bg-gray-800 text-white"
             : "bg-gray-100 hover:bg-gray-50 text-gray-900"

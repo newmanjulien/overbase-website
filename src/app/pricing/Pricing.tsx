@@ -1,6 +1,7 @@
 "use client";
 
 import TierCard, { feature } from "../../components/TierCard";
+import BillingToggle from "../../components/BillingToggle";
 import { useState } from "react";
 
 interface PricingProps {
@@ -32,7 +33,6 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
         feature("0 of your data is stored by Overbase", "shield"),
       ],
       cta: "Join waitlist",
-      highlighted: false,
     },
     {
       name: "Team",
@@ -84,45 +84,24 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-7xl mx-auto">
       {/* Header */}
-      <section className="pt-36 pb-6 text-center space-y-6 max-w-3xl mx-auto">
+      <section className="pt-30 pb-8 text-center space-y-6 max-w-3xl mx-auto">
         <h1 className="text-5xl text-gray-900 font-semibold">
           Reliable answers that go in-depth
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
-          Our advanced AI agents use{" "}
+          Advanced AI agents use{" "}
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
             millions of tokens to answer each of your questions
           </span>{" "}
-          then a human data scientist reviews the answer to make sure it's
-          reliable
+          then a human data scientist reviews and improves the answer to make
+          sure it's reliable
         </p>
       </section>
 
-      {/* Billing Toggle */}
-      <div className="pt-8 flex items-center justify-center mb-12">
-        <div className="inline-flex items-center gap-3 bg-gray-50 rounded-2xl p-1.5 border border-gray-100">
-          <button
-            onClick={() => setBillingCycle("monthly")}
-            className={`relative px-6 py-2.5 rounded-xl text-sm transition-all duration-300 ${
-              billingCycle === "monthly"
-                ? "bg-white text-gray-900 shadow-sm"
-                : "text-gray-600 hover:text-gray-900"
-            }`}
-          >
-            Monthly
-          </button>
-          <button
-            onClick={() => setBillingCycle("annual")}
-            className={`relative px-6 py-2.5 rounded-xl text-sm transition-all duration-300 ${
-              billingCycle === "annual"
-                ? "bg-white text-gray-900 shadow-sm"
-                : "text-gray-600 hover:text-gray-900"
-            }`}
-          >
-            Annual (3 months free)
-          </button>
-        </div>
-      </div>
+      <BillingToggle
+        billingCycle={billingCycle}
+        onBillingCycleChange={setBillingCycle}
+      />
 
       {/* Pricing Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">

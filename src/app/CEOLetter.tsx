@@ -80,14 +80,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
-                  className="font-normal text-blue-600 underline hover:text-blue-800 cursor-pointer"
+                  className="font-normal text-blue-400 underline hover:text-blue-300 cursor-pointer"
                 >
                   waitlist
                 </button>{" "}
                 or check out our{" "}
                 <Link
                   href="/pricing"
-                  className="font-normal text-blue-600 underline hover:text-blue-800"
+                  className="font-normal text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
                 </Link>{" "}
