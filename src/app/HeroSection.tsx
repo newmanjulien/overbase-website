@@ -5,9 +5,9 @@ import { Graphic } from "../components/Graphic";
 
 // Displayed in the graphic
 const TEXTS = [
-  "EMEA is telling me they’ll hit their forecast. How likely is that? Where are their weakest spots",
+  "EMEA is telling me they’ll hit their forecast. How likely is that? What are their weakest spots?",
   "Take the deals which are projected to close next month. Review the related emails and Gong recordings. Give me revised confidence scores for each one",
-  "Which deals from next quarter could we pull forward if we gave them a discount?",
+  "Which deals from next quarter could we pull forward most easily if we gave them a discount?",
   "Which team is over-performing but I can’t tell in the new APAC numbers?",
 ];
 
