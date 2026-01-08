@@ -84,8 +84,8 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-7xl mx-auto">
       {/* Header */}
-      <section className="pt-30 pb-8 text-center space-y-6 max-w-3xl mx-auto">
-        <h1 className="text-5xl text-gray-900 font-semibold">
+      <section className="pt-30 pb-8 text-center space-y-6 max-w-3xl mx-auto scale-[0.90]">
+        <h1 className="text-5xl text-gray-900 font-medium">
           Reliable answers that go in-depth
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
@@ -104,7 +104,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       />
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8 scale-[0.98]">
         {tiers.map((tier) => (
           <TierCard
             key={tier.name}
