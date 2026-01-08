@@ -11,7 +11,7 @@ export function HotkeyBadge({
   variant?: "dark" | "light";
 }) {
   const baseClasses =
-    "hidden xl:inline-flex items-center justify-center w-6 h-6 rounded-md text-sm font-bold";
+    "hidden xl:inline-flex items-center justify-center w-6 h-6 rounded-sm text-sm font-bold";
   const variantClasses =
     variant === "dark" ? "bg-gray-700 text-white" : "bg-gray-200 text-black";
 

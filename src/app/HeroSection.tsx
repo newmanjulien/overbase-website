@@ -48,7 +48,7 @@ export function HeroSection({
             </HotkeyButton>
 
             <HotkeyButton
-              hotkey="f"
+              hotkey="c"
               onClick={onDemo}
               variant="light"
               size="lg"
