@@ -49,7 +49,7 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
             <Image
               src="/logo.png"
               alt="Overbase logo"
-              width={52}
+              width={51}
               height={32}
               className="object-contain"
               priority
