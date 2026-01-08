@@ -49,7 +49,7 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
             <Image
               src="/logo.png"
               alt="Overbase logo"
-              width={55}
+              width={52}
               height={32}
               className="object-contain"
               priority
@@ -61,10 +61,10 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
         <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 -mt-16">
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-8 text-center">
-              <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-bold">
+              <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
                 Join the waitlist
               </h1>
-              <p className="text-md text-gray-900 leading-relaxed">
+              <p className="text-sm text-gray-900 leading-relaxed">
                 We onboard users one at a time to be sure Overbase works for you
               </p>
             </div>
@@ -79,7 +79,7 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full px-6 py-5 text-md border border-gray-300 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
+                  className="w-full px-3 py-3 text-sm border border-gray-200 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
                   placeholder="Work email"
                   required
                   disabled={loading}
@@ -90,7 +90,7 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
               <Button
                 type="submit"
                 size="lg"
-                className="w-full bg-gray-900 hover:bg-gray-800 text-white p-6 text-md rounded-lg"
+                className="w-full bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
                 disabled={loading}
               >
                 {loading ? (
