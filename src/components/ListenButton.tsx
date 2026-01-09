@@ -33,25 +33,18 @@ export function ListenButton() {
     setIsPlaying(!isPlaying);
   };
 
+  const Icon = isPlaying ? Pause : Headphones;
+
   return (
     <button
       type="button"
       onClick={handleListenClick}
-      className={`flex items-center gap-1.5 px-3 py-1.5 border border-transparent rounded-lg text-gray-900 transition-colors cursor-pointer ${
-        isPlaying ? "bg-[#ffff78]" : "bg-[#ffffb1] hover:bg-[#ffff78]"
+      className={`flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer ${
+        isPlaying ? "text-gray-500" : "text-gray-400 hover:text-gray-500"
       }`}
     >
-      {isPlaying ? (
-        <>
-          <Pause size={16} />
-          <span className="text-sm font-medium">Pause</span>
-        </>
-      ) : (
-        <>
-          <Headphones size={16} />
-          <span className="text-sm font-medium">Listen</span>
-        </>
-      )}
+      <Icon size={16} />
+      {isPlaying ? "Pause" : "Listen"}
     </button>
   );
 }
