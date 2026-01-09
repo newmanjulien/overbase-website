@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useRef, useEffect } from "react";
-import { Headphones, Pause } from "lucide-react";
+import { AudioLines, Pause } from "lucide-react";
 
 export function ListenButton() {
   const [isPlaying, setIsPlaying] = useState(false);
@@ -33,17 +33,19 @@ export function ListenButton() {
     setIsPlaying(!isPlaying);
   };
 
-  const Icon = isPlaying ? Pause : Headphones;
+  const Icon = isPlaying ? Pause : AudioLines;
 
   return (
     <button
       type="button"
       onClick={handleListenClick}
-      className={`flex items-center gap-1.5 text-sm font-medium transition-colors cursor-pointer ${
-        isPlaying ? "text-gray-500" : "text-gray-400 hover:text-gray-500"
+      className={`flex items-center gap-1.5 text-sm font-base transition-colors cursor-pointer ${
+        isPlaying
+          ? "text-gray-500/80"
+          : "text-gray-400/80 hover:text-gray-500/80"
       }`}
     >
-      <Icon size={16} />
+      <Icon size={16} strokeWidth={1.5} />
       {isPlaying ? "Pause" : "Listen"}
     </button>
   );
