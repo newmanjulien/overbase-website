@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { ListenButton } from "./ListenButton";
+import { ListenButton } from "../components/ListenButton";
 
 export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
   return (
