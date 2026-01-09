@@ -1,17 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import Link from "next/link";
-import { Headphones, Pause } from "lucide-react";
+import { ListenButton } from "./ListenButton";
 
 export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handleListenClick = () => {
-    setIsPlaying(!isPlaying);
-    // TODO: Add actual audio playback logic here
-  };
-
   return (
     <section className="py-24 px-6 md:px-12 lg:px-24 bg-white">
       <div className="max-w-3xl mx-auto scale-[0.95]">
@@ -29,25 +21,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 <div className="text-lg text-gray-900 font-semibold">
                   Introducing Overbase
                 </div>
-                <button
-                  type="button"
-                  onClick={handleListenClick}
-                  className={`flex items-center gap-2 px-4 py-2 border border-transparent rounded-lg text-gray-400 transition-colors cursor-pointer ${
-                    isPlaying ? "bg-gray-100" : "bg-gray-50 hover:bg-gray-100"
-                  }`}
-                >
-                  {isPlaying ? (
-                    <>
-                      <Pause size={16} />
-                      <span className="text-sm font-medium">Pause</span>
-                    </>
-                  ) : (
-                    <>
-                      <Headphones size={16} />
-                      <span className="text-sm font-medium">Listen</span>
-                    </>
-                  )}
-                </button>
+                <ListenButton />
               </div>
             </div>
 
@@ -127,7 +101,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             {/* Signature */}
             <div className="mt-8">
-              <div className="font-semibold text-base text-gray-600 mb-1">
+              <div className="font-medium text-base text-gray-600">
                 Julien Newman
               </div>
               <div className="text-sm text-gray-500">Founder & CEO</div>
