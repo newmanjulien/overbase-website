@@ -37,8 +37,8 @@ export function ListenButton() {
     <button
       type="button"
       onClick={handleListenClick}
-      className={`flex items-center gap-1.5 px-4 py-2 border border-transparent rounded-lg text-gray-800 transition-colors cursor-pointer ${
-        isPlaying ? "bg-[#ffff62]" : "bg-[#ffffb1] hover:bg-[#ffff62]"
+      className={`flex items-center gap-1.5 px-3 py-1.5 border border-transparent rounded-lg text-gray-900 transition-colors cursor-pointer ${
+        isPlaying ? "bg-[#ffff78]" : "bg-[#ffffb1] hover:bg-[#ffff78]"
       }`}
     >
       {isPlaying ? (
