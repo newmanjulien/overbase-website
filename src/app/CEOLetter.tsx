@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { Headphones } from "lucide-react";
 
 export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
   return (
@@ -16,8 +17,17 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
           {/* Main letter */}
           <div className="relative bg-white rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
             <div className="mb-7">
-              <div className="text-lg text-gray-900 font-semibold">
-                Introducing Overbase
+              <div className="flex items-center justify-between">
+                <div className="text-lg text-gray-900 font-semibold">
+                  Introducing Overbase
+                </div>
+                <button
+                  type="button"
+                  className="flex items-center gap-2 px-4 py-2 bg-gray-50 hover:bg-gray-100 border border-transparent rounded-lg text-gray-500 transition-colors cursor-default"
+                >
+                  <Headphones size={16} />
+                  <span className="text-sm font-medium">Listen</span>
+                </button>
               </div>
             </div>
 
@@ -47,7 +57,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
               </p>
 
               <p>
-                Overbase lets C-Suite Execs easily ask questions in plain
+                Overbase lets Revenue Execs easily ask questions in plain
                 English. Then get reliable answers that truly go in-depth and
                 let you understand enough to take action
               </p>

@@ -24,13 +24,13 @@ export function HeroSection({
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
-            How C-Suite Execs{" "}
+            How Revenue Execs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
               get answers
             </span>
           </h1>
 
-          <h2 className="mt-6 text-lg text-gray-600 font-medium">
+          <h2 className="mt-6 text-md text-gray-600 font-medium">
             Get the in-depth answers you need to pinpoint the right actions to
             take
           </h2>
