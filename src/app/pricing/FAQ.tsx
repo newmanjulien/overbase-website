@@ -26,6 +26,10 @@ export default function FAQ() {
               a: "We get reliable answers by using exponentially more tokens and by having humans in the loop. Overbase runs the most advanced AI agents to gather and analyze your data. These agents can run for days on end, complete the most complex tasks and they can consume millions of tokens for each question. Then we get human data scientists to coordinate those agents and review their work each step of the way",
             },
             {
+              q: "Why does Overbase cost so much more than other AI solutions?",
+              a: "Because we use so many tokens for each question. Getting the answers you need in a reliable way means that we spend on average ~$500 on tokens for each question you ask",
+            },
+            {
               q: "How do you access data from our systems?",
               a: "Safely, reliably and easily. AI agents can access any of your systems using APIs and tradional connectors. Or AI agents can also simply log in using the same credentials your team uses. AI agents can also quickly access and convert unstructured data",
             },

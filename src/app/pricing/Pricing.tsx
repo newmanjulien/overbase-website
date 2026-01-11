@@ -24,7 +24,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       answersPerMonth: 25,
       features: [
         feature(
-          "AI agents use up to 1 million tokens per question",
+          "AI agents use up to 5 million tokens per question",
           "sparkles"
         ),
         feature("Human data scientists review answers", "award"),
