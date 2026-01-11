@@ -6,6 +6,7 @@ import {
   Shield,
   Lock,
   Zap,
+  User,
   Users,
   Users2,
   Sparkles,
@@ -23,6 +24,7 @@ export type FeatureIcon =
   | "shield"
   | "lock"
   | "zap"
+  | "user"
   | "users"
   | "users2"
   | "sparkles"
@@ -77,6 +79,8 @@ function FeatureIconComponent({
       return <Lock className={className} />;
     case "zap":
       return <Zap className={className} />;
+    case "user":
+      return <User className={className} />;
     case "users":
       return <Users className={className} />;
     case "users2":
@@ -104,7 +108,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
     <div
       className={`relative flex flex-col rounded-xl p-6 ${
         tier.highlighted
-          ? "border-gray-900 shadow-xl scale-105 border-2"
+          ? "border-gray-900 scale-105 border-2"
           : "border-gray-100 border"
       }`}
     >

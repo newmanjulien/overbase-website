@@ -16,12 +16,12 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   const tiers = [
     {
       name: "Starter",
-      priceMonthly: "$4,000",
-      priceAnnual: "$3,000",
+      priceMonthly: "$8,000",
+      priceAnnual: "$6,000",
       period: "user per month",
       description:
         "For reliable and trustworthy answers that are reviewed by humans",
-      answersPerMonth: 10,
+      answersPerMonth: 50,
       features: [
         feature(
           "AI agents use up to 1 million tokens per question",
@@ -36,12 +36,12 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Team",
-      priceMonthly: "$8,000",
-      priceAnnual: "$6,000",
+      priceMonthly: "$12,000",
+      priceAnnual: "$9,000",
       period: "user per month",
       description:
         "For teams who share insights and need to collaborate more easily",
-      answersPerMonth: 50,
+      answersPerMonth: 100,
       features: [
         feature("Everything in Starter plus", "none"),
         feature(
@@ -57,11 +57,10 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
     },
     {
       name: "Enterprise",
-      priceMonthly: "$12,000",
-      priceAnnual: "$9,000",
+      priceMonthly: "$20,000",
+      priceAnnual: "$15,000",
       period: "user per month",
-      description:
-        "For the hardest questions and the most strict security standards",
+      description: "For the most complex data and the most strict security",
       answersPerMonth: 100,
       features: [
         feature("Everything in Team plus", "none"),
@@ -69,7 +68,10 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
           "AI agents use up to 10 million tokens per question",
           "sparkles"
         ),
-        feature("Support offered by our CEO", "phone"),
+        feature(
+          "Named technical lead works with your team on data integrations",
+          "user"
+        ),
         feature("SAML/OIDC SSO", "lock"),
         feature(
           "Custom NDAs with each Overbase data scientist who reviews your data",

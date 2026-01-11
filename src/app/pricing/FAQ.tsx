@@ -12,9 +12,7 @@ export default function FAQ() {
     <section className="px-6 md:px-12 lg:px-24 py-24">
       <div className="max-w-3xl mx-auto space-y-12">
         <div className="text-center space-y-4">
-          <h2 className="text-4xl text-gray-900 font-medium">
-            Frequently asked questions
-          </h2>
+          <h2 className="text-4xl text-gray-900">Frequently asked questions</h2>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
@@ -45,7 +43,7 @@ export default function FAQ() {
               value={`item-${i}`}
               className="ring ring-gray-100 rounded-lg px-6 bg-white"
             >
-              <AccordionTrigger className="text-left text-md font-normal text-gray-900 hover:no-underline">
+              <AccordionTrigger className="text-left text-md font-normal text-gray-800 hover:no-underline">
                 {item.q}
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">
