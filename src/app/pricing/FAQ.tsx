@@ -26,12 +26,16 @@ export default function FAQ() {
               a: "Yes. You can ask an unlimited number of follow up questions to really get to the root cause of what's happening",
             },
             {
-              q: "How do you get reliable answers when others don't?",
-              a: "By using exponentially more tokens and by having humans in the loop. Overbase runs the most advanced AI agents to gather and analyze your data. These agents can run for days on end, complete the most complex tasks and they can consume millions of tokens for each question. Then we get human data scientists to coordinate those agents and review their work each step of the way",
+              q: "Why do you get reliable answers when others don't?",
+              a: "We get reliable answers by using exponentially more tokens and by having humans in the loop. Overbase runs the most advanced AI agents to gather and analyze your data. These agents can run for days on end, complete the most complex tasks and they can consume millions of tokens for each question. Then we get human data scientists to coordinate those agents and review their work each step of the way",
             },
             {
               q: "How do you access data from our systems?",
               a: "Safely, reliably and easily. AI agents can access any of your systems using APIs and tradional connectors. Or AI agents can also simply log in using the same credentials your team uses. AI agents can also quickly access and convert unstructured data",
+            },
+            {
+              q: "How do you access our data when we have complex systems?",
+              a: "Our connectors can typically connect to most business' data systems. But if your business has more complex systems which need more customization, we recommend purchasing the Enterprise tier which includes a named technical lead who works with your team on data integrations",
             },
             {
               q: "How do you get data from people on my team?",
@@ -41,7 +45,7 @@ export default function FAQ() {
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="ring ring-gray-100 rounded-lg px-6 bg-white"
+              className="border border-gray-100 rounded-lg px-4 bg-white"
             >
               <AccordionTrigger className="text-left text-md font-normal text-gray-800 hover:no-underline">
                 {item.q}
