@@ -21,7 +21,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       period: "user per month",
       description:
         "For reliable and trustworthy answers that are reviewed by humans",
-      answersPerMonth: 50,
+      answersPerMonth: 25,
       features: [
         feature(
           "AI agents use up to 1 million tokens per question",
@@ -41,7 +41,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       period: "user per month",
       description:
         "For teams who share insights and need to collaborate more easily",
-      answersPerMonth: 100,
+      answersPerMonth: 50,
       features: [
         feature("Everything in Starter plus", "none"),
         feature(
@@ -61,7 +61,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
       priceAnnual: "$15,000",
       period: "user per month",
       description: "For the most complex data and the most strict security",
-      answersPerMonth: 100,
+      answersPerMonth: 50,
       features: [
         feature("Everything in Team plus", "none"),
         feature(

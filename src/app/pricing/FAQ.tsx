@@ -18,10 +18,6 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "How many questions can I ask per month?",
-              a: "Up to 100 questions per month with the enterprise tier. You can ask up to 100 questions each month and we get you the most reliable answers",
-            },
-            {
               q: "Can I ask follow up questions for free?",
               a: "Yes. You can ask an unlimited number of follow up questions to really get to the root cause of what's happening",
             },
