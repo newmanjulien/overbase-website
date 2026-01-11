@@ -18,16 +18,12 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "Can I ask follow up questions for free?",
-              a: "Yes. You can ask an unlimited number of follow up questions to really get to the root cause of what's happening",
-            },
-            {
               q: "Why do you get reliable answers when others don't?",
               a: "We get reliable answers by using exponentially more tokens and by having humans in the loop. Overbase runs the most advanced AI agents to gather and analyze your data. These agents can run for days on end, complete the most complex tasks and they can consume millions of tokens for each question. Then we get human data scientists to coordinate those agents and review their work each step of the way",
             },
             {
-              q: "Why does Overbase cost so much more than other AI solutions?",
-              a: "Because we use so many tokens for each question. Getting the answers you need in a reliable way means that we spend on average ~$500 on tokens for each question you ask",
+              q: "Why does Overbase cost so much?",
+              a: "Because we use so many tokens. Getting reliable answers means that we spend on average ~$500 on tokens for each question you ask. AI that actually works will become accessible to everyone in the future. But Overbase only makes sense today for the most senior execs in the best businesses",
             },
             {
               q: "How do you access data from our systems?",
@@ -35,7 +31,7 @@ export default function FAQ() {
             },
             {
               q: "How do you access our data when we have complex systems?",
-              a: "Our connectors can typically connect to most business' data systems. But if your business has more complex systems which need more customization, we recommend purchasing the Enterprise tier which includes a named technical lead who works with your team on data integrations",
+              a: "Our connectors typically connect to most business' data systems. If your business needs more customization, we recommend the Enterprise tier which includes a named technical lead who works with your team on data integrations",
             },
             {
               q: "How do you get data from people on my team?",
@@ -47,7 +43,10 @@ export default function FAQ() {
               value={`item-${i}`}
               className="border border-gray-100 rounded-lg px-4 bg-white"
             >
-              <AccordionTrigger className="text-left text-md font-normal text-gray-800 hover:no-underline">
+              <AccordionTrigger
+                className="text-left text-md font-normal text-gray-800 hover:no-underline"
+                style={{ fontSize: "0.95em" }}
+              >
                 {item.q}
               </AccordionTrigger>
               <AccordionContent className="text-gray-600 leading-relaxed">

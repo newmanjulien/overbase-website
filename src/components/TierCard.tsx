@@ -126,9 +126,9 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
       </div>
 
       {tier.answersPerMonth && (
-        <div className="mt-6 py-4 bg-gray-50 rounded-lg">
-          <div className="text-center space-y-1">
-            <div className="text-2xl text-gray-900">
+        <div className="mt-6 py-3 bg-gray-50 rounded-lg">
+          <div className="text-center space-y-0.5">
+            <div className="text-gray-900" style={{ fontSize: "1.425rem" }}>
               {tier.answersPerMonth.toLocaleString()} answers
             </div>
             <p className="text-xs text-gray-500 tracking-wide">per month</p>

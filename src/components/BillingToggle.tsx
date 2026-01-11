@@ -20,7 +20,7 @@ export default function BillingToggle({
 
   return (
     <div className="pt-8 flex items-center justify-center mb-12">
-      <div className="inline-flex items-center gap-3 bg-gray-50/50 rounded-lg p-1 border border-gray-100/80">
+      <div className="inline-flex items-center gap-3 bg-gray-50/50 rounded-lg p-1 border border-gray-100/50">
         <button
           onClick={() => onBillingCycleChange("monthly")}
           className={toggleButtonClass(billingCycle === "monthly")}
