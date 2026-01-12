@@ -52,7 +52,7 @@ export function HeroSection({
               onClick={onDemo}
               variant="light"
               size="lg"
-              className="bg-gray-100 hover:bg-gray-100 text-black p-5 text-base rounded-lg"
+              className="bg-gray-100 hover:bg-gray-200/60 text-black p-5 text-base rounded-lg"
             >
               Demo with our CEO
             </HotkeyButton>
