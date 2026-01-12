@@ -10,7 +10,7 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Content */}
-      <div className="flex-1 flex flex-col bg-white">
+      <div className="flex-1 flex flex-col bg-surface">
         {/* Header with logo back button */}
         <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
           <button type="button" aria-label="Go back" onClick={onHome}>

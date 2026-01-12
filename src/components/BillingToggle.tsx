@@ -14,7 +14,7 @@ export default function BillingToggle({
   const toggleButtonClass = (isActive: boolean) =>
     `relative px-6 py-2 rounded-sm text-sm transition-all duration-300 ${
       isActive
-        ? "bg-white text-gray-900 shadow-sm"
+        ? "bg-surface text-gray-900 shadow-sm"
         : "text-gray-600 hover:text-gray-900"
     }`;
 

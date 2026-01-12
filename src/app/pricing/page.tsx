@@ -10,7 +10,7 @@ export default function PricingPage() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-surface">
       <Header
         onLogoClick={() => router.push("/")}
         onJoinWaitlist={() => router.push("/waitlist")}

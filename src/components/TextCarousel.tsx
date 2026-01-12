@@ -56,7 +56,7 @@ export function TextCarousel({
 
   return (
     <div className="w-full h-full flex items-center justify-center">
-      <div className="w-full bg-white border border-gray-200/60 rounded-lg p-4">
+      <div className="w-full bg-surface border border-gray-200/60 rounded-lg p-4">
         <div className="w-full bg-gray-100/60 rounded-md px-4 py-3 text-gray-700 text-sm whitespace-pre-wrap">
           {fullText.slice(0, charIndex)}
           {!isTyping && (
