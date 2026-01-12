@@ -30,7 +30,7 @@ export function HeroSection({
             </span>
           </h1>
 
-          <h2 className="mt-6 text-md text-gray-600 font-medium">
+          <h2 className="mt-6 text-lg text-gray-600 font-medium">
             Get the in-depth answers you need to pinpoint the right actions to
             take
           </h2>
@@ -52,7 +52,7 @@ export function HeroSection({
               onClick={onDemo}
               variant="light"
               size="lg"
-              className="bg-gray-50 hover:bg-gray-100 text-black p-5 text-base rounded-lg"
+              className="bg-gray-100 hover:bg-gray-100 text-black p-5 text-base rounded-lg"
             >
               Demo with our CEO
             </HotkeyButton>

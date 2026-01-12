@@ -156,7 +156,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
         className={`w-full mt-6 rounded-lg py-2 ${
           tier.highlighted
             ? "bg-gray-900 hover:bg-gray-800 text-white"
-            : "bg-gray-100 hover:bg-gray-50 text-gray-900"
+            : "bg-gray-100 hover:bg-gray-200/60 text-gray-900"
         }`}
       >
         {tier.cta}
