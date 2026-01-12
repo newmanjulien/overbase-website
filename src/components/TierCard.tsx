@@ -106,7 +106,7 @@ function FeatureIconComponent({
 export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
   return (
     <div
-      className={`relative flex flex-col rounded-xl p-6 ${
+      className={`relative flex flex-col rounded-lg p-6 ${
         tier.highlighted
           ? "border-gray-900 scale-105 border-2"
           : "border-gray-100 border"
@@ -126,7 +126,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
       </div>
 
       {tier.answersPerMonth && (
-        <div className="mt-6 py-3 bg-gray-50 rounded-lg">
+        <div className="mt-6 py-3 bg-gray-50 rounded-sm">
           <div className="text-center space-y-0.5">
             <div className="text-gray-900" style={{ fontSize: "1.425rem" }}>
               {tier.answersPerMonth.toLocaleString()} answers

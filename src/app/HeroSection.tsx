@@ -1,7 +1,7 @@
 "use client";
 
 import { HotkeyButton } from "../components/HotkeyButton";
-import { Graphic } from "../components/Graphic";
+import { TextCarousel } from "../components/TextCarousel";
 
 // Displayed in the graphic
 const TEXTS = [
@@ -62,7 +62,7 @@ export function HeroSection({
         {/* === Right Section: Graphic (Desktop only) === */}
         <div className="hidden xl:flex justify-center xl:justify-end">
           <div className="w-[350px]">
-            <Graphic texts={TEXTS} />
+            <TextCarousel texts={TEXTS} />
           </div>
         </div>
       </div>
@@ -90,7 +90,7 @@ export function HeroSection({
         </HotkeyButton>
 
         <div className="mt-12 w-full max-w-lg px-4">
-          <Graphic texts={TEXTS} />
+          <TextCarousel texts={TEXTS} />
         </div>
       </div>
     </section>

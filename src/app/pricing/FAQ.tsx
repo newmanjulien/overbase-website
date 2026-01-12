@@ -41,7 +41,7 @@ export default function FAQ() {
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="border border-gray-100 rounded-lg px-4 bg-white"
+              className="border border-gray-100 rounded-md px-4 bg-white"
             >
               <AccordionTrigger
                 className="text-left text-md font-normal text-gray-800 hover:no-underline"
