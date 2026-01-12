@@ -27,7 +27,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             <div className="pt-6 border-t border-gray-100"></div>
 
-            <div className="space-y-6 text-gray-600 text-base leading-relaxed">
+            <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 You have questions when you look at your dashboards and your
                 reports. And you need to answer those questions to get at the
@@ -84,14 +84,14 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 <button
                   type="button"
                   onClick={onJoinWaitlist}
-                  className="font-normal text-blue-400 underline hover:text-blue-300 cursor-pointer"
+                  className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
                 >
                   waitlist
                 </button>{" "}
                 or check out our{" "}
                 <Link
                   href="/pricing"
-                  className="font-normal text-blue-400 underline hover:text-blue-300"
+                  className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
                 </Link>{" "}
@@ -101,10 +101,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
 
             {/* Signature */}
             <div className="mt-8">
-              <div className="font-medium text-base text-gray-600">
-                Julien Newman
-              </div>
-              <div className="text-sm text-gray-500">Founder & CEO</div>
+              <div className="font-medium text-gray-900">Julien Newman</div>
+              <div className="text-sm text-gray-400">Founder & CEO</div>
             </div>
           </div>
         </div>
