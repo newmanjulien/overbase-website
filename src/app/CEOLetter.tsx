@@ -18,7 +18,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
           <div className="relative bg-white rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
             <div className="mb-7">
               <div className="flex items-center justify-between">
-                <div className="text-lg text-gray-900 font-semibold">
+                <div className="text-lg text-gray-900 font-medium">
                   Introducing Overbase
                 </div>
                 <ListenButton />

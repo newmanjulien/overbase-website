@@ -108,7 +108,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
     <div
       className={`relative flex flex-col rounded-lg p-6 ${
         tier.highlighted
-          ? "border-gray-900 scale-105 border-2"
+          ? "border-gray-900 scale-105 border-[1.7px]"
           : "border-gray-100 border"
       }`}
     >
