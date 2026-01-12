@@ -14,13 +14,13 @@ export default function BillingToggle({
   const toggleButtonClass = (isActive: boolean) =>
     `relative px-6 py-2 rounded-sm text-sm transition-all duration-300 ${
       isActive
-        ? "bg-surface text-gray-900 shadow-sm"
-        : "text-gray-600 hover:text-gray-900"
+        ? "bg-white text-black shadow-xs"
+        : "text-gray-600 hover:text-black"
     }`;
 
   return (
     <div className="pt-8 flex items-center justify-center mb-12">
-      <div className="inline-flex items-center gap-3 bg-gray-50/50 rounded-md p-1 border border-gray-100/50">
+      <div className="inline-flex items-center gap-3 bg-gray-50 rounded-md p-1 border border-gray-100/50">
         <button
           onClick={() => onBillingCycleChange("monthly")}
           className={toggleButtonClass(billingCycle === "monthly")}
