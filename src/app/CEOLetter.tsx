@@ -101,7 +101,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
             {/* Signature */}
             <div className="mt-8">
               <div className="font-medium text-gray-900">Julien Newman</div>
-              <div className="text-sm text-gray-400">Founder & CEO</div>
+              <div className="text-sm text-gray-500">Founder & CEO</div>
             </div>
           </div>
         </div>

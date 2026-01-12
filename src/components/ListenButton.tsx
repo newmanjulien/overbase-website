@@ -66,11 +66,13 @@ export function ListenButton() {
     <button
       type="button"
       onClick={handleListenClick}
-      className={`flex items-center gap-1 text-sm font-base transition-colors cursor-pointer ${
-        isPlaying ? "text-gray-500/80" : "text-gray-400 hover:text-gray-500/80"
+      className={`flex items-center gap-1 text-sm font-medium transition-colors cursor-pointer ${
+        isPlaying
+          ? "text-gray-500/80"
+          : "text-gray-400/80 hover:text-gray-500/80"
       }`}
     >
-      <Icon size={16} strokeWidth={1.5} />
+      <Icon size={18} />
       {isPlaying ? "Pause" : "Listen"}
     </button>
   );
