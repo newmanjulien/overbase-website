@@ -10,9 +10,8 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
           {/* Background papers – stack effect */}
-          <div className="absolute inset-0 bg-surface rounded-lg shadow-md transform -rotate-1 scale-[1.02] translate-x-1 translate-y-1 border border-gray-100"></div>
-          <div className="absolute inset-0 bg-surface rounded-lg shadow-sm transform rotate-[2deg] scale-[1.015] -translate-x-1 translate-y-0.5 border border-gray-100"></div>
-          <div className="absolute inset-0 bg-gray-50 rounded-lg shadow transform rotate-[0.5deg] scale-[1.005] border border-gray-100"></div>
+          <div className="absolute inset-0 bg-surface rounded-lg shadow-sm transform -rotate-[1.5deg] scale-[1.02] translate-x-1.5 translate-y-1 border border-gray-100"></div>
+          <div className="absolute inset-0 bg-gray-50 rounded-lg shadow transform rotate-[1deg] scale-[1.008] -translate-x-0.5 translate-y-0.5 border border-gray-100"></div>
 
           {/* Main letter */}
           <div className="relative bg-surface rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
