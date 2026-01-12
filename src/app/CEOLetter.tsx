@@ -5,7 +5,7 @@ import { ListenButton } from "../components/ListenButton";
 
 export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
   return (
-    <section className="py-24 px-6 md:px-12 lg:px-24 bg-surface">
+    <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
       <div className="max-w-3xl mx-auto scale-[0.95]">
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
