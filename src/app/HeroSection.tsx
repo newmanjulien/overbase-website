@@ -19,7 +19,7 @@ export function HeroSection({
   onDemo: () => void;
 }) {
   return (
-    <section className="flex flex-col px-6 xl:px-24 pt-32 bg-surface">
+    <section className="flex flex-col px-6 xl:px-24 pt-28 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24 scale-[0.95]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center xl:text-left">
