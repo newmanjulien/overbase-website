@@ -138,3 +138,51 @@ export type ThreadAnswer = {
   attachedFiles?: FileAttachment[];
   attachedConnectors?: ConnectorReference[];
 };
+
+// ============================================
+// THREAD CARD TYPES
+// ============================================
+
+export type ThreadCardQuestion = {
+  type: "question";
+  content: string;
+  date: string;
+  privacy?: Privacy;
+  attachedKpis?: KpiAttachment[];
+  attachedPeople?: PersonReference[];
+  attachedFiles?: FileAttachment[];
+  attachedConnectors?: ConnectorReference[];
+};
+
+export type ThreadCardResponse = {
+  type: "response";
+  answerId: string;
+  sender: Sender;
+  content: string;
+  privacy?: Privacy;
+  tableData?: TableRow[];
+  showMenu: boolean;
+  attachedKpis?: KpiAttachment[];
+  attachedPeople?: PersonReference[];
+  attachedFiles?: FileAttachment[];
+  attachedConnectors?: ConnectorReference[];
+};
+
+export type ThreadCardStatus = {
+  type: "status";
+  label: string;
+  subLabel?: string;
+};
+
+export type ThreadCardInfo = {
+  type: "info";
+  text: string;
+  linkText: string;
+  href: string;
+};
+
+export type ThreadCard =
+  | ThreadCardQuestion
+  | ThreadCardResponse
+  | ThreadCardStatus
+  | ThreadCardInfo;
