@@ -11,13 +11,13 @@ export function Footer() {
           {/* Links */}
           <div className="flex space-x-6">
             <a
-              href="/legal/terms-of-service"
+              href="/terms-of-service"
               className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
             >
               Terms of Service
             </a>
             <a
-              href="/legal/privacy-policy"
+              href="/privacy-policy"
               className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
             >
               Privacy Policy
