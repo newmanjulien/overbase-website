@@ -81,22 +81,20 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Join our{" "}
-                <button
-                  type="button"
-                  onClick={() => router.push("/waitlist")}
-                  className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
+                Take a look at this{" "}
+                <Link
+                  href="/example"
+                  className="text-blue-400 underline hover:text-blue-300"
                 >
-                  waitlist
-                </button>{" "}
-                or check out our{" "}
+                  example
+                </Link>{" "}
+                if you're curious or check out our{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>{" "}
-                if you're curious
+                </Link>
               </p>
             </div>
 
