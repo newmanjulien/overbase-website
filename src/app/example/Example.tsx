@@ -7,7 +7,7 @@ import StatusCard from "./components/StatusCard";
 import { deriveThread } from "./lib/thread";
 import { mockQuestion, mockAnswers } from "./data";
 
-export default function StaticAnswer() {
+export default function Example() {
   // Derive the thread from static data
   const thread = deriveThread(mockQuestion, mockAnswers);
 

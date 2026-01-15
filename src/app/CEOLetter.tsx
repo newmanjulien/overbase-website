@@ -81,14 +81,15 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Take a look at this{" "}
+                If you're curious, take a look at this{" "}
                 <Link
                   href="/example"
+                  target="_blank"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   example
                 </Link>{" "}
-                if you're curious or check out our{" "}
+                or check out our{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
