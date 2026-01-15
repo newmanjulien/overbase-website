@@ -6,8 +6,8 @@ export function Video() {
           Agentic Data System for Revenue Execs
         </h2>
         <p className="text-neutral-600 text-center mb-10 max-w-2xl mx-auto">
-          Agentic Data Systems are a new tech that get in-depth answers to the
-          most complex questions. Overbase is the first Agentic Data System for
+          Agentic Data Systems are a new way to get in-depth answers to the most
+          complex questions. Overbase is the first Agentic Data System for
           Revenue Execs
         </p>
         <div
