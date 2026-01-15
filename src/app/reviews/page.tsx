@@ -12,7 +12,7 @@ export default function ReviewsPage() {
     <div className="min-h-screen bg-white">
       <Header
         onLogoClick={() => router.push("/")}
-        onJoinWaitlist={() => router.push("/waitlist")}
+        showJoinWaitlist
         onPricingClick={() => router.push("/pricing")}
       />
       <Reviews />

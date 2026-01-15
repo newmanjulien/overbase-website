@@ -1,6 +1,7 @@
 "use client";
 
-import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
+import { Button } from "../ui/button";
 import {
   Check,
   Shield,
@@ -59,7 +60,6 @@ export interface Tier {
 
 interface TierCardProps {
   tier: Tier;
-  onJoinWaitlist: () => void;
 }
 
 // Helper to render the appropriate icon
@@ -103,7 +103,11 @@ function FeatureIconComponent({
   }
 }
 
-export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
+export default function TierCard({ tier }: TierCardProps) {
+  const router = useRouter();
+
+  const handleJoinWaitlist = () => router.push("/waitlist");
+
   return (
     <div
       className={`relative flex flex-col rounded-lg p-6 bg-surface ${
@@ -152,7 +156,7 @@ export default function TierCard({ tier, onJoinWaitlist }: TierCardProps) {
       </div>
 
       <Button
-        onClick={onJoinWaitlist}
+        onClick={handleJoinWaitlist}
         className={`w-full mt-6 rounded-lg py-2 ${
           tier.highlighted
             ? "bg-gray-900 hover:bg-gray-800 text-white"

@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Button } from "./ui/button";
 
@@ -10,18 +10,24 @@ interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
   onLogoClick?: () => void;
   onPricingClick?: (() => void) | "static"; // function for clickable, "static" for non-hover
-  onJoinWaitlist?: () => void;
+  showJoinWaitlist?: boolean;
+  /** Override the initial (non-scrolled) background color of the header */
+  initialBackgroundColor?: string;
 }
 
 export function Header({
   logoSrc,
   onLogoClick,
   onPricingClick,
-  onJoinWaitlist,
+  showJoinWaitlist = false,
+  initialBackgroundColor,
 }: BaseHeaderProps) {
   const pathname = usePathname();
+  const router = useRouter();
   const isPricingPage = pathname === "/pricing";
   const [hasScrolled, setHasScrolled] = useState(false);
+
+  const handleJoinWaitlist = () => router.push("/waitlist");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,19 +43,30 @@ export function Header({
   if (typeof onPricingClick === "function") {
     pricingButtonClass = isPricingPage
       ? "text-gray-600" // Already on pricing page → no hover
-      : "text-gray-600 hover:text-[#FC3636]"; // Hover if not on pricing page
+      : "text-gray-600 hover:text-[#fc3636]"; // Hover if not on pricing page
   } else if (onPricingClick === "static") {
     pricingButtonClass = "text-gray-600"; // Static → always show, no hover
   }
+
+  // Determine the background style based on scroll state
+  const getBackgroundStyle = () => {
+    if (hasScrolled) {
+      return { backgroundColor: "#fbfbfb" };
+    }
+    if (initialBackgroundColor) {
+      return { backgroundColor: initialBackgroundColor };
+    }
+    return undefined;
+  };
 
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-200 ${
         hasScrolled ? "border-gray-100" : "bg-surface border-transparent"
       }`}
-      style={hasScrolled ? { backgroundColor: "#fbfbfb" } : undefined}
+      style={getBackgroundStyle()}
     >
-      <div className="max-w-7xl mx-auto px-6 md:px-12 lg:px-24">
+      <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex items-center justify-between h-13">
           {/* Logo */}
           <div
@@ -83,11 +100,11 @@ export function Header({
               </button>
             )}
 
-            {onJoinWaitlist && (
+            {showJoinWaitlist && (
               <Button
                 size="sm"
                 className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm scale-[0.97]"
-                onClick={onJoinWaitlist}
+                onClick={handleJoinWaitlist}
               >
                 Join waitlist
               </Button>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, forwardRef } from "react";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 
 export function HotkeyBadge({
   keyChar,

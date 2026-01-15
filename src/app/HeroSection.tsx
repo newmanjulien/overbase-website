@@ -1,23 +1,24 @@
 "use client";
 
-import { HotkeyButton } from "../components/HotkeyButton";
+import { useRouter } from "next/navigation";
+import { HotkeyButton } from "../components/buttons/HotkeyButton";
 import { TextCarousel } from "../components/TextCarousel";
 
 // Displayed in the graphic
 const TEXTS = [
-  "EMEA is telling me they’ll hit their forecast. How likely is that? What are their weakest spots?",
+  "EMEA is telling me they'll hit their forecast. How likely is that? What are their weakest spots?",
   "Take the deals which are projected to close next month. Review the related emails and Gong recordings. Give me revised confidence scores for each one",
   "Which deals from next quarter could we pull forward most easily if we gave them a discount?",
-  "Which team is over-performing but I can’t tell in the new APAC numbers?",
+  "Which team is over-performing but I can't tell in the new APAC numbers?",
 ];
 
-export function HeroSection({
-  onJoinWaitlist,
-  onDemo,
-}: {
-  onJoinWaitlist: () => void;
-  onDemo: () => void;
-}) {
+export function HeroSection() {
+  const router = useRouter();
+
+  const handleJoinWaitlist = () => router.push("/waitlist");
+  const handleDemo = () =>
+    window.open("https://cal.com/juliennewman/julien", "_blank");
+
   return (
     <section className="flex flex-col px-6 xl:px-24 pt-26 pb-17 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24 scale-[0.95]">
@@ -39,7 +40,7 @@ export function HeroSection({
           <div className="hidden xl:flex mt-6 gap-4">
             <HotkeyButton
               hotkey="w"
-              onClick={onJoinWaitlist}
+              onClick={handleJoinWaitlist}
               variant="dark"
               size="lg"
               className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg"
@@ -49,7 +50,7 @@ export function HeroSection({
 
             <HotkeyButton
               hotkey="d"
-              onClick={onDemo}
+              onClick={handleDemo}
               variant="light"
               size="lg"
               className="bg-gray-100 hover:bg-gray-200/60 text-black p-5 text-base rounded-lg"
@@ -71,7 +72,7 @@ export function HeroSection({
       <div className="w-full max-w-6xl mx-auto xl:hidden mt-6 flex flex-col items-center gap-6">
         <HotkeyButton
           hotkey="w"
-          onClick={onJoinWaitlist}
+          onClick={handleJoinWaitlist}
           variant="dark"
           size="lg"
           className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg w-full max-w-lg"
@@ -81,7 +82,7 @@ export function HeroSection({
 
         <HotkeyButton
           hotkey="f"
-          onClick={onDemo}
+          onClick={handleDemo}
           variant="light"
           size="lg"
           className="bg-gray-50 hover:bg-gray-100 text-black p-5 text-base rounded-lg w-full max-w-lg"

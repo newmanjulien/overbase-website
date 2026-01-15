@@ -7,7 +7,7 @@ export function Referrals() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="px-6 md:px-12 lg:px-24 pt-32 pb-20 max-w-7xl mx-auto">
+      <section className="px-6 md:px-12 lg:px-24 pt-32 pb-20 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left space-y-6">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gray-100 rounded-full">
@@ -41,7 +41,7 @@ export function Referrals() {
 
       {/* How It Works */}
       <section className="px-6 md:px-12 lg:px-24 py-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
             <h2 className="text-4xl text-gray-900 font-medium">How it works</h2>
           </div>
@@ -90,7 +90,7 @@ export function Referrals() {
 
       {/* Benefits Section */}
       <section className="px-6 md:px-12 lg:px-24 py-24">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-26 items-center">
             <div className="space-y-8 text-center lg:text-left">
               <h2 className="text-4xl text-gray-900 font-medium">

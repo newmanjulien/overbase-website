@@ -1,14 +1,10 @@
 "use client";
 
-import TierCard, { feature } from "../../components/TierCard";
+import TierCard, { feature } from "../../components/cards/TierCard";
 import BillingToggle from "../../components/BillingToggle";
 import { useState } from "react";
 
-interface PricingProps {
-  onJoinWaitlist: () => void;
-}
-
-export default function Pricing({ onJoinWaitlist }: PricingProps) {
+export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">(
     "annual"
   );
@@ -84,7 +80,7 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
   ];
 
   return (
-    <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-7xl mx-auto">
+    <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-6xl mx-auto">
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-3xl mx-auto scale-[0.90]">
         <h1 className="text-5xl text-gray-900 font-medium">
@@ -117,7 +113,6 @@ export default function Pricing({ onJoinWaitlist }: PricingProps) {
                   ? tier.priceMonthly
                   : tier.priceAnnual,
             }}
-            onJoinWaitlist={onJoinWaitlist}
           />
         ))}
       </div>
