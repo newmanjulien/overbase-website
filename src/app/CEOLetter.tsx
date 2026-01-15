@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { ListenButton } from "../components/ListenButton";
+import { useRouter } from "next/navigation";
+import { ListenButton } from "../components/buttons/ListenButton";
 
-export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
+export function CEOLetter() {
+  const router = useRouter();
   return (
     <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
       <div className="max-w-3xl mx-auto scale-[0.95]">
@@ -82,7 +84,7 @@ export function CEOLetter({ onJoinWaitlist }: { onJoinWaitlist: () => void }) {
                 Join our{" "}
                 <button
                   type="button"
-                  onClick={onJoinWaitlist}
+                  onClick={() => router.push("/waitlist")}
                   className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
                 >
                   waitlist

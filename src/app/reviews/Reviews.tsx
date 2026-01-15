@@ -1,6 +1,6 @@
 "use client";
 
-import { ReviewCard } from "../../components/ReviewCard";
+import { ReviewCard } from "../../components/cards/ReviewCard";
 import { ThumbsUp, ThumbsDown } from "lucide-react";
 
 const positiveReviews = [
@@ -94,7 +94,7 @@ export default function Reviews() {
   return (
     <div className="min-h-screen bg-white">
       <main className="pt-24 pb-16 px-6 md:px-12 lg:px-24">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           {/* Page Header */}
           <div className="text-center mb-22 mt-10">
             <h1 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 text-balance">

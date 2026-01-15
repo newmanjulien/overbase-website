@@ -11,11 +11,8 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header
-        onLogoClick={() => router.push("/")}
-        onJoinWaitlist={() => router.push("/waitlist")}
-      />
-      <Pricing onJoinWaitlist={() => router.push("/waitlist")} />
+      <Header onLogoClick={() => router.push("/")} showJoinWaitlist />
+      <Pricing />
       <FAQ />
       <Footer />
     </div>
