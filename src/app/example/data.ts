@@ -74,7 +74,7 @@ export const mockAnswers: ThreadAnswer[] = [
     _id: "mock_followup_q_id",
     sender: SENDER.USER,
     content:
-      "Focus only on AMER deals. Net new +$200k or renewals +$100k. And find deals which would be a little harder to close fast. But which I might still be able to pull forward if I called the buyer myself. For each deal you find, ask the AE what they think and tell me",
+      "Focus only on AMER deals. Net new +$200k or renewals +$100k. And find deals which would be a little harder to close fast. But which I might still be able to pull forward if I called the buyer myself \n\n For each deal you find, ask the AE what they think and tell me",
     privacy: "team",
     attachedKpis: [],
   },
@@ -83,7 +83,7 @@ export const mockAnswers: ThreadAnswer[] = [
     _id: "mock_response_id_2",
     sender: SENDER.OVERBASE,
     content:
-      "These deals are worth ~$10,000,000. I'll flag more when we gather comments from the AEs who haven't yet answered. Respond to let me know if I should be solliciting the AEs more aggressively",
+      "These deals are worth ~$10,000,000. I'll flag more when we gather comments from the AEs who haven't yet answered. Let me know if I should be asking the AEs more urgently",
     privacy: "team",
     tableData: [
       {

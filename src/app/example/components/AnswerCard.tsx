@@ -146,7 +146,7 @@ export default function AnswerCard(props: AnswerCardProps) {
         {/* Main content */}
         {derived.content && (
           <div className="text-sm text-gray-800 mt-3">
-            <p className="text-gray-700 text-sm leading-relaxed">
+            <p className="text-gray-700 text-sm leading-relaxed whitespace-pre-line">
               {derived.content}
             </p>
           </div>
