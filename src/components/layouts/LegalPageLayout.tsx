@@ -6,9 +6,11 @@ export interface LegalSection {
   id: string;
   title: string;
   content: string[]; // Array of paragraphs
+  compactContent?: string[]; // Array of lines with tight spacing
   subsections?: {
     title: string;
     content: string[];
+    compactContent?: string[];
   }[];
   bulletPoints?: string[];
 }
@@ -22,6 +24,7 @@ export interface LegalPageMetadata {
 interface LegalPageLayoutProps {
   metadata: LegalPageMetadata;
   sections: LegalSection[];
+  showTableOfContents?: boolean;
 }
 
 /**
@@ -45,6 +48,15 @@ function Section({ section }: { section: LegalSection }) {
         </p>
       ))}
 
+      {/* Compact content */}
+      {section.compactContent && (
+        <div className="text-sm text-gray-900 mb-4 leading-relaxed space-y-1">
+          {section.compactContent.map((line, idx) => (
+            <div key={idx}>{line}</div>
+          ))}
+        </div>
+      )}
+
       {/* Subsections (e.g., "Our intellectual property" under "Intellectual property rights") */}
       {section.subsections?.map((sub, idx) => (
         <div key={idx} className="mt-6">
@@ -59,6 +71,13 @@ function Section({ section }: { section: LegalSection }) {
               {paragraph}
             </p>
           ))}
+          {sub.compactContent && (
+            <div className="text-sm text-gray-900 mb-4 leading-relaxed space-y-1">
+              {sub.compactContent.map((line, lIdx) => (
+                <div key={lIdx}>{line}</div>
+              ))}
+            </div>
+          )}
         </div>
       ))}
 
@@ -82,7 +101,11 @@ function Section({ section }: { section: LegalSection }) {
  * Note: The parent page should pass `initialBackgroundColor="#fbfbfb"` to the Header
  * to match the hero section background for a seamless look.
  */
-export function LegalPageLayout({ metadata, sections }: LegalPageLayoutProps) {
+export function LegalPageLayout({
+  metadata,
+  sections,
+  showTableOfContents = true,
+}: LegalPageLayoutProps) {
   // Generate TOC items from sections
   const tocItems = sections.map((section) => ({
     id: section.id,
@@ -131,9 +154,11 @@ export function LegalPageLayout({ metadata, sections }: LegalPageLayoutProps) {
           </article>
 
           {/* Table of Contents Sidebar - Hidden on mobile */}
-          <aside className="hidden lg:block w-64 flex-shrink-0">
-            <TableOfContents items={tocItems} />
-          </aside>
+          {showTableOfContents && (
+            <aside className="hidden lg:block w-64 flex-shrink-0">
+              <TableOfContents items={tocItems} />
+            </aside>
+          )}
         </div>
       </main>
     </>

@@ -1,0 +1,12 @@
+"use client";
+
+import { LegalPageLayout } from "../../../components/layouts/LegalPageLayout";
+import { dpaMetadata, dpaSections } from "./dpa-content";
+
+/**
+ * Data Processing Agreement component using the reusable LegalPageLayout.
+ * Content is loaded from dpa-content.ts
+ */
+export function DataProcessingAgreement() {
+  return <LegalPageLayout metadata={dpaMetadata} sections={dpaSections} />;
+}

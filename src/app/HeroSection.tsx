@@ -21,9 +21,9 @@ export function HeroSection() {
 
   return (
     <section className="flex flex-col px-6 xl:px-24 pt-26 pb-17 bg-surface">
-      <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24 scale-[0.95]">
+      <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-md text-center xl:text-left">
+        <div className="w-full max-w-md text-center xl:text-left scale-[0.90]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
             How Revenue Execs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
@@ -31,7 +31,7 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <h2 className="mt-6 text-md text-gray-600 font-medium">
+          <h2 className="mt-6 text-lg text-gray-600 font-medium">
             Get the in-depth answers you need to pinpoint the right actions to
             take
           </h2>

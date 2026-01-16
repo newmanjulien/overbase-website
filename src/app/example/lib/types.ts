@@ -26,36 +26,6 @@ export const SENDER_LABEL: Record<Sender, string> = {
 export type Privacy = "team" | undefined;
 
 // ============================================
-// ATTACHMENT TYPES
-// ============================================
-
-export type KpiAttachment = {
-  id?: string;
-  metric: string;
-  definition: string;
-  antiDefinition: string;
-  value?: string;
-};
-
-export type FileAttachment = {
-  fileId: string;
-  fileName: string;
-  context?: string;
-};
-
-export type ConnectorReference = {
-  id: string;
-  title: string;
-  logo: string;
-};
-
-export type PersonReference = {
-  id: string;
-  name: string;
-  photo?: string;
-};
-
-// ============================================
 // TABLE DATA TYPE
 // ============================================
 
@@ -133,10 +103,6 @@ export type ThreadAnswer = {
   privacy?: Privacy;
   tableData?: TableRow[];
   cancelledAt?: number;
-  attachedKpis?: KpiAttachment[];
-  attachedPeople?: PersonReference[];
-  attachedFiles?: FileAttachment[];
-  attachedConnectors?: ConnectorReference[];
 };
 
 // ============================================
@@ -148,10 +114,6 @@ export type ThreadCardQuestion = {
   content: string;
   date: string;
   privacy?: Privacy;
-  attachedKpis?: KpiAttachment[];
-  attachedPeople?: PersonReference[];
-  attachedFiles?: FileAttachment[];
-  attachedConnectors?: ConnectorReference[];
 };
 
 export type ThreadCardResponse = {
@@ -162,10 +124,6 @@ export type ThreadCardResponse = {
   privacy?: Privacy;
   tableData?: TableRow[];
   showMenu: boolean;
-  attachedKpis?: KpiAttachment[];
-  attachedPeople?: PersonReference[];
-  attachedFiles?: FileAttachment[];
-  attachedConnectors?: ConnectorReference[];
 };
 
 export type ThreadCardStatus = {

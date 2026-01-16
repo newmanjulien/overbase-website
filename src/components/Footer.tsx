@@ -11,16 +11,28 @@ export function Footer() {
           {/* Links */}
           <div className="flex space-x-6">
             <a
-              href="/terms-of-service"
+              href="/legal/terms-of-service"
               className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
             >
-              Terms of Service
+              Terms
             </a>
             <a
-              href="/privacy-policy"
+              href="/legal/dpa"
               className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
             >
-              Privacy Policy
+              DPA
+            </a>
+            <a
+              href="/legal/security"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
+            >
+              Security
+            </a>
+            <a
+              href="/legal/sub-processors"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
+            >
+              Processors
             </a>
           </div>
         </div>

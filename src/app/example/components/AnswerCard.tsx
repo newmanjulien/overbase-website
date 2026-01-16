@@ -10,16 +10,11 @@ import {
 } from "./ui/dropdown-menu";
 import { Lock, Users, MoreHorizontal } from "lucide-react";
 import DataTable from "./DataTable";
-import { AttachmentChipList } from "./AttachmentChipList";
 import {
   SENDER_LABEL,
   type Privacy,
   type Sender,
-  type KpiAttachment,
-  type FileAttachment,
-  type ConnectorReference,
   type TableRow,
-  type PersonReference,
 } from "../lib/types";
 
 // ============================================
@@ -34,10 +29,6 @@ type QuestionCardProps = {
   privacy: Privacy;
   onPrivacyChange?: (newPrivacy: Privacy) => void;
   onForward?: () => void;
-  attachedKpis?: KpiAttachment[];
-  attachedPeople?: PersonReference[];
-  attachedFiles?: FileAttachment[];
-  attachedConnectors?: ConnectorReference[];
   userAvatarUrl?: string | null;
   overbaseIconUrl?: string | null;
 };
@@ -53,10 +44,6 @@ type ResponseCardProps = {
   onPrivacyChange?: (newPrivacy: Privacy) => void;
   onForward?: () => void;
   showMenu?: boolean;
-  attachedKpis?: KpiAttachment[];
-  attachedPeople?: PersonReference[];
-  attachedFiles?: FileAttachment[];
-  attachedConnectors?: ConnectorReference[];
   userAvatarUrl?: string | null;
   overbaseIconUrl?: string | null;
 };
@@ -151,14 +138,6 @@ export default function AnswerCard(props: AnswerCardProps) {
             </p>
           </div>
         )}
-
-        {/* Attachment chips (for user question and follow-up messages) */}
-        <AttachmentChipList
-          kpis={derived.attachedKpis}
-          people={derived.attachedPeople}
-          files={derived.attachedFiles}
-          connectors={derived.attachedConnectors}
-        />
       </div>
 
       {/* Table content */}
@@ -180,10 +159,6 @@ interface DerivedValues {
   avatar: string | null;
   avatarFallback: string;
   tableData?: TableRow[];
-  attachedKpis?: KpiAttachment[];
-  attachedPeople?: PersonReference[];
-  attachedFiles?: FileAttachment[];
-  attachedConnectors?: ConnectorReference[];
 }
 
 function deriveDisplayValues(
@@ -199,10 +174,6 @@ function deriveDisplayValues(
         content: props.content,
         avatar: userAvatar,
         avatarFallback: "U",
-        attachedKpis: props.attachedKpis,
-        attachedPeople: props.attachedPeople,
-        attachedFiles: props.attachedFiles,
-        attachedConnectors: props.attachedConnectors,
       };
 
     case "response":
@@ -213,13 +184,6 @@ function deriveDisplayValues(
         avatar: props.sender === "user" ? userAvatar : overbaseIcon,
         avatarFallback: props.sender === "user" ? "U" : "AI",
         tableData: props.tableData,
-        // Pass attachments only for user messages
-        ...(props.sender === "user" && {
-          attachedKpis: props.attachedKpis,
-          attachedPeople: props.attachedPeople,
-          attachedFiles: props.attachedFiles,
-          attachedConnectors: props.attachedConnectors,
-        }),
       };
   }
 }

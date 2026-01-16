@@ -39,10 +39,6 @@ export default function Example() {
                     // Interactive handlers disabled/no-op
                     onPrivacyChange={handleNoOp}
                     onForward={handleNoOp}
-                    attachedKpis={card.attachedKpis}
-                    attachedPeople={card.attachedPeople}
-                    attachedFiles={card.attachedFiles}
-                    attachedConnectors={card.attachedConnectors}
                   />
                 );
 
@@ -62,10 +58,6 @@ export default function Example() {
                     onPrivacyChange={() => {}}
                     onForward={handleNoOp}
                     showMenu={false} // Force menu off
-                    attachedKpis={card.attachedKpis}
-                    attachedPeople={card.attachedPeople}
-                    attachedFiles={card.attachedFiles}
-                    attachedConnectors={card.attachedConnectors}
                   />
                 );
 

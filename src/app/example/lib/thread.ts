@@ -29,16 +29,11 @@ export function deriveThread(
   // Note: Menu logic removed for static version
 
   // 1. Original question card
-  const firstAnswer = activeAnswers[0];
   thread.push({
     type: "question",
     content: question.displayContent,
     date: question.askedDate,
     privacy: question.displayPrivacy,
-    attachedKpis: firstAnswer?.attachedKpis,
-    attachedPeople: firstAnswer?.attachedPeople,
-    attachedFiles: firstAnswer?.attachedFiles,
-    attachedConnectors: firstAnswer?.attachedConnectors,
   });
 
   // 2. Answer cards
@@ -53,12 +48,6 @@ export function deriveThread(
       privacy: answer.privacy,
       tableData: answer.tableData,
       showMenu: false, // Force false
-      ...(answer.sender === SENDER.USER && {
-        attachedKpis: answer.attachedKpis,
-        attachedPeople: answer.attachedPeople,
-        attachedFiles: answer.attachedFiles,
-        attachedConnectors: answer.attachedConnectors,
-      }),
     });
   }
 

@@ -26,7 +26,6 @@ export const mockAnswers: ThreadAnswer[] = [
     content:
       "Which deals from next quarter could we pull forward if we gave them a discount? Focus on those in advanced negotiation or where there's a strong relationship with the AE or with our business. I'm also mostly interested in deals which don't show up in my CRM dashboard",
     privacy: "team",
-    attachedKpis: [],
   },
   // The response from Overbase
   {
@@ -76,7 +75,6 @@ export const mockAnswers: ThreadAnswer[] = [
     content:
       "Focus only on AMER deals. Net new +$200k or renewals +$100k. And find deals which would be a little harder to close fast. But which I might still be able to pull forward if I called the buyer myself \n\n For each deal you find, ask the AE what they think and tell me",
     privacy: "team",
-    attachedKpis: [],
   },
   // Second Overbase response
   {
