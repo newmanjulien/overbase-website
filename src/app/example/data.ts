@@ -88,35 +88,35 @@ export const mockAnswers: ThreadAnswer[] = [
     tableData: [
       {
         column1: "Account name",
-        column2: "AE's name",
-        column3: "AE's comments",
-        column4: "Value",
+        column2: "Type",
+        column3: "Description",
+        column4: "AE's comments",
         column5: "Salesforce opportunity",
       },
       {
-        column1: "Acme Corp",
-        column2: "Sarah Chen",
-        column3:
-          "Strong relationship with VP of Engineering. They've been waiting on budget approval since Q3.",
-        column4: "$285,000",
+        column1: "Outreach",
+        column2: "Net new",
+        column3: "The CEO is onboard and pushing this deal forward",
+        column4:
+          "Sarah Chen says: Strong relationship with VP of Engineering. They've been waiting on budget approval since Q3.",
         column5:
           "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001k8pLmNO/view",
       },
       {
         column1: "Stark Industries",
-        column2: "Michael Torres",
-        column3:
-          "Decision maker is on vacation until Jan 20. I'd wait until then to reach out.",
-        column4: "$450,000",
+        column2: "Net new",
+        column3: "The buyer used us at a previous employer",
+        column4:
+          "Michael Torres says: Decision maker is on vacation until Jan 20. I'd wait until then to reach out.",
         column5:
           "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001r3sQtUV/view",
       },
       {
         column1: "Wayne Enterprises",
-        column2: "Jennifer Park",
-        column3:
-          "They're evaluating a competitor but I think we can win if we offer multi-year pricing.",
-        column4: "$320,000",
+        column2: "Renewal",
+        column3: "Successful account which is likely to renew",
+        column4:
+          "Jennifer Park says: They're evaluating a competitor but I think we can win if we offer multi-year pricing.",
         column5:
           "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001w5xYzAB/view",
       },

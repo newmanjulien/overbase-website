@@ -6,7 +6,6 @@ import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import Pricing from "./Pricing";
 import FAQ from "./FAQ";
-import { Video } from "./Video";
 
 export default function PricingPage() {
   const router = useRouter();
@@ -31,7 +30,7 @@ export default function PricingPage() {
     const timer = setTimeout(() => {
       isLocked = false;
       window.removeEventListener("scroll", lockScroll);
-    }, 400);
+    }, 700);
 
     return () => {
       isLocked = false;
@@ -44,7 +43,7 @@ export default function PricingPage() {
     <div className="min-h-screen bg-surface">
       <Header onLogoClick={() => router.push("/")} showJoinWaitlist />
       <Pricing />
-      <Video />
+      {/* <Video /> */}
       <FAQ />
       <Footer />
     </div>
