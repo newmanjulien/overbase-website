@@ -1,27 +1,26 @@
 export function Video() {
   return (
     <section className="py-20 px-6 bg-neutral-50">
-      <div className="max-w-5xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-medium text-center mb-4">
-          Get to the root cause with answers you trust
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-4xl text-center mb-4">
+          Agentic Data System for Revenue Execs
         </h2>
         <p className="text-neutral-600 text-center mb-10 max-w-2xl mx-auto">
-          See how we combine the most advanced AI agents who use millions of
-          tokens per question with humans in the loop to get reliable answers to
-          even the hardest questions
+          Agentic Data Systems are a new way to get in-depth answers to the most
+          complex questions. Overbase is the first Agentic Data System for
+          Revenue Execs
         </p>
-        <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl border border-neutral-200">
-          <video
-            className="w-full h-full object-cover"
-            controls
-            poster="/kenny.png"
-          >
-            <source
-              src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-              type="video/mp4"
-            />
-            Your browser does not support the video tag.
-          </video>
+        <div
+          className="relative rounded-2xl overflow-hidden"
+          style={{ height: "500px" }}
+        >
+          <iframe
+            src="https://www.videoask.com/fko4jni93"
+            allow="camera *; microphone *; autoplay *; encrypted-media *; fullscreen *; display-capture *;"
+            width="100%"
+            height="535px"
+            style={{ border: "none", borderRadius: "14px" }}
+          />
         </div>
       </div>
     </section>
