@@ -1,6 +1,11 @@
+import { Metadata } from "next";
 import Example from "./Example";
 import StaticHeader from "./components/StaticHeader";
 import StaticFooter from "./components/StaticFooter";
+
+export const metadata: Metadata = {
+  title: "Example",
+};
 
 export default function ExamplePage() {
   return (
