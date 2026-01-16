@@ -20,10 +20,10 @@ export function HeroSection() {
     window.open("https://cal.com/juliennewman/julien", "_blank");
 
   return (
-    <section className="flex flex-col px-6 xl:px-24 pt-26 pb-17 bg-surface">
-      <div className="w-full max-w-5xl mx-auto flex flex-col xl:flex-row items-center gap-24 scale-[0.98]">
+    <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-26 pb-17 bg-surface">
+      <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-md text-center xl:text-left scale-[0.90]">
+        <div className="w-full max-w-md text-center md:text-left scale-[0.90]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
             How Revenue Execs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
@@ -36,14 +36,14 @@ export function HeroSection() {
             take
           </h2>
 
-          {/* Desktop buttons */}
-          <div className="hidden xl:flex mt-6 gap-4">
+          {/* Desktop buttons - now visible at md */}
+          <div className="hidden md:flex mt-6 gap-3 xl:gap-4">
             <HotkeyButton
               hotkey="w"
               onClick={handleJoinWaitlist}
               variant="dark"
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg"
+              className="bg-gray-900 hover:bg-gray-800 text-white p-4 xl:p-5 text-base rounded-lg"
             >
               Join waitlist
             </HotkeyButton>
@@ -53,23 +53,23 @@ export function HeroSection() {
               onClick={handleDemo}
               variant="light"
               size="lg"
-              className="bg-gray-100 hover:bg-gray-200/60 text-black p-5 text-base rounded-lg"
+              className="bg-gray-100 hover:bg-gray-200/60 text-black p-4 xl:p-5 text-base rounded-lg"
             >
               Demo with our CEO
             </HotkeyButton>
           </div>
         </div>
 
-        {/* === Right Section: Graphic (Desktop only) === */}
-        <div className="hidden xl:flex justify-center xl:justify-end">
+        {/* === Right Section: Graphic - now visible at md === */}
+        <div className="hidden md:flex justify-center md:justify-end shrink-0">
           <div className="w-[350px]">
             <TextCarousel texts={TEXTS} />
           </div>
         </div>
       </div>
 
-      {/* === Mobile Layout === */}
-      <div className="w-full max-w-6xl mx-auto xl:hidden mt-6 flex flex-col items-center gap-6">
+      {/* === Mobile Layout (only shown below md) === */}
+      <div className="w-full max-w-6xl mx-auto md:hidden mt-6 flex flex-col items-center gap-6">
         <HotkeyButton
           hotkey="w"
           onClick={handleJoinWaitlist}

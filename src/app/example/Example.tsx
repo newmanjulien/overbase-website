@@ -1,18 +1,13 @@
 "use client";
 
 import FollowupBar from "./components/FollowupBar";
-import { InfoCard } from "./components/InfoCard";
 import AnswerCard from "./components/AnswerCard";
-import StatusCard from "./components/StatusCard";
 import { deriveThread } from "./lib/thread";
 import { mockQuestion, mockAnswers } from "./data";
 
 export default function Example() {
   // Derive the thread from static data
   const thread = deriveThread(mockQuestion, mockAnswers);
-
-  // No-op handler
-  const handleNoOp = () => {};
 
   // Hardcoded or prop-driven URLs
   const userAvatarUrl =
@@ -24,7 +19,7 @@ export default function Example() {
     <div className="h-full w-full">
       <div className="max-w-5xl mx-auto py-8">
         <div className="space-y-2">
-          {thread.map((card, index) => {
+          {thread.map((card) => {
             switch (card.type) {
               case "question":
                 return (
@@ -36,9 +31,6 @@ export default function Example() {
                     privacy={card.privacy}
                     userAvatarUrl={userAvatarUrl}
                     overbaseIconUrl={overbaseIconUrl}
-                    // Interactive handlers disabled/no-op
-                    onPrivacyChange={handleNoOp}
-                    onForward={handleNoOp}
                   />
                 );
 
@@ -54,37 +46,12 @@ export default function Example() {
                     tableData={card.tableData}
                     userAvatarUrl={userAvatarUrl}
                     overbaseIconUrl={overbaseIconUrl}
-                    // Interactive handlers disabled/no-op
-                    onPrivacyChange={() => {}}
-                    onForward={handleNoOp}
-                    showMenu={false} // Force menu off
                   />
-                );
-
-              case "status":
-                return (
-                  <StatusCard
-                    key={`status-${index}`}
-                    label={card.label}
-                    subLabel={card.subLabel}
-                    overbaseIconUrl={overbaseIconUrl}
-                  />
-                );
-
-              case "info":
-                return (
-                  <div key={`info-${index}`} className="pt-1">
-                    <InfoCard
-                      text={card.text}
-                      href={card.href}
-                      linkText={card.linkText}
-                    />
-                  </div>
                 );
             }
           })}
 
-          <FollowupBar onClick={() => {}} userAvatarUrl={userAvatarUrl} />
+          <FollowupBar userAvatarUrl={userAvatarUrl} />
         </div>
       </div>
     </div>

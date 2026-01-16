@@ -4,14 +4,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Mic } from "lucide-react";
 
 interface FollowupBarProps {
-  onClick: () => void;
   userAvatarUrl?: string | null;
 }
 
-export default function FollowupBar({
-  onClick,
-  userAvatarUrl,
-}: FollowupBarProps) {
+export default function FollowupBar({ userAvatarUrl }: FollowupBarProps) {
   return (
     <div className="bg-white rounded-2xl border border-gray-200 p-4 mb-4">
       <div className="flex items-center gap-3">
@@ -20,10 +16,7 @@ export default function FollowupBar({
           <AvatarFallback>U</AvatarFallback>
         </Avatar>
 
-        <div
-          onClick={onClick}
-          className="flex-1 bg-gray-50 border border-gray-200 rounded-full text-sm px-4 py-2 text-gray-500 cursor-pointer hover:bg-gray-100 transition-colors"
-        >
+        <div className="flex-1 bg-gray-50 border border-gray-200 rounded-full text-sm px-4 py-2 text-gray-500">
           Do you have follow up questions?
         </div>
 

@@ -7,10 +7,9 @@ import { Table, TableBody, TableCell, TableRow } from "./ui/table";
 
 interface DataTableProps {
   tableData: TableRowType[];
-  onForward?: () => void;
 }
 
-export default function DataTable({ tableData, onForward }: DataTableProps) {
+export default function DataTable({ tableData }: DataTableProps) {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
@@ -31,7 +30,6 @@ export default function DataTable({ tableData, onForward }: DataTableProps) {
             className="p-1.5 text-gray-500 hover:text-gray-700 hover:bg-gray-100 rounded-md transition-colors"
             onClick={(e) => {
               e.stopPropagation();
-              onForward?.();
             }}
           >
             <Forward size={17} />

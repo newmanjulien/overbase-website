@@ -1,15 +1,11 @@
 /**
  * Standalone Types
- * Copied and adapted from src/lib/questions/types.ts and convex/shared/types.ts
- * Removed dependency on Convex generated types
+ * Simplified for static example page
  */
 
 // ============================================
 // PRIMITIVES
 // ============================================
-
-// Generic ID replacement since we don't have Convex
-export type Id<T extends string> = string & { __tableName?: T };
 
 export const SENDER = {
   USER: "user",
@@ -38,59 +34,17 @@ export type TableRow = {
 };
 
 // ============================================
-// QUESTION VARIANT TYPES
+// QUESTION TYPE
 // ============================================
 
-export const FREQUENCY = {
-  WEEKLY: "weekly",
-  MONTHLY: "monthly",
-  QUARTERLY: "quarterly",
-} as const;
-
-export type Frequency = (typeof FREQUENCY)[keyof typeof FREQUENCY];
-
-export type SchedulePattern = {
-  frequency: Frequency;
-  // simplified
-};
-
 /**
- * Base question with computed/derived fields.
+ * Question with display fields.
  */
-export type QuestionBase = {
-  _id: Id<"questions">;
-  _creationTime: number;
-  privacy?: Privacy;
-  schedule?: SchedulePattern;
-  cancelledAt?: number;
-
-  // Derived fields
+export type Question = {
   displayContent: string;
   askedDate: string;
-  askedTimestamp: number;
   displayPrivacy: Privacy;
-  isRecurring: boolean;
 };
-
-export type AnsweredQuestion = QuestionBase & {
-  variant: "answered";
-  tableData: TableRow[];
-};
-
-export type InProgressQuestion = QuestionBase & {
-  variant: "in-progress";
-};
-
-export type RecurringQuestion = QuestionBase & {
-  variant: "recurring";
-  frequency: Frequency;
-  scheduledDate: string;
-};
-
-export type QuestionVariant =
-  | AnsweredQuestion
-  | InProgressQuestion
-  | RecurringQuestion;
 
 // ============================================
 // THREAD TYPES
@@ -102,7 +56,6 @@ export type ThreadAnswer = {
   content?: string;
   privacy?: Privacy;
   tableData?: TableRow[];
-  cancelledAt?: number;
 };
 
 // ============================================
@@ -123,24 +76,6 @@ export type ThreadCardResponse = {
   content: string;
   privacy?: Privacy;
   tableData?: TableRow[];
-  showMenu: boolean;
 };
 
-export type ThreadCardStatus = {
-  type: "status";
-  label: string;
-  subLabel?: string;
-};
-
-export type ThreadCardInfo = {
-  type: "info";
-  text: string;
-  linkText: string;
-  href: string;
-};
-
-export type ThreadCard =
-  | ThreadCardQuestion
-  | ThreadCardResponse
-  | ThreadCardStatus
-  | ThreadCardInfo;
+export type ThreadCard = ThreadCardQuestion | ThreadCardResponse;

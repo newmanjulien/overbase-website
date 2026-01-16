@@ -1,32 +1,15 @@
 import { SENDER } from "./lib/types";
-import type { QuestionVariant, ThreadAnswer, Id } from "./lib/types";
+import type { Question, ThreadAnswer } from "./lib/types";
 
 // Mock Data
-export const mockQuestion: QuestionVariant = {
-  _id: "mock_question_id" as Id<"questions">,
-  _creationTime: Date.now(),
-  privacy: "team",
-
-  // Derived fields
+export const mockQuestion: Question = {
   displayContent:
     "Which deals from next quarter could we pull forward if we gave them a discount? Focus on those in advanced negotiation or where there's a strong relationship with the AE or with our business. I'm also mostly interested in deals which don't show up in my CRM dashboard",
   askedDate: "Dec 15, 2025",
-  askedTimestamp: Date.now(),
   displayPrivacy: "team",
-  isRecurring: false,
-  variant: "answered",
-  tableData: [],
 };
 
 export const mockAnswers: ThreadAnswer[] = [
-  // First abstract answer = the question itself
-  {
-    _id: "mock_q_answer_id",
-    sender: SENDER.USER,
-    content:
-      "Which deals from next quarter could we pull forward if we gave them a discount? Focus on those in advanced negotiation or where there's a strong relationship with the AE or with our business. I'm also mostly interested in deals which don't show up in my CRM dashboard",
-    privacy: "team",
-  },
   // The response from Overbase
   {
     _id: "mock_response_id",

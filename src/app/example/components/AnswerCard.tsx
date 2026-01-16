@@ -1,14 +1,7 @@
 "use client";
 
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Button } from "./ui/button";
-import {
-  DropdownMenu,
-  DropdownMenuTrigger,
-  DropdownMenuContent,
-  DropdownMenuItem,
-} from "./ui/dropdown-menu";
-import { Lock, Users, MoreHorizontal } from "lucide-react";
+import { Lock, Users } from "lucide-react";
 import DataTable from "./DataTable";
 import {
   SENDER_LABEL,
@@ -27,8 +20,6 @@ type QuestionCardProps = {
   content: string;
   date: string;
   privacy: Privacy;
-  onPrivacyChange?: (newPrivacy: Privacy) => void;
-  onForward?: () => void;
   userAvatarUrl?: string | null;
   overbaseIconUrl?: string | null;
 };
@@ -41,9 +32,6 @@ type ResponseCardProps = {
   content: string;
   privacy: Privacy;
   tableData?: TableRow[];
-  onPrivacyChange?: (newPrivacy: Privacy) => void;
-  onForward?: () => void;
-  showMenu?: boolean;
   userAvatarUrl?: string | null;
   overbaseIconUrl?: string | null;
 };
@@ -63,71 +51,36 @@ export default function AnswerCard(props: AnswerCardProps) {
   // Derive display values based on card type
   const derived = deriveDisplayValues(props, userAvatar, overbaseIcon);
 
-  const handlePrivacyClick = () => {
-    // Toggle: undefined (private) -> team, team -> undefined
-    const newPrivacy: Privacy = !props.privacy ? "team" : undefined;
-    props.onPrivacyChange?.(newPrivacy);
-  };
-
-  // Show menu for response cards when showMenu prop is true
-  const showMenu = props.type === "response" && props.showMenu;
-
   return (
     <div className="bg-white rounded-2xl border border-gray-200">
       <div className="p-4">
-        {/* Header: avatar + labels + menu */}
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-3">
-            <Avatar className="h-10 w-10 flex-shrink-0">
-              <AvatarImage src={derived.avatar ?? undefined} />
-              <AvatarFallback>{derived.avatarFallback}</AvatarFallback>
-            </Avatar>
-            <div className="flex flex-col">
-              <span className="text-sm text-gray-700">{derived.topLabel}</span>
-              <div className="flex items-center gap-1.5">
-                {derived.subLabel && (
-                  <>
-                    <span className="text-xs text-gray-400">
-                      {derived.subLabel}
-                    </span>
-                    <span className="text-gray-300 text-[10px]">·</span>
-                  </>
+        {/* Header: avatar + labels */}
+        <div className="flex items-center gap-3">
+          <Avatar className="h-10 w-10 flex-shrink-0">
+            <AvatarImage src={derived.avatar ?? undefined} />
+            <AvatarFallback>{derived.avatarFallback}</AvatarFallback>
+          </Avatar>
+          <div className="flex flex-col">
+            <span className="text-sm text-gray-700">{derived.topLabel}</span>
+            <div className="flex items-center gap-1.5">
+              {derived.subLabel && (
+                <>
+                  <span className="text-xs text-gray-400">
+                    {derived.subLabel}
+                  </span>
+                  <span className="text-gray-300 text-[10px]">·</span>
+                </>
+              )}
+              <span className="text-gray-400 text-xs capitalize flex items-center gap-1">
+                {!props.privacy ? (
+                  <Lock size={11} className="shrink-0" />
+                ) : (
+                  <Users size={11} className="shrink-0" />
                 )}
-                <button
-                  type="button"
-                  onClick={handlePrivacyClick}
-                  className="text-gray-400 text-xs capitalize hover:underline cursor-pointer flex items-center gap-1"
-                >
-                  {!props.privacy ? (
-                    <Lock size={11} className="shrink-0" />
-                  ) : (
-                    <Users size={11} className="shrink-0" />
-                  )}
-                  {props.privacy ?? "private"}
-                </button>
-              </div>
+                {props.privacy ?? "private"}
+              </span>
             </div>
           </div>
-
-          {/* Menu for cancel action */}
-          {showMenu && (
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="h-6 w-6 rounded-md"
-                >
-                  <MoreHorizontal className="h-4 w-4 text-gray-400" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end">
-                <DropdownMenuItem className="text-red-600 focus:text-red-600 focus:bg-red-100">
-                  Cancel
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          )}
         </div>
 
         {/* Main content */}
@@ -141,9 +94,7 @@ export default function AnswerCard(props: AnswerCardProps) {
       </div>
 
       {/* Table content */}
-      {derived.tableData && (
-        <DataTable tableData={derived.tableData} onForward={props.onForward} />
-      )}
+      {derived.tableData && <DataTable tableData={derived.tableData} />}
     </div>
   );
 }
@@ -164,7 +115,7 @@ interface DerivedValues {
 function deriveDisplayValues(
   props: AnswerCardProps,
   userAvatar: string | null,
-  overbaseIcon: string | null
+  overbaseIcon: string | null,
 ): DerivedValues {
   switch (props.type) {
     case "question":
