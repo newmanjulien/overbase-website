@@ -30,7 +30,15 @@ function AudioWaveIcon({
   );
 }
 
-export function ListenButton() {
+interface ListenButtonProps {
+  label?: string;
+  pauseLabel?: string;
+}
+
+export function ListenButton({
+  label = "Listen",
+  pauseLabel = "Pause",
+}: ListenButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
@@ -68,11 +76,11 @@ export function ListenButton() {
       onClick={handleListenClick}
       className={`flex items-center gap-1 text-sm font-medium transition-colors cursor-pointer ${
         isPlaying
-          ? "text-gray-500/80"
-          : "text-gray-400/80 hover:text-gray-500/80"
+          ? "text-gray-500/70"
+          : "text-gray-400/80 hover:text-gray-500/70"
       }`}
     >
-      <Icon size={18} />
+      <Icon size={17} />
       {isPlaying ? "Pause" : "Listen"}
     </button>
   );

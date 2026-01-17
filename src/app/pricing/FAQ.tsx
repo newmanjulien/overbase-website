@@ -16,16 +16,15 @@ export default function FAQ() {
             Agentic Analysts vs. Human Analysts
           </h2>
           <p className="text-neutral-600 text-center max-w-2xl mx-auto">
-            Agentic Analysts are a new technology that's easier, faster and does
-            better, more in-depth and more reliable analysis than even the best
-            Human Analyst
+            Agentic Analysts get answers that are more in-depth and more
+            reliable
           </p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "What type of questions can Agentic Analysts answer?",
+              q: "What type of questions can an Agentic Analyst answer?",
               a: "Any question which can be answered by analyzing your internal data. Agentic Analysts can easily access all your internal data sources, find the answers you need, question their own results and get you the most in-depth and reliable answers possible",
             },
             {
@@ -38,7 +37,7 @@ export default function FAQ() {
             },
             {
               q: "How do Agentic Analysts access our data?",
-              a: "The same way a Human Analyst accesses your data. Or the same way legacy data systems access your data. Human Analysts access data by logging into accounts and querying dashboards. Legacy data systems use APIs to connect to data. Agentic Analysts do both with almost 0 setup",
+              a: "The same way a Human Analyst accesses your data. And the same way legacy data systems access your data. Human Analysts access data by logging into accounts and querying dashboards. Legacy data systems use APIs to connect to data. Agentic Analysts do both easily with almost 0 setup",
             },
             {
               q: "How do Agentic Analysts get data from people on my team?",
