@@ -17,7 +17,7 @@ export default function Pricing() {
       period: "user per month",
       description:
         "For reliable and in-depth answers that are reviewed by humans",
-      answersPerMonth: 20,
+      answersPerMonth: 50,
       features: [
         feature(
           "Agentic Analyst uses up to 5 million AI tokens per question",
@@ -28,7 +28,7 @@ export default function Pricing() {
         feature("Your data is never used to train our AI", "lock"),
         feature("0 of your data is stored by Overbase", "shield"),
       ],
-      cta: "Try Overbase for $100",
+      cta: "Test our reliable answers",
     },
     {
       name: "Team",
@@ -37,7 +37,7 @@ export default function Pricing() {
       period: "user per month",
       description:
         "For teams who share insights and need to collaborate more easily",
-      answersPerMonth: 50,
+      answersPerMonth: 100,
       features: [
         feature("Everything in Starter plus", "none"),
         feature(
@@ -48,7 +48,7 @@ export default function Pricing() {
         feature("Guided migration and onboarding", "login"),
         feature("Dedicated Slack channel", "slack"),
       ],
-      cta: "Try Overbase for $100",
+      cta: "Test our reliable answers",
       highlighted: true,
     },
     {
@@ -57,7 +57,7 @@ export default function Pricing() {
       priceAnnual: "$15,000",
       period: "user per month",
       description: "For the most complex data and the most strict security",
-      answersPerMonth: 100,
+      answersPerMonth: 150,
       features: [
         feature("Everything in Team plus", "none"),
         feature(
@@ -74,7 +74,7 @@ export default function Pricing() {
           "shield",
         ),
       ],
-      cta: "Try Overbase for $100",
+      cta: "Test our reliable answers",
       highlighted: false,
     },
   ];

@@ -44,7 +44,8 @@ export function TrialPage({ onHome, onNext }: TrialPageProps) {
                 Try for $100
               </h1>
               <p className="text-sm text-gray-900 leading-relaxed">
-                Quickly see our in-depth and reliable answers with your own data
+                Quickly and easily test our in-depth and reliable answers with
+                your own data
               </p>
             </div>
 
