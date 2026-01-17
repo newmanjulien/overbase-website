@@ -5,38 +5,17 @@ import Image from "next/image";
 import { Button } from "../../components/ui/button";
 import { Input } from "../../components/ui/input";
 
-interface WaitlistPageProps {
+interface TrialPageProps {
   onHome: () => void;
-  onSubmit: () => void;
+  onNext: (email: string) => void;
 }
 
-export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
+export function TrialPage({ onHome, onNext }: TrialPageProps) {
   const [email, setEmail] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError(null);
-
-    try {
-      const res = await fetch("/api/send-waitlist-email", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await res.json();
-      if (!res.ok) throw new Error(data.error || "Something went wrong");
-
-      onSubmit(); // call parent callback
-    } catch (err) {
-      console.error("Email send failed:", err);
-      setError("Oops, something went wrong. Please try again.");
-    } finally {
-      setLoading(false);
-    }
+    onNext(email);
   };
 
   return (
@@ -62,17 +41,17 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-8 text-center">
               <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
-                Join the waitlist
+                Try for $100
               </h1>
               <p className="text-sm text-gray-900 leading-relaxed">
-                We only work with a handful of design partners at the moment
+                Quickly see our in-depth and reliable answers with your own data
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-8">
               <div className="space-y-3">
                 <label htmlFor="email" className="sr-only">
-                  Work email
+                  What's your work email?
                 </label>
                 <Input
                   id="email"
@@ -80,46 +59,17 @@ export function WaitlistPage({ onHome, onSubmit }: WaitlistPageProps) {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="w-full px-3 py-3 text-sm border border-gray-200 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200"
-                  placeholder="Work email"
+                  placeholder="What's your work email?"
                   required
-                  disabled={loading}
                 />
-                {error && <p className="text-red-600 text-sm mt-1">{error}</p>}
               </div>
 
               <Button
                 type="submit"
                 size="lg"
                 className="w-full bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
-                disabled={loading}
               >
-                {loading ? (
-                  <div className="flex items-center justify-center gap-2">
-                    <svg
-                      className="animate-spin h-5 w-5 text-white"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                    >
-                      <circle
-                        className="opacity-20"
-                        cx="12"
-                        cy="12"
-                        r="10"
-                        stroke="currentColor"
-                        strokeWidth="4"
-                      ></circle>
-                      <path
-                        className="opacity-80"
-                        fill="currentColor"
-                        d="M4 12a8 8 0 018-8"
-                      ></path>
-                    </svg>
-                    Adding to waitlist...
-                  </div>
-                ) : (
-                  "Submit"
-                )}
+                1 more step
               </Button>
             </form>
           </div>

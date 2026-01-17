@@ -15,7 +15,7 @@ const TEXTS = [
 export function HeroSection() {
   const router = useRouter();
 
-  const handleJoinWaitlist = () => router.push("/waitlist");
+  const handleTrialClick = () => router.push("/trial");
   const handleDemo = () =>
     window.open("https://cal.com/juliennewman/julien", "_blank");
 
@@ -31,7 +31,7 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <h2 className="mt-6 text-lg text-gray-600 font-medium">
+          <h2 className="mt-6 text-xl text-gray-600 font-medium">
             Get the in-depth answers you need to pinpoint the right actions to
             take
           </h2>
@@ -39,13 +39,13 @@ export function HeroSection() {
           {/* Desktop buttons - now visible at md */}
           <div className="hidden md:flex mt-6 gap-3 xl:gap-4">
             <HotkeyButton
-              hotkey="w"
-              onClick={handleJoinWaitlist}
+              hotkey="t"
+              onClick={handleTrialClick}
               variant="dark"
               size="lg"
               className="bg-gray-900 hover:bg-gray-800 text-white p-4 xl:p-5 text-base rounded-lg"
             >
-              Join waitlist
+              Try for $100
             </HotkeyButton>
 
             <HotkeyButton
@@ -72,12 +72,12 @@ export function HeroSection() {
       <div className="w-full max-w-6xl mx-auto md:hidden mt-6 flex flex-col items-center gap-6">
         <HotkeyButton
           hotkey="w"
-          onClick={handleJoinWaitlist}
+          onClick={handleTrialClick}
           variant="dark"
           size="lg"
           className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg w-full max-w-lg"
         >
-          Join waitlist
+          Try for $100
         </HotkeyButton>
 
         <HotkeyButton

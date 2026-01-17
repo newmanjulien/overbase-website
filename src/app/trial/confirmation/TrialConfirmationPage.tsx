@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 
-interface ConfirmationPageProps {
+interface TrialConfirmationPageProps {
   onHome: () => void;
 }
 
-export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
+export function TrialConfirmationPage({ onHome }: TrialConfirmationPageProps) {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Content */}
@@ -30,11 +30,10 @@ export function ConfirmationPage({ onHome }: ConfirmationPageProps) {
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-8 text-center">
               <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
-                We&apos;ll reach out soon
+                We received your question
               </h1>
               <p className="text-sm text-gray-900 leading-relaxed">
-                Thank you for signing up and we look forward to collaborating
-                soon
+                We'll be in touch with you soon to help you test this question
               </p>
             </div>
           </div>

@@ -106,7 +106,7 @@ function FeatureIconComponent({
 export default function TierCard({ tier }: TierCardProps) {
   const router = useRouter();
 
-  const handleJoinWaitlist = () => router.push("/waitlist");
+  const handleTrialClick = () => router.push("/trial");
 
   return (
     <div
@@ -156,7 +156,7 @@ export default function TierCard({ tier }: TierCardProps) {
       </div>
 
       <Button
-        onClick={handleJoinWaitlist}
+        onClick={handleTrialClick}
         className={`w-full mt-6 rounded-lg py-2 ${
           tier.highlighted
             ? "bg-gray-900 hover:bg-gray-800 text-white"

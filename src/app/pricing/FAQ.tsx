@@ -13,7 +13,7 @@ export default function FAQ() {
       <div className="max-w-3xl mx-auto space-y-12">
         <div className="text-center">
           <h2 className="text-4xl text-gray-900 mb-4">
-            Agentic Analysts vs. Human Analysts
+            Agentic Analyst vs. Human Analyst
           </h2>
           <p className="text-neutral-600 text-center max-w-2xl mx-auto">
             Agentic Analysts get answers that are more in-depth and more

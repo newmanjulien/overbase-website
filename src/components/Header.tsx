@@ -10,7 +10,7 @@ interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
   onLogoClick?: () => void;
   onPricingClick?: (() => void) | "static"; // function for clickable, "static" for non-hover
-  showJoinWaitlist?: boolean;
+  showTrialButton?: boolean;
   /** Override the initial (non-scrolled) background color of the header */
   initialBackgroundColor?: string;
 }
@@ -19,7 +19,7 @@ export function Header({
   logoSrc,
   onLogoClick,
   onPricingClick,
-  showJoinWaitlist = false,
+  showTrialButton = false,
   initialBackgroundColor,
 }: BaseHeaderProps) {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ export function Header({
   const isPricingPage = pathname === "/pricing";
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const handleJoinWaitlist = () => router.push("/waitlist");
+  const handleTrialClick = () => router.push("/trial");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,13 +100,13 @@ export function Header({
               </button>
             )}
 
-            {showJoinWaitlist && (
+            {showTrialButton && (
               <Button
                 size="sm"
                 className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm scale-[0.97]"
-                onClick={handleJoinWaitlist}
+                onClick={handleTrialClick}
               >
-                Join waitlist
+                Try for $100
               </Button>
             )}
           </div>

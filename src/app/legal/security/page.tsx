@@ -12,7 +12,7 @@ export default function SecurityPage() {
     <div className="min-h-screen bg-surface">
       <Header
         onLogoClick={() => router.push("/")}
-        showJoinWaitlist
+        showTrialButton
         initialBackgroundColor="#fbfbfb"
       />
       <SecurityAddendum />

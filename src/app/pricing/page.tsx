@@ -42,7 +42,7 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header onLogoClick={() => router.push("/")} showJoinWaitlist />
+      <Header onLogoClick={() => router.push("/")} showTrialButton />
       <Pricing />
       {/* <Video /> */}
       <FAQ />

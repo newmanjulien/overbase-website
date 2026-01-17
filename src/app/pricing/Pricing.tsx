@@ -28,7 +28,7 @@ export default function Pricing() {
         feature("Your data is never used to train our AI", "lock"),
         feature("0 of your data is stored by Overbase", "shield"),
       ],
-      cta: "Join waitlist",
+      cta: "Try Overbase for $100",
     },
     {
       name: "Team",
@@ -48,7 +48,7 @@ export default function Pricing() {
         feature("Guided migration and onboarding", "login"),
         feature("Dedicated Slack channel", "slack"),
       ],
-      cta: "Join waitlist",
+      cta: "Try Overbase for $100",
       highlighted: true,
     },
     {
@@ -74,7 +74,7 @@ export default function Pricing() {
           "shield",
         ),
       ],
-      cta: "Join waitlist",
+      cta: "Try Overbase for $100",
       highlighted: false,
     },
   ];

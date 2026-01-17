@@ -12,7 +12,7 @@ export default function ReferralsPage() {
     <div className="min-h-screen bg-white">
       <Header
         onLogoClick={() => router.push("/")}
-        showJoinWaitlist
+        showTrialButton
         onPricingClick={() => router.push("/pricing")}
       />
       <Referrals />

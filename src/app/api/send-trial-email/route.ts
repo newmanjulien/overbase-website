@@ -1,8 +1,15 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+interface TrialSignupData {
+  email: string;
+  useCase: string;
+}
+
 export async function POST(req: Request) {
-  const { email } = await req.json();
+  const data: TrialSignupData = await req.json();
+
+  const { email, useCase } = data;
 
   if (!email) {
     return NextResponse.json({ error: "Email is required" }, { status: 400 });
@@ -17,14 +24,23 @@ export async function POST(req: Request) {
     },
   });
 
+  // Build the email body with form data
+  const emailBody = `
+New Trial Signup
+
+Email: ${email}
+
+Question they want answered:
+${useCase}
+`.trim();
+
   try {
-    // Send the email
+    // Send the summary email only to Julien
     await transporter.sendMail({
-      from: `"Julien Newman" <${process.env.SMTP_USER}>`,
-      to: email,
-      cc: "julien@overbase.app",
-      subject: "Overbase waitlist",
-      text: "Thank you for joining the waitlist. I'll be in touch soon :)",
+      from: `"Overbase Trial" <${process.env.SMTP_USER}>`,
+      to: "julien@overbase.app",
+      subject: `New Trial Signup: ${email}`,
+      text: emailBody,
     });
 
     return NextResponse.json({ success: true });
@@ -32,7 +48,7 @@ export async function POST(req: Request) {
     console.error("Email send error:", err);
     return NextResponse.json(
       { error: "Failed to send email" },
-      { status: 500 }
+      { status: 500 },
     );
   }
 }
