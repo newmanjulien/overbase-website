@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export default function Pricing() {
   const [billingCycle, setBillingCycle] = useState<"monthly" | "annual">(
-    "annual"
+    "annual",
   );
 
   const tiers = [
@@ -16,12 +16,12 @@ export default function Pricing() {
       priceAnnual: "$6,000",
       period: "user per month",
       description:
-        "For reliable and trustworthy answers that are reviewed by humans",
+        "For reliable and in-depth answers that are reviewed by humans",
       answersPerMonth: 20,
       features: [
         feature(
-          "AI agents use up to 5 million tokens per question",
-          "sparkles"
+          "Agentic Analyst uses up to 5 million AI tokens per question",
+          "sparkles",
         ),
         feature("Human data scientists review answers", "award"),
         feature("Connect to all your datasources in minutes", "zap"),
@@ -42,7 +42,7 @@ export default function Pricing() {
         feature("Everything in Starter plus", "none"),
         feature(
           "1 login for you and 1 separate login for your Chief of Staff or ops team",
-          "users"
+          "users",
         ),
         feature("Share templates and datasources with colleagues", "network"),
         feature("Guided migration and onboarding", "login"),
@@ -57,21 +57,21 @@ export default function Pricing() {
       priceAnnual: "$15,000",
       period: "user per month",
       description: "For the most complex data and the most strict security",
-      answersPerMonth: 50,
+      answersPerMonth: 100,
       features: [
         feature("Everything in Team plus", "none"),
         feature(
-          "AI agents use up to 10 million tokens per question",
-          "sparkles"
+          "Agentic Analyst uses up to 10 million tokens per question",
+          "sparkles",
         ),
         feature(
           "Named technical lead works with your team on data integrations",
-          "user"
+          "user",
         ),
         feature("SAML/OIDC SSO", "lock"),
         feature(
           "Custom NDAs with each Overbase data scientist who reviews your data",
-          "shield"
+          "shield",
         ),
       ],
       cta: "Join waitlist",
@@ -87,9 +87,9 @@ export default function Pricing() {
           Reliable answers that go in-depth
         </h1>
         <p className="text-lg text-gray-600 leading-relaxed font-medium">
-          Advanced AI agents use{" "}
+          Our Agentic Analyst uses{" "}
           <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
-            millions of tokens to answer each of your questions
+            millions of AI tokens to answer each of your questions
           </span>{" "}
           then a human data scientist reviews and improves the answer to make
           sure it's reliable

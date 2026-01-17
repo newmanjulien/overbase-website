@@ -25,9 +25,9 @@ export function HeroSection() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-md text-center md:text-left scale-[0.90]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
-            How Revenue Execs{" "}
+            Agentic Analyst for{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
-              get answers
+              Revenue Execs
             </span>
           </h1>
 

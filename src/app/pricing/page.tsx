@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { Header } from "../../components/Header";
 import { Footer } from "../../components/Footer";
 import Pricing from "./Pricing";
+import { Video } from "./Video";
 import FAQ from "./FAQ";
 
 export default function PricingPage() {
@@ -30,7 +31,7 @@ export default function PricingPage() {
     const timer = setTimeout(() => {
       isLocked = false;
       window.removeEventListener("scroll", lockScroll);
-    }, 700);
+    }, 1000);
 
     return () => {
       isLocked = false;
@@ -43,7 +44,7 @@ export default function PricingPage() {
     <div className="min-h-screen bg-surface">
       <Header onLogoClick={() => router.push("/")} showJoinWaitlist />
       <Pricing />
-      {/* <Video /> */}
+      <Video />
       <FAQ />
       <Footer />
     </div>

@@ -58,20 +58,23 @@ export function CEOLetter() {
               </p>
 
               <p>
-                We answer in-depth and accurately because we use AI agents to
-                get data
+                We answer in-depth and accurately because we use an Agentic
+                Analyst to get and analyze data
               </p>
 
               <p>
                 Legacy disconnected systems make it hard to get answers. Which
-                is why you might need to ask an analyst to manually gather data
-                for you when your question crosses more than 1 tool or platform
+                is why today you need to ask a Human Analyst to manually get
+                data for you when your question crosses more than 1 tool or
+                platform
               </p>
 
               <p>
-                AI agents make all your tools and platforms talk to each other.
-                Which lets us easily get you answers from even the most
-                disconnected data
+                Agentic Analysts make all your tools and platforms talk to each
+                other. Which lets you get answers from even the most
+                disconnected data. And Agentic Analysts do the same deep
+                analysis the best Human Analyst would do. Which lets you get
+                in-depth answers to even the most complex questions
               </p>
 
               <p>

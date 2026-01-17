@@ -3,12 +3,12 @@ export function Video() {
     <section className="py-20 px-6 bg-neutral-50">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-4xl text-center mb-4">
-          Agentic Data System for Revenue Execs
+          The first Agentic Analyst for Revenue Execs
         </h2>
         <p className="text-neutral-600 text-center mb-10 max-w-2xl mx-auto">
-          Agentic Data Systems are a new way to get in-depth answers to the most
-          complex questions. Overbase is the first Agentic Data System for
-          Revenue Execs
+          Agentic Analysts are a new way to get in-depth answers to the most
+          complex root cause questions that only humans analysts could answer
+          before
         </p>
         <div
           className="relative rounded-2xl overflow-hidden"
