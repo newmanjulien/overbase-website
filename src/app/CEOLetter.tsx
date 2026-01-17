@@ -72,9 +72,9 @@ export function CEOLetter() {
               <p>
                 Agentic Analysts make all your tools and platforms talk to each
                 other. Which lets you get answers from even the most
-                disconnected data. And Agentic Analysts do the same deep
-                analysis the best Human Analyst would do. Which lets you get
-                in-depth answers to even the most complex questions
+                disconnected data. And they do the same deep analysis the best
+                Human Analyst would do. Which lets you get in-depth answers to
+                complex questions
               </p>
 
               <p>

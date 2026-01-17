@@ -1,6 +1,7 @@
 "use client";
 
 import { TableOfContents } from "../TableOfContents";
+import { LegalBreadcrumb } from "../LegalBreadcrumb";
 
 export interface LegalSection {
   id: string;
@@ -116,11 +117,12 @@ export function LegalPageLayout({
     <>
       {/* Hero Section with Title */}
       <section
-        className="w-full pt-36 pb-22 border-b border-gray-100"
+        className="w-full pt-18 border-b border-gray-100"
         style={{ backgroundColor: "#fbfbfb" }}
       >
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
-          <h1 className="text-4xl font-medium text-gray-900">
+          <LegalBreadcrumb currentPageTitle={metadata.title} />
+          <h1 className="text-4xl font-medium text-gray-900 mt-26 mb-26">
             {metadata.title}
           </h1>
         </div>
