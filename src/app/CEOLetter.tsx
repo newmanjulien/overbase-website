@@ -64,9 +64,8 @@ export function CEOLetter() {
 
               <p>
                 Legacy disconnected systems make it hard to get answers. Which
-                is why today you need to ask a Human Analyst to manually get
-                data for you when your question crosses more than 1 tool or
-                platform
+                is why today you need to ask a Human Analyst when your question
+                crosses more than 1 tool or platform
               </p>
 
               <p>
