@@ -21,9 +21,9 @@ export function TrialPage({ onHome, onNext }: TrialPageProps) {
   return (
     <div className="min-h-screen flex">
       {/* Left side - Form */}
-      <div className="flex-1 flex flex-col bg-surface">
+      <div className="flex-1 flex flex-col bg-surface relative">
         {/* Header with logo */}
-        <div className="relative z-50 px-6 md:px-12 lg:px-24 py-8">
+        <div className="absolute top-0 left-0 right-0 z-50 px-6 md:px-12 lg:px-24 py-8">
           <button type="button" aria-label="Go back" onClick={onHome}>
             <Image
               src="/logo.png"
@@ -37,7 +37,7 @@ export function TrialPage({ onHome, onNext }: TrialPageProps) {
         </div>
 
         {/* Form content */}
-        <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24 -mt-16">
+        <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24">
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-8 text-center">
               <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
