@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
 import { TextCarousel } from "../components/TextCarousel";
@@ -14,6 +15,14 @@ const TEXTS = [
 
 export function HeroSection() {
   const router = useRouter();
+
+  // Preload the test page video in the background
+  useEffect(() => {
+    const video = document.createElement("video");
+    video.preload = "auto";
+    video.src = "/test.mp4";
+    // The video element will start loading but won't play or be visible
+  }, []);
 
   const handleTest = () => router.push("/test");
   const handleDemo = () =>
