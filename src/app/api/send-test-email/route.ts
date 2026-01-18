@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
-interface TrialSignupData {
+interface TestSignupData {
   email: string;
   useCase: string;
   datasource1?: string;
@@ -10,7 +10,7 @@ interface TrialSignupData {
 }
 
 export async function POST(req: Request) {
-  const data: TrialSignupData = await req.json();
+  const data: TestSignupData = await req.json();
 
   const { email, useCase, datasource1, datasource2, datasource3 } = data;
 
@@ -41,7 +41,7 @@ export async function POST(req: Request) {
 
   // Build the email body with form data
   const emailBody = `
-New Trial Signup
+New Test Signup
 
 Email: ${email}
 
@@ -56,9 +56,9 @@ Datasource 3: ${datasource3 || "N/A"}
   try {
     // Send the summary email only to Julien
     await transporter.sendMail({
-      from: `"Overbase Trial" <${process.env.SMTP_USER}>`,
+      from: `"Overbase Test" <${process.env.SMTP_USER}>`,
       to: "julien@overbase.app",
-      subject: `New Trial Signup: ${email}`,
+      subject: `New Test Signup: ${email}`,
       text: emailBody,
     });
 

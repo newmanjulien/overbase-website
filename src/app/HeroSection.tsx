@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { HotkeyButton } from "../components/buttons/HotkeyButton";
+import { Button } from "../components/ui/button";
 import { TextCarousel } from "../components/TextCarousel";
 
 // Displayed in the graphic
@@ -15,7 +15,7 @@ const TEXTS = [
 export function HeroSection() {
   const router = useRouter();
 
-  const handleTrialClick = () => router.push("/trial");
+  const handleTest = () => router.push("/test");
   const handleDemo = () =>
     window.open("https://cal.com/juliennewman/julien", "_blank");
 
@@ -38,25 +38,23 @@ export function HeroSection() {
 
           {/* Desktop buttons - now visible at md */}
           <div className="hidden md:flex mt-6 gap-3 xl:gap-4">
-            <HotkeyButton
-              hotkey="t"
-              onClick={handleTrialClick}
-              variant="dark"
+            <Button
+              onClick={handleTest}
+              variant="default"
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-4 xl:p-5 text-base rounded-lg"
+              className="bg-gray-900 hover:bg-gray-800 text-white p-5 xl:p-5.5 text-base rounded-lg"
             >
-              Try for $100
-            </HotkeyButton>
+              Test for $100
+            </Button>
 
-            <HotkeyButton
-              hotkey="d"
+            <Button
               onClick={handleDemo}
-              variant="light"
+              variant="secondary"
               size="lg"
-              className="bg-gray-100 hover:bg-gray-200/60 text-black p-4 xl:p-5 text-base rounded-lg"
+              className="bg-gray-100 hover:bg-gray-200/60 text-black p-5 xl:p-5.5 text-base rounded-lg"
             >
               Demo with our CEO
-            </HotkeyButton>
+            </Button>
           </div>
         </div>
 
@@ -70,25 +68,23 @@ export function HeroSection() {
 
       {/* === Mobile Layout (only shown below md) === */}
       <div className="w-full max-w-6xl mx-auto md:hidden mt-6 flex flex-col items-center gap-6">
-        <HotkeyButton
-          hotkey="w"
-          onClick={handleTrialClick}
-          variant="dark"
+        <Button
+          onClick={handleTest}
+          variant="default"
           size="lg"
           className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg w-full max-w-lg"
         >
-          Try for $100
-        </HotkeyButton>
+          Test for $100
+        </Button>
 
-        <HotkeyButton
-          hotkey="f"
+        <Button
           onClick={handleDemo}
-          variant="light"
+          variant="secondary"
           size="lg"
-          className="bg-gray-50 hover:bg-gray-100 text-black p-5 text-base rounded-lg w-full max-w-lg"
+          className="bg-gray-100 hover:bg-gray-200 text-black p-5 text-base rounded-lg w-full max-w-lg"
         >
           Demo with our CEO
-        </HotkeyButton>
+        </Button>
 
         <div className="mt-12 w-full max-w-lg px-4">
           <TextCarousel texts={TEXTS} />

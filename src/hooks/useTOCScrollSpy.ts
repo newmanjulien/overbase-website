@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 
-interface UseScrollSpyOptions {
+interface UseTOCScrollSpyOptions {
   /**
    * Offset from top of viewport (in pixels) to account for fixed header.
    * Default: 100
@@ -22,7 +22,7 @@ function arraysEqual(a: string[], b: string[]): boolean {
  * If present, this element's visibility determines the section's active state.
  * Falls back to the section element itself if not found.
  */
-const SCROLL_SPY_TARGET_ATTR = "[data-scroll-spy-target]";
+const TOC_SCROLL_SPY_TARGET_ATTR = "[data-toc-scroll-spy-target]";
 
 /**
  * Cached element reference for performance.
@@ -57,9 +57,9 @@ interface CachedElement {
  *   <p>Content...</p>
  * </section>
  */
-export function useScrollSpy(
+export function useTOCScrollSpy(
   sectionIds: string[],
-  options?: UseScrollSpyOptions
+  options?: UseTOCScrollSpyOptions,
 ): string[] {
   const [activeIds, setActiveIds] = useState<string[]>([]);
 
@@ -86,7 +86,8 @@ export function useScrollSpy(
     for (const id of ids) {
       const section = document.getElementById(id);
       if (section) {
-        const target = section.querySelector(SCROLL_SPY_TARGET_ATTR) || section;
+        const target =
+          section.querySelector(TOC_SCROLL_SPY_TARGET_ATTR) || section;
         cache.set(id, { section, target });
       }
     }

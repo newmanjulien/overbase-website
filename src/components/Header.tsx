@@ -3,14 +3,14 @@
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
-import { Button } from "./ui/button";
+import { HotkeyButton } from "./buttons/HotkeyButton";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
   onLogoClick?: () => void;
   onPricingClick?: (() => void) | "static"; // function for clickable, "static" for non-hover
-  showTrialButton?: boolean;
+  showTestButton?: boolean;
   /** Override the initial (non-scrolled) background color of the header */
   initialBackgroundColor?: string;
 }
@@ -19,7 +19,7 @@ export function Header({
   logoSrc,
   onLogoClick,
   onPricingClick,
-  showTrialButton = false,
+  showTestButton = false,
   initialBackgroundColor,
 }: BaseHeaderProps) {
   const pathname = usePathname();
@@ -27,7 +27,7 @@ export function Header({
   const isPricingPage = pathname === "/pricing";
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const handleTrialClick = () => router.push("/trial");
+  const handleTest = () => router.push("/test");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,14 +100,16 @@ export function Header({
               </button>
             )}
 
-            {showTrialButton && (
-              <Button
+            {showTestButton && (
+              <HotkeyButton
+                hotkey="t"
+                variant="dark"
                 size="sm"
-                className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm scale-[0.97]"
-                onClick={handleTrialClick}
+                className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm scale-[0.95]"
+                onClick={handleTest}
               >
-                Try for $100
-              </Button>
+                Test for $100
+              </HotkeyButton>
             )}
           </div>
         </div>

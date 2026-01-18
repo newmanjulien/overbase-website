@@ -106,7 +106,7 @@ function FeatureIconComponent({
 export default function TierCard({ tier }: TierCardProps) {
   const router = useRouter();
 
-  const handleTrialClick = () => router.push("/trial");
+  const handleTest = () => router.push("/test");
 
   return (
     <div
@@ -156,7 +156,7 @@ export default function TierCard({ tier }: TierCardProps) {
       </div>
 
       <Button
-        onClick={handleTrialClick}
+        onClick={handleTest}
         className={`w-full mt-6 rounded-lg py-2 ${
           tier.highlighted
             ? "bg-gray-900 hover:bg-gray-800 text-white"

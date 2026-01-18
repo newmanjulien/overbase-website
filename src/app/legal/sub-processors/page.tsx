@@ -12,7 +12,7 @@ export default function SubProcessorsPage() {
     <div className="min-h-screen bg-surface">
       <Header
         onLogoClick={() => router.push("/")}
-        showTrialButton
+        showTestButton
         initialBackgroundColor="#fbfbfb"
       />
       <SubProcessors />

@@ -11,7 +11,7 @@ export function HotkeyBadge({
   variant?: "dark" | "light";
 }) {
   const baseClasses =
-    "hidden xl:inline-flex items-center justify-center w-6 h-6 rounded-sm text-sm font-bold";
+    "hidden md:inline-flex items-center justify-center w-5 h-5 rounded-sm text-xs font-bold";
   const variantClasses =
     variant === "dark" ? "bg-gray-700 text-white" : "bg-gray-200 text-black";
 
@@ -38,7 +38,7 @@ export const HotkeyButton = forwardRef<
       size = "default",
       className,
     },
-    externalRef
+    externalRef,
   ) => {
     const internalRef = useRef<HTMLButtonElement | null>(null);
 
@@ -51,7 +51,7 @@ export const HotkeyButton = forwardRef<
     useEffect(() => {
       const handler = (e: KeyboardEvent) => {
         const target = e.target;
-        if (!(target instanceof HTMLElement)) return; // ✅ Type narrowing
+        if (!(target instanceof HTMLElement)) return;
         if (
           target.isContentEditable ||
           ["INPUT", "TEXTAREA"].includes(target.tagName) ||
@@ -74,13 +74,13 @@ export const HotkeyButton = forwardRef<
 
     return (
       <Button ref={setRef} onClick={onClick} size={size} className={className}>
-        <span className="inline-flex items-center gap-2">
+        <span className="inline-flex items-center gap-1.5">
           {children}
           <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
         </span>
       </Button>
     );
-  }
+  },
 );
 
 HotkeyButton.displayName = "HotkeyButton";

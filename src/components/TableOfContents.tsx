@@ -1,6 +1,6 @@
 "use client";
 
-import { useScrollSpy, scrollToSection } from "../hooks/useScrollSpy";
+import { useTOCScrollSpy, scrollToSection } from "../hooks/useTOCScrollSpy";
 import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
 import { cn } from "../lib/utils";
 
@@ -23,7 +23,7 @@ interface TableOfContentsProps {
 function getActiveRoundingClasses(
   index: number,
   items: TOCItem[],
-  activeIds: string[]
+  activeIds: string[],
 ): string {
   const isActive = activeIds.includes(items[index].id);
   if (!isActive) return "rounded-md"; // Inactive items get normal rounding
@@ -60,7 +60,7 @@ export function TableOfContents({
   scrollOffset = 100,
 }: TableOfContentsProps) {
   const sectionIds = items.map((item) => item.id);
-  const activeIds = useScrollSpy(sectionIds);
+  const activeIds = useTOCScrollSpy(sectionIds);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
     e.preventDefault();
@@ -81,7 +81,7 @@ export function TableOfContents({
           const roundingClasses = getActiveRoundingClasses(
             index,
             items,
-            activeIds
+            activeIds,
           );
           const isActive = activeIds.includes(item.id);
 
@@ -93,7 +93,7 @@ export function TableOfContents({
               className={cn(
                 "justify-start text-left h-auto py-1.5 px-3 font-normal text-gray-500 text-sm w-full",
                 "data-[state=on]:bg-accent",
-                roundingClasses
+                roundingClasses,
               )}
               aria-current={isActive ? "location" : undefined}
             >

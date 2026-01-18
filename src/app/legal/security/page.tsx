@@ -12,7 +12,7 @@ export default function SecurityPage() {
     <div className="min-h-screen bg-surface">
       <Header
         onLogoClick={() => router.push("/")}
-        showTrialButton
+        showTestButton
         initialBackgroundColor="#fbfbfb"
       />
       <SecurityAddendum />
