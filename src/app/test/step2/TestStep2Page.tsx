@@ -3,8 +3,7 @@
 import { useState, useEffect } from "react";
 import { useTest } from "../TestContext";
 import { useRouter } from "next/navigation";
-import { TestPageContainer } from "../components/TestPageContainer";
-import { Button } from "../../../components/ui/button";
+import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 
 interface TestStep2PageProps {
   onHome: () => void;
@@ -39,9 +38,9 @@ export function TestStep2Page({ onHome, onBack, onNext }: TestStep2PageProps) {
   };
 
   return (
-    <TestPageContainer
+    <TestPageLayout
       title="Your test question"
-      description="Pick a question where you can share the data our Agentic Analyst will need to answer"
+      description="Pick a question where you can easily share the data we will need to answer"
       onHome={onHome}
       onBack={onBack}
       onSubmit={handleSubmit}
@@ -64,6 +63,6 @@ export function TestStep2Page({ onHome, onBack, onNext }: TestStep2PageProps) {
           disabled={loading}
         />
       </div>
-    </TestPageContainer>
+    </TestPageLayout>
   );
 }

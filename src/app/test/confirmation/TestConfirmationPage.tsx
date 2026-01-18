@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { Button } from "../../../components/ui/button";
 import { useTest } from "../TestContext";
-import { TestPageContainer } from "../components/TestPageContainer";
+import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 
 interface TestConfirmationPageProps {
   onHome: () => void;
@@ -17,7 +17,7 @@ export function TestConfirmationPage({ onHome }: TestConfirmationPageProps) {
   }, [clearTestData]);
 
   return (
-    <TestPageContainer
+    <TestPageLayout
       title="Question received"
       description="Someone from our team will be in touch to set up your datasources and test this question"
       onHome={onHome}
@@ -38,6 +38,6 @@ export function TestConfirmationPage({ onHome }: TestConfirmationPageProps) {
           See an example
         </Button>
       </div>
-    </TestPageContainer>
+    </TestPageLayout>
   );
 }

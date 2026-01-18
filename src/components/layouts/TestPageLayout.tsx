@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 import { ReactNode } from "react";
-import { Button } from "../../../components/ui/button";
+import { Button } from "../../components/ui/button";
 
-interface TestPageContainerProps {
+interface TestPageLayoutProps {
   children: ReactNode;
   title: string;
   description: string;
@@ -17,7 +17,7 @@ interface TestPageContainerProps {
   onBack?: () => void;
 }
 
-export function TestPageContainer({
+export function TestPageLayout({
   children,
   title,
   description,
@@ -28,7 +28,7 @@ export function TestPageContainer({
   isLoading,
   error,
   onBack,
-}: TestPageContainerProps) {
+}: TestPageLayoutProps) {
   const content = (
     <>
       <div className="space-y-4 text-center">
@@ -41,7 +41,7 @@ export function TestPageContainer({
         <div className="space-y-4 w-full">
           {error && <p className="text-red-600 text-sm text-center">{error}</p>}
 
-          <div className="pt-4 space-y-3">
+          <div className="pt-2 space-y-3">
             {primaryActionText && (
               <Button
                 type={onSubmit ? "submit" : "button"}
@@ -115,9 +115,9 @@ export function TestPageContainer({
 
         {/* Content Centered */}
         <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24">
-          <div className="w-full max-w-xs space-y-8">
+          <div className="w-full max-w-xs space-y-6">
             {onSubmit ? (
-              <form onSubmit={onSubmit} className="space-y-8">
+              <form onSubmit={onSubmit} className="space-y-6">
                 {content}
               </form>
             ) : (

@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import { useTest } from "./TestContext";
-import { TestPageContainer } from "./components/TestPageContainer";
+import { TestPageLayout } from "../../components/layouts/TestPageLayout";
 import { Input } from "../../components/ui/input";
 import { DATASOURCES } from "./step3/datasources";
 
@@ -28,7 +28,7 @@ export function TestPage({ onHome, onNext }: TestPageProps) {
   };
 
   return (
-    <TestPageContainer
+    <TestPageLayout
       title="Test our in-depth answers"
       description="Quickly and easily test how in-depth and reliable our answers are with your own data"
       onHome={onHome}
@@ -49,6 +49,6 @@ export function TestPage({ onHome, onNext }: TestPageProps) {
           required
         />
       </div>
-    </TestPageContainer>
+    </TestPageLayout>
   );
 }
