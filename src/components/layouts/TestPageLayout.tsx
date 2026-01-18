@@ -7,7 +7,7 @@ import { Button } from "../../components/ui/button";
 interface TestPageLayoutProps {
   children: ReactNode;
   title: string;
-  description: string;
+  description?: string;
   onHome: () => void;
   onSubmit?: (e: React.FormEvent) => void;
   primaryActionText?: string;

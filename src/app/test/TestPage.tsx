@@ -29,7 +29,7 @@ export function TestPage({ onHome, onNext }: TestPageProps) {
 
   return (
     <TestPageLayout
-      title="Test our in-depth answers"
+      title="Get in-depth and reliable answers"
       description="Quickly and easily test how in-depth and reliable our answers are with your own data"
       onHome={onHome}
       onSubmit={handleSubmit}

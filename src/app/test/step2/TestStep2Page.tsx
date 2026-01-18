@@ -39,18 +39,18 @@ export function TestStep2Page({ onHome, onBack, onNext }: TestStep2PageProps) {
 
   return (
     <TestPageLayout
-      title="Your test question"
-      description="Pick a question where you can easily share the data we will need to answer"
+      title="What question do you want to test?"
+      description=""
       onHome={onHome}
       onBack={onBack}
       onSubmit={handleSubmit}
-      primaryActionText="1 more step"
+      primaryActionText="1 last step"
       isLoading={loading}
       error={error}
     >
       <div className="space-y-3">
         <label htmlFor="useCase" className="sr-only">
-          What question do you want to get answered as a test?
+          Question you want to test
         </label>
         <textarea
           id="useCase"
