@@ -39,7 +39,7 @@ export function TrialPage({ onHome, onNext }: TrialPageProps) {
         {/* Form content */}
         <div className="flex-1 flex flex-col justify-center items-center px-6 md:px-12 lg:px-24">
           <div className="w-full max-w-xs space-y-8">
-            <div className="space-y-8 text-center">
+            <div className="space-y-4 text-center">
               <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
                 Try for $100
               </h1>
@@ -70,7 +70,7 @@ export function TrialPage({ onHome, onNext }: TrialPageProps) {
                 size="lg"
                 className="w-full bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
               >
-                1 more step
+                Let's test this out
               </Button>
             </form>
           </div>

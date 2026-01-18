@@ -17,16 +17,11 @@ function TrialStep2Content() {
   }
 
   const handleSubmit = async (data: { email: string; useCase: string }) => {
-    const res = await fetch("/api/send-trial-email", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(data),
+    const params = new URLSearchParams({
+      email: data.email,
+      useCase: data.useCase,
     });
-
-    const result = await res.json();
-    if (!res.ok) throw new Error(result.error || "Something went wrong");
-
-    router.push("/trial/confirmation");
+    router.push(`/trial/step3?${params.toString()}`);
   };
 
   return (

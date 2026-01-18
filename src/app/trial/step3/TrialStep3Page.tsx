@@ -3,22 +3,34 @@
 import { useState } from "react";
 import Image from "next/image";
 import { Button } from "../../../components/ui/button";
+import { DatasourceCombobox } from "./DatasourceCombobox";
 
-interface TrialStep2PageProps {
+interface TrialStep3PageProps {
   /** Pass-through: used only in form submission */
   email: string;
+  /** Pass-through: used only in form submission */
+  useCase: string;
   onHome: () => void;
   onBack: () => void;
-  onSubmit: (data: { email: string; useCase: string }) => void;
+  onSubmit: (data: {
+    email: string;
+    useCase: string;
+    datasource1: string;
+    datasource2: string;
+    datasource3: string;
+  }) => void;
 }
 
-export function TrialStep2Page({
+export function TrialStep3Page({
   email,
+  useCase,
   onHome,
   onBack,
   onSubmit,
-}: TrialStep2PageProps) {
-  const [useCase, setUseCase] = useState("");
+}: TrialStep3PageProps) {
+  const [datasource1, setDatasource1] = useState("");
+  const [datasource2, setDatasource2] = useState("");
+  const [datasource3, setDatasource3] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -28,12 +40,14 @@ export function TrialStep2Page({
     setError(null);
 
     try {
-      await onSubmit({ email, useCase });
+      await onSubmit({ email, useCase, datasource1, datasource2, datasource3 });
     } catch {
       setError("Oops, something went wrong. Please try again.");
       setLoading(false);
     }
   };
+
+  const isFormValid = datasource1;
 
   return (
     <div className="min-h-screen flex">
@@ -58,30 +72,37 @@ export function TrialStep2Page({
           <div className="w-full max-w-xs space-y-8">
             <div className="space-y-4 text-center">
               <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
-                Your test question
+                Your datasources
               </h1>
               <p className="text-sm text-gray-900 leading-relaxed">
-                Pick a question where you can share the data our Agentic Analyst
-                will need to answer
+                What datasources will you give us access to so we can answer
+                your question?
               </p>
             </div>
 
             <form onSubmit={handleSubmit} className="space-y-4">
-              <div className="space-y-3">
-                <label htmlFor="useCase" className="sr-only">
-                  What question do you want to get answered as a test?
-                </label>
-                <textarea
-                  id="useCase"
-                  value={useCase}
-                  onChange={(e) => setUseCase(e.target.value)}
-                  className="w-full px-3 py-3 text-sm border border-gray-200 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200 resize-none"
-                  placeholder="What question do you want to get answered as a test?"
-                  rows={5}
-                  required
-                  disabled={loading}
-                />
-              </div>
+              <DatasourceCombobox
+                value={datasource1}
+                onChange={setDatasource1}
+                placeholder="First datasource"
+                disabled={loading}
+              />
+
+              <DatasourceCombobox
+                value={datasource2}
+                onChange={setDatasource2}
+                placeholder="Second datasource (optional)"
+                disabled={loading}
+                disabledValues={[datasource1].filter(Boolean)}
+              />
+
+              <DatasourceCombobox
+                value={datasource3}
+                onChange={setDatasource3}
+                placeholder="Third datasource (optional)"
+                disabled={loading}
+                disabledValues={[datasource1, datasource2].filter(Boolean)}
+              />
 
               {error && <p className="text-red-600 text-sm">{error}</p>}
 
@@ -90,7 +111,7 @@ export function TrialStep2Page({
                   type="submit"
                   size="lg"
                   className="w-full bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
-                  disabled={loading}
+                  disabled={loading || !isFormValid}
                 >
                   {loading ? (
                     <div className="flex items-center justify-center gap-2">
@@ -117,7 +138,7 @@ export function TrialStep2Page({
                       Submitting...
                     </div>
                   ) : (
-                    "1 more step"
+                    "Submit"
                   )}
                 </Button>
 

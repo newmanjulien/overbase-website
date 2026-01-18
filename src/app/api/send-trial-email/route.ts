@@ -4,15 +4,30 @@ import nodemailer from "nodemailer";
 interface TrialSignupData {
   email: string;
   useCase: string;
+  datasource1?: string;
+  datasource2?: string;
+  datasource3?: string;
 }
 
 export async function POST(req: Request) {
   const data: TrialSignupData = await req.json();
 
-  const { email, useCase } = data;
+  const { email, useCase, datasource1, datasource2, datasource3 } = data;
 
   if (!email) {
     return NextResponse.json({ error: "Email is required" }, { status: 400 });
+  }
+
+  // Dev mode: skip sending email, just log
+  if (process.env.NODE_ENV === "development") {
+    console.log("DEV MODE - Would send email:", {
+      email,
+      useCase,
+      datasource1,
+      datasource2,
+      datasource3,
+    });
+    return NextResponse.json({ success: true });
   }
 
   // Configure the transporter
@@ -32,6 +47,10 @@ Email: ${email}
 
 Question they want answered:
 ${useCase}
+
+Datasource 1: ${datasource1 || "N/A"}
+Datasource 2: ${datasource2 || "N/A"}
+Datasource 3: ${datasource3 || "N/A"}
 `.trim();
 
   try {

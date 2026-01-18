@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { Button } from "../../../components/ui/button";
 
 interface TrialConfirmationPageProps {
@@ -9,8 +8,6 @@ interface TrialConfirmationPageProps {
 }
 
 export function TrialConfirmationPage({ onHome }: TrialConfirmationPageProps) {
-  const router = useRouter();
-
   return (
     <div className="min-h-screen flex">
       {/* Left side - Content */}
@@ -32,7 +29,7 @@ export function TrialConfirmationPage({ onHome }: TrialConfirmationPageProps) {
         {/* Content */}
         <div className="flex-1 flex flex-col justify-center items-center md:px-12 lg:px-24">
           <div className="w-full max-w-xs space-y-8">
-            <div className="space-y-8 text-center">
+            <div className="space-y-4 text-center">
               <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
                 We received your question
               </h1>
@@ -43,7 +40,7 @@ export function TrialConfirmationPage({ onHome }: TrialConfirmationPageProps) {
                 <Button
                   size="lg"
                   className="flex-1 bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
-                  onClick={() => router.push("/")}
+                  onClick={onHome}
                 >
                   Back to home
                 </Button>
