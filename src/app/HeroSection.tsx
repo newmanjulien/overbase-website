@@ -20,24 +20,24 @@ export function HeroSection() {
     window.open("https://cal.com/juliennewman/julien", "_blank");
 
   return (
-    <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-26 pb-17 bg-surface">
+    <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-23 pb-16 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-xl text-center md:text-left scale-[0.90]">
-          <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
+        <div className="w-full max-w-xl text-center md:text-left scale-[0.91]">
+          <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold">
             Agentic Analyst for{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
               Revenue Execs
             </span>
           </h1>
 
-          <h2 className="mt-6 text-2xl text-gray-600 font-medium">
+          <h2 className="mt-4 text-2xl text-gray-600 font-medium">
             Overbase is how Revenue Execs get in-depth and reliable answers to
             their hardest questions
           </h2>
 
           {/* Desktop buttons - now visible at md */}
-          <div className="hidden md:flex mt-8 gap-2 xl:gap-4">
+          <div className="hidden md:flex mt-10 gap-2 xl:gap-4">
             <Button
               onClick={handleTest}
               variant="default"
