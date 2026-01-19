@@ -78,7 +78,7 @@ export function Header({
               hotkey="t"
               variant="dark"
               size="sm"
-              className="bg-gray-900 hover:bg-gray-800 text-white rounded-sm text-sm scale-[0.92]"
+              className="rounded-sm text-sm scale-[0.92]"
               onClick={handleTest}
             >
               Test for $100

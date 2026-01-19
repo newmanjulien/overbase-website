@@ -16,14 +16,11 @@ export default function Pricing() {
       priceAnnual: "$6,000",
       period: "user per month",
       description:
-        "For reliable and in-depth answers that are reviewed by humans",
+        "For in-depth and reliable answers that are reviewed by humans",
       answersPerMonth: 50,
       features: [
-        feature(
-          "Agentic Analyst uses up to 5 million AI tokens per question",
-          "sparkles",
-        ),
-        feature("Human data scientists review answers", "award"),
+        feature("AI uses up to 5 million tokens per question", "sparkles"),
+        feature("Human reviews answers", "award"),
         feature("Connect to all your datasources in minutes", "zap"),
         feature("Your data is never used to train our AI", "lock"),
         feature("0 of your data is stored by Overbase", "shield"),
@@ -60,10 +57,7 @@ export default function Pricing() {
       answersPerMonth: 150,
       features: [
         feature("Everything in Team plus", "none"),
-        feature(
-          "Agentic Analyst uses up to 10 million tokens per question",
-          "sparkles",
-        ),
+        feature("AI uses up to 10 million tokens per question", "sparkles"),
         feature(
           "Named technical lead works with your team on data integrations",
           "user",
@@ -84,15 +78,11 @@ export default function Pricing() {
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-4xl mx-auto scale-[0.90]">
         <h1 className="text-5xl text-gray-900 font-medium">
-          Reliable answers that go in-depth
+          Get in-depth and reliable answers
         </h1>
-        <p className="text-lg text-gray-600 leading-relaxed font-medium">
-          Our Agentic Analyst uses{" "}
-          <span className="bg-red-500/10 text-[#FC3636] px-1 rounded font-semibold">
-            millions of AI tokens to answer each of your questions
-          </span>{" "}
-          then a human data scientist reviews and improves the answer to make
-          sure it's reliable
+        <p className="text-xl text-gray-600 leading-relaxed font-medium">
+          Our AI uses millions of tokens to answer each of your questions in
+          depth then a human reviews the answer to make sure it's reliable
         </p>
       </section>
 

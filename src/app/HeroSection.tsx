@@ -49,7 +49,7 @@ export function HeroSection() {
               onClick={handleTest}
               variant="default"
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-base rounded-lg"
+              className="p-6 text-base rounded-lg"
             >
               Test for $100
             </Button>
@@ -58,7 +58,7 @@ export function HeroSection() {
               onClick={handleDemo}
               variant="secondary"
               size="lg"
-              className="bg-gray-100 hover:bg-gray-200/60 text-black p-6 text-base rounded-lg"
+              className="p-6 text-base rounded-lg"
             >
               Demo with our CEO
             </Button>
@@ -72,7 +72,7 @@ export function HeroSection() {
           onClick={handleTest}
           variant="default"
           size="lg"
-          className="bg-gray-900 hover:bg-gray-800 text-white p-5 text-base rounded-lg w-full max-w-lg"
+          className="p-5 text-base rounded-lg w-full max-w-lg"
         >
           Test for $100
         </Button>
@@ -81,7 +81,7 @@ export function HeroSection() {
           onClick={handleDemo}
           variant="secondary"
           size="lg"
-          className="bg-gray-100 hover:bg-gray-200 text-black p-5 text-base rounded-lg w-full max-w-lg"
+          className="p-5 text-base rounded-lg w-full max-w-lg"
         >
           Demo with our CEO
         </Button>

@@ -157,11 +157,8 @@ export default function TierCard({ tier }: TierCardProps) {
 
       <Button
         onClick={handleTest}
-        className={`w-full mt-6 rounded-lg py-2 ${
-          tier.highlighted
-            ? "bg-gray-900 hover:bg-gray-800 text-white"
-            : "bg-gray-100 hover:bg-gray-200/60 text-gray-900"
-        }`}
+        variant={tier.highlighted ? "default" : "secondary"}
+        className="w-full mt-6 rounded-lg py-2"
       >
         {tier.cta}
       </Button>
