@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
 import { DATASOURCES } from "./test/step3/datasources";
 
 export function HeroSection() {
   const router = useRouter();
+  const pathname = usePathname();
 
   // Preload the test page video and datasource logos in the background
   useEffect(() => {
@@ -22,7 +23,11 @@ export function HeroSection() {
     });
   }, []);
 
-  const handleTest = () => router.push("/test");
+  const handleTest = () => {
+    // Store entry point before navigating so we can return here from logo click
+    sessionStorage.setItem("test-entry-point", pathname);
+    router.push("/test");
+  };
   const handleDemo = () =>
     window.open("https://cal.com/juliennewman/julien", "_blank");
 

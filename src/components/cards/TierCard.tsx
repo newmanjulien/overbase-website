@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
 import {
   Check,
@@ -105,8 +105,13 @@ function FeatureIconComponent({
 
 export default function TierCard({ tier }: TierCardProps) {
   const router = useRouter();
+  const pathname = usePathname();
 
-  const handleTest = () => router.push("/test");
+  const handleTest = () => {
+    // Store entry point before navigating so we can return here from logo click
+    sessionStorage.setItem("test-entry-point", pathname);
+    router.push("/test");
+  };
 
   return (
     <div

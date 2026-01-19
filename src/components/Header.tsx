@@ -22,7 +22,11 @@ export function Header({
   const router = useRouter();
   const [hasScrolled, setHasScrolled] = useState(false);
 
-  const handleTest = () => router.push("/test");
+  const handleTest = () => {
+    // Store entry point before navigating so we can return here from logo click
+    sessionStorage.setItem("test-entry-point", pathname);
+    router.push("/test");
+  };
   const handleLogin = () => router.push("/login");
 
   // Determine the background style based on scroll state

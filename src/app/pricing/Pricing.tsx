@@ -25,7 +25,7 @@ export default function Pricing() {
         feature("Your data is never used to train our AI", "lock"),
         feature("0 of your data is stored by Overbase", "shield"),
       ],
-      cta: "Test how reliable our answers are",
+      cta: "Test how in-depth and reliable",
     },
     {
       name: "Team",
@@ -45,7 +45,7 @@ export default function Pricing() {
         feature("Guided migration and onboarding", "login"),
         feature("Dedicated Slack channel", "slack"),
       ],
-      cta: "Test how reliable our answers are",
+      cta: "Test how in-depth and reliable",
       highlighted: true,
     },
     {
@@ -68,7 +68,7 @@ export default function Pricing() {
           "shield",
         ),
       ],
-      cta: "Test how reliable our answers are",
+      cta: "Test how in-depth and reliable",
       highlighted: false,
     },
   ];
