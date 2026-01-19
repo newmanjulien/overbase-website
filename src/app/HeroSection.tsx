@@ -3,15 +3,6 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
-import { TextCarousel } from "../components/TextCarousel";
-
-// Displayed in the graphic
-const TEXTS = [
-  "EMEA is telling me they'll hit their forecast. How likely is that? What are their weakest spots?",
-  "Take the deals which are projected to close next month. Review the related emails and Gong recordings. Give me revised confidence scores for each one",
-  "Which deals from next quarter could we pull forward most easily if we gave them a discount?",
-  "Which team is over-performing but I can't tell in the new APAC numbers?",
-];
 
 export function HeroSection() {
   const router = useRouter();
@@ -66,13 +57,6 @@ export function HeroSection() {
             </Button>
           </div>
         </div>
-
-        {/* === Right Section: Graphic - now visible at md === */}
-        <div className="hidden md:flex justify-center md:justify-end shrink-0">
-          <div className="w-[350px]">
-            <TextCarousel texts={TEXTS} />
-          </div>
-        </div>
       </div>
 
       {/* === Mobile Layout (only shown below md) === */}
@@ -94,10 +78,6 @@ export function HeroSection() {
         >
           Demo with our CEO
         </Button>
-
-        <div className="mt-12 w-full max-w-lg px-4">
-          <TextCarousel texts={TEXTS} />
-        </div>
       </div>
     </section>
   );
