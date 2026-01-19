@@ -58,7 +58,7 @@ export function TestStep3Page({
   return (
     <TestPageLayout
       title="Pick datasources"
-      description="What datasources will you connect to answer your question?"
+      description="What datasources will you connect (and will we analyze) to answer your question?"
       onLogoClick={onLogoClick}
       onBack={onBack}
       onSubmit={handleSubmit}

@@ -21,7 +21,7 @@ export function TestPage({ onLogoClick, onNext }: TestPageProps) {
   return (
     <TestPageLayout
       title="Get in-depth and reliable answers"
-      description="See for yourself how in-depth and reliable our answers are by testing with your data"
+      description="See for yourself how in-depth and reliable our answers are by testing with your own data"
       onLogoClick={onLogoClick}
       onSubmit={handleSubmit}
       primaryActionText="Test for $100"

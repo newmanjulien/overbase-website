@@ -25,7 +25,7 @@ export default function Pricing() {
         feature("Your data is never used to train our AI", "lock"),
         feature("0 of your data is stored by Overbase", "shield"),
       ],
-      cta: "Test our in-depth answers",
+      cta: "Test how reliable our answers are",
     },
     {
       name: "Team",
@@ -45,7 +45,7 @@ export default function Pricing() {
         feature("Guided migration and onboarding", "login"),
         feature("Dedicated Slack channel", "slack"),
       ],
-      cta: "Test our in-depth answers",
+      cta: "Test how reliable our answers are",
       highlighted: true,
     },
     {
@@ -68,7 +68,7 @@ export default function Pricing() {
           "shield",
         ),
       ],
-      cta: "Test our in-depth answers",
+      cta: "Test how reliable our answers are",
       highlighted: false,
     },
   ];
@@ -82,7 +82,7 @@ export default function Pricing() {
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed font-medium">
           Our AI uses millions of tokens to answer each of your questions in
-          depth then a human reviews the answer to make sure it's reliable
+          depth. Then a human reviews the answer to make sure it's reliable
         </p>
       </section>
 

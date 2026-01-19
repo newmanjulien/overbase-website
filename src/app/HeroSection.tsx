@@ -49,16 +49,16 @@ export function HeroSection() {
               onClick={handleTest}
               variant="default"
               size="lg"
-              className="p-6 text-base rounded-lg"
+              className="p-6 text-md rounded-lg"
             >
-              Test for $100
+              Test how reliable
             </Button>
 
             <Button
               onClick={handleDemo}
               variant="secondary"
               size="lg"
-              className="p-6 text-base rounded-lg"
+              className="p-6 text-md rounded-lg"
             >
               Demo with our CEO
             </Button>
