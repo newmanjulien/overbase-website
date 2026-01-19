@@ -53,7 +53,7 @@ export function TestStep3Page({ onHome, onBack, onNext }: TestStep3PageProps) {
 
   return (
     <TestPageLayout
-      title="Your datasources"
+      title="Pick datasources"
       description="What datasources will you give us access to so we can answer your question?"
       onHome={onHome}
       onBack={onBack}
