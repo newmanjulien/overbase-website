@@ -3,16 +3,23 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
+import { DATASOURCES } from "./test/step3/datasources";
 
 export function HeroSection() {
   const router = useRouter();
 
-  // Preload the test page video in the background
+  // Preload the test page video and datasource logos in the background
   useEffect(() => {
+    // Preload video
     const video = document.createElement("video");
     video.preload = "auto";
     video.src = "/test.mp4";
-    // The video element will start loading but won't play or be visible
+
+    // Preload logos
+    DATASOURCES.forEach((ds) => {
+      const img = new window.Image();
+      img.src = ds.logo;
+    });
   }, []);
 
   const handleTest = () => router.push("/test");

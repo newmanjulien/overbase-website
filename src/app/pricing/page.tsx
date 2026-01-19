@@ -11,7 +11,7 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-surface">
-      <Header onLogoClick={() => router.push("/")} showTestButton />
+      <Header onLogoClick={() => router.push("/")} />
       <Pricing />
       <FAQ />
       <Footer />

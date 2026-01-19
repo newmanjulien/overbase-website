@@ -9,8 +9,6 @@ import { HotkeyButton } from "./buttons/HotkeyButton";
 interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
   onLogoClick?: () => void;
-  onPricingClick?: (() => void) | "static"; // function for clickable, "static" for non-hover
-  showTestButton?: boolean;
   /** Override the initial (non-scrolled) background color of the header */
   initialBackgroundColor?: string;
 }
@@ -18,35 +16,14 @@ interface BaseHeaderProps {
 export function Header({
   logoSrc,
   onLogoClick,
-  onPricingClick,
-  showTestButton = false,
   initialBackgroundColor,
 }: BaseHeaderProps) {
   const pathname = usePathname();
   const router = useRouter();
-  const isPricingPage = pathname === "/pricing";
   const [hasScrolled, setHasScrolled] = useState(false);
 
   const handleTest = () => router.push("/test");
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 0);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  // Determine pricing button class based on prop type and current page
-  let pricingButtonClass = "";
-  if (typeof onPricingClick === "function") {
-    pricingButtonClass = isPricingPage
-      ? "text-gray-600" // Already on pricing page → no hover
-      : "text-gray-600 hover:text-[#fc3636]"; // Hover if not on pricing page
-  } else if (onPricingClick === "static") {
-    pricingButtonClass = "text-gray-600"; // Static → always show, no hover
-  }
+  const handleLogin = () => router.push("/login");
 
   // Determine the background style based on scroll state
   const getBackgroundStyle = () => {
@@ -86,31 +63,26 @@ export function Header({
           </div>
 
           {/* Right side buttons */}
-          <div className="flex items-center gap-6">
-            {onPricingClick && (
-              <button
-                onClick={
-                  typeof onPricingClick === "function"
-                    ? onPricingClick
-                    : undefined
-                }
-                className={`text-sm font-medium transition-colors ${pricingButtonClass}`}
-              >
-                Pricing
-              </button>
-            )}
+          <div className="flex items-center gap-2">
+            <HotkeyButton
+              hotkey="l"
+              variant="light"
+              size="sm"
+              className="rounded-sm text-sm scale-[0.92]"
+              onClick={handleLogin}
+            >
+              Login
+            </HotkeyButton>
 
-            {showTestButton && (
-              <HotkeyButton
-                hotkey="t"
-                variant="dark"
-                size="sm"
-                className="bg-gray-900 hover:bg-gray-800 text-white rounded-md text-sm scale-[0.95]"
-                onClick={handleTest}
-              >
-                Test for $100
-              </HotkeyButton>
-            )}
+            <HotkeyButton
+              hotkey="t"
+              variant="dark"
+              size="sm"
+              className="bg-gray-900 hover:bg-gray-800 text-white rounded-sm text-sm scale-[0.92]"
+              onClick={handleTest}
+            >
+              Test for $100
+            </HotkeyButton>
           </div>
         </div>
       </div>

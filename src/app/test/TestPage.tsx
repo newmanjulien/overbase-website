@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useTest } from "./TestContext";
 import { TestPageLayout } from "../../components/layouts/TestPageLayout";
 import { Input } from "../../components/ui/input";
-import { DATASOURCES } from "./step3/datasources";
 
 interface TestPageProps {
   onHome: () => void;
@@ -13,14 +12,6 @@ interface TestPageProps {
 
 export function TestPage({ onHome, onNext }: TestPageProps) {
   const { email, setEmail } = useTest();
-
-  // Preload all datasource logos in the background
-  useEffect(() => {
-    DATASOURCES.forEach((ds) => {
-      const img = new window.Image();
-      img.src = ds.logo;
-    });
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

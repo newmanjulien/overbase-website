@@ -32,7 +32,9 @@ export function TestPageLayout({
   const content = (
     <>
       <div className="space-y-4 text-center">
-        <h1 className="text-3xl text-gray-900 tracking-tight">{title}</h1>
+        <h1 className="text-3xl text-gray-900 font-medium tracking-tight">
+          {title}
+        </h1>
         <p className="text-sm text-gray-900 leading-relaxed">{description}</p>
       </div>
       {children}

@@ -13,7 +13,7 @@ export function HotkeyBadge({
   const baseClasses =
     "hidden md:inline-flex items-center justify-center w-5 h-5 rounded-sm text-xs font-bold";
   const variantClasses =
-    variant === "dark" ? "bg-gray-700 text-white" : "bg-gray-200 text-black";
+    variant === "dark" ? "bg-gray-800 text-white" : "bg-gray-200 text-black";
 
   return <span className={`${baseClasses} ${variantClasses}`}>{keyChar}</span>;
 }
@@ -73,8 +73,14 @@ export const HotkeyButton = forwardRef<
     }, [hotkey]);
 
     return (
-      <Button ref={setRef} onClick={onClick} size={size} className={className}>
-        <span className="inline-flex items-center gap-1.5">
+      <Button
+        ref={setRef}
+        onClick={onClick}
+        variant={variant === "light" ? "secondary" : "default"}
+        size={size}
+        className={className}
+      >
+        <span className="inline-flex items-center gap-2">
           {children}
           <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
         </span>
