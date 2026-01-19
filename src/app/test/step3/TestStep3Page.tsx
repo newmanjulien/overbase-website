@@ -7,12 +7,16 @@ import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import { DatasourceCombobox } from "./DatasourceCombobox";
 
 interface TestStep3PageProps {
-  onHome: () => void;
+  onLogoClick: () => void;
   onBack: () => void;
   onNext: () => void;
 }
 
-export function TestStep3Page({ onHome, onBack, onNext }: TestStep3PageProps) {
+export function TestStep3Page({
+  onLogoClick,
+  onBack,
+  onNext,
+}: TestStep3PageProps) {
   const router = useRouter();
   const {
     email,
@@ -55,7 +59,7 @@ export function TestStep3Page({ onHome, onBack, onNext }: TestStep3PageProps) {
     <TestPageLayout
       title="Pick datasources"
       description="What datasources will you give us access to so we can answer your question?"
-      onHome={onHome}
+      onLogoClick={onLogoClick}
       onBack={onBack}
       onSubmit={handleSubmit}
       primaryActionText="Submit"

@@ -6,10 +6,12 @@ import { useTest } from "../TestContext";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 
 interface TestConfirmationPageProps {
-  onHome: () => void;
+  onLogoClick: () => void;
 }
 
-export function TestConfirmationPage({ onHome }: TestConfirmationPageProps) {
+export function TestConfirmationPage({
+  onLogoClick,
+}: TestConfirmationPageProps) {
   const { clearTestData } = useTest();
 
   useEffect(() => {
@@ -20,13 +22,13 @@ export function TestConfirmationPage({ onHome }: TestConfirmationPageProps) {
     <TestPageLayout
       title="Question received"
       description="Someone from our team will be in touch to set up your datasources and test this question"
-      onHome={onHome}
+      onLogoClick={onLogoClick}
     >
       <div className="flex gap-3 pt-4">
         <Button
           size="lg"
           className="flex-1 bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
-          onClick={onHome}
+          onClick={() => (window.location.href = "/")}
         >
           Back to home
         </Button>

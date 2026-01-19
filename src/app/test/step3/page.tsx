@@ -8,7 +8,7 @@ export default function TestStep3Route() {
 
   return (
     <TestStep3Page
-      onHome={() => router.push("/")}
+      onLogoClick={() => router.back()}
       onBack={() => router.back()}
       onNext={() => router.push("/test/confirmation")}
     />

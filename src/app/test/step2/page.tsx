@@ -8,7 +8,7 @@ export default function TestStep2Route() {
 
   return (
     <TestStep2Page
-      onHome={() => router.push("/")}
+      onLogoClick={() => router.back()}
       onBack={() => router.back()}
       onNext={() => router.push("/test/step3")}
     />

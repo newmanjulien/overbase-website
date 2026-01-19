@@ -6,11 +6,11 @@ import { TestPageLayout } from "../../components/layouts/TestPageLayout";
 import { Input } from "../../components/ui/input";
 
 interface TestPageProps {
-  onHome: () => void;
+  onLogoClick: () => void;
   onNext: () => void;
 }
 
-export function TestPage({ onHome, onNext }: TestPageProps) {
+export function TestPage({ onLogoClick, onNext }: TestPageProps) {
   const { email, setEmail } = useTest();
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -22,7 +22,7 @@ export function TestPage({ onHome, onNext }: TestPageProps) {
     <TestPageLayout
       title="Get in-depth and reliable answers"
       description="See for yourself how in-depth and reliable our answers are by testing with your data"
-      onHome={onHome}
+      onLogoClick={onLogoClick}
       onSubmit={handleSubmit}
       primaryActionText="Test for $100"
     >

@@ -6,12 +6,16 @@ import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 
 interface TestStep2PageProps {
-  onHome: () => void;
+  onLogoClick: () => void;
   onBack: () => void;
   onNext: () => void;
 }
 
-export function TestStep2Page({ onHome, onBack, onNext }: TestStep2PageProps) {
+export function TestStep2Page({
+  onLogoClick,
+  onBack,
+  onNext,
+}: TestStep2PageProps) {
   const router = useRouter();
   const { email, useCase, setUseCase } = useTest();
   const [loading, setLoading] = useState(false);
@@ -41,7 +45,7 @@ export function TestStep2Page({ onHome, onBack, onNext }: TestStep2PageProps) {
     <TestPageLayout
       title="What question do you want to test?"
       description=""
-      onHome={onHome}
+      onLogoClick={onLogoClick}
       onBack={onBack}
       onSubmit={handleSubmit}
       primaryActionText="1 last step"

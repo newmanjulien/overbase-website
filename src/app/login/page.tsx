@@ -9,15 +9,15 @@ export default function LoginPage() {
   const router = useRouter();
   const [email, setEmail] = useState("");
 
-  const handleHome = () => {
-    router.push("/");
+  const handleLogoClick = () => {
+    router.back();
   };
 
   return (
     <TestPageLayout
       title="Welcome to Overbase"
       description=""
-      onHome={handleHome}
+      onLogoClick={handleLogoClick}
       primaryActionText="Continue"
       isPrimaryDisabled={true}
     >

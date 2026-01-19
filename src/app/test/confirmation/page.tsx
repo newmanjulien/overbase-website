@@ -6,5 +6,5 @@ import { TestConfirmationPage } from "./TestConfirmationPage";
 export default function TestConfirmationRoute() {
   const router = useRouter();
 
-  return <TestConfirmationPage onHome={() => router.push("/")} />;
+  return <TestConfirmationPage onLogoClick={() => router.back()} />;
 }

@@ -8,7 +8,7 @@ interface TestPageLayoutProps {
   children: ReactNode;
   title: string;
   description?: string;
-  onHome: () => void;
+  onLogoClick: () => void;
   onSubmit?: (e: React.FormEvent) => void;
   primaryActionText?: string;
   isPrimaryDisabled?: boolean;
@@ -21,7 +21,7 @@ export function TestPageLayout({
   children,
   title,
   description,
-  onHome,
+  onLogoClick,
   onSubmit,
   primaryActionText,
   isPrimaryDisabled,
@@ -103,7 +103,7 @@ export function TestPageLayout({
       <div className="flex-1 flex flex-col bg-surface relative">
         {/* Header with logo */}
         <div className="absolute top-0 left-0 right-0 z-50 px-6 md:px-12 lg:px-24 py-8">
-          <button type="button" aria-label="Go home" onClick={onHome}>
+          <button type="button" aria-label="Go back" onClick={onLogoClick}>
             <Image
               src="/logo.png"
               alt="Overbase logo"

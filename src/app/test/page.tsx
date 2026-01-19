@@ -8,7 +8,7 @@ export default function TestRoute() {
 
   return (
     <TestPage
-      onHome={() => router.push("/")}
+      onLogoClick={() => router.back()}
       onNext={() => router.push("/test/step2")}
     />
   );
