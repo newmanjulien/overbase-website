@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { usePathname, useRouter } from "next/navigation";
-import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { useState } from "react";
 import { HotkeyButton } from "./buttons/HotkeyButton";
+import { useNavigateToTest } from "../hooks/useTestEntryPoint";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
@@ -18,15 +19,10 @@ export function Header({
   onLogoClick,
   initialBackgroundColor,
 }: BaseHeaderProps) {
-  const pathname = usePathname();
   const router = useRouter();
   const [hasScrolled, setHasScrolled] = useState(false);
+  const navigateToTest = useNavigateToTest();
 
-  const handleTest = () => {
-    // Store entry point before navigating so we can return here from logo click
-    sessionStorage.setItem("test-entry-point", pathname);
-    router.push("/test");
-  };
   const handleLogin = () => router.push("/login");
 
   // Determine the background style based on scroll state
@@ -83,7 +79,7 @@ export function Header({
               variant="dark"
               size="sm"
               className="rounded-sm text-sm scale-[0.92]"
-              onClick={handleTest}
+              onClick={navigateToTest}
             >
               Test for $100
             </HotkeyButton>

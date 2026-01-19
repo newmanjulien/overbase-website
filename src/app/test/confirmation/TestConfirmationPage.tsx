@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { Button } from "../../../components/ui/button";
 import { useTest } from "../TestContext";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
+import { useTestEntryPoint } from "../../../hooks/useTestEntryPoint";
 
 interface TestConfirmationPageProps {
   onLogoClick: () => void;
@@ -12,11 +14,14 @@ interface TestConfirmationPageProps {
 export function TestConfirmationPage({
   onLogoClick,
 }: TestConfirmationPageProps) {
+  const router = useRouter();
   const { clearTestData } = useTest();
+  const { clearEntryPoint } = useTestEntryPoint();
 
   useEffect(() => {
     clearTestData();
-  }, [clearTestData]);
+    clearEntryPoint();
+  }, [clearTestData, clearEntryPoint]);
 
   return (
     <TestPageLayout
@@ -28,7 +33,7 @@ export function TestConfirmationPage({
         <Button
           size="lg"
           className="flex-1 bg-gray-900 hover:bg-gray-800 text-white p-4 text-sm rounded-lg"
-          onClick={() => (window.location.href = "/")}
+          onClick={() => router.push("/")}
         >
           Back to home
         </Button>

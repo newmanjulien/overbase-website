@@ -1,13 +1,12 @@
 "use client";
 
 import { useEffect } from "react";
-import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../components/ui/button";
 import { DATASOURCES } from "./test/step3/datasources";
+import { useNavigateToTest } from "../hooks/useTestEntryPoint";
 
 export function HeroSection() {
-  const router = useRouter();
-  const pathname = usePathname();
+  const navigateToTest = useNavigateToTest();
 
   // Preload the test page video and datasource logos in the background
   useEffect(() => {
@@ -23,11 +22,6 @@ export function HeroSection() {
     });
   }, []);
 
-  const handleTest = () => {
-    // Store entry point before navigating so we can return here from logo click
-    sessionStorage.setItem("test-entry-point", pathname);
-    router.push("/test");
-  };
   const handleDemo = () =>
     window.open("https://cal.com/juliennewman/julien", "_blank");
 
@@ -51,7 +45,7 @@ export function HeroSection() {
           {/* Desktop buttons - now visible at md */}
           <div className="hidden md:flex mt-10 gap-2 xl:gap-4">
             <Button
-              onClick={handleTest}
+              onClick={navigateToTest}
               variant="default"
               size="lg"
               className="p-6 text-md rounded-lg"
@@ -74,7 +68,7 @@ export function HeroSection() {
       {/* === Mobile Layout (only shown below md) === */}
       <div className="w-full max-w-6xl mx-auto md:hidden mt-6 flex flex-col items-center gap-6">
         <Button
-          onClick={handleTest}
+          onClick={navigateToTest}
           variant="default"
           size="lg"
           className="p-5 text-base rounded-lg w-full max-w-lg"

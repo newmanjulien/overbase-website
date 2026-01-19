@@ -1,49 +1,40 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback } from "react";
+import { useRouter, usePathname } from "next/navigation";
 
 const STORAGE_KEY = "test-entry-point";
 
-export function useTestEntryPoint() {
-  const [entryPoint, setEntryPoint] = useState<string>("/");
+/**
+ * Hook for starting the test flow. Stores current page as entry point
+ * before navigating to /test.
+ */
+export function useNavigateToTest() {
+  const router = useRouter();
+  const pathname = usePathname();
 
-  useEffect(() => {
-    // Check if entry point already exists in session storage
-    const stored = sessionStorage.getItem(STORAGE_KEY);
+  return useCallback(() => {
+    sessionStorage.setItem(STORAGE_KEY, pathname);
+    router.push("/test");
+  }, [router, pathname]);
+}
 
-    if (stored) {
-      // Use existing entry point
-      setEntryPoint(stored);
-    } else {
-      // Capture entry point: use referrer if available and it's from same origin, else fallback to '/'
-      const referrer = document.referrer;
-      let capturedEntryPoint = "/";
-
-      if (referrer) {
-        try {
-          const referrerUrl = new URL(referrer);
-          const currentUrl = new URL(window.location.href);
-
-          // Only use referrer if it's from same origin and not a test page
-          if (
-            referrerUrl.origin === currentUrl.origin &&
-            !referrerUrl.pathname.startsWith("/test")
-          ) {
-            capturedEntryPoint = referrerUrl.pathname;
-          }
-        } catch {
-          // Invalid URL, use fallback
-        }
-      }
-
-      sessionStorage.setItem(STORAGE_KEY, capturedEntryPoint);
-      setEntryPoint(capturedEntryPoint);
-    }
-  }, []);
-
-  const clearEntryPoint = () => {
+// Stable reference for clearEntryPoint to avoid re-render issues
+const clearEntryPoint = () => {
+  if (typeof window !== "undefined") {
     sessionStorage.removeItem(STORAGE_KEY);
-  };
+  }
+};
+
+/**
+ * Hook for reading the stored entry point (used by test pages for logo click).
+ * Returns a snapshot of the entry point at call time.
+ */
+export function useTestEntryPoint() {
+  const entryPoint =
+    typeof window !== "undefined"
+      ? sessionStorage.getItem(STORAGE_KEY) || "/"
+      : "/";
 
   return { entryPoint, clearEntryPoint };
 }

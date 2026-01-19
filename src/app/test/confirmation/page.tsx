@@ -6,12 +6,7 @@ import { useTestEntryPoint } from "../../../hooks/useTestEntryPoint";
 
 export default function TestConfirmationRoute() {
   const router = useRouter();
-  const { entryPoint, clearEntryPoint } = useTestEntryPoint();
+  const { entryPoint } = useTestEntryPoint();
 
-  const handleLogoClick = () => {
-    clearEntryPoint();
-    router.push(entryPoint);
-  };
-
-  return <TestConfirmationPage onLogoClick={handleLogoClick} />;
+  return <TestConfirmationPage onLogoClick={() => router.push(entryPoint)} />;
 }

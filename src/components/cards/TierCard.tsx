@@ -1,7 +1,7 @@
 "use client";
 
-import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
+import { useNavigateToTest } from "../../hooks/useTestEntryPoint";
 import {
   Check,
   Shield,
@@ -104,14 +104,7 @@ function FeatureIconComponent({
 }
 
 export default function TierCard({ tier }: TierCardProps) {
-  const router = useRouter();
-  const pathname = usePathname();
-
-  const handleTest = () => {
-    // Store entry point before navigating so we can return here from logo click
-    sessionStorage.setItem("test-entry-point", pathname);
-    router.push("/test");
-  };
+  const navigateToTest = useNavigateToTest();
 
   return (
     <div
@@ -161,7 +154,7 @@ export default function TierCard({ tier }: TierCardProps) {
       </div>
 
       <Button
-        onClick={handleTest}
+        onClick={navigateToTest}
         variant={tier.highlighted ? "default" : "secondary"}
         className="w-full mt-6 rounded-lg py-2"
       >
