@@ -5,17 +5,13 @@ import { useTest } from "../TestContext";
 import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 
-interface TestStep2PageProps {
+interface TestStep2Props {
   onLogoClick: () => void;
   onBack: () => void;
   onNext: () => void;
 }
 
-export function TestStep2Page({
-  onLogoClick,
-  onBack,
-  onNext,
-}: TestStep2PageProps) {
+export function TestStep2({ onLogoClick, onBack, onNext }: TestStep2Props) {
   const router = useRouter();
   const { email, useCase, setUseCase } = useTest();
   const [loading, setLoading] = useState(false);

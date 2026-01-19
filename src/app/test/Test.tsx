@@ -5,12 +5,12 @@ import { useTest } from "./TestContext";
 import { TestPageLayout } from "../../components/layouts/TestPageLayout";
 import { Input } from "../../components/ui/input";
 
-interface TestPageProps {
+interface TestProps {
   onLogoClick: () => void;
   onNext: () => void;
 }
 
-export function TestPage({ onLogoClick, onNext }: TestPageProps) {
+export function Test({ onLogoClick, onNext }: TestProps) {
   const { email, setEmail } = useTest();
 
   const handleSubmit = (e: React.FormEvent) => {

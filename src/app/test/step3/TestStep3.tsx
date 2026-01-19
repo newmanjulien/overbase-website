@@ -6,17 +6,13 @@ import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import { DatasourceCombobox } from "./DatasourceCombobox";
 
-interface TestStep3PageProps {
+interface TestStep3Props {
   onLogoClick: () => void;
   onBack: () => void;
   onNext: () => void;
 }
 
-export function TestStep3Page({
-  onLogoClick,
-  onBack,
-  onNext,
-}: TestStep3PageProps) {
+export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
   const router = useRouter();
   const {
     email,

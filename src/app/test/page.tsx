@@ -1,13 +1,13 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { TestPage } from "./TestPage";
+import { Test } from "./Test";
 
 export default function TestRoute() {
   const router = useRouter();
 
   return (
-    <TestPage
+    <Test
       onLogoClick={() => router.back()}
       onNext={() => router.push("/test/step2")}
     />
