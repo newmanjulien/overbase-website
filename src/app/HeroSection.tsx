@@ -23,7 +23,7 @@ export function HeroSection() {
     <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-26 pb-17 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-md text-center md:text-left scale-[0.90]">
+        <div className="w-full max-w-xl text-center md:text-left scale-[0.90]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-tight font-semibold">
             Agentic Analyst for{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
@@ -31,18 +31,18 @@ export function HeroSection() {
             </span>
           </h1>
 
-          <h2 className="mt-6 text-xl text-gray-600 font-medium">
-            Get the in-depth answers you need to pinpoint the right actions to
-            take
+          <h2 className="mt-6 text-2xl text-gray-600 font-medium">
+            Overbase is how Revenue Execs get in-depth and reliable answers to
+            their hardest questions
           </h2>
 
           {/* Desktop buttons - now visible at md */}
-          <div className="hidden md:flex mt-6 gap-3 xl:gap-4">
+          <div className="hidden md:flex mt-8 gap-2 xl:gap-4">
             <Button
               onClick={handleTest}
               variant="default"
               size="lg"
-              className="bg-gray-900 hover:bg-gray-800 text-white p-5 xl:p-5.5 text-base rounded-lg"
+              className="bg-gray-900 hover:bg-gray-800 text-white p-6 text-base rounded-lg"
             >
               Test for $100
             </Button>
@@ -51,7 +51,7 @@ export function HeroSection() {
               onClick={handleDemo}
               variant="secondary"
               size="lg"
-              className="bg-gray-100 hover:bg-gray-200/60 text-black p-5 xl:p-5.5 text-base rounded-lg"
+              className="bg-gray-100 hover:bg-gray-200/60 text-black p-6 text-base rounded-lg"
             >
               Demo with our CEO
             </Button>
