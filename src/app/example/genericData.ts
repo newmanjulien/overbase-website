@@ -75,13 +75,13 @@ export const mockAnswers: ThreadAnswer[] = [
         column5: "Salesforce opportunity",
       },
       {
-        column1: "Outreach",
+        column1: "Globex",
         column2: "Net new",
         column3: "The CEO is onboard and pushing this deal forward",
         column4:
           "Sarah Chen says: Strong relationship with VP of Engineering. They've been waiting on budget approval since Q3.",
         column5:
-          "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001k8pLmNO/view",
+          "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001g9hJkLM/view",
       },
       {
         column1: "Stark Industries",
@@ -90,7 +90,7 @@ export const mockAnswers: ThreadAnswer[] = [
         column4:
           "Michael Torres says: Decision maker is on vacation until Jan 20. I'd wait until then to reach out.",
         column5:
-          "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001r3sQtUV/view",
+          "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001t4uVwXY/view",
       },
       {
         column1: "Wayne Enterprises",
@@ -99,7 +99,7 @@ export const mockAnswers: ThreadAnswer[] = [
         column4:
           "Jennifer Park says: They're evaluating a competitor but I think we can win if we offer multi-year pricing.",
         column5:
-          "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001w5xYzAB/view",
+          "acme.lightning.force.com/lightning/r/Opportunity/006Hs00001b6cDeGH/view",
       },
     ],
   },

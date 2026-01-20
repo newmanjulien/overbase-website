@@ -1,17 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import FollowupBar from "./components/FollowupBar";
 import AnswerCard from "./components/AnswerCard";
 import LLMToggle, { type LLMMode } from "./components/LLMToggle";
 import { deriveThread } from "./lib/thread";
-import { mockQuestion, mockAnswers } from "./data";
+import * as genericData from "./genericData";
+import * as personalData from "./personalData";
 
 export default function Example() {
   const [llmMode, setLlmMode] = useState<LLMMode>("generic");
 
-  // Derive the thread from static data
-  const thread = deriveThread(mockQuestion, mockAnswers);
+  // Select data based on LLM mode
+  const { mockQuestion, mockAnswers } =
+    llmMode === "generic" ? genericData : personalData;
+
+  // Derive the thread from selected data
+  const thread = useMemo(
+    () => deriveThread(mockQuestion, mockAnswers),
+    [mockQuestion, mockAnswers],
+  );
 
   // Hardcoded or prop-driven URLs
   const userAvatarUrl =
