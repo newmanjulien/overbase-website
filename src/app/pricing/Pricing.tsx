@@ -16,7 +16,7 @@ export default function Pricing() {
       priceAnnual: "$6,000",
       period: "user per month",
       description: "Your Personal LLM gets trained by our Data Scientists",
-      answersPerMonth: 50,
+      answersPerMonth: 20,
       features: [
         feature("Get a 26B Parameter Personal LLM", "sparkles"),
         feature(
@@ -41,7 +41,10 @@ export default function Pricing() {
       answersPerMonth: 100,
       features: [
         feature("Everything in Starter plus", "none"),
-        feature("You own and can download your Personal LLM", "fingerprint"),
+        feature(
+          "You own the IP and can download your Personal LLM",
+          "fingerprint",
+        ),
         feature(
           "1 login for you and 1 separate login for your Chief of Staff or ops team",
           "users",
