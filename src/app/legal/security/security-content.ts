@@ -49,15 +49,15 @@ export const securitySections: LegalSection[] = [
     content: [],
     subsections: [
       {
-        title: "2.1. Proprietary AI Models",
+        title: "2.1. Self-Hosted Model Infrastructure",
         content: [
-          "Overbase warrants that Customer Data processed by Overbase’s proprietary AI models is never used to train said models. All Customer Data processed by proprietary models is deleted immediately following the completion of the processing task.",
+          "Overbase performs all data analysis using a self-hosted Large Language Model (LLM) deployed within Overbase’s private, secure infrastructure. This model is not accessed via third-party APIs or cloud-based interfaces, ensuring that all processing and training occur on hardware under Overbase's exclusive control.",
         ],
       },
       {
-        title: "2.2. Third-Party AI Models",
+        title: "2.2. Customer-Owned Training & Deletion",
         content: [
-          "Overbase utilizes third-party AI models solely where such providers contractually agree that: (a) Customer Data will not be used to train their AI models; and (b) Customer Data will not be retained by the third-party provider after processing.",
+          "Customer Data is utilized to train and optimize the AI model instance dedicated to the Customer. Overbase warrants that each trained model is the exclusive property of the Customer. Upon termination or expiration of the Agreement, Overbase shall permanently delete the dedicated model and all associated trained parameters.",
         ],
       },
       {

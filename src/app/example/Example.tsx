@@ -1,13 +1,25 @@
 "use client";
 
+import { useState, useMemo } from "react";
 import FollowupBar from "./components/FollowupBar";
 import AnswerCard from "./components/AnswerCard";
+import LLMToggle, { type LLMMode } from "./components/LLMToggle";
 import { deriveThread } from "./lib/thread";
-import { mockQuestion, mockAnswers } from "./data";
+import * as genericData from "./genericData";
+import * as personalData from "./personalData";
 
 export default function Example() {
-  // Derive the thread from static data
-  const thread = deriveThread(mockQuestion, mockAnswers);
+  const [llmMode, setLlmMode] = useState<LLMMode>("generic");
+
+  // Select data based on LLM mode
+  const { mockQuestion, mockAnswers } =
+    llmMode === "generic" ? genericData : personalData;
+
+  // Derive the thread from selected data
+  const thread = useMemo(
+    () => deriveThread(mockQuestion, mockAnswers),
+    [mockQuestion, mockAnswers],
+  );
 
   // Hardcoded or prop-driven URLs
   const userAvatarUrl =
@@ -17,41 +29,49 @@ export default function Example() {
 
   return (
     <div className="h-full w-full">
-      <div className="max-w-5xl mx-auto py-8">
-        <div className="space-y-2">
-          {thread.map((card) => {
-            switch (card.type) {
-              case "question":
-                return (
-                  <AnswerCard
-                    key="question"
-                    type="question"
-                    content={card.content}
-                    date={card.date}
-                    privacy={card.privacy}
-                    userAvatarUrl={userAvatarUrl}
-                    overbaseIconUrl={overbaseIconUrl}
-                  />
-                );
+      <div className="max-w-7xl mx-auto py-8 px-4">
+        <div className="flex gap-8">
+          {/* Main content area */}
+          <div className="flex-1 max-w-3xl space-y-2">
+            {thread.map((card) => {
+              switch (card.type) {
+                case "question":
+                  return (
+                    <AnswerCard
+                      key="question"
+                      type="question"
+                      content={card.content}
+                      date={card.date}
+                      privacy={card.privacy}
+                      userAvatarUrl={userAvatarUrl}
+                      overbaseIconUrl={overbaseIconUrl}
+                    />
+                  );
 
-              case "response":
-                return (
-                  <AnswerCard
-                    key={card.answerId}
-                    type="response"
-                    answerId={card.answerId}
-                    sender={card.sender}
-                    content={card.content}
-                    privacy={card.privacy}
-                    tableData={card.tableData}
-                    userAvatarUrl={userAvatarUrl}
-                    overbaseIconUrl={overbaseIconUrl}
-                  />
-                );
-            }
-          })}
+                case "response":
+                  return (
+                    <AnswerCard
+                      key={card.answerId}
+                      type="response"
+                      answerId={card.answerId}
+                      sender={card.sender}
+                      content={card.content}
+                      privacy={card.privacy}
+                      tableData={card.tableData}
+                      userAvatarUrl={userAvatarUrl}
+                      overbaseIconUrl={overbaseIconUrl}
+                    />
+                  );
+              }
+            })}
 
-          <FollowupBar userAvatarUrl={userAvatarUrl} />
+            <FollowupBar userAvatarUrl={userAvatarUrl} />
+          </div>
+
+          {/* LLM Mode Toggle - Top Right */}
+          <div className="flex-shrink-0 sticky top-8 self-start">
+            <LLMToggle mode={llmMode} onModeChange={setLlmMode} />
+          </div>
         </div>
       </div>
     </div>

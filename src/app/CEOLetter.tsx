@@ -30,56 +30,50 @@ export function CEOLetter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                You have questions when you look at your dashboards and your
-                reports. And you need to answer those questions to get at the
-                root cause of what’s happening in your organization
+                You have questions when you look at your dashboards, reports or
+                CRM
               </p>
 
               <p>
-                But the information you need to get answers you trust is in too
-                many systems.{" "}
-                <strong className="font-medium">
-                  And getting to the bottom of what’s actually happening is slow
-                  and hard
-                </strong>
+                Your questions are hard. Getting a reliable answer takes days or
+                sometimes even more than a week
               </p>
 
               <p>
-                <strong className="font-medium">
-                  And that means you sometimes might not know what you need to
-                  know for make the right decisions
-                </strong>
+                Getting the information you need is hard. The data is in too
+                many systems. It's formatted wrong. It's outdated
               </p>
 
               <p>
-                Overbase lets Revenue Execs easily ask questions in plain
-                English. Then get reliable answers that truly go in-depth and
-                let you understand enough to take action
+                Getting useful insights is hard. Because the question itself
+                changes as you learn about the answer
               </p>
 
               <p>
-                We answer in-depth and accurately because we use an Agentic
-                Analyst to get and analyze data
+                Which means that getting reliable answers ends up being so hard
+                that in real life,{" "}
+                <span className="font-medium">
+                  you often can't actually know what you need to know to make
+                  the decisions you need to make
+                </span>
+              </p>
+
+              <p className="font-medium">
+                Overbase is the only automated system that's more reliable and
+                gets better answers than the best human analyst
               </p>
 
               <p>
-                Legacy disconnected systems make it hard to get answers. Which
-                is why today you need to ask a Human Analyst when your question
-                crosses more than 1 tool or platform
+                We get this level of quality by training a Personal Large
+                Language Model that's trained and fine-tuned for you
+                individually
               </p>
 
               <p>
-                Agentic Analysts make all your tools and platforms talk to each
-                other. Which lets you get answers from even the most
-                disconnected data. And they do the same deep analysis the best
-                Human Analyst would do. Which lets you get in-depth answers to
-                complex questions
-              </p>
-
-              <p>
-                With Overbase, your team will spend less time producing reports
-                and inputting data. And you will get the answers you need to
-                pinpoint the right actions to take
+                Personal LLM know your data, understand how you think of the
+                business and learn how your specific data systems work. Which
+                means that it easily answers your questions in a truly in-depth
+                and reliable way
               </p>
 
               <p>

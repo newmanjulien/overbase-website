@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import { useTest } from "./TestContext";
 import { TestPageLayout } from "../../components/layouts/TestPageLayout";
 import { Input } from "../../components/ui/input";

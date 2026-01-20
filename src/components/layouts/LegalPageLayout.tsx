@@ -99,7 +99,7 @@ function Section({ section }: { section: LegalSection }) {
  * - Left: Main content (title, intro, sections)
  * - Right: Sticky Table of Contents sidebar
  *
- * Note: The parent page should pass `initialBackgroundColor="#fbfbfb"` to the Header
+ * Note: The parent page should pass `initialBackgroundColor="var(--color-surface)"` to the Header
  * to match the hero section background for a seamless look.
  */
 export function LegalPageLayout({
@@ -118,7 +118,7 @@ export function LegalPageLayout({
       {/* Hero Section with Title */}
       <section
         className="w-full pt-18 border-b border-gray-100"
-        style={{ backgroundColor: "#fbfbfb" }}
+        style={{ backgroundColor: "var(--color-surface)" }}
       >
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
           <LegalBreadcrumb currentPageTitle={metadata.title} />
