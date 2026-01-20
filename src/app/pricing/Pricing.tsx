@@ -82,8 +82,8 @@ export default function Pricing() {
     <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-7xl mx-auto">
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-4xl mx-auto scale-[0.90]">
-        <h1 className="text-5xl text-gray-900 font-medium">
-          Get reliable answers you trust
+        <h1 className="text-5xl text-gray-900 ">
+          Reliable answers with a Personal LLM
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed font-medium">
           Our Data Scientists supervise, train and guide your Personal Large

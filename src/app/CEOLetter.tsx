@@ -70,10 +70,10 @@ export function CEOLetter() {
               </p>
 
               <p>
-                This Personal LLM knows your data, understands how you think of
-                the business and learns how your specific data systems work.
-                Which means that it can answer your questions in a truly
-                in-depth and reliable way
+                Personal LLM know your data, understand how you think of the
+                business and learn how your specific data systems work. Which
+                means that it easily answers your questions in a truly in-depth
+                and reliable way
               </p>
 
               <p>

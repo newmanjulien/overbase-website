@@ -49,7 +49,21 @@ export default function FAQ() {
             },
             {
               q: "What are the advantages of Personal LLMs?",
-              a: "Actually good answers and true security. We can train your Personal LLM on your data and still keep it isolated from the public internet. This means it can't leak your data or be used to attack others",
+              a: (
+                <>
+                  Actually good answers and actually real security. We can train
+                  your Personal LLM on your data and still keep it isolated from
+                  the public internet. And our Personal LLMs actually know you,
+                  your business and your data. Check out this{" "}
+                  <Link
+                    href="/example"
+                    target="_blank"
+                    className="text-blue-400 underline hover:text-blue-300"
+                  >
+                    example
+                  </Link>
+                </>
+              ),
             },
             {
               q: "How do Personal LLMs work and how are they trained?",
@@ -59,11 +73,13 @@ export default function FAQ() {
                   model. We then train the base model using proprietary machine
                   generated data which shows the model how to do data analysis
                   work for Revenue Execs and how to navigate the most complex
-                  and disconnected data systems in an agentic manner. Then our
-                  Data Scientists continue training and fine-tuning the model
-                  using the data which is created from answering your questions.
-                  This means your Personal LLM gets better and better over time
-                  and can answer your questions in an in-depth and reliable way.
+                  and disconnected data systems. Then our Data Scientists
+                  continue training and fine-tuning the model using the data
+                  which is created from answering your questions. Our Personal
+                  LLMs always run on Overbase's local servers and never connect
+                  to APIs or any other AI services. What this means for you is
+                  that your Personal LLM gets better and better over time and
+                  can answer your questions in an in-depth and reliable way.
                   Check out this{" "}
                   <Link
                     href="/example"
@@ -79,7 +95,7 @@ export default function FAQ() {
             },
             {
               q: "Do I own the IP of my Personal LLM?",
-              a: "Yes. You always own the IP of your Personal LLM. Overbase cannot use your Personal LLM for any purpose other than to answer your questions. When you use the Team or Enterprise tier, you can even download your Personal LLM and run it on your own infrastructure",
+              a: "Yes with our Team and Enterprise plans. Overbase never uses your Personal LLM for any purpose other than to answer your questions. But with the Team or Enterprise tier, you own the IP and can download your Personal LLM to run it on your own infrastructure",
             },
           ].map((item, i) => (
             <AccordionItem
