@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
@@ -23,27 +24,62 @@ export default function FAQ() {
           {[
             {
               q: "What type of questions can my Personal LLM answer?",
-              a: "Any question which can be answered by analyzing your internal data. Agentic Analysts can easily access all your internal data sources, find the answers you need, question their own results and get you the most in-depth and reliable answers possible",
+              a: "Any question which can be answered by analyzing your internal data. Your Personal LLM can easily access all your internal data sources, find the answers you need, question their own results and get you the most in-depth and reliable answers possible. And your Personal LLM knows your business, your data and your preferences",
             },
             {
               q: "How reliable are the answers from my Personal LLM?",
-              a: "Fully reliable as long as there's a human in the loop. Agentic Analysts can process more data, faster and better than the best Human Analyst. And get you the most in-depth and reliable answers possible. But the tech is still new so they need humans to coordinate them and review their work. This is why Overbase has a team of human data scientists who coordinate our agents and review their work",
+              a: "Fully reliable as long as one of our Data Scientists supervises it. Personal LLM can process more data, faster and better than the best human analyst. And get you the most in-depth and reliable answers possible. But the tech is still new so they need humans to coordinate them and review their work. This is why Overbase has a team of human data scientists who supervise our Personal LLMs",
             },
             {
-              q: "How does my Personal LLM compare to Generic LLMs like ChatGPT?",
-              a: "The same way a Human Analyst accesses your data. And the same way legacy data systems access your data. Human Analysts access data by logging into accounts and querying dashboards. Legacy data systems use APIs to connect to data. Agentic Analysts do both easily with almost 0 setup",
+              q: "How does my Personal LLM compare to Generic LLMs?",
+              a: (
+                <>
+                  Personal LLMs know you, your business and your data. This
+                  means you can ask them anything and get reliable answers.
+                  Check out this{" "}
+                  <Link
+                    href="/example"
+                    target="_blank"
+                    className="text-blue-400 underline hover:text-blue-300"
+                  >
+                    example
+                  </Link>
+                </>
+              ),
             },
             {
               q: "What are the advantages of Personal LLMs?",
-              a: "Yes as long as there's a human in the loop. Agentic Analysts can process exponentially more data, faster and better than the best Human Analyst. And get you the most in-depth and reliable answers possible. But the tech is still new so they need humans to coordinate them and review their work. This is why Overbase has a team of human data scientists who coordinate our agents and review their work",
+              a: "Actually good answers and true security. We can train your Personal LLM on your data and still keep it isolated from the public internet. This means it can't leak your data or be used to attack others",
             },
             {
               q: "How do Personal LLMs work and how are they trained?",
-              a: "The same way a Human Analyst would, but easier. The Agentic Analysts contacts team members using their preferred channel: email, Slack, text message, etc. Then lets them share data in whatever format is easiest: sending a screenshot, voice notes, sharing a file, etc.",
+              a: (
+                <>
+                  Overbase's Personal LLMs start with GPT OSS as their base
+                  model. We then train the base model using proprietary machine
+                  generated data which shows the model how to do data analysis
+                  work for Revenue Execs and how to navigate the most complex
+                  and disconnected data systems in an agentic manner. Then our
+                  Data Scientists continue training and fine-tuning the model
+                  using the data which is created from answering your questions.
+                  This means your Personal LLM gets better and better over time
+                  and can answer your questions in an in-depth and reliable way.
+                  Check out this{" "}
+                  <Link
+                    href="/example"
+                    target="_blank"
+                    className="text-blue-400 underline hover:text-blue-300"
+                  >
+                    example
+                  </Link>{" "}
+                  to see how much better Personal LLMs are compared to Generic
+                  LLMs
+                </>
+              ),
             },
             {
               q: "Do I own the IP of my Personal LLM?",
-              a: "The same way a Human Analyst would, but easier. The Agentic Analysts contacts team members using their preferred channel: email, Slack, text message, etc. Then lets them share data in whatever format is easiest: sending a screenshot, voice notes, sharing a file, etc.",
+              a: "Yes. You always own the IP of your Personal LLM. Overbase cannot use your Personal LLM for any purpose other than to answer your questions. When you use the Team or Enterprise tier, you can even download your Personal LLM and run it on your own infrastructure",
             },
           ].map((item, i) => (
             <AccordionItem

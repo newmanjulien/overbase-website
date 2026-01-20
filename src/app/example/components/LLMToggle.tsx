@@ -13,12 +13,12 @@ const descriptions = {
   generic: {
     title: "Our answer with a Generic LLM",
     description:
-      "Overbase is in a whole different league compared to legacy database query tools like Snowflake Intelligence or Salesforce Einstein. But our system is still slow and hard to use without a Personal LLM. Because Generic LLMs don't know you",
+      "Overbase is in a different league compared to database query tools like Snowflake Intelligence or Salesforce Einstein. But our system is still hard to use without a Personal LLM. Generic LLMs make mistakes because they don't know you",
   },
   personal: {
     title: "Our answer with a Personal LLM",
     description:
-      "A Personal LLM gets truly reliable and truly in-depth answers because it is carefully trained for your as an individual. This Personal LLM is a +200 GB file which runs on Overbase's private and secure servers. It isn't connected to any APIs or other generic AI services",
+      "A Personal LLM gets reliable and in-depth answers because it is trained for you as an individual. This Personal LLM is a +200 GB file which runs on Overbase's private server. It isn't connected to any APIs or other generic AI services",
   },
 };
 
@@ -67,15 +67,13 @@ export default function LLMToggle({
         </div>
 
         {/* Description Section */}
-        <div className="p-4">
-          <div className="p-3 bg-gray-50/50 rounded-lg border border-gray-100">
-            <h4 className="text-sm font-semibold text-gray-900 mb-1">
-              {descriptions[mode].title}
-            </h4>
-            <p className="text-xs leading-relaxed text-gray-600">
-              {descriptions[mode].description}
-            </p>
-          </div>
+        <div className="px-6.5 pb-5 pt-4.5">
+          <h4 className="text-sm font-medium text-gray-900 mb-1">
+            {descriptions[mode].title}
+          </h4>
+          <p className="text-xs leading-relaxed text-gray-600">
+            {descriptions[mode].description}
+          </p>
         </div>
       </div>
     </div>
