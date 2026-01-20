@@ -38,7 +38,7 @@ export default function Pricing() {
       priceAnnual: "$9,000",
       period: "user per month",
       description: "You own the IP of your Personal LLM and can download it",
-      answersPerMonth: 100,
+      answersPerMonth: 50,
       features: [
         feature("Everything in Starter plus", "none"),
         feature(
