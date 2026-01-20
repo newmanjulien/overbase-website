@@ -45,7 +45,7 @@ export default function LLMToggle({
           <div className="flex gap-2 p-1 bg-gray-50 rounded-md border border-gray-100">
             <button
               onClick={() => handleModeChange("generic")}
-              className={`flex-1 py-2.5 px-4 rounded-md text-sm transition-all ${
+              className={`flex-1 rounded-md text-sm transition-all ${
                 mode === "generic"
                   ? "bg-white text-gray-900 shadow-xs"
                   : "text-gray-500 hover:text-gray-700"

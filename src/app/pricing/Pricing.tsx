@@ -1,7 +1,7 @@
 "use client";
 
 import TierCard, { feature } from "../../components/cards/TierCard";
-import BillingToggle from "../../components/BillingToggle";
+import PricingToggle from "../../components/PricingToggle";
 import { useState } from "react";
 
 export default function Pricing() {
@@ -18,7 +18,7 @@ export default function Pricing() {
       description: "Your Personal LLM gets trained by our Data Scientists",
       answersPerMonth: 50,
       features: [
-        feature("Get a 20B Parameter Personal LLM", "sparkles"),
+        feature("Get a 26B Parameter Personal LLM", "sparkles"),
         feature(
           "Our Data Scientists supervise and train your Personal LLM",
           "award",
@@ -62,7 +62,7 @@ export default function Pricing() {
       answersPerMonth: 150,
       features: [
         feature("Everything in Team plus", "none"),
-        feature("Get a 120B Parameter Personal LLM", "sparkles"),
+        feature("Get a 190B Parameter Personal LLM", "sparkles"),
         feature(
           "Named technical lead works with your team on data integrations",
           "user",
@@ -92,7 +92,7 @@ export default function Pricing() {
         </p>
       </section>
 
-      <BillingToggle
+      <PricingToggle
         billingCycle={billingCycle}
         onBillingCycleChange={setBillingCycle}
       />

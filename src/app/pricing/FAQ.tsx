@@ -15,7 +15,7 @@ export default function FAQ() {
         <div className="text-center">
           <h2 className="text-4xl text-gray-900 mb-4">About Personal LLMs</h2>
           <p className="text-neutral-600 text-center max-w-2xl mx-auto">
-            Your Personal Large Language Model knows your data, understands you
+            Your Personal Large Language Model knows you, understands your data
             and can answer your questions in an in-depth and reliable way
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function FAQ() {
             >
               <AccordionTrigger
                 className="text-left text-md font-normal text-gray-800 hover:no-underline"
-                style={{ fontSize: "0.95em" }}
+                style={{ fontSize: "0.92em" }}
               >
                 {item.q}
               </AccordionTrigger>

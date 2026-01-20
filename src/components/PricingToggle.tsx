@@ -2,15 +2,15 @@
 
 type BillingCycle = "monthly" | "annual";
 
-interface BillingToggleProps {
+interface PricingToggleProps {
   billingCycle: BillingCycle;
   onBillingCycleChange: (cycle: BillingCycle) => void;
 }
 
-export default function BillingToggle({
+export default function PricingToggle({
   billingCycle,
   onBillingCycleChange,
-}: BillingToggleProps) {
+}: PricingToggleProps) {
   const toggleButtonClass = (isActive: boolean) =>
     `relative px-6 py-2 rounded-sm text-sm transition-all duration-300 ${
       isActive
