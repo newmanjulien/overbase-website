@@ -10,7 +10,7 @@ import {
 
 export default function FAQ() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 py-24">
+    <section className="px-6 md:px-12 lg:px-24 py-12 lg:py-24">
       <div className="max-w-3xl mx-auto space-y-12">
         <div className="text-center">
           <h2 className="text-4xl text-gray-900 mb-4">About Personal LLMs</h2>

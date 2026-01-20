@@ -82,7 +82,7 @@ export default function Pricing() {
   ];
 
   return (
-    <section className="px-6 md:px-12 lg:px-24 pb-20 max-w-7xl mx-auto">
+    <section className="px-6 md:px-12 lg:px-24 pb-8 lg:pb-20 max-w-7xl mx-auto">
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-4xl mx-auto scale-[0.90]">
         <h1 className="text-5xl text-gray-900 ">
@@ -101,7 +101,7 @@ export default function Pricing() {
       />
 
       {/* Pricing Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10 scale-[0.95]">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2 md:mt-10 scale-[0.95]">
         {tiers.map((tier) => (
           <TierCard
             key={tier.name}
