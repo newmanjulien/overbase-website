@@ -90,7 +90,7 @@ export default function Pricing() {
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed font-medium">
           Our Data Scientists supervise, train and guide your Personal Large
-          Language Model so it learns how to analyze your data and answer your
+          Language Model so it gets to know you and learns how to answer your
           questions in a reliable way
         </p>
       </section>
