@@ -12,7 +12,7 @@ export default function DataProcessingAgreementPage() {
     <div className="min-h-screen bg-surface">
       <Header
         onLogoClick={() => router.push("/")}
-        initialBackgroundColor="#fbfbfb"
+        initialBackgroundColor="var(--color-surface)"
       />
       <DataProcessingAgreement />
       <Footer />

@@ -1,6 +1,12 @@
 "use client";
 
-import React, { createContext, useContext, useState, useEffect } from "react";
+import React, {
+  createContext,
+  useContext,
+  useState,
+  useEffect,
+  useCallback,
+} from "react";
 
 const STORAGE_KEYS = {
   EMAIL: "test_email",
@@ -57,7 +63,7 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
   const setDatasource3 = (v: string) =>
     sync(_setDatasource3, STORAGE_KEYS.DATASOURCE3, v);
 
-  const clearTestData = () => {
+  const clearTestData = useCallback(() => {
     _setEmail("");
     _setUseCase("");
     _setDatasource1("");
@@ -72,7 +78,7 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
         }
       });
     }
-  };
+  }, []);
 
   const submitTest = async () => {
     const res = await fetch("/api/send-test-email", {

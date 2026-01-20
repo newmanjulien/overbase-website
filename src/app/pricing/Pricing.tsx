@@ -15,37 +15,41 @@ export default function Pricing() {
       priceMonthly: "$8,000",
       priceAnnual: "$6,000",
       period: "user per month",
-      description:
-        "For in-depth and reliable answers that are reviewed by humans",
+      description: "Your Personal LLM gets trained by our Data Scientists",
       answersPerMonth: 50,
       features: [
-        feature("AI uses up to 5 million tokens per question", "sparkles"),
-        feature("Human reviews answers", "award"),
+        feature("Get a 20B Parameter Personal LLM", "sparkles"),
+        feature(
+          "Our Data Scientists supervise and train your Personal LLM",
+          "award",
+        ),
         feature("Connect to all your datasources in minutes", "zap"),
-        feature("Your data is never used to train our AI", "lock"),
         feature("0 of your data is stored by Overbase", "shield"),
+        feature(
+          "Your Personal LLM and all your training data is deleted if you cancel",
+          "lock",
+        ),
       ],
-      cta: "Test how in-depth and reliable",
+      cta: "Test how reliable our answers are",
     },
     {
       name: "Team",
       priceMonthly: "$12,000",
       priceAnnual: "$9,000",
       period: "user per month",
-      description:
-        "For teams who share insights and need to collaborate more easily",
+      description: "You own the IP of your Personal LLM and can download it",
       answersPerMonth: 100,
       features: [
         feature("Everything in Starter plus", "none"),
+        feature("You own and can download your Personal LLM", "fingerprint"),
         feature(
           "1 login for you and 1 separate login for your Chief of Staff or ops team",
           "users",
         ),
         feature("Share templates and datasources with colleagues", "network"),
         feature("Guided migration and onboarding", "login"),
-        feature("Dedicated Slack channel", "slack"),
       ],
-      cta: "Test how in-depth and reliable",
+      cta: "Test how reliable our answers are",
       highlighted: true,
     },
     {
@@ -53,22 +57,23 @@ export default function Pricing() {
       priceMonthly: "$20,000",
       priceAnnual: "$15,000",
       period: "user per month",
-      description: "For the most complex data and the most strict security",
+      description:
+        "You get a more advanced Personal LLM and the most strict security",
       answersPerMonth: 150,
       features: [
         feature("Everything in Team plus", "none"),
-        feature("AI uses up to 10 million tokens per question", "sparkles"),
+        feature("Get a 120B Parameter Personal LLM", "sparkles"),
         feature(
           "Named technical lead works with your team on data integrations",
           "user",
         ),
         feature("SAML/OIDC SSO", "lock"),
         feature(
-          "Custom NDAs with each Overbase data scientist who reviews your data",
+          "Custom NDAs with Data Scientists who train your LLM",
           "shield",
         ),
       ],
-      cta: "Test how in-depth and reliable",
+      cta: "Test how reliable our answers are",
       highlighted: false,
     },
   ];
@@ -78,11 +83,12 @@ export default function Pricing() {
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-4xl mx-auto scale-[0.90]">
         <h1 className="text-5xl text-gray-900 font-medium">
-          Get in-depth and reliable answers
+          Get reliable answers you trust
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed font-medium">
-          Our AI uses millions of tokens to answer each of your questions in
-          depth. Then a human reviews the answer to make sure it's reliable
+          Our Data Scientists supervise, train and guide your Personal Large
+          Language Model so it learns how to analyze your data and answer your
+          questions in a reliable way
         </p>
       </section>
 

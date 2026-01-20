@@ -11,11 +11,11 @@ import {
   Users,
   Users2,
   Sparkles,
-  Slack,
   LogIn,
   Network,
   Phone,
   Award,
+  Fingerprint,
 } from "lucide-react";
 import { ReactNode } from "react";
 
@@ -29,7 +29,7 @@ export type FeatureIcon =
   | "users"
   | "users2"
   | "sparkles"
-  | "slack"
+  | "fingerprint"
   | "login"
   | "network"
   | "phone"
@@ -87,8 +87,8 @@ function FeatureIconComponent({
       return <Users2 className={className} />;
     case "sparkles":
       return <Sparkles className={className} />;
-    case "slack":
-      return <Slack className={className} />;
+    case "fingerprint":
+      return <Fingerprint className={className} />;
     case "login":
       return <LogIn className={className} />;
     case "network":

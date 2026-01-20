@@ -45,6 +45,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
       onNext();
     } catch (err) {
       setError(err instanceof Error ? err.message : "Something went wrong");
+    } finally {
       setLoading(false);
     }
   };
@@ -54,7 +55,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
   return (
     <TestPageLayout
       title="Pick datasources"
-      description="What datasources will you connect (and will we analyze) to answer your question?"
+      description="What datasources will you connect (and we'll analyze) to answer your question?"
       onLogoClick={onLogoClick}
       onBack={onBack}
       onSubmit={handleSubmit}
