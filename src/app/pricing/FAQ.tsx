@@ -23,10 +23,6 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "What type of questions can my Personal LLM answer?",
-              a: "Any question which can be answered by analyzing your internal data. Your Personal LLM can easily access all your internal data sources, find the answers you need, question their own results and get you the most in-depth and reliable answers possible. And your Personal LLM knows your business, your data and your preferences",
-            },
-            {
               q: "How reliable are the answers from my Personal LLM?",
               a: "Fully reliable as long as one of our Data Scientists supervises it. Personal LLM can process more data, faster and better than the best human analyst. And get you the most in-depth and reliable answers possible. But the tech is still new so they need humans to coordinate them and review their work. This is why Overbase has a team of human data scientists who supervise our Personal LLMs",
             },
@@ -64,6 +60,10 @@ export default function FAQ() {
                   </Link>
                 </>
               ),
+            },
+            {
+              q: "How common are Personal LLMs?",
+              a: "Common amongst Software Engineers and Data Scientists, but not yet common with non-technical professionals. Many Software Engineers and Data Scientists train and run a Personal LLM on their local machines instead of using Generic LLMs through APIs. And many large businesses like Apple have commissioned custom LLMs for their products",
             },
             {
               q: "How do Personal LLMs work and how are they trained?",
