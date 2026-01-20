@@ -62,7 +62,7 @@ export default function Pricing() {
       period: "user per month",
       description:
         "You get a more advanced Personal LLM and the most strict security",
-      answersPerMonth: 150,
+      answersPerMonth: 100,
       features: [
         feature("Everything in Team plus", "none"),
         feature("Get a 190B Parameter Personal LLM", "sparkles"),
