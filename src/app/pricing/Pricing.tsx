@@ -18,16 +18,19 @@ export default function Pricing() {
       description: "Your Personal LLM gets trained by our Data Scientists",
       answersPerMonth: 20,
       features: [
-        feature("Get a 26B Parameter Personal LLM", "sparkles"),
-        feature(
-          "Our Data Scientists supervise and train your Personal LLM",
-          "award",
-        ),
-        feature("Connect to all your datasources in minutes", "zap"),
-        feature("0 of your data is stored by Overbase", "shield"),
+        feature("26B Parameter Personal LLM", {
+          icon: "sparkles",
+          tooltip:
+            "A standalone Large Language Model that's trained for you. It's a +40 GB file which lives on Overbase's servers (not ChatGPT with a system prompt)",
+        }),
+        feature("Our Data Scientists supervise and train your Personal LLM", {
+          icon: "award",
+        }),
+        feature("Connect to all your datasources in minutes", { icon: "zap" }),
+        feature("0 of your data is stored by Overbase", { icon: "shield" }),
         feature(
           "Your Personal LLM and all your training data is deleted if you cancel",
-          "lock",
+          { icon: "lock" },
         ),
       ],
       cta: "Test how reliable our answers are",
@@ -40,17 +43,20 @@ export default function Pricing() {
       description: "You own the IP of your Personal LLM and can download it",
       answersPerMonth: 50,
       features: [
-        feature("Everything in Starter plus", "none"),
-        feature(
-          "You own the IP and can download your Personal LLM",
-          "fingerprint",
-        ),
+        feature("Everything in Starter plus", { icon: "none" }),
+        feature("You own the IP and can download your Personal LLM", {
+          icon: "fingerprint",
+          tooltip:
+            "A standalone Large Language Model that's trained for you. It's a +40 GB file which you own and which you could download (not ChatGPT with a system prompt)",
+        }),
         feature(
           "1 login for you and 1 separate login for your Chief of Staff or ops team",
-          "users",
+          { icon: "users" },
         ),
-        feature("Share templates and datasources with colleagues", "network"),
-        feature("Guided migration and onboarding", "login"),
+        feature("Share templates and datasources with colleagues", {
+          icon: "network",
+        }),
+        feature("Guided migration and onboarding", { icon: "login" }),
       ],
       cta: "Test how reliable our answers are",
       highlighted: true,
@@ -64,17 +70,20 @@ export default function Pricing() {
         "You get a more advanced Personal LLM and the most strict security",
       answersPerMonth: 100,
       features: [
-        feature("Everything in Team plus", "none"),
-        feature("Get a 190B Parameter Personal LLM", "sparkles"),
+        feature("Everything in Team plus", { icon: "none" }),
+        feature("190B Parameter Personal LLM", {
+          icon: "sparkles",
+          tooltip:
+            "A standalone Large Language Model that's trained for you. It's a +200 GB file which you own and which you could download (not ChatGPT with a system prompt)",
+        }),
         feature(
           "Named technical lead works with your team on data integrations",
-          "user",
+          { icon: "user" },
         ),
-        feature("SAML/OIDC SSO", "lock"),
-        feature(
-          "Custom NDAs with Data Scientists who train your LLM",
-          "shield",
-        ),
+        feature("SAML/OIDC SSO", { icon: "lock" }),
+        feature("Custom NDAs with Data Scientists who train your LLM", {
+          icon: "shield",
+        }),
       ],
       cta: "Test how reliable our answers are",
       highlighted: false,
@@ -86,12 +95,12 @@ export default function Pricing() {
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-4xl mx-auto scale-[0.90]">
         <h1 className="text-5xl text-gray-900 ">
-          Reliable answers with a Personal LLM
+          Reliable and in-depth answers
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed font-medium">
-          Our Data Scientists supervise, train and guide your Personal Large
-          Language Model so it gets to know you and learns how to answer your
-          questions in a reliable way
+          Our Data Scientists supervise and train your Personal Large Language
+          Model so it gets to know you and learns how to answer your questions
+          in a reliable way
         </p>
       </section>
 

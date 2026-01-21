@@ -16,8 +16,10 @@ import {
   Phone,
   Award,
   Fingerprint,
+  HelpCircle,
 } from "lucide-react";
 import { ReactNode } from "react";
+import { Tooltip, TooltipTrigger, TooltipContent } from "../ui/tooltip";
 
 // Icon types that can be used for features
 export type FeatureIcon =
@@ -36,15 +38,22 @@ export type FeatureIcon =
   | "award"
   | "none";
 
-// Feature can be a string (backwards compatible) or an object with text and optional icon
+// Feature can be a string (backwards compatible) or an object with text and optional icon/tooltip
 export interface Feature {
   text: string;
   icon?: FeatureIcon;
+  tooltip?: string;
 }
 
-// Helper for better DX - no need for "as const"
-export function feature(text: string, icon?: FeatureIcon): Feature {
-  return { text, icon };
+// Options for the feature helper
+interface FeatureOptions {
+  icon?: FeatureIcon;
+  tooltip?: string;
+}
+
+// Helper for better DX - named parameters for optional properties
+export function feature(text: string, options?: FeatureOptions): Feature {
+  return { text, icon: options?.icon, tooltip: options?.tooltip };
 }
 
 export interface Tier {
@@ -143,11 +152,30 @@ export default function TierCard({ tier }: TierCardProps) {
           const isObject = typeof feature === "object";
           const text = isObject ? feature.text : feature;
           const icon = isObject ? feature.icon : "check";
+          const tooltip = isObject ? feature.tooltip : undefined;
 
           return (
             <div key={i} className="flex items-start gap-2">
               <FeatureIconComponent icon={icon} />
-              <span className="text-sm text-gray-600">{text}</span>
+              <span className="text-sm text-gray-600">
+                {text}
+                {tooltip && (
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <button
+                        type="button"
+                        className="inline-flex align-middle ml-1.5 -translate-y-0.5 text-gray-400 hover:text-gray-600 transition-colors"
+                        aria-label={`Info about ${text}`}
+                      >
+                        <HelpCircle className="h-3.5 w-3.5" />
+                      </button>
+                    </TooltipTrigger>
+                    <TooltipContent side="right">
+                      <p className="text-xs max-w-xs">{tooltip}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                )}
+              </span>
             </div>
           );
         })}

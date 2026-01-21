@@ -11,14 +11,14 @@ interface LLMToggleProps {
 
 const descriptions = {
   generic: {
-    title: "Overbase's answer with a Generic LLM",
+    title: "Answer with a Generic LLM",
     description:
-      "Overbase is in a different league compared to database query tools like Snowflake Intelligence or Salesforce Einstein. But our system is still hard to use without a Personal LLM. Generic LLMs make mistakes because they don't know you",
+      "We always give you reliable and in-depth answers. But our system is harder to use without a Personal LLM",
   },
   personal: {
-    title: "Overbase's answer with a Personal LLM",
+    title: "Answer with a Personal LLM",
     description:
-      "A Personal LLM gets reliable and in-depth answers because it is trained for you as an individual. This Personal LLM is a +200 GB file which runs on Overbase's private server. It isn't connected to any APIs or other generic AI services",
+      "Your Personal LLM is trained for you as an individual. It knows you and understands how you think",
   },
 };
 

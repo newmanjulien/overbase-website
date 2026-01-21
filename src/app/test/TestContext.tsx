@@ -8,12 +8,15 @@ import React, {
   useCallback,
 } from "react";
 
+export type AccessMethod = "export" | "system";
+
 const STORAGE_KEYS = {
   EMAIL: "test_email",
   USE_CASE: "test_use_case",
   DATASOURCE1: "test_datasource1",
   DATASOURCE2: "test_datasource2",
-  DATASOURCE3: "test_datasource3",
+  DATASOURCE1_ACCESS_METHOD: "test_datasource1_access_method",
+  DATASOURCE2_ACCESS_METHOD: "test_datasource2_access_method",
 } as const;
 
 interface TestContextType {
@@ -23,10 +26,12 @@ interface TestContextType {
   setUseCase: (useCase: string) => void;
   datasource1: string;
   setDatasource1: (ds: string) => void;
+  datasource1AccessMethod: AccessMethod;
+  setDatasource1AccessMethod: (method: AccessMethod) => void;
   datasource2: string;
   setDatasource2: (ds: string) => void;
-  datasource3: string;
-  setDatasource3: (ds: string) => void;
+  datasource2AccessMethod: AccessMethod;
+  setDatasource2AccessMethod: (method: AccessMethod) => void;
   isLoaded: boolean;
   clearTestData: () => void;
   submitTest: () => Promise<void>;
@@ -38,12 +43,19 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
   const [email, _setEmail] = useState("");
   const [useCase, _setUseCase] = useState("");
   const [datasource1, _setDatasource1] = useState("");
+  const [datasource1AccessMethod, _setDatasource1AccessMethod] =
+    useState<AccessMethod>("export");
   const [datasource2, _setDatasource2] = useState("");
-  const [datasource3, _setDatasource3] = useState("");
+  const [datasource2AccessMethod, _setDatasource2AccessMethod] =
+    useState<AccessMethod>("export");
   const [isLoaded, setIsLoaded] = useState(false);
 
   // Unified persistence helper
-  const sync = (setter: (v: string) => void, key: string, val: string) => {
+  const sync = <T extends string>(
+    setter: (v: T) => void,
+    key: string,
+    val: T,
+  ) => {
     setter(val);
     if (typeof window !== "undefined") {
       try {
@@ -58,17 +70,28 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
   const setUseCase = (v: string) => sync(_setUseCase, STORAGE_KEYS.USE_CASE, v);
   const setDatasource1 = (v: string) =>
     sync(_setDatasource1, STORAGE_KEYS.DATASOURCE1, v);
+  const setDatasource1AccessMethod = (v: AccessMethod) =>
+    sync(
+      _setDatasource1AccessMethod,
+      STORAGE_KEYS.DATASOURCE1_ACCESS_METHOD,
+      v,
+    );
   const setDatasource2 = (v: string) =>
     sync(_setDatasource2, STORAGE_KEYS.DATASOURCE2, v);
-  const setDatasource3 = (v: string) =>
-    sync(_setDatasource3, STORAGE_KEYS.DATASOURCE3, v);
+  const setDatasource2AccessMethod = (v: AccessMethod) =>
+    sync(
+      _setDatasource2AccessMethod,
+      STORAGE_KEYS.DATASOURCE2_ACCESS_METHOD,
+      v,
+    );
 
   const clearTestData = useCallback(() => {
     _setEmail("");
     _setUseCase("");
     _setDatasource1("");
+    _setDatasource1AccessMethod("export");
     _setDatasource2("");
-    _setDatasource3("");
+    _setDatasource2AccessMethod("export");
     if (typeof window !== "undefined") {
       Object.values(STORAGE_KEYS).forEach((key) => {
         try {
@@ -88,8 +111,9 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
         email,
         useCase,
         datasource1,
+        datasource1AccessMethod,
         datasource2,
-        datasource3,
+        datasource2AccessMethod,
       }),
     });
 
@@ -100,11 +124,11 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
   // Hydrate on mount
   useEffect(() => {
     if (typeof window !== "undefined") {
-      const loadSafe = (key: string, setter: (v: string) => void) => {
+      const loadSafe = <T,>(key: string, setter: (v: T) => void) => {
         try {
           const saved = window.sessionStorage.getItem(key);
           if (saved !== null) {
-            setter(JSON.parse(saved));
+            setter(JSON.parse(saved) as T);
           }
         } catch (e) {
           console.warn(`Failed to hydrate ${key}:`, e);
@@ -114,8 +138,15 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
       loadSafe(STORAGE_KEYS.EMAIL, _setEmail);
       loadSafe(STORAGE_KEYS.USE_CASE, _setUseCase);
       loadSafe(STORAGE_KEYS.DATASOURCE1, _setDatasource1);
+      loadSafe(
+        STORAGE_KEYS.DATASOURCE1_ACCESS_METHOD,
+        _setDatasource1AccessMethod,
+      );
       loadSafe(STORAGE_KEYS.DATASOURCE2, _setDatasource2);
-      loadSafe(STORAGE_KEYS.DATASOURCE3, _setDatasource3);
+      loadSafe(
+        STORAGE_KEYS.DATASOURCE2_ACCESS_METHOD,
+        _setDatasource2AccessMethod,
+      );
       setIsLoaded(true);
     } else {
       setIsLoaded(true);
@@ -131,10 +162,12 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
         setUseCase,
         datasource1,
         setDatasource1,
+        datasource1AccessMethod,
+        setDatasource1AccessMethod,
         datasource2,
         setDatasource2,
-        datasource3,
-        setDatasource3,
+        datasource2AccessMethod,
+        setDatasource2AccessMethod,
         isLoaded,
         clearTestData,
         submitTest,

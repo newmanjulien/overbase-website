@@ -5,6 +5,7 @@ import { useTest } from "../TestContext";
 import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import { DatasourceCombobox } from "./DatasourceCombobox";
+import { AccessMethodToggle } from "./AccessMethodToggle";
 
 interface TestStep3Props {
   onLogoClick: () => void;
@@ -19,10 +20,12 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
     useCase,
     datasource1,
     setDatasource1,
+    datasource1AccessMethod,
+    setDatasource1AccessMethod,
     datasource2,
     setDatasource2,
-    datasource3,
-    setDatasource3,
+    datasource2AccessMethod,
+    setDatasource2AccessMethod,
     submitTest,
   } = useTest();
   const [loading, setLoading] = useState(false);
@@ -55,7 +58,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
   return (
     <TestPageLayout
       title="Pick datasources"
-      description="What datasources will you connect (and we'll analyze) to answer your question?"
+      description="What datasources will you connect and will we analyze to answer your question?"
       onLogoClick={onLogoClick}
       onBack={onBack}
       onSubmit={handleSubmit}
@@ -65,28 +68,42 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
       error={error}
     >
       <div className="space-y-4">
-        <DatasourceCombobox
-          value={datasource1}
-          onChange={setDatasource1}
-          placeholder="First datasource"
-          disabled={loading}
-        />
+        {/* Datasource 1 */}
+        <div className="space-y-2">
+          <DatasourceCombobox
+            value={datasource1}
+            onChange={setDatasource1}
+            placeholder="First datasource"
+            disabled={loading}
+          />
+          {datasource1 && (
+            <AccessMethodToggle
+              id="datasource1"
+              value={datasource1AccessMethod}
+              onChange={setDatasource1AccessMethod}
+              disabled={loading}
+            />
+          )}
+        </div>
 
-        <DatasourceCombobox
-          value={datasource2}
-          onChange={setDatasource2}
-          placeholder="Second datasource (optional)"
-          disabled={loading}
-          disabledValues={[datasource1].filter(Boolean)}
-        />
-
-        <DatasourceCombobox
-          value={datasource3}
-          onChange={setDatasource3}
-          placeholder="Third datasource (optional)"
-          disabled={loading}
-          disabledValues={[datasource1, datasource2].filter(Boolean)}
-        />
+        {/* Datasource 2 */}
+        <div className="space-y-2">
+          <DatasourceCombobox
+            value={datasource2}
+            onChange={setDatasource2}
+            placeholder="Second datasource (optional)"
+            disabled={loading || !datasource1}
+            disabledValues={[datasource1].filter(Boolean)}
+          />
+          {datasource2 && (
+            <AccessMethodToggle
+              id="datasource2"
+              value={datasource2AccessMethod}
+              onChange={setDatasource2AccessMethod}
+              disabled={loading}
+            />
+          )}
+        </div>
       </div>
     </TestPageLayout>
   );

@@ -1,18 +1,42 @@
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
+type AccessMethod = "export" | "system";
+
 interface TestSignupData {
   email: string;
   useCase: string;
   datasource1?: string;
+  datasource1AccessMethod?: AccessMethod;
   datasource2?: string;
-  datasource3?: string;
+  datasource2AccessMethod?: AccessMethod;
 }
+
+const formatAccessMethod = (method?: AccessMethod): string => {
+  if (!method) return "";
+  return method === "export" ? "Send export" : "System access";
+};
+
+const formatDatasource = (
+  name?: string,
+  accessMethod?: AccessMethod,
+): string => {
+  if (!name) return "N/A";
+  const method = formatAccessMethod(accessMethod);
+  return method ? `${name} (${method})` : name;
+};
 
 export async function POST(req: Request) {
   const data: TestSignupData = await req.json();
 
-  const { email, useCase, datasource1, datasource2, datasource3 } = data;
+  const {
+    email,
+    useCase,
+    datasource1,
+    datasource1AccessMethod,
+    datasource2,
+    datasource2AccessMethod,
+  } = data;
 
   if (!email) {
     return NextResponse.json({ error: "Email is required" }, { status: 400 });
@@ -24,8 +48,9 @@ export async function POST(req: Request) {
       email,
       useCase,
       datasource1,
+      datasource1AccessMethod,
       datasource2,
-      datasource3,
+      datasource2AccessMethod,
     });
     return NextResponse.json({ success: true });
   }
@@ -48,9 +73,8 @@ Email: ${email}
 Question they want answered:
 ${useCase}
 
-Datasource 1: ${datasource1 || "N/A"}
-Datasource 2: ${datasource2 || "N/A"}
-Datasource 3: ${datasource3 || "N/A"}
+Datasource 1: ${formatDatasource(datasource1, datasource1AccessMethod)}
+Datasource 2: ${formatDatasource(datasource2, datasource2AccessMethod)}
 `.trim();
 
   try {

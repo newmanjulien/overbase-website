@@ -40,13 +40,13 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Getting the information you need is hard. The data is in too
+                Gathering the information you need is hard. The data is in too
                 many systems. It's formatted wrong. It's outdated
               </p>
 
               <p>
-                Getting useful insights is hard. Because the question itself
-                changes as you learn about the answer
+                Getting useful insights is hard. Because the right answer
+                depends on your context
               </p>
 
               <p>
@@ -65,8 +65,7 @@ export function CEOLetter() {
 
               <p>
                 We get this level of quality by training a Personal Large
-                Language Model that's trained and fine-tuned for you
-                individually
+                Language Model for each of our users
               </p>
 
               <p>

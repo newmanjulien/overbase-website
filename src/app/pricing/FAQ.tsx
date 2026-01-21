@@ -23,16 +23,16 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "How reliable are the answers from my Personal LLM?",
-              a: "Fully reliable as long as one of our Data Scientists supervises it. Personal LLM can process more data, faster and better than the best human analyst. And get you the most in-depth and reliable answers possible. But the tech is still new so they need humans to coordinate them and review their work. This is why Overbase has a team of human data scientists who supervise our Personal LLMs",
+              q: "Is a Personal LLM actually a standalone Large Language Model?",
+              a: "Yes, it's a standalone Large Language Model that's trained for you. It's not connected to any APIs or other AI services. It's not ChatGPT with a system prompt. It's a +200 GB file which lives on Overbase's servers, is run locally on our machines and is only used to answer your questions.",
             },
             {
               q: "How does my Personal LLM compare to Generic LLMs?",
               a: (
                 <>
                   Personal LLMs know you, your business and your data. This
-                  means you can ask them anything and get reliable answers.
-                  Check out this{" "}
+                  means you can easily ask them anything and get reliable and
+                  in-depth answers. Check out this{" "}
                   <Link
                     href="/example"
                     target="_blank"
@@ -47,10 +47,10 @@ export default function FAQ() {
               q: "What are the advantages of Personal LLMs?",
               a: (
                 <>
-                  Actually good answers and actually real security. We can train
-                  your Personal LLM on your data and still keep it isolated from
-                  the public internet. And our Personal LLMs actually know you,
-                  your business and your data. Check out this{" "}
+                  Good answers and real security. We can train your Personal LLM
+                  on your data and still keep it isolated from the public
+                  internet. And our Personal LLMs actually know you, your
+                  business and your data. Check out this{" "}
                   <Link
                     href="/example"
                     target="_blank"
@@ -63,39 +63,15 @@ export default function FAQ() {
             },
             {
               q: "How common are Personal LLMs?",
-              a: "Common amongst Software Engineers and Data Scientists, but not yet common with non-technical professionals. Many Software Engineers and Data Scientists train and run a Personal LLM on their local machines instead of using Generic LLMs through APIs. And many large businesses like Apple have commissioned custom LLMs for their products",
-            },
-            {
-              q: "How do Personal LLMs work and how are they trained?",
-              a: (
-                <>
-                  Overbase's Personal LLMs start with GPT OSS as their base
-                  model. We then train the base model using proprietary machine
-                  generated data which shows the model how to do data analysis
-                  work for Revenue Execs and how to navigate the most complex
-                  and disconnected data systems. Then our Data Scientists
-                  continue training and fine-tuning the model using the data
-                  which is created from answering your questions. Our Personal
-                  LLMs always run on Overbase's local servers and never connect
-                  to APIs or any other AI services. What this means for you is
-                  that your Personal LLM gets better and better over time and
-                  can answer your questions in an in-depth and reliable way.
-                  Check out this{" "}
-                  <Link
-                    href="/example"
-                    target="_blank"
-                    className="text-blue-400 underline hover:text-blue-300"
-                  >
-                    example
-                  </Link>{" "}
-                  to see how much better Personal LLMs are compared to Generic
-                  LLMs
-                </>
-              ),
+              a: "More and more common amongst Software Engineers and Data Scientists, but not yet common with non-technical professionals. Many Software Engineers and Data Scientists train and run a Personal LLM on their local machines instead of using Generic LLMs through APIs",
             },
             {
               q: "Do I own the IP of my Personal LLM?",
-              a: "Yes with our Team and Enterprise plans. Overbase never uses your Personal LLM for any purpose other than to answer your questions. But with the Team or Enterprise tier, you own the IP and can download your Personal LLM to run it on your own infrastructure",
+              a: "With our Team and Enterprise plans. Overbase never uses your Personal LLM for any purpose other than to answer your questions. But with the Team or Enterprise tier, you own the IP and can download your Personal LLM to run it on your own infrastructure",
+            },
+            {
+              q: "How do Personal LLMs work and how are they trained?",
+              a: "Overbase's Personal LLMs are a +200 GB file which lives on Overbase's servers, is run locally on our machines and is only used to answer your questions. Our Personal LLMs are not connected to any APIs or other AI services. Rather, they're a whole standalone Large Language Model that's trained for you. We build this Personal LLM by starting with GPT OSS (OpenAI's open source model) as the base model. We then train this base model so it learns how to do data analysis work for Revenue Execs and how to navigate the most complex and disconnected data systems. This extra training adds billions of parameters to the model. We then create a copy of this specialized and proprietary LLM and continue training and fine-tuning it for you. As you ask questions and get answers, our Data Scientists supervise the LLM to show it the right answers and teach it your preferences and your context",
             },
           ].map((item, i) => (
             <AccordionItem
