@@ -70,11 +70,10 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Your Personal LLM knows you and understands how you think. And
-                since it's a full standalone LLM trained for the single task of
-                analyzing your data, it can answer your questions in a truly
-                in-depth and reliable way even when the analysis is complex and
-                hard
+                Your Personal LLM is a standalone Large Language Model that's
+                trained for you. It's a 200 GB file on Overbase's servers that
+                we run locally. It knows you, understands how you think, and
+                it's trained to answer your hardest questions
               </p>
 
               <p>

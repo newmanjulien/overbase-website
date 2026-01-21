@@ -67,7 +67,7 @@ export interface Tier {
   answersPerMonth?: number;
 }
 
-interface TierCardProps {
+interface PricingCardProps {
   tier: Tier;
 }
 
@@ -112,7 +112,7 @@ function FeatureIconComponent({
   }
 }
 
-export default function TierCard({ tier }: TierCardProps) {
+export default function PricingCard({ tier }: PricingCardProps) {
   const navigateToTest = useNavigateToTest();
 
   return (

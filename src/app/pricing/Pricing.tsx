@@ -1,6 +1,6 @@
 "use client";
 
-import TierCard, { feature } from "../../components/cards/TierCard";
+import PricingCard, { feature } from "../../components/cards/PricingCard";
 import PricingToggle from "../../components/PricingToggle";
 import { useState } from "react";
 
@@ -112,7 +112,7 @@ export default function Pricing() {
       {/* Pricing Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-2 md:mt-10 scale-[0.95]">
         {tiers.map((tier) => (
-          <TierCard
+          <PricingCard
             key={tier.name}
             tier={{
               ...tier,
