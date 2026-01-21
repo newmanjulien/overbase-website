@@ -35,8 +35,8 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Your questions are hard. Getting a reliable answer takes days or
-                sometimes even more than a week
+                Your questions are hard. And getting a reliable answer takes
+                days or sometimes even more than a week
               </p>
 
               <p>
@@ -51,7 +51,7 @@ export function CEOLetter() {
 
               <p>
                 Which means that getting reliable answers ends up being so hard
-                that in real life,{" "}
+                that{" "}
                 <span className="font-medium">
                   you often can't actually know what you need to know to make
                   the decisions you need to make
@@ -70,9 +70,8 @@ export function CEOLetter() {
 
               <p>
                 Your Personal LLM knows you, understands how you think and
-                learns how your specific data systems work. Which means that it
-                easily answers your questions in a truly in-depth and reliable
-                way
+                learns how to find the data you need. Which means that it easily
+                answers your questions in a truly in-depth and reliable way
               </p>
 
               <p>
