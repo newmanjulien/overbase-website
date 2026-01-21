@@ -29,7 +29,7 @@ export function HeroSection() {
     <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-23 pb-16 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-xl text-center md:text-left scale-[0.91]">
+        <div className="w-full max-w-2xl text-center md:text-left scale-[0.91]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md">
             How Revenue Execs{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
@@ -38,8 +38,8 @@ export function HeroSection() {
           </h1>
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
-            Overbase lets Revenue Execs easily get reliable answers to their
-            hardest questions
+            Overbase trains Personal LLMs for Revenue Execs so you can get
+            reliable answers to your hardest questions
           </h2>
 
           {/* Desktop buttons - now visible at md */}

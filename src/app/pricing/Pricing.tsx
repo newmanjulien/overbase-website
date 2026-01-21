@@ -21,7 +21,7 @@ export default function Pricing() {
         feature("26B Parameter Personal LLM", {
           icon: "sparkles",
           tooltip:
-            "A standalone Large Language Model that's trained for you. It's a +40 GB file which lives on Overbase's servers (not ChatGPT with a system prompt)",
+            "A full standalone Large Language Model that's trained for you. It's a +40 GB file which lives on Overbase's servers",
         }),
         feature("Our Data Scientists supervise and train your Personal LLM", {
           icon: "award",
@@ -47,7 +47,7 @@ export default function Pricing() {
         feature("You own the IP and can download your Personal LLM", {
           icon: "fingerprint",
           tooltip:
-            "A standalone Large Language Model that's trained for you. It's a +40 GB file which you own and which you could download (not ChatGPT with a system prompt)",
+            "A full standalone Large Language Model that's trained for you. It's a +40 GB file which you own and which you can download",
         }),
         feature(
           "1 login for you and 1 separate login for your Chief of Staff or ops team",
@@ -74,7 +74,7 @@ export default function Pricing() {
         feature("190B Parameter Personal LLM", {
           icon: "sparkles",
           tooltip:
-            "A standalone Large Language Model that's trained for you. It's a +200 GB file which you own and which you could download (not ChatGPT with a system prompt)",
+            "A full standalone Large Language Model that's trained for you. It's a +200 GB file which you own and which you can download",
         }),
         feature(
           "Named technical lead works with your team on data integrations",

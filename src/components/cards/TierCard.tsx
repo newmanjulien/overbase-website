@@ -171,7 +171,7 @@ export default function TierCard({ tier }: TierCardProps) {
                       </button>
                     </TooltipTrigger>
                     <TooltipContent side="right">
-                      <p className="text-xs max-w-xs">{tooltip}</p>
+                      <p className="max-w-[200px]">{tooltip}</p>
                     </TooltipContent>
                   </Tooltip>
                 )}

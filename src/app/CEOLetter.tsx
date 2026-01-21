@@ -46,7 +46,8 @@ export function CEOLetter() {
 
               <p>
                 Getting useful insights is hard. Because the right answer
-                depends on your context
+                depends on your context. And because the analysis needed to get
+                the right answer is complex
               </p>
 
               <p>
@@ -69,9 +70,11 @@ export function CEOLetter() {
               </p>
 
               <p>
-                Your Personal LLM knows you, understands how you think and
-                learns how to find the data you need. Which means that it easily
-                answers your questions in a truly in-depth and reliable way
+                Your Personal LLM knows you and understands how you think. And
+                since it's a full standalone LLM trained for the single task of
+                analyzing your data, it can answer your questions in a truly
+                in-depth and reliable way even when the analysis is complex and
+                hard
               </p>
 
               <p>

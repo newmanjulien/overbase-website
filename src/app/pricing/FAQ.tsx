@@ -62,10 +62,6 @@ export default function FAQ() {
               ),
             },
             {
-              q: "How common are Personal LLMs?",
-              a: "More and more common amongst Software Engineers and Data Scientists, but not yet common with non-technical professionals. Many Software Engineers and Data Scientists train and run a Personal LLM on their local machines instead of using Generic LLMs through APIs",
-            },
-            {
               q: "Do I own the IP of my Personal LLM?",
               a: "With our Team and Enterprise plans. Overbase never uses your Personal LLM for any purpose other than to answer your questions. But with the Team or Enterprise tier, you own the IP and can download your Personal LLM to run it on your own infrastructure",
             },
