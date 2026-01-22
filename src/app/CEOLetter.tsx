@@ -53,8 +53,7 @@ export function CEOLetter() {
 
               <p>
                 Getting useful insights is hard. The right answer depends on
-                your context. And the analysis needed to get the right answer is
-                complex
+                your context. And the analysis is complex
               </p>
 
               <p>
