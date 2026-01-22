@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import { DatasourceCombobox } from "../../../components/DatasourceCombobox";
 import { AccessMethodToggle } from "../../../components/AccessMethodToggle";
+import { DATASOURCES } from "./datasources";
 
 interface TestStep3Props {
   onLogoClick: () => void;
@@ -75,6 +76,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
             onChange={setDatasource1}
             placeholder="First datasource"
             disabled={loading}
+            datasources={DATASOURCES}
           />
           {datasource1 && (
             <AccessMethodToggle
@@ -94,6 +96,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
             placeholder="Second datasource (optional)"
             disabled={loading || !datasource1}
             disabledValues={[datasource1].filter(Boolean)}
+            datasources={DATASOURCES}
           />
           {datasource2 && (
             <AccessMethodToggle

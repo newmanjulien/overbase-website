@@ -3,8 +3,8 @@
 import * as React from "react";
 import { Check, ChevronsUpDown } from "lucide-react";
 
-import { cn } from "../../../lib/utils";
-import { Button } from "../../../components/ui/button";
+import { cn } from "../lib/utils";
+import { Button } from "./ui/button";
 import {
   Command,
   CommandEmpty,
@@ -12,18 +12,20 @@ import {
   CommandInput,
   CommandItem,
   CommandList,
-} from "../../../components/ui/command";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "../../../components/ui/popover";
-import { DATASOURCES } from "./datasources";
+} from "./ui/command";
+import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+
+export interface Datasource {
+  value: string;
+  label: string;
+  logo: string;
+}
 
 interface DatasourceComboboxProps {
   value: string;
   onChange: (value: string) => void;
   placeholder: string;
+  datasources: Datasource[];
   disabledValues?: string[];
   disabled?: boolean;
 }
@@ -32,12 +34,13 @@ export function DatasourceCombobox({
   value,
   onChange,
   placeholder,
+  datasources,
   disabledValues = [],
   disabled = false,
 }: DatasourceComboboxProps) {
   const [open, setOpen] = React.useState(false);
 
-  const selectedDatasource = DATASOURCES.find((ds) => ds.value === value);
+  const selectedDatasource = datasources.find((ds) => ds.value === value);
 
   return (
     <Popover open={open} onOpenChange={setOpen}>
@@ -73,7 +76,7 @@ export function DatasourceCombobox({
           <CommandList>
             <CommandEmpty>No datasource found.</CommandEmpty>
             <CommandGroup>
-              {DATASOURCES.map((datasource) => {
+              {datasources.map((datasource) => {
                 const isDisabled = disabledValues.includes(datasource.value);
                 const isSelected = value === datasource.value;
 
