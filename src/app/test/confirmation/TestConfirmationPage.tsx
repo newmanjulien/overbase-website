@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "../../../components/ui/button";
-import { useTest } from "../TestContext";
+import { useTest } from "../../../lib/TestContext";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import { useTestEntryPoint } from "../../../hooks/useTestEntryPoint";
 

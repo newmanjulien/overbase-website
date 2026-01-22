@@ -1,6 +1,6 @@
 "use client";
 
-import { TestProvider, useTest } from "./TestContext";
+import { TestProvider, useTest } from "../../lib/TestContext";
 
 function TestLayoutContent({ children }: { children: React.ReactNode }) {
   const { isLoaded } = useTest();

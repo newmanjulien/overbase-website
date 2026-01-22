@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { useTest } from "../TestContext";
+import { useTest } from "../../../lib/TestContext";
 import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import {
@@ -25,8 +25,9 @@ const SUGGESTED_QUESTIONS = [
       "What's my revenue breakdown by product line over the last 12 months?",
   },
   {
-    label: "Customer churn risk",
-    value: "Which customers are at highest risk of churning and why?",
+    label: "User engagement",
+    value:
+      "The user engagement numbers for our AI Teammates product seem healthy. But which accounts and which user persona have the least healthy engagement?",
   },
   {
     label: "Sales pipeline health",
@@ -79,7 +80,7 @@ export function TestStep2({ onLogoClick, onBack, onNext }: TestStep2Props) {
       <div className="space-y-3">
         <Select onValueChange={handleSuggestionChange}>
           <SelectTrigger className="w-full px-3 py-3 text-sm border border-gray-200 rounded-md">
-            <SelectValue placeholder="Pick a suggested question..." />
+            <SelectValue placeholder="Start with a suggested question..." />
           </SelectTrigger>
           <SelectContent>
             {SUGGESTED_QUESTIONS.map((q) => (

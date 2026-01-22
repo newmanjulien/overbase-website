@@ -1,11 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useTest } from "../TestContext";
+import { useTest } from "../../../lib/TestContext";
 import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
-import { DatasourceCombobox } from "./DatasourceCombobox";
-import { AccessMethodToggle } from "./AccessMethodToggle";
+import { DatasourceCombobox } from "../../../components/DatasourceCombobox";
+import { AccessMethodToggle } from "../../../components/AccessMethodToggle";
 
 interface TestStep3Props {
   onLogoClick: () => void;

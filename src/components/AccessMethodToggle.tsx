@@ -1,13 +1,9 @@
 "use client";
 
 import { HelpCircle } from "lucide-react";
-import { AccessMethod } from "../TestContext";
-import {
-  Tooltip,
-  TooltipTrigger,
-  TooltipContent,
-} from "../../../components/ui/tooltip";
-import { cn } from "../../../lib/utils";
+import { AccessMethod } from "../lib/TestContext";
+import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
+import { cn } from "../lib/utils";
 
 interface AccessMethodToggleProps {
   id: string;
