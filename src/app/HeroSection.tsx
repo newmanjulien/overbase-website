@@ -38,8 +38,8 @@ export function HeroSection() {
           </h1>
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
-            Overbase trains Personal LLMs for Revenue Execs so you get reliable
-            answers to your hardest questions
+            Overbase partners with businesses to train a Personal LLM for each
+            of their Revenue Execs
           </h2>
 
           {/* Desktop buttons - now visible at md */}

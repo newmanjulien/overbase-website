@@ -23,7 +23,7 @@ export function Test({ onLogoClick, onNext }: TestProps) {
       description="See for yourself how in-depth and reliable our answers are by testing with your own data"
       onLogoClick={onLogoClick}
       onSubmit={handleSubmit}
-      primaryActionText="Test for $100"
+      primaryActionText="Test for $300"
     >
       <div className="space-y-3">
         <label htmlFor="email" className="sr-only">

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 
+import { ListenButton } from "../../../components/buttons/ListenButton";
+
 export type LLMMode = "generic" | "personal";
 
 interface LLMToggleProps {
@@ -13,12 +15,14 @@ const descriptions = {
   generic: {
     title: "Answer with a Generic LLM",
     description:
-      "We always give you reliable and in-depth answers. But our system is harder to use without a Personal LLM",
+      "We use specialized agentic tooling to get reliable and in-depth answers to the hardest questions Revenue Execs ask. Even when the answers is in multiple disconnected systems",
+    audioSrc: "/example.mp3",
   },
   personal: {
     title: "Answer with a Personal LLM",
     description:
-      "Your Personal LLM is trained for you as an individual. It knows you and understands how you think",
+      "Personal LLMs are trained for an individual Revenue Exec. They quickly get the right answer because they understand how the Exec thinks. And they know how to navigate each business's data infrastructure",
+    audioSrc: "/example.mp3",
   },
 };
 
@@ -45,7 +49,7 @@ export default function LLMToggle({
           <div className="flex gap-2 p-1 bg-gray-50 rounded-md border border-gray-100">
             <button
               onClick={() => handleModeChange("generic")}
-              className={`flex-1 rounded-md text-sm transition-all ${
+              className={`flex-1 py-2.5 px-4 rounded-md text-sm transition-all ${
                 mode === "generic"
                   ? "bg-white text-gray-900 shadow-xs"
                   : "text-gray-500 hover:text-gray-700"
@@ -69,9 +73,17 @@ export default function LLMToggle({
         {/* Description Section */}
         <div className="px-4 pb-4 pt-4">
           <div className="bg-gray-50/50 border border-gray-100 rounded-lg px-4 py-3.5">
-            <h4 className="text-sm font-medium text-gray-900 mb-1">
-              {descriptions[mode].title}
-            </h4>
+            <div className="flex items-center justify-between mb-2">
+              <h4 className="text-sm font-medium text-gray-900">
+                {descriptions[mode].title}
+              </h4>
+              <ListenButton
+                iconSize={14}
+                textSize="text-xs"
+                textWeight="font-base"
+                audioSrc={descriptions[mode].audioSrc}
+              />
+            </div>
             <p className="text-xs leading-relaxed text-gray-600">
               {descriptions[mode].description}
             </p>

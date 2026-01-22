@@ -72,12 +72,12 @@ export default function AnswerCard(props: AnswerCardProps) {
                 </>
               )}
               <span className="text-gray-400 text-xs capitalize flex items-center gap-1">
-                {!props.privacy ? (
+                {props.privacy === "private" ? (
                   <Lock size={11} className="shrink-0" />
                 ) : (
                   <Users size={11} className="shrink-0" />
                 )}
-                {props.privacy ?? "private"}
+                {props.privacy}
               </span>
             </div>
           </div>

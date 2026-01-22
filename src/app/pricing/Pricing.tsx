@@ -95,12 +95,12 @@ export default function Pricing() {
       {/* Header */}
       <section className="pt-30 pb-8 text-center space-y-6 max-w-4xl mx-auto scale-[0.90]">
         <h1 className="text-5xl text-gray-900 ">
-          Reliable and in-depth answers
+          Reliable answers to hard questions
         </h1>
         <p className="text-xl text-gray-600 leading-relaxed font-medium">
-          Our Data Scientists supervise and train your Personal Large Language
-          Model so it gets to know you and learns how to answer your questions
-          in a reliable way
+          Our Data Scientists train, supervise and fine-tune your Personal Large
+          Language Model so it learns how to answer your hardest questions in a
+          reliable way
         </p>
       </section>
 

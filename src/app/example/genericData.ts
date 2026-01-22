@@ -6,7 +6,7 @@ export const mockQuestion: Question = {
   displayContent:
     "Which deals from next quarter could we pull forward if we gave them a discount? Focus on those in advanced negotiation or where there's a strong relationship with the AE or with our business. I'm also mostly interested in deals which don't show up in my CRM dashboard",
   askedDate: "Dec 15, 2025",
-  displayPrivacy: "team",
+  displayPrivacy: "private",
 };
 
 export const mockAnswers: ThreadAnswer[] = [
@@ -15,8 +15,8 @@ export const mockAnswers: ThreadAnswer[] = [
     _id: "mock_response_id",
     sender: SENDER.OVERBASE,
     content:
-      "We identified 68 deals with a projected value of +$18,000,000. 1/2 of them likely show up already in your CRM dashboards. 1/2 are likely not yet on your radar. There are 12 EMEA deals, 16 APAC deals and 40 AMER deals",
-    privacy: "team",
+      "These 68 deals have a projected value of +$18,000,000. 1/2 of them likely show up already in your CRM dashboards. 1/2 are likely not yet on your radar. There are 12 EMEA deals, 16 APAC deals and 40 AMER deals",
+    privacy: "private",
     tableData: [
       {
         column1: "Description",
@@ -57,7 +57,7 @@ export const mockAnswers: ThreadAnswer[] = [
     sender: SENDER.USER,
     content:
       "Focus only on AMER deals. Net new +$200k or renewals +$100k. And find deals which would be a little harder to close fast. But which I might still be able to pull forward if I called the buyer myself \n\n For each deal you find, ask the AE what they think and tell me",
-    privacy: "team",
+    privacy: "private",
   },
   // Second Overbase response
   {
@@ -65,7 +65,7 @@ export const mockAnswers: ThreadAnswer[] = [
     sender: SENDER.OVERBASE,
     content:
       "These deals are worth ~$10,000,000. I'll flag more when we gather comments from the AEs who haven't yet answered. Let me know if I should be asking the AEs more urgently",
-    privacy: "team",
+    privacy: "private",
     tableData: [
       {
         column1: "Account name",

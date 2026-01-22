@@ -33,29 +33,41 @@ function AudioWaveIcon({
 interface ListenButtonProps {
   label?: string;
   pauseLabel?: string;
+  audioSrc: string;
+  iconSize: number;
+  textSize: string;
+  textWeight: string;
+  className?: string;
 }
 
 export function ListenButton({
+  audioSrc,
   label = "Listen",
   pauseLabel = "Pause",
+  iconSize,
+  textSize,
+  textWeight,
+  className = "",
 }: ListenButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    // Create audio instance once
-    audioRef.current = new Audio("/letter.mp3");
+    // Create audio instance
+    const audio = new Audio(audioSrc);
+    audioRef.current = audio;
 
     // Reset button state when audio ends
-    const audio = audioRef.current;
     const handleEnded = () => setIsPlaying(false);
     audio.addEventListener("ended", handleEnded);
 
     return () => {
       audio.removeEventListener("ended", handleEnded);
       audio.pause();
+      audioRef.current = null;
+      setIsPlaying(false);
     };
-  }, []);
+  }, [audioSrc]);
 
   const handleListenClick = () => {
     if (!audioRef.current) return;
@@ -74,14 +86,14 @@ export function ListenButton({
     <button
       type="button"
       onClick={handleListenClick}
-      className={`flex items-center gap-1 text-sm font-medium transition-colors cursor-pointer ${
+      className={`flex items-center gap-1 transition-colors cursor-pointer ${textSize} ${textWeight} ${
         isPlaying
           ? "text-gray-500/70"
           : "text-gray-400/80 hover:text-gray-500/70"
-      }`}
+      } ${className}`}
     >
-      <Icon size={17} />
-      {isPlaying ? "Pause" : "Listen"}
+      <Icon size={iconSize} />
+      {isPlaying ? pauseLabel : label}
     </button>
   );
 }

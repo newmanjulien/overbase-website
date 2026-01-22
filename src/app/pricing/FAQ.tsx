@@ -16,7 +16,7 @@ export default function FAQ() {
           <h2 className="text-4xl text-gray-900 mb-4">About Personal LLMs</h2>
           <p className="text-neutral-600 text-center max-w-2xl mx-auto">
             Your Personal Large Language Model knows you, understands your data
-            and can answer your questions in an in-depth and reliable way
+            and can answer your hardest questions in a reliable way
           </p>
         </div>
 

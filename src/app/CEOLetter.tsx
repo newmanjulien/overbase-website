@@ -22,7 +22,12 @@ export function CEOLetter() {
                 <div className="text-lg text-gray-900 font-medium">
                   Introducing Overbase
                 </div>
-                <ListenButton />
+                <ListenButton
+                  audioSrc="/letter.mp3"
+                  iconSize={17}
+                  textSize="text-sm"
+                  textWeight="font-medium"
+                />
               </div>
             </div>
 
@@ -36,18 +41,20 @@ export function CEOLetter() {
 
               <p>
                 Your questions are hard. And getting a reliable answer takes
-                days or sometimes even more than a week
+                days or sometimes up to a week
               </p>
 
               <p>
                 Gathering the information you need is hard. The data is in too
-                many systems. It's formatted wrong. It's outdated
+                many disconnected systems. It's formatted wrong. It's outdated.
+                It's hard to access. And you often can't trust the data in your
+                databases
               </p>
 
               <p>
-                Getting useful insights is hard. Because the right answer
-                depends on your context. And because the analysis needed to get
-                the right answer is complex
+                Getting useful insights is hard. The right answer depends on
+                your context. And the analysis needed to get the right answer is
+                complex
               </p>
 
               <p>
@@ -60,20 +67,21 @@ export function CEOLetter() {
               </p>
 
               <p className="font-medium">
-                Overbase is the only automated system that's more reliable and
-                gets better answers than the best human analyst
+                Overbase is the first automated system that's more reliable and
+                gets better answers than top tier human analysts
               </p>
 
               <p>
-                We get this level of quality by training a Personal Large
-                Language Model for each of our users
+                We get this unique level of quality by partnering with
+                businesses to train a Personal Large Language Model for each of
+                their Revenue Execs
               </p>
 
               <p>
-                Your Personal LLM is a standalone Large Language Model that's
-                trained for you. It's a 200 GB file on Overbase's servers that
-                we run locally. It knows you, understands how you think, and
-                it's trained to answer your hardest questions
+                Each Personal LLM is a standalone 26B+ Parameter Large Language
+                Model that's trained for each individual Revenue Exec. It
+                understands how each Revenue Exec thinks. And it knows how to
+                use agents to navigate each business's data infrastructure
               </p>
 
               <p>
@@ -84,13 +92,6 @@ export function CEOLetter() {
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   example
-                </Link>{" "}
-                or check out our{" "}
-                <Link
-                  href="/pricing"
-                  className="text-blue-400 underline hover:text-blue-300"
-                >
-                  pricing
                 </Link>
               </p>
             </div>

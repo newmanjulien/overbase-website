@@ -19,7 +19,7 @@ export const SENDER_LABEL: Record<Sender, string> = {
   overbase: "Overbase answered",
 };
 
-export type Privacy = "team" | undefined;
+export type Privacy = "team" | "private";
 
 // ============================================
 // TABLE DATA TYPE
@@ -54,7 +54,7 @@ export type ThreadAnswer = {
   _id: string;
   sender: Sender;
   content?: string;
-  privacy?: Privacy;
+  privacy: Privacy;
   tableData?: TableRow[];
 };
 
@@ -66,7 +66,7 @@ export type ThreadCardQuestion = {
   type: "question";
   content: string;
   date: string;
-  privacy?: Privacy;
+  privacy: Privacy;
 };
 
 export type ThreadCardResponse = {
@@ -74,7 +74,7 @@ export type ThreadCardResponse = {
   answerId: string;
   sender: Sender;
   content: string;
-  privacy?: Privacy;
+  privacy: Privacy;
   tableData?: TableRow[];
 };
 

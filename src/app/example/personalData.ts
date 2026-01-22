@@ -6,7 +6,7 @@ export const mockQuestion: Question = {
   displayContent:
     "Which deals from next quarter could we pull forward if we gave them a discount? Focus on those in advanced negotiation or where there's a strong relationship with the AE or with our business. I'm also mostly interested in deals which don't show up in my CRM dashboard",
   askedDate: "Dec 15, 2025",
-  displayPrivacy: "team",
+  displayPrivacy: "private",
 };
 
 export const mockAnswers: ThreadAnswer[] = [
