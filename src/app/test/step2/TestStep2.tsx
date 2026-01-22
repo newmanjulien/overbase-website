@@ -20,23 +20,24 @@ interface TestStep2Props {
 
 const SUGGESTED_QUESTIONS = [
   {
-    label: "Revenue by product",
+    label: "Pull forward revenue",
     value:
-      "What's my revenue breakdown by product line over the last 12 months?",
+      "Which deals from next quarter could we pull forward if we gave them a discount? Focus on those in advanced negotiation or where there's a strong relationship with the AE or with our business",
   },
   {
-    label: "User engagement",
+    label: "Improve user engagement",
     value:
       "The user engagement numbers for our AI Teammates product seem healthy. But which accounts and which user persona have the least healthy engagement?",
   },
   {
-    label: "Sales pipeline health",
+    label: "Marketing asset usage",
     value:
-      "What's the current state of our sales pipeline and where are the bottlenecks?",
+      "Find the 3 marketing assets which are provided to salespeople but least often used with actual customers. Look over the Salesforce data to see if the assets are referenced. And look over Gong calls to see if AEs mention them to prospects. For each of the 3 marketing assets, tell me how often they're used and tell me which AE uses them most",
   },
   {
-    label: "Marketing ROI",
-    value: "What's our customer acquisition cost by marketing channel?",
+    label: "Help AEs learn from one another",
+    value:
+      "Look at Salesforce to find deals we won over a particularly strong competitor. Or deals where the AE used a unique approach. Then look at the Gong recordings to compile small case studies we can showcase to other AEs",
   },
   {
     label: "Custom question",
@@ -100,7 +101,7 @@ export function TestStep2({ onLogoClick, onBack, onNext }: TestStep2Props) {
           onChange={(e) => setUseCase(e.target.value)}
           className="w-full px-3 py-3 text-sm border border-gray-200 rounded-md focus:ring-2 focus:ring-gray-900 focus:border-transparent transition-all duration-200 resize-none"
           placeholder="Or type your own question..."
-          rows={5}
+          rows={7}
           required
         />
       </div>
