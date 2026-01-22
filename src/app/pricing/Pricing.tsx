@@ -12,11 +12,11 @@ export default function Pricing() {
   const tiers = [
     {
       name: "Starter",
-      priceMonthly: "$8,000",
-      priceAnnual: "$6,000",
-      period: "user per month",
-      description: "Your Personal LLM gets trained by our Data Scientists",
-      answersPerMonth: 20,
+      priceMonthly: "$12,000",
+      priceAnnual: "$10,000",
+      period: "per month",
+      description: "For a single Revenue Exec who needs reliable answers",
+      answersPerMonth: 1,
       features: [
         feature("26B Parameter Personal LLM", {
           icon: "sparkles",
@@ -37,20 +37,21 @@ export default function Pricing() {
     },
     {
       name: "Team",
-      priceMonthly: "$12,000",
-      priceAnnual: "$9,000",
-      period: "user per month",
-      description: "You own the IP of your Personal LLM and can download it",
-      answersPerMonth: 50,
+      priceMonthly: "$40,000",
+      priceAnnual: "$30,000",
+      period: "per month",
+      description:
+        "For teams of Revenue Execs who want to own the IP of their Personal LLMs",
+      answersPerMonth: 3,
       features: [
         feature("Everything in Starter plus", { icon: "none" }),
-        feature("You own the IP and can download your Personal LLM", {
+        feature("You own the IP and can download your Personal LLMs", {
           icon: "fingerprint",
           tooltip:
-            "A full standalone Large Language Model that's trained for you. It's a +40 GB file which you own and which you can download",
+            "3 full standalone Large Language Models that are trained for each Revenue Exec. These are +40 GB files which you own and which you can download",
         }),
         feature(
-          "1 login for you and 1 separate login for your Chief of Staff or ops team",
+          "1 login for each Revenue Exec and 1 login for their Chief of Staff or ops team",
           { icon: "users" },
         ),
         feature("Share templates and datasources with colleagues", {
@@ -63,25 +64,25 @@ export default function Pricing() {
     },
     {
       name: "Enterprise",
-      priceMonthly: "$20,000",
-      priceAnnual: "$15,000",
-      period: "user per month",
+      priceMonthly: "$120,000",
+      priceAnnual: "$90,000",
+      period: "per month",
       description:
-        "You get a more advanced Personal LLM and the most strict security",
-      answersPerMonth: 100,
+        "For the most advanced Personal LLMs and the most strict security",
+      answersPerMonth: 10,
       features: [
         feature("Everything in Team plus", { icon: "none" }),
-        feature("190B Parameter Personal LLM", {
+        feature("190B Parameter Personal LLMs", {
           icon: "sparkles",
           tooltip:
-            "A full standalone Large Language Model that's trained for you. It's a +200 GB file which you own and which you can download",
+            "10 full standalone Large Language Models that are trained for each Revenue Exec. These are +200 GB files which you own and which you can download",
         }),
         feature(
           "Named technical lead works with your team on data integrations",
           { icon: "user" },
         ),
         feature("SAML/OIDC SSO", { icon: "lock" }),
-        feature("Custom NDAs with Data Scientists who train your LLM", {
+        feature("Custom NDAs with Data Scientists who train your LLMs", {
           icon: "shield",
         }),
       ],
@@ -97,10 +98,9 @@ export default function Pricing() {
         <h1 className="text-5xl text-gray-900 ">
           Reliable answers to hard questions
         </h1>
-        <p className="text-xl text-gray-600 leading-relaxed font-medium">
-          Our Data Scientists train, supervise and fine-tune your Personal Large
-          Language Model so it learns how to answer your hardest questions in a
-          reliable way
+        <p className="text-2xl text-gray-600 leading-relaxed font-medium">
+          Our Data Scientists train, supervise and fine-tune a full standalone
+          Large Language Model for each Revenue Exec
         </p>
       </section>
 

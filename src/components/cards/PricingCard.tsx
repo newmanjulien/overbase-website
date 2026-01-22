@@ -139,10 +139,14 @@ export default function PricingCard({ tier }: PricingCardProps) {
       {tier.answersPerMonth && (
         <div className="mt-6 py-3 bg-gray-50 rounded-sm">
           <div className="text-center space-y-0.5">
-            <div className="text-gray-900" style={{ fontSize: "1.425rem" }}>
-              {tier.answersPerMonth.toLocaleString()} answers
+            <div className="text-gray-900 text-xl">
+              {tier.answersPerMonth.toLocaleString()} Revenue Exec
+              {tier.answersPerMonth > 1 ? "s" : ""}
             </div>
-            <p className="text-xs text-gray-500 tracking-wide">per month</p>
+            <p className="text-xs text-gray-500 tracking-wide">
+              And {tier.answersPerMonth.toLocaleString()} Personal LLM
+              {tier.answersPerMonth > 1 ? "s" : ""}
+            </p>
           </div>
         </div>
       )}
