@@ -50,7 +50,7 @@ export function HeroSection() {
               size="lg"
               className="p-6 text-md rounded-lg"
             >
-              Test how reliable
+              Test our answers
             </Button>
 
             <Button
