@@ -81,7 +81,7 @@ export function TestStep2({ onLogoClick, onBack, onNext }: TestStep2Props) {
       <div className="space-y-3">
         <Select onValueChange={handleSuggestionChange}>
           <SelectTrigger className="w-full px-3 py-3 text-sm border border-gray-200 rounded-md">
-            <SelectValue placeholder="Start with a suggested question..." />
+            <SelectValue placeholder="Start with a template..." />
           </SelectTrigger>
           <SelectContent>
             {SUGGESTED_QUESTIONS.map((q) => (
