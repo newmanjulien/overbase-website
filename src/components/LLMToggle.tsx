@@ -5,7 +5,7 @@ import { AccessMethod } from "../lib/TestContext";
 import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
 import { cn } from "../lib/utils";
 
-interface AccessMethodToggleProps {
+interface LLMToggleProps {
   id: string;
   value: AccessMethod;
   onChange: (method: AccessMethod) => void;
@@ -25,12 +25,12 @@ const ACCESS_METHODS = {
   },
 } as const;
 
-export function AccessMethodToggle({
+export function LLMToggle({
   id,
   value,
   onChange,
   disabled = false,
-}: AccessMethodToggleProps) {
+}: LLMToggleProps) {
   const radioName = `accessMethod-${id}`;
 
   return (

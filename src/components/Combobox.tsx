@@ -21,7 +21,7 @@ export interface Datasource {
   logo: string;
 }
 
-interface DatasourceComboboxProps {
+interface ComboboxProps {
   value: string;
   onChange: (value: string) => void;
   placeholder: string;
@@ -30,14 +30,14 @@ interface DatasourceComboboxProps {
   disabled?: boolean;
 }
 
-export function DatasourceCombobox({
+export function Combobox({
   value,
   onChange,
   placeholder,
   datasources,
   disabledValues = [],
   disabled = false,
-}: DatasourceComboboxProps) {
+}: ComboboxProps) {
   const [open, setOpen] = React.useState(false);
 
   const selectedDatasource = datasources.find((ds) => ds.value === value);

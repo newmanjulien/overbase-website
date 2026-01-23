@@ -81,7 +81,7 @@ export function Header({
               className="rounded-sm text-sm scale-[0.92]"
               onClick={navigateToTest}
             >
-              Test for $300
+              Test for $100
             </HotkeyButton>
           </div>
         </div>

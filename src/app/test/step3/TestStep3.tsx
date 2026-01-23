@@ -4,8 +4,8 @@ import { useState, useEffect } from "react";
 import { useTest } from "../../../lib/TestContext";
 import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
-import { DatasourceCombobox } from "../../../components/DatasourceCombobox";
-import { AccessMethodToggle } from "../../../components/AccessMethodToggle";
+import { Combobox } from "../../../components/Combobox";
+import { LLMToggle } from "../../../components/LLMToggle";
 import { DATASOURCES } from "./datasources";
 
 interface TestStep3Props {
@@ -71,7 +71,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
       <div className="space-y-4">
         {/* Datasource 1 */}
         <div className="space-y-2">
-          <DatasourceCombobox
+          <Combobox
             value={datasource1}
             onChange={setDatasource1}
             placeholder="First datasource"
@@ -79,7 +79,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
             datasources={DATASOURCES}
           />
           {datasource1 && (
-            <AccessMethodToggle
+            <LLMToggle
               id="datasource1"
               value={datasource1AccessMethod}
               onChange={setDatasource1AccessMethod}
@@ -90,7 +90,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
 
         {/* Datasource 2 */}
         <div className="space-y-2">
-          <DatasourceCombobox
+          <Combobox
             value={datasource2}
             onChange={setDatasource2}
             placeholder="Second datasource (optional)"
@@ -99,7 +99,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
             datasources={DATASOURCES}
           />
           {datasource2 && (
-            <AccessMethodToggle
+            <LLMToggle
               id="datasource2"
               value={datasource2AccessMethod}
               onChange={setDatasource2AccessMethod}
