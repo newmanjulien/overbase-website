@@ -47,27 +47,26 @@ export function CEOLetter() {
               <p>
                 Gathering the information you need is hard. The data is in too
                 many disconnected systems. It's formatted wrong. It's outdated.
-                It's hard to access. And you often can't trust the data in your
-                databases
+                It's hard to access. And you often can't even trust the data in
+                your databases
               </p>
 
               <p>
-                Getting useful insights is hard. The right answer depends on
-                your context. And the analysis is complex
+                Getting useful analysis and insights is hard. The right answer
+                depends on your context. And the analysis is complex
               </p>
 
               <p>
-                Which means that getting reliable answers ends up being so hard
-                that{" "}
+                Which means that reliable answers are so hard to get that{" "}
                 <span className="font-medium">
-                  you often can't actually know what you need to know to make
-                  the decisions you need to make
+                  you often can't know what you need to know to make many of the
+                  most important decisions you need to make
                 </span>
               </p>
 
               <p className="font-medium">
-                Overbase is the first automated system that's more reliable and
-                gets better answers than top tier human analysts
+                Overbase is the first and only automated system that's more
+                reliable and gets better answers than top tier human analysts
               </p>
 
               <p>
@@ -79,18 +78,25 @@ export function CEOLetter() {
               <p>
                 Each Personal LLM is a standalone 26B+ Parameter Large Language
                 Model that's trained for each individual Revenue Exec. It
-                understands how each Revenue Exec thinks. And it knows how to
+                understands how each Revenue Exec thinks. And it learns how to
                 use agents to navigate each business's data infrastructure
               </p>
 
               <p>
-                If you're curious, take a look at this{" "}
+                Check out this{" "}
                 <Link
                   href="/example"
                   target="_blank"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   example
+                </Link>{" "}
+                or take a look at our{" "}
+                <Link
+                  href="/pricing"
+                  className="text-blue-400 underline hover:text-blue-300"
+                >
+                  pricing
                 </Link>
               </p>
             </div>

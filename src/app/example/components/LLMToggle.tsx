@@ -15,13 +15,13 @@ const descriptions = {
   generic: {
     title: "Answer with a Generic LLM",
     description:
-      "We use specialized agentic tooling to get reliable and in-depth answers to the hardest questions Revenue Execs ask. Even when the answers is in multiple disconnected systems",
+      "We use specialized agentic tooling to get reliable and in-depth answers to the hardest questions. Even when the answers is in multiple disconnected systems",
     audioSrc: "/example.mp3",
   },
   personal: {
     title: "Answer with a Personal LLM",
     description:
-      "Personal LLMs are trained for an individual Revenue Exec. They quickly get the right answer because they understand how the Exec thinks. And they know how to navigate each business's data infrastructure",
+      "Personal LLMs are trained for an individual Revenue Exec. They understand how the Exec thinks. And how to navigate each business's data infrastructure",
     audioSrc: "/example.mp3",
   },
 };

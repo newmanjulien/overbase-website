@@ -26,7 +26,7 @@ export function TestConfirmationPage({
   return (
     <TestPageLayout
       title="Question received"
-      description="Someone from our team will be in touch to set up your datasources and test this question"
+      description="We will be in touch to set up your datasources and test this question"
       onLogoClick={onLogoClick}
     >
       <div className="flex gap-3 pt-4">

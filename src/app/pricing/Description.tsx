@@ -10,25 +10,26 @@ export function Description() {
         </div>
 
         {/* Right Column - Body Copy */}
-        <div className="space-y-6 text-gray-500">
+        <div className="space-y-6 text-gray-500 text-[15px]">
           <p>
-            Overbase is where product, design, and infrastructure converge.
-            We're creating the layer that helps the greatest teams understand
-            how their product really works and how to make it better.
+            Getting reliable answers to your hardest questions means doing
+            things differently
           </p>
 
           <p>
-            Software runs the world. When it breaks, civilization stutters.
-            We're building the immune system for the computer age – and we need
-            architects of the impossible to help us build it.
+            Overbase trains a full standalone 26B+ parameter Personal Large
+            Language Model for each Revenue Exec. And we run each model on local
+            machines in our office
           </p>
 
-          <p>It's demanding work.</p>
+          <p>
+            Our Data Scientists continuously train, retrain and fine-tune each
+            model so it understands how the Revenue Exec it's serving thinks
+          </p>
 
           <p>
-            You'll think deeply, ship fast, and sweat the details that most
-            people miss. But you'll have freedom, ownership, and the chance to
-            shape something that could redefine how software is built.
+            And so it learns how to use agents to find information and navigate
+            each business's data infrastructure
           </p>
         </div>
       </div>

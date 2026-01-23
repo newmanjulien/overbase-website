@@ -21,7 +21,7 @@ const ACCESS_METHODS = {
   system: {
     label: "System access",
     tooltip:
-      "Giving Overbase access to your system lets you test our full capabilities. You will see how accurately and expertly our agents get hard to find data from even the most disconnected systems",
+      "Giving Overbase access to your system lets you test our full capabilities. You will see how accurately and expertly our agents fetch hard to find data from even the most disconnected systems",
   },
 } as const;
 

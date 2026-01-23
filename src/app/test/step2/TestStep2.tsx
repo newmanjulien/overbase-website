@@ -32,7 +32,7 @@ const SUGGESTED_QUESTIONS = [
   {
     label: "Marketing asset usage",
     value:
-      "Find the 3 marketing assets which are provided to salespeople but least often used with actual customers. Look over the Salesforce data to see if the assets are referenced. And look over Gong calls to see if AEs mention them to prospects. For each of the 3 marketing assets, tell me how often they're used and tell me which AE uses them most",
+      "Find the 3 marketing assets which are provided to AEs but least often used with actual customers. Look over the Salesforce data to see if the assets are referenced. And look over Gong calls to see if AEs mention them to prospects. For each of the 3 marketing assets, tell me how often they're used and tell me which AE uses them most",
   },
   {
     label: "Help AEs learn from one another",

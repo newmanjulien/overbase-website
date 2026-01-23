@@ -15,20 +15,20 @@ const PLANS: Plan[] = [
   {
     id: "standard",
     name: "Standard seat",
-    price: "$9,000",
+    price: "$12,000",
     description:
-      "We train a Personal LLM for each Revenue Exec and host it on Overbase's secure servers",
+      "We train a Personal LLM for each Revenue Exec and host it on Overbase's servers",
     subtext:
-      "Per exec / month with annual subscription discount. $12,000 if billed monthly",
+      "Per exec / month with annual subscription discount. $15,000 if billed monthly. Includes unlimited questions",
   },
   {
     id: "enterprise",
     name: "Enterprise seat",
-    price: "$12,000",
+    price: "$16,000",
     description:
-      "Everything in Standard plus you own the IP of your Personal LLM",
+      "Everything in Standard, plus you own the IP of your Personal LLM",
     subtext:
-      "Per exec / month with annual subscription discount. $15,000 if billed monthly",
+      "Per exec / month with annual subscription discount. $20,000 if billed monthly",
   },
 ];
 
