@@ -1,6 +1,7 @@
 "use client";
 
 import { TestProvider, useTest } from "../../lib/TestContext";
+import { TooltipProvider } from "../../components/ui/tooltip";
 
 function TestLayoutContent({ children }: { children: React.ReactNode }) {
   const { isLoaded } = useTest();
@@ -23,7 +24,9 @@ export default function TestLayout({
 }) {
   return (
     <TestProvider>
-      <TestLayoutContent>{children}</TestLayoutContent>
+      <TooltipProvider>
+        <TestLayoutContent>{children}</TestLayoutContent>
+      </TooltipProvider>
     </TestProvider>
   );
 }

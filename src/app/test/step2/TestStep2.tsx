@@ -11,6 +11,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../../../components/ui/select";
+import { DATASOURCES } from "../step3/datasources";
 
 interface TestStep2Props {
   onLogoClick: () => void;
@@ -55,6 +56,14 @@ export function TestStep2({ onLogoClick, onBack, onNext }: TestStep2Props) {
       router.push("/test");
     }
   }, [email, router]);
+
+  // Preload logos
+  useEffect(() => {
+    DATASOURCES.forEach((ds) => {
+      const img = new window.Image();
+      img.src = ds.logo;
+    });
+  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

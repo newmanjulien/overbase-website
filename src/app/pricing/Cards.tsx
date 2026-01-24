@@ -28,7 +28,7 @@ const PLANS: Plan[] = [
     description:
       "Everything in Standard, plus you own the IP of your Personal LLM",
     subtext:
-      "Per exec / month with annual subscription discount. $20,000 if billed monthly",
+      "Per exec / month with annual subscription discount. $20,000 if billed monthly. Minimum of 5 seats",
   },
 ];
 

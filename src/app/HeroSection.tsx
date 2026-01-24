@@ -2,7 +2,6 @@
 
 import { useEffect } from "react";
 import { Button } from "../components/ui/button";
-import { DATASOURCES } from "./test/step3/datasources";
 import { useNavigateToTest } from "../hooks/useTestEntryPoint";
 
 export function HeroSection() {
@@ -14,12 +13,6 @@ export function HeroSection() {
     const video = document.createElement("video");
     video.preload = "auto";
     video.src = "/test.mp4";
-
-    // Preload logos
-    DATASOURCES.forEach((ds) => {
-      const img = new window.Image();
-      img.src = ds.logo;
-    });
   }, []);
 
   const handleDemo = () =>

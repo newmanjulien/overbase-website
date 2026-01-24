@@ -2,10 +2,10 @@
 
 import { HelpCircle } from "lucide-react";
 import { AccessMethod } from "../lib/TestContext";
-import { Tooltip, TooltipTrigger, TooltipContent } from "./ui/tooltip";
+import { TooltipRoot, TooltipTrigger, TooltipContent } from "./ui/tooltip";
 import { cn } from "../lib/utils";
 
-interface LLMToggleProps {
+interface AccessMethodSelectorProps {
   id: string;
   value: AccessMethod;
   onChange: (method: AccessMethod) => void;
@@ -25,12 +25,12 @@ const ACCESS_METHODS = {
   },
 } as const;
 
-export function LLMToggle({
+export function AccessMethodSelector({
   id,
   value,
   onChange,
   disabled = false,
-}: LLMToggleProps) {
+}: AccessMethodSelectorProps) {
   const radioName = `accessMethod-${id}`;
 
   return (
@@ -64,7 +64,7 @@ export function LLMToggle({
                 {label}
               </span>
             </label>
-            <Tooltip>
+            <TooltipRoot>
               <TooltipTrigger asChild>
                 <button
                   type="button"
@@ -75,9 +75,9 @@ export function LLMToggle({
                 </button>
               </TooltipTrigger>
               <TooltipContent side="right">
-                <p className="text-xs max-w-xs">{tooltip}</p>
+                <p className="max-w-xs">{tooltip}</p>
               </TooltipContent>
-            </Tooltip>
+            </TooltipRoot>
           </div>
         );
       })}

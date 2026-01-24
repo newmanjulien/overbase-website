@@ -5,7 +5,7 @@ import { useTest } from "../../../lib/TestContext";
 import { useRouter } from "next/navigation";
 import { TestPageLayout } from "../../../components/layouts/TestPageLayout";
 import { Combobox } from "../../../components/Combobox";
-import { LLMToggle } from "../../../components/LLMToggle";
+import { AccessMethodSelector } from "../../../components/AccessMethodSelector";
 import { DATASOURCES } from "./datasources";
 
 interface TestStep3Props {
@@ -79,7 +79,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
             datasources={DATASOURCES}
           />
           {datasource1 && (
-            <LLMToggle
+            <AccessMethodSelector
               id="datasource1"
               value={datasource1AccessMethod}
               onChange={setDatasource1AccessMethod}
@@ -99,7 +99,7 @@ export function TestStep3({ onLogoClick, onBack, onNext }: TestStep3Props) {
             datasources={DATASOURCES}
           />
           {datasource2 && (
-            <LLMToggle
+            <AccessMethodSelector
               id="datasource2"
               value={datasource2AccessMethod}
               onChange={setDatasource2AccessMethod}
