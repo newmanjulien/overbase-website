@@ -17,7 +17,7 @@ const PLANS: Plan[] = [
     name: "Standard seat",
     price: "$12,000",
     description:
-      "We train a Personal LLM for each Revenue Exec and host it on Overbase's servers",
+      "We train a Personal LLM for each Revenue Exec and run it on Overbase's hardware",
     subtext:
       "Per exec / month with annual subscription discount. $15,000 if billed monthly. Includes unlimited questions",
   },
