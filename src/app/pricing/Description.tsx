@@ -1,3 +1,5 @@
+import { Tooltip, TooltipProvider } from "../../components/ui/tooltip";
+
 export function Description() {
   return (
     <section className="px-6 md:px-12 lg:px-24 pt-18 max-w-6xl mx-auto">
@@ -10,27 +12,35 @@ export function Description() {
         </div>
 
         {/* Right Column - Body Copy */}
-        <div className="space-y-6 text-gray-500 text-[15px]">
-          <p>
-            Getting reliable answers to your hardest questions means doing
-            things differently
-          </p>
+        <TooltipProvider>
+          <div className="space-y-6 text-gray-500 text-[15px]">
+            <p>
+              Getting reliable answers to your hardest questions means doing
+              things differently
+            </p>
 
-          <p>
-            We train a full standalone 26B+ parameter Personal LLM for each
-            Revenue Exec. And we run each model on local machines in our office
-          </p>
+            <p>
+              We train a full standalone 26B+ parameter{" "}
+              <Tooltip content="Full standalone 26B+ Parameter Large Language Model running on Overbase's hardware">
+                <span className="underline decoration-dotted cursor-help decoration-gray-400 underline-offset-4">
+                  Personal LLM
+                </span>
+              </Tooltip>{" "}
+              for each Revenue Exec. And we run each model on local machines in
+              our office
+            </p>
 
-          <p>
-            Our Data Scientists continuously retrain and fine-tune each model so
-            it understands how the Revenue Exec thinks
-          </p>
+            <p>
+              Our Data Scientists continuously retrain and fine-tune each model
+              so it understands how the Revenue Exec thinks
+            </p>
 
-          <p>
-            And so it learns how to use agents to find information and navigate
-            each business's data infrastructure
-          </p>
-        </div>
+            <p>
+              And so it learns how to use agents to find information and
+              navigate each business's data infrastructure
+            </p>
+          </div>
+        </TooltipProvider>
       </div>
     </section>
   );

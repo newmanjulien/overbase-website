@@ -2,7 +2,7 @@
 
 import { Header } from "../components/Header";
 import { HeroSection } from "./HeroSection";
-import { CEOLetter } from "./CEOLetter";
+import { Letter } from "./Letter";
 import { Footer } from "../components/Footer";
 
 export default function HomePage() {
@@ -10,7 +10,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       <Header />
       <HeroSection />
-      <CEOLetter />
+      <Letter />
       <Footer />
     </div>
   );

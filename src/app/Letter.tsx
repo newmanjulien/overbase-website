@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import { ListenButton } from "../components/buttons/ListenButton";
 import { Tooltip, TooltipProvider } from "../components/ui/tooltip";
 
-export function CEOLetter() {
+export function Letter() {
   const router = useRouter();
   return (
     <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
@@ -42,33 +42,29 @@ export function CEOLetter() {
                 </p>
 
                 <p>
-                  Your questions are hard. And getting a reliable answer takes
-                  days or sometimes up to a week
+                  But getting to the bottom of what’s actually happening is slow
+                  and hard. The data is in too many disconnected systems. It's
+                  formatted wrong. And you often can't trust the data in your
+                  databases
                 </p>
 
                 <p>
-                  Gathering the information you need is hard. The data is in too
-                  many disconnected systems. It's formatted wrong. It's
-                  outdated. It's hard to access. And you often can't even trust
-                  the data in your databases
+                  Which means that you need to pull an analyst off another
+                  project every time you have a question
                 </p>
 
                 <p>
-                  Getting useful analysis and insights is hard. The right answer
-                  depends on your context. And the analysis is complex
-                </p>
-
-                <p>
-                  Which means that reliable answers are so hard to get that{" "}
+                  And getting reliable answers ends up being so hard and slow
+                  that{" "}
                   <span className="font-medium">
-                    you often can't know what you need to know to make many of
-                    the most important decisions you need to make
+                    you often don't actually know what you need to know to make
+                    many of the important decisions you need to make
                   </span>
                 </p>
 
                 <p className="font-medium">
-                  Overbase is the first and only automated system that's more
-                  reliable and gets better answers than top tier human analysts
+                  Overbase is the only automated system that's more reliable and
+                  gets better answers than a top tier human analyst
                 </p>
 
                 <p>

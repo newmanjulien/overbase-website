@@ -2,12 +2,14 @@
 
 import { Button } from "../../components/ui/button";
 import { useNavigateToTest } from "../../hooks/useTestEntryPoint";
+import { Tooltip, TooltipProvider } from "../../components/ui/tooltip";
+import React from "react";
 
 interface Plan {
   id: string;
   name: string;
   price: string;
-  description: string;
+  description: React.ReactNode;
   subtext: string;
 }
 
@@ -25,8 +27,17 @@ const PLANS: Plan[] = [
     id: "enterprise",
     name: "Enterprise seat",
     price: "$16,000",
-    description:
-      "Everything in Standard, plus you own the IP of your Personal LLM",
+    description: (
+      <>
+        Everything in Standard, plus you{" "}
+        <Tooltip content="You own the underlying weights and you can download your Personal LLM">
+          <span className="underline decoration-dotted cursor-help decoration-gray-400 underline-offset-4">
+            own the IP
+          </span>
+        </Tooltip>{" "}
+        of your Personal LLM
+      </>
+    ),
     subtext:
       "Per exec / month with annual subscription discount. $20,000 if billed monthly. Minimum of 5 seats",
   },
@@ -37,13 +48,15 @@ export default function Cards() {
     <section id="pricing-cards" className="px-6 py-20 max-w-5xl mx-auto">
       <div className="mb-22 border-t border-gray-100"></div>
 
-      <div className="max-w-4xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-8">
-          {PLANS.map((plan) => (
-            <PlanCard key={plan.id} plan={plan} />
-          ))}
+      <TooltipProvider>
+        <div className="max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8">
+            {PLANS.map((plan) => (
+              <PlanCard key={plan.id} plan={plan} />
+            ))}
+          </div>
         </div>
-      </div>
+      </TooltipProvider>
     </section>
   );
 }
