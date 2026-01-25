@@ -85,9 +85,9 @@ export function CEOLetter() {
                 <p>
                   Each Personal LLM is a standalone 26B+ Parameter Large
                   Language Model that's trained for each individual Revenue
-                  Exec. It understands how each Revenue Exec thinks. And it
-                  learns how to use agents to navigate each business's data
-                  infrastructure
+                  Exec. The Personal LLM understands how each Revenue Exec
+                  thinks. And it learns how to use agents to navigate each
+                  business's data infrastructure
                 </p>
 
                 <p>

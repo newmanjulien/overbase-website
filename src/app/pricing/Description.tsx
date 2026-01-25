@@ -17,14 +17,13 @@ export function Description() {
           </p>
 
           <p>
-            Overbase trains a full standalone 26B+ parameter Personal Large
-            Language Model for each Revenue Exec. And we run each model on local
-            machines in our office
+            We train a full standalone 26B+ parameter Personal LLM for each
+            Revenue Exec. And we run each model on local machines in our office
           </p>
 
           <p>
-            Our Data Scientists continuously train, retrain and fine-tune each
-            model so it understands how the Revenue Exec it's serving thinks
+            Our Data Scientists continuously retrain and fine-tune each model so
+            it understands how the Revenue Exec thinks
           </p>
 
           <p>
