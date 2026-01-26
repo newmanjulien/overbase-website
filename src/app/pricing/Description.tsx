@@ -36,8 +36,8 @@ export function Description() {
             </p>
 
             <p>
-              And so it learns how to use agents to find information and
-              navigate each business's data infrastructure
+              And so the model learns how to use agents to navigate each
+              business's data infrastructure
             </p>
           </div>
         </TooltipProvider>

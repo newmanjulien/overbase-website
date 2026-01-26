@@ -57,19 +57,19 @@ export function Letter() {
                   And getting reliable answers ends up being so hard and slow
                   that{" "}
                   <span className="font-medium">
-                    you often don't actually know what you need to know to make
-                    many of the important decisions you need to make
+                    you often don't know what you need to know to make many of
+                    the important decisions you need to make
                   </span>
                 </p>
 
                 <p className="font-medium">
-                  Overbase is the only automated system that's more reliable and
-                  gets better answers than a top tier human analyst
+                  Overbase is the only automated system that's more reliable
+                  than a top tier human analyst
                 </p>
 
                 <p>
-                  We get this unique level of quality by partnering with
-                  businesses to train a{" "}
+                  We're the first to get this level of reliability. And we do it
+                  by partnering with businesses to train a{" "}
                   <Tooltip content="Full standalone 26B+ Parameter Large Language Model running on Overbase's hardware">
                     <span className="underline decoration-dotted cursor-help decoration-gray-400 underline-offset-4">
                       Personal LLM
