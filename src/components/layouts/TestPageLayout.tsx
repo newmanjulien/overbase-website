@@ -5,8 +5,8 @@ import { ReactNode } from "react";
 import { Button } from "../../components/ui/button";
 
 interface TestPageLayoutProps {
-  children: ReactNode;
-  title: string;
+  children?: ReactNode;
+  title?: ReactNode;
   description?: string;
   onLogoClick: () => void;
   onSubmit?: (e: React.FormEvent) => void;
@@ -15,6 +15,9 @@ interface TestPageLayoutProps {
   isLoading?: boolean;
   error?: string | null;
   onBack?: () => void;
+  footer?: ReactNode;
+  step?: number;
+  totalSteps?: number;
 }
 
 export function TestPageLayout({
@@ -28,15 +31,49 @@ export function TestPageLayout({
   isLoading,
   error,
   onBack,
+  footer,
+  step,
+  totalSteps,
 }: TestPageLayoutProps) {
+  const showStepIndicator =
+    typeof step === "number" && typeof totalSteps === "number";
   const content = (
     <>
-      <div className="space-y-4 text-center">
-        <h1 className="text-3xl text-gray-900 font-medium tracking-tight">
-          {title}
-        </h1>
-        <p className="text-sm text-gray-900 leading-relaxed">{description}</p>
-      </div>
+      {(title || description || showStepIndicator) && (
+        <div className="space-y-4 text-center">
+          {showStepIndicator && (
+            <div
+              className="flex items-center justify-center gap-2"
+              aria-label={`Step ${step} of ${totalSteps}`}
+            >
+              {Array.from({ length: totalSteps }).map((_, index) => {
+                const dotIndex = index + 1;
+                return (
+                  <span
+                    key={dotIndex}
+                    className={`h-2 w-2 rounded-full ${
+                      dotIndex <= step ? "bg-gray-900" : "bg-gray-300"
+                    }`}
+                  />
+                );
+              })}
+            </div>
+          )}
+          {title &&
+            (typeof title === "string" ? (
+              <h1 className="text-3xl text-gray-900 font-medium tracking-tight">
+                {title}
+              </h1>
+            ) : (
+              title
+            ))}
+          {description && (
+            <p className="text-sm text-gray-900 leading-relaxed">
+              {description}
+            </p>
+          )}
+        </div>
+      )}
       {children}
 
       {(primaryActionText || onBack || error) && (
@@ -92,6 +129,7 @@ export function TestPageLayout({
               </button>
             )}
           </div>
+          {footer}
         </div>
       )}
     </>
