@@ -29,9 +29,9 @@ export function Letter() {
               </p>
 
               <p>
-                But getting to the root cause of what’s actually happening is
-                slow and hard. The data is in too many disconnected systems.
-                It's formatted wrong. And you often can't trust the data in your
+                But getting to the root cause of what’s happening is slow and
+                hard. The data is in too many disconnected systems. It's
+                formatted wrong. And you often can't trust the data in your
                 databases
               </p>
 
@@ -44,7 +44,7 @@ export function Letter() {
                 And it means that getting reliable answers ends up being so hard
                 and slow that{" "}
                 <span className="font-medium">
-                  you often don't know what you need to know to make many of the
+                  you often can't know what you need to know to make many of the
                   important decisions you need to make
                 </span>
               </p>
@@ -55,15 +55,16 @@ export function Letter() {
               </p>
 
               <p>
-                You ask your Personal Analyst questions just like you'd ask any
-                other team member - by sending a DM in Slack
+                Talking to your Personal Analyst is intuitive. You simply ask
+                questions in plain English by sending DMs in Slack
               </p>
 
               <p>
-                Then your Personal Analyst quickly and easily gets the answer
-                even if the data is in disconnected and dirty databases. Your
-                Personal Analyst tells you what happened. Why it happened. And
-                gives you ideas of what you could do
+                You can ask your Personal Analyst any questions. And you'll
+                quickly get a reliable answer even if the data is in multiple
+                disconnected databases. Your Personal Analyst tells you what
+                happened. Why it happened. And gives you ideas of what you could
+                do
               </p>
 
               <p>
