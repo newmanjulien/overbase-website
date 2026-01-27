@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef, forwardRef } from "react";
-import { Button } from "../ui/button";
+import { Button } from "./ui/button";
 
 export function HotkeyBadge({
   keyChar,
@@ -19,14 +20,17 @@ export function HotkeyBadge({
 }
 
 export const HotkeyButton = forwardRef<
-  HTMLButtonElement,
+  HTMLElement,
   {
     children: React.ReactNode;
-    onClick: () => void;
+    onClick?: () => void;
     hotkey: string;
     variant?: "dark" | "light";
     size?: "sm" | "lg" | "default";
     className?: string;
+    href?: string;
+    target?: string;
+    rel?: string;
   }
 >(
   (
@@ -37,12 +41,15 @@ export const HotkeyButton = forwardRef<
       variant = "dark",
       size = "default",
       className,
+      href,
+      target,
+      rel,
     },
     externalRef,
   ) => {
-    const internalRef = useRef<HTMLButtonElement | null>(null);
+    const internalRef = useRef<HTMLElement | null>(null);
 
-    const setRef = (node: HTMLButtonElement | null) => {
+    const setRef = (node: HTMLElement | null) => {
       internalRef.current = node;
       if (typeof externalRef === "function") externalRef(node);
       else if (externalRef) externalRef.current = node;
@@ -61,11 +68,11 @@ export const HotkeyButton = forwardRef<
 
         if (e.key.toLowerCase() !== hotkey.toLowerCase()) return;
 
-        const btn = internalRef.current;
-        if (!btn) return;
+        const el = internalRef.current;
+        if (!el) return;
 
-        btn.focus();
-        btn.click();
+        el.focus();
+        el.click();
       };
 
       window.addEventListener("keydown", handler);
@@ -79,11 +86,21 @@ export const HotkeyButton = forwardRef<
         variant={variant === "light" ? "secondary" : "default"}
         size={size}
         className={className}
+        asChild={Boolean(href)}
       >
-        <span className="inline-flex items-center gap-3">
-          {children}
-          <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
-        </span>
+        {href ? (
+          <Link href={href} target={target} rel={rel}>
+            <span className="inline-flex items-center gap-3">
+              {children}
+              <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
+            </span>
+          </Link>
+        ) : (
+          <span className="inline-flex items-center gap-3">
+            {children}
+            <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
+          </span>
+        )}
       </Button>
     );
   },

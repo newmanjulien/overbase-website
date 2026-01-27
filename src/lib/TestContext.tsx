@@ -12,6 +12,7 @@ export type AccessMethod = "export" | "system";
 
 const STORAGE_KEYS = {
   EMAIL: "test_email",
+  PLATFORM: "test_platform",
   USE_CASE: "test_use_case",
   DATASOURCE1: "test_datasource1",
   DATASOURCE2: "test_datasource2",
@@ -22,6 +23,8 @@ const STORAGE_KEYS = {
 interface TestContextType {
   email: string;
   setEmail: (email: string) => void;
+  platform: string;
+  setPlatform: (platform: string) => void;
   useCase: string;
   setUseCase: (useCase: string) => void;
   datasource1: string;
@@ -41,6 +44,7 @@ const TestContext = createContext<TestContextType | undefined>(undefined);
 
 export function TestProvider({ children }: { children: React.ReactNode }) {
   const [email, _setEmail] = useState("");
+  const [platform, _setPlatform] = useState("");
   const [useCase, _setUseCase] = useState("");
   const [datasource1, _setDatasource1] = useState("");
   const [datasource1AccessMethod, _setDatasource1AccessMethod] =
@@ -67,6 +71,8 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
   };
 
   const setEmail = (v: string) => sync(_setEmail, STORAGE_KEYS.EMAIL, v);
+  const setPlatform = (v: string) =>
+    sync(_setPlatform, STORAGE_KEYS.PLATFORM, v);
   const setUseCase = (v: string) => sync(_setUseCase, STORAGE_KEYS.USE_CASE, v);
   const setDatasource1 = (v: string) =>
     sync(_setDatasource1, STORAGE_KEYS.DATASOURCE1, v);
@@ -87,6 +93,7 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
 
   const clearTestData = useCallback(() => {
     _setEmail("");
+    _setPlatform("");
     _setUseCase("");
     _setDatasource1("");
     _setDatasource1AccessMethod("export");
@@ -136,6 +143,7 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
       };
 
       loadSafe(STORAGE_KEYS.EMAIL, _setEmail);
+      loadSafe(STORAGE_KEYS.PLATFORM, _setPlatform);
       loadSafe(STORAGE_KEYS.USE_CASE, _setUseCase);
       loadSafe(STORAGE_KEYS.DATASOURCE1, _setDatasource1);
       loadSafe(
@@ -158,6 +166,8 @@ export function TestProvider({ children }: { children: React.ReactNode }) {
       value={{
         email,
         setEmail,
+        platform,
+        setPlatform,
         useCase,
         setUseCase,
         datasource1,

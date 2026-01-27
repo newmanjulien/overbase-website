@@ -1,14 +1,14 @@
 "use client";
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { useState } from "react";
-import { HotkeyButton } from "./buttons/HotkeyButton";
-import { useNavigateToTest } from "../hooks/useTestEntryPoint";
+import { HotkeyButton } from "./HotkeyButton";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
+  logoHref?: string;
   onLogoClick?: () => void;
   /** Override the initial (non-scrolled) background color of the header */
   initialBackgroundColor?: string;
@@ -16,14 +16,11 @@ interface BaseHeaderProps {
 
 export function Header({
   logoSrc,
+  logoHref = "/",
   onLogoClick,
   initialBackgroundColor,
 }: BaseHeaderProps) {
-  const router = useRouter();
   const [hasScrolled, setHasScrolled] = useState(false);
-  const navigateToTest = useNavigateToTest();
-
-  const handleLogin = () => router.push("/login");
 
   // Determine the background style based on scroll state
   const getBackgroundStyle = () => {
@@ -46,21 +43,34 @@ export function Header({
       <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
         <div className="flex items-center justify-between h-13">
           {/* Logo */}
-          <div
-            className={`h-8 w-auto flex items-center ${
-              onLogoClick ? "cursor-pointer" : ""
-            }`}
-            onClick={onLogoClick}
-          >
-            <Image
-              src={logoSrc ?? "/logo.png"}
-              alt="Logo"
-              width={50}
-              height={32}
-              className="object-contain"
-              priority
-            />
-          </div>
+          {logoHref ? (
+            <Link href={logoHref} className="h-8 w-auto flex items-center">
+              <Image
+                src={logoSrc ?? "/logo.png"}
+                alt="Logo"
+                width={50}
+                height={32}
+                className="object-contain"
+                priority
+              />
+            </Link>
+          ) : (
+            <div
+              className={`h-8 w-auto flex items-center ${
+                onLogoClick ? "cursor-pointer" : ""
+              }`}
+              onClick={onLogoClick}
+            >
+              <Image
+                src={logoSrc ?? "/logo.png"}
+                alt="Logo"
+                width={50}
+                height={32}
+                className="object-contain"
+                priority
+              />
+            </div>
+          )}
 
           {/* Right side buttons */}
           <div className="flex items-center gap-2">
@@ -69,19 +79,19 @@ export function Header({
               variant="light"
               size="sm"
               className="rounded-sm text-sm scale-[0.92]"
-              onClick={handleLogin}
+              href="/login"
             >
               Login
             </HotkeyButton>
 
             <HotkeyButton
-              hotkey="t"
+              hotkey="g"
               variant="dark"
               size="sm"
               className="rounded-sm text-sm scale-[0.92]"
-              onClick={navigateToTest}
+              href="/login"
             >
-              Test for $100
+              Get started
             </HotkeyButton>
           </div>
         </div>

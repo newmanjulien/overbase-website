@@ -1,12 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useRouter } from "next/navigation";
-import { ListenButton } from "../components/buttons/ListenButton";
-import { Tooltip, TooltipProvider } from "../components/ui/tooltip";
 
 export function Letter() {
-  const router = useRouter();
   return (
     <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
       <div className="max-w-3xl mx-auto scale-[0.95]">
@@ -18,99 +14,80 @@ export function Letter() {
 
           {/* Main letter */}
           <div className="relative bg-surface rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
-            <TooltipProvider>
-              <div className="mb-7">
-                <div className="flex items-center justify-between">
-                  <div className="text-lg text-gray-900 font-medium">
-                    Introducing Overbase
-                  </div>
-                  <ListenButton
-                    audioSrc="/letter.mp3"
-                    iconSize={17}
-                    textSize="text-sm"
-                    textWeight="font-medium"
-                  />
-                </div>
+            <div className="mb-7">
+              <div className="text-lg text-gray-900 font-medium">
+                Introducing Overbase
               </div>
+            </div>
 
-              <div className="pt-6 border-t border-gray-100"></div>
+            <div className="pt-6 border-t border-gray-100"></div>
 
-              <div className="space-y-6 text-gray-900 leading-relaxed">
-                <p>
-                  You have questions when you look at your dashboards, reports
-                  or CRM
-                </p>
+            <div className="space-y-6 text-gray-900 leading-relaxed">
+              <p>
+                You have questions when you look at your dashboards, reports or
+                CRM
+              </p>
 
-                <p>
-                  But getting to the bottom of what’s actually happening is slow
-                  and hard. The data is in too many disconnected systems. It's
-                  formatted wrong. And you often can't trust the data in your
-                  databases
-                </p>
+              <p>
+                But getting to the root cause of what’s actually happening is
+                slow and hard. The data is in too many disconnected systems.
+                It's formatted wrong. And you often can't trust the data in your
+                databases
+              </p>
 
-                <p>
-                  Which means that you need to pull an analyst off another
-                  project every time you have a question
-                </p>
+              <p>
+                Which means that you need to pull an analyst off another project
+                every time you have a question
+              </p>
 
-                <p>
-                  And getting reliable answers ends up being so hard and slow
-                  that{" "}
-                  <span className="font-medium">
-                    you often don't know what you need to know to make many of
-                    the important decisions you need to make
-                  </span>
-                </p>
+              <p>
+                And it means that getting reliable answers ends up being so hard
+                and slow that{" "}
+                <span className="font-medium">
+                  you often don't know what you need to know to make many of the
+                  important decisions you need to make
+                </span>
+              </p>
 
-                <p className="font-medium">
-                  Overbase is the only automated system that's more reliable
-                  than a top tier human analyst
-                </p>
+              <p className="font-medium">
+                Overbase is an automated Personal Analyst who does more reliable
+                analysis than a top tier human analyst
+              </p>
 
-                <p>
-                  We're the first to get this level of reliability. And we do it
-                  by partnering with businesses to train a{" "}
-                  <Tooltip content="Full standalone 26B+ Parameter Large Language Model running on Overbase's hardware">
-                    <span className="underline decoration-dotted cursor-help decoration-gray-400 underline-offset-4">
-                      Personal LLM
-                    </span>
-                  </Tooltip>{" "}
-                  for each of their Revenue Execs
-                </p>
+              <p>
+                You ask your Personal Analyst questions just like you'd ask any
+                other team member - by sending a DM in Slack
+              </p>
 
-                <p>
-                  Each Personal LLM is a standalone 26B+ Parameter Large
-                  Language Model that's trained for each individual Revenue
-                  Exec. The Personal LLM understands how each Revenue Exec
-                  thinks. And it learns how to use agents to navigate each
-                  business's data infrastructure
-                </p>
+              <p>
+                Then your Personal Analyst quickly and easily gets the answer
+                even if the data is in disconnected and dirty databases. Your
+                Personal Analyst tells you what happened. Why it happened. And
+                gives you ideas of what you could do
+              </p>
 
-                <p>
-                  Check out an{" "}
-                  <Link
-                    href="/example"
-                    target="_blank"
-                    className="text-blue-400 underline hover:text-blue-300"
-                  >
-                    example
-                  </Link>{" "}
-                  or take a look at{" "}
-                  <Link
-                    href="/pricing"
-                    className="text-blue-400 underline hover:text-blue-300"
-                  >
-                    pricing
-                  </Link>
-                </p>
-              </div>
+              <p>
+                <Link
+                  href="/login"
+                  className="text-blue-400 underline hover:text-blue-300"
+                >
+                  Get started
+                </Link>{" "}
+                in just 5 minutes. Or check out{" "}
+                <Link
+                  href="/pricing"
+                  className="text-blue-400 underline hover:text-blue-300"
+                >
+                  pricing
+                </Link>
+              </p>
+            </div>
 
-              {/* Signature */}
-              <div className="mt-8">
-                <div className="font-medium text-gray-900">Julien Newman</div>
-                <div className="text-sm text-gray-500">Founder & CEO</div>
-              </div>
-            </TooltipProvider>
+            {/* Signature */}
+            <div className="mt-8">
+              <div className="font-medium text-gray-900">Julien Newman</div>
+              <div className="text-sm text-gray-500">Founder & CEO</div>
+            </div>
           </div>
         </div>
       </div>
