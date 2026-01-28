@@ -19,7 +19,7 @@ const PLANS: Plan[] = [
     description:
       "Easily and quickly get reliable answers from dirty and disconnected data",
     subtext:
-      "Per answer. $0 per month then pay as you go for each answer. No contract. No minimum",
+      "Per answer. $0 per month then pay as you go for each answer. No obligations. No minimum",
   },
   {
     id: "subscription",
