@@ -24,7 +24,7 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                You have questions when you look at your dashboards, reports or
+                You have questions when you look at your dashboards, reports, or
                 CRM
               </p>
 
@@ -51,7 +51,7 @@ export function Letter() {
 
               <p className="font-medium">
                 Overbase is an automated Personal Analyst who does more reliable
-                analysis than a top tier human analyst
+                analysis than a top-tier human analyst
               </p>
 
               <p>
@@ -60,7 +60,7 @@ export function Letter() {
               </p>
 
               <p>
-                You can ask your Personal Analyst any questions. And you'll
+                You can ask your Personal Analyst any question. And you'll
                 quickly get a reliable answer even if the data is in multiple
                 disconnected databases. Your Personal Analyst tells you what
                 happened. Why it happened. And gives you ideas of what you could
