@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, forwardRef } from "react";
-import { Button } from "./ui/button";
+import { Button } from "@/components/ui/button";
 
 export function HotkeyBadge({
   keyChar,

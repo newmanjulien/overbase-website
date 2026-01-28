@@ -1,8 +1,8 @@
 "use client";
 
-import { useTOCScrollSpy, scrollToSection } from "../hooks/useTOCScrollSpy";
-import { ToggleGroup, ToggleGroupItem } from "./ui/toggle-group";
-import { cn } from "../lib/utils";
+import { useTOCScrollSpy, scrollToSection } from "@/hooks/useTOCScrollSpy";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
+import { cn } from "@/lib/utils";
 
 export interface TOCItem {
   id: string;

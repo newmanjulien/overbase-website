@@ -1,6 +1,6 @@
-import { Header } from "../../../components/Header";
-import { Footer } from "../../../components/Footer";
-import { TermsOfService } from "./TermsOfService";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { TermsOfService } from "@/app/legal/terms-of-service/TermsOfService";
 
 export default function TermsOfServicePage() {
   return (

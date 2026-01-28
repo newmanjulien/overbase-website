@@ -1,6 +1,6 @@
-import { Header } from "../../../components/Header";
-import { Footer } from "../../../components/Footer";
-import { SubProcessors } from "./SubProcessors";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { SubProcessors } from "@/app/legal/sub-processors/SubProcessors";
 
 export default function SubProcessorsPage() {
   return (

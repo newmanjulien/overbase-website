@@ -1,7 +1,7 @@
-import { Header } from "../../components/Header";
-import { Footer } from "../../components/Footer";
-import { Pricing } from "./Pricing";
-import Tiers from "./Tiers";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { Pricing } from "@/app/pricing/Pricing";
+import Tiers from "@/app/pricing/Tiers";
 
 export default function PricingPage() {
   return (

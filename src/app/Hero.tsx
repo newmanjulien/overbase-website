@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useEffect } from "react";
-import { Button } from "../components/ui/button";
+import { Button } from "@/components/ui/button";
 
-export function HeroSection() {
+export function Hero() {
   // Preload the test page video and datasource logos in the background
   useEffect(() => {
     // Preload video

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { TestPageLayout } from "../../components/layouts/TestPageLayout";
-import { Input } from "../../components/ui/input";
+import { TestPageLayout } from "@/components/layouts/TestPageLayout";
+import { Input } from "@/components/ui/input";
 
 export default function LoginPage() {
   const router = useRouter();

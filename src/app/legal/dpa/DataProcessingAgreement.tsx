@@ -1,7 +1,7 @@
 "use client";
 
-import { LegalPageLayout } from "../../../components/layouts/LegalPageLayout";
-import { dpaMetadata, dpaSections } from "./dpa-content";
+import { LegalPageLayout } from "@/components/layouts/LegalPageLayout";
+import { dpaMetadata, dpaSections } from "@/app/legal/dpa/dpa-content";
 
 /**
  * Data Processing Agreement component using the reusable LegalPageLayout.

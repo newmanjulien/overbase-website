@@ -7,7 +7,7 @@
 import type {
   LegalSection,
   LegalPageMetadata,
-} from "../../../components/layouts/LegalPageLayout";
+} from "@/components/layouts/LegalPageLayout";
 
 export const termsMetadata: LegalPageMetadata = {
   title: "Terms of Service",

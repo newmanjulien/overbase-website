@@ -1,7 +1,7 @@
 "use client";
 
-import { LegalPageLayout } from "../../../components/layouts/LegalPageLayout";
-import { securityMetadata, securitySections } from "./security-content";
+import { LegalPageLayout } from "@/components/layouts/LegalPageLayout";
+import { securityMetadata, securitySections } from "@/app/legal/security/security-content";
 
 /**
  * Security Addendum component using the reusable LegalPageLayout.

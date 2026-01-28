@@ -7,7 +7,7 @@
 import type {
   LegalSection,
   LegalPageMetadata,
-} from "../../../components/layouts/LegalPageLayout";
+} from "@/components/layouts/LegalPageLayout";
 
 export const dpaMetadata: LegalPageMetadata = {
   title: "Data Processing Addendum",

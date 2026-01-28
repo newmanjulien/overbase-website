@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { HotkeyButton } from "./HotkeyButton";
+import { HotkeyButton } from "@/components/HotkeyButton";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {

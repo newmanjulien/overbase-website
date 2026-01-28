@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { ReactNode } from "react";
-import { Button } from "../../components/ui/button";
+import { Button } from "@/components/ui/button";
 
 interface TestPageLayoutProps {
   children?: ReactNode;

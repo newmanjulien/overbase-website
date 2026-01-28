@@ -1,7 +1,7 @@
 "use client";
 
-import { LegalPageLayout } from "../../../components/layouts/LegalPageLayout";
-import { termsMetadata, termsSections } from "./terms-content";
+import { LegalPageLayout } from "@/components/layouts/LegalPageLayout";
+import { termsMetadata, termsSections } from "@/app/legal/terms-of-service/terms-content";
 
 /**
  * Terms of Service component using the reusable LegalPageLayout.

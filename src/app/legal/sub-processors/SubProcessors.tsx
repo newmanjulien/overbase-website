@@ -1,10 +1,10 @@
 "use client";
 
-import { LegalPageLayout } from "../../../components/layouts/LegalPageLayout";
+import { LegalPageLayout } from "@/components/layouts/LegalPageLayout";
 import {
   subProcessorsMetadata,
   subProcessorsSections,
-} from "./sub-processors-content";
+} from "@/app/legal/sub-processors/sub-processors-content";
 
 /**
  * Sub-processors component using the reusable LegalPageLayout.
