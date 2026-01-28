@@ -54,10 +54,9 @@ export function Letter() {
                 analysis than a top-tier human analyst
               </p>
 
-              <p>
-                Talking to your Personal Analyst is intuitive. You simply ask
-                questions in plain English by sending DMs in Slack
-              </p>
+              <p>Talking to your Personal Analyst is intuitive</p>
+
+              <p>You simply ask questions by sending DMs in Slack</p>
 
               <p>
                 You can ask your Personal Analyst any question. And you'll
