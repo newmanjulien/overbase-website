@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SlackIcon } from "lucide-react";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
@@ -38,7 +39,10 @@ export function Hero() {
               className="p-6 text-lg rounded-lg"
               asChild
             >
-              <Link href="/login">Get started in 5 minutes</Link>
+              <Link href="/login" className="inline-flex items-center gap-2.5">
+                <SlackIcon className="size-5.5" />
+                Get started in 5 minutes
+              </Link>
             </Button>
 
             <Button
@@ -67,7 +71,10 @@ export function Hero() {
           className="p-5 text-base rounded-lg w-full max-w-lg"
           asChild
         >
-          <Link href="/login">Test for $100</Link>
+          <Link href="/login" className="inline-flex items-center gap-2.5">
+            <SlackIcon className="size-5.5" />
+            Test for $100
+          </Link>
         </Button>
 
         <Button

@@ -3,7 +3,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { HotkeyButton } from "@/components/HotkeyButton";
+import { SlackIcon } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
@@ -74,25 +75,17 @@ export function Header({
 
           {/* Right side buttons */}
           <div className="flex items-center gap-2">
-            <HotkeyButton
-              hotkey="l"
-              variant="light"
+            <Button
+              variant="default"
               size="sm"
               className="rounded-sm text-sm scale-[0.92]"
-              href="/login"
+              asChild
             >
-              Login
-            </HotkeyButton>
-
-            <HotkeyButton
-              hotkey="g"
-              variant="dark"
-              size="sm"
-              className="rounded-sm text-sm scale-[0.92]"
-              href="/login"
-            >
-              Get started
-            </HotkeyButton>
+              <Link href="/login" className="inline-flex items-center gap-1.5">
+                <SlackIcon className="size-4" />
+                Get started
+              </Link>
+            </Button>
           </div>
         </div>
       </div>

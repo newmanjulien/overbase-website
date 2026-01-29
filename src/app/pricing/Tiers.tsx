@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { SlackIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Plan {
@@ -73,7 +74,9 @@ function PlanCard({ plan }: { plan: Plan }) {
           className="w-full text-sm rounded-md"
           asChild
         >
-          <Link href="/login">Get started in 5 minutes</Link>
+          <Link href="/login" className="inline-flex items-center gap-2">
+            Get started in 5 minutes
+          </Link>
         </Button>
       </div>
     </div>
