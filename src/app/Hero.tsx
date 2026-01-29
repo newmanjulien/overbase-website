@@ -31,16 +31,15 @@ export function Hero() {
             the most disconnected data
           </h2>
 
-          {/* Desktop buttons - now visible at md */}
           <div className="hidden md:flex mt-10 gap-2 xl:gap-4">
             <Button
               variant="default"
               size="lg"
-              className="p-6 text-lg rounded-lg"
+              className="p-6 text-[17px] rounded-lg"
               asChild
             >
               <Link href="/login" className="inline-flex items-center gap-2.5">
-                <SlackIcon className="size-5.5" />
+                <SlackIcon className="size-5" />
                 Get started in 5 minutes
               </Link>
             </Button>
@@ -48,7 +47,7 @@ export function Hero() {
             <Button
               variant="secondary"
               size="lg"
-              className="p-6 text-lg rounded-lg"
+              className="p-6 text-[17px] rounded-lg"
               asChild
             >
               <Link
