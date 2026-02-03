@@ -49,14 +49,16 @@ export function Letter() {
                 </span>
               </p>
 
-              <p className="font-medium">
+              <p className="font-medium">But why?!</p>
+
+              <p>
                 Overbase is an automated Personal Analyst who does more reliable
                 analysis than a top-tier human analyst
               </p>
 
               <p>
-                Talking to your Personal Analyst is intuitive. You simply ask
-                questions by sending DMs in Slack
+                Talking to your Personal Analyst is intuitive. You simply send
+                DMs in Slack
               </p>
 
               <p>

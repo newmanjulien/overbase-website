@@ -31,11 +31,11 @@ export function Hero() {
             understand even the most disconnected data
           </h2>
 
-          <div className="hidden md:flex mt-10 gap-2 xl:gap-4">
+          <div className="hidden md:flex mt-10 gap-2.5">
             <Button
               variant="default"
               size="lg"
-              className="p-6 text-[17px] rounded-lg"
+              className="py-6 px-8 text-[17px] rounded-lg"
               asChild
             >
               <Link
@@ -51,7 +51,7 @@ export function Hero() {
             <Button
               variant="secondary"
               size="lg"
-              className="p-6 text-[17px] rounded-lg"
+              className="py-6 px-8 text-[17px] rounded-lg"
               asChild
             >
               <Link
