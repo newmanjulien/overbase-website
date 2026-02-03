@@ -53,7 +53,7 @@ export function Letter() {
 
               <p>
                 Overbase is an automated Personal Analyst who does more reliable
-                analysis than a top-tier human analyst
+                analysis than top human analysts
               </p>
 
               <p>
@@ -62,11 +62,10 @@ export function Letter() {
               </p>
 
               <p>
-                You can ask your Personal Analyst any question. And you'll
-                quickly get a reliable answer even if the data is in multiple
-                disconnected databases. Your Personal Analyst tells you what
-                happened. Why it happened. And gives you ideas of what you could
-                do
+                You can ask any question. And you'll quickly get a reliable
+                answer even if the data is in multiple disconnected databases.
+                Your Personal Analyst tells you what happened, why it happened,
+                and gives you ideas of what you could do
               </p>
 
               <p>
