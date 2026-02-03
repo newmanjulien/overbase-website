@@ -41,8 +41,8 @@ export function Pricing() {
               disconnected data
             </p>
             <p>
-              Your Personal Analyst easily accesses any data no matter where
-              it's located
+              Your Personal Analyst uses AI agents to easily access any data no
+              matter where it's located
             </p>
             <p>
               Get up and running quickly and easily with your existing data
