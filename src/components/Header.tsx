@@ -81,9 +81,13 @@ export function Header({
               className="rounded-sm text-sm scale-[0.92]"
               asChild
             >
-              <Link href="/login" className="inline-flex items-center gap-1.5">
+              <Link
+                href="https://slack.com/oauth/v2/authorize?scope=chat%3Awrite%2Cchat%3Awrite.customize%2Ccommands%2Cim%3Ahistory%2Cim%3Awrite%2Cusers%3Aread&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YWxsT3B0aW9ucyI6eyJzY29wZXMiOlsiY2hhdDp3cml0ZSIsImNoYXQ6d3JpdGUuY3VzdG9taXplIiwiY29tbWFuZHMiLCJpbTpoaXN0b3J5IiwiaW06d3JpdGUiLCJ1c2VyczpyZWFkIl0sInJlZGlyZWN0VXJpIjoiaHR0cHM6Ly9zbGFjay1hcHAtdHdvLnZlcmNlbC5hcHAvc2xhY2svb2F1dGhfcmVkaXJlY3QifSwibm93IjoiMjAyNi0wMS0zMFQxODowNToxMy44MjZaIiwicmFuZG9tIjo4MTgzOTksImlhdCI6MTc2OTc5NjMxM30.6WCQeh0N6rwnYp2D1qqoF1dL0Hkj6Ak77zwsSBCDZCU&client_id=10378013182247.10391416690262&redirect_uri=https%3A%2F%2Fslack-app-two.vercel.app%2Fslack%2Foauth_redirect"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <SlackIcon className="size-4" />
-                Get started
+                Add to Slack
               </Link>
             </Button>
           </div>
