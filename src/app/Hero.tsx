@@ -19,7 +19,7 @@ export function Hero() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-3xl text-center md:text-left scale-[0.90]">
-          <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md">
+          <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md mx-auto md:mx-0">
             Personal Analyst for{" "}
             <span className="bg-red-500/10 text-[#FC3636] px-1 rounded">
               Revenue Execs
@@ -31,11 +31,11 @@ export function Hero() {
             understand even the most disconnected data
           </h2>
 
-          <div className="hidden md:flex mt-10 gap-2.5">
+          <div className="mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
             <Button
               variant="default"
               size="lg"
-              className="py-6 px-8 text-[17px] rounded-lg"
+              className="w-full max-w-lg py-6 px-8 text-[17px] rounded-lg sm:w-auto"
               asChild
             >
               <Link
@@ -51,7 +51,7 @@ export function Hero() {
             <Button
               variant="secondary"
               size="lg"
-              className="py-6 px-8 text-[17px] rounded-lg"
+              className="w-full max-w-lg py-6 px-8 text-[17px] rounded-lg sm:w-auto"
               asChild
             >
               <Link
@@ -64,36 +64,6 @@ export function Hero() {
             </Button>
           </div>
         </div>
-      </div>
-
-      {/* === Mobile Layout (only shown below md) === */}
-      <div className="w-full max-w-6xl mx-auto md:hidden mt-6 flex flex-col items-center gap-6">
-        <Button
-          variant="default"
-          size="lg"
-          className="p-5 text-base rounded-lg w-full max-w-lg"
-          asChild
-        >
-          <Link href="/login" className="inline-flex items-center gap-2.5">
-            <SlackIcon className="size-5.5" />
-            Test for $100
-          </Link>
-        </Button>
-
-        <Button
-          variant="secondary"
-          size="lg"
-          className="p-5 text-base rounded-lg w-full max-w-lg"
-          asChild
-        >
-          <Link
-            href="https://cal.com/juliennewman/julien"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Demo with our CEO
-          </Link>
-        </Button>
       </div>
     </section>
   );
