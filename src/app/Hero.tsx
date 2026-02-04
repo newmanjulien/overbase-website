@@ -20,12 +20,12 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full max-w-2xl text-center md:text-left scale-[0.90]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md mx-auto md:mx-0">
-            Personal Analyst for{" "}
-            <span className="bg-[#ffffcc] px-1 rounded-xs">Revenue Execs</span>
+            Personal analyst for{" "}
+            <span className="bg-[#ffffcc] px-1 rounded-xs">revenue execs</span>
           </h1>
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
-            Overbase is a Personal Analyst who lives in your Slack and lets you
+            Overbase is a personal analyst who lives in your Slack and lets you
             understand even the most disconnected data
           </h2>
 

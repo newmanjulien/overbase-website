@@ -50,19 +50,19 @@ export function Letter() {
               </p>
 
               <p>
-                Overbase is an automated Personal Analyst who does more reliable
+                Overbase is an automated personal analyst who does more reliable
                 analysis than top human analysts
               </p>
 
               <p>
-                Talking to your Personal Analyst is intuitive. You simply send
+                Talking to your personal analyst is intuitive. You simply send
                 DMs in Slack
               </p>
 
               <p>
                 You can ask any question. And you'll quickly get a reliable
                 answer even if the data is in multiple disconnected databases.
-                Your Personal Analyst tells you what happened, why it happened,
+                Your personal analyst tells you what happened, why it happened,
                 and gives you ideas of what you could do
               </p>
 
