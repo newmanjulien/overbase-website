@@ -90,11 +90,11 @@
   }
 
   ::selection {
-    background-color: #ffffbc;
+    background-color: #ffffc6;
   }
 
   ::-moz-selection {
-    background-color: #ffffbc;
+    background-color: #ffffc6;
   }
 }
 

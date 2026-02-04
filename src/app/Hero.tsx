@@ -21,7 +21,7 @@ export function Hero() {
         <div className="w-full max-w-2xl text-center md:text-left scale-[0.90]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md mx-auto md:mx-0">
             Personal Analyst for{" "}
-            <span className="bg-[#ffffbc] px-1 rounded-xs">Revenue Execs</span>
+            <span className="bg-[#ffffc6] px-1 rounded-xs">Revenue Execs</span>
           </h1>
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
