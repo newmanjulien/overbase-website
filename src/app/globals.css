@@ -90,14 +90,13 @@
   }
 
   ::selection {
-    background-color: #ffffb1;
+    background-color: #ffff78;
   }
 
   ::-moz-selection {
-    background-color: #ffffb1;
+    background-color: #ffff78;
   }
 }
-
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
