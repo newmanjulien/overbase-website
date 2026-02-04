@@ -67,12 +67,11 @@ export function Letter() {
               </p>
 
               <p>
-                Read{" "}
                 <Link
                   href="/more"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
-                  more
+                  Read more
                 </Link>{" "}
                 or check out{" "}
                 <Link

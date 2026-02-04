@@ -18,7 +18,7 @@ export function Hero() {
     <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-20 pb-18 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-2xl text-center md:text-left scale-[0.90]">
+        <div className="w-full max-w-2xl text-center md:text-left scale-[0.92]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md mx-auto md:mx-0">
             Personal analyst for{" "}
             <span className="bg-[#ffffcc] px-1 rounded-xs">revenue execs</span>
