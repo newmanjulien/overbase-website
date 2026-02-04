@@ -15,7 +15,7 @@ export function Letter() {
           {/* Main letter */}
           <div className="relative bg-surface rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
             <div className="mb-7">
-              <div className="text-lg text-gray-900 font-medium">
+              <div className="text-lg text-gray-900 font-semibold">
                 Introducing Overbase
               </div>
             </div>
@@ -44,12 +44,10 @@ export function Letter() {
                 And it means that getting reliable answers ends up being so hard
                 and slow that{" "}
                 <span className="font-medium">
-                  you often can't know what you need to know to make many of the
-                  important decisions you need to make
+                  you often don't actually know what you need to know to make
+                  many of the most important decisions you need to make
                 </span>
               </p>
-
-              <p className="font-medium">But why?!</p>
 
               <p>
                 Overbase is an automated Personal Analyst who does more reliable
@@ -77,7 +75,7 @@ export function Letter() {
                 >
                   Add to Slack
                 </Link>{" "}
-                to get set up in less than 5 minutes. Or check out{" "}
+                and get set up in 5 minutes. Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
