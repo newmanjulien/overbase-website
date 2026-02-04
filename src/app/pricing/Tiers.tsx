@@ -51,7 +51,7 @@ export default function Tiers() {
 function PlanCard({ plan }: { plan: Plan }) {
   return (
     <div className="bg-white rounded-lg p-6 flex flex-col h-full border border-gray-100">
-      <h3 className="text-3xl text-gray-900 mb-4">{plan.name}</h3>
+      <h3 className="text-3xl text-gray-900 font-medium mb-4">{plan.name}</h3>
 
       <p className="text-sm text-gray-600 mb-5 max-w-[90%]">
         {plan.description}
