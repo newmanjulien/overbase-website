@@ -67,21 +67,21 @@ export function Letter() {
               </p>
 
               <p>
-                Check out{" "}
+                <Link
+                  href="https://slack-overbase.onrender.com/slack/install"
+                  className="text-blue-400 underline hover:text-blue-300"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Add to Slack
+                </Link>{" "}
+                and get set up in 5 minutes. Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>{" "}
-                or{" "}
-                <Link
-                  href="/more"
-                  className="text-blue-400 underline hover:text-blue-300"
-                >
-                  read more
-                </Link>{" "}
-                if you're curious
+                </Link>
               </p>
             </div>
 
