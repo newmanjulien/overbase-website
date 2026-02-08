@@ -26,7 +26,7 @@ export function Hero() {
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
             Overbase is a personal analyst who lives in your Slack and lets you
-            understand even the most disconnected data
+            get reliable answers from disconnected data
           </h2>
 
           <div className="mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
