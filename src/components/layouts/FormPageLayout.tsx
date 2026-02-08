@@ -4,7 +4,7 @@ import Image from "next/image";
 import { ReactNode } from "react";
 import { Button } from "@/components/ui/button";
 
-interface TestPageLayoutProps {
+interface FormPageLayoutProps {
   children?: ReactNode;
   title?: ReactNode;
   description?: string;
@@ -20,7 +20,7 @@ interface TestPageLayoutProps {
   totalSteps?: number;
 }
 
-export function TestPageLayout({
+export function FormPageLayout({
   children,
   title,
   description,
@@ -34,7 +34,7 @@ export function TestPageLayout({
   footer,
   step,
   totalSteps,
-}: TestPageLayoutProps) {
+}: FormPageLayoutProps) {
   const showStepIndicator =
     typeof step === "number" && typeof totalSteps === "number";
   const content = (

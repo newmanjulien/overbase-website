@@ -18,7 +18,7 @@ export function Hero() {
     <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-20 pb-18 bg-surface">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
-        <div className="w-full max-w-2xl text-center md:text-left scale-[0.90]">
+        <div className="w-full max-w-2xl text-center md:text-left scale-[0.92]">
           <h1 className="text-5xl text-gray-900 tracking-tight leading-snug font-semibold max-w-md mx-auto md:mx-0">
             Personal analyst for{" "}
             <span className="bg-[#ffffcc] px-1 rounded-xs">revenue execs</span>
@@ -26,7 +26,7 @@ export function Hero() {
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
             Overbase is a personal analyst who lives in your Slack and lets you
-            understand even the most disconnected data
+            get reliable answers from disconnected data
           </h2>
 
           <div className="mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
@@ -37,7 +37,7 @@ export function Hero() {
               asChild
             >
               <Link
-                href="https://slack.com/oauth/v2/authorize?scope=chat%3Awrite%2Cchat%3Awrite.customize%2Ccommands%2Cim%3Ahistory%2Cim%3Awrite%2Cusers%3Aread&state=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpbnN0YWxsT3B0aW9ucyI6eyJzY29wZXMiOlsiY2hhdDp3cml0ZSIsImNoYXQ6d3JpdGUuY3VzdG9taXplIiwiY29tbWFuZHMiLCJpbTpoaXN0b3J5IiwiaW06d3JpdGUiLCJ1c2VyczpyZWFkIl0sInJlZGlyZWN0VXJpIjoiaHR0cHM6Ly9zbGFjay1hcHAtdHdvLnZlcmNlbC5hcHAvc2xhY2svb2F1dGhfcmVkaXJlY3QifSwibm93IjoiMjAyNi0wMS0zMFQxODowNToxMy44MjZaIiwicmFuZG9tIjo4MTgzOTksImlhdCI6MTc2OTc5NjMxM30.6WCQeh0N6rwnYp2D1qqoF1dL0Hkj6Ak77zwsSBCDZCU&client_id=10378013182247.10391416690262&redirect_uri=https%3A%2F%2Fslack-app-two.vercel.app%2Fslack%2Foauth_redirect"
+                href="https://slack-overbase.onrender.com/slack/install"
                 target="_blank"
                 rel="noreferrer"
               >
