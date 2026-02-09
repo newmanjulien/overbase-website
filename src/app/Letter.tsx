@@ -61,7 +61,10 @@ export function Letter() {
 
               <p>
                 You can ask any question. And you'll quickly get a reliable
-                answer even if the data is in multiple disconnected databases.
+                answer even if the data is in multiple disconnected databases
+              </p>
+
+              <p>
                 Your personal analyst tells you what happened, why it happened,
                 and gives you ideas of what you could do
               </p>
