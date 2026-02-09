@@ -50,8 +50,8 @@ export function Letter() {
               </p>
 
               <p>
-                Overbase is a personal analyst who does more reliable analysis
-                than top human analysts
+                Overbase is a personal analyst who gets reliable answers from
+                disconnected data
               </p>
 
               <p>
@@ -60,13 +60,14 @@ export function Letter() {
               </p>
 
               <p>
-                You can ask any question. And you'll quickly get a reliable
-                answer even if the data is in multiple disconnected databases
+                You can ask any question then easily get an answer. Even if the
+                data is in multiple disconnected and dirty databases
               </p>
 
               <p>
-                Your personal analyst tells you what happened, why it happened,
-                and gives you ideas of what you could do
+                And your personal analyst gets reliable answers by combining the
+                most advanced AI agents with the most elite human data
+                scientists
               </p>
 
               <p>
