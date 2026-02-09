@@ -59,6 +59,8 @@ export function ArcadeEmbed() {
         paddingBottom: "calc(56.18055555555556% + 41px)",
         height: "0",
         width: "100%",
+        borderRadius: "24px",
+        overflow: "hidden",
       }}
     >
       <iframe
@@ -76,6 +78,7 @@ export function ArcadeEmbed() {
           width: "100%",
           height: "100%",
           colorScheme: "light",
+          borderRadius: "24px",
         }}
       />
     </div>
