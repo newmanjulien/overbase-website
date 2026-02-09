@@ -26,7 +26,7 @@ export default function FAQ() {
           {[
             {
               q: "How do you get reliable answers?",
-              a: "You will get answers which are just as reliable as if you'd asked the best analyst on your team. We get reliable answers by combining the most advanced AI agents which lets us get insight from large and complex structured or unstructured datasets. With the most elite human data scientists who guarantee quality and accuracy. We use the most advanced AI models. Our data scientists are amongst the best in the world - having graduated from the world's most selective schools and worked at the world's most selective businesses",
+              a: "You will get answers which are just as reliable as if you'd asked the best analyst on your team. We get reliable answers by combining the most advanced AI agents which let us get insight from large and complex structured or unstructured datasets. With the most elite human data scientists who guarantee quality and accuracy. We use the most advanced AI models. Our data scientists are amongst the best in the world - having graduated from the world's most selective schools and worked at the world's most selective businesses",
             },
             {
               q: "How do you work with disconnected and dirty data?",
@@ -38,7 +38,7 @@ export default function FAQ() {
             },
             {
               q: "What type of question can I ask?",
-              a: "Any question you'd ask an human analyst, a Chief of Staff or a Rev Ops team member. Overbase is built specifically for revenue execs and we're specialized in answering questions for CROs, CMOs, CPOs and CCOs",
+              a: "Any question you'd ask a human analyst, a Chief of Staff or a Rev Ops team member. Overbase is built specifically for revenue execs and we're specialized in answering questions for CROs, CMOs, CPOs and CCOs",
             },
             {
               q: "What's the role of AI agents in answering my questions?",
