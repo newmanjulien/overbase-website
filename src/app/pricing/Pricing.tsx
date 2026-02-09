@@ -32,18 +32,20 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Get answers from disconnected data with 0 migration
+              AI agents combined with human data scientists
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Easily and quickly get reliable answers from the dirtiest and most
-              disconnected data
+              Overbase combines AI agents with human data scientists to answer
+              your questions
             </p>
+
             <p>
-              Your Personal Analyst uses AI agents to easily access any data no
-              matter where it's located
+              This lets us get reliable results and it lets us easily access any
+              data no matter where it's located
             </p>
+
             <p>
               Get up and running quickly and easily with your existing data
               infrastructure. No matter how simple or complex your current
