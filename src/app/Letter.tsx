@@ -50,8 +50,8 @@ export function Letter() {
               </p>
 
               <p>
-                Overbase is an automated personal analyst who does more reliable
-                analysis than top human analysts
+                Overbase is a personal analyst who does more reliable analysis
+                than top human analysts
               </p>
 
               <p>
