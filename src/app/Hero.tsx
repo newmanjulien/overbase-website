@@ -33,7 +33,7 @@ export function Hero() {
             <Button
               variant="default"
               size="lg"
-              className="w-full max-w-lg py-6 px-8 text-[17px] rounded-lg sm:w-auto"
+              className="w-full max-w-lg py-6 px-8 text-base rounded-lg sm:w-auto"
               asChild
             >
               <Link
@@ -49,7 +49,7 @@ export function Hero() {
             <Button
               variant="secondary"
               size="lg"
-              className="w-full max-w-lg py-6 px-8 text-[17px] rounded-lg sm:w-auto"
+              className="w-full max-w-lg py-6 px-8 text-base rounded-lg sm:w-auto"
               asChild
             >
               <Link
