@@ -60,8 +60,8 @@ export function Letter() {
               </p>
 
               <p>
-                Talking to your personal analyst is intuitive. You just send DMs
-                in Slack (
+                Asking your personal analyst questions is easy. You send DMs in
+                Slack (
                 <button
                   type="button"
                   className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
@@ -73,31 +73,21 @@ export function Letter() {
               </p>
 
               <p>
-                You can ask any question then easily get an answer. Even if the
-                data is in multiple disconnected and dirty databases
+                You can ask your hardest questions. Even if the data is in
+                multiple disconnected systems. And your personal analyst gets
+                reliable answers by combining AI agents with human data
+                scientists
               </p>
 
               <p>
-                And your personal analyst gets reliable answers by combining
-                advanced AI agents with human data scientists
-              </p>
-
-              <p>
-                <Link
-                  href="https://slack-overbase.onrender.com/slack/install"
-                  className="text-blue-400 underline hover:text-blue-300"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Add to Slack
-                </Link>{" "}
-                and get set up in 5 minutes. Or check out{" "}
+                Check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>
+                </Link>{" "}
+                or try for yourself - it takes 5 minutes to get set up
               </p>
             </div>
 
