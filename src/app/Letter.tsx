@@ -34,10 +34,12 @@ export function Letter() {
               </p>
 
               <p>
-                But getting to the root cause of what’s happening is slow and
-                hard. The data is in too many disconnected systems. It's
-                formatted wrong. And you often can't trust the data in your
-                databases
+                <span className="font-medium">
+                  But getting to the root cause of what’s happening is slow and
+                  hard.
+                </span>{" "}
+                The data is in too many disconnected systems. It's formatted
+                wrong. And you often can't trust the data in your databases
               </p>
 
               <p>
@@ -53,6 +55,8 @@ export function Letter() {
                   many of the most important decisions you need to make
                 </span>
               </p>
+
+              <p>It doesn't have to be like this</p>
 
               <p>
                 Overbase is a personal analyst who gets reliable answers from
