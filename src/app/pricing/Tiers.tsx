@@ -26,7 +26,8 @@ const PLANS: Plan[] = [
     id: "subscription",
     name: "Subscription",
     price: "$15,000",
-    description: "Ask an unlimited amount of questions for a flat monthly fee",
+    description:
+      "Get an unlimited amount of reliable answers for a flat monthly fee",
     subtext:
       "Per exec / month with annual subscription discount. $20,000 if billed monthly. Includes unlimited answers",
   },
