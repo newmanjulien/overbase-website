@@ -1,8 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
+
+import { ArcadeEmbed } from "@/components/ArcadeEmbed";
 
 export function Letter() {
+  const [isArcadeOpen, setIsArcadeOpen] = useState(false);
+
   return (
     <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
       <div className="max-w-3xl mx-auto scale-[0.95]">
@@ -55,8 +60,16 @@ export function Letter() {
               </p>
 
               <p>
-                Talking to your personal analyst is intuitive. You simply send
-                DMs in Slack
+                Talking to your personal analyst is intuitive. You just send DMs
+                in Slack (
+                <button
+                  type="button"
+                  className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
+                  onClick={() => setIsArcadeOpen(true)}
+                >
+                  see in action
+                </button>
+                )
               </p>
 
               <p>
@@ -97,6 +110,32 @@ export function Letter() {
           </div>
         </div>
       </div>
+
+      {isArcadeOpen && (
+        <div
+          className="fixed inset-0 z-[9999998] bg-black/70"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Overbase product demo"
+          onClick={() => setIsArcadeOpen(false)}
+        >
+          <div
+            className="absolute left-1/2 top-1/2 w-[92vw] max-w-4xl -translate-x-1/2 -translate-y-1/2 rounded-lg bg-surface p-4 shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <div className="flex items-center justify-end pb-3">
+              <button
+                type="button"
+                className="text-sm text-gray-500 hover:text-gray-700"
+                onClick={() => setIsArcadeOpen(false)}
+              >
+                Close
+              </button>
+            </div>
+            <ArcadeEmbed />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
