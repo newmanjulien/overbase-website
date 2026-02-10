@@ -5,10 +5,7 @@ import { SubProcessors } from "@/app/legal/sub-processors/SubProcessors";
 export default function SubProcessorsPage() {
   return (
     <div className="min-h-screen bg-surface">
-      <Header
-        logoHref="/"
-        initialBackgroundColor="var(--color-surface)"
-      />
+      <Header logoHref="/" />
       <SubProcessors />
       <Footer />
     </div>

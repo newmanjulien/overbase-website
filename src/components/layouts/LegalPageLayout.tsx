@@ -98,9 +98,6 @@ function Section({ section }: { section: LegalSection }) {
  * Reusable legal page layout component with two-column layout:
  * - Left: Main content (title, intro, sections)
  * - Right: Sticky Table of Contents sidebar
- *
- * Note: The parent page should pass `initialBackgroundColor="var(--color-surface)"` to the Header
- * to match the hero section background for a seamless look.
  */
 export function LegalPageLayout({
   metadata,

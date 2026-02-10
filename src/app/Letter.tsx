@@ -19,7 +19,7 @@ export function Letter() {
 
           {/* Main letter */}
           <div className="relative bg-surface rounded-lg shadow-lg p-7 md:p-11 border border-gray-100 z-10">
-            <div className="mb-7">
+            <div className="mb-5">
               <div className="text-lg text-gray-900 font-semibold">
                 Introducing Overbase
               </div>

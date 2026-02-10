@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SlackIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -19,9 +19,21 @@ export function Header({
   logoSrc,
   logoHref = "/",
   onLogoClick,
-  initialBackgroundColor,
+  initialBackgroundColor = "var(--color-surface)",
 }: BaseHeaderProps) {
   const [hasScrolled, setHasScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setHasScrolled(window.scrollY > 0);
+    };
+
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Determine the background style based on scroll state
   const getBackgroundStyle = () => {
