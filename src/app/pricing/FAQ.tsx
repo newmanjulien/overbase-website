@@ -25,27 +25,27 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "How do you get reliable answers?",
+              q: "How does Overbase get reliable answers?",
               a: "You will get answers which are just as reliable as if you'd asked the best analyst on your team. We get reliable answers by combining the AI agents which let us get insight from large and complex structured or unstructured datasets. With human data scientists who guarantee quality and accuracy. We use the most advanced AI models. And our data scientists graduated from the world's most selective schools or worked at the world's most selective businesses",
             },
             {
-              q: "How do you work with disconnected and dirty data?",
+              q: "How does Overbase work with disconnected and dirty data?",
               a: "In the same way the best human analyst works with disconnected and dirty data. You never do any migration or any data cleaning. You simply ask questions then get reliable answers. Overbase's AI agents follow the same method which the best human analysts follow. They gather data, look at the results, question the results, ask people in the team for input, go back to gather data again, and wind up with results that are truly reliable. The process is coordinated and supervised by human data scientists",
             },
             {
-              q: "How easy is it to ask questions?",
+              q: "How easy is it for revenue execs to ask questions?",
               a: "Simply send a DM in Slack. Your personal analyst lives in your Slack and you ask questions by sending simple DMs",
             },
             {
-              q: "What type of question can I ask?",
+              q: "What type of question can revenue execs ask?",
               a: "Any question you'd ask a human analyst, a Chief of Staff or a Rev Ops team member. Overbase is built specifically for revenue execs and we're specialized in answering questions for CROs, CMOs, CPOs and CCOs",
             },
             {
-              q: "What's the role of AI agents in answering my questions?",
+              q: "What's the role of AI agents in answering questions?",
               a: "AI agents do most of the work. Our agents run for dozens of hours and use tens of millions of tokens to gather and analyze data for each question. This lets us access any datasource. And lets us process any data - including unstructured data like Gong recordings or emails",
             },
             {
-              q: "What's the role of human data scientists in answering my questions?",
+              q: "What's the role of human data scientists in answering questions?",
               a: "Human data scientists coordinate the AI agents and ensure quality. Our data scientists are amongst the best in the world. They have graduated from the world's most selective schools and worked at the world's most selective businesses. When you ask a question, they decide which AI agent will do what and they oversee the agent's work. If the end result isn't perfect, the human data scientist launches the process again to guarantee you get the most reliable answer",
             },
           ].map((item, i) => (
