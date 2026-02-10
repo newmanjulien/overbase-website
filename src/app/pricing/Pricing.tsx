@@ -32,13 +32,13 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              AI agents combined with elite human data scientists
+              AI agents combined with human data scientists
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Overbase combines AI agents with elite human data scientists to
-              answer your questions
+              Overbase combines AI agents with human data scientists to answer
+              your questions
             </p>
 
             <p>

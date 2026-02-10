@@ -78,9 +78,8 @@ export function Letter() {
               </p>
 
               <p>
-                And your personal analyst gets reliable answers by combining the
-                most advanced AI agents with the most elite human data
-                scientists
+                And your personal analyst gets reliable answers by combining
+                advanced AI agents with human data scientists
               </p>
 
               <p>
