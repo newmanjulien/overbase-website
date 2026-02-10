@@ -60,8 +60,16 @@ export function Letter() {
               </p>
 
               <p>
-                Talking to your personal analyst is intuitive. You simply send
-                DMs in Slack
+                Talking to your personal analyst is intuitive. You just send DMs
+                in Slack (
+                <button
+                  type="button"
+                  className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
+                  onClick={() => setIsArcadeOpen(true)}
+                >
+                  see in action
+                </button>
+                )
               </p>
 
               <p>
@@ -76,21 +84,21 @@ export function Letter() {
               </p>
 
               <p>
-                <button
-                  type="button"
+                <Link
+                  href="https://slack-overbase.onrender.com/slack/install"
                   className="text-blue-400 underline hover:text-blue-300"
-                  onClick={() => setIsArcadeOpen(true)}
+                  target="_blank"
+                  rel="noreferrer"
                 >
-                  See the product
-                </button>{" "}
-                or check out{" "}
+                  Add to Slack
+                </Link>{" "}
+                and get set up in 5 minutes. Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>{" "}
-                if you're curious
+                </Link>
               </p>
             </div>
 

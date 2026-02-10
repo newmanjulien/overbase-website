@@ -65,8 +65,8 @@ export function ArcadeEmbed() {
     >
       <iframe
         ref={arcadeIframeRef}
-        src="https://demo.arcade.software/orE0tJhNRbfFQayloY9h?embed&embed_mobile=tab&embed_desktop=modal&show_copy_link=true"
-        title="Send a message to the Overbase app in Slack"
+        src="https://demo.arcade.software/xg5vp7vFVuQcvjkf52I1?embed&embed_mobile=tab&show_copy_link=true"
+        title="Send a question to Overbase in Slack"
         frameBorder="0"
         loading="lazy"
         allowFullScreen
