@@ -25,8 +25,8 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 text-2xl text-gray-600 font-medium">
-            Overbase combines AI agents with human data scientists to get
-            reliable answers from disconnected data
+            Get reliable answers from disconnected data by easily asking
+            questions from a human data analyst
           </h2>
 
           <div className="mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">

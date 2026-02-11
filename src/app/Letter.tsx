@@ -56,42 +56,39 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>It doesn't have to be like this</p>
-
               <p>
-                Overbase is a personal analyst who gets reliable answers from
-                disconnected data
+                Overbase gives you a personal analyst who lets you easily gets
+                reliable answers from disconnected data
               </p>
 
               <p>
-                Asking your personal analyst questions is easy. You send DMs in
-                Slack (
-                <button
-                  type="button"
-                  className="text-blue-400 underline hover:text-blue-300 cursor-pointer"
-                  onClick={() => setIsArcadeOpen(true)}
+                Asking questions is easy - you simply DM your personal analyst
+                in Slack
+              </p>
+
+              <p>
+                A human responds then quickly gets the answer to your question.
+                Answers are reliable because a there's a human answering your
+                question. Answers are fast and accurate because those humans use
+                advanced AI tools
+              </p>
+
+              <p>
+                <Link
+                  href="https://slack-overbase.onrender.com/slack/install"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-blue-400 underline hover:text-blue-300"
                 >
-                  see in action
-                </button>
-                )
-              </p>
-
-              <p>
-                You can ask your hardest questions. Even if the data is in
-                multiple disconnected systems. And your personal analyst gets
-                reliable answers by combining AI agents with human data
-                scientists
-              </p>
-
-              <p>
-                Check out{" "}
+                  Add to Slack
+                </Link>{" "}
+                to get started in 5 minutes or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
                 </Link>{" "}
-                or try for yourself - it takes 5 minutes to get set up
               </p>
             </div>
 

@@ -32,29 +32,31 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              AI agents combined with human data scientists
+              Elite human data analyst using the most advanced AI tools
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Overbase combines AI agents with human data scientists to answer
-              your questions
+              Our analysts graduated from the most selective schools or worked
+              at the most selective businesses - BCG, McKinsey, Google, Tesla,
+              etc.
             </p>
 
             <p>
-              This lets us get reliable results and it lets us easily access any
-              data no matter where it's located
-            </p>
-
-            <p>
-              Get up and running quickly and easily with your existing data
-              infrastructure. No matter how simple or complex your current
-              systems are
+              They quickly get reliable answers to your questions even if the
+              data is in multiple disconnected systems because they combine
+              human analysis with the most advanced AI tools
             </p>
 
             <p>
               You'll never need to migrate any of your data. You'll never need
-              to clean or change any of your data
+              to clean or change anything
+            </p>
+
+            <p>
+              And you'll get up and running in just 5 minutes with your existing
+              data infrastructure. No matter how simple or complex your current
+              systems are
             </p>
           </div>
         </div>
