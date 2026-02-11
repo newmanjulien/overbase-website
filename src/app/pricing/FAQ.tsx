@@ -16,10 +16,6 @@ export default function FAQ() {
           <h2 className="text-4xl text-gray-900 mb-4">
             Frequently asked questions
           </h2>
-          <p className="text-neutral-600 text-center max-w-2xl mx-auto">
-            Easily get reliable answers from disconnected and dirty data by
-            simply sending a DM in Slack to your personal analyst
-          </p>
         </div>
 
         <Accordion type="single" collapsible className="space-y-4">
