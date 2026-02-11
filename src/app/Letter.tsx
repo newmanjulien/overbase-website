@@ -18,7 +18,7 @@ export function Letter() {
           <div className="absolute inset-0 bg-gray-50 rounded-lg transform rotate-[1deg] scale-[1.008] -translate-x-0.5 translate-y-0.5 border border-gray-200/60"></div>
 
           {/* Main letter */}
-          <div className="relative bg-surface rounded-lg shadow-xs p-7 md:p-11 border border-gray-200/60 z-10">
+          <div className="relative bg-surface rounded-lg shadow-xs p-7 md:px-11 md:py-10 border border-gray-200/60 z-10">
             <div className="mb-5">
               <div className="text-lg text-gray-900 font-semibold">
                 Introducing Overbase
@@ -95,7 +95,14 @@ export function Letter() {
             {/* Signature */}
             <div className="mt-8">
               <div className="font-medium text-gray-900">Julien Newman</div>
-              <div className="text-sm text-gray-500">Founder & CEO</div>
+              <div className="font-medium text-gray-400">
+                Founder & CEO, Overbase
+              </div>
+              <img
+                src="/signature.png"
+                alt="Julien Newman signature"
+                className="mt-4 h-23 w-auto"
+              />
             </div>
           </div>
         </div>
