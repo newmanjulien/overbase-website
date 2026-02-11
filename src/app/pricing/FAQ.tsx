@@ -30,7 +30,7 @@ export default function FAQ() {
             },
             {
               q: "How much AI is involved?",
-              a: "All work is done by a human. But most of it is done using AI tools. Overbase builds proprietary AI tools which our analysts use to quickly process data. Or to process unstructured data which can only be unlocked with AI",
+              a: "All work is done by a human. But most of it is done using AI tools. Overbase builds proprietary AI tools which our analysts use to quickly process data, or to process unstructured data which can only be unlocked with AI",
             },
             {
               q: "What type of question can I ask?",
@@ -38,7 +38,7 @@ export default function FAQ() {
             },
             {
               q: "How do you access my business' data?",
-              a: "Simply and safely. We use APIs to programatically access data. Or we have humans log into dashboards. Overbase never stores any of your data for more than 30 days",
+              a: "Simply and safely. We use APIs to programmatically access data. Or we have humans log into dashboards. Overbase never stores any of your data for more than 30 days",
             },
             {
               q: "How does the Slack app work and do I need Slack?",
@@ -46,7 +46,7 @@ export default function FAQ() {
             },
             {
               q: "What about data safety and security?",
-              a: "Overbase never stores any of your data for more than 30 days. And there needs to be a human intervention for our system to access your data. This means that Overbase is safer than any fully automated data solution",
+              a: "Overbase never stores any of your data for more than 30 days. And there needs to be human intervention for our system to access your data. This means that Overbase is safer than any fully automated data solution",
             },
           ].map((item, i) => (
             <AccordionItem

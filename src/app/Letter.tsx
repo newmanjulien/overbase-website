@@ -57,7 +57,7 @@ export function Letter() {
               </p>
 
               <p>
-                Overbase gives you a personal analyst who lets you easily gets
+                Overbase gives you a personal analyst who lets you easily get
                 reliable answers from disconnected data
               </p>
 
@@ -68,7 +68,7 @@ export function Letter() {
 
               <p>
                 A human responds then quickly gets the answer to your question.
-                Answers are reliable because a there's a human answering your
+                Answers are reliable because there's a human answering your
                 question. Answers are fast and accurate because those humans use
                 advanced AI tools
               </p>
