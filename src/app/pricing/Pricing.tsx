@@ -32,7 +32,7 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Elite human data analyst using the most advanced AI tools
+              Elite human analysts using the most advanced AI tools
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
@@ -43,9 +43,8 @@ export function Pricing() {
             </p>
 
             <p>
-              They quickly get reliable answers to your questions even if the
-              data is in multiple disconnected systems because they combine
-              human analysis with the most advanced AI tools
+              They quickly get reliable answers because they combine human
+              analysis with the most advanced AI tools
             </p>
 
             <p>
@@ -55,8 +54,7 @@ export function Pricing() {
 
             <p>
               And you'll get up and running in just 5 minutes with your existing
-              data infrastructure. No matter how simple or complex your current
-              systems are
+              data infrastructure
             </p>
           </div>
         </div>
