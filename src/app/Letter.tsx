@@ -67,7 +67,7 @@ export function Letter() {
               </p>
 
               <p>
-                A human responds then quickly gets the answer to your question.
+                A human responds. Then quickly gets the answer to your question.
                 Answers are reliable because there's a human answering your
                 question. Answers are fast and accurate because those humans use
                 advanced AI tools
@@ -82,7 +82,7 @@ export function Letter() {
                 >
                   Add to Slack
                 </Link>{" "}
-                to get started in 5 minutes or check out{" "}
+                to get started in 5 minutes. Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
