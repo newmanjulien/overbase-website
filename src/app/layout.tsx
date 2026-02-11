@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Overbase › Personal analyst",
+  title: "Overbase › Personal analyst for revenue execs",
   description:
     "Personal analyst who lets revenue execs easily understand even the most disconnected data",
   icons: {

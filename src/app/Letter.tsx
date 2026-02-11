@@ -95,13 +95,11 @@ export function Letter() {
             {/* Signature */}
             <div className="mt-8">
               <div className="font-medium text-gray-900">Julien Newman</div>
-              <div className="font-medium text-gray-400">
-                Founder & CEO, Overbase
-              </div>
+              <div className="text-gray-400">Founder & CEO, Overbase</div>
               <img
                 src="/signature.png"
                 alt="Julien Newman signature"
-                className="mt-4 h-23 w-auto"
+                className="mt-4 h-24 w-auto"
               />
             </div>
           </div>
