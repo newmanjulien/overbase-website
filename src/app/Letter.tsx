@@ -99,7 +99,7 @@ export function Letter() {
               <img
                 src="/signature.png"
                 alt="Julien Newman signature"
-                className="mt-4 h-24 w-auto"
+                className="mt-4 h-22 w-auto"
               />
             </div>
           </div>
