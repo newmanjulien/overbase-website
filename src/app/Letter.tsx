@@ -67,10 +67,17 @@ export function Letter() {
               </p>
 
               <p>
-                A human responds. Then quickly gets the answer to your question.
-                Answers are reliable because there's a human answering your
-                question. Answers are fast and accurate because those humans use
-                advanced AI tools
+                A human then quickly gets the answer to your question. Answers
+                are reliable because there's a human answering your question.
+                Answers are fast and accurate because those humans use advanced
+                AI tools
+              </p>
+
+              <p>
+                Your personal analyst answers using structured data from any
+                system, unstructured data that only advanced AI can process, and
+                your personal analyst can also ask people on your team for
+                information that doesn't exist in any database
               </p>
 
               <p>
@@ -97,7 +104,7 @@ export function Letter() {
               <div className="font-medium text-gray-900">Julien Newman</div>
               <div className="text-gray-400">Founder & CEO, Overbase</div>
               <img
-                src="/signature.png"
+                src="/sign.png"
                 alt="Julien Newman signature"
                 className="mt-4 h-23 w-auto"
               />

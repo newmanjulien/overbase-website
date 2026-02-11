@@ -26,7 +26,7 @@ export function Hero() {
 
           <h2 className="mt-4 text-[22px] text-gray-600 font-medium">
             Get reliable answers from disconnected data by easily asking
-            questions to a human data analyst
+            questions to a human analyst
           </h2>
 
           <div className="mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start">
