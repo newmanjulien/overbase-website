@@ -24,7 +24,7 @@ export function Hero() {
             <span className="bg-[#ffffcc] px-1 rounded-xs">revenue execs</span>
           </h1>
 
-          <h2 className="mt-4 text-2xl text-gray-600 font-medium">
+          <h2 className="mt-4 text-[22px] text-gray-600 font-medium">
             Get reliable answers from disconnected data by easily asking
             questions of a human data analyst
           </h2>
