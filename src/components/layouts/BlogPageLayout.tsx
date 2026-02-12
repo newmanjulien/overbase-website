@@ -5,17 +5,18 @@ import { Button } from "@/components/ui/button";
 
 interface BlogSectionBase {
   id: string;
-  content: string[];
+  content: ReactNode[];
   image?: {
     src: string;
     alt: string;
     id?: string;
     caption?: string;
   };
+  imagePlacement?: "before-heading" | "after-content";
   subsections?: {
     title: string;
-    content: string[];
-    compactContent?: string[];
+    content: ReactNode[];
+    compactContent?: ReactNode[];
   }[];
 }
 
@@ -36,8 +37,35 @@ interface BlogPageLayoutProps {
 }
 
 function Section({ section }: { section: BlogSection }) {
+  const renderImage = () => {
+    if (!section.image) return null;
+
+    return (
+      <div className="mt-18 mb-24">
+        <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
+          <div className="mx-auto w-full max-w-4xl px-6">
+            <img
+              id={section.image.id}
+              src={section.image.src}
+              alt={section.image.alt}
+              className="w-full h-auto rounded-xl scroll-mt-28"
+            />
+            {section.image.caption && (
+              <p className="mt-6 text-sm text-gray-900 text-center">
+                {section.image.caption}
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  const imageFirst = section.imagePlacement === "before-heading";
+
   return (
     <section key={section.id} className="mb-14">
+      {imageFirst && renderImage()}
       <div className="mb-4">
         {(() => {
           const heading = "title" in section ? section.title : section.subtitle;
@@ -61,25 +89,7 @@ function Section({ section }: { section: BlogSection }) {
         </p>
       ))}
 
-      {section.image && (
-        <div className="mt-18 mb-24">
-          <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
-            <div className="mx-auto w-full max-w-4xl px-6">
-              <img
-                id={section.image.id}
-                src={section.image.src}
-                alt={section.image.alt}
-                className="w-full h-auto rounded-xl scroll-mt-28"
-              />
-              {section.image.caption && (
-                <p className="mt-6 text-sm text-gray-900 text-center">
-                  {section.image.caption}
-                </p>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
+      {!imageFirst && renderImage()}
 
       {section.subsections?.map((sub, idx) => (
         <div key={idx} className="mt-6">

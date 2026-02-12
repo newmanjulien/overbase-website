@@ -1,3 +1,12 @@
+import { ChevronDown } from "lucide-react";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+
 export function Footer() {
   return (
     <footer className="bg-gray-50/80 border-t border-gray-100">
@@ -9,31 +18,71 @@ export function Footer() {
           </div>
 
           {/* Links */}
-          <div className="flex space-x-6">
-            <a
-              href="/legal/terms-of-service"
-              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
-            >
-              Terms
-            </a>
-            <a
-              href="/legal/dpa"
-              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
-            >
-              DPA
-            </a>
-            <a
-              href="/legal/security"
-              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
-            >
-              Security
-            </a>
-            <a
-              href="/legal/sub-processors"
-              className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200"
-            >
-              Processors
-            </a>
+          <div className="flex items-center space-x-6">
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  type="button"
+                  className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 inline-flex items-center gap-1"
+                >
+                  Blog
+                  <ChevronDown className="size-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" sideOffset={8}>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/blog/decentralized-data" className="w-full">
+                    Decentralized Data
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  type="button"
+                  className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 inline-flex items-center gap-1"
+                >
+                  Legal
+                  <ChevronDown className="size-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" sideOffset={8}>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/legal/terms-of-service" className="w-full">
+                    Terms
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/legal/dpa" className="w-full">
+                    DPA
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button
+                  type="button"
+                  className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 inline-flex items-center gap-1"
+                >
+                  Security
+                  <ChevronDown className="size-4" />
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" sideOffset={8}>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/legal/security" className="w-full">
+                    Security Overview
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/legal/sub-processors" className="w-full">
+                    Subprocessors
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
