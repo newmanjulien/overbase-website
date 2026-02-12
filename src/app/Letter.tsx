@@ -38,7 +38,7 @@ export function Letter() {
                 project — slowing your team and delaying decisions that matter
               </p>
 
-              <p>Overbase changes that</p>
+              <p>Your personal analyst changes that</p>
 
               <p>
                 When you ask a question, a trained analyst investigates, using
@@ -59,7 +59,7 @@ export function Letter() {
               </p>
 
               <p>
-                With Overbase, you finally get clarity where there was
+                With a personal analyst, you finally get clarity where there was
                 confusion, speed where there was delay, and insight you can
                 trust
               </p>
@@ -90,7 +90,7 @@ export function Letter() {
               <div className="font-medium text-gray-900">Julien Newman</div>
               <div className="text-gray-400">Founder & CEO, Overbase</div>
               <img
-                src="/sign.png"
+                src="/signature.png"
                 alt="Julien Newman signature"
                 className="mt-4 h-25 w-auto"
               />
