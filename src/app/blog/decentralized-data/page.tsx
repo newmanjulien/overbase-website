@@ -18,7 +18,7 @@ const hero = {
 const sections: BlogSection[] = [
   {
     id: "centralized-failures",
-    title: "Why centralized systems fail",
+    title: "Why centralized systems failed",
     content: [
       "Some of the most common problems with centralizers include:",
       <span>
@@ -71,8 +71,10 @@ const sections: BlogSection[] = [
   },
   {
     id: "decentralized-forms",
-    title: "How decentralization shows up in the real world",
-    content: ["Decentralized systems come in several distinct forms:"],
+    title: "More and more decentralizers",
+    content: [
+      "Leading businesses are building more and more decentralized systems:",
+    ],
     subsections: [
       {
         title: "1. Data meshes",
@@ -121,9 +123,9 @@ const sections: BlogSection[] = [
         title: "3. Personal analyst services",
         content: [
           <span>
-            <span className="font-medium">What they are:</span> Human-powered
-            services that combine expert analysts with AI tools to deliver
-            reliable insights on demand
+            <span className="font-medium">What they are:</span> New
+            human-powered services that combine expert analysts with AI tools to
+            deliver reliable insights on demand
           </span>,
           <span>
             <span className="font-medium">Real-world example:</span> Overbase
@@ -142,7 +144,7 @@ const sections: BlogSection[] = [
   },
   {
     id: "why-it-works",
-    title: "Why decentralized systems work — speed, reliability, and cost",
+    title: "Why decentralized systems work — speed and reliability",
     content: [
       "Across all decentralized approaches:",
       <span>
