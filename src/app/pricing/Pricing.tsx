@@ -32,28 +32,27 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Elite human analysts using the most advanced AI tools
+              Elite human analysts powered by the most advanced AI
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Our analysts graduated from the most selective schools or worked
-              at the most selective businesses - BCG, McKinsey, Google, Tesla,
-              etc.
+              Our analysts graduated from the world’s most selective schools or
+              worked at top-tier companies like BCG, McKinsey, Google, and Tesla
             </p>
 
             <p>
-              They quickly get reliable answers because they combine human
+              They deliver fast, reliable answers by combining expert human
               analysis with the most advanced AI tools
             </p>
 
             <p>
-              You'll never need to migrate any of your data. You'll never need
-              to clean or change anything
+              No data migrations. No cleaning. No changes. Just answers from
+              your existing systems
             </p>
 
             <p>
-              And you'll get up and running in just 5 minutes with your existing
+              And you’ll be up and running in just 5 minutes with your current
               data infrastructure
             </p>
           </div>

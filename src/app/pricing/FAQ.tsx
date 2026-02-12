@@ -22,27 +22,27 @@ export default function FAQ() {
           {[
             {
               q: "Who are the human data analysts who answer my questions?",
-              a: "Our human analysts graduated from the world's most selective schools or worked at the world's most selective businesses - BCG, McKinsey, Google, Tesla, etc.",
+              a: "Our analysts are elite professionals — graduates from the world’s most selective schools or former team members at top-tier companies like BCG, McKinsey, Google, and Tesla. They bring deep expertise and real-world business experience to every answer.",
             },
             {
               q: "How much AI is involved?",
-              a: "All work is done by a human. But most of it is done using AI tools. Overbase builds proprietary AI tools which our analysts use to quickly process data, or to process unstructured data which can only be unlocked with AI",
+              a: "All analysis is performed by humans. But our analysts are powered by advanced AI tools that speed up data processing and unlock insights from unstructured data — things that only AI can handle. Overbase builds proprietary AI to make every answer fast and reliable.",
             },
             {
-              q: "What type of question can I ask?",
-              a: "Any question you'd ask an internal analyst, a Chief of Staff or a Rev Ops team member. Overbase is built specifically for revenue execs and we're specialized in answering questions for CROs, CMOs, CPOs and CCOs",
+              q: "What type of questions can I ask?",
+              a: "Anything you would ask an internal analyst, Chief of Staff, or RevOps team. Overbase is designed for revenue leaders — CROs, CMOs, CPOs, and CCOs — providing actionable answers tailored to the most critical business questions.",
             },
             {
-              q: "How do you access my business' data?",
-              a: "Simply and safely. We use APIs to programmatically access data. Or we have humans log into dashboards. Overbase never stores any of your data for more than 30 days",
+              q: "How do you access my business’ data?",
+              a: "Simply and securely. We access data via APIs or by having our analysts log into dashboards as needed. Overbase never stores your data for more than 30 days, and all access requires human oversight.",
             },
             {
-              q: "How does the Slack app work and do I need Slack?",
-              a: "You do need Slack. You send DMs to your personal analyst through the Overbase Slack app. This lets you easily set up datasources and lets us guarantee security and compliance",
+              q: "How does the Slack app work, and do I need Slack?",
+              a: "Yes, you need Slack. You DM your personal analyst through the Overbase Slack app, which lets you quickly connect data sources and ensures security and compliance.",
             },
             {
               q: "What about data safety and security?",
-              a: "Overbase never stores any of your data for more than 30 days. And there needs to be human intervention for our system to access your data. This means that Overbase is safer than any fully automated data solution",
+              a: "Overbase never stores your data longer than 30 days. All data access requires human intervention, making Overbase safer than fully automated data solutions while still delivering fast, accurate insights.",
             },
           ].map((item, i) => (
             <AccordionItem
