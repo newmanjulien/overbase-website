@@ -25,54 +25,43 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 You have questions when you look at your dashboards, reports, or
-                CRM
+                CRM — but getting to the root cause is slow, frustrating, and
+                hard
               </p>
 
               <p>
                 <span className="font-medium">
-                  But getting to the root cause of what’s happening is slow and
-                  hard.
+                  The data is scattered across disconnected systems, formatted
+                  inconsistently, and often unreliable.
                 </span>{" "}
-                The data is in too many disconnected systems. It's formatted
-                wrong. And you often can't trust the data in your databases
+                Every time you need an answer, you pull an analyst off another
+                project — slowing your team and delaying decisions that matter
+              </p>
+
+              <p>Overbase changes that</p>
+
+              <p>
+                When you ask a question, a trained analyst investigates, using
+                all your structured data, unstructured sources, and even
+                information only your team knows. Our analysts are elite
+                professionals — graduates of top schools and former BCG,
+                McKinsey, Google, and Tesla team members
               </p>
 
               <p>
-                Which means that you need to pull an analyst off another project
-                every time you have a question
-              </p>
-
-              <p>
-                And it means that getting reliable answers ends up being so hard
-                and slow that{" "}
                 <span className="font-medium">
-                  you often don't actually know what you need to know to make
-                  many of the most important decisions you need to make
+                  Answers are fast, accurate, and reliable because humans do the
+                  analysis.{" "}
                 </span>
+                Advanced AI tools assist our analysts, making them faster and
+                more precise — but the insight, judgment, and context come from
+                real people who understand your business
               </p>
 
               <p>
-                Overbase gives you a personal analyst who lets you easily get
-                reliable answers from disconnected data
-              </p>
-
-              <p>
-                Asking questions is easy - you simply DM your personal analyst
-                in Slack
-              </p>
-
-              <p>
-                A human then quickly gets the answer to your question. Answers
-                are reliable because there's a human answering your question.
-                Answers are fast and accurate because those humans use advanced
-                AI tools
-              </p>
-
-              <p>
-                Your personal analyst answers using structured data from any
-                system, unstructured data that only advanced AI can process, and
-                by asking people on your team for information that doesn't exist
-                in any database
+                With Overbase, you finally get clarity where there was
+                confusion, speed where there was delay, and insight you can
+                trust
               </p>
 
               <p>
@@ -84,13 +73,15 @@ export function Letter() {
                 >
                   Add to Slack
                 </Link>{" "}
-                to get started in 5 minutes. Or check out{" "}
+                and get started in 5 minutes — no complex deployments, no data
+                migrations. Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
                 </Link>{" "}
+                if you want to learn more
               </p>
             </div>
 
@@ -107,7 +98,6 @@ export function Letter() {
           </div>
         </div>
       </div>
-
     </section>
   );
 }
