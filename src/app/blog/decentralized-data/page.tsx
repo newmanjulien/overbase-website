@@ -66,7 +66,7 @@ const sections: BlogSection[] = [
     image: {
       src: "/netflix.png",
       alt: "Netflix logo on a dark gradient background",
-      caption: "Netflix uses a federated data model",
+      caption: "Netflix is decentralizing their data using a federated model",
     },
   },
   {
@@ -131,10 +131,10 @@ const sections: BlogSection[] = [
             unstructured data, and provide answers directly to teams via Slack
           </span>,
           <span>
-            <span className="font-medium">Benefits:</span> True reliability from
-            human judgment, zero setup, immediate answers, and a security
-            advantage because data is never stored. Over the next decade, as AI
-            becomes production-ready, this becomes automated
+            <span className="font-medium">Benefits:</span> True reliability,
+            zero setup, and a security advantage because data is never stored.
+            Over the next decade, as AI becomes production-ready, personal
+            analysts will become automated
           </span>,
         ],
       },
