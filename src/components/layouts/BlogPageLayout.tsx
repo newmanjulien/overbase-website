@@ -36,6 +36,11 @@ interface BlogPageLayoutProps {
   sections: BlogSection[];
 }
 
+function stripTrailingPeriod(node: ReactNode): ReactNode {
+  if (typeof node !== "string") return node;
+  return node.replace(/\.\s*$/, "");
+}
+
 function Section({ section }: { section: BlogSection }) {
   const renderImage = () => {
     if (!section.image) return null;
@@ -85,7 +90,7 @@ function Section({ section }: { section: BlogSection }) {
 
       {section.content.map((paragraph, idx) => (
         <p key={idx} className="text-md text-gray-900 mb-4 leading-relaxed">
-          {paragraph}
+          {stripTrailingPeriod(paragraph)}
         </p>
       ))}
 
@@ -101,7 +106,7 @@ function Section({ section }: { section: BlogSection }) {
               key={pIdx}
               className="text-md text-gray-900 mb-4 leading-relaxed"
             >
-              {paragraph}
+              {stripTrailingPeriod(paragraph)}
             </p>
           ))}
           {sub.compactContent && (
@@ -159,12 +164,12 @@ export function BlogPageLayout({ hero, sections }: BlogPageLayoutProps) {
                     key={idx}
                     className="text-md text-gray-900 mb-8 leading-relaxed"
                   >
-                    {paragraph}
+                    {stripTrailingPeriod(paragraph)}
                   </p>
                 ))
               ) : (
                 <p className="text-md text-gray-900 mb-8 leading-relaxed">
-                  {hero.introduction}
+                  {stripTrailingPeriod(hero.introduction)}
                 </p>
               )}
 
