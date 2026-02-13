@@ -35,6 +35,11 @@ export function Footer() {
                     Decentralized Data
                   </a>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/blog/new-talent-strategy" className="w-full">
+                    New Talent Strategy
+                  </a>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
