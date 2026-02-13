@@ -125,7 +125,7 @@ function Section({ section }: { section: BlogSection }) {
 export function BlogPageLayout({ hero, sections }: BlogPageLayoutProps) {
   return (
     <>
-      <section className="w-full pt-48 pb-10">
+      <section className="w-full pt-48 pb-10 bg-surface">
         <div className="max-w-5xl mx-auto px-6 text-center space-y-12">
           <div className="space-y-6 max-w-xl mx-auto">
             <h1 className="text-5xl text-gray-900 font-medium tracking-tight">
