@@ -1,10 +1,14 @@
-import type { BlogSection, BlogPageHero } from "@/components/layouts/BlogPageLayout";
+import type {
+  BlogSection,
+  BlogPageHero,
+} from "@/components/layouts/BlogPageLayout";
 
 export const hero: BlogPageHero = {
   title: "The rise of decentralized data systems",
   introduction: [
     "For decades, businesses were told that centralized data platforms would finally give them a single source of truth. Salesforce, Snowflake, Oracle, SAP, and similar tools promised clarity, consistency, and actionable insights — all in one place",
-    "In practice, however, centralizers often make things worse. Implementations take years — sometimes even decades, require constant maintenance, and frequently add friction instead of removing it. The “single source of truth” often becomes just another silo, creating yet another bottleneck for teams to navigate",
+    "In practice, however, centralizers often make things worse. Implementations take years — sometimes even decades, require constant maintenance, and frequently add friction instead of removing it",
+    "The “single source of truth” often becomes just another silo, creating yet another bottleneck for teams to navigate",
   ],
   buttonLabel: "See the solution",
   scrollTargetId: "rise-of-decentralized",
@@ -27,6 +31,11 @@ export const sections: BlogSection[] = [
         friction rather than clarity
       </span>,
       <span>
+        <span className="font-medium">Lock-in and costs:</span> Centralizers tie
+        you to long, costly implementations and ongoing maintenance, making it
+        hard to switch once you’re invested
+      </span>,
+      <span>
         <span className="font-medium">Bottlenecks and delays:</span> Every new
         question becomes a project; dashboards and reports take weeks to update
       </span>,
@@ -34,8 +43,9 @@ export const sections: BlogSection[] = [
         <span className="font-medium">
           False promises of a single source of truth:
         </span>{" "}
-        Centralized systems rarely capture the full reality of a business; data
-        can be incomplete, outdated, or contradictory
+        Centralized systems capture only a fraction of business reality,
+        duplicate data, and in practice often create yet another silo that often
+        gets forgotten
       </span>,
       <span>
         <span className="font-medium">The result:</span> In short: centralizers
@@ -47,7 +57,7 @@ export const sections: BlogSection[] = [
       src: "/snowflake.jpg",
       alt: "Illustrated poster highlighting decentralized systems benefits",
       caption:
-        "Centralizers like Snowflake promised insights but delivered headaches",
+        "Centralizers promised insights but delivered headaches and lock-in",
     },
     imagePlacement: "before-heading",
   },
@@ -56,7 +66,7 @@ export const sections: BlogSection[] = [
     title: "The rise of decentralized systems",
     content: [
       "Decentralized data systems aim to bring insights closer to the people who need them, removing bottlenecks, speeding decision-making, and reducing massive setup costs",
-      "These systems are designed for speed, reliability, flexibility, accessibility, and affordability, empowering teams to answer questions immediately without waiting years for centralized implementations",
+      "These systems are designed for speed, reliability, and accuracy. They empower teams to answer questions immediately without waiting years for centralized implementations",
     ],
     image: {
       src: "/netflix.png",
@@ -115,23 +125,23 @@ export const sections: BlogSection[] = [
         ],
       },
       {
-        title: "3. Personal analyst services",
+        title: "3. Personal analyst startups",
         content: [
           <span>
-            <span className="font-medium">What they are:</span> New
-            human-powered services that combine expert analysts with AI tools to
-            deliver reliable insights on demand
+            <span className="font-medium">What they are:</span> The newest trend
+            are human-powered services that combine expert analysts with AI
+            tools to deliver reliable insights on demand
           </span>,
           <span>
             <span className="font-medium">Real-world example:</span> Overbase
-            analysts integrate with existing tools, combine structured and
-            unstructured data, and provide answers directly to teams via Slack
+            analysts are graduates from the world's most selective universities
+            who provide answers directly to execs using the most advanced AI
           </span>,
           <span>
             <span className="font-medium">Benefits:</span> True reliability,
-            zero setup, and a security advantage because data is never stored.
-            Over the next decade, as AI becomes production-ready, personal
-            analysts will become automated
+            5-minute setup, and extreme security because data is never stored.
+            Over the next decade, as AI gets more reliable, personal analyst
+            startups will automate their services
           </span>,
         ],
       },
@@ -182,7 +192,7 @@ export const sections: BlogSection[] = [
     id: "the-takeaway",
     title: "The takeaway",
     content: [
-      "Centralized systems promised insights but delivered headaches and confusion. The next era of data is decentralized, bringing answers to the people who need them, when they need them",
+      "Centralized systems promised insights but delivered headaches and lock-in. The next era of data is decentralized, bringing answers to the people who need them, when they need them",
       "Whether it’s data meshes, knowledge-first platforms like Glean, or personal analysts like Overbase, the shift is clear: centralizers slow you down and steal your ability to know. Decentralizers give you speed and reliable insight",
     ],
   },

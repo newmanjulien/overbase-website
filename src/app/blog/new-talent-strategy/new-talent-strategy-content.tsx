@@ -1,4 +1,7 @@
-import type { BlogSection, BlogPageHero } from "@/components/layouts/BlogPageLayout";
+import type {
+  BlogSection,
+  BlogPageHero,
+} from "@/components/layouts/BlogPageLayout";
 
 export const hero: BlogPageHero = {
   title: "The talent pipeline is drying up",
@@ -13,10 +16,11 @@ export const hero: BlogPageHero = {
 
 export const sections: BlogSection[] = [
   {
-    id: "traditional-pipeline",
+    id: "breakdown",
     title: "The breakdown of Western talent production",
     content: [
-      "Western universities once rigorously tested students. Entry into MIT, Stanford, Oxford, Cambridge, and similar institutions meant survival of the fittest. Only those who could endure and excel were equipped with the skills companies actually needed",
+      "Elite Western universities once rigorously tested students. Entry into MIT, Stanford, Oxford, Cambridge, and similar institutions meant survival of the fittest. Only those who could endure and excel were equipped with the skills companies actually needed",
+      "But this has changed. An example is the prestigious 8VC Fellowship where ~20% of the fellows come from traditional feeder schools and the bulk of students come from schools like the Rensselaer Polytechnic Institute",
     ],
     subsections: [
       {
@@ -93,7 +97,8 @@ export const sections: BlogSection[] = [
     image: {
       src: "/office.jpg",
       alt: "Google logo on a light background",
-      caption: "Startups are move fast to monopolize the remaining talent pools",
+      caption:
+        "Startups are move fast to monopolize the remaining talent pools",
     },
   },
   {

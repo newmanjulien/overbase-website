@@ -37,7 +37,7 @@ export function Hero() {
               asChild
             >
               <Link
-                href="https://slack-overbase.onrender.com/slack/install"
+                href="https://slack.overbase.app/slack/install"
                 target="_blank"
                 rel="noreferrer"
               >

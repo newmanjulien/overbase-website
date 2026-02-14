@@ -66,7 +66,7 @@ export function Letter() {
 
               <p>
                 <Link
-                  href="https://slack-overbase.onrender.com/slack/install"
+                  href="https://slack.overbase.app/slack/install"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blue-400 underline hover:text-blue-300"
