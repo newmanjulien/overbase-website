@@ -4,13 +4,13 @@ import type {
 } from "@/components/layouts/BlogPageLayout";
 
 export const hero: BlogPageHero = {
-  title: "The talent pipeline is drying up",
+  title: "Your talent pipeline is drying up",
   introduction: [
-    "For centuries, Western universities were the engines of global talent. Students were pushed relentlessly, programs demanded deep mastery, and only those who could survive that pressure emerged capable of real impact. These institutions produced engineers, researchers, and operators who could deliver results that mattered",
-    "Today, that engine is faltering. Academic rigor has slipped, admissions emphasize appearance over ability, and visa restrictions block global talent flows. The pipeline that once reliably produced competent, high-performing graduates is shrinking — fast",
-    "Elite Western universities didn’t just educate — they filtered, trained, and concentrated the few people who could actually perform. That system is disappearing. The global supply of capable candidates is smaller and increasingly only available in new talent hubs",
+    "For centuries, Western universities were engines of talent. Students were pushed relentlessly, programs demanded deep mastery, and only those who could survive that pressure emerged capable of real impact. These institutions produced engineers and operators who could deliver results",
+    "Today, that engine is faltering. Academic rigor has slipped and admissions often discriminate against students with ability. The pipeline that once reliably produced competent graduates hasn't fully dried up. But it is shrinking — fast",
+    "Elite Western universities once trained the few people who could actually contribute. But that system is disappearing. The global supply of capable candidates is smaller and it's increasingly only available in new talent hubs",
   ],
-  buttonLabel: "See the solution",
+  buttonLabel: "See solution",
   scrollTargetId: "new-strategy",
 };
 
@@ -19,8 +19,7 @@ export const sections: BlogSection[] = [
     id: "breakdown",
     title: "The breakdown of Western talent production",
     content: [
-      "Elite Western universities once rigorously tested students. Entry into MIT, Stanford, Oxford, Cambridge, and similar institutions meant survival of the fittest. Only those who could endure and excel were equipped with the skills companies actually needed",
-      "But this has changed. An example is the prestigious 8VC Fellowship where ~20% of the fellows come from traditional feeder schools and the bulk of students come from schools like the Rensselaer Polytechnic Institute",
+      "Elite Western universities once rigorously tested students. Entry into and graduation from MIT, Stanford, Oxford, Cambridge, and similar institutions meant survival of the fittest",
     ],
     subsections: [
       {
@@ -57,7 +56,7 @@ export const sections: BlogSection[] = [
     id: "new-strategy",
     title: "Rise of the new talent strategy",
     content: [
-      "Leading companies are reinventing how they find talent. The new model is simple: go straight to where the remaining capable people are trained",
+      "Leading companies are reinventing how they find talent. The new model is simple: go where the remaining capable people are trained",
       "A few East Asian schools still produce engineers and operators who can deliver. Some Israeli and Indian schools continue to produce quality graduates. And talent hubs exist in some other large countries who have historically valued education",
       "Smart companies are embeding themselves in these remaining hubs to capture talent, before others have the time to shift",
     ],
@@ -91,7 +90,7 @@ export const sections: BlogSection[] = [
     title: "Startups have a new advantage",
     content: [
       "Founder-led companies can adapt faster to the emerging reality of a talent pipeline that's getting more scarce with each passing year",
-      "Startups can focus on and monopolize the few remaining sources of quality candidates quickly. While large, slow, legacy competitors will take decades to reorient their talent pipeline",
+      "Startups can monopolize the few remaining sources of quality candidates quickly. While large, slow, legacy competitors will take decades to reorient a talent pipeline that's drying up faster than big companies can adjust",
       "Startups like Overbase are designing for strategic locations near the few remaining sources of talent. And forming partnerships with the handful of universities that continue to produce capable graduates",
     ],
     image: {
@@ -105,9 +104,10 @@ export const sections: BlogSection[] = [
     id: "the-takeaway",
     title: "The new talent war matters more than ever",
     content: [
-      "The pool of graduates who can actually deliver results has collapsed — and the collapse is accelerating",
-      "Fewer engineers, data scientists, and operators exist who can truly perform. Far fewer will exist a decade from now. And remaining talent is increasingly concentrated in new hubs",
-      "In a world with less and less talent, recruiting and retaining the remaining talent creates an even larger advantage",
+      "The pool of graduates who can reliably deliver results has collapsed — and the decline is accelerating",
+      "Fewer engineers, data scientists, and operators can make net positive contributions. A decade from now, that number will be smaller still — and increasingly only findable in a handful of new hubs",
+      "As capable talent gets scarcer, recruiting capable talent becomes an even greater edge than before",
+      "And as AI becomes a force multiplier, it’s even more important not to scale net-negative contributors",
     ],
   },
 ];

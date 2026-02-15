@@ -4,53 +4,53 @@ import type {
 } from "@/components/layouts/BlogPageLayout";
 
 export const hero: BlogPageHero = {
-  title: "The rise of decentralized data systems",
+  title: "Twilight of the data centralizers",
   introduction: [
-    "For decades, businesses were told that centralized data platforms would finally give them a single source of truth. Salesforce, Snowflake, Oracle, SAP, and similar tools promised clarity, consistency, and actionable insights — all in one place",
-    "In practice, however, centralizers often make things worse. Implementations take years — sometimes even decades, require constant maintenance, and frequently add friction instead of removing it",
-    "The “single source of truth” often becomes just another silo, creating yet another bottleneck for teams to navigate",
+    "For decades, businesses were told that centralized data platforms would give them a single source of truth. Salesforce, Snowflake, Oracle, SAP, and similar tools promised clarity, consistency, and actionable insights — all in one place",
+    "In practice, centralizers almost always make things worse. Implementations take years — sometimes even decades, require constant maintenance, and frequently never succeed at all",
+    "The “single source of truth” often becomes yet another silo, creating one more bottleneck and making it harder to get insight",
   ],
-  buttonLabel: "See the solution",
+  buttonLabel: "See solution",
   scrollTargetId: "rise-of-decentralized",
 };
 
 export const sections: BlogSection[] = [
   {
-    id: "centralized-failures",
-    title: "Why centralized systems failed",
+    id: "centralizer-failures",
+    title: "Why centralizers failed",
     content: [
-      "Some of the most common problems with centralizers include:",
+      "Some of the problems with centralizers include:",
       <span>
         <span className="font-medium">Slow implementations:</span> Teams spend
         years building complex pipelines, only to find business questions have
         evolved
       </span>,
       <span>
-        <span className="font-medium">Complexity multiplies:</span> Centralizers
-        create dependencies across analysts, engineers, and IT teams, adding
-        friction rather than clarity
+        <span className="font-medium">Complexity compounds:</span> Centralizing
+        means integrating multiple complex systems that work differently. And
+        centralizing them compounds their complexcity
+      </span>,
+      <span>
+        <span className="font-medium">Disempowering teams:</span> The technical
+        complexity puts an IT team between the business units who use insight
+        and the data they need
       </span>,
       <span>
         <span className="font-medium">Lock-in and costs:</span> Centralizers tie
-        you to long, costly implementations and ongoing maintenance, making it
-        hard to switch once you’re invested
-      </span>,
-      <span>
-        <span className="font-medium">Bottlenecks and delays:</span> Every new
-        question becomes a project; dashboards and reports take weeks to update
+        you to long, costly implementations and force you to migrate all your
+        data, making it hard to switch
       </span>,
       <span>
         <span className="font-medium">
           False promises of a single source of truth:
         </span>{" "}
-        Centralized systems capture only a fraction of business reality,
-        duplicate data, and in practice often create yet another silo that often
-        gets forgotten
+        Centralized systems only duplicate data, and in practice create yet
+        another silo that often gets forgotten
       </span>,
       <span>
-        <span className="font-medium">The result:</span> In short: centralizers
-        don’t just slow you down — they rob teams of the ability to truly know
-        what’s happening
+        <span className="font-medium">The result:</span> Centralizers don’t just
+        slow you down — they rob teams of the ability to truly know what’s
+        happening
       </span>,
     ],
     image: {
@@ -65,8 +65,8 @@ export const sections: BlogSection[] = [
     id: "rise-of-decentralized",
     title: "The rise of decentralized systems",
     content: [
-      "Decentralized data systems aim to bring insights closer to the people who need them, removing bottlenecks, speeding decision-making, and reducing massive setup costs",
-      "These systems are designed for speed, reliability, and accuracy. They empower teams to answer questions immediately without waiting years for centralized implementations",
+      "Decentralized data systems bring insights closer to the people who need them, removing bottlenecks, improving data quality and speeding decision-making",
+      "These systems are designed for speed and reliability. They let teams answer questions immediately without going through IT",
     ],
     image: {
       src: "/netflix.png",
@@ -76,72 +76,72 @@ export const sections: BlogSection[] = [
   },
   {
     id: "decentralized-forms",
-    title: "More and more decentralizers",
+    title: "Decentralizers are getting better, easier and more complete",
     content: [
-      "Leading businesses are building more and more decentralized systems:",
+      "Leading businesses are building more and more decentralized systems. And these decentralized systems are quickly maturing into complete solutions to data management",
     ],
     subsections: [
       {
-        title: "1. Data meshes",
+        title: "1. Mesh architectures",
         content: [
+          <span>Mesh architectures were the first decentralized systems</span>,
           <span>
-            <span className="font-medium">What they are:</span> Architectural
-            frameworks where data ownership is distributed across domains. Each
-            team manages its own “data product” while adhering to shared
+            <span className="font-medium">What they are:</span> New database
+            architectures where data ownership is distributed across domains.
+            Each team manages its own “data product” while adhering to shared
             governance standards
           </span>,
           <span>
-            <span className="font-medium">Real-world example:</span> Netflix
-            uses a federated data model where teams own their analytics
-            pipelines and datasets, enabling rapid experimentation while
-            maintaining data quality
+            <span className="font-medium">Real-world example:</span> Netflix has
+            been using a federated approach since 2017. Each business unit has
+            an analytics team that builds their own analytics pipelines
           </span>,
           <span>
             <span className="font-medium">Benefits:</span> Removes central
-            bottlenecks, enables faster insights at the team level, and avoids
-            years-long centralized implementations
+            bottlenecks and lets each team move faster by managing their own
+            data
           </span>,
         ],
       },
       {
-        title: "2. Knowledge-first platforms",
+        title: "2. User-friendly query tools",
         content: [
+          <span>User-friendly query tools were pre-AI pioneers</span>,
           <span>
-            <span className="font-medium">What they are:</span> Platforms that
-            extract actionable knowledge from structured and unstructured data
-            sources, including internal documentation, apps, and knowledge bases
+            <span className="font-medium">What they are:</span> Tools that
+            extract data from structured and unstructured data sources,
+            including internal documentation and apps
           </span>,
           <span>
-            <span className="font-medium">Real-world example:</span> Glean
-            provides unified search across Slack, Google Workspace, Salesforce,
-            and other apps to surface answers for employees in seconds
+            <span className="font-medium">Real-world example:</span> Glean was
+            founded in 2019 and they provide user-friendly data querying from
+            Slack, Google Workspace, Salesforce, and other apps to let
+            non-technical employees fetch data
           </span>,
           <span>
-            <span className="font-medium">Benefits:</span> Reduces time wasted
-            hunting for information, accelerates decision-making, and enables
-            teams to access insights without expensive, centralized data
-            engineering projects
+            <span className="font-medium">Benefits:</span> Lets non-technical
+            employees access raw data without relying on and waiting for IT
           </span>,
         ],
       },
       {
-        title: "3. Personal analyst startups",
+        title: "3. Personal analysts",
         content: [
+          <span>Personal analysts are a complete and reliable solution</span>,
           <span>
-            <span className="font-medium">What they are:</span> The newest trend
-            are human-powered services that combine expert analysts with AI
-            tools to deliver reliable insights on demand
+            <span className="font-medium">What they are:</span> The current
+            trend are human-powered services that combine expert analysts with
+            AI tools to deliver reliable insights on demand
           </span>,
           <span>
             <span className="font-medium">Real-world example:</span> Overbase
-            analysts are graduates from the world's most selective universities
-            who provide answers directly to execs using the most advanced AI
+            gives reliable answers to revenue execs through simple Slack DMs
           </span>,
           <span>
-            <span className="font-medium">Benefits:</span> True reliability,
-            5-minute setup, and extreme security because data is never stored.
-            Over the next decade, as AI gets more reliable, personal analyst
-            startups will automate their services
+            <span className="font-medium">Benefits:</span> Reliable answers to
+            hard question. Personal analysts still use humans to push the limits
+            of what the current AI tech can do, but they will become fully
+            automated as AI matures
           </span>,
         ],
       },
@@ -154,7 +154,7 @@ export const sections: BlogSection[] = [
       "Across all decentralized approaches:",
       <span>
         <span className="font-medium">Speed:</span> Answers are available
-        immediately instead of waiting years for central pipelines
+        immediately instead of waiting years for over-engineered pipelines
       </span>,
       <span>
         <span className="font-medium">Reliability:</span> Insights reflect real
@@ -169,16 +169,9 @@ export const sections: BlogSection[] = [
         evolve naturally as business needs change
       </span>,
       <span>
-        <span className="font-medium">Cost:</span> Decentralized systems are
-        dramatically cheaper to deploy. Centralized implementations often
-        require tens of millions of dollars, large consulting teams, and years
-        of engineer work. Decentralized approaches deliver answers fast,
-        reliable, and at a fraction of the cost
-      </span>,
-      <span>
         <span className="font-medium">The outcome:</span> In short,
-        decentralization restores the ability to truly know what’s happening in
-        your business — fast, reliably, and affordably
+        decentralization creates the ability to truly know what’s happening in
+        your business — fast and reliably
       </span>,
     ],
     image: {
@@ -192,8 +185,8 @@ export const sections: BlogSection[] = [
     id: "the-takeaway",
     title: "The takeaway",
     content: [
-      "Centralized systems promised insights but delivered headaches and lock-in. The next era of data is decentralized, bringing answers to the people who need them, when they need them",
-      "Whether it’s data meshes, knowledge-first platforms like Glean, or personal analysts like Overbase, the shift is clear: centralizers slow you down and steal your ability to know. Decentralizers give you speed and reliable insight",
+      "Centralized systems promised insights but delivered headaches. The next era of data is decentralized",
+      "Whether it’s mesh architectures, user-friendly query tools, or personal analysts, the shift is clear: centralizers slow you down and steal your ability to know. Decentralizers give you speed and reliable insight",
     ],
   },
 ];
