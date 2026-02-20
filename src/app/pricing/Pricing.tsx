@@ -7,9 +7,9 @@ export function Pricing() {
     <>
       <section className="px-6 pt-48 max-w-5xl mx-auto">
         <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="space-y-6 max-w-xl mx-auto">
+          <div className="space-y-6 max-w-2xl mx-auto">
             <h1 className="text-5xl text-gray-900 font-medium tracking-tight">
-              Get millions in easy revenue{" "}
+              Millions in easy revenue starting{" "}
               <span className="italic">next quarter</span>
             </h1>
             <div className="pt-2">
