@@ -68,7 +68,7 @@ export function Letter() {
                 And this data scientist asks the right questions because they
                 take into account the realtime earnings, press releases and
                 announcements of +8,000 companies to deeply understand your
-                current market conditions
+                current market
               </p>
 
               <p>

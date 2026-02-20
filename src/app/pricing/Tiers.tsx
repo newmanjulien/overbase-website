@@ -9,6 +9,7 @@ interface Plan {
   price: string;
   description: string;
   subtext: string;
+  valueLabel: string;
 }
 
 const PLANS: Plan[] = [
@@ -20,15 +21,17 @@ const PLANS: Plan[] = [
       "Second forecast based on earnings, press releases and announcements from +8,000 companies",
     subtext:
       "Per quarter with annual subscription discount. $15,000 if billed quarterly",
+    valueLabel: "Find hidden revenue",
   },
   {
     id: "internal",
     name: "Internal audit",
-    price: "$50,000",
+    price: "$80,000",
     description:
       "Second forecast based on an audit of your internal operation and using data from +8,000 companies",
     subtext:
-      "Per quarter with annual subscription discount. $80,000 if billed quarterly",
+      "Per quarter with annual subscription discount. $120,000 if billed quarterly",
+    valueLabel: "Millions in easy revenue every quarter",
   },
 ];
 
@@ -51,6 +54,12 @@ export default function Tiers() {
 function PlanCard({ plan }: { plan: Plan }) {
   return (
     <div className="bg-white rounded-lg p-6 flex flex-col h-full border border-gray-100">
+      <div className="mb-4">
+        <span className="inline-flex items-center rounded-full border border-gray-100 px-3 py-1 text-xs font-medium text-gray-700">
+          {plan.valueLabel}
+        </span>
+      </div>
+
       <h3 className="text-3xl text-gray-900 font-medium mb-4">{plan.name}</h3>
 
       <p className="text-sm text-gray-600 mb-5 max-w-[97%]">

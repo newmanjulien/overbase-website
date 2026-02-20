@@ -29,7 +29,7 @@ export function Hero() {
             <span className="bg-[#ffffcc] px-1 rounded-xs">
               drive millions in easy revenue
             </span>{" "}
-            starting next quarter and then every quarter
+            starting next quarter then every quarter
           </h2>
 
           <div className={newLocal}>
