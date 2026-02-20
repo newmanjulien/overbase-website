@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { SlackIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface Plan {
@@ -14,22 +13,22 @@ interface Plan {
 
 const PLANS: Plan[] = [
   {
-    id: "peranswer",
-    name: "Pay per answer",
-    price: "$300",
+    id: "market",
+    name: "Market data",
+    price: "$10,000",
     description:
-      "Easily and quickly get reliable answers from dirty and disconnected data",
+      "Second forecast based on earnings, press releases and announcements from +8,000 companies",
     subtext:
-      "Per answer. $0 per month then pay as you go for each answer. No obligations. No minimum",
+      "Per quarter with annual subscription discount. $15,000 if billed quarterly",
   },
   {
-    id: "subscription",
-    name: "Subscription",
-    price: "$15,000",
+    id: "internal",
+    name: "Internal audit",
+    price: "$50,000",
     description:
-      "Get an unlimited amount of reliable answers for a flat monthly fee",
+      "Second forecast based on an audit of your internal operation and using data from +8,000 companies",
     subtext:
-      "Per exec / month with annual subscription discount. $20,000 if billed monthly. Includes unlimited answers",
+      "Per quarter with annual subscription discount. $80,000 if billed quarterly",
   },
 ];
 
@@ -54,7 +53,7 @@ function PlanCard({ plan }: { plan: Plan }) {
     <div className="bg-white rounded-lg p-6 flex flex-col h-full border border-gray-100">
       <h3 className="text-3xl text-gray-900 font-medium mb-4">{plan.name}</h3>
 
-      <p className="text-sm text-gray-600 mb-5 max-w-[90%]">
+      <p className="text-sm text-gray-600 mb-5 max-w-[97%]">
         {plan.description}
       </p>
 
@@ -75,14 +74,7 @@ function PlanCard({ plan }: { plan: Plan }) {
           className="w-full text-sm rounded-md"
           asChild
         >
-          <Link
-            href="https://slack.overbase.app/slack/install"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <SlackIcon className="size-5" />
-            Add to Slack
-          </Link>
+          <Link href="/waitlist">Join Waitlist</Link>
         </Button>
       </div>
     </div>

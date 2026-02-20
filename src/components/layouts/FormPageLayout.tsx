@@ -13,11 +13,13 @@ interface FormPageLayoutProps {
   primaryActionText?: string;
   isPrimaryDisabled?: boolean;
   isLoading?: boolean;
+  loadingText?: string;
   error?: string | null;
   onBack?: () => void;
   footer?: ReactNode;
   step?: number;
   totalSteps?: number;
+  showVideoOnMobile?: boolean;
 }
 
 export function FormPageLayout({
@@ -29,11 +31,13 @@ export function FormPageLayout({
   primaryActionText,
   isPrimaryDisabled,
   isLoading,
+  loadingText = "Submitting...",
   error,
   onBack,
   footer,
   step,
   totalSteps,
+  showVideoOnMobile = false,
 }: FormPageLayoutProps) {
   const showStepIndicator =
     typeof step === "number" && typeof totalSteps === "number";
@@ -110,7 +114,7 @@ export function FormPageLayout({
                         d="M4 12a8 8 0 018-8"
                       ></path>
                     </svg>
-                    Submitting...
+                    {loadingText}
                   </div>
                 ) : (
                   primaryActionText
@@ -168,7 +172,9 @@ export function FormPageLayout({
       </div>
 
       {/* Right side - Video background */}
-      <div className="flex-1 relative hidden lg:block">
+      <div
+        className={`flex-1 relative ${showVideoOnMobile ? "" : "hidden lg:block"}`}
+      >
         <video
           autoPlay
           loop

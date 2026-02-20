@@ -2,58 +2,26 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { SlackIcon } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { HotkeyButton } from "@/components/HotkeyButton";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
   logoHref?: string;
   onLogoClick?: () => void;
-  /** Override the initial (non-scrolled) background color of the header */
-  initialBackgroundColor?: string;
 }
 
 export function Header({
   logoSrc,
   logoHref = "/",
   onLogoClick,
-  initialBackgroundColor = "var(--color-surface)",
 }: BaseHeaderProps) {
-  const [hasScrolled, setHasScrolled] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setHasScrolled(window.scrollY > 0);
-    };
-
-    handleScroll();
-    window.addEventListener("scroll", handleScroll, { passive: true });
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  // Determine the background style based on scroll state
-  const getBackgroundStyle = () => {
-    if (hasScrolled) {
-      return { backgroundColor: "#fbfbfb" };
-    }
-    if (initialBackgroundColor) {
-      return { backgroundColor: initialBackgroundColor };
-    }
-    return undefined;
-  };
-
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 border-b transition-all duration-200 ${
-        hasScrolled ? "border-gray-100" : "bg-surface border-transparent"
-      }`}
-      style={getBackgroundStyle()}
+      className="fixed top-0 left-0 right-0 z-50 border-b border-gray-200/40 transition-all duration-200"
+      style={{ backgroundColor: "#f9f9f9" }}
     >
-      <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
+      <div className="w-full px-6 md:px-12 lg:px-24">
         <div className="flex items-center justify-between h-13">
           {/* Logo */}
           {logoHref ? (
@@ -86,22 +54,26 @@ export function Header({
           )}
 
           {/* Right side buttons */}
-          <div className="flex items-center gap-2">
-            <Button
-              variant="default"
+          <div className="flex items-center">
+            <HotkeyButton
+              hotkey="l"
+              variant="ghost"
+              size="sm"
+              className="rounded-sm text-sm scale-[0.92] text-secondary-foreground"
+              href="/login"
+            >
+              Login
+            </HotkeyButton>
+
+            <HotkeyButton
+              hotkey="j"
+              variant="light"
               size="sm"
               className="rounded-sm text-sm scale-[0.92]"
-              asChild
+              href="/waitlist"
             >
-              <Link
-                href="https://slack.overbase.app/slack/install"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <SlackIcon className="size-4" />
-                Add to Slack
-              </Link>
-            </Button>
+              Join Wailist
+            </HotkeyButton>
           </div>
         </div>
       </div>

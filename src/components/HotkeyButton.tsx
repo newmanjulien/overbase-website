@@ -6,15 +6,14 @@ import { Button } from "@/components/ui/button";
 
 export function HotkeyBadge({
   keyChar,
-  variant = "dark",
+  variant = "light",
 }: {
   keyChar: string;
-  variant?: "dark" | "light";
+  variant?: "ghost" | "light";
 }) {
   const baseClasses =
     "hidden md:inline-flex items-center justify-center w-5 h-5 rounded-sm text-xs font-semibold";
-  const variantClasses =
-    variant === "dark" ? "bg-gray-800 text-white" : "bg-gray-200 text-gray-700";
+  const variantClasses = "bg-gray-200 text-gray-700";
 
   return <span className={`${baseClasses} ${variantClasses}`}>{keyChar}</span>;
 }
@@ -25,7 +24,7 @@ export const HotkeyButton = forwardRef<
     children: React.ReactNode;
     onClick?: () => void;
     hotkey: string;
-    variant?: "dark" | "light";
+    variant?: "ghost" | "light";
     size?: "sm" | "lg" | "default";
     className?: string;
     href?: string;
@@ -38,7 +37,7 @@ export const HotkeyButton = forwardRef<
       children,
       onClick,
       hotkey,
-      variant = "dark",
+      variant = "light",
       size = "default",
       className,
       href,
@@ -83,20 +82,20 @@ export const HotkeyButton = forwardRef<
       <Button
         ref={setRef}
         onClick={onClick}
-        variant={variant === "light" ? "secondary" : "default"}
+        variant={variant === "ghost" ? "ghost" : "light"}
         size={size}
         className={className}
         asChild={Boolean(href)}
       >
         {href ? (
           <Link href={href} target={target} rel={rel}>
-            <span className="inline-flex items-center gap-3">
+            <span className="inline-flex items-center gap-1">
               {children}
               <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
             </span>
           </Link>
         ) : (
-          <span className="inline-flex items-center gap-3">
+          <span className="inline-flex items-center gap-1">
             {children}
             <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
           </span>

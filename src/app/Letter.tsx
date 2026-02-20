@@ -24,57 +24,62 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                You have questions when you look at your dashboards, reports, or
-                CRM — but getting to the root cause is slow, frustrating, and
-                hard
+                Which sales team is overperforming? Are you losing to a new
+                competitor? Why are EMEA numbers suddenly up? Is there increased
+                churn in one of your products?
+              </p>
+
+              <p>
+                The insight that would let you accelerate growth often shows up
+                too late for you to take action
               </p>
 
               <p>
                 <span className="font-medium">
-                  The data is scattered across disconnected systems, formatted
-                  inconsistently, and often unreliable.
-                </span>{" "}
-                Every time you need an answer, you pull an analyst off another
-                project — slowing your team and delaying decisions that matter
-              </p>
-
-              <p>Your personal analyst changes that</p>
-
-              <p>
-                When you ask a question, a trained analyst investigates, using
-                all your structured data, unstructured sources, and even
-                information only your team knows. Our analysts are elite
-                professionals — graduates of top schools and former BCG,
-                McKinsey, Google, and Tesla team members
-              </p>
-
-              <p>
-                <span className="font-medium">
-                  Answers are fast, accurate, and reliable because humans do the
-                  analysis.{" "}
+                  And there's actually no way to get the information because
+                  it's hidden by layers and layers of human interpretation
                 </span>
-                Advanced AI tools assist our analysts, making them faster and
-                more precise — but the insight, judgment, and context come from
-                real people who understand your business
               </p>
 
               <p>
-                With a personal analyst, you finally get clarity where there was
-                confusion, speed where there was delay, and insight you can
-                trust
+                <span className="font-medium">
+                  The result is that you miss millions of dollars of easy
+                  revenue every quarter.
+                </span>{" "}
+                Because the best opportunities are hidden by a rep's "happy
+                ears" which get compounded by a manager giving their team a
+                second chance, etc.
               </p>
 
               <p>
+                Overbase gives you a second sales forecast by doing a human-led
+                audit. We give you all the nitty gritty details which let you
+                easily see the best opportunities and quickly make the right
+                decisions
+              </p>
+
+              <p>
+                A human data scientist analyzes all the details of your
+                operation from the ground up by reviewing calls, reading emails,
+                analyzing Slack conversations
+              </p>
+
+              <p>
+                And this data scientist asks the right questions because they
+                take into account the realtime earnings, press releases and
+                announcements of +8,000 companies to deeply understand your
+                current market conditions
+              </p>
+
+              <p>
+                Join the{" "}
                 <Link
-                  href="https://slack.overbase.app/slack/install"
-                  target="_blank"
-                  rel="noreferrer"
+                  href="/waitlist"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
-                  Add to Slack
+                  waitlist
                 </Link>{" "}
-                and get started in 5 minutes — no complex deployments, no data
-                migrations. Or check out{" "}
+                or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"

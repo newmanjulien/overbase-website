@@ -125,23 +125,25 @@ export const sections: BlogSection[] = [
         ],
       },
       {
-        title: "3. Personal analysts",
+        title: "3. Autonomous systems",
         content: [
-          <span>Personal analysts are a complete and reliable solution</span>,
+          <span>The future will be AI-native autonomous data systems</span>,
           <span>
-            <span className="font-medium">What they are:</span> The current
-            trend are human-powered services that combine expert analysts with
-            AI tools to deliver reliable insights on demand
+            <span className="font-medium">What they are:</span> AI systems which
+            solve all data problem quickly and simply by mimicking how human
+            analysts engage with data but at exponentially faster speeds
           </span>,
           <span>
             <span className="font-medium">Real-world example:</span> Overbase
-            gives reliable answers to revenue execs through simple Slack DMs
+            has built a semi-autonomous system which is still supported by human
+            analysts and will over time become increasingly autonomous as the AI
+            tech matures
           </span>,
           <span>
-            <span className="font-medium">Benefits:</span> Reliable answers to
-            hard question. Personal analysts still use humans to push the limits
-            of what the current AI tech can do, but they will become fully
-            automated as AI matures
+            <span className="font-medium">Benefits:</span> Reliability, accuracy
+            and simlicity. Autonomous systems scale and speed up the already
+            known solution to all data problems by mimicking how human analysts
+            have already solved them at small scales
           </span>,
         ],
       },
@@ -186,7 +188,7 @@ export const sections: BlogSection[] = [
     title: "The takeaway",
     content: [
       "Centralized systems promised insights but delivered headaches. The next era of data is decentralized",
-      "Whether it’s mesh architectures, user-friendly query tools, or personal analysts, the shift is clear: centralizers slow you down and steal your ability to know. Decentralizers give you speed and reliable insight",
+      "Whether it’s mesh architectures, user-friendly query tools, or autonomous systems, the shift is clear: centralizers slow you down and steal your ability to know. Decentralizers give you speed and reliable insight",
     ],
   },
 ];

@@ -9,8 +9,8 @@ export function Pricing() {
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6 max-w-xl mx-auto">
             <h1 className="text-5xl text-gray-900 font-medium tracking-tight">
-              Reliable answers from <span className="italic">disconnected</span>{" "}
-              data
+              Get millions in easy revenue{" "}
+              <span className="italic">next quarter</span>
             </h1>
             <div className="pt-2">
               <Button
@@ -32,28 +32,30 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Elite human analysts powered by the most advanced AI
+              Human-led audit of your business and of the realtime market
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Our analysts graduated from the world’s most selective schools or
-              worked at top-tier companies like BCG, McKinsey, Google, and Tesla
+              Overbase lets you get millions in easy revenue every quarter by
+              finding the best hidden opportunities
             </p>
 
             <p>
-              They deliver fast, reliable answers by combining expert human
-              analysis with the most advanced AI tools
+              A human data scientist reviews every sales call, every email,
+              every Slack channel and every detail of your operation
             </p>
 
             <p>
-              No data migrations. No cleaning. No changes. Just answers from
-              your existing systems
+              Then analyzes realtime earnings, press releases and announcements
+              from +8,000 public companies to understand your business in the
+              context of what's currently happening in the market
             </p>
 
             <p>
-              And you’ll be up and running in just 5 minutes with your current
-              data infrastructure
+              This audit is reliable because it's run by human data scientists.
+              And it finds hidden opportunities by going in depth with the most
+              advanced AI
             </p>
           </div>
         </div>
