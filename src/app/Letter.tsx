@@ -25,8 +25,8 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 Which sales team is overperforming? Are you losing to a new
-                competitor? Why are EMEA numbers suddenly up? Is there increased
-                churn in one of your products?
+                competitor? Why are the EMEA numbers suddenly up? Is there
+                increased churn in one of your products?
               </p>
 
               <p>
@@ -36,39 +36,41 @@ export function Letter() {
 
               <p>
                 <span className="font-medium">
-                  And there's actually no way to get the information because
-                  it's hidden by layers and layers of human interpretation
+                  And there's no way to get the information you need. Because
+                  that information is hidden by multiple layers of
+                  interpretation
                 </span>
               </p>
 
               <p>
                 <span className="font-medium">
-                  The result is that you miss millions of dollars of easy
-                  revenue every quarter.
+                  A rep is too optimistic. A manager downplays a deal so they
+                  can over-perform at the end of the month. Someone is keeping
+                  off-books deals to fill gaps.
                 </span>{" "}
-                Because the best opportunities are hidden by a rep's "happy
-                ears" which get compounded by a manager giving their team a
-                second chance, etc.
+                There's a long list of invisible factors that compound to stop
+                you from getting the real picture
               </p>
 
               <p>
-                Overbase gives you a second sales forecast by doing a human-led
-                audit. We give you all the nitty gritty details which let you
-                easily see the best opportunities and quickly make the right
-                decisions
+                The result is that you leave millions of dollars in easy revenue
+                on the table every quarter simply because many of the best
+                opportunities are hidden
+              </p>
+
+              <p>Overbase gives SaaS businesses a second sales forecast</p>
+
+              <p>
+                A human data scientist starts by doing an audit of your
+                operation - reviews every call, reads every email, looks at
+                every Docusign. And they do a market deep dive - looking at
+                realtime earnings and press releases of +8,000 companies
               </p>
 
               <p>
-                A human data scientist analyzes all the details of your
-                operation from the ground up by reviewing calls, reading emails,
-                analyzing Slack conversations
-              </p>
-
-              <p>
-                And this data scientist asks the right questions because they
-                take into account the realtime earnings, press releases and
-                announcements of +8,000 companies to deeply understand your
-                current market
+                Then this data scientist rebuilds a second sales forecast. That
+                lets you see the nitty gritty. And lets you drive millions in
+                easy revenue every quarter
               </p>
 
               <p>
@@ -79,14 +81,13 @@ export function Letter() {
                 >
                   waitlist
                 </Link>{" "}
-                or check out{" "}
+                if you want to drive revenue fast. Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>{" "}
-                if you want to learn more
+                </Link>
               </p>
             </div>
 

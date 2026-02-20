@@ -25,11 +25,11 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase will let your SaaS business{" "}
+            Overbase lets SaaS businesses{" "}
             <span className="bg-[#ffffcc] px-1 rounded-xs">
               drive millions in easy revenue
             </span>{" "}
-            starting next quarter then every quarter
+            by finding hidden sales opportunities
           </h2>
 
           <div className={newLocal}>

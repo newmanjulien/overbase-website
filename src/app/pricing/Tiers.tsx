@@ -21,7 +21,7 @@ const PLANS: Plan[] = [
       "Second forecast based on earnings, press releases and announcements from +8,000 companies",
     subtext:
       "Per quarter with annual subscription discount. $15,000 if billed quarterly",
-    valueLabel: "Find hidden revenue",
+    valueLabel: "Get hidden revenue",
   },
   {
     id: "internal",
