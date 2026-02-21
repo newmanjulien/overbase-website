@@ -16,11 +16,11 @@ const PLANS: Plan[] = [
   {
     id: "market",
     name: "Market data",
-    price: "$5,000",
+    price: "$9,000",
     description:
-      "Second forecast based on earnings, press releases and announcements from +8,000 companies",
+      "Get a list of hidden revenue opportunities which is created from realtime market data and doesn't require any internal data from your business",
     subtext:
-      "Per quarter with annual subscription discount. $9,000 if billed quarterly",
+      "Per quarter with annual subscription discount. $12,000 if billed quarterly",
     valueLabel: "Hidden revenue opportunities",
   },
   {
@@ -28,7 +28,7 @@ const PLANS: Plan[] = [
     name: "Internal audit",
     price: "$90,000",
     description:
-      "Second forecast based on an audit of your internal operation and using data from +8,000 companies",
+      "Drive millions in easy revenue with a second forecast based on an audit of your internal operation and using realtime market data",
     subtext:
       "Per quarter with annual subscription discount. $120,000 if billed quarterly",
     valueLabel: "Millions in easy revenue every quarter",
