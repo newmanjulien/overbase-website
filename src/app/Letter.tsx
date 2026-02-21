@@ -36,9 +36,8 @@ export function Letter() {
 
               <p>
                 <span className="font-medium">
-                  And there's no way to get the information you need. Because
-                  that information is hidden by multiple layers of
-                  interpretation
+                  And there's no way to get the information faster. Because that
+                  information is hidden by multiple layers of interpretation
                 </span>
               </p>
 
@@ -64,7 +63,7 @@ export function Letter() {
                 A human data scientist starts by doing an audit of your
                 operation - reviews every call, reads every email, looks at
                 every Docusign. And they do a market deep dive - looking at
-                realtime earnings and press releases of +8,000 companies
+                realtime earnings of +8,000 companies
               </p>
 
               <p>
