@@ -14,24 +14,24 @@ interface Plan {
 
 const PLANS: Plan[] = [
   {
-    id: "market",
-    name: "Market data",
+    id: "quarterly",
+    name: "Every quarter",
     price: "$9,000",
     description:
-      "Get a list of hidden revenue opportunities which is created from realtime market data and doesn't require any internal data from your business",
+      "Get a second forecast every quarter based on a deep and reliable human-led audit of your sales operation and of the market",
     subtext:
-      "Per quarter with annual subscription discount. $12,000 if billed quarterly",
-    valueLabel: "Hidden revenue opportunities",
+      "Per month with annual subscription discount. $15,000 if billed monthly",
+    valueLabel: "Millions in easy revenue",
   },
   {
-    id: "internal",
-    name: "Internal audit",
-    price: "$90,000",
+    id: "monthly",
+    name: "Every month",
+    price: "$20,000",
     description:
-      "Drive millions in easy revenue with a second forecast based on an audit of your internal operation and using realtime market data",
+      "Get your second forecast and your deep reliable audit every month so you can take action during deal review and help your team quickly get more revenue",
     subtext:
-      "Per quarter with annual subscription discount. $120,000 if billed quarterly",
-    valueLabel: "Millions in easy revenue every quarter",
+      "Per month with annual subscription discount. $30,000 if billed monthly",
+    valueLabel: "Quickly take action",
   },
 ];
 

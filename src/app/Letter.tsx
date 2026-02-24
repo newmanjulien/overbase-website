@@ -24,8 +24,8 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                Which sales team is overperforming? Are you losing to a new
-                competitor? Why are the EMEA numbers suddenly up? Is there
+                Which deals are actually likely to close? Are you losing to a
+                new competitor? Why are the EMEA numbers suddenly up? Is there
                 increased churn in one of your products?
               </p>
 

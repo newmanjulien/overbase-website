@@ -91,7 +91,7 @@ export const sections: BlogSection[] = [
     content: [
       "Founder-led companies can adapt faster to the emerging reality of a talent pipeline that's getting more scarce with each passing year",
       "Startups can monopolize the few remaining sources of quality candidates quickly. While large, slow, legacy competitors will take decades to reorient a talent pipeline that's drying up faster than big companies can adjust",
-      "Startups like Overbase are designing for strategic locations near the few remaining sources of talent. And forming partnerships with the handful of universities that continue to produce capable graduates",
+      "Startups like Overbase are designing the businesses around strategic locations near the few remaining sources of talent. And instead of looking for cheap labor, startups are looking for the best talent because they can't find it at MIT anymore",
     ],
     image: {
       src: "/office.jpg",
@@ -106,8 +106,18 @@ export const sections: BlogSection[] = [
     content: [
       "The pool of graduates who can reliably deliver results has collapsed — and the decline is accelerating",
       "Fewer engineers, data scientists, and operators can make net positive contributions. A decade from now, that number will be smaller still — and increasingly only findable in a handful of new hubs",
-      "As capable talent gets scarcer, recruiting capable talent becomes an even greater edge than before",
-      "And as AI becomes a force multiplier, it’s even more important not to scale net-negative contributors",
+      "And as capable talent gets scarcer, recruiting capable talent becomes an even greater edge than before",
+    ],
+  },
+  {
+    id: "ai",
+    title: "And even more given AI",
+    content: [
+      "AI makes talent war even more important",
+      "Partially because - as AI becomes a force multiplier - it’s even more important not to scale net-negative contributors (eg. almost everyone)",
+      "Partially because AI skills are the only skill that matters as only recent graduates have the capacity to learn",
+      "But mostly because the type of intelligence which AI can mimic is becoming almost free. And that makes the few humans who have human-level intelligence the only remaining ingredient for everything",
+      "It's not OpenAI who is going to “own” intelligence. It's the few intelligent people who will. And there's going to be almost none left",
     ],
   },
 ];

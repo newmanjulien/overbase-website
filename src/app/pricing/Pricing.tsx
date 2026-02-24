@@ -10,7 +10,7 @@ export function Pricing() {
           <div className="space-y-6 max-w-2xl mx-auto">
             <h1 className="text-5xl text-gray-900 font-medium tracking-tight">
               Millions in easy revenue starting{" "}
-              <span className="italic">next quarter</span>
+              <span className="italic">right now</span>
             </h1>
             <div className="pt-2">
               <Button
@@ -32,7 +32,7 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Human-led audit powered by the most advanced AI
+              Human-led audit that's powered by the most advanced AI
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
