@@ -26,11 +26,11 @@ const PLANS: Plan[] = [
   {
     id: "monthly",
     name: "Every month",
-    price: "$22,000",
+    price: "$30,000",
     description:
-      "Get your second forecast and your deep reliable audit every month so you can take action during deal review and help your team quickly get more revenue",
+      "Get your second forecast and your deep audit every month and receive the insight in a way that lets you quickly use it during deal review",
     subtext:
-      "Per month with annual subscription discount. $30,000 if billed monthly",
+      "Per month with annual subscription discount. $40,000 if billed monthly",
     valueLabel: "Quickly action revenue opportunities",
   },
 ];
