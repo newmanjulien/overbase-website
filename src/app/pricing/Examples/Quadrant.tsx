@@ -213,8 +213,7 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
             const delta = hoveredPoint.y - hoveredPoint.x;
             const absDelta = Math.abs(delta);
             if (absDelta <= DISAGREE_THRESHOLD) return undefined;
-            if (delta > 0) return `Overbase is higher. ${hoveredPoint.description}`;
-            return `Overbase is lower. ${hoveredPoint.description}`;
+            return hoveredPoint.description;
           })()}
           position={hoverPosition}
           bounds={hoverBounds}
