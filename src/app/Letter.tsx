@@ -60,10 +60,9 @@ export function Letter() {
               <p>Overbase gives SaaS businesses a second sales forecast</p>
 
               <p>
-                A human data scientist starts by doing an audit of your
-                operation - reviews every call, reads every email, looks at
-                every Docusign. And they do a market deep dive - looking at
-                realtime earnings of +8,000 companies
+                A human data scientist does an audit of your operation - reviews
+                sales calls, reads emails with prospects, looks at Docusign,
+                etc.
               </p>
 
               <p>

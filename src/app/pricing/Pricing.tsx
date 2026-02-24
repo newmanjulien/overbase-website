@@ -42,14 +42,8 @@ export function Pricing() {
             </p>
 
             <p>
-              A human data scientist reviews every sales call, every email,
-              every Slack channel and every detail of your operation
-            </p>
-
-            <p>
-              Then analyzes realtime earnings, press releases and announcements
-              from +8,000 public companies to understand your business in the
-              context of what's currently happening in the market
+              A human data scientist does an audit of your operation - reviews
+              sales calls, reads emails with prospects, looks at Docusign, etc.
             </p>
 
             <p>
