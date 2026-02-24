@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { ChartTooltip } from "@/components/ui/chart-tooltip";
 import {
   AXIS_LABEL_OFFSET,
@@ -38,12 +38,43 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
   const [hoverBounds, setHoverBounds] = useState<{ width: number; height: number } | null>(
     null
   );
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const svgRef = useRef<SVGSVGElement | null>(null);
 
   const xForValue = linearScale(0, 100, CHART_PADDING.left, CHART_PADDING.left + inner.width);
   const yForValue = linearScale(0, 100, CHART_PADDING.top + inner.height, CHART_PADDING.top);
 
   const ticks = ticksLinear(100, 4);
   const DISAGREE_THRESHOLD = 6;
+  const defaultPoint = chart.points.find((point) => point.id === "q18");
+
+  useEffect(() => {
+    if (hasInteracted || !defaultPoint) return;
+    const rect = svgRef.current?.getBoundingClientRect();
+    const width = rect?.width ?? CHART_DIMENSIONS.width;
+    const height = rect?.height ?? CHART_DIMENSIONS.height;
+    const xScale = linearScale(
+      0,
+      100,
+      CHART_PADDING.left,
+      CHART_PADDING.left + inner.width,
+    );
+    const yScale = linearScale(
+      0,
+      100,
+      CHART_PADDING.top + inner.height,
+      CHART_PADDING.top,
+    );
+    const x = xScale(defaultPoint.x);
+    const y = yScale(defaultPoint.y);
+
+    setHoveredPoint(defaultPoint);
+    setHoverBounds({ width, height });
+    setHoverPosition({
+      x: (x / CHART_DIMENSIONS.width) * width,
+      y: (y / CHART_DIMENSIONS.height) * height,
+    });
+  }, [defaultPoint?.id, hasInteracted, inner.height, inner.width]);
 
   const getPointColor = (point: QuadrantPoint) => {
     const isRight = point.x >= chart.xMid;
@@ -67,10 +98,16 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
   return (
     <div className="relative mt-5 rounded-xl border border-gray-100 bg-white p-4">
       <svg
+        ref={svgRef}
         viewBox={`0 0 ${CHART_DIMENSIONS.width} ${CHART_DIMENSIONS.height}`}
         className="h-auto w-full text-gray-400"
         role="img"
         aria-label={chart.title}
+        onMouseMove={() => {
+          if (!hasInteracted) {
+            setHasInteracted(true);
+          }
+        }}
         onMouseLeave={() => {
           setHoveredPoint(null);
           setHoverPosition(null);
@@ -200,7 +237,7 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
 
       {hoveredPoint && hoverPosition && hoverBounds && (
         <ChartTooltip
-          title={hoveredPoint.label}
+          title={`${hoveredPoint.label} deal`}
           rows={[
             { label: "Current", value: `${hoveredPoint.x}%` },
             { label: "Overbase", value: `${hoveredPoint.y}%` },
