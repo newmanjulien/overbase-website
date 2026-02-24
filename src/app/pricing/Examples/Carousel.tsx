@@ -10,12 +10,12 @@ export type SamplesCarouselSlide = {
   content: React.ReactNode;
 };
 
-type CourousselProps = {
+type CarouselProps = {
   slides: SamplesCarouselSlide[];
   className?: string;
 };
 
-export function Couroussel({ slides, className }: CourousselProps) {
+export function Carousel({ slides, className }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     align: "start",
     containScroll: "trimSnaps",

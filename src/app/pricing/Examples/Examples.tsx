@@ -1,4 +1,4 @@
-import { Couroussel } from "@/app/pricing/Examples/Couroussel";
+import { Carousel } from "@/app/pricing/Examples/Carousel";
 import { Quadrant } from "@/app/pricing/Examples/Quadrant";
 import { Signals } from "@/app/pricing/Examples/Signals";
 import { Panel } from "@/components/ui/panel";
@@ -51,7 +51,7 @@ export default function Examples() {
     <section>
       <div className="relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] w-screen">
         <div className="bg-gradient-to-b from-surface via-gray-50 to-surface pt-16">
-          <Couroussel slides={slides} />
+          <Carousel slides={slides} />
         </div>
       </div>
     </section>
