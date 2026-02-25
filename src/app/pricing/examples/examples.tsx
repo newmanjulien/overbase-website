@@ -3,9 +3,9 @@ import { Quadrant } from "@/app/pricing/examples/quadrant";
 import { Signals } from "@/app/pricing/examples/signals";
 import { Calendar } from "@/app/pricing/examples/calendar";
 import { Panel } from "@/components/ui/panel";
-import { quadrantExample } from "@/app/pricing/examples/data/quadrant-data";
-import { signalsExample } from "@/app/pricing/examples/data/signals-data";
-import { dealReviewCalendar } from "@/app/pricing/examples/data/calendar-data";
+import { quadrantExample } from "@/data/examples/quadrant-data";
+import { signalsExample } from "@/data/examples/signals-data";
+import { dealReviewCalendar } from "@/data/examples/calendar-data";
 
 export default function Examples() {
   const slides = [

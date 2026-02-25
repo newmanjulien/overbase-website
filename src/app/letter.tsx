@@ -69,21 +69,20 @@ export function Letter() {
               </p>
 
               <p>
-                Join the{" "}
+                See{" "}
                 <Link
-                  href="/waitlist"
+                  href="/how-it-works"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
-                  waitlist
-                </Link>
-                . Or check out{" "}
+                  how it works
+                </Link>{" "}
+                or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>{" "}
-                for more details
+                </Link>
               </p>
             </div>
 
