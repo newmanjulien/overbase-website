@@ -57,18 +57,16 @@ export function Letter() {
                 opportunities are hidden
               </p>
 
+              <p>It doesn't need to be like this</p>
+
               <p>Overbase gives SaaS businesses a second sales forecast</p>
 
               <p>
                 A human data scientist does an audit of your operation - reviews
                 sales calls, reads emails with prospects, looks at Docusign,
-                etc.
-              </p>
-
-              <p>
-                Then this data scientist rebuilds a second sales forecast that
-                lets you see the nitty gritty. And lets you drive millions in
-                easy revenue every quarter
+                etc. Then this data scientist rebuilds a second sales forecast
+                that lets you see the nitty gritty. And reveals opportunities
+                that let you drive millions in easy revenue every quarter
               </p>
 
               <p>
