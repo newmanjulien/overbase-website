@@ -1,6 +1,6 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { SecurityAddendum } from "@/app/legal/security/SecurityAddendum";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { SecurityAddendum } from "@/app/legal/security/security-addendum";
 
 export default function SecurityPage() {
   return (

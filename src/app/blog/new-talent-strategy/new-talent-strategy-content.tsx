@@ -1,7 +1,7 @@
 import type {
   BlogSection,
   BlogPageHero,
-} from "@/components/layouts/BlogPageLayout";
+} from "@/components/layouts/blog-page-layout";
 
 export const hero: BlogPageHero = {
   title: "Your talent pipeline is drying up",

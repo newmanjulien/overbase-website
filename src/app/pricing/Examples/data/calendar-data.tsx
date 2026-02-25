@@ -1,4 +1,4 @@
-import type { CalendarDay } from "@/app/pricing/Examples/Calendar";
+import type { CalendarDay } from "@/app/pricing/examples/calendar";
 
 export const dealReviewCalendar: CalendarDay = {
   id: "pricing-deal-review-calendar",

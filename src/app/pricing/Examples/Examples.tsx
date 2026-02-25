@@ -1,13 +1,13 @@
-import { AreaChart } from "@/app/pricing/Examples/AreaChart";
-import { Carousel } from "@/app/pricing/Examples/Carousel";
-import { Quadrant } from "@/app/pricing/Examples/Quadrant";
-import { Signals } from "@/app/pricing/Examples/Signals";
-import { Calendar } from "@/app/pricing/Examples/Calendar";
+import { AreaChart } from "@/app/pricing/examples/area-chart";
+import { Carousel } from "@/app/pricing/examples/carousel";
+import { Quadrant } from "@/app/pricing/examples/quadrant";
+import { Signals } from "@/app/pricing/examples/signals";
+import { Calendar } from "@/app/pricing/examples/calendar";
 import { Panel } from "@/components/ui/panel";
-import { areaChartExample } from "@/app/pricing/Examples/data/AreaChartData";
-import { quadrantExample } from "@/app/pricing/Examples/data/QuadrantData";
-import { signalsExample } from "@/app/pricing/Examples/data/SignalsData";
-import { dealReviewCalendar } from "@/app/pricing/Examples/data/CalendarData";
+import { areaChartExample } from "@/app/pricing/examples/data/area-chart-data";
+import { quadrantExample } from "@/app/pricing/examples/data/quadrant-data";
+import { signalsExample } from "@/app/pricing/examples/data/signals-data";
+import { dealReviewCalendar } from "@/app/pricing/examples/data/calendar-data";
 
 export default function Examples() {
   const slides = [

@@ -1,8 +1,8 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { Pricing } from "@/app/pricing/Pricing";
-import Examples from "@/app/pricing/Examples/Examples";
-import Tiers from "@/app/pricing/Tiers";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { Pricing } from "@/app/pricing/pricing";
+import Examples from "@/app/pricing/examples/examples";
+import Tiers from "@/app/pricing/tiers";
 
 export default function PricingPage() {
   return (

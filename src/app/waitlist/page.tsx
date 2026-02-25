@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-import { FormPageLayout } from "@/components/layouts/FormPageLayout";
+import { FormPageLayout } from "@/components/layouts/form-page-layout";
 import { Input } from "@/components/ui/input";
 
 export default function WaitlistRoute() {

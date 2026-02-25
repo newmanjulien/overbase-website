@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FormPageLayout } from "@/components/layouts/FormPageLayout";
+import { FormPageLayout } from "@/components/layouts/form-page-layout";
 
 export default function ConfirmationRoute() {
   const router = useRouter();

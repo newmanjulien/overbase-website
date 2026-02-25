@@ -1,6 +1,6 @@
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import { DecentralizedData } from "@/app/blog/decentralized-data/DecentralizedData";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { DecentralizedData } from "@/app/blog/decentralized-data/decentralized-data";
 
 export default function DecentralizedDataPage() {
   return (

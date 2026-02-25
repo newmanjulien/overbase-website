@@ -6,8 +6,8 @@ import {
   AXIS_LABEL_OFFSET,
   CHART_PADDING,
   getInnerSize,
-} from "@/lib/ChartLayout";
-import { linearScale, ticksLinear } from "@/lib/ChartScales";
+} from "@/lib/chart-layout";
+import { linearScale, ticksLinear } from "@/lib/chart-scales";
 
 export type AreaChartType = {
   key: string;

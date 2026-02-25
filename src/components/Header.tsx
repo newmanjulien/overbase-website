@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { HotkeyButton } from "@/components/HotkeyButton";
+import { HotkeyButton } from "@/components/hotkey-button";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {

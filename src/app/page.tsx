@@ -1,9 +1,9 @@
 "use client";
 
-import { Header } from "@/components/Header";
-import { Hero } from "@/app/Hero";
-import { Letter } from "@/app/Letter";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/header";
+import { Hero } from "@/app/hero";
+import { Letter } from "@/app/letter";
+import { Footer } from "@/components/footer";
 
 export default function HomePage() {
   return (

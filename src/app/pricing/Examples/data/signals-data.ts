@@ -1,4 +1,4 @@
-import type { PreviewSignal } from "@/app/pricing/Examples/Signals";
+import type { PreviewSignal } from "@/app/pricing/examples/signals";
 
 export const signalsExample: { id: string; signals: PreviewSignal[] } = {
   id: "pricing-signals",

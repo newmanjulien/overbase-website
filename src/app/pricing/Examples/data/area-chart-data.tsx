@@ -1,4 +1,4 @@
-import type { AreaChartData } from "@/app/pricing/Examples/AreaChart";
+import type { AreaChartData } from "@/app/pricing/examples/area-chart";
 
 export const areaChartExample: AreaChartData = {
   id: "example-area-chart",

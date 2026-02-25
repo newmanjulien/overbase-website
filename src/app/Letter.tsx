@@ -46,9 +46,7 @@ export function Letter() {
                   A rep is too optimistic. A manager downplays a deal so they
                   can over-perform at the end of the month. Someone is keeping
                   off-books deals to fill gaps.
-                </span>{" "}
-                There's a long list of invisible factors that compound to stop
-                you from getting the real picture
+                </span>
               </p>
 
               <p>

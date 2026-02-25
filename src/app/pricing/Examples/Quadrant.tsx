@@ -7,8 +7,8 @@ import {
   CHART_DIMENSIONS,
   CHART_PADDING,
   getInnerSize,
-} from "@/lib/ChartLayout";
-import { linearScale, ticksLinear } from "@/lib/ChartScales";
+} from "@/lib/chart-layout";
+import { linearScale, ticksLinear } from "@/lib/chart-scales";
 
 export type QuadrantPoint = {
   id: string;

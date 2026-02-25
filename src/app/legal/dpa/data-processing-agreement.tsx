@@ -1,6 +1,6 @@
 "use client";
 
-import { LegalPageLayout } from "@/components/layouts/LegalPageLayout";
+import { LegalPageLayout } from "@/components/layouts/legal-page-layout";
 import { dpaMetadata, dpaSections } from "@/app/legal/dpa/dpa-content";
 
 /**
