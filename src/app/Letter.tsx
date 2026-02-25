@@ -66,7 +66,7 @@ export function Letter() {
               </p>
 
               <p>
-                Then this data scientist rebuilds a second sales forecast. That
+                Then this data scientist rebuilds a second sales forecast that
                 lets you see the nitty gritty. And lets you drive millions in
                 easy revenue every quarter
               </p>
