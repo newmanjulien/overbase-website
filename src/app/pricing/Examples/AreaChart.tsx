@@ -129,7 +129,13 @@ export function AreaChart({ report }: { report: AreaChartData }) {
 
     const yTickValues = ticksLinear(maxValue, 6);
 
-    const quarterLabelSequence = ["Q2", "Q3", "Q4", "Q1", "Q2"];
+    const quarterLabelSequence = [
+      "Q1 2027",
+      "Q2 2027",
+      "Q3 2027",
+      "Q4 2027",
+      "Q1 2028",
+    ];
     const step = Math.max(1, (report.data.length - 1) / 4);
     const quarterTicks = quarterLabelSequence.map((label, i) => ({
       label,
