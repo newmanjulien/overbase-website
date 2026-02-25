@@ -102,7 +102,7 @@ export function Calendar({ day }: { day: CalendarDay }) {
               }}
             >
               <span className="text-xs font-semibold truncate">
-                Notes from Overbase
+                Data from Overbase
               </span>
             </div>
           </div>

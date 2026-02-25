@@ -4,32 +4,32 @@ export const signalsExample: { id: string; signals: PreviewSignal[] } = {
   id: "pricing-signals",
   signals: [
     {
-      id: "crm-sync-lag",
-      title: "Buenos Aires team is overperforming",
+      id: "coo",
+      title: "Whirlpool just hired a new COO",
       summary:
         "The Buenos Aires team's close rate has significantly increased since your new GM started. This is hidden in the broader LATAM numbers but you may want to make sure this new GM is properly recognized",
       sources: [
-        { name: "Salesforce", logo: "/logos/salesforce.png" },
-        { name: "Marketo", logo: "/logos/marketo.png" },
+        { name: "LinkedIn", logo: "/logos/linkedin.png" },
+        { name: "PR Newswire", logo: "/logos/cision.png" },
       ],
     },
     {
-      id: "model-drift",
-      title: "AI Teammates product may be hurting retention",
+      id: "teammates",
+      title: "Laura is selling the AI Teammates add-on more than other reps",
       summary:
-        "Accounts which purchased the AI Teammates product may be churning at a measurably higher rate than before they purchased the add-on. There may or may not be an issue with that product",
+        "Many of the reps seem to struggle with selling the AI Teammates add-on and prospects don't seem to be receptive on calls. But Laura seems to be selling it easily. There might be an opportunity for the team to learn from Laura",
       sources: [
-        { name: "Posthog", logo: "/logos/posthog.png" },
-        { name: "Snowflake", logo: "/logos/snowflake.png" },
+        { name: "Salesforce", logo: "/logos/salesforce.png" },
+        { name: "Gong", logo: "/logos/gong.png" },
       ],
     },
     {
-      id: "approval-overrides",
+      id: "icp",
       title: "ICP in the manufacturing sector might be wrong",
       summary:
         "The manufacturing deals seem to end up getting signed by Directors not by C-Suite execs. You might be able to close deals faster by targeting Directors more specifically in that vertical",
       sources: [
-        { name: "Salesforce", logo: "/logos/salesforce.png" },
+        { name: "Marketo", logo: "/logos/marketo.png" },
         { name: "Docusign", logo: "/logos/docusign.png" },
       ],
     },

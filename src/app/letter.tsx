@@ -52,19 +52,20 @@ export function Letter() {
               <p>It doesn't need to be like this</p>
 
               <p>
-                Overbase does a second forecast that lets you see the nitty
-                gritty
+                Overbase gives your Sales Managers the data they need to win
+                more deals
               </p>
 
               <p>
-                Every quarter, a human data scientist does an in-depth audit of
+                Every week, a human data scientist does an in-depth audit of
                 your operation - reviews sales calls, reads emails with
                 prospects, looks at Docusign, etc.
               </p>
 
               <p>
-                Then this data scientist rebuilds a second forecast that reveals
-                hidden opportunities and lets you drive millions in easy revenue
+                Then this data scientist sends your Sales Manager the
+                information they need to see the real opportunities, ask the
+                right questions, coach reps and win more deals
               </p>
 
               <p>
