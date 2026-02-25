@@ -17,7 +17,7 @@ type CarouselProps = {
 
 export function Carousel({ slides, className }: CarouselProps) {
   const [emblaRef, emblaApi] = useEmblaCarousel({
-    align: "start",
+    align: "center",
     containScroll: "trimSnaps",
     dragFree: false,
     loop: false,
