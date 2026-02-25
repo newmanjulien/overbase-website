@@ -7,10 +7,9 @@ export function Pricing() {
     <>
       <section className="px-6 pt-48 max-w-5xl mx-auto">
         <div className="max-w-4xl mx-auto text-center space-y-12">
-          <div className="space-y-6 max-w-2xl mx-auto">
+          <div className="space-y-6 max-w-xl mx-auto">
             <h1 className="text-5xl text-gray-900 font-medium tracking-tight">
-              Millions in easy revenue starting{" "}
-              <span className="italic">right now</span>
+              <span className="italic">A human</span> audits your operation
             </h1>
             <div className="pt-2">
               <Button
@@ -32,13 +31,13 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Human-led audit that's powered by the most advanced AI
+              A human data scientist using the most advanced AI
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Overbase lets you get millions in easy revenue every quarter by
-              finding the best hidden opportunities
+              Drive millions in easy revenue every quarter by finding hidden
+              opportunities
             </p>
 
             <p>
@@ -48,8 +47,7 @@ export function Pricing() {
 
             <p>
               This audit is reliable because it's run by a human data scientist.
-              And it finds hidden opportunities by going in depth with the most
-              advanced AI
+              And it goes in depth because this human uses the most advanced AI
             </p>
           </div>
         </div>

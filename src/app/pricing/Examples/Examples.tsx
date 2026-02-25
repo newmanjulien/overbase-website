@@ -56,7 +56,7 @@ export default function Examples() {
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Drive revenue with better deal reviews
+              Drive revenue with better deal review
             </h3>
             <p className="mt-1 text-sm text-gray-500">
               Our data scientists packages up the insight from our audit and our
@@ -76,7 +76,7 @@ export default function Examples() {
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Drive revenue with better Board conversations
+              Drive revenue with smarter Board conversations
             </h3>
             <p className="mt-1 text-sm text-gray-500">
               Your second forecast is Board ready and easy to integrate into the

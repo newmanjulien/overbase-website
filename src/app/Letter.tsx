@@ -26,45 +26,45 @@ export function Letter() {
               <p>
                 Which deals are actually likely to close? Are you losing to a
                 new competitor? Why are the EMEA numbers suddenly up? Is there
-                increased churn in one of your products?
+                hidden churn in one of your products?
               </p>
 
-              <p>
-                The insight that would let you accelerate growth often shows up
-                too late for you to take action
-              </p>
+              <p>The insight you need often shows up too late to take action</p>
 
               <p>
+                And there's no way to get the information faster because it's
+                hidden by multiple layers of interpretation.{" "}
                 <span className="font-medium">
-                  And there's no way to get the information faster. Because that
-                  information is hidden by multiple layers of interpretation
+                  A rep is too optimistic. A manager downplays a deal to
+                  over-perform at the end of the month. Someone is keeping
+                  off-books deals to fill gaps later
                 </span>
               </p>
 
               <p>
                 <span className="font-medium">
-                  A rep is too optimistic. A manager downplays a deal so they
-                  can over-perform at the end of the month. Someone is keeping
-                  off-books deals to fill gaps.
+                  The result is that you leave millions of dollars in easy
+                  revenue on the table{" "}
                 </span>
-              </p>
-
-              <p>
-                The result is that you leave millions of dollars in easy revenue
-                on the table every quarter simply because many of the best
-                opportunities are hidden
+                because many of the best opportunities are hidden
               </p>
 
               <p>It doesn't need to be like this</p>
 
-              <p>Overbase gives SaaS businesses a second sales forecast</p>
+              <p>
+                Overbase does a second forecast that lets you see the nitty
+                gritty
+              </p>
 
               <p>
-                A human data scientist does an audit of your operation - reviews
-                sales calls, reads emails with prospects, looks at Docusign,
-                etc. Then this data scientist rebuilds a second sales forecast
-                that lets you see the nitty gritty. And reveals opportunities
-                that let you drive millions in easy revenue every quarter
+                Every quarter, a human data scientist does an in-depth audit of
+                your operation - reviews sales calls, reads emails with
+                prospects, looks at Docusign, etc.
+              </p>
+
+              <p>
+                Then this data scientist rebuilds a second forecast that reveals
+                hidden opportunities and lets you drive millions in easy revenue
               </p>
 
               <p>
@@ -74,14 +74,15 @@ export function Letter() {
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   waitlist
-                </Link>{" "}
-                if you want to drive revenue fast. Or check out{" "}
+                </Link>
+                . Or check out{" "}
                 <Link
                   href="/pricing"
                   className="text-blue-400 underline hover:text-blue-300"
                 >
                   pricing
-                </Link>
+                </Link>{" "}
+                for more details
               </p>
             </div>
 

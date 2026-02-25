@@ -30,8 +30,8 @@ const PLANS: Plan[] = [
     description:
       "Get your second forecast and your deep audit every month and receive the insight in a way that lets you quickly use it during deal review",
     subtext:
-      "Per month with annual subscription discount. $40,000 if billed monthly",
-    valueLabel: "Quickly action revenue opportunities",
+      "Per month with annual subscription discount. $45,000 if billed monthly",
+    valueLabel: "Use the insight for deal review",
   },
 ];
 
