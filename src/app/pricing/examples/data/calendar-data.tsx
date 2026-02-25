@@ -3,7 +3,6 @@ import type { CalendarDay } from "@/app/pricing/examples/calendar";
 export const dealReviewCalendar: CalendarDay = {
   id: "pricing-deal-review-calendar",
   label: "Wed, Feb 25",
-  timezone: "PT",
   startHour: 9,
   endHour: 14,
   events: [

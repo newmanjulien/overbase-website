@@ -18,7 +18,7 @@ const PLANS: Plan[] = [
     name: "Every quarter",
     price: "$9,000",
     description:
-      "Get a second forecast every quarter based on a deep and reliable human-led audit of your sales operation and of the market",
+      "Get a second sales forecast every quarter based on a deep and reliable human-led audit of your sales operation",
     subtext:
       "Per month with annual subscription discount. $15,000 if billed monthly",
     valueLabel: "Millions in easy revenue every quarter",
@@ -28,7 +28,7 @@ const PLANS: Plan[] = [
     name: "Every month",
     price: "$30,000",
     description:
-      "Get your second forecast and your deep audit every month and receive the insight in a way that lets you quickly use it during deal review",
+      "Get your second forecast and your deep audit every month and receive the insight in a way that lets you use it for deal review",
     subtext:
       "Per month with annual subscription discount. $45,000 if billed monthly",
     valueLabel: "Use the insight for deal review",

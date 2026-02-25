@@ -357,10 +357,10 @@ export function AreaChart({ report }: { report: AreaChartData }) {
 
       {hoverType && hoverPosition && hoverBounds && (
         <ChartTooltip
+          title={hoverType.label}
           position={hoverPosition}
           bounds={hoverBounds}
           rows={[
-            { label: "Type:", value: hoverType.label },
             {
               label: "Month:",
               value:
@@ -369,21 +369,27 @@ export function AreaChart({ report }: { report: AreaChartData }) {
                   : "--",
             },
             {
-              label: "Sales:",
+              label: "ACV:",
               value: hoverInterpolated
                 ? formatMillions(hoverInterpolated[hoverType.key] ?? 0)
                 : "--",
             },
-            ...(hoverInterpolated && report.types.length >= 2
-              ? [
-                  {
-                    label: "Gap:",
-                    value: formatSignedMillions(
-                      (hoverInterpolated[report.types[1].key] ?? 0) -
-                        (hoverInterpolated[report.types[0].key] ?? 0),
-                    ),
-                  },
-                ]
+            ...(hoverInterpolated && report.types.length >= 2 && hoverType
+              ? (() => {
+                  const otherType = report.types.find(
+                    (type) => type.key !== hoverType.key,
+                  );
+                  if (!otherType) return [];
+                  const gap =
+                    (hoverInterpolated[hoverType.key] ?? 0) -
+                    (hoverInterpolated[otherType.key] ?? 0);
+                  return [
+                    {
+                      label: "Gap:",
+                      value: formatSignedMillions(gap),
+                    },
+                  ];
+                })()
               : []),
           ]}
         />

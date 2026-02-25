@@ -8,7 +8,6 @@ export type CalendarEvent = {
 export type CalendarDay = {
   id: string;
   label: string;
-  timezone: string;
   startHour: number;
   endHour: number;
   events: CalendarEvent[];
@@ -29,9 +28,6 @@ export function Calendar({ day }: { day: CalendarDay }) {
             <span className="text-base font-semibold text-gray-900">
               {day.label}
             </span>
-            <span className="text-xs font-medium text-gray-400">
-              {day.timezone}
-            </span>
           </div>
         </div>
       </div>
@@ -39,9 +35,6 @@ export function Calendar({ day }: { day: CalendarDay }) {
       <div className="px-6 pb-6 pt-4">
         <div className="grid grid-cols-[3.5rem_1fr] gap-4">
           <div className="flex flex-col">
-            <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-400">
-              {day.timezone}
-            </span>
             <div className="flex h-[56px] items-start text-xs font-medium text-gray-500">
               <span className="-mt-1">9 AM</span>
             </div>
