@@ -4,10 +4,10 @@ import { Quadrant } from "@/app/pricing/Examples/Quadrant";
 import { Signals } from "@/app/pricing/Examples/Signals";
 import { Calendar } from "@/app/pricing/Examples/Calendar";
 import { Panel } from "@/components/ui/panel";
-import { areaChartExample } from "@/app/pricing/Examples/AreaChartData";
-import { quadrantExample } from "@/app/pricing/Examples/QuadrantData";
-import { signalsExample } from "@/app/pricing/Examples/SignalsData";
-import { dealReviewCalendar } from "@/app/pricing/Examples/CalendarData";
+import { areaChartExample } from "@/app/pricing/Examples/data/AreaChartData";
+import { quadrantExample } from "@/app/pricing/Examples/data/QuadrantData";
+import { signalsExample } from "@/app/pricing/Examples/data/SignalsData";
+import { dealReviewCalendar } from "@/app/pricing/Examples/data/CalendarData";
 
 export default function Examples() {
   const slides = [
@@ -56,7 +56,7 @@ export default function Examples() {
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Drive revenue through better deal reviews
+              Drive revenue with better deal reviews
             </h3>
             <p className="mt-1 text-sm text-gray-500">
               Our data scientists packages up the insight from our audit and our
@@ -76,12 +76,12 @@ export default function Examples() {
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Drive revenue through better Board conversations
+              Drive revenue with better Board conversations
             </h3>
             <p className="mt-1 text-sm text-gray-500">
               Your second forecast is Board ready and easy to integrate into the
               conversations you have with your Board Members. We give you the
-              data in whatever format you need and often host the data in your
+              data in whatever format you need and usually host the data in your
               own Tableau or PowerBI instance
             </p>
           </div>
