@@ -36,7 +36,7 @@ function HowItWorksSection({
         <span className="text-xs font-medium tracking-[0.35em] text-gray-400">
           {step}
         </span>
-        <h2 className="text-2xl text-gray-900 font-medium leading-tight">
+        <h2 className="pt-2 text-2xl text-gray-900 font-medium leading-tight">
           {title}
         </h2>
         <div className="space-y-4 text-[15px] text-gray-500">
