@@ -113,10 +113,7 @@ export function LegalPageLayout({
   return (
     <>
       {/* Hero Section with Title */}
-      <section
-        className="w-full pt-18 border-b border-gray-100"
-        style={{ backgroundColor: "#f9f9f9" }}
-      >
+      <section className="w-full pt-18 border-b border-gray-100 bg-[#f9f9f9]">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
           <LegalBreadcrumb currentPageTitle={metadata.title} />
           <h1 className="text-4xl font-medium text-gray-900 mt-26 mb-26">

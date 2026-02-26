@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 export function Letter() {
   return (
     <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
@@ -24,65 +22,54 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                Which deals are actually likely to close? Are you losing to a
-                new competitor? Why are the EMEA numbers suddenly up? Is there
-                hidden churn in one of your products?
-              </p>
-
-              <p>The insight you need often shows up too late to take action</p>
-
-              <p>
-                And there's no way to get the information faster because it's
-                hidden by multiple layers of interpretation.{" "}
-                <span className="font-medium">
-                  A rep is too optimistic. A manager downplays a deal to
-                  over-perform at the end of the month. Someone is keeping
-                  off-books deals to fill gaps later
-                </span>
+                The hardest part of deal review isn't the meeting itself—it’s
+                the investigative hours spent before the rep even walks into the
+                room
               </p>
 
               <p>
-                <span className="font-medium">
-                  The result is that you leave millions of dollars in easy
-                  revenue on the table{" "}
-                </span>
-                because many of the best opportunities are hidden
+                To ask a "curious" question instead of an "attacking" one, you
+                have to do double the work. You can't just say, "Is this deal
+                real?" You have to say,{" "}
+                <i>
+                  "I wonder why their Lead Architect hasn't logged into the
+                  sandbox in two weeks?"
+                </i>
               </p>
 
-              <p>It doesn't need to be like this</p>
+              <p>
+                Data-driven deal review directly helps reps close more deals by
+                finding opportunities reps didn't see. It also improves your
+                team's morale, confidence and performance
+              </p>
 
               <p>
-                Overbase gives your Sales Managers the data they need to win
-                more deals
+                But finding one fact can take forty minutes of digging. Multiply
+                that by 20 deals and 8 reps, and you're essentially working a
+                second full-time job
+              </p>
+
+              <p>
+                Which is why in real life you have no choice but to take
+                shortcuts
+              </p>
+
+              <p>Not anymore</p>
+
+              <p>
+                Overbase helps Sales Managers easily do data-driven deal review
               </p>
 
               <p>
                 Every week, a human data scientist does an in-depth audit of
-                your operation - reviews sales calls, reads emails with
-                prospects, looks at Docusign, etc.
+                every deal - reviews sales calls, reads emails with prospects,
+                looks at Docusign, looks at demo usage metrics, etc.
               </p>
 
               <p>
-                Then this data scientist sends your Sales Manager the
-                information they need to see the real opportunities, ask the
-                right questions, coach reps and win more deals
-              </p>
-
-              <p>
-                See{" "}
-                <Link
-                  href="/how-it-works"
-                  className="text-blue-400 underline hover:text-blue-300"
-                >
-                  how it works
-                </Link>{" "}
-                or check out{" "}
-                <Link
-                  href="/pricing"
-                  className="text-blue-400 underline hover:text-blue-300"
-                >
-                  pricing
-                </Link>
+                Then this data scientist sends you the information you need to
+                easily see the real opportunities, ask the right questions,
+                coach reps, win more deals and drive millions in easy revenue
               </p>
             </div>
 

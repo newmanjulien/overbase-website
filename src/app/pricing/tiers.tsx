@@ -9,29 +9,28 @@ interface Plan {
   price: string;
   description: string;
   subtext: string;
-  valueLabel: string;
+  valueLabel?: string;
 }
 
 const PLANS: Plan[] = [
   {
-    id: "quarterly",
-    name: "Deal review",
-    price: "$600",
+    id: "per-rep",
+    name: "Per rep",
+    price: "$900",
     description:
-      "Sales Managers get data every week for their deal review based on a human-led audit",
+      "Pay $900 per rep per month and we'll help you drive millions in easy revenue",
     subtext:
-      "Per rep per month with annual subscription discount. $900 if billed monthly",
-    valueLabel: "Data for your Sales Managers",
+      "Per rep per month with annual subscription discount. $1,200 if billed monthly",
+    valueLabel: "Best ROI",
   },
   {
-    id: "monthly",
-    name: "Sales forecast",
-    price: "$1,200",
-    description:
-      "Sales Managers get data every week. Plus VPs and your CRO get a sales forecast",
+    id: "percent",
+    name: "Percent",
+    price: "10%",
+    description: "Pay 10% of the extra revenue we help you drive each month",
     subtext:
-      "Per rep per month with annual subscription discount. $1,500 if billed monthly",
-    valueLabel: "For Managers, VPs and CRO",
+      "Of the revenue attributed to Overbase by reps and managers. Only available with annual subscription",
+    valueLabel: "No upfront cost",
   },
 ];
 
