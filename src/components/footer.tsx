@@ -40,6 +40,11 @@ export function Footer() {
                     New Talent Strategy
                   </a>
                 </DropdownMenuItem>
+                <DropdownMenuItem asChild className="cursor-pointer">
+                  <a href="/blog/ai-game" className="w-full">
+                    AI Game
+                  </a>
+                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             <DropdownMenu>
