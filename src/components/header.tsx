@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
 import { HotkeyButton } from "@/components/hotkey-button";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/components/ui/utils";
@@ -27,6 +27,19 @@ export function Header({
   const pathname = usePathname();
   const isActive = (href: string) =>
     pathname === href || pathname?.startsWith(`${href}/`);
+
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    if (background !== "tinted") return;
+
+    const update = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    update();
+    window.addEventListener("scroll", update, { passive: true });
+    return () => window.removeEventListener("scroll", update);
+  }, [background]);
 
   const navItems = [
     { id: "how-it-works", href: "/how-it-works", label: "How it works" },
@@ -79,7 +92,7 @@ export function Header({
   }, [activeId, hoveredId, updateIndicator]);
 
   const backgroundClass =
-    background === "tinted" ? "bg-[#f9f9f9]" : "bg-surface";
+    background === "tinted" && !isScrolled ? "bg-[#f9f9f9]" : "bg-surface";
 
   return (
     <header
