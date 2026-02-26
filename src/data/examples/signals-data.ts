@@ -5,9 +5,9 @@ export const signalsExample: { id: string; signals: PreviewSignal[] } = {
   signals: [
     {
       id: "coo",
-      title: "Whirlpool just hired a new COO",
+      title: "Whirlpool hasn't gotten past welcome screens",
       summary:
-        "The Buenos Aires team's close rate has significantly increased since your new GM started. This is hidden in the broader LATAM numbers but you may want to make sure this new GM is properly recognized",
+        "Whirlpool is doing a POC and the data we've noted down regarding their progress in our mutual success plan says they've logged in multiple times. But they actually never got past the welcome screens",
       sources: [
         { name: "LinkedIn", logo: "/logos/linkedin.png" },
         { name: "PR Newswire", logo: "/logos/cision.png" },

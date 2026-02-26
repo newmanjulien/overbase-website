@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            <span className="italic">A human</span> audits every deal every week
+            Quickly get millions in <span className="italic">easy revenue</span>
           </>
         }
       />
