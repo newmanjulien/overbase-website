@@ -1,6 +1,4 @@
-import type { CalendarDay } from "@/data/examples/types";
-
-export type { CalendarDay, CalendarEvent } from "@/data/examples/types";
+import type { CalendarDay } from "./types";
 
 export function Calendar({ day }: { day: CalendarDay }) {
   return (

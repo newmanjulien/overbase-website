@@ -5,9 +5,7 @@ import { ChartTooltip } from "@/components/ui/chart-tooltip";
 import { getInnerSize } from "@/lib/chart-layout";
 import { linearScale, ticksLinear } from "@/lib/chart-scales";
 
-import type { QuadrantChartData, QuadrantPoint } from "@/data/examples/types";
-
-export type { QuadrantChartData, QuadrantPoint } from "@/data/examples/types";
+import type { QuadrantChartData, QuadrantPoint } from "./types";
 
 const CHART_DIMENSIONS = {
   width: 720,

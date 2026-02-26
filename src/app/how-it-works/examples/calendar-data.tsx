@@ -1,7 +1,7 @@
-import type { CalendarDay } from "@/data/examples/types";
+import type { CalendarDay } from "./types";
 
 export const dealReviewCalendar: CalendarDay = {
-  id: "pricing-deal-review-calendar",
+  id: "how-it-works-deal-review-calendar",
   label: "Wed, Feb 25",
   startHour: 9,
   endHour: 14,

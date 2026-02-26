@@ -1,7 +1,5 @@
 import Image from "next/image";
-import type { PreviewSignal } from "@/data/examples/types";
-
-export type { PreviewSignal, PreviewSignalSource } from "@/data/examples/types";
+import type { PreviewSignal } from "./types";
 
 export function Signals({
   id,

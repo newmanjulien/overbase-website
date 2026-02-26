@@ -4,9 +4,9 @@ import { cn } from "@/components/ui/utils";
 import { Calendar } from "@/app/how-it-works/examples/calendar";
 import { Quadrant } from "@/app/how-it-works/examples/quadrant";
 import { Signals } from "@/app/how-it-works/examples/signals";
-import { dealReviewCalendar } from "@/data/examples/calendar-data";
-import { quadrantExample } from "@/data/examples/quadrant-data";
-import { signalsExample } from "@/data/examples/signals-data";
+import { dealReviewCalendar } from "@/app/how-it-works/examples/calendar-data";
+import { quadrantExample } from "@/app/how-it-works/examples/quadrant-data";
+import { signalsExample } from "@/app/how-it-works/examples/signals-data";
 
 type HowItWorksSectionProps = {
   step: string;

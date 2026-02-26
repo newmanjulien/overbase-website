@@ -1,7 +1,7 @@
-import type { PreviewSignal } from "@/data/examples/types";
+import type { PreviewSignal } from "./types";
 
 export const signalsExample: { id: string; signals: PreviewSignal[] } = {
-  id: "pricing-signals",
+  id: "how-it-works-signals",
   signals: [
     {
       id: "coo",
