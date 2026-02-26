@@ -28,7 +28,7 @@ export const sections: BlogSection[] = [
       <span>
         <span className="font-medium">Complexity compounds:</span> Centralizing
         means integrating multiple complex systems that work differently. And
-        centralizing them compounds their complexcity
+        centralizing them compounds their complexity
       </span>,
       <span>
         <span className="font-medium">Disempowering teams:</span> The technical
@@ -141,7 +141,7 @@ export const sections: BlogSection[] = [
           </span>,
           <span>
             <span className="font-medium">Benefits:</span> Reliability, accuracy
-            and simlicity. Autonomous systems scale and speed up the already
+            and simplicity. Autonomous systems scale and speed up the already
             known solution to all data problems by mimicking how human analysts
             have already solved them at small scales
           </span>,

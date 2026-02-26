@@ -16,12 +16,13 @@ export default function Examples() {
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Easily get data in your calendar
+              Sales Managers easily get data in their calendar
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              Our data scientists packages up the insight Sales Managers need do
-              they have it easily available for each deal review. We add it as a
-              calendar invite right beside deal review meetings
+              We package up the insight then put it in a calendar invite right
+              beside deal review meetings. This lets Sales Managers see the real
+              opportunities, ask the right questions, coach reps, win more deals
+              and drive millions in easy revenue
             </p>
           </div>
           <Calendar day={dealReviewCalendar} />
@@ -38,9 +39,9 @@ export default function Examples() {
               Actually know which deals will close
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              We do a bottom-up evaluation of which deals are actually likely to
-              close so Sales Managers see the real opportunities, ask the right
-              questions, coach reps and win more deals
+              Our in-depth audit lets us recalculate how likely it is that each
+              deal will close. Comparing the rep's evaluation with ours reveals
+              hidden opportunities
             </p>
           </div>
           <Quadrant chart={quadrantExample} />
@@ -57,9 +58,9 @@ export default function Examples() {
               Quickly see hidden opportunities
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              Overbase's data scientists do a deep and reliable audit that lets
-              Sales Managers see the nitty gritty and discover easy revenue
-              opportunities
+              A human data scientist does an audit every week of every single
+              deal. We review sales calls, read emails with prospects, look at
+              Docusign, look at demo usage metrics, etc.
             </p>
           </div>
           <Signals id={signalsExample.id} signals={signalsExample.signals} />

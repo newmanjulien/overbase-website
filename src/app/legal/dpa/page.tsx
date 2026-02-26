@@ -5,7 +5,7 @@ import { DataProcessingAgreement } from "@/app/legal/dpa/data-processing-agreeme
 export default function DataProcessingAgreementPage() {
   return (
     <div className="min-h-screen bg-surface">
-      <Header logoHref="/" />
+      <Header logoHref="/" background="tinted" />
       <DataProcessingAgreement />
       <Footer />
     </div>

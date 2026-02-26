@@ -25,9 +25,9 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase lets SaaS businesses{" "}
+            Overbase lets Sales Managers{" "}
             <span className="bg-[#ffffcc] px-1 rounded-xs">
-              get millions in easy revenue
+              drive millions in easy revenue
             </span>{" "}
             with data-driven deal review
           </h2>
