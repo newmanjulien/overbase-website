@@ -11,7 +11,7 @@ export const hero: BlogPageHero = {
     "The value of this market is going to be bigger than all current software combined. And winning this single market is the only thing that matters in business today",
   ],
   buttonLabel: "See how to win",
-  scrollTargetId: "how-new-vendors-win",
+  scrollTargetId: "timing",
 };
 
 export const sections: BlogSection[] = [
@@ -27,7 +27,7 @@ export const sections: BlogSection[] = [
       src: "/analyst.webp",
       alt: "Analyst working at a multi-monitor workstation",
       caption:
-        "Decentralized data systems will own SaaS budgets and human salaries",
+        "Decentralized data systems will take SaaS budgets and human salaries",
     },
     imagePlacement: "after-content",
   },
@@ -35,7 +35,7 @@ export const sections: BlogSection[] = [
     id: "defensibility",
     title: "Embracing new defensibility is a key to winning",
     content: [
-      "Collapsing silos will dismantle the defensibility which legacy database companies like Salesforce and Snowflake built. This will create an innovator's dilemma and prevent legacy vendors from competing",
+      "Collapsing silos will dismantle the defensibility which legacy database companies like Salesforce, Snowflake and Microsoft built. This will create an innovator's dilemma and prevent legacy vendors from competing",
       "New defensibility will come from getting access to a company's internal systems rather than locking in their data",
       "Businesses already don't want to give that access. They especially don't want to give established vendors that access",
       "And the infosec concerns which are driving this new more powerful defensibility are going to accelerate over the next decades",
@@ -52,10 +52,18 @@ export const sections: BlogSection[] = [
     ],
   },
   {
-    id: "how-new-vendors-win",
+    id: "timing",
+    title: "Right now is the best time to found a startup",
+    content: [
+      "The 2030s is going to be the best time to be a B2B software vendor since the 1980s. Big tech is going to be in free fall, OpenAI will have run out of cash and the AI tech will be starting to catch up with expectations",
+      "So right now is the best time to be founding a startup since the mid-1970s when Microsoft was started",
+      "But startups need to be smart because the overwhelming amount of hype, lies and outdated advice also make this the most confusing time in history to build a startup",
+    ],
+  },
+  {
+    id: "how-to-win",
     title: "How to build the most valuable company in history",
     content: [
-      "Today is the best time to be a B2B software vendor since the 1980s. But startups need to be smart because it's also the most confusing time to build a startup since the 1980s",
       "To build defensibility, we need to start with the least sensitive data and get that data by targeting the most valuable use case",
       "To capture budget, we need to charge for human salaries from day 1. And to overcome headwinds, we need to move away from selling AI hype",
       "In practice, only one path exists",
@@ -64,21 +72,21 @@ export const sections: BlogSection[] = [
   },
   {
     id: "about-to-start",
-    title: "The game is about to start",
+    title: "The game is about to start and we'll need to move faster",
     content: [
       "The window of opportunity to be the owner of the most valuable company in history is going to open up soon",
       "The market cap created in the past few years is about to get erased. And VC portfolios are all going to be written off",
       "Startups will need to move fast when the AI game starts",
-      "The increased speed which is necesary to win will involve a few unpopular strategies. And it'll involve making decisions that feel right to customers but wrong to backwards-facing VCs",
+      "The increased speed which is necesary to win will involve a few unpopular approaches. And it'll involve making decisions that feel right to customers but wrong to backwards-facing VCs",
     ],
   },
   {
     id: "unpopular-strategies",
-    title: "Unpopular strategies for exponentially more speed",
+    title: "Unpopular approaches for exponentially more speed",
     content: [
-      "Quickly getting customers will mean delivering quality in a market filled with slop, even if that means less automation in the short term",
-      "Building defensibility will mean getting all the best customers right away by taking advantage of how large enterprises now want PLG-type sales, even if reinventing go-to-market is usually wrong",
-      "And executing faster than others will mean building a one-person unicorn, even if everyone else is getting bogged down in building a team, even if it does not feel as fun and even if most founders are disqualified because they don't have the skills",
+      "Quickly getting customers will mean delivering quality in a market filled with slop. Even if that means much less automation and lousy margins in the short term. And even if that goes against legacy best practices",
+      "Building defensibility will mean getting all the best customers right away by taking advantage of how large enterprises now want PLG-type sales. Even if reinventing go-to-market is usually wrong",
+      "And executing faster than others will mean building a one-person unicorn. Even doing everything yourself doesn't feel fun. And even if it means almost every founder is now disqualified from entrepreneurship because they don't have the skills",
     ],
     image: {
       src: "/997.jpg",
