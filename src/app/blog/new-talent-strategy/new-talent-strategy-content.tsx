@@ -10,7 +10,7 @@ export const hero: BlogPageHero = {
     "Today, that engine is faltering. Academic rigor has slipped and admissions often discriminate against students with ability. The pipeline that once reliably produced competent graduates hasn't fully dried up. But it is shrinking — fast",
     "Elite Western universities once trained the few people who could actually contribute. But that system is disappearing. The global supply of capable candidates is smaller and it's increasingly only available in new talent hubs",
   ],
-  buttonLabel: "See solution",
+  buttonLabel: "See how to hire",
   scrollTargetId: "new-strategy",
 };
 
@@ -114,8 +114,8 @@ export const sections: BlogSection[] = [
     title: "And even more given AI",
     content: [
       "AI makes talent war even more important",
-      "Partially because - as AI becomes a force multiplier - it’s even more important not to scale net-negative contributors (eg. almost everyone)",
-      "Partially because AI skills are the only skill that matters as only recent graduates have the capacity to learn",
+      "Partially because - as AI becomes a force multiplier - it’s even more important not to scale net-negative contributors",
+      "Partially because AI skills are the only skill that matters and recent graduates have the capacity to learn them fastest",
       "But mostly because the type of intelligence which AI can mimic is becoming almost free. And that makes the few humans who have human-level intelligence the only remaining ingredient for everything",
       "It's not OpenAI who is going to “own” intelligence. It's the few intelligent people who will. And there's going to be almost none left",
     ],

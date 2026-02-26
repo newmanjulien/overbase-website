@@ -38,9 +38,9 @@ export function Letter() {
               </p>
 
               <p>
-                Asking the right questions based in research and data helps reps
-                close more deals by finding opportunities they didn't see. It
-                also improves your team's morale, confidence and performance
+                Asking questions based in research and data helps reps close
+                more deals by finding opportunities they didn't see. It also
+                improves your team's morale, confidence and performance
               </p>
 
               <p>
@@ -51,7 +51,7 @@ export function Letter() {
 
               <p>
                 Which is why in real life you have no choice but to take
-                shortcuts. And it's why in real life Sales Managers don't
+                shortcuts. And it's why in real life Sales Managers can't
                 actually do truly data-driven deal review
               </p>
 

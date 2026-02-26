@@ -10,7 +10,7 @@ export const hero: BlogPageHero = {
     "In practice, centralizers almost always make things worse. Implementations take years — sometimes even decades, require constant maintenance, and frequently never succeed at all",
     "The “single source of truth” often becomes yet another silo, creating one more bottleneck and making it harder to get insight",
   ],
-  buttonLabel: "See solution",
+  buttonLabel: "See the future",
   scrollTargetId: "rise-of-decentralized",
 };
 
