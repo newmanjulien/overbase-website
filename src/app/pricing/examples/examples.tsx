@@ -10,22 +10,21 @@ import { dealReviewCalendar } from "@/data/examples/calendar-data";
 export default function Examples() {
   const slides = [
     {
-      id: "examples-deal-reviews",
-      label: "Deal reviews",
+      id: "examples-signals",
+      label: "Signals cards",
       content: (
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Sales Managers easily get data in their calendar
+              In-depth audit that reveals hidden revenue
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              We package up the insight then put it in a calendar invite right
-              beside deal review meetings. This lets Sales Managers see the real
-              opportunities, ask the right questions, coach reps, win more deals
-              and drive millions in easy revenue
+              A human data scientist does an audit every week of every single
+              deal. We review sales calls, read emails with prospects, look at
+              Docusign, look at demo usage metrics, etc.
             </p>
           </div>
-          <Calendar day={dealReviewCalendar} />
+          <Signals id={signalsExample.id} signals={signalsExample.signals} />
         </Panel>
       ),
     },
@@ -49,21 +48,22 @@ export default function Examples() {
       ),
     },
     {
-      id: "examples-signals",
-      label: "Signals cards",
+      id: "examples-deal-reviews",
+      label: "Deal reviews",
       content: (
         <Panel className="p-8">
           <div>
             <h3 className="text-md font-medium text-gray-900">
-              Quickly see hidden opportunities
+              Sales Managers easily get data in their calendar
             </h3>
             <p className="mt-1 text-sm text-gray-500">
-              A human data scientist does an audit every week of every single
-              deal. We review sales calls, read emails with prospects, look at
-              Docusign, look at demo usage metrics, etc.
+              We package up the insight then put it in a calendar invite right
+              beside deal review meetings. This lets Sales Managers see the real
+              opportunities, ask the right questions, coach reps, win more deals
+              and drive millions in easy revenue
             </p>
           </div>
-          <Signals id={signalsExample.id} signals={signalsExample.signals} />
+          <Calendar day={dealReviewCalendar} />
         </Panel>
       ),
     },
