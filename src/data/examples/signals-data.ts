@@ -9,8 +9,8 @@ export const signalsExample: { id: string; signals: PreviewSignal[] } = {
       summary:
         "Whirlpool is doing a POC and the data we've noted down regarding their progress in our mutual success plan says they've logged in multiple times. But they actually never got past the welcome screens",
       sources: [
-        { name: "LinkedIn", logo: "/logos/linkedin.png" },
-        { name: "PR Newswire", logo: "/logos/cision.png" },
+        { name: "Posthog", logo: "/logos/posthog.png" },
+        { name: "Snowflake", logo: "/logos/snowflake.png" },
       ],
     },
     {

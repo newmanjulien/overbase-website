@@ -32,16 +32,15 @@ export function Letter() {
                 have to do double the work. You can't just say, "Is this deal
                 real?" You have to say,{" "}
                 <i>
-                  "I wonder why their Lead Architect hasn't logged into the
-                  sandbox in two weeks?"
+                  "I wonder why the champion hasn't logged into his sandbox in
+                  two weeks?"
                 </i>
               </p>
 
               <p>
-                Asking the right questions based in research and data often
-                helps reps close more deals by finding opportunities they didn't
-                see. It also improves your team's morale, confidence and
-                performance
+                Asking the right questions based in research and data helps reps
+                close more deals by finding opportunities they didn't see. It
+                also improves your team's morale, confidence and performance
               </p>
 
               <p>
@@ -52,8 +51,8 @@ export function Letter() {
 
               <p>
                 Which is why in real life you have no choice but to take
-                shortcuts. And why in real life Sales Managers can't actually do
-                truly data-driven deal review
+                shortcuts. And it's why in real life Sales Managers don't
+                actually do truly data-driven deal review
               </p>
 
               <p>Not anymore</p>
@@ -65,7 +64,7 @@ export function Letter() {
               <p>
                 Every week, a human data scientist does an in-depth audit of
                 every deal - reviews sales calls, reads emails with prospects,
-                looks at Docusign, looks at demo usage metrics, etc.
+                looks at Docusign, investigates demo usage metrics, etc.
               </p>
 
               <p>

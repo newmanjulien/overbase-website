@@ -25,9 +25,9 @@ export function Pricing() {
             </p>
 
             <p>
-              A human data scientist does an audit every week of every single
-              deal - reviews sales calls, reads emails with prospects, looks at
-              Docusign, etc.
+              A human data scientist does an audit every week of every deal -
+              reviews sales calls, reads emails with prospects, looks at
+              Docusign, investigates demo usage metrics, etc.
             </p>
 
             <p>

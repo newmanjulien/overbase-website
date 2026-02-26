@@ -9,6 +9,7 @@ import { quadrantExample } from "@/data/examples/quadrant-data";
 import { signalsExample } from "@/data/examples/signals-data";
 
 type HowItWorksSectionProps = {
+  step: string;
   title: string;
   description: string[];
   children: ReactNode;
@@ -17,6 +18,7 @@ type HowItWorksSectionProps = {
 };
 
 function HowItWorksSection({
+  step,
   title,
   description,
   children,
@@ -30,7 +32,10 @@ function HowItWorksSection({
         gridClassName,
       )}
     >
-      <div className={cn("max-w-sm space-y-4", reverse && "md:order-2")}>
+      <div className={cn("max-w-sm space-y-3", reverse && "md:order-2")}>
+        <span className="text-xs font-medium tracking-[0.35em] text-gray-400">
+          {step}
+        </span>
         <h2 className="text-2xl text-gray-900 font-medium leading-tight">
           {title}
         </h2>
@@ -51,10 +56,11 @@ export default function HowItWorksSections() {
       <div className="space-y-24">
         <div className="pt-16">
           <HowItWorksSection
-            title="We do an in-depth audit that reveals hidden revenue"
+            step="01"
+            title="We do an in-depth audit of every deal every week"
             description={[
-              "A human data scientist does an audit every week of every single deal",
-              "We review sales calls, read emails with prospects, look at Docusign, look at demo usage metrics, etc.",
+              "A human data scientist does an audit of every deal your reps are working",
+              "We review sales calls, read emails with prospects, look at Docusign, investigate demo usage metrics, etc.",
             ]}
           >
             <Signals id={signalsExample.id} signals={signalsExample.signals} />
@@ -63,6 +69,7 @@ export default function HowItWorksSections() {
 
         <div className="pt-10">
           <HowItWorksSection
+            step="02"
             title="We calculate which deals are actually likely to close"
             description={[
               "Our in-depth audit lets us recalculate how likely it is that each deal will close",
@@ -77,6 +84,7 @@ export default function HowItWorksSections() {
 
         <div className="pt-10">
           <HowItWorksSection
+            step="03"
             title="Sales Managers easily get data in their calendar"
             description={[
               "We package up the insight then put it in a calendar invite right beside deal review meetings",
