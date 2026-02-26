@@ -5,7 +5,7 @@ export default function HowItWorksHero() {
     <Hero
       title={
         <>
-          Data-driven with a <span className="italic">deep audit</span>
+          Quickly get millions in <span className="italic">easy revenue</span>
         </>
       }
       titleMaxWidthClass="max-w-lg"
