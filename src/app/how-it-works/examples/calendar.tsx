@@ -1,17 +1,6 @@
-export type CalendarEvent = {
-  id: string;
-  title: string;
-  start: number;
-  end: number;
-};
+import type { CalendarDay } from "@/data/examples/types";
 
-export type CalendarDay = {
-  id: string;
-  label: string;
-  startHour: number;
-  endHour: number;
-  events: CalendarEvent[];
-};
+export type { CalendarDay, CalendarEvent } from "@/data/examples/types";
 
 export function Calendar({ day }: { day: CalendarDay }) {
   return (

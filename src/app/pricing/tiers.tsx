@@ -15,23 +15,23 @@ interface Plan {
 const PLANS: Plan[] = [
   {
     id: "quarterly",
-    name: "Every quarter",
-    price: "$9,000",
+    name: "Deal review",
+    price: "$600",
     description:
-      "Get a second sales forecast every quarter based on a deep and reliable human-led audit of your sales operation",
+      "Sales Managers get data every week for their deal review based on a human-led audit",
     subtext:
-      "Per month with annual subscription discount. $15,000 if billed monthly",
-    valueLabel: "Millions in easy revenue every quarter",
+      "Per rep per month with annual subscription discount. $900 if billed monthly",
+    valueLabel: "Data for your Sales Managers",
   },
   {
     id: "monthly",
-    name: "Every month",
-    price: "$30,000",
+    name: "Sales forecast",
+    price: "$1,200",
     description:
-      "Get your second forecast and your deep audit every month and receive the insight in a way that lets you use it for deal review",
+      "Sales Managers get data every week. Plus VPs and your CRO get a sales forecast",
     subtext:
-      "Per month with annual subscription discount. $45,000 if billed monthly",
-    valueLabel: "Use the insight for deal review",
+      "Per rep per month with annual subscription discount. $1,500 if billed monthly",
+    valueLabel: "For Managers, VPs and CRO",
   },
 ];
 

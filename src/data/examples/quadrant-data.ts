@@ -1,4 +1,4 @@
-import type { QuadrantChartData } from "@/app/pricing/examples/quadrant";
+import type { QuadrantChartData } from "@/data/examples/types";
 
 export const quadrantExample: QuadrantChartData = {
   id: "example-quadrant",

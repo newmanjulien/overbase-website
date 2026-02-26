@@ -9,7 +9,8 @@ export function Pricing() {
         <div className="max-w-4xl mx-auto text-center space-y-12">
           <div className="space-y-6 max-w-xl mx-auto">
             <h1 className="text-5xl text-gray-900 font-medium tracking-tight">
-              <span className="italic">A human</span> audits your operation
+              <span className="italic">A human</span> audits every deal every
+              week
             </h1>
             <div className="pt-2">
               <Button
@@ -36,13 +37,14 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Drive millions in easy revenue every quarter by finding hidden
-              opportunities
+              Get millions in easy revenue every quarter with data-driven deal
+              review
             </p>
 
             <p>
-              A human data scientist does an audit of your operation - reviews
-              sales calls, reads emails with prospects, looks at Docusign, etc.
+              A human data scientist does an audit every week of every single
+              deal - reviews sales calls, reads emails with prospects, looks at
+              Docusign, etc.
             </p>
 
             <p>
