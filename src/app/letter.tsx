@@ -38,9 +38,9 @@ export function Letter() {
               </p>
 
               <p>
-                Data-driven deal review directly helps reps close more deals by
-                finding opportunities reps didn't see. It also improves your
-                team's morale, confidence and performance
+                Asking the right questions based in reseatch and data can help
+                reps close more deals by finding opportunities they didn't see.
+                It also improves your team's morale, confidence and performance
               </p>
 
               <p>
