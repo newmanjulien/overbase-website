@@ -36,8 +36,8 @@ export function Pricing() {
             </p>
 
             <p>
-              This audit is reliable because it's run by a human data scientist.
-              And it goes in depth because this human uses the most advanced AI
+              The audit is reliable because it's run by a human. And it goes in
+              depth because this human uses the most advanced AI
             </p>
           </div>
         </div>
