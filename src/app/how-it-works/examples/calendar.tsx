@@ -109,13 +109,10 @@ export function Calendar({ day }: { day: CalendarDay }) {
             {events.map((event) => {
               const style = eventStyle(event);
               const durationMinutes = event.end - event.start;
-              const isCompact = durationMinutes <= 30;
               const className = cn(
-                "absolute min-w-0 rounded-lg bg-blue-500 text-left text-white shadow-sm",
+                "absolute min-w-0 rounded-lg bg-blue-500 px-3 pt-1.5 pb-1 text-left text-xs leading-tight text-white shadow-sm",
                 style.isOverlay && "border border-white",
-                isCompact
-                  ? "flex items-center px-2 text-[10px] leading-3"
-                  : "flex flex-col gap-2 px-3 py-2 text-xs",
+                "flex items-start",
               );
 
               return (
@@ -130,12 +127,7 @@ export function Calendar({ day }: { day: CalendarDay }) {
                     zIndex: style.zIndex,
                   }}
                 >
-                  <span
-                    className={cn(
-                      "min-w-0 truncate font-semibold",
-                      isCompact && "w-full",
-                    )}
-                  >
+                  <span className="min-w-0 truncate font-semibold">
                     {event.title}
                   </span>
                 </div>

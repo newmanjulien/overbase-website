@@ -24,7 +24,7 @@ const dealReviewCalendar: CalendarDay = {
       id: "notes",
       title: "Data from Overbase",
       start: 10 * 60 + 30,
-      end: 10 * 60 + 45,
+      end: 11 * 60,
     },
   ],
 };
