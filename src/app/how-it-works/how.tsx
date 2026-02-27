@@ -65,8 +65,8 @@ export default function HowItWorksSections() {
             How we audit deals
           </h2>
           <p className="mt-6 text-gray-500">
-            A human data scientist reviews all your data then collaborates with
-            your reps to gather missing information
+            Easily and quickly see the nitty gritty of each deal because a human
+            data scientist goes in great depth
           </p>
         </div>
       </div>

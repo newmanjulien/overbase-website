@@ -50,8 +50,8 @@ export function Letter() {
               <p>Not anymore</p>
 
               <p>
-                Overbase gives you deal intelligence for pipeline review
-                meetings
+                Overbase gives you in-depth deal intelligence for each pipeline
+                review meeting
               </p>
 
               <p>
@@ -63,7 +63,7 @@ export function Letter() {
               </p>
 
               <p>
-                Then we send you the information you need to easily see the real
+                Then we give you the information you need to easily see the real
                 opportunities, ask the right questions, win more deals, make
                 quota and drive millions in easy revenue
               </p>

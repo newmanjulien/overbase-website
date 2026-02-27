@@ -10,7 +10,7 @@ export default function HowItWorksWhat() {
         <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
           <div className="space-y-4 text-gray-500">
             <p>
-              Get deal intelligence packaged up for each pipeline review meeting
+              Have deal intelligence conveniently packaged up at your fingertips
             </p>
             <p>
               A human data scientist does an audit of every deal. Then we put
