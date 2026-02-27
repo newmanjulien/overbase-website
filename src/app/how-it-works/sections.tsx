@@ -4,9 +4,30 @@ import { cn } from "@/components/ui/utils";
 import { Calendar } from "@/app/how-it-works/examples/calendar";
 import { Quadrant } from "@/app/how-it-works/examples/quadrant";
 import { Signals } from "@/app/how-it-works/examples/signals";
-import { dealReviewCalendar } from "@/app/how-it-works/examples/calendar-data";
+import type { CalendarDay } from "@/app/how-it-works/examples/types";
 import { quadrantExample } from "@/app/how-it-works/examples/quadrant-data";
 import { signalsExample } from "@/app/how-it-works/examples/signals-data";
+
+const dealReviewCalendar: CalendarDay = {
+  id: "how-it-works-calendar",
+  label: "Wed, Feb 25",
+  startHour: 9,
+  endHour: 14,
+  events: [
+    {
+      id: "review",
+      title: "Pipeline review",
+      start: 10 * 60 + 30,
+      end: 11 * 60 + 20,
+    },
+    {
+      id: "notes",
+      title: "Data from Overbase",
+      start: 10 * 60 + 30,
+      end: 10 * 60 + 45,
+    },
+  ],
+};
 
 type HowItWorksSectionProps = {
   step: string;
@@ -87,7 +108,7 @@ export default function HowItWorksSections() {
             step="03"
             title="Sales Managers easily get data in their calendar"
             description={[
-              "We package up the insight then put it in a calendar invite right beside deal review meetings",
+              "We package up the insight then put it in a calendar invite right beside pipeline review meetings",
               "This lets Sales Managers see the real opportunities, ask the right questions, coach reps, win more deals and drive millions in easy revenue",
             ]}
           >

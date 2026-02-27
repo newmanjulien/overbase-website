@@ -20,8 +20,8 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get millions in easy revenue every quarter with data-driven deal
-              review
+              Get millions in easy revenue every quarter with data-driven
+              pipeline review
             </p>
 
             <p>

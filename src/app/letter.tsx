@@ -22,9 +22,9 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The hardest part of deal review isn't the meeting itself—it’s
-                the investigative hours spent before the rep even walks into the
-                room
+                The hardest part of pipeline review isn't the meeting
+                itself—it’s the investigative hours spent before the rep even
+                walks into the room
               </p>
 
               <p>
@@ -57,7 +57,8 @@ export function Letter() {
               <p>Not anymore</p>
 
               <p>
-                Overbase helps Sales Managers easily do data-driven deal review
+                Overbase helps Sales Managers easily do data-driven pipeline
+                review
               </p>
 
               <p>
