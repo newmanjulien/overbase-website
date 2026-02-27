@@ -30,7 +30,7 @@ const PLANS: Plan[] = [
     description:
       "Aligns incentives but costs more since we help you get so much extra revenue",
     subtext:
-      "Of revenue attributed by your reps and managers. Only available with a two year subscription",
+      "Of revenue attributed to Overbase by your reps and managers. Available with two year subscription",
     valueLabel: "Align incentives",
   },
 ];

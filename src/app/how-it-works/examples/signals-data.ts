@@ -27,7 +27,7 @@ export const signalsExample: { id: string; signals: PreviewSignal[] } = {
       id: "icp",
       title: "ICP in the manufacturing sector might be wrong",
       summary:
-        "The manufacturing deals seem to end up getting signed by Directors not by C-Suite execs. You might be able to close deals faster by targeting Directors more specifically in that vertical",
+        "The manufacturing deals seem to end up getting signed by Directors not by C-Suite execs. Some current deals are getting slowed down because you're targeting the wrong ICP",
       sources: [
         { name: "Marketo", logo: "/logos/marketo.png" },
         { name: "Docusign", logo: "/logos/docusign.png" },
