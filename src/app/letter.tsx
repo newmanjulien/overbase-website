@@ -70,7 +70,8 @@ export function Letter() {
               <p>
                 Then this data scientist sends you the information you need to
                 easily see the real opportunities, ask the right questions,
-                coach reps, win more deals and drive millions in easy revenue
+                coach reps, win more deals, make quota and drive millions in
+                easy revenue
               </p>
             </div>
 

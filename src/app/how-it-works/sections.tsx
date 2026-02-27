@@ -109,7 +109,7 @@ export default function HowItWorksSections() {
             title="Sales Managers easily get data in their calendar"
             description={[
               "We package up the insight then put it in a calendar invite right beside pipeline review meetings",
-              "This lets Sales Managers see the real opportunities, ask the right questions, coach reps, win more deals and drive millions in easy revenue",
+              "This lets Sales Managers see the real opportunities, ask the right questions, coach reps, win more deals, make quota and drive millions in easy revenue",
             ]}
           >
             <Calendar day={dealReviewCalendar} />
