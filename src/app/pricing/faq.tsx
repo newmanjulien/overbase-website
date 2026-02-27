@@ -38,7 +38,7 @@ export default function FAQ() {
             },
             {
               q: "How does attribution work for the 8% tier?",
-              a: "Your reps and managers decide what to attribute. The 8% tier is the best way to align incentives so we get paid when you get paid. It also means you pay us after you realize the revenue. But Overbase drives so much revenue that 8% ends up being a lot more than the per rep fee",
+              a: "Your reps and managers decide what to attribute. The 8% tier is the best way to align incentives so we get paid when you get paid. It also means you pay us after you realize the revenue. But Overbase gets you so much extra revenue that 8% ends up being a lot more than the per rep fee",
             },
           ].map((item, i) => (
             <AccordionItem

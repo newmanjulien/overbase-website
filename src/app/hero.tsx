@@ -26,7 +26,7 @@ export function Hero() {
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
             Overbase lets Sales Managers{" "}
-            <span className="bg-[#ffffcc] px-1 rounded-xs">
+            <span className="bg-[#ffffcc] px-1">
               get millions in easy revenue
             </span>{" "}
             by seeing the nitty gritty of each deal

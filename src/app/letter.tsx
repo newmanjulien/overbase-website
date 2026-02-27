@@ -22,7 +22,7 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The hardest part of pipeline review isn't the meeting
+                The hardest part of pipeline review meetings isn't the meeting
                 itself—it’s the investigative hours spent before the rep even
                 walks into the room
               </p>
@@ -36,16 +36,16 @@ export function Letter() {
               </p>
 
               <p>
-                Asking questions rooted in a deep understanding of each deal is
-                the fastest and most reliable way to help reps win more deals -
-                and get your team to always make quota
+                Asking questions rooted in an understanding of each deal is the
+                fastest and most reliable way to help reps win more deals - and
+                get your team to always make quota
               </p>
 
               <p>
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
                 full-time job. Which is why in real life you have no choice but
-                to cut corners
+                to cut corners and leave millions on the table
               </p>
 
               <p>Not anymore</p>
@@ -65,7 +65,7 @@ export function Letter() {
 
               <p>
                 Then we give you the information you need to easily see the real
-                opportunities, ask the right questions, win more deals and drive
+                opportunities, ask the right questions, win more deals and get
                 millions in easy revenue
               </p>
             </div>
