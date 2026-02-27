@@ -51,8 +51,7 @@ export function Letter() {
 
               <p>
                 Which is why in real life you have no choice but to take
-                shortcuts. And it's why in real life Sales Managers can't
-                actually do truly data-driven deal review
+                shortcuts. Even though you really shouldn't
               </p>
 
               <p>Not anymore</p>
