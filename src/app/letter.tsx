@@ -45,13 +45,13 @@ export function Letter() {
 
               <p>
                 But finding one fact can take forty minutes of digging. Multiply
-                that by 20 deals and 8 reps, and you're essentially working a
-                second full-time job
+                that by 20 deals and 8 reps, and you're working a second
+                full-time job
               </p>
 
               <p>
                 Which is why in real life you have no choice but to take
-                shortcuts. Even though you really shouldn't
+                shortcuts
               </p>
 
               <p>Not anymore</p>
