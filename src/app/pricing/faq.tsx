@@ -21,34 +21,30 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "Who are the human data analysts who answer my questions?",
-              a: "Our analysts are elite professionals — graduates from the world’s most selective schools or former team members at top-tier companies like BCG, McKinsey, Google, and Tesla. They bring deep expertise and real-world business experience to every answer.",
+              q: "Will you really help us get millions of dollars?",
+              a: "Yes. If you're not sure, sign up for the 8% pricing tier where you pay nothing until you realize the revenue. The 8% tier lets your reps and managers decide what revenue to attribute to Overbase",
             },
             {
-              q: "How much AI is involved?",
-              a: "All analysis is performed by humans. But our analysts are powered by advanced AI tools that speed up data processing and unlock insights from unstructured data — things that only AI can handle. Overbase builds proprietary AI to make every answer fast and reliable.",
+              q: "Is Overbase a human service or an AI?",
+              a: "A human service. We hire the smartest data scientists and give them the best AI tools",
             },
             {
-              q: "What type of questions can I ask?",
-              a: "Anything you would ask an internal analyst, Chief of Staff, or RevOps team. Overbase is designed for revenue leaders — CROs, CMOs, CPOs, and CCOs — providing actionable answers tailored to the most critical business questions.",
+              q: "Who is the data scientist that gets me insight?",
+              a: "A graduate from one of the world's most selective schools. Overbase recruits the smartest students from the best schools in the world. We leverage our CEO's teaching role at Princeton to get access to talent which is out of reach to others",
             },
             {
-              q: "How do you access my business’ data?",
-              a: "Simply and securely. We access data via APIs or by having our analysts log into dashboards as needed. Overbase never stores your data for more than 30 days, and all access requires human oversight.",
+              q: "Why is Overbase so much more secure than alternatives?",
+              a: "Overbase never stores your data longer than 30 days. All data access requires human intervention, making Overbase safer than automated data solutions while still delivering fast, accurate insights. We also only access information about prospective customers",
             },
             {
-              q: "How does the Slack app work, and do I need Slack?",
-              a: "Yes, you need Slack. You DM your personal analyst through the Overbase Slack app, which lets you quickly connect data sources and ensures security and compliance.",
-            },
-            {
-              q: "What about data safety and security?",
-              a: "Overbase never stores your data longer than 30 days. All data access requires human intervention, making Overbase safer than fully automated data solutions while still delivering fast, accurate insights.",
+              q: "How does attribution work for the 8% tier?",
+              a: "Your reps and managers decide what to attribute. The 8% tier is the best way to align incentives so we get paid when you get paid. It also means you pay us after you realize the revenue. But Overbase drives so much revenue that 8% ends up being a lot more than the per rep fee",
             },
           ].map((item, i) => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="border border-gray-100 rounded-md px-4 bg-white"
+              className="border border-gray-100 rounded-md px-4"
             >
               <AccordionTrigger
                 className="text-left text-md font-normal text-gray-800 hover:no-underline"

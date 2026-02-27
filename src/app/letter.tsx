@@ -37,35 +37,36 @@ export function Letter() {
 
               <p>
                 Asking questions rooted in a deep understanding of each deal is
-                the most reliable way to help reps win more deals
+                the fastest and most reliable way to help reps win more deals -
+                and get your team to always make quota
               </p>
 
               <p>
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
                 full-time job. Which is why in real life you have no choice but
-                to take shortcuts
+                to cut corners
               </p>
 
               <p>Not anymore</p>
 
               <p>
-                Overbase gives you in-depth deal intelligence for each pipeline
-                review meeting
+                Overbase gives you in-depth intelligence about every deal
+                packaged up for your pipeline review meetings
               </p>
 
               <p>
-                A human data scientist does an in-depth audit of every deal -
-                reviews sales calls, reads emails with prospects, looks at
-                Docusign, investigates demo usage metrics, etc. This data
-                scientist also collaborates with your reps to get missing
-                information
+                A human data scientist does an audit - reviews sales calls,
+                reads emails with prospects, looks at Docusign, investigates
+                demo usage metrics, etc. This data scientist also collaborates
+                with your reps to get ask buyers the right questions and get
+                missing information
               </p>
 
               <p>
                 Then we give you the information you need to easily see the real
-                opportunities, ask the right questions, win more deals, make
-                quota and drive millions in easy revenue
+                opportunities, ask the right questions, win more deals and drive
+                millions in easy revenue
               </p>
             </div>
 

@@ -10,12 +10,13 @@ export default function HowItWorksWhat() {
         <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
           <div className="space-y-4 text-gray-500">
             <p>
-              Have deal intelligence conveniently packaged up at your fingertips
+              Get in-depth insight about every deal conveniently packaged up and
+              at your fingertips for pipeline review meetings
             </p>
             <p>
-              A human data scientist does an audit of every deal. Then we put
-              everything you need in a calendar invite which sits beside
-              pipeline review meetings
+              A human data scientist does an audit. Then puts everything you
+              need in a calendar invite which sits beside your pipeline review
+              meetings
             </p>
           </div>
         </div>
