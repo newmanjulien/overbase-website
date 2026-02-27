@@ -20,7 +20,7 @@ export function Hero() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
-          <h1 className="max-w-lg text-[47px] text-gray-900 tracking-tight leading-tight font-medium mx-auto md:mx-0">
+          <h1 className="max-w-lg text-[47px] text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
             Deal intelligence for pipeline review
           </h1>
 
