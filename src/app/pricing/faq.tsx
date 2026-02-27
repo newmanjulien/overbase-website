@@ -26,7 +26,7 @@ export default function FAQ() {
             },
             {
               q: "Is Overbase a human service or an AI?",
-              a: "A human service. We hire the smartest data scientists and give them the best AI tools",
+              a: "A human service. We hire the smartest data scientists from the best schools. And we give them the best AI tools which we build custom for this specific use case",
             },
             {
               q: "Who is the data scientist that gets me insight?",
@@ -34,11 +34,11 @@ export default function FAQ() {
             },
             {
               q: "Why is Overbase so much more secure than alternatives?",
-              a: "Overbase never stores your data longer than 30 days. All data access requires human intervention, making Overbase safer than automated data solutions while still delivering fast, accurate insights. We also only access information about prospective customers",
+              a: "Overbase never stores any of your data longer than 30 days. And all data access requires human intervention which makes Overbase safer than automated data solutions. We also only access lower risk data about prospective customers",
             },
             {
               q: "How does attribution work for the 8% tier?",
-              a: "Your reps and managers decide what to attribute. The 8% tier is the best way to align incentives so we get paid when you get paid. It also means you pay us after you realize the revenue. But Overbase gets you so much extra revenue that 8% ends up being a lot more than the per rep fee",
+              a: "Your reps and managers decide what to attribute. The 8% tier is the best way to align incentives so we get paid when you get paid. It also means you only pay after you realize the revenue. But Overbase lets you get so much extra revenue that 8% ends up being a lot more than the per rep fee",
             },
           ].map((item, i) => (
             <AccordionItem

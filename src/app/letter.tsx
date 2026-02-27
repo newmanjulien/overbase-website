@@ -23,15 +23,15 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 The hardest part of pipeline review meetings isn't the meeting
-                itself—it’s the investigative hours spent before the rep even
-                walks into the room
+                itself. It’s the investigative hours you spend before the rep
+                even walks into the room
               </p>
 
               <p>
                 You can't just say, "Is this deal real?" You have to say,{" "}
                 <i>
-                  "I wonder why the champion hasn't logged into his sandbox in
-                  two weeks?"
+                  "I wonder why the champion hasn't logged into his sandbox for
+                  two weeks"
                 </i>
               </p>
 
@@ -45,7 +45,7 @@ export function Letter() {
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
                 full-time job. Which is why in real life you have no choice but
-                to cut corners and leave millions on the table
+                to cut corners - and leave millions on the table
               </p>
 
               <p>Not anymore</p>
@@ -56,11 +56,11 @@ export function Letter() {
               </p>
 
               <p>
-                A human data scientist does an audit - reviews sales calls,
-                reads emails with prospects, looks at Docusign, investigates
-                demo usage metrics, etc. This data scientist also collaborates
-                with your reps to get ask buyers the right questions and get
-                missing information
+                A human data scientist does an audit: reviews sales calls, reads
+                emails with prospects, looks at Docusign, investigates demo
+                usage metrics, etc. This data scientist also collaborates with
+                your reps to ask buyers the right questions and get missing
+                information
               </p>
 
               <p>

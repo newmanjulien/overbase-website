@@ -25,14 +25,14 @@ export function Pricing() {
             </p>
 
             <p>
-              A human data scientist does an audit of each deal - reviews sales
+              A human data scientist does an audit of each deal: reviews sales
               calls, reads emails with prospects, looks at Docusign,
               investigates demo usage metrics, etc.
             </p>
 
             <p>
-              And this data scientist collaborates with reps to gather missing
-              information
+              This data scientist collaborates with reps to ask buyers the right
+              questions and get missing information
             </p>
 
             <p>
