@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import {
   Accordion,
   AccordionContent,
@@ -13,7 +12,7 @@ export default function FAQ() {
     <section className="px-6 md:px-12 lg:px-24 py-12 lg:py-24">
       <div className="max-w-3xl mx-auto space-y-12">
         <div className="text-center">
-          <h2 className="text-4xl text-gray-900 mb-4">
+          <h2 className="text-4xl font-medium text-gray-900 mb-4">
             Frequently asked questions
           </h2>
         </div>
@@ -25,7 +24,7 @@ export default function FAQ() {
               a: "Yes. If you're not sure, sign up for the 8% pricing tier where you pay nothing until you realize the revenue. The 8% tier lets your reps and managers decide what revenue to attribute to Overbase",
             },
             {
-              q: "Is Overbase a human service or an AI?",
+              q: "Is Overbase a human service?",
               a: "A human service. We hire the smartest data scientists from the best schools. And we give them the best AI tools which we build custom for this specific use case",
             },
             {

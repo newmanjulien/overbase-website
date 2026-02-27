@@ -58,17 +58,14 @@ function HowItWorksSection({
 export default function HowItWorksSections() {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
-      <div className="mt-16">
-        <div className="mb-22 border-t border-gray-100"></div>
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
-            How we audit deals
-          </h2>
-          <p className="mt-6 text-gray-500">
-            Easily and quickly see the nitty gritty of each deal because a human
-            data scientist goes in great depth
-          </p>
-        </div>
+      <div className="max-w-xl mx-auto text-center">
+        <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
+          How we audit deals
+        </h2>
+        <p className="mt-6 text-gray-500">
+          Easily and quickly see the nitty gritty of each deal because a human
+          data scientist goes in great depth
+        </p>
       </div>
 
       <div className="space-y-24">

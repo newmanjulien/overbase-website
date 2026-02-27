@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Quickly get millions in <span className="italic">easy revenue</span>
+            Quickly get <span className="italic">millions</span> in easy revenue
           </>
         }
       />
