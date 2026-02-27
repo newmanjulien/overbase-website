@@ -28,9 +28,7 @@ export function Letter() {
               </p>
 
               <p>
-                To ask a "curious" question instead of an "attacking" one, you
-                have to do double the work. You can't just say, "Is this deal
-                real?" You have to say,{" "}
+                You can't just say, "Is this deal real?" You have to say,{" "}
                 <i>
                   "I wonder why the champion hasn't logged into his sandbox in
                   two weeks?"
@@ -38,40 +36,36 @@ export function Letter() {
               </p>
 
               <p>
-                Asking questions based in research and data helps reps close
-                more deals by finding opportunities they didn't see. It also
-                improves your team's morale, confidence and performance
+                Asking questions rooted in a deep understanding of each deal is
+                the most reliable way to help reps win more deals
               </p>
 
               <p>
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
-                full-time job
-              </p>
-
-              <p>
-                Which is why in real life you have no choice but to take
-                shortcuts
+                full-time job. Which is why in real life you have no choice but
+                to take shortcuts
               </p>
 
               <p>Not anymore</p>
 
               <p>
-                Overbase helps Sales Managers easily do data-driven pipeline
-                review
+                Overbase gives you deal intelligence for pipeline review
+                meetings
               </p>
 
               <p>
-                Every week, a human data scientist does an in-depth audit of
-                every deal - reviews sales calls, reads emails with prospects,
-                looks at Docusign, investigates demo usage metrics, etc.
+                A human data scientist does an in-depth audit of every deal -
+                reviews sales calls, reads emails with prospects, looks at
+                Docusign, investigates demo usage metrics, etc. This data
+                scientist also collaborates with your reps to get missing
+                information
               </p>
 
               <p>
-                Then this data scientist sends you the information you need to
-                easily see the real opportunities, ask the right questions,
-                coach reps, win more deals, make quota and drive millions in
-                easy revenue
+                Then we send you the information you need to easily see the real
+                opportunities, ask the right questions, win more deals, make
+                quota and drive millions in easy revenue
               </p>
             </div>
 

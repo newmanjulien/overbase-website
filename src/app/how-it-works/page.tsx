@@ -1,7 +1,8 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import HowItWorksHero from "@/app/how-it-works/hero";
-import HowItWorksSections from "@/app/how-it-works/sections";
+import HowItWorksWhat from "@/app/how-it-works/what";
+import HowItWorksSections from "@/app/how-it-works/how";
 
 export default function HowItWorksPage() {
   return (
@@ -9,6 +10,7 @@ export default function HowItWorksPage() {
       <Header logoHref="/" />
       <main className="pb-12">
         <HowItWorksHero />
+        <HowItWorksWhat />
         <HowItWorksSections />
       </main>
       <Footer />

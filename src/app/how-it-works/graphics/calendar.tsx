@@ -2,7 +2,12 @@ import type { CalendarDay } from "./types";
 
 import { cn } from "@/components/ui/utils";
 
-export function Calendar({ day }: { day: CalendarDay }) {
+type CalendarProps = {
+  day: CalendarDay;
+  className?: string;
+};
+
+export function Calendar({ day, className }: CalendarProps) {
   const hourHeightPx = 56;
   const startMinutes = day.startHour * 60;
   const totalHours = Math.max(0, day.endHour - day.startHour);
@@ -66,7 +71,10 @@ export function Calendar({ day }: { day: CalendarDay }) {
   return (
     <div
       id={day.id}
-      className="mt-5 overflow-hidden rounded-xl border border-gray-100 bg-white"
+      className={cn(
+        "mt-5 overflow-hidden rounded-xl border border-gray-100 bg-white",
+        className,
+      )}
     >
       <div className="flex items-start justify-between gap-4 border-b border-gray-100 px-6 py-4">
         <div>
@@ -139,3 +147,24 @@ export function Calendar({ day }: { day: CalendarDay }) {
     </div>
   );
 }
+
+export const dealReviewCalendar: CalendarDay = {
+  id: "how-it-works-calendar",
+  label: "Wed, Feb 25",
+  startHour: 9,
+  endHour: 14,
+  events: [
+    {
+      id: "review",
+      title: "Pipeline review",
+      start: 10 * 60 + 30,
+      end: 11 * 60 + 20,
+    },
+    {
+      id: "notes",
+      title: "Data from Overbase",
+      start: 10 * 60 + 30,
+      end: 11 * 60,
+    },
+  ],
+};

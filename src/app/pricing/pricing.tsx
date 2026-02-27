@@ -20,14 +20,19 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get millions in easy revenue every quarter with data-driven
-              pipeline review
+              Get millions in easy revenue every quarter with deal intelligence
+              for pipeline review
             </p>
 
             <p>
               A human data scientist does an audit every week of every deal -
               reviews sales calls, reads emails with prospects, looks at
               Docusign, investigates demo usage metrics, etc.
+            </p>
+
+            <p>
+              And this data scientist collaborates with reps to gather missing
+              information
             </p>
 
             <p>

@@ -5,10 +5,12 @@ export default function HowItWorksHero() {
     <Hero
       title={
         <>
-          <span className="italic">A human</span> audits every deal every week
+          Deal intelligence from a <span className="italic">human</span> data
+          scientist
         </>
       }
       titleMaxWidthClass="max-w-lg"
+      divider={false}
     />
   );
 }

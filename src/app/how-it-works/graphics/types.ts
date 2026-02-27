@@ -43,3 +43,18 @@ export type CalendarDay = {
   endHour: number;
   events: CalendarEvent[];
 };
+
+export type SlackMessage = {
+  id: string;
+  userName: string;
+  time: string;
+  avatarUrl: string;
+  paragraphs: string[];
+};
+
+export type SlackThread = {
+  id: string;
+  dayLabel: string;
+  message: SlackMessage;
+  composerPlaceholder: string;
+};

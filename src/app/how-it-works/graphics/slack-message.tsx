@@ -1,0 +1,138 @@
+import Image from "next/image";
+import {
+  AlignLeft,
+  AtSign,
+  ChevronDown,
+  CodeXml,
+  Link2,
+  List,
+  ListOrdered,
+  MoreHorizontal,
+  Plus,
+  SendHorizontal,
+  Smile,
+  SquareCode,
+} from "lucide-react";
+
+import { cn } from "@/components/ui/utils";
+import type { SlackThread } from "./types";
+
+type SlackMessageProps = {
+  thread: SlackThread;
+  className?: string;
+};
+
+const toolbarIconClass = "h-4 w-4 text-gray-600";
+
+export function SlackMessagePreview({ thread, className }: SlackMessageProps) {
+  const message = thread.message;
+
+  return (
+    <div id={thread.id} className={cn("mt-5 rounded-xl bg-white", className)}>
+      <div className="relative flex items-center justify-center px-6 py-3">
+        <div className="absolute inset-x-0 top-1/2 h-px bg-gray-200" />
+        <div className="relative z-10 flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-1 text-[13px] font-semibold text-gray-700 shadow-[0_1px_2px_rgba(0,0,0,0.08)]">
+          <span>{thread.dayLabel}</span>
+          <ChevronDown className="h-3.5 w-3.5 text-gray-500" strokeWidth={2} />
+        </div>
+      </div>
+
+      <div className="mt-4 flex gap-4 px-6">
+        <div className="h-11 w-11 overflow-hidden rounded-full border border-gray-200 bg-gray-100">
+          <Image
+            src={message.avatarUrl}
+            alt={message.userName}
+            width={44}
+            height={44}
+            className="h-full w-full object-cover"
+          />
+        </div>
+        <div className="min-w-0 flex-1">
+          <div className="flex items-baseline gap-3">
+            <span className="text-[15px] font-semibold text-gray-900">
+              {message.userName}
+            </span>
+            <span className="text-[13px] text-gray-500">{message.time}</span>
+          </div>
+          <div className="mt-2 space-y-4 text-[15px] leading-[1.6] text-gray-800">
+            {message.paragraphs.map((paragraph, index) => (
+              <p
+                key={`${message.id}-p-${index}`}
+                className="whitespace-pre-wrap"
+              >
+                {paragraph}
+              </p>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-6 px-6 pb-6">
+        <div className="rounded-2xl border border-gray-200 bg-white shadow-[0_1px_0_rgba(0,0,0,0.04)]">
+          <div className="flex items-center gap-3 border-b border-gray-200 px-4 py-2 text-gray-600">
+            <div className="flex items-center gap-3 text-[13px] font-semibold">
+              <span className="font-semibold">B</span>
+              <span className="italic">I</span>
+              <span className="underline decoration-2 underline-offset-[3px]">
+                U
+              </span>
+              <span className="line-through">S</span>
+            </div>
+            <span className="h-5 w-px bg-gray-200" />
+            <Link2 className={toolbarIconClass} strokeWidth={1.6} />
+            <span className="h-5 w-px bg-gray-200" />
+            <ListOrdered className={toolbarIconClass} strokeWidth={1.6} />
+            <List className={toolbarIconClass} strokeWidth={1.6} />
+            <AlignLeft className={toolbarIconClass} strokeWidth={1.6} />
+            <span className="h-5 w-px bg-gray-200" />
+            <CodeXml className={toolbarIconClass} strokeWidth={1.6} />
+            <SquareCode className={toolbarIconClass} strokeWidth={1.6} />
+          </div>
+
+          <div className="px-4 py-3 text-[15px] text-gray-400">
+            {thread.composerPlaceholder}
+          </div>
+
+          <div className="flex items-center justify-between px-4 pb-3 text-gray-500">
+            <div className="flex items-center gap-4 text-[14px]">
+              <span className="flex h-7 w-7 items-center justify-center rounded-full border border-gray-200 text-gray-600">
+                <Plus className="h-4 w-4" strokeWidth={1.8} />
+              </span>
+              <span className="text-[15px] font-semibold text-gray-600 underline decoration-2 underline-offset-[4px] decoration-gray-300">
+                Aa
+              </span>
+              <Smile className="h-4 w-4 text-gray-500" strokeWidth={1.6} />
+              <AtSign className="h-4 w-4 text-gray-500" strokeWidth={1.6} />
+              <MoreHorizontal
+                className="h-4 w-4 text-gray-500"
+                strokeWidth={1.6}
+              />
+            </div>
+            <div className="flex items-center gap-2 border-l border-gray-200 pl-3 text-gray-400">
+              <SendHorizontal className="h-4 w-4" strokeWidth={1.6} />
+              <span className="h-4 w-px bg-gray-200" />
+              <ChevronDown className="h-3.5 w-3.5" strokeWidth={2} />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export const dealReviewSlackMessage: SlackThread = {
+  id: "how-it-works-slack-message",
+  dayLabel: "Today",
+  message: {
+    id: "deal-review",
+    userName: "Howard",
+    time: "3:18 PM",
+    avatarUrl: "/analyst.jpg",
+    paragraphs: [
+      "Hey Rob. We're preparing the deal intelligence Laura needs for her pipeline review meeting with you",
+      "I'm wondering about the dynamics between the economic buyer and the champion in the Acme deal (eg. what's happening in the background)",
+      "Could you ask a question about this on your call with the Acme team tomorrow? I would prepare notes to make it easy",
+    ],
+  },
+  composerPlaceholder: "Message Howard",
+};
