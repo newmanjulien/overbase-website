@@ -1,5 +1,7 @@
 import type { CalendarDay } from "./types";
 
+import { cn } from "@/components/ui/utils";
+
 export function Calendar({ day }: { day: CalendarDay }) {
   const hourHeightPx = 56;
   const startMinutes = day.startHour * 60;
@@ -106,9 +108,15 @@ export function Calendar({ day }: { day: CalendarDay }) {
 
             {events.map((event) => {
               const style = eventStyle(event);
-              const className = style.isOverlay
-                ? "absolute flex flex-col gap-2 rounded-lg border border-white bg-blue-500 px-3 py-2 text-left text-xs text-white shadow-sm"
-                : "absolute flex flex-col gap-2 rounded-lg bg-blue-500 px-3 py-2 text-left text-xs text-white shadow-sm";
+              const durationMinutes = event.end - event.start;
+              const isCompact = durationMinutes <= 30;
+              const className = cn(
+                "absolute min-w-0 rounded-lg bg-blue-500 text-left text-white shadow-sm",
+                style.isOverlay && "border border-white",
+                isCompact
+                  ? "flex items-center px-2 text-[10px] leading-3"
+                  : "flex flex-col gap-2 px-3 py-2 text-xs",
+              );
 
               return (
                 <div
@@ -122,7 +130,12 @@ export function Calendar({ day }: { day: CalendarDay }) {
                     zIndex: style.zIndex,
                   }}
                 >
-                  <span className="truncate text-xs font-semibold">
+                  <span
+                    className={cn(
+                      "min-w-0 truncate font-semibold",
+                      isCompact && "w-full",
+                    )}
+                  >
                     {event.title}
                   </span>
                 </div>
