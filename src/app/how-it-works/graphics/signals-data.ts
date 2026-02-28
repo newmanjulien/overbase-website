@@ -1,6 +1,6 @@
-import type { PreviewSignal } from "./types";
+import type { SignalsExample } from "./types";
 
-export const signalsExample: { id: string; signals: PreviewSignal[] } = {
+export const signalsExample: SignalsExample = {
   id: "how-it-works-signals",
   signals: [
     {

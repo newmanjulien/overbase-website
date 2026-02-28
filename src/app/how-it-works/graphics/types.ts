@@ -10,12 +10,17 @@ export type PreviewSignal = {
   sources: PreviewSignalSource[];
 };
 
+export type SignalsExample = {
+  id: string;
+  signals: PreviewSignal[];
+};
+
 export type QuadrantPoint = {
   id: string;
   label: string;
   x: number;
   y: number;
-  description: string;
+  description?: string;
 };
 
 export type QuadrantChartData = {
@@ -57,4 +62,9 @@ export type SlackThread = {
   dayLabel: string;
   message: SlackMessage;
   composerPlaceholder: string;
+};
+
+export type SlackMessageExample = {
+  id: string;
+  threads: SlackThread[];
 };

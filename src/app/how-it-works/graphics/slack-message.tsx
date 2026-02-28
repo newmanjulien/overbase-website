@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import {
   AlignLeft,
@@ -9,6 +12,7 @@ import {
   ListOrdered,
   MoreHorizontal,
   Plus,
+  RefreshCw,
   SendHorizontal,
   Smile,
   SquareCode,
@@ -18,17 +22,53 @@ import { cn } from "@/components/ui/utils";
 import type { SlackThread } from "./types";
 
 type SlackMessageProps = {
-  thread: SlackThread;
+  threads: SlackThread[];
   className?: string;
+  id?: string;
 };
 
 const toolbarIconClass = "h-4 w-4 text-gray-600";
 
-export function SlackMessagePreview({ thread, className }: SlackMessageProps) {
+export function SlackMessagePreview({
+  threads,
+  className,
+  id,
+}: SlackMessageProps) {
+  const [activeIndex, setActiveIndex] = useState(0);
+  const thread = threads[activeIndex] ?? threads[0];
+
+  if (!thread) {
+    return null;
+  }
+
   const message = thread.message;
+  const rootId = id ?? thread.id;
+  const canCycle = threads.length > 1;
+
+  function handleRefresh() {
+    if (!canCycle) {
+      return;
+    }
+    setActiveIndex((prev) => (prev + 1) % threads.length);
+  }
 
   return (
-    <div id={thread.id} className={cn("mt-5 rounded-xl bg-white", className)}>
+    <div
+      id={rootId}
+      className={cn("relative mt-5 rounded-xl bg-white", className)}
+    >
+      <button
+        type="button"
+        onClick={handleRefresh}
+        aria-label="Refresh message example"
+        disabled={!canCycle}
+        className={cn(
+          "absolute right-4 top-4 z-20 flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition hover:border-gray-300 hover:text-gray-700",
+          !canCycle && "cursor-default opacity-40 hover:text-gray-500",
+        )}
+      >
+        <RefreshCw className="h-4 w-4" strokeWidth={1.8} />
+      </button>
       <div className="relative flex items-center justify-center px-6 py-3">
         <div className="absolute inset-x-0 top-1/2 h-px bg-gray-200" />
         <div className="relative z-10 flex items-center gap-2 rounded-full border border-gray-200 bg-white px-4 py-1 text-xs font-semibold text-gray-700 shadow-[0_1px_2px_rgba(0,0,0,0.08)]">
@@ -119,20 +159,3 @@ export function SlackMessagePreview({ thread, className }: SlackMessageProps) {
     </div>
   );
 }
-
-export const dealReviewSlackMessage: SlackThread = {
-  id: "how-it-works-slack-message",
-  dayLabel: "Today",
-  message: {
-    id: "deal-review",
-    userName: "Howard",
-    time: "3:18 PM",
-    avatarUrl: "/analyst.jpg",
-    paragraphs: [
-      "Hey Rob. We're preparing the deal intelligence Laura needs for her pipeline review meeting with you",
-      "I'm wondering about the dynamics between the economic buyer and the champion in the Acme deal (eg. what's happening in the background)",
-      "Could you ask a question about this on your call with the Acme team tomorrow? I would prepare notes to make it easy",
-    ],
-  },
-  composerPlaceholder: "Message Howard",
-};

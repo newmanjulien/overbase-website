@@ -4,10 +4,8 @@ import { Quadrant } from "@/app/how-it-works/graphics/quadrant";
 import { Signals } from "@/app/how-it-works/graphics/signals";
 import { quadrantExample } from "@/app/how-it-works/graphics/quadrant-data";
 import { signalsExample } from "@/app/how-it-works/graphics/signals-data";
-import {
-  SlackMessagePreview,
-  dealReviewSlackMessage,
-} from "@/app/how-it-works/graphics/slack-message";
+import { slackMessageExample } from "@/app/how-it-works/graphics/slack-data";
+import { SlackMessagePreview } from "@/app/how-it-works/graphics/slack-message";
 
 type HowItWorksSectionProps = {
   step: string;
@@ -93,7 +91,8 @@ export default function HowItWorksSections() {
             ]}
           >
             <SlackMessagePreview
-              thread={dealReviewSlackMessage}
+              id={slackMessageExample.id}
+              threads={slackMessageExample.threads}
               className="mt-0"
             />
           </HowItWorksSection>
