@@ -25,7 +25,7 @@ export default function FAQ() {
             },
             {
               q: "Is Overbase a human service?",
-              a: "A human service. We hire the smartest data scientists from the best schools. And we give them the best AI tools which we build custom for this specific use case",
+              a: "Yes we're a human service. Not an AI. We hire the smartest data scientists from the best schools. And we give them the best AI tools which we build custom for this specific use case",
             },
             {
               q: "Who is the data scientist that gets me insight?",
