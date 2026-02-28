@@ -20,30 +20,14 @@ const linkClassName =
 
 const notesBody = [
   <>
-    Check out the deal quadrant where we compare our calculation on whether a
-    deal will close with what's in your CRM
-  </>,
-  <>
     <a
       href="#"
       className={linkClassName}
       onClick={(event) => event.preventDefault()}
     >
       Deal quadrant
-    </a>
-  </>,
-  <>Check out the list of opportunities and risks for Chris' deals</>,
-  <>
-    <a
-      href="#"
-      className={linkClassName}
-      onClick={(event) => event.preventDefault()}
-    >
-      Opportunities and risk
-    </a>
-  </>,
-  <>
-    Check out the missing data and questions around timelines in Chris' deals
+    </a>{" "}
+    - compare our calculation on whether a deal will close with your CRM
   </>,
   <>
     <a
@@ -52,15 +36,22 @@ const notesBody = [
       onClick={(event) => event.preventDefault()}
     >
       Missing data and timelines
-    </a>
+    </a>{" "}
+    - missing data and questions around timelines in Chris' deals
   </>,
   <>
-    ***A win to celebrate is the Acme deal which had gone cold last month and
-    seems to be active again
+    <a
+      href="#"
+      className={linkClassName}
+      onClick={(event) => event.preventDefault()}
+    >
+      Opportunities and risk
+    </a>{" "}
+    - list of opportunities and risks for Chris' deals
   </>,
   <>
-    ***You might want to recognize that Chris did 2x more prospecting this week
-    than any other week in the past 3 months
+    ***Chris did 2x more prospecting this week than any other week in the past 3
+    months
   </>,
 ];
 
