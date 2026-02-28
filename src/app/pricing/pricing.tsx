@@ -21,12 +21,12 @@ export function Pricing() {
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
               Get millions in easy revenue every quarter with deal intelligence
-              for pipeline review
+              for pipeline review meetings
             </p>
 
             <p>
-              A human data scientist does an audit of each deal: reviews sales
-              calls, reads emails with prospects, looks at Docusign,
+              A human data scientist audits every angle of each deal: reviews
+              sales calls, reads emails with prospects, looks at Docusign,
               investigates demo usage metrics, etc.
             </p>
 

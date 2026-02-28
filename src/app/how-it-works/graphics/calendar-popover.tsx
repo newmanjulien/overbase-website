@@ -88,7 +88,7 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
         align="center"
         side="right"
         sideOffset={18}
-        className="w-[23rem] rounded-2xl border border-gray-200 bg-gray-50/95 p-0 shadow-[0_24px_48px_rgba(15,23,42,0.22)] backdrop-blur-sm"
+        className="w-92 rounded-2xl border border-gray-200 bg-gray-50/95 p-0 shadow-2xl backdrop-blur-sm"
       >
         <div className="px-6 pb-5 pt-4">
           <div className="flex items-center justify-end gap-2">

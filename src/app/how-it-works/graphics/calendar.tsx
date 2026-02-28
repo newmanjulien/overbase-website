@@ -91,7 +91,7 @@ export function Calendar({ day, className }: CalendarProps) {
     >
       <div className="flex items-start justify-between gap-4 border-b border-gray-100 px-6 py-4">
         <div>
-          <div className="text-[11px] font-semibold uppercase tracking-[0.28em] text-gray-400">
+          <div className="text-xs font-semibold uppercase tracking-widest text-gray-400">
             Calendar
           </div>
           <div className="mt-2 flex items-center gap-2">
@@ -108,7 +108,7 @@ export function Calendar({ day, className }: CalendarProps) {
             {hours.map((hour) => (
               <div
                 key={`${day.id}-hour-${hour}`}
-                className="flex h-[56px] items-start text-xs font-medium text-gray-500"
+                className="flex h-14 items-start text-xs font-medium text-gray-500"
               >
                 <span className="-mt-1">{formatHourLabel(hour)}</span>
               </div>

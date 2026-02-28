@@ -38,13 +38,13 @@ function HowItWorksSection({
       )}
     >
       <div className={cn("max-w-sm space-y-3", reverse && "md:order-2")}>
-        <span className="text-xs font-medium tracking-[0.35em] text-gray-400">
+        <span className="text-xs font-medium tracking-widest text-gray-400">
           {step}
         </span>
         <h2 className="pt-2 text-2xl text-gray-900 font-medium leading-tight">
           {title}
         </h2>
-        <div className="space-y-4 text-[15px] text-gray-500">
+        <div className="space-y-4 text-sm text-gray-500">
           {description.map((line) => (
             <p key={line}>{line}</p>
           ))}
@@ -74,7 +74,7 @@ export default function HowItWorksSections() {
             step="01"
             title="In-depth audit of all the data from all your deals"
             description={[
-              "A human data scientist does an audit of every deal your reps are working on",
+              "A human data scientist audits every angle of each deal your reps are working on",
               "We review sales calls, read emails with prospects, look at Docusign, investigate demo usage metrics, etc.",
             ]}
             reverse
@@ -105,7 +105,7 @@ export default function HowItWorksSections() {
             title="Calculate which deals are actually likely to close"
             description={[
               "Our in-depth audit lets us recalculate how likely it is that each deal will close",
-              "Comparing the rep's evaluation with ours reveals hidden opportunities",
+              "Comparing the rep's calculation with ours reveals hidden opportunities",
             ]}
             reverse
           >
