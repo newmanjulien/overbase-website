@@ -28,8 +28,8 @@ export function Letter() {
               </p>
 
               <p>
-                You can't just ask, "Is this deal real?" You have to say
-                something like,{" "}
+                You can't just ask, "Is this deal real?" You need something
+                specific like,{" "}
                 <i>
                   "I wonder why the champion hasn't logged into his sandbox for
                   two weeks"
@@ -37,9 +37,9 @@ export function Letter() {
               </p>
 
               <p>
-                Asking questions rooted in an understanding of each deal is the
-                fastest and most reliable way to help reps win more deals - and
-                get your team to always make quota
+                Asking questions rooted in an understanding of each deal is how
+                you help reps win more deals - and it's how you get your team to
+                make quota
               </p>
 
               <p>
@@ -57,11 +57,11 @@ export function Letter() {
               </p>
 
               <p>
-                A human data scientist does an audit: reviews sales calls, reads
-                emails with prospects, looks at Docusign, investigates demo
-                usage metrics, etc. This data scientist also collaborates with
-                your reps to ask buyers the right questions and get missing
-                information
+                A human data scientist audits every angle: reviews sales calls,
+                reads emails with prospects, looks at Docusign, investigates
+                demo usage metrics, etc. This data scientist also collaborates
+                with your reps to ask buyers the right questions and collect
+                missing information
               </p>
 
               <p>

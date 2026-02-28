@@ -28,7 +28,7 @@ export default function FAQ() {
               a: "Yes we're a human service. Not an AI. We hire the smartest data scientists from the best schools. And we give them the best AI tools which we build custom for this specific use case",
             },
             {
-              q: "Who is the data scientist that gets me insight?",
+              q: "Who is the data scientist that works for me?",
               a: "A graduate from one of the world's most selective schools. Overbase recruits the smartest students from the best schools in the world. We leverage our CEO's teaching role at Princeton to get access to talent which is out of reach to others",
             },
             {
