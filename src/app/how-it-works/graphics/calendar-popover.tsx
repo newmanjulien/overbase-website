@@ -54,18 +54,8 @@ const notesBody = [
       Missing data and timelines
     </a>
   </>,
-  <>Check out ideas on what Chris could coach others on the team with</>,
   <>
-    <a
-      href="#"
-      className={linkClassName}
-      onClick={(event) => event.preventDefault()}
-    >
-      Coaching opportunities
-    </a>
-  </>,
-  <>
-    ***A win to celebrate is that the Acme deal that had gone cold last month
+    ***A win to celebrate is the Acme deal which had gone cold last month and
     seems to be active again
   </>,
   <>

@@ -28,7 +28,8 @@ export function Letter() {
               </p>
 
               <p>
-                You can't just say, "Is this deal real?" You have to say,{" "}
+                You can't just ask, "Is this deal real?" You have to say
+                something like,{" "}
                 <i>
                   "I wonder why the champion hasn't logged into his sandbox for
                   two weeks"
