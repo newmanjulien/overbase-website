@@ -1,6 +1,7 @@
 import type { CalendarDay } from "./types";
 
 import { cn } from "@/components/ui/utils";
+import { CalendarPopover } from "./calendar-popover";
 
 type CalendarProps = {
   day: CalendarDay;
@@ -68,6 +69,18 @@ export function Calendar({ day, className }: CalendarProps) {
     };
   }
 
+  const calendarStyles = [
+    `#${day.id} [data-calendar-body] { height: ${totalHeightPx}px; }`,
+    ...hourBoundaries.map(
+      (boundary) =>
+        `#${day.id} [data-boundary-id="${boundary.id}"] { top: ${boundary.top}px; }`,
+    ),
+    ...events.map((event) => {
+      const style = eventStyle(event);
+      return `#${day.id} [data-event-id="${event.id}"] { top: ${style.top}; height: ${style.height}; width: ${style.width}; left: ${style.left}; z-index: ${style.zIndex}; }`;
+    }),
+  ].join("\n");
+
   return (
     <div
       id={day.id}
@@ -104,37 +117,37 @@ export function Calendar({ day, className }: CalendarProps) {
 
           <div
             className="relative overflow-hidden rounded-xl border border-gray-100 bg-gradient-to-b from-white via-white to-gray-50/60 px-3"
-            style={{ height: `${totalHeightPx}px` }}
+            data-calendar-body
           >
             {hourBoundaries.map((boundary) => (
               <div
                 key={boundary.id}
                 className="absolute left-0 right-0 border-t border-gray-100"
-                style={{ top: `${boundary.top}px` }}
+                data-boundary-id={boundary.id}
               />
             ))}
 
             {events.map((event) => {
               const style = eventStyle(event);
-              const durationMinutes = event.end - event.start;
               const className = cn(
                 "absolute min-w-0 rounded-lg bg-blue-500 px-3 pt-1.5 pb-1 text-left text-xs leading-tight text-white shadow-sm",
                 style.isOverlay && "border border-white",
                 "flex items-start",
               );
+              const isNotesEvent = event.id === "notes";
+
+              if (isNotesEvent) {
+                return (
+                  <CalendarPopover
+                    key={event.id}
+                    event={event}
+                    className={className}
+                  />
+                );
+              }
 
               return (
-                <div
-                  key={event.id}
-                  className={className}
-                  style={{
-                    top: style.top,
-                    height: style.height,
-                    width: style.width,
-                    left: style.left,
-                    zIndex: style.zIndex,
-                  }}
-                >
+                <div key={event.id} className={className} data-event-id={event.id}>
                   <span className="min-w-0 truncate font-semibold">
                     {event.title}
                   </span>
@@ -144,6 +157,7 @@ export function Calendar({ day, className }: CalendarProps) {
           </div>
         </div>
       </div>
+      <style>{calendarStyles}</style>
     </div>
   );
 }
@@ -156,7 +170,7 @@ export const dealReviewCalendar: CalendarDay = {
   events: [
     {
       id: "review",
-      title: "Pipeline review",
+      title: "Pipeline review with Chris",
       start: 10 * 60 + 30,
       end: 11 * 60 + 20,
     },

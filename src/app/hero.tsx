@@ -29,7 +29,7 @@ export function Hero() {
             <span className="bg-[#ffffcc] px-1">
               get millions in easy revenue
             </span>{" "}
-            by seeing the nitty gritty of each deal
+            with better pipeline review meetings
           </h2>
 
           <div className={newLocal}>
