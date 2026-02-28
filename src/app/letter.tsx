@@ -31,8 +31,8 @@ export function Letter() {
                 You can't just ask, "Is this deal real?" You need something
                 specific like,{" "}
                 <i>
-                  "I wonder why the champion hasn't logged into his sandbox for
-                  two weeks"
+                  "I wonder why the champion hasn't logged into their sandbox
+                  for two weeks"
                 </i>
               </p>
 
@@ -52,7 +52,7 @@ export function Letter() {
               <p>Not anymore</p>
 
               <p>
-                Overbase gives you in-depth intelligence about every deal
+                Overbase gives Sales Managers intelligence about every deal,
                 packaged up for your pipeline review meetings
               </p>
 
