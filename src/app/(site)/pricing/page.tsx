@@ -4,7 +4,7 @@ import FAQ from "./faq";
 
 export default function PricingPage() {
   return (
-    <div className="min-h-screen bg-surface">
+    <div>
       <Pricing />
       <Tiers />
       <FAQ />

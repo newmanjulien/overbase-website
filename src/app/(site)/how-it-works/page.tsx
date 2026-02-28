@@ -1,10 +1,10 @@
 import HowItWorksHero from "./hero";
-import HowItWorksSections from "./how";
+import HowItWorksSections from "./how-it-works";
 
 export default function HowItWorksPage() {
   return (
-    <div className="min-h-screen bg-surface">
-      <main className="pb-12">
+    <div>
+      <main>
         <HowItWorksHero />
         <HowItWorksSections />
       </main>

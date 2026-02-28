@@ -2,16 +2,16 @@
 
 export function Letter() {
   return (
-    <section className="pb-22 px-6 md:px-12 lg:px-24 bg-surface">
+    <section className="pb-22 px-6 md:px-12 lg:px-24 bg-white">
       <div className="max-w-3xl mx-auto scale-[0.95]">
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
           {/* Background papers – stack effect */}
-          <div className="absolute inset-0 bg-surface rounded-lg shadow-xs transform -rotate-[1.5deg] scale-[1.02] translate-x-1.5 translate-y-1 border border-gray-200/60"></div>
+          <div className="absolute inset-0 bg-white rounded-lg shadow-xs transform -rotate-[1.5deg] scale-[1.02] translate-x-1.5 translate-y-1 border border-gray-200/60"></div>
           <div className="absolute inset-0 bg-gray-50 rounded-lg transform rotate-[1deg] scale-[1.008] -translate-x-0.5 translate-y-0.5 border border-gray-200/60"></div>
 
           {/* Main letter */}
-          <div className="relative bg-surface rounded-lg shadow-xs p-7 md:p-11 border border-gray-200/60 z-10">
+          <div className="relative bg-white rounded-lg shadow-xs p-7 md:p-11 border border-gray-200/60 z-10">
             <div className="mb-5">
               <div className="text-lg text-gray-900 font-semibold">
                 Introducing Overbase

@@ -13,7 +13,6 @@ interface BaseHeaderProps {
   logoSrc?: string; // optional custom logo
   logoHref?: string;
   onLogoClick?: () => void;
-  background?: "surface" | "tinted";
   className?: string;
 }
 
@@ -21,16 +20,20 @@ export function Header({
   logoSrc,
   logoHref = "/",
   onLogoClick,
-  background = "surface",
   className,
 }: BaseHeaderProps) {
-  const pathname = usePathname();
+  const pathname = usePathname() ?? "";
+  const isTinted =
+    pathname === "/" || pathname === "/legal" || pathname.startsWith("/legal/");
   const isActive = (href: string) =>
     pathname === href || pathname?.startsWith(`${href}/`);
 
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
-    if (background !== "tinted") return;
+    if (!isTinted) {
+      setIsScrolled(false);
+      return;
+    }
 
     const update = () => {
       setIsScrolled(window.scrollY > 0);
@@ -39,7 +42,7 @@ export function Header({
     update();
     window.addEventListener("scroll", update, { passive: true });
     return () => window.removeEventListener("scroll", update);
-  }, [background]);
+  }, [isTinted]);
 
   const navItems = [
     { id: "how-it-works", href: "/how-it-works", label: "How it works" },
@@ -49,7 +52,7 @@ export function Header({
   const activeId = navItems.find((item) => isActive(item.href))?.id ?? null;
 
   const backgroundClass =
-    background === "tinted" && !isScrolled ? "bg-[#f9f9f9]" : "bg-surface";
+    isTinted && !isScrolled ? "bg-[#f9f9f9]" : "bg-white";
 
   return (
     <header

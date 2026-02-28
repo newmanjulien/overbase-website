@@ -16,11 +16,11 @@ export function Hero() {
   const newLocal =
     "mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start";
   return (
-    <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-20 pb-18 bg-surface">
+    <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-20 pb-18 bg-white">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
-          <h1 className="max-w-lg text-[47px] text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
+          <h1 className="max-w-lg text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
             Deal visibility for pipeline review
           </h1>
 
@@ -48,7 +48,7 @@ export function Hero() {
               className="w-full max-w-lg p-6 text-base rounded-lg sm:w-auto"
               asChild
             >
-              <Link href="/waitlist">Demo with our CEO</Link>
+              <Link href="https://cal.com/juliennewman">Demo with our CEO</Link>
             </Button>
           </div>
         </div>
