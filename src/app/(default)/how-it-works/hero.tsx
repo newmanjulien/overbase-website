@@ -7,8 +7,7 @@ export default function HowItWorksHero() {
       <Hero
         title={
           <>
-            Deal intelligence from a <span className="italic">human</span> data
-            scientist
+            Insight from a <span className="italic">human</span> data scientist
           </>
         }
         titleMaxWidthClass="max-w-lg"

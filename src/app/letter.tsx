@@ -52,8 +52,8 @@ export function Letter() {
               <p>Not anymore</p>
 
               <p>
-                Overbase gives Sales Managers intelligence about deals, packaged
-                up for your pipeline review meetings
+                Overbase gives Sales Managers insight and visibility into each
+                rep's deals, packaged up for your pipeline review meetings
               </p>
 
               <p>

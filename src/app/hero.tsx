@@ -21,7 +21,7 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-lg text-[47px] text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Deal intelligence for pipeline review
+            Deal visibility for pipeline review
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">

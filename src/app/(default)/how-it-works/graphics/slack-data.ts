@@ -11,7 +11,7 @@ export const slackExample: SlackExample = {
         userName: "Howard @ Overbase",
         avatarUrl: "/analyst.jpg",
         paragraphs: [
-          "Hey Rob. We're preparing the deal intelligence Laura needs for her pipeline review meeting with you",
+          "Hey Rob. We're preparing the deal report Laura needs for her pipeline review meeting with you",
           "I'm wondering about the dynamics between the economic buyer and the champion in the Acme deal (eg. what's happening in the background)",
           "Could you ask a question about this on your call with the Acme team tomorrow? I would prepare notes to make it easy",
         ],
