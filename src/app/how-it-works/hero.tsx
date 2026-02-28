@@ -26,9 +26,9 @@ export default function HowItWorksHero() {
                 and at your fingertips for pipeline review meetings
               </p>
               <p>
-                A human data scientist does an audit. Then puts everything you
-                need in a calendar invite which sits beside your pipeline review
-                meetings
+                A human data scientist audits every angle. Then puts everything
+                you need in a calendar invite which sits beside your pipeline
+                review meetings
               </p>
             </div>
           </div>

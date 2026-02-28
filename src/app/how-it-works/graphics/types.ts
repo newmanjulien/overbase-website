@@ -64,7 +64,7 @@ export type SlackThread = {
   composerPlaceholder: string;
 };
 
-export type SlackMessageExample = {
+export type SlackExample = {
   id: string;
   threads: SlackThread[];
 };

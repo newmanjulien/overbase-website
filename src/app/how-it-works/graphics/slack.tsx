@@ -21,7 +21,7 @@ import {
 import { cn } from "@/components/ui/utils";
 import type { SlackThread } from "./types";
 
-type SlackMessageProps = {
+type SlackProps = {
   threads: SlackThread[];
   className?: string;
   id?: string;
@@ -29,11 +29,11 @@ type SlackMessageProps = {
 
 const toolbarIconClass = "h-4 w-4 text-gray-600";
 
-export function SlackMessagePreview({
+export function SlackPreview({
   threads,
   className,
   id,
-}: SlackMessageProps) {
+}: SlackProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const thread = threads[activeIndex] ?? threads[0];
 
@@ -60,7 +60,7 @@ export function SlackMessagePreview({
       <button
         type="button"
         onClick={handleRefresh}
-        aria-label="Refresh message example"
+        aria-label="Refresh slack example"
         disabled={!canCycle}
         className={cn(
           "absolute right-4 top-4 z-20 flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 shadow-sm transition hover:border-gray-300 hover:text-gray-700",

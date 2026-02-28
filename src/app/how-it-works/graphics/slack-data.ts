@@ -1,7 +1,7 @@
-import type { SlackMessageExample } from "./types";
+import type { SlackExample } from "./types";
 
-export const slackMessageExample: SlackMessageExample = {
-  id: "how-it-works-slack-message",
+export const slackExample: SlackExample = {
+  id: "how-it-works-slack",
   threads: [
     {
       id: "slack-thread-1",
@@ -46,7 +46,7 @@ export const slackMessageExample: SlackMessageExample = {
         paragraphs: [
           "There are a couple of deals with potentially missing data which I put in Laura's list for your pipeline review meeting",
           "Do you want me to send you a summary? (no sweat either way)",
-          "If you have the data, you could just tell me and I'd update the CRM for you. Otherwise, I'm not sure when Laura will ask about but I assume it might be useful to have the same list as Laura when you prep for the meeting",
+          "If you have the data, you could just tell me and I'd update the CRM for you. Otherwise, I assume it might be useful to have the same list as Laura when you prep for the meeting",
         ],
       },
       composerPlaceholder: "Message Howard",
