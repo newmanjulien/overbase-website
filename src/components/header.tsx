@@ -10,21 +10,41 @@ import { cn } from "@/components/ui/utils";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
-  logoSrc?: string; // optional custom logo
+  logoSrc: string;
   logoHref?: string;
   onLogoClick?: () => void;
+  navItems: HeaderNavItem[];
+  tintedPaths: TintedPaths;
+  logoWidth?: number;
+  logoHeight?: number;
   className?: string;
+}
+
+interface HeaderNavItem {
+  id: string;
+  href: string;
+  label: string;
+}
+
+interface TintedPaths {
+  exact: string[];
+  prefix: string[];
 }
 
 export function Header({
   logoSrc,
   logoHref = "/",
   onLogoClick,
+  navItems,
+  tintedPaths,
+  logoWidth = 50,
+  logoHeight = 32,
   className,
 }: BaseHeaderProps) {
   const pathname = usePathname() ?? "";
   const isTinted =
-    pathname === "/" || pathname === "/legal" || pathname.startsWith("/legal/");
+    tintedPaths.exact.includes(pathname) ||
+    tintedPaths.prefix.some((prefix) => pathname.startsWith(prefix));
   const isActive = (href: string) =>
     pathname === href || pathname?.startsWith(`${href}/`);
 
@@ -44,15 +64,9 @@ export function Header({
     return () => window.removeEventListener("scroll", update);
   }, [isTinted]);
 
-  const navItems = [
-    { id: "how-it-works", href: "/how-it-works", label: "How it works" },
-    { id: "pricing", href: "/pricing", label: "Pricing" },
-  ];
-
   const activeId = navItems.find((item) => isActive(item.href))?.id ?? null;
 
-  const backgroundClass =
-    isTinted && !isScrolled ? "bg-[#f9f9f9]" : "bg-white";
+  const backgroundClass = isTinted && !isScrolled ? "bg-[#f9f9f9]" : "bg-white";
 
   return (
     <header
@@ -70,8 +84,8 @@ export function Header({
               <Image
                 src={logoSrc ?? "/logo.png"}
                 alt="Logo"
-                width={50}
-                height={32}
+                width={logoWidth}
+                height={logoHeight}
                 className="object-contain"
                 priority
               />
@@ -86,8 +100,8 @@ export function Header({
               <Image
                 src={logoSrc ?? "/logo.png"}
                 alt="Logo"
-                width={50}
-                height={32}
+                width={logoWidth}
+                height={logoHeight}
                 className="object-contain"
                 priority
               />
