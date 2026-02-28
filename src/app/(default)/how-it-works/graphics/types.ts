@@ -20,7 +20,7 @@ export type QuadrantPoint = {
   label: string;
   x: number;
   y: number;
-  description?: string;
+  description: string;
 };
 
 export type QuadrantChartData = {
