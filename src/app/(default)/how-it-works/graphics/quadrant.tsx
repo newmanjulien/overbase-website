@@ -4,6 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { getInnerSize } from "@/lib/chart-layout";
 import { linearScale, ticksLinear } from "@/lib/chart-scales";
 
+import { QuadrantAxes } from "./quadrant-axes";
+import { QuadrantPoints } from "./quadrant-points";
 import { QuadrantTooltip } from "./quadrant-tooltip";
 import type { QuadrantChartData, QuadrantPoint } from "./types";
 
@@ -71,25 +73,6 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
     });
   }, [defaultPoint?.id, hasInteracted, inner.height, inner.width]);
 
-  const getPointColor = (point: QuadrantPoint) => {
-    const isRight = point.x >= chart.xMid;
-    const isTop = point.y >= chart.yMid;
-    const delta = point.y - point.x;
-    const isDisagreement = Math.abs(delta) > DISAGREE_THRESHOLD;
-
-    // If the point isn't in the green/red quadrants but the forecasts disagree,
-    // color by direction of disagreement (green = Overbase higher, red = lower).
-    if (isDisagreement && ((isTop && isRight) || (!isTop && !isRight))) {
-      return delta > 0 ? "#86efac" : "#fca5a5";
-    }
-
-    // Otherwise color by quadrant.
-    if (isTop && isRight) return "#111827";
-    if (isTop && !isRight) return "#16a34a";
-    if (!isTop && isRight) return "#dc2626";
-    return "#9ca3af";
-  };
-
   return (
     <div className="relative mt-5 w-full rounded-xl border border-gray-100 bg-white p-4">
       <svg
@@ -111,132 +94,33 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
           setHoverBounds(null);
         }}
       >
-        {ticks.map((tick) => {
-          const x = xForValue(tick);
-          const y = yForValue(tick);
-          return (
-            <g key={tick}>
-              <line
-                x1={CHART_PADDING.left}
-                x2={CHART_PADDING.left + inner.width}
-                y1={y}
-                y2={y}
-                stroke="#f3f4f6"
-              />
-              <line
-                x1={x}
-                x2={x}
-                y1={CHART_PADDING.top}
-                y2={CHART_PADDING.top + inner.height}
-                stroke="#f5f5f5"
-              />
-              <text
-                x={CHART_PADDING.left - 12}
-                y={y + 4}
-                textAnchor="end"
-                fontSize="12"
-                fill="currentColor"
-              >
-                {tick}%
-              </text>
-              <text
-                x={x}
-                y={CHART_PADDING.top + inner.height + 22}
-                textAnchor="middle"
-                fontSize="12"
-                fill="currentColor"
-              >
-                {tick}%
-              </text>
-            </g>
-          );
-        })}
-
-        <line
-          x1={xForValue(chart.xMid)}
-          x2={xForValue(chart.xMid)}
-          y1={CHART_PADDING.top}
-          y2={CHART_PADDING.top + inner.height}
-          stroke="#d1d5db"
-          strokeWidth={1.5}
-        />
-        <line
-          x1={CHART_PADDING.left}
-          x2={CHART_PADDING.left + inner.width}
-          y1={yForValue(chart.yMid)}
-          y2={yForValue(chart.yMid)}
-          stroke="#d1d5db"
-          strokeWidth={1.5}
+        <QuadrantAxes
+          chart={chart}
+          ticks={ticks}
+          xForValue={xForValue}
+          yForValue={yForValue}
+          inner={inner}
+          padding={CHART_PADDING}
+          axisLabelOffset={AXIS_LABEL_OFFSET}
         />
 
-        {chart.points.map((point) => {
-          const isNearRightEdge = point.x > 78;
-          const labelOffset = isNearRightEdge ? -8 : 8;
-          const labelAnchor = isNearRightEdge ? "end" : "start";
+        <QuadrantPoints
+          points={chart.points}
+          xMid={chart.xMid}
+          yMid={chart.yMid}
+          disagreeThreshold={DISAGREE_THRESHOLD}
+          xForValue={xForValue}
+          yForValue={yForValue}
+          onHover={(point, position, bounds) => {
+            setHoveredPoint(point);
+            setHoverPosition(position);
+            setHoverBounds(bounds);
+          }}
+          onMove={(position) => {
+            setHoverPosition(position);
+          }}
+        />
 
-          return (
-            <g
-              key={point.id}
-              onMouseEnter={(event) => {
-                const rect = event.currentTarget.ownerSVGElement?.getBoundingClientRect();
-                if (!rect) return;
-                setHoveredPoint(point);
-                setHoverPosition({
-                  x: event.clientX - rect.left,
-                  y: event.clientY - rect.top,
-                });
-                setHoverBounds({ width: rect.width, height: rect.height });
-              }}
-              onMouseMove={(event) => {
-                const rect = event.currentTarget.ownerSVGElement?.getBoundingClientRect();
-                if (!rect) return;
-                setHoverPosition({
-                  x: event.clientX - rect.left,
-                  y: event.clientY - rect.top,
-                });
-              }}
-            >
-              <circle
-                cx={xForValue(point.x)}
-                cy={yForValue(point.y)}
-                r={6}
-                fill={getPointColor(point)}
-                fillOpacity={0.85}
-              />
-              <text
-                x={xForValue(point.x) + labelOffset}
-                y={yForValue(point.y) + 4}
-                textAnchor={labelAnchor}
-                fontSize="12"
-                fill="#6b7280"
-              >
-                {point.label}
-              </text>
-            </g>
-          );
-        })}
-
-        <text
-          x={CHART_PADDING.left - AXIS_LABEL_OFFSET.x}
-          y={CHART_PADDING.top + inner.height / 2}
-          textAnchor="middle"
-          fontSize="12"
-          fill="currentColor"
-          transform={`rotate(-90 ${CHART_PADDING.left - AXIS_LABEL_OFFSET.x} ${
-            CHART_PADDING.top + inner.height / 2
-          })`}
-        >
-          {chart.yLabel}
-        </text>
-        <text
-          x={CHART_PADDING.left + inner.width / 2}
-          y={CHART_PADDING.top + inner.height + AXIS_LABEL_OFFSET.y}
-          textAnchor="middle"
-          fontSize="12"
-          fill="currentColor"
-        >
-          {chart.xLabel}
-        </text>
       </svg>
 
       <QuadrantTooltip
