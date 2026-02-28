@@ -19,8 +19,8 @@ export function Signals({
     >
       {signals.map((signal) => (
         <div key={signal.id} className="group w-full px-6 py-5">
-          <h3 className="text-sm text-gray-900">{signal.title}</h3>
-          <p className="mt-2 text-xs text-gray-400">{signal.summary}</p>
+          <h3 className="text-[15px] text-gray-900">{signal.title}</h3>
+          <p className="mt-2 text-[13px] text-gray-400">{signal.summary}</p>
           <div className="mt-3 flex flex-wrap items-center gap-2 text-xs text-gray-500">
             <div className="flex items-center -space-x-2">
               {signal.sources.map((source) => (
