@@ -1,7 +1,9 @@
+"use client";
+
 import type { ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
-import HeroCta from "@/components/hero-cta";
+import { Button } from "@/components/ui/button";
 
 type HeroProps = {
   title: ReactNode;
@@ -30,7 +32,16 @@ export default function Hero({
           </h1>
           {cta ? (
             <div className="pt-2">
-              <HeroCta label={cta.label} targetId={cta.targetId} />
+              <Button
+                className="bg-gray-100 hover:bg-gray-200/50 text-gray-900 rounded-full px-3 py-1 cursor-pointer"
+                onClick={() => {
+                  document
+                    .getElementById(cta.targetId)
+                    ?.scrollIntoView({ behavior: "smooth" });
+                }}
+              >
+                {cta.label}
+              </Button>
             </div>
           ) : null}
         </div>

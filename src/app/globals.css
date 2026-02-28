@@ -108,6 +108,14 @@
   }
 }
 
+@layer components {
+  .nav-indicator {
+    left: var(--nav-indicator-left, 0px);
+    width: var(--nav-indicator-width, 0px);
+    opacity: var(--nav-indicator-opacity, 0);
+  }
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

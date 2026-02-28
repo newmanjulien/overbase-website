@@ -1,7 +1,7 @@
 "use client";
 
-import { TableOfContents } from "@/components/table-of-contents";
-import { LegalBreadcrumb } from "@/components/legal-breadcrumb";
+import { TableOfContents } from "@/components/layouts/table-of-contents";
+import { LegalBreadcrumb } from "@/components/layouts/legal-breadcrumb";
 
 export interface LegalSection {
   id: string;

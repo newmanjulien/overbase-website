@@ -38,8 +38,8 @@ export function Letter() {
 
               <p>
                 Asking questions rooted in an understanding of each deal is how
-                you help reps win more deals - and it's how you get your team to
-                make quota
+                you help reps win more deals. And it's one of the best ways to
+                get your team to make quota
               </p>
 
               <p>
@@ -52,8 +52,8 @@ export function Letter() {
               <p>Not anymore</p>
 
               <p>
-                Overbase gives Sales Managers intelligence about every deal,
-                packaged up for your pipeline review meetings
+                Overbase gives Sales Managers intelligence about deals, packaged
+                up for your pipeline review meetings
               </p>
 
               <p>

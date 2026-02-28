@@ -3,9 +3,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useCallback, useEffect, useLayoutEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { HotkeyButton } from "@/components/hotkey-button";
-import { Button } from "@/components/ui/button";
+import { HeaderNav } from "@/components/header-nav";
 import { cn } from "@/components/ui/utils";
 
 // --- Base props shared by all pages ---
@@ -46,50 +46,7 @@ export function Header({
     { id: "pricing", href: "/pricing", label: "Pricing" },
   ];
 
-  const activeId =
-    navItems.find((item) => isActive(item.href))?.id ?? null;
-  const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const [indicator, setIndicator] = useState<{
-    left: number;
-    width: number;
-    opacity: number;
-  }>({ left: 0, width: 0, opacity: 0 });
-  const navRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<Record<string, HTMLSpanElement | null>>({});
-
-  const updateIndicator = useCallback((id: string | null) => {
-    const container = navRef.current;
-    if (!container || !id) {
-      setIndicator((prev) => ({ ...prev, opacity: 0 }));
-      return;
-    }
-    const el = itemRefs.current[id];
-    if (!el) {
-      setIndicator((prev) => ({ ...prev, opacity: 0 }));
-      return;
-    }
-
-    const containerRect = container.getBoundingClientRect();
-    const rect = el.getBoundingClientRect();
-    setIndicator({
-      left: rect.left - containerRect.left,
-      width: rect.width,
-      opacity: 1,
-    });
-  }, []);
-
-  useLayoutEffect(() => {
-    updateIndicator(hoveredId ?? activeId);
-  }, [activeId, hoveredId, updateIndicator]);
-
-  useLayoutEffect(() => {
-    if (!navRef.current) return;
-    const ro = new ResizeObserver(() => {
-      updateIndicator(hoveredId ?? activeId);
-    });
-    ro.observe(navRef.current);
-    return () => ro.disconnect();
-  }, [activeId, hoveredId, updateIndicator]);
+  const activeId = navItems.find((item) => isActive(item.href))?.id ?? null;
 
   const backgroundClass =
     background === "tinted" && !isScrolled ? "bg-[#f9f9f9]" : "bg-surface";
@@ -134,52 +91,7 @@ export function Header({
             </div>
           )}
 
-          {/* Center nav */}
-          <div
-            ref={navRef}
-            className="absolute left-1/2 -translate-x-1/2 flex items-center justify-center gap-2"
-            onMouseLeave={() => setHoveredId(null)}
-          >
-            <span
-              aria-hidden="true"
-              className="pointer-events-none absolute top-1/2 -translate-y-1/2 h-8 rounded-sm bg-gray-200/40 transition-[left,width,opacity] duration-200 ease-out"
-              style={{
-                left: indicator.left,
-                width: indicator.width,
-                opacity: indicator.opacity,
-              }}
-            />
-            {navItems.map((item) => {
-              const active = activeId === item.id;
-              return (
-                <span
-                  key={item.id}
-                  ref={(el) => {
-                    itemRefs.current[item.id] = el;
-                  }}
-                  onMouseEnter={() => setHoveredId(item.id)}
-                  className="relative z-10 inline-flex"
-                >
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className={cn(
-                      "rounded-sm text-sm scale-[0.92] text-secondary-foreground hover:bg-transparent",
-                      active && "text-accent-foreground",
-                    )}
-                    asChild
-                  >
-                    <Link
-                      href={item.href}
-                      aria-current={active ? "page" : undefined}
-                    >
-                      {item.label}
-                    </Link>
-                  </Button>
-                </span>
-              );
-            })}
-          </div>
+          <HeaderNav items={navItems} activeId={activeId} />
 
           {/* Right side buttons */}
           <div className="flex items-center justify-end">
