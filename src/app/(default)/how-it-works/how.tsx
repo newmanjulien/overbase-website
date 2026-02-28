@@ -101,9 +101,9 @@ export default function HowItWorksSections() {
         <div className="pt-6">
           <HowItWorksSection
             step="03"
-            title="Calculate which deals are actually likely to close"
+            title="Recalculate which deals are likely to close"
             description={[
-              "Our in-depth audit lets us recalculate how likely it is that each deal will close",
+              "This in-depth audit lets us recalculate how likely it is that each deal will close",
               "Comparing the rep's calculation with ours reveals hidden opportunities",
             ]}
             reverse

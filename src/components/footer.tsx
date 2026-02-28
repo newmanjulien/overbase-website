@@ -25,34 +25,6 @@ export function Footer() {
                   type="button"
                   className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 inline-flex items-center gap-1"
                 >
-                  Blog
-                  <ChevronDown className="size-4" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" sideOffset={8}>
-                <DropdownMenuItem asChild className="cursor-pointer">
-                  <a href="/blog/decentralized-data" className="w-full">
-                    Decentralized Data
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="cursor-pointer">
-                  <a href="/blog/new-talent-strategy" className="w-full">
-                    New Talent Strategy
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="cursor-pointer">
-                  <a href="/blog/ai-game" className="w-full">
-                    AI Game
-                  </a>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button
-                  type="button"
-                  className="text-sm text-gray-500 hover:text-gray-900 transition-colors duration-200 inline-flex items-center gap-1"
-                >
                   Legal
                   <ChevronDown className="size-4" />
                 </button>
