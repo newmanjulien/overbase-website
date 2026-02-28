@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { ChartTooltip } from "@/components/ui/chart-tooltip";
 import { getInnerSize } from "@/lib/chart-layout";
 import { linearScale, ticksLinear } from "@/lib/chart-scales";
 
+import { QuadrantTooltip } from "./quadrant-tooltip";
 import type { QuadrantChartData, QuadrantPoint } from "./types";
 
 const CHART_DIMENSIONS = {
@@ -239,29 +239,12 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
         </text>
       </svg>
 
-      {hoveredPoint && hoverPosition && hoverBounds && (
-        <ChartTooltip
-          title={`${hoveredPoint.label} deal`}
-          rows={[
-            { label: "Current", value: `${hoveredPoint.x}%` },
-            { label: "Overbase", value: `${hoveredPoint.y}%` },
-            {
-              label: "Gap",
-              value: `${hoveredPoint.y - hoveredPoint.x >= 0 ? "+" : ""}${hoveredPoint.y - hoveredPoint.x} pts`,
-            },
-          ]}
-          body={(() => {
-            const delta = hoveredPoint.y - hoveredPoint.x;
-            const absDelta = Math.abs(delta);
-            if (absDelta <= DISAGREE_THRESHOLD) return undefined;
-            return hoveredPoint.description;
-          })()}
-          position={hoverPosition}
-          bounds={hoverBounds}
-          offset={{ x: 12, y: -92 }}
-          width={320}
-        />
-      )}
+      <QuadrantTooltip
+        hoveredPoint={hoveredPoint}
+        hoverPosition={hoverPosition}
+        hoverBounds={hoverBounds}
+        disagreeThreshold={DISAGREE_THRESHOLD}
+      />
     </div>
   );
 }

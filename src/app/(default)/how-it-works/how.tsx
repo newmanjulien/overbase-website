@@ -70,7 +70,7 @@ export default function HowItWorksSections() {
         <div className="pt-22">
           <HowItWorksSection
             step="01"
-            title="In-depth audit of all the data from all your deals"
+            title="A human data scientist audits every angle"
             description={[
               "A human data scientist audits every angle of each deal your reps are working on",
               "We review sales calls, read emails with prospects, look at Docusign, investigate demo usage metrics, etc.",
