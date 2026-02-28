@@ -18,8 +18,8 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Get in-depth insight about every deal conveniently packaged up
-                and at your fingertips for pipeline review meetings
+                Get insight about each deal conveniently packaged up and at your
+                fingertips for your pipeline review meetings
               </p>
               <p>
                 A human data scientist audits every angle. Then puts everything
