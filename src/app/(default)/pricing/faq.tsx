@@ -21,7 +21,7 @@ export default function FAQ() {
           {[
             {
               q: "Will you really help us get millions of dollars?",
-              a: "Yes. If you're not sure, sign up for the 8% pricing tier where you pay nothing until you realize the revenue. The 8% tier lets your reps and managers decide what revenue to attribute to Overbase",
+              a: "Yes. If you're not sure, sign up for the 6% pricing tier where you pay nothing until you realize the revenue. The 6% tier lets your reps and managers decide what revenue to attribute to Overbase",
             },
             {
               q: "Is Overbase a human service?",
@@ -36,8 +36,8 @@ export default function FAQ() {
               a: "Overbase never stores any of your data longer than 30 days. And all data access requires human intervention which makes Overbase safer than automated data solutions. We also only access lower risk data about prospective customers",
             },
             {
-              q: "How does attribution work for the 8% tier?",
-              a: "Your reps and managers decide what to attribute. The 8% tier is the best way to align incentives so we get paid when you get paid. It also means you only pay after you realize the revenue. But Overbase lets you get so much extra revenue that 8% ends up being a lot more than the per rep fee",
+              q: "How does attribution work for the 6% tier?",
+              a: "Your reps and managers decide what to attribute. The 6% tier is the best way to align incentives so we get paid when you get paid. It also means you only pay after you realize the revenue. But Overbase lets you get so much extra revenue that 6% ends up being a lot more than the per rep fee",
             },
           ].map((item, i) => (
             <AccordionItem
