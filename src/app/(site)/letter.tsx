@@ -38,8 +38,8 @@ export function Letter() {
 
               <p>
                 Asking questions rooted in an understanding of each deal is how
-                you help reps win more deals. And it's one of the best ways to
-                get your team to make quota
+                Sales Managers help reps win more deals. And it's one of the
+                best ways to get more revenue
               </p>
 
               <p>
@@ -52,20 +52,20 @@ export function Letter() {
               <p>Not anymore</p>
 
               <p>
-                Overbase gives Sales Managers insight and visibility into each
-                rep's deals, packaged up for your pipeline review meetings
+                Overbase is a data analysis service that lets Sales Managers
+                easily run pipeline review meetings that get more revenue
               </p>
 
               <p>
-                A human data scientist audits every angle: reviews sales calls,
-                reads emails with prospects, looks at Docusign, investigates
-                demo usage metrics, etc. This data scientist also collaborates
-                with your reps to ask buyers the right questions and collect
-                missing information
+                A human data scientist audits every angle of every deal your rep
+                is working. We review sales calls, read emails with prospects,
+                look at Docusign, investigate demo usage, etc. We also
+                collaborate with reps to ask buyers questions ahead of your
+                meeting when there's important information missing
               </p>
 
               <p>
-                Then we give you the information you need to easily see the real
+                Then we package up the information you need to easily see
                 opportunities, ask the right questions, win more deals and get
                 millions in easy revenue
               </p>
