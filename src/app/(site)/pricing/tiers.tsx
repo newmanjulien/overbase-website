@@ -28,7 +28,7 @@ const PLANS: Plan[] = [
     name: "Percent",
     price: "6%",
     description:
-      "Aligns incentives but costs more since we let you get millions in extra revenue",
+      "Align incentives but pay more since we get you millions in extra revenue every quarter",
     subtext:
       "Of revenue attributed to Overbase by your reps and managers. Available with two year subscription",
     valueLabel: "More aligned",

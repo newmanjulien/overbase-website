@@ -29,7 +29,7 @@ export default function FAQ() {
             },
             {
               q: "Who is the data scientist that works for me?",
-              a: "A graduate from one of the world's most selective schools. Overbase recruits the smartest students from the best schools in the world. We leverage our CEO's teaching role at Princeton to get access to talent which is out of reach to others",
+              a: "A graduate from one of the world's most selective schools. Overbase recruits the smartest students from the best schools. We leverage our CEO's teaching role at Princeton to access talent that's out of reach to others",
             },
             {
               q: "Why is Overbase so much more secure than alternatives?",
