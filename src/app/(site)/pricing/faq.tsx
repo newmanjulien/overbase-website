@@ -25,7 +25,7 @@ export default function FAQ() {
             },
             {
               q: "What's the role of AI in your service?",
-              a: "Our data scientists use the most advanced AI to dig deeper than any software or human could alone. Overbase builds specialized AI tools designed specifically for analyzing sales deals",
+              a: "Our data scientists use specialized AI tools to dig deeper than any software or human could alone. Overbase builds custom AI tools for analyzing sales deals and for forecasting revenue",
             },
             {
               q: "Why is Overbase so secure?",
