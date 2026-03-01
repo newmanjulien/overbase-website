@@ -23,8 +23,8 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 The hardest part of deal review meetings isn't the meeting
-                itself. It's the investigative hours you spend before the rep
-                even walks into the room.
+                itself. It's the investigative hours sales managers spend before
+                the rep even walks into the room.
               </p>
 
               <p>
@@ -38,16 +38,15 @@ export function Letter() {
               </p>
 
               <p>
-                Asking questions rooted in an understanding of each deal is how
-                sales managers help reps win more deals. And it's one of the
-                fastest ways to drive sales.
+                Deals close faster when managers have a clear read on every
+                rep’s pipeline. But understanding one single deal can take
+                hours. Multiply that by 20 deals and 8 reps, and you're working
+                a second full-time job.
               </p>
 
               <p>
-                But finding one fact can take forty minutes of digging. Multiply
-                that by 20 deals and 8 reps, and you're working a second
-                full-time job. Which is why most sales managers cut corners -
-                and easy revenue gets left on the table.
+                Which is why most sales managers have to cut corners. And why
+                easy revenue gets left on the table.
               </p>
 
               <p>Not anymore.</p>

@@ -29,7 +29,7 @@ export default function FAQ() {
             },
             {
               q: "Why is Overbase so secure?",
-              a: "We never store your data for more than 30 days and all access requires human approval. Which makes Overbase safer than fully automated solutions. We also only use low-risk data about prospective customers",
+              a: "We never store your data for more than 30 days and all access requires human approval. This makes Overbase safer than fully automated solutions. We also only use low-risk data about prospective customers",
             },
             {
               q: "How does attribution work for the 3% tier?",

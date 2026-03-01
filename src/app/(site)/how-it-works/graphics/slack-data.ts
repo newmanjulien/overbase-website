@@ -12,7 +12,7 @@ export const slackExample: SlackExample = {
         avatarUrl: "/analyst.jpg",
         paragraphs: [
           "Hey Chris. We're preparing the deal report Laura needs for her deal review meeting with you",
-          "I'm wondering about the dynamics between the economic buyer and the champion in the Acme deal (eg. what's happening in the background)",
+          "I'm wondering about the dynamics between the economic buyer and the champion in the Acme deal (e.g., what's happening in the background)",
           "Could you ask a question about this on your call with the Acme team tomorrow? I would prepare notes to make it easy",
         ],
       },
@@ -26,9 +26,9 @@ export const slackExample: SlackExample = {
         userName: "Howard @ Overbase",
         avatarUrl: "/analyst.jpg",
         paragraphs: [
-          "I couldn't find any engagement from Acme in the past 2 weeks. And also from Whirlpool",
-          "If you feel we should reach back out ahead of your deal review meeting with Laura. I could propose emails you could send to each account if that made it easier. ",
-          "Or if there's a good reason we didn't hear back which I didn't find. Let me know so I can flag it to Laura and save you guys time",
+          "I couldn't find any engagement from Acme in the past two weeks, or from Whirlpool.",
+          "If you feel we should reach back out ahead of your deal review meeting with Laura, I could propose emails you could send to each account to make it easier.",
+          "Or if there's a good reason we didn't hear back that I didn't find, let me know so I can flag it to Laura and save you guys time.",
         ],
       },
       composerPlaceholder: "Message Howard",
@@ -43,7 +43,7 @@ export const slackExample: SlackExample = {
         paragraphs: [
           "There are a couple of deals with potentially missing data which I put in Laura's list for your deal review meeting",
           "Do you want me to send you a summary?",
-          "If you have the data, you could just tell me and I would update the CRM for you. I'd also update Laura's list so she has the most up-to-date information when she prepares for your meeting. Which would help you use your time together more productively",
+          "If you have the data, you could just tell me and I would update the CRM for you. I'd also update Laura's list so she has the most up-to-date information when she prepares for your meeting. That would help you use your time together more productively.",
         ],
       },
       composerPlaceholder: "Message Howard",

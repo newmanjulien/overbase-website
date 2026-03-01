@@ -9,7 +9,7 @@ export const signalsExample: SignalsExample = {
       summary:
         "The CRM says Whirlpool's buyers logged in multiple times to their demo environment. But they actually never got past the welcome screens",
       sources: [
-        { name: "Posthog", logo: "/logos/posthog.png" },
+        { name: "PostHog", logo: "/logos/posthog.png" },
         { name: "Snowflake", logo: "/logos/snowflake.png" },
       ],
     },
@@ -30,7 +30,7 @@ export const signalsExample: SignalsExample = {
         "The manufacturing deals get signed by Directors without C-Suite involvement. But we're targeting C-Suite execs in our process which might be slowing several deals",
       sources: [
         { name: "Marketo", logo: "/logos/marketo.png" },
-        { name: "Docusign", logo: "/logos/docusign.png" },
+        { name: "DocuSign", logo: "/logos/docusign.png" },
       ],
     },
   ],

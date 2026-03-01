@@ -21,7 +21,7 @@ export function Pricing() {
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
               A data scientist examines every detail of each deal: calls,
-              emails, Docusign, demo usage, and more
+              emails, DocuSign, demo usage, and more
             </p>
 
             <p>

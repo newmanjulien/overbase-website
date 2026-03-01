@@ -13,7 +13,7 @@ export default function ConfirmationRoute() {
           We&apos;ll reach out soon
         </h1>
       }
-      description="Thank you for signing up and we look forward to collaborating soon"
+      description="Thank you for signing up. We look forward to collaborating soon."
       onLogoClick={() => router.push("/")}
       showVideoOnMobile
     />

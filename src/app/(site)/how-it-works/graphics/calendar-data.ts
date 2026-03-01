@@ -43,21 +43,21 @@ export const calendarPopoverContent = {
     {
       label: "Since last meeting",
       description:
-        "see what has happened with Chris's deals since your last deal review meeting",
+        "See what has happened with Chris's deals since your last deal review meeting",
     },
     {
       label: "Deal quadrant",
       description:
-        "focus on the right deals by seeing where Overbase disagrees with your CRM",
+        "Focus on the right deals by seeing where Overbase disagrees with your CRM",
     },
     {
       label: "Missing data and timelines",
       description:
-        "missing data and questions around timelines you may want to dig into with Chris",
+        "Missing data and questions around timelines you may want to dig into with Chris",
     },
     {
-      label: "Opportunities and risk",
-      description: "list of opportunities and risks you might help Chris with",
+      label: "Opportunities and risks",
+      description: "List of opportunities and risks you might help Chris with",
     },
   ],
 };
