@@ -147,7 +147,11 @@ export function Calendar({ day, className }: CalendarProps) {
               }
 
               return (
-                <div key={event.id} className={className} data-event-id={event.id}>
+                <div
+                  key={event.id}
+                  className={className}
+                  data-event-id={event.id}
+                >
                   <span className="min-w-0 truncate font-semibold">
                     {event.title}
                   </span>
@@ -170,7 +174,7 @@ export const dealReviewCalendar: CalendarDay = {
   events: [
     {
       id: "review",
-      title: "Pipeline review with Chris",
+      title: "Deal review with Chris",
       start: 10 * 60 + 30,
       end: 11 * 60 + 20,
     },

@@ -7,7 +7,7 @@ export default function HowItWorksHero() {
       <Hero
         title={
           <>
-            Insight from a <span className="italic">human</span> data scientist
+            Insight that drives <span className="italic">revenue</span>
           </>
         }
         titleMaxWidthClass="max-w-lg"
@@ -18,13 +18,11 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Get insight about each deal conveniently packaged up and at your
-                fingertips for your pipeline review meetings
+                Easily know how to drive more revenue at deal review meetings
               </p>
               <p>
-                A human data scientist audits every angle. Then puts everything
-                you need in a calendar invite which sits beside your pipeline
-                review meetings
+                Everything you need to know is packaged up in a calendar invite
+                that sits beside each of your deal review meetings
               </p>
             </div>
           </div>

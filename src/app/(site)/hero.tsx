@@ -21,15 +21,13 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-md text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Better pipeline review meetings
+            Deal review that{" "}
+            <span className="bg-[#ffffcc] px-1">drives revenue </span>
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase lets Sales Managers{" "}
-            <span className="bg-[#ffffcc] px-1">
-              get millions in easy revenue
-            </span>{" "}
-            with better pipeline review meetings
+            Overbase is a data analysis service that makes it easy to drive more
+            revenue at deal review meetings
           </h2>
 
           <div className={newLocal}>

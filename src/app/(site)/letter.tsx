@@ -22,7 +22,7 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The hardest part of pipeline review meetings isn't the meeting
+                The hardest part of deal review meetings isn't the meeting
                 itself. It’s the investigative hours you spend before the rep
                 even walks into the room
               </p>
@@ -39,7 +39,7 @@ export function Letter() {
               <p>
                 Asking questions rooted in an understanding of each deal is how
                 Sales Managers help reps win more deals. And it's one of the
-                best ways to get more revenue
+                best ways to drive more revenue
               </p>
 
               <p>
@@ -53,21 +53,19 @@ export function Letter() {
 
               <p>
                 Overbase is a data analysis service that lets Sales Managers
-                easily run pipeline review meetings that get more revenue
+                easily drive more revenue at deal review meetings
               </p>
 
               <p>
-                A human data scientist audits every angle of every deal your rep
-                is working. We review sales calls, read emails with prospects,
-                look at Docusign, investigate demo usage, etc. We also
-                collaborate with reps to ask buyers questions ahead of your
-                meeting when there's important information missing
+                A human data scientist audits every angle of every deal the rep
+                you're meeting is working on. We review sales calls, read emails
+                with prospects, look at Docusign, investigate demo usage, etc.
               </p>
 
               <p>
-                Then we package up the information you need to easily see
-                opportunities, ask the right questions, win more deals and get
-                millions in easy revenue
+                Then we package up the information you need to easily see all
+                the opportunities, ask the right questions and help your reps
+                win more deals
               </p>
             </div>
 

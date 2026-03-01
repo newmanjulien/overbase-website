@@ -61,8 +61,8 @@ export default function HowItWorksSections() {
           How we audit deals
         </h2>
         <p className="mt-6 text-gray-500">
-          Easily and quickly see the nitty gritty of each deal because a human
-          data scientist goes in great depth
+          A human data scientists audits every angle of each deal then
+          collaborates with your reps to gather missing information
         </p>
       </div>
 
@@ -73,7 +73,7 @@ export default function HowItWorksSections() {
             title="A human data scientist audits every angle"
             description={[
               "A human data scientist audits every angle of each deal your reps are working on",
-              "We review sales calls, read emails with prospects, look at Docusign, investigate demo usage metrics, etc.",
+              "We review sales calls, read emails with prospects, look at Docusign, investigate demo usage, etc.",
             ]}
             reverse
           >
@@ -84,7 +84,7 @@ export default function HowItWorksSections() {
         <div className="pt-10">
           <HowItWorksSection
             step="02"
-            title="Collaborate with reps to get missing information"
+            title="And collaborates with reps to get missing information"
             description={[
               "The information you need to truly understand each deal is often missing from your systems",
               "We collaborate with your reps to gather the missing details and make it simple for reps to ask buyers the right questions",
@@ -101,7 +101,7 @@ export default function HowItWorksSections() {
         <div className="pt-6">
           <HowItWorksSection
             step="03"
-            title="Recalculate which deals are likely to close"
+            title="Then recalculates which deals are likely to close"
             description={[
               "This in-depth audit lets us recalculate how likely it is that each deal will close",
               "Comparing the rep's calculation with ours reveals hidden opportunities",

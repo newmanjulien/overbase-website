@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Quickly get <span className="italic">millions</span> in easy revenue
+            Get <span className="italic">millions</span> in easy revenue
           </>
         }
       />
@@ -15,19 +15,19 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              A human data scientist using the most advanced AI
+              Get insight from a human data scientist
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get millions in easy revenue every quarter with better pipeline
-              review meetings
+              Get millions in easy revenue every quarter with deal review
+              meetings that drive more revenue
             </p>
 
             <p>
               A human data scientist audits every angle of each deal: reviews
               sales calls, reads emails with prospects, looks at Docusign,
-              investigates demo usage metrics, etc.
+              investigates demo usage, etc.
             </p>
 
             <p>
