@@ -59,10 +59,10 @@ export function Letter() {
               </p>
 
               <p>
-                A human data scientist examines every detail of each deal your
-                reps are managing: calls, emails, Docusign, demo usage, and
-                more. Then we tell you what’s happening, what’s missing, and
-                where opportunities are hidding.
+                A data scientist examines every detail of each deal your reps
+                are managing: calls, emails, Docusign, demo usage, and more.
+                Then we tell you what’s happening, what’s missing, and where
+                opportunities are hiding.
               </p>
             </div>
 

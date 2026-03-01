@@ -20,12 +20,7 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Overbase puts the information you need in a calendar invite right
-              alongside each deal review meeting
-            </p>
-
-            <p>
-              A human data scientist examines every detail of each deal: calls,
+              A data scientist examines every detail of each deal: calls,
               emails, Docusign, demo usage, and more
             </p>
 
@@ -33,6 +28,11 @@ export function Pricing() {
               This audit is both thorough and reliable. It's run by a human who
               leverages the most advanced AI to dig deeper than any software or
               human could alone
+            </p>
+
+            <p>
+              Then we tell you what’s happening, what’s missing, and where
+              opportunities are hiding
             </p>
           </div>
         </div>

@@ -19,7 +19,7 @@ export default function HowItWorksHero() {
             <div className="space-y-4 text-gray-500">
               <p>
                 Overbase puts the information you need directly in the calendar
-                invite for each deal review
+                invite for each deal review meeting
               </p>
               <p>
                 You’ll see where to focus, what’s missing, which timeline

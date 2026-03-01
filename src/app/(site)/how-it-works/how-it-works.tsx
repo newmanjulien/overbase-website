@@ -61,8 +61,8 @@ export default function HowItWorksSections() {
           An in-depth audit
         </h2>
         <p className="mt-6 text-gray-500">
-          A human data scientist examines every detail of each deal, then
-          collaborates with your reps to fill in critical gaps
+          A data scientist examines every detail of each deal, then collaborates
+          with your reps to fill in critical gaps
         </p>
       </div>
 
@@ -72,7 +72,7 @@ export default function HowItWorksSections() {
             step="01"
             title="A data scientist examines every detail"
             description={[
-              "A human data scientist examines every detail of each deal your reps are managing",
+              "A data scientist examines every detail of each deal your reps are managing",
               "We review sales calls, read emails with prospects, check Docusign, investigate demo usage, and more",
             ]}
             reverse

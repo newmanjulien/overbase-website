@@ -32,8 +32,8 @@ export default function FAQ() {
               a: "We never store your data for more than 30 days and all access requires human approval. Which makes Overbase safer than fully automated solutions. We also only handle low-risk data about prospective customers",
             },
             {
-              q: "How does attribution work for the 4% tier?",
-              a: "Your reps and managers decide what revenue to attribute. The 4% tier aligns our incentives with yours—you only pay after you realize revenue",
+              q: "How does attribution work for the 3% tier?",
+              a: "Your reps and managers decide what revenue to attribute. The 3% tier aligns our incentives with yours—you only pay after you realize revenue",
             },
           ].map((item, i) => (
             <AccordionItem
