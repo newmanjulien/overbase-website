@@ -20,19 +20,20 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get millions in easy revenue every quarter with deal review
-              meetings that drive more revenue
+              Get millions in easy revenue every quarter with the insight that
+              helps your reps close more deals faster
             </p>
 
             <p>
               A human data scientist audits every angle of each deal: reviews
-              sales calls, reads emails with prospects, looks at Docusign,
+              sales calls, reads emails with prospects, checks Docusign,
               investigates demo usage, etc.
             </p>
 
             <p>
-              The audit is reliable because it's run by a human. And it goes in
-              depth because this human uses the most advanced AI
+              The audit is both thorough and reliable: it’s run by a human who
+              leverages the most advanced AI to dig deeper than any software
+              alone
             </p>
           </div>
         </div>

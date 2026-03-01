@@ -73,7 +73,7 @@ export default function HowItWorksSections() {
             title="A human data scientist audits every angle"
             description={[
               "A human data scientist audits every angle of each deal your reps are working on",
-              "We review sales calls, read emails with prospects, look at Docusign, investigate demo usage, etc.",
+              "We review sales calls, read emails with prospects, checks Docusign, investigate demo usage, etc.",
             ]}
             reverse
           >
