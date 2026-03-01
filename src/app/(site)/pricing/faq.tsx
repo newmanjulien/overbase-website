@@ -25,15 +25,15 @@ export default function FAQ() {
             },
             {
               q: "What's the role of AI in your service?",
-              a: "Our human data scientists use the most advanced AI to dig deeper than any software or human could alone. Overbase builds custom AI tools designed specifically for analyzing sales deals",
+              a: "Our data scientists use the most advanced AI to dig deeper than any software or human could alone. Overbase builds specialized AI tools designed specifically for analyzing sales deals",
             },
             {
               q: "Why is Overbase so secure?",
-              a: "We never store your data for more than 30 days and all access requires human approval. Which makes Overbase safer than fully automated solutions. We also only handle low-risk data about prospective customers",
+              a: "We never store your data for more than 30 days and all access requires human approval. Which makes Overbase safer than fully automated solutions. We also only use low-risk data about prospective customers",
             },
             {
               q: "How does attribution work for the 3% tier?",
-              a: "Your reps and managers decide what revenue to attribute. The 3% tier aligns our incentives with yours—you only pay after you realize revenue",
+              a: "Your reps and managers decide what revenue gets attributed to Overbase. And you only pay after you realize the revenue",
             },
           ].map((item, i) => (
             <AccordionItem
