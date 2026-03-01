@@ -84,7 +84,7 @@ export default function HowItWorksSections() {
         <div className="pt-10">
           <HowItWorksSection
             step="02"
-            title="And collaborates with reps to get missing information"
+            title="Collaborates with reps to gather missing information"
             description={[
               "The information you need to truly understand each deal is often missing from your systems",
               "We collaborate with your reps to gather the missing details and make it simple for reps to ask buyers the right questions",
@@ -104,7 +104,7 @@ export default function HowItWorksSections() {
             title="Then recalculates which deals are likely to close"
             description={[
               "This in-depth audit lets us recalculate how likely it is that each deal will close",
-              "Comparing the rep's calculation with ours reveals hidden opportunities",
+              "Comparing the CRM's calculation with ours reveals hidden opportunities",
             ]}
             reverse
           >

@@ -4,8 +4,8 @@ export const quadrantExample: QuadrantChartData = {
   id: "example-quadrant",
   title: "Find opportunities by comparing your two forecasts",
   subtitle:
-    "Overbase does an in-depth audit which gives you a second forecast that you can compare with your current forecast to find hidden revenue opportunities",
-  xLabel: "Current close probability",
+    "Overbase does an in-depth audit which gives you a second forecast that you can compare with your CRM's forecast to find hidden revenue opportunities",
+  xLabel: "CRM close probability",
   yLabel: "Overbase close probability",
   xMid: 50,
   yMid: 50,

@@ -64,8 +64,8 @@ export function Letter() {
 
               <p>
                 Then we package up the information you need to easily see all
-                the opportunities, ask the right questions and help your reps
-                win more deals
+                the opportunities, ask the right questions and help your rep win
+                more deals
               </p>
             </div>
 

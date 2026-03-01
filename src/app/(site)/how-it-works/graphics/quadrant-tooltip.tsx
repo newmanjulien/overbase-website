@@ -25,7 +25,7 @@ export function QuadrantTooltip({
     <ChartTooltip
       title={`${hoveredPoint.label} deal`}
       rows={[
-        { label: "Current", value: `${hoveredPoint.x}%` },
+        { label: "CRM", value: `${hoveredPoint.x}%` },
         { label: "Overbase", value: `${hoveredPoint.y}%` },
         {
           label: "Gap",
