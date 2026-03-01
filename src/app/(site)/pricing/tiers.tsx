@@ -16,7 +16,7 @@ const PLANS: Plan[] = [
   {
     id: "per-rep",
     name: "Per rep",
-    price: "$600",
+    price: "$400",
     description:
       "Pay a fee per rep to drive more sales at every deal review meeting",
     subtext:
@@ -26,7 +26,7 @@ const PLANS: Plan[] = [
   {
     id: "percent",
     name: "Percent",
-    price: "6%",
+    price: "4%",
     description:
       "Pay a percentage of the revenue your reps and managers attribute to Overbase",
     subtext:
