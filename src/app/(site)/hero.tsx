@@ -27,7 +27,7 @@ export function Hero() {
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
             Overbase puts the data sales managers need for deal review meetings
-            directly in your calendar invite
+            directly in their calendar invite
           </h2>
 
           <div className={newLocal}>
