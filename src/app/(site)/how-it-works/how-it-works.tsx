@@ -86,7 +86,7 @@ export default function HowItWorksSections() {
             step="02"
             title="Collaborates with reps to fill in critical gaps"
             description={[
-              "The information you need to truly understand each deal is often missing from your systems",
+              "The data you need to truly understand each deal is often missing from your systems",
               "We work with your reps to get missing details and make it easy to ask buyers the right questions",
             ]}
           >

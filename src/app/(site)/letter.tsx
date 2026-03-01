@@ -54,7 +54,7 @@ export function Letter() {
 
               <p>
                 Overbase does all the analysis work then puts the data sales
-                managers need for each deal review meeting directly in the
+                managers need for each deal review meeting directly in your
                 calendar invite.
               </p>
 

@@ -37,15 +37,20 @@ export type QuadrantChartData = {
 export type CalendarEvent = {
   id: string;
   title: string;
-  start: number;
-  end: number;
+  topPx: number;
+  heightPx: number;
+  widthPercent: number;
+  leftPercent: number;
+  zIndex: number;
+  isOverlay?: boolean;
 };
 
-export type CalendarDay = {
+export type CalendarGraphicDay = {
   id: string;
   label: string;
-  startHour: number;
-  endHour: number;
+  bodyHeightPx: number;
+  hourLabels: string[];
+  hourBoundaries: { id: string; topPx: number }[];
   events: CalendarEvent[];
 };
 

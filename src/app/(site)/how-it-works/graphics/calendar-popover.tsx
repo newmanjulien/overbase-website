@@ -8,6 +8,7 @@ import {
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
 import { cn } from "@/components/ui/utils";
+import { calendarPopoverContent } from "./calendar-data";
 import type { CalendarEvent } from "./types";
 
 type CalendarPopoverProps = {
@@ -17,51 +18,6 @@ type CalendarPopoverProps = {
 
 const linkClassName =
   "text-blue-600 underline underline-offset-2 hover:text-blue-700";
-
-const notesBody = [
-  <>
-    <a
-      href="#"
-      className={linkClassName}
-      onClick={(event) => event.preventDefault()}
-    >
-      Since last meeting
-    </a>{" "}
-    - see what has happened with Chris's deals since your last deal review
-    meeting
-  </>,
-  <>
-    <a
-      href="#"
-      className={linkClassName}
-      onClick={(event) => event.preventDefault()}
-    >
-      Deal quadrant
-    </a>{" "}
-    - focus on the right deals by seeing where Overbase disagrees with your CRM
-  </>,
-  <>
-    <a
-      href="#"
-      className={linkClassName}
-      onClick={(event) => event.preventDefault()}
-    >
-      Missing data and timelines
-    </a>{" "}
-    - missing data and questions around timelines you may want to dig into with
-    Chris
-  </>,
-  <>
-    <a
-      href="#"
-      className={linkClassName}
-      onClick={(event) => event.preventDefault()}
-    >
-      Opportunities and risk
-    </a>{" "}
-    - list of opportunities and risks you might help Chris with
-  </>,
-];
 
 export function CalendarPopover({ event, className }: CalendarPopoverProps) {
   const iconButtonClass =
@@ -127,10 +83,10 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
           <div className="mt-3 flex items-start gap-3">
             <div>
               <div className="text-lg font-semibold text-gray-900">
-                From Overbase
+                {calendarPopoverContent.title}
               </div>
               <div className="text-xs text-gray-500">
-                Wednesday, February 25 - 10:30 - 11:00am
+                {calendarPopoverContent.date}
               </div>
             </div>
           </div>
@@ -141,13 +97,22 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
               className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-blue-600 transition hover:bg-gray-50"
             >
               <Link2 className="h-4 w-4" strokeWidth={1.6} />
-              Invite via link
+              {calendarPopoverContent.inviteLabel}
             </button>
           </div>
 
           <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-600">
-            {notesBody.map((paragraph, index) => (
-              <p key={index}>{paragraph}</p>
+            {calendarPopoverContent.notes.map((note) => (
+              <p key={note.label}>
+                <a
+                  href="#"
+                  className={linkClassName}
+                  onClick={(event) => event.preventDefault()}
+                >
+                  {note.label}
+                </a>{" "}
+                - {note.description}
+              </p>
             ))}
           </div>
         </div>
