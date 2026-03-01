@@ -39,33 +39,34 @@ export function Letter() {
               <p>
                 Asking questions rooted in an understanding of each deal is how
                 Sales Managers help reps win more deals. And it's one of the
-                best ways to drive more revenue
+                fastest ways to drive revenue
               </p>
 
               <p>
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
                 full-time job. Which is why in real life you have no choice but
-                to cut corners - and leave millions on the table
+                to cut corners - and millions are left on the table
               </p>
 
               <p>Not anymore</p>
 
               <p>
-                Overbase is a data analysis service that lets Sales Managers
-                easily drive more revenue at deal review meetings
+                Overbase is a data analysis service that helps Sales Managers
+                drive more revenue at every deal review meeting
               </p>
 
               <p>
-                A human data scientist audits every angle of every deal the rep
-                you're meeting is working on. We review sales calls, read emails
-                with prospects, look at Docusign, investigate demo usage, etc.
+                A human data scientist audits every angle of every deal your
+                reps are working on. This data scientist reviews sales calls,
+                reads emails with prospects, looks at Docusign, investigates
+                demo usage, etc.
               </p>
 
               <p>
-                Then we package up the information you need to easily see all
-                the opportunities, ask the right questions and help your rep win
-                more deals
+                Then we package up the information you need to instantly see all
+                the opportunities, ask the right questions and help your reps
+                win more deals
               </p>
             </div>
 

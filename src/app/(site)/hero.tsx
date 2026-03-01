@@ -26,8 +26,8 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase is a data analysis service that makes it easy to drive more
-            revenue at deal review meetings
+            Overbase is a data analysis service that lets you drive more revenue
+            at every deal review meeting
           </h2>
 
           <div className={newLocal}>
