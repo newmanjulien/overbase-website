@@ -57,16 +57,16 @@ export function Letter() {
               </p>
 
               <p>
-                A human data scientist examines every detail of each deal your
-                reps are managing. This data scientist reviews sales calls,
-                reads emails with prospects, checks Docusign, investigates demo
-                usage, and more
+                A human data scientist packages up the information you need to
+                instantly see all the opportunities. And delivers it in a
+                calendar invite that sits right alongside each deal review
+                meeting
               </p>
 
               <p>
-                Then we package up the information you need to instantly see all
-                the opportunities. And we deliver it in a calendar invite that
-                sits right alongside each deal review meeting
+                This data scientist examines every detail of each deal your reps
+                are managing: reviews sales calls, reads emails with prospects,
+                checks Docusign, investigates demo usage, and more
               </p>
             </div>
 
