@@ -1,99 +1,86 @@
-import type { QuadrantChartData } from "./types";
+import type { QuadrantChartData, QuadrantChartLayout } from "./types";
 
 type QuadrantAxesProps = {
   chart: QuadrantChartData;
-  ticks: number[];
-  xForValue: (value: number) => number;
-  yForValue: (value: number) => number;
-  inner: { width: number; height: number };
-  padding: { top: number; right: number; bottom: number; left: number };
-  axisLabelOffset: { x: number; y: number };
+  layout: QuadrantChartLayout;
 };
 
-export function QuadrantAxes({
-  chart,
-  ticks,
-  xForValue,
-  yForValue,
-  inner,
-  padding,
-  axisLabelOffset,
-}: QuadrantAxesProps) {
+export function QuadrantAxes({ chart, layout }: QuadrantAxesProps) {
+  const { plotArea, axisLabelOffset } = layout;
+  const chartCenterX = plotArea.left + (plotArea.right - plotArea.left) / 2;
+  const chartCenterY = plotArea.top + (plotArea.bottom - plotArea.top) / 2;
+
   return (
     <>
-      {ticks.map((tick) => {
-        const x = xForValue(tick);
-        const y = yForValue(tick);
+      {layout.ticks.map((tick) => {
         return (
-          <g key={tick}>
+          <g key={tick.value}>
             <line
-              x1={padding.left}
-              x2={padding.left + inner.width}
-              y1={y}
-              y2={y}
+              x1={plotArea.left}
+              x2={plotArea.right}
+              y1={tick.y}
+              y2={tick.y}
               stroke="#f3f4f6"
             />
             <line
-              x1={x}
-              x2={x}
-              y1={padding.top}
-              y2={padding.top + inner.height}
+              x1={tick.x}
+              x2={tick.x}
+              y1={plotArea.top}
+              y2={plotArea.bottom}
               stroke="#f5f5f5"
             />
             <text
-              x={padding.left - 12}
-              y={y + 4}
+              x={plotArea.left - 12}
+              y={tick.y + 4}
               textAnchor="end"
               fontSize="12"
               fill="currentColor"
             >
-              {tick}%
+              {tick.value}%
             </text>
             <text
-              x={x}
-              y={padding.top + inner.height + 22}
+              x={tick.x}
+              y={plotArea.bottom + 22}
               textAnchor="middle"
               fontSize="12"
               fill="currentColor"
             >
-              {tick}%
+              {tick.value}%
             </text>
           </g>
         );
       })}
 
       <line
-        x1={xForValue(chart.xMid)}
-        x2={xForValue(chart.xMid)}
-        y1={padding.top}
-        y2={padding.top + inner.height}
+        x1={layout.midLines.x}
+        x2={layout.midLines.x}
+        y1={plotArea.top}
+        y2={plotArea.bottom}
         stroke="#d1d5db"
         strokeWidth={1.5}
       />
       <line
-        x1={padding.left}
-        x2={padding.left + inner.width}
-        y1={yForValue(chart.yMid)}
-        y2={yForValue(chart.yMid)}
+        x1={plotArea.left}
+        x2={plotArea.right}
+        y1={layout.midLines.y}
+        y2={layout.midLines.y}
         stroke="#d1d5db"
         strokeWidth={1.5}
       />
 
       <text
-        x={padding.left - axisLabelOffset.x}
-        y={padding.top + inner.height / 2}
+        x={plotArea.left - axisLabelOffset.x}
+        y={chartCenterY}
         textAnchor="middle"
         fontSize="12"
         fill="currentColor"
-        transform={`rotate(-90 ${padding.left - axisLabelOffset.x} ${
-          padding.top + inner.height / 2
-        })`}
+        transform={`rotate(-90 ${plotArea.left - axisLabelOffset.x} ${chartCenterY})`}
       >
         {chart.yLabel}
       </text>
       <text
-        x={padding.left + inner.width / 2}
-        y={padding.top + inner.height + axisLabelOffset.y}
+        x={chartCenterX}
+        y={plotArea.bottom + axisLabelOffset.y}
         textAnchor="middle"
         fontSize="12"
         fill="currentColor"
