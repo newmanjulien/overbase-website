@@ -21,11 +21,11 @@ export default function FAQ() {
           {[
             {
               q: "Will you really help us get millions of dollars?",
-              a: "Yes. If you're not sure, sign up for the 6% pricing tier where you pay nothing until you realize the revenue. The 6% tier lets your reps and managers decide what revenue to attribute to Overbase",
+              a: "Yes. Chck out the 6% pricing tier where you pay nothing until you realize the revenue. And where your reps and managers decide what revenue gets attributed to Overbase",
             },
             {
               q: "Is Overbase a human service?",
-              a: "Yes we're a human service. Not an AI. We hire the smartest data scientists from the best schools. And we give them the best AI tools which we build custom for this specific use case",
+              a: "Yes. we’re a human service, not just AI. We hire top data scientists from the world’s best schools and equip them with custom AI tools designed specifically for analyzing sales deals",
             },
             {
               q: "Who is the data scientist that works for me?",
@@ -33,11 +33,11 @@ export default function FAQ() {
             },
             {
               q: "Why is Overbase so much more secure than alternatives?",
-              a: "Overbase never stores any of your data longer than 30 days. And all data access requires human intervention which makes Overbase safer than automated data solutions. We also only access lower risk data about prospective customers",
+              a: "We never store your data for more than 30 days and all access requires human approval. Which makes Overbase safer than fully automated solutions. We also only handle low-risk data about prospective customers",
             },
             {
               q: "How does attribution work for the 6% tier?",
-              a: "Your reps and managers decide what to attribute. The 6% tier is the best way to align incentives so we get paid when you get paid. It also means you only pay after you realize the revenue. But Overbase lets you get so much extra revenue that 6% ends up being a lot more than the per rep fee",
+              a: "Your reps and managers decide what revenue to attribute. The 6% tier aligns our incentives with yours—you only pay after you realize revenue",
             },
           ].map((item, i) => (
             <AccordionItem
