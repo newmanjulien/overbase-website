@@ -180,7 +180,7 @@ export const dealReviewCalendar: CalendarDay = {
     },
     {
       id: "notes",
-      title: "Data from Overbase",
+      title: "From Overbase",
       start: 10 * 60 + 30,
       end: 11 * 60,
     },

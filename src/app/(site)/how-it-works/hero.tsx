@@ -18,12 +18,9 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Overbase puts the information you need directly in the calendar
-                invite for each deal review meeting
-              </p>
-              <p>
-                You’ll see where to focus, what’s missing, which timeline
-                questions to ask, and a clear list of risks and opportunities
+                Know what happened since your last meeting, where to focus,
+                what’s missing, timelines to ask about, and get a clear list of
+                risks and opportunities
               </p>
             </div>
           </div>

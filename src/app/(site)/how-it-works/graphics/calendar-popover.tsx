@@ -25,6 +25,17 @@ const notesBody = [
       className={linkClassName}
       onClick={(event) => event.preventDefault()}
     >
+      Since last meeting
+    </a>{" "}
+    - see what has happened with Chris's deals since your last deal review
+    meeting
+  </>,
+  <>
+    <a
+      href="#"
+      className={linkClassName}
+      onClick={(event) => event.preventDefault()}
+    >
       Deal quadrant
     </a>{" "}
     - focus on the right deals by seeing where Overbase disagrees with your CRM
@@ -116,7 +127,7 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
           <div className="mt-3 flex items-start gap-3">
             <div>
               <div className="text-lg font-semibold text-gray-900">
-                Data from Overbase
+                From Overbase
               </div>
               <div className="text-xs text-gray-500">
                 Wednesday, February 25 - 10:30 - 11:00am

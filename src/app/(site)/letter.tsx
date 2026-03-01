@@ -53,9 +53,9 @@ export function Letter() {
               <p>Not anymore.</p>
 
               <p>
-                Overbase is a data analysis service that puts the information
-                you need in a calendar invite right alongside each deal review
-                meeting.
+                Overbase does all the analysis work then puts the data sales
+                managers need for each deal review meeting directly in the
+                calendar invite.
               </p>
 
               <p>
