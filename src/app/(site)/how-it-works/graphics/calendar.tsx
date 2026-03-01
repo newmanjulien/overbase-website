@@ -6,17 +6,10 @@ import { CalendarPopover } from "./calendar-popover";
 type CalendarProps = {
   day: CalendarGraphicDay;
   className?: string;
-  nudgeActive?: boolean;
 };
 
-export const calendarNudgeConfig = {
-  durationMs: 1100,
-  delayMs: 400,
-  iterations: 1,
-};
-
-export function Calendar({ day, className, nudgeActive }: CalendarProps) {
-  const calendarStylesWithNudge = [
+export function Calendar({ day, className }: CalendarProps) {
+  const calendarStyles = [
     `#${day.id} [data-calendar-body] { height: ${day.bodyHeightPx}px; }`,
     ...day.hourBoundaries.map(
       (boundary) =>
@@ -26,16 +19,11 @@ export function Calendar({ day, className, nudgeActive }: CalendarProps) {
       (event) =>
         `#${day.id} [data-event-id="${event.id}"] { top: ${event.topPx}px; height: ${event.heightPx}px; width: ${event.widthPercent}%; left: ${event.leftPercent}%; z-index: ${event.zIndex}; }`,
     ),
-    `#${day.id} [data-event-id="notes"] { will-change: transform; }`,
-    `#${day.id}[data-nudge="true"] [data-event-id="notes"] { animation: calendar-nudge ${calendarNudgeConfig.durationMs}ms ease-out ${calendarNudgeConfig.delayMs}ms ${calendarNudgeConfig.iterations}; }`,
-    `@media (prefers-reduced-motion: reduce) { #${day.id}[data-nudge="true"] [data-event-id="notes"] { animation: none; } }`,
-    `@keyframes calendar-nudge { 0%, 100% { transform: translateY(0); } 40% { transform: translateY(-2px); } }`,
   ].join("\n");
 
   return (
     <div
       id={day.id}
-      data-nudge={nudgeActive ? "true" : undefined}
       className={cn(
         "mt-5 overflow-hidden rounded-xl border border-gray-100 bg-white",
         className,
@@ -112,7 +100,7 @@ export function Calendar({ day, className, nudgeActive }: CalendarProps) {
           </div>
         </div>
       </div>
-      <style>{calendarStylesWithNudge}</style>
+      <style>{calendarStyles}</style>
     </div>
   );
 }

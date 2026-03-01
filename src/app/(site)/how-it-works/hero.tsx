@@ -1,6 +1,6 @@
 import Hero from "@/components/hero";
 import { dealReviewCalendar } from "./graphics/calendar-data";
-import { CalendarNudge } from "./graphics/calendar-nudge";
+import { Calendar } from "./graphics/calendar";
 
 export default function HowItWorksHero() {
   return (
@@ -26,7 +26,7 @@ export default function HowItWorksHero() {
             </div>
           </div>
           <div className="mt-10 mx-auto w-full max-w-xl">
-            <CalendarNudge day={dealReviewCalendar} className="mt-0" />
+            <Calendar day={dealReviewCalendar} className="mt-0" />
           </div>
         </div>
         <div className="border-t border-gray-100"></div>
