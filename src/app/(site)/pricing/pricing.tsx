@@ -25,13 +25,13 @@ export function Pricing() {
             </p>
 
             <p>
-              A human data scientist audits every angle of each deal: reviews
+              A human data scientist examines every detail of each deal: reviews
               sales calls, reads emails with prospects, checks Docusign,
-              investigates demo usage, etc.
+              investigates demo usage, and more
             </p>
 
             <p>
-              The audit is both thorough and reliable: it’s run by a human who
+              This audit is both thorough and reliable: it’s run by a human who
               leverages the most advanced AI to dig deeper than any software
               alone
             </p>

@@ -57,10 +57,10 @@ export function Letter() {
               </p>
 
               <p>
-                A human data scientist audits every angle of every deal your
-                reps are working on. This data scientist reviews sales calls,
+                A human data scientist examines every detail of each deal your
+                reps are managing. This data scientist reviews sales calls,
                 reads emails with prospects, checks Docusign, investigates demo
-                usage, etc.
+                usage, and more.
               </p>
 
               <p>

@@ -61,7 +61,7 @@ export default function HowItWorksSections() {
           How we audit deals
         </h2>
         <p className="mt-6 text-gray-500">
-          A human data scientists audits every angle of each deal then
+          A human data scientist examines every detail of each deal, then
           collaborates with your reps to gather missing information
         </p>
       </div>
@@ -70,10 +70,10 @@ export default function HowItWorksSections() {
         <div className="pt-22">
           <HowItWorksSection
             step="01"
-            title="A human data scientist audits every angle"
+            title="A human data scientist examines every detail"
             description={[
-              "A human data scientist audits every angle of each deal your reps are working on",
-              "We review sales calls, read emails with prospects, checks Docusign, investigate demo usage, etc.",
+              "A human data scientist examines every detail of each deal your reps are managing",
+              "We review sales calls, read emails with prospects, checks Docusign, investigate demo usage, and more.",
             ]}
             reverse
           >
@@ -84,10 +84,10 @@ export default function HowItWorksSections() {
         <div className="pt-10">
           <HowItWorksSection
             step="02"
-            title="Collaborates with reps to gather missing information"
+            title="Collaborates with reps to fill in critical gaps"
             description={[
               "The information you need to truly understand each deal is often missing from your systems",
-              "We collaborate with your reps to gather the missing details and make it simple for reps to ask buyers the right questions",
+              "We work with your reps to capture missing details and guide them to ask buyers the right questions",
             ]}
           >
             <SlackPreview
