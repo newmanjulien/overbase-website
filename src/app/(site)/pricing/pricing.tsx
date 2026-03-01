@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            <span className="italic">Sell more</span> and more easily
+            Insight that <span className="italic">drives sales</span>
           </>
         }
       />
@@ -20,14 +20,13 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get more sales with the insight that helps your reps close more
-              deals faster
+              Overbase puts the information you need in a calendar invite right
+              alongside each deal review meeting
             </p>
 
             <p>
-              A human data scientist examines every detail of each deal: reviews
-              sales calls, reads emails with prospects, checks Docusign,
-              investigates demo usage, and more
+              A human data scientist examines every detail of each deal: calls,
+              emails, Docusign, demo usage, and more
             </p>
 
             <p>

@@ -27,8 +27,7 @@ const notesBody = [
     >
       Deal quadrant
     </a>{" "}
-    - focus on the right deals by seeing where our opinion on whether a deal is
-    likely to close disagrees with your CRM
+    - focus on the right deals by seeing where Overbase disagrees with your CRM
   </>,
   <>
     <a

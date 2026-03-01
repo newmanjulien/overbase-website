@@ -18,11 +18,13 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Quickly see how to drive more sales in every deal review meeting
-              </p>
-              <p>
                 Insights are delivered in a calendar invite that sits right
                 alongside each of your deal review meetings
+              </p>
+              <p>
+                Get a deal quadrant that shows you where to focus, an inventory
+                of missing data, questions around timelines, a list of
+                opportunities and risks
               </p>
             </div>
           </div>

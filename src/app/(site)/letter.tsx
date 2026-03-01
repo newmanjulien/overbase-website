@@ -24,7 +24,7 @@ export function Letter() {
               <p>
                 The hardest part of deal review meetings isn't the meeting
                 itself. It’s the investigative hours you spend before the rep
-                even walks into the room
+                even walks into the room.
               </p>
 
               <p>
@@ -34,12 +34,13 @@ export function Letter() {
                   "I wonder why the champion hasn't logged into their sandbox
                   for two weeks"
                 </i>
+                .
               </p>
 
               <p>
                 Asking questions rooted in an understanding of each deal is how
                 sales managers help reps win more deals. And it's one of the
-                fastest ways to drive sales
+                fastest ways to drive sales.
               </p>
 
               <p>
@@ -47,23 +48,22 @@ export function Letter() {
                 that by 20 deals and 8 reps, and you're working a second
                 full-time job. Which is why in real life you have no choice but
                 to cut corners - and why large amounts of sales are left on the
-                table
+                table.
               </p>
 
-              <p>Not anymore</p>
+              <p>Not anymore.</p>
 
               <p>
-                Overbase is a data analysis service that puts all the
-                information you need in a calendar invite right alongside each
-                deal review meeting
+                Overbase is a data analysis service that puts the information
+                you need in a calendar invite right alongside each deal review
+                meeting.
               </p>
 
               <p>
                 A human data scientist examines every detail of each deal your
-                reps are managing: reviews sales calls, reads emails with
-                prospects, checks Docusign, investigates demo usage, and more.
-                Then we package up the insight you need to easily help reps see
-                opportunities and close more deals
+                reps are managing: calls, emails, Docusign, demo usage, and
+                more. Then we package up the insight you need to easily help
+                reps see the real opportunities and close more deals faster.
               </p>
             </div>
 
