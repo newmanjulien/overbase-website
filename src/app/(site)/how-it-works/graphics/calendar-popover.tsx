@@ -120,7 +120,7 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
                 Data from Overbase
               </div>
               <div className="text-xs text-gray-500">
-                Wednesday, February 25 - 10:30 - 11:00pm
+                Wednesday, February 25 - 10:30 - 11:00am
               </div>
             </div>
           </div>

@@ -62,8 +62,8 @@ export function Letter() {
                 A human data scientist examines every detail of each deal your
                 reps are managing: reviews sales calls, reads emails with
                 prospects, checks Docusign, investigates demo usage, and more.
-                Then we package everything up so it's easy to help reps drive
-                more sales
+                Then we package up the insight you need to easily help reps see
+                opportunities and close more deals
               </p>
             </div>
 

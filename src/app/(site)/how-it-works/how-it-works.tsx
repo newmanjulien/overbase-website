@@ -87,7 +87,7 @@ export default function HowItWorksSections() {
             title="Collaborates with reps to fill in critical gaps"
             description={[
               "The information you need to truly understand each deal is often missing from your systems",
-              "We work with your reps to get missing details and guide them to ask buyers the right questions",
+              "We work with your reps to get missing details and make it easy to ask buyers the right questions",
             ]}
           >
             <SlackPreview
