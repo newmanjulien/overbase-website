@@ -21,7 +21,7 @@ export default function FAQ() {
           {[
             {
               q: "Is Overbase a human service?",
-              a: "Yes. We’re a human service, not just AI. We hire top data scientists and equip them with custom AI tools designed specifically for analyzing sales deals",
+              a: "Yes. We're a human service, not just AI. We hire top data scientists and equip them with custom AI tools designed specifically for analyzing sales deals",
             },
             {
               q: "What's the role of AI in your service?",

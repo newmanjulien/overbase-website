@@ -7,7 +7,7 @@ export const signalsExample: SignalsExample = {
       id: "coo",
       title: "Whirlpool hasn't gotten past welcome screens",
       summary:
-        "Whirlpool is doing a POC and the data we've noted down regarding their progress in our mutual success plan says they've logged in multiple times. But they actually never got past the welcome screens",
+        "The CRM says Whirlpool's buyers logged in multiple times to their demo environment. But they actually never got past the welcome screens",
       sources: [
         { name: "Posthog", logo: "/logos/posthog.png" },
         { name: "Snowflake", logo: "/logos/snowflake.png" },
@@ -17,7 +17,7 @@ export const signalsExample: SignalsExample = {
       id: "teammates",
       title: "Laura is selling the AI Teammates add-on more than other reps",
       summary:
-        "Many of the reps seem to struggle with selling the AI Teammates add-on and prospects don't seem to be receptive on calls. But Laura seems to be selling it easily. There might be an opportunity for the team to learn from Laura",
+        "Most reps struggle with selling the AI Teammates add-ons. But Laura seems to be selling it easily. There might be an opportunity for the team to learn from Laura",
       sources: [
         { name: "Salesforce", logo: "/logos/salesforce.png" },
         { name: "Gong", logo: "/logos/gong.png" },
@@ -27,7 +27,7 @@ export const signalsExample: SignalsExample = {
       id: "icp",
       title: "ICP in the manufacturing sector might be wrong",
       summary:
-        "The manufacturing deals seem to end up getting signed by Directors not by C-Suite execs. Some current deals are getting slowed down because you're targeting the wrong ICP",
+        "The manufacturing deals get signed by Directors without C-Suite involvement. But we're targeting C-Suite execs in our process which might be slowing several deals",
       sources: [
         { name: "Marketo", logo: "/logos/marketo.png" },
         { name: "Docusign", logo: "/logos/docusign.png" },

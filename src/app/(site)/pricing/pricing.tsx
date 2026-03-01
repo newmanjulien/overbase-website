@@ -30,7 +30,7 @@ export function Pricing() {
             </p>
 
             <p>
-              This audit is both thorough and reliable. It’s run by a human who
+              This audit is both thorough and reliable. It's run by a human who
               leverages the most advanced AI to dig deeper than any software or
               human could alone
             </p>

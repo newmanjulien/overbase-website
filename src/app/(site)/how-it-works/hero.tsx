@@ -18,13 +18,12 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Insights are delivered in a calendar invite that sits right
-                alongside each of your deal review meetings
+                Overbase puts the information you need directly in the calendar
+                invite for each deal review
               </p>
               <p>
-                Get a deal quadrant that shows you where to focus, an inventory
-                of missing data, questions around timelines, a list of
-                opportunities and risks
+                You’ll see where to focus, what’s missing, which timeline
+                questions to ask, and a clear list of risks and opportunities
               </p>
             </div>
           </div>

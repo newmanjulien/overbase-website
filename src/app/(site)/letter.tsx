@@ -23,7 +23,7 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 The hardest part of deal review meetings isn't the meeting
-                itself. It’s the investigative hours you spend before the rep
+                itself. It's the investigative hours you spend before the rep
                 even walks into the room.
               </p>
 
@@ -46,9 +46,8 @@ export function Letter() {
               <p>
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
-                full-time job. Which is why in real life you have no choice but
-                to cut corners - and why large amounts of sales are left on the
-                table.
+                full-time job. Which is why most sales managers cut corners -
+                and easy revenue gets left on the table.
               </p>
 
               <p>Not anymore.</p>
@@ -62,8 +61,8 @@ export function Letter() {
               <p>
                 A human data scientist examines every detail of each deal your
                 reps are managing: calls, emails, Docusign, demo usage, and
-                more. Then we package up the insight you need to easily help
-                reps see the real opportunities and close more deals faster.
+                more. Then we tell you what’s happening, what’s missing, and
+                where opportunities are hidding.
               </p>
             </div>
 
