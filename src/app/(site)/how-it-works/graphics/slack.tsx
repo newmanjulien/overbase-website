@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import {
   AlignLeft,
@@ -28,9 +28,38 @@ type SlackProps = {
 };
 
 const toolbarIconClass = "h-4 w-4 text-gray-600";
+const messageEnterDurationMs = 520;
+const messageEnterDelayMs = 80;
+const messageExitDurationMs = 320;
+const messageCleanupDelayMs = Math.max(
+  messageEnterDurationMs + messageEnterDelayMs,
+  messageExitDurationMs,
+);
+
+type SlackMessageTextProps = {
+  message: SlackThread["message"];
+  className?: string;
+};
+
+function SlackMessageText({ message, className }: SlackMessageTextProps) {
+  return (
+    <div className={cn("space-y-4 text-sm leading-[1.6] text-gray-800", className)}>
+      {message.paragraphs.map((paragraph, index) => (
+        <p key={`${message.id}-p-${index}`} className="whitespace-pre-wrap">
+          {paragraph}
+        </p>
+      ))}
+    </div>
+  );
+}
 
 export function SlackPreview({ threads, className, id }: SlackProps) {
   const [activeIndex, setActiveIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+  const [userInteracted, setUserInteracted] = useState(false);
+  const [previousThread, setPreviousThread] = useState<SlackThread | null>(
+    null,
+  );
   const thread = threads[activeIndex] ?? threads[0];
 
   if (!thread) {
@@ -41,17 +70,52 @@ export function SlackPreview({ threads, className, id }: SlackProps) {
   const rootId = id ?? thread.id;
   const canCycle = threads.length > 1;
 
+  const advanceThread = useCallback(() => {
+    if (!thread) {
+      return;
+    }
+    setPreviousThread(thread);
+    setActiveIndex((prev) => (prev + 1) % threads.length);
+  }, [thread, threads.length]);
+
+  useEffect(() => {
+    if (!previousThread) {
+      return;
+    }
+
+    const timeout = window.setTimeout(() => {
+      setPreviousThread(null);
+    }, messageCleanupDelayMs);
+
+    return () => window.clearTimeout(timeout);
+  }, [previousThread]);
+
+  useEffect(() => {
+    if (!canCycle || isHovered || userInteracted) {
+      return;
+    }
+
+    const interval = window.setInterval(() => {
+      advanceThread();
+    }, 8000);
+
+    return () => window.clearInterval(interval);
+  }, [advanceThread, canCycle, isHovered, userInteracted]);
+
   function handleRefresh() {
     if (!canCycle) {
       return;
     }
-    setActiveIndex((prev) => (prev + 1) % threads.length);
+    setUserInteracted(true);
+    advanceThread();
   }
 
   return (
     <div
       id={rootId}
       className={cn("relative mt-5 rounded-xl bg-white", className)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <button
         type="button"
@@ -73,31 +137,42 @@ export function SlackPreview({ threads, className, id }: SlackProps) {
         </div>
       </div>
 
-      <div className="mt-4 flex gap-4 px-6">
-        <div className="h-11 w-11 overflow-hidden rounded-full border border-gray-200 bg-gray-100">
-          <Image
-            src={message.avatarUrl}
-            alt={message.userName}
-            width={44}
-            height={44}
-            className="h-full w-full object-cover"
-          />
-        </div>
-        <div className="min-w-0 flex-1">
-          <div className="flex items-baseline gap-3">
-            <span className="text-sm font-semibold text-gray-900">
-              {message.userName}
-            </span>
+      <div className="relative mt-4 px-6">
+        <div className="flex gap-4">
+          <div className="h-11 w-11 overflow-hidden rounded-full border border-gray-200 bg-gray-100">
+            <Image
+              src={message.avatarUrl}
+              alt={message.userName}
+              width={44}
+              height={44}
+              className="h-full w-full object-cover"
+            />
           </div>
-          <div className="mt-2 space-y-4 text-sm leading-[1.6] text-gray-800">
-            {message.paragraphs.map((paragraph, index) => (
-              <p
-                key={`${message.id}-p-${index}`}
-                className="whitespace-pre-wrap"
-              >
-                {paragraph}
-              </p>
-            ))}
+          <div className="min-w-0 flex-1">
+            <div className="flex items-baseline gap-3">
+              <span className="text-sm font-semibold text-gray-900">
+                {message.userName}
+              </span>
+            </div>
+            <div className="relative mt-2">
+              <div className="slack-message-stack">
+                {previousThread ? (
+                  <SlackMessageText
+                    key={previousThread.id}
+                    message={previousThread.message}
+                    className="slack-message-layer slack-message-exit pointer-events-none"
+                  />
+                ) : null}
+                <SlackMessageText
+                  key={thread.id}
+                  message={message}
+                  className={cn(
+                    "slack-message-layer",
+                    previousThread && "slack-message-enter",
+                  )}
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
