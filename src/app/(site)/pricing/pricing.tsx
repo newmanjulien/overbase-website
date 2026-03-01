@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Quickly get <span className="italic">easy</span> revenue
+            Quickly <span className="italic">sell more</span> and more easily
           </>
         }
       />
@@ -20,7 +20,7 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get easy revenue with the insight that helps your reps close more
+              Get more sales with the insight that helps your reps close more
               deals faster
             </p>
 

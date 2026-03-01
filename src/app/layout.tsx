@@ -11,7 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Overbase",
   description:
-    "Overbase is a data analysis service that helps Sales Managers drive more revenue at every deal review meeting",
+    "Overbase is a data analysis service that helps Sales Managers drive more sales at every deal review meeting",
   icons: {
     icon: "/favicon.ico",
   },

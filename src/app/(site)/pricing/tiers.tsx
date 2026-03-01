@@ -18,7 +18,7 @@ const PLANS: Plan[] = [
     name: "Per rep",
     price: "$600",
     description:
-      "Pay a small fee per rep then get millions in easy revenue every quarter",
+      "Pay a fee per rep to drive more sales at every deal review meeting",
     subtext:
       "Per rep per month with annual subscription discount. $900 if billed monthly",
     valueLabel: "More ROI",
@@ -28,7 +28,7 @@ const PLANS: Plan[] = [
     name: "Percent",
     price: "6%",
     description:
-      "Align incentives but pay more since we get you millions in extra revenue every quarter",
+      "Pay a percentage of the revenue your reps and managers attribute",
     subtext:
       "Of revenue attributed to Overbase by your reps and managers. Available with two year subscription",
     valueLabel: "More aligned",

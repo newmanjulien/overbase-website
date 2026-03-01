@@ -39,7 +39,7 @@ export function Letter() {
               <p>
                 Asking questions rooted in an understanding of each deal is how
                 Sales Managers help reps win more deals. And it's one of the
-                fastest ways to drive revenue
+                fastest ways to drive sales
               </p>
 
               <p>
@@ -53,7 +53,7 @@ export function Letter() {
 
               <p>
                 Overbase is a data analysis service that helps Sales Managers
-                drive more revenue at every deal review meeting
+                drive more sales at every deal review meeting
               </p>
 
               <p>
