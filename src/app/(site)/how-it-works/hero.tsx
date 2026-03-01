@@ -18,11 +18,12 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Easily know how to drive more revenue at deal review meetings
+                Quickly see how to drive more revenue in every deal review
+                meeting
               </p>
               <p>
-                Everything you need to know is packaged up in a calendar invite
-                that sits beside each of your deal review meetings
+                Insights are delivered in a calendar invite that sits right
+                alongside each of your deal review meetings
               </p>
             </div>
           </div>
