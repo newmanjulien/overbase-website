@@ -20,19 +20,15 @@ export default function FAQ() {
         <Accordion type="single" collapsible className="space-y-4">
           {[
             {
-              q: "Will you really help us get millions of dollars?",
-              a: "Yes. Chck out the 6% pricing tier where you pay nothing until you realize the revenue. And where your reps and managers decide what revenue gets attributed to Overbase",
-            },
-            {
               q: "Is Overbase a human service?",
-              a: "Yes. we’re a human service, not just AI. We hire top data scientists from the world’s best schools and equip them with custom AI tools designed specifically for analyzing sales deals",
+              a: "Yes. we’re a human service, not just AI. We hire top data scientists and equip them with custom AI tools designed specifically for analyzing sales deals",
             },
             {
-              q: "Who is the data scientist that works for me?",
-              a: "A graduate from one of the world's most selective schools. Overbase recruits the smartest students from the best schools. We leverage our CEO's teaching role at Princeton to access talent that's out of reach to others",
+              q: "What's the role of AI in your service?",
+              a: "Our human data scientists use the most advanced AI to dig deeper than any software or human could alone. Overbase builds custom AI tools designed specifically for analyzing sales deals",
             },
             {
-              q: "Why is Overbase so much more secure than alternatives?",
+              q: "Why is Overbase so secure?",
               a: "We never store your data for more than 30 days and all access requires human approval. Which makes Overbase safer than fully automated solutions. We also only handle low-risk data about prospective customers",
             },
             {

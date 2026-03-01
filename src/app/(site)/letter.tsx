@@ -60,13 +60,13 @@ export function Letter() {
                 A human data scientist examines every detail of each deal your
                 reps are managing. This data scientist reviews sales calls,
                 reads emails with prospects, checks Docusign, investigates demo
-                usage, and more.
+                usage, and more
               </p>
 
               <p>
                 Then we package up the information you need to instantly see all
-                the opportunities, ask the right questions and help your reps
-                win more deals
+                the opportunities. And we deliver it in a calendar invite that
+                sits right alongside each deal review meeting
               </p>
             </div>
 

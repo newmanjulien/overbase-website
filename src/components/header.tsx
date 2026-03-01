@@ -129,7 +129,7 @@ export function Header({
               className="rounded-sm text-sm scale-[0.92]"
               href="/waitlist"
             >
-              Join Wailist
+              Join Waitlist
             </HotkeyButton>
           </div>
         </div>

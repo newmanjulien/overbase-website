@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Get <span className="italic">millions</span> in easy revenue
+            Quickly get <span className="italic">easy</span> revenue
           </>
         }
       />
@@ -20,8 +20,8 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Get millions in easy revenue every quarter with the insight that
-              helps your reps close more deals faster
+              Get easy revenue with the insight that helps your reps close more
+              deals faster
             </p>
 
             <p>
@@ -32,8 +32,8 @@ export function Pricing() {
 
             <p>
               This audit is both thorough and reliable. It’s run by a human who
-              leverages the most advanced AI to dig deeper than any software
-              alone
+              leverages the most advanced AI to dig deeper than any software or
+              human could alone
             </p>
           </div>
         </div>
