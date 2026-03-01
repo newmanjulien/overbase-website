@@ -38,7 +38,7 @@ export function Letter() {
 
               <p>
                 Asking questions rooted in an understanding of each deal is how
-                Sales Managers help reps win more deals. And it's one of the
+                sales managers help reps win more deals. And it's one of the
                 fastest ways to drive sales
               </p>
 
@@ -46,27 +46,24 @@ export function Letter() {
                 But finding one fact can take forty minutes of digging. Multiply
                 that by 20 deals and 8 reps, and you're working a second
                 full-time job. Which is why in real life you have no choice but
-                to cut corners - and millions are left on the table
+                to cut corners - and why large amounts of sales are left on the
+                table
               </p>
 
               <p>Not anymore</p>
 
               <p>
-                Overbase is a data analysis service that helps Sales Managers
-                drive more sales at every deal review meeting
+                Overbase is a data analysis service that puts all the
+                information you need in a calendar invite right alongside each
+                deal review meeting
               </p>
 
               <p>
-                A human data scientist packages up the information you need to
-                instantly see all the opportunities. And delivers it in a
-                calendar invite that sits right alongside each deal review
-                meeting
-              </p>
-
-              <p>
-                This data scientist examines every detail of each deal your reps
-                are managing: reviews sales calls, reads emails with prospects,
-                checks Docusign, investigates demo usage, and more
+                A human data scientist examines every detail of each deal your
+                reps are managing: reviews sales calls, reads emails with
+                prospects, checks Docusign, investigates demo usage, and more.
+                Then we package up everything you need to know in a way that
+                makes it easy for you to help your rep drive more sales
               </p>
             </div>
 

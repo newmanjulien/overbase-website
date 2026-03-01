@@ -58,7 +58,7 @@ export default function HowItWorksSections() {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <div className="max-w-xl mx-auto text-center">
         <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
-          How we audit deals
+          An in-depth audit
         </h2>
         <p className="mt-6 text-gray-500">
           A human data scientist examines every detail of each deal, then
@@ -70,7 +70,7 @@ export default function HowItWorksSections() {
         <div className="pt-22">
           <HowItWorksSection
             step="01"
-            title="A human data scientist examines every detail"
+            title="A data scientist examines every detail"
             description={[
               "A human data scientist examines every detail of each deal your reps are managing",
               "We review sales calls, read emails with prospects, check Docusign, investigate demo usage, and more",
@@ -101,10 +101,10 @@ export default function HowItWorksSections() {
         <div className="pt-6">
           <HowItWorksSection
             step="03"
-            title="Then recalculates which deals are likely to close"
+            title="Gives a second opinion on which deals are likely to close"
             description={[
-              "This in-depth audit lets us recalculate how likely it is that each deal will close",
-              "Comparing the CRM's calculation with ours reveals hidden opportunities",
+              "This in-depth audit lets us give a second opinion on how likely it is that each deal will close",
+              "Comparing the CRM's opinion with our opinion reveals hidden sales opportunities",
             ]}
             reverse
           >

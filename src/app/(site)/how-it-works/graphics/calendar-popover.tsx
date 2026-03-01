@@ -27,7 +27,8 @@ const notesBody = [
     >
       Deal quadrant
     </a>{" "}
-    - compare our calculation on whether a deal will close with your CRM
+    - focus on the right deals by seeing where our opinion on whether a deal is
+    likely to close disagrees with your CRM
   </>,
   <>
     <a
@@ -37,7 +38,8 @@ const notesBody = [
     >
       Missing data and timelines
     </a>{" "}
-    - missing data and questions around timelines in Chris' deals
+    - missing data and questions around timelines you may want to dig into with
+    Chris
   </>,
   <>
     <a
@@ -47,11 +49,7 @@ const notesBody = [
     >
       Opportunities and risk
     </a>{" "}
-    - list of opportunities and risks for Chris' deals
-  </>,
-  <>
-    ***Chris did 2x more prospecting this week than any other week in the past 3
-    months
+    - list of opportunities and risks you might help Chris with
   </>,
 ];
 

@@ -7,7 +7,7 @@ export default function HowItWorksHero() {
       <Hero
         title={
           <>
-            Insight that drives <span className="italic">sales</span>
+            Insight in your <span className="italic">calendar</span>
           </>
         }
         titleMaxWidthClass="max-w-lg"
