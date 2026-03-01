@@ -13,8 +13,8 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
   };
   const logo = {
     src: "/logo.png",
-    width: 50,
-    height: 32,
+    width: 46,
+    height: 22,
   };
 
   return (
