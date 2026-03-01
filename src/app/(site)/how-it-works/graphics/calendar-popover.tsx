@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import { Link2, Mail, MoreVertical, Pencil, Trash2, X } from "lucide-react";
 
 import {
@@ -22,9 +23,78 @@ const linkClassName =
 export function CalendarPopover({ event, className }: CalendarPopoverProps) {
   const iconButtonClass =
     "rounded-full p-1 text-gray-400 transition hover:bg-gray-100 hover:text-gray-600";
+  const [open, setOpen] = useState(false);
+  const lastPointerPosition = useRef<{ x: number; y: number } | null>(null);
+  const scrollFrame = useRef<number | null>(null);
+  const triggerSelector = `[data-calendar-popover-trigger="${event.id}"]`;
+  const contentSelector = `[data-calendar-popover-content="${event.id}"]`;
+
+  useEffect(() => {
+    const handlePointerMove = (pointerEvent: PointerEvent) => {
+      lastPointerPosition.current = {
+        x: pointerEvent.clientX,
+        y: pointerEvent.clientY,
+      };
+    };
+
+    window.addEventListener("pointermove", handlePointerMove, {
+      passive: true,
+    });
+
+    return () => {
+      window.removeEventListener("pointermove", handlePointerMove);
+    };
+  }, []);
+
+  useEffect(() => {
+    const updateOpenFromPointer = () => {
+      const pointer = lastPointerPosition.current;
+      if (!pointer) {
+        return;
+      }
+
+      const element = document.elementFromPoint(pointer.x, pointer.y);
+      if (!element) {
+        setOpen(false);
+        return;
+      }
+
+      const shouldOpen =
+        Boolean(element.closest(triggerSelector)) ||
+        Boolean(element.closest(contentSelector));
+
+      setOpen((prevOpen) => (prevOpen === shouldOpen ? prevOpen : shouldOpen));
+    };
+
+    const handleScroll = () => {
+      if (scrollFrame.current !== null) {
+        return;
+      }
+
+      scrollFrame.current = window.requestAnimationFrame(() => {
+        scrollFrame.current = null;
+        updateOpenFromPointer();
+      });
+    };
+
+    const options = { passive: true, capture: true } as const;
+    window.addEventListener("scroll", handleScroll, options);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll, options);
+      if (scrollFrame.current !== null) {
+        window.cancelAnimationFrame(scrollFrame.current);
+      }
+    };
+  }, [contentSelector, triggerSelector]);
 
   return (
-    <HoverCard openDelay={0} closeDelay={120}>
+    <HoverCard
+      open={open}
+      onOpenChange={setOpen}
+      openDelay={0}
+      closeDelay={120}
+    >
       <HoverCardTrigger asChild>
         <div
           className={cn(
@@ -35,6 +105,7 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
           tabIndex={0}
           aria-label={`${event.title} details`}
           data-event-id={event.id}
+          data-calendar-popover-trigger={event.id}
         >
           <span className="min-w-0 truncate font-semibold">{event.title}</span>
         </div>
@@ -44,6 +115,7 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
         side="right"
         sideOffset={18}
         className="w-92 rounded-2xl border border-gray-200 bg-gray-50/95 p-0 shadow-2xl backdrop-blur-sm"
+        data-calendar-popover-content={event.id}
       >
         <div className="px-6 pb-5 pt-4">
           <div className="flex items-center justify-end gap-2">
