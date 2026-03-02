@@ -10,7 +10,20 @@ interface PostLayoutProps {
   children: ReactNode;
 }
 
+function createStableTextKeyFactory(prefix: string) {
+  const seenCounts = new Map<string, number>();
+
+  return (text: string): string => {
+    const normalized = text.trim();
+    const count = (seenCounts.get(normalized) ?? 0) + 1;
+    seenCounts.set(normalized, count);
+    return `${prefix}-${count}-${normalized}`;
+  };
+}
+
 export function PostLayout({ hero, children }: PostLayoutProps) {
+  const introductionKeyFor = createStableTextKeyFactory("introduction");
+
   return (
     <>
       <section className="w-full pt-48 pb-10 bg-white">
@@ -32,9 +45,9 @@ export function PostLayout({ hero, children }: PostLayoutProps) {
             <div>
               <div className="border-t border-gray-100 mb-18" />
               {Array.isArray(hero.introduction) ? (
-                hero.introduction.map((paragraph, idx) => (
+                hero.introduction.map((paragraph) => (
                   <p
-                    key={idx}
+                    key={introductionKeyFor(paragraph)}
                     className="text-md text-gray-900 mb-8 leading-relaxed"
                   >
                     {paragraph}

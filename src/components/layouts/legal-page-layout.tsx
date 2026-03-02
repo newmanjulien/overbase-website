@@ -27,10 +27,34 @@ interface LegalPageLayoutProps {
   showTableOfContents?: boolean;
 }
 
+function hashText(value: string): string {
+  let hash = 0;
+  for (let i = 0; i < value.length; i += 1) {
+    hash = (hash * 31 + value.charCodeAt(i)) | 0;
+  }
+  return Math.abs(hash).toString(36);
+}
+
+function createStableTextKeyFactory(prefix: string) {
+  const seenCounts = new Map<string, number>();
+
+  return (text: string): string => {
+    const normalized = text.trim();
+    const count = (seenCounts.get(normalized) ?? 0) + 1;
+    seenCounts.set(normalized, count);
+    return `${prefix}-${hashText(normalized)}-${count}`;
+  };
+}
+
 /**
  * Renders a single section of a legal document
  */
 function Section({ section }: { section: LegalSection }) {
+  const paragraphKeyFor = createStableTextKeyFactory(`${section.id}-paragraph`);
+  const compactLineKeyFor = createStableTextKeyFactory(`${section.id}-compact`);
+  const subsectionKeyFor = createStableTextKeyFactory(`${section.id}-subsection`);
+  const bulletPointKeyFor = createStableTextKeyFactory(`${section.id}-bullet`);
+
   return (
     <section key={section.id} className="mb-10">
       <h2
@@ -42,8 +66,11 @@ function Section({ section }: { section: LegalSection }) {
       </h2>
 
       {/* Main content paragraphs */}
-      {section.content.map((paragraph, idx) => (
-        <p key={idx} className="text-sm text-gray-900 mb-4 leading-relaxed">
+      {section.content.map((paragraph) => (
+        <p
+          key={paragraphKeyFor(paragraph)}
+          className="text-sm text-gray-900 mb-4 leading-relaxed"
+        >
           {paragraph}
         </p>
       ))}
@@ -51,41 +78,50 @@ function Section({ section }: { section: LegalSection }) {
       {/* Compact content */}
       {section.compactContent && (
         <div className="text-sm text-gray-900 mb-4 leading-relaxed space-y-1">
-          {section.compactContent.map((line, idx) => (
-            <div key={idx}>{line}</div>
+          {section.compactContent.map((line) => (
+            <div key={compactLineKeyFor(line)}>{line}</div>
           ))}
         </div>
       )}
 
       {/* Subsections (e.g., "Our intellectual property" under "Intellectual property rights") */}
-      {section.subsections?.map((sub, idx) => (
-        <div key={idx} className="mt-6">
-          <h3 className="text-lg font-medium text-gray-900 mb-3">
-            {sub.title}
-          </h3>
-          {sub.content.map((paragraph, pIdx) => (
-            <p
-              key={pIdx}
-              className="text-sm text-gray-900 mb-4 leading-relaxed"
-            >
-              {paragraph}
-            </p>
-          ))}
-          {sub.compactContent && (
-            <div className="text-sm text-gray-900 mb-4 leading-relaxed space-y-1">
-              {sub.compactContent.map((line, lIdx) => (
-                <div key={lIdx}>{line}</div>
-              ))}
-            </div>
-          )}
-        </div>
-      ))}
+      {section.subsections?.map((sub) => {
+        const subParagraphKeyFor = createStableTextKeyFactory(
+          `${section.id}-${sub.title}-paragraph`,
+        );
+        const subCompactLineKeyFor = createStableTextKeyFactory(
+          `${section.id}-${sub.title}-compact`,
+        );
+
+        return (
+          <div key={subsectionKeyFor(sub.title)} className="mt-6">
+            <h3 className="text-lg font-medium text-gray-900 mb-3">
+              {sub.title}
+            </h3>
+            {sub.content.map((paragraph) => (
+              <p
+                key={subParagraphKeyFor(paragraph)}
+                className="text-sm text-gray-900 mb-4 leading-relaxed"
+              >
+                {paragraph}
+              </p>
+            ))}
+            {sub.compactContent && (
+              <div className="text-sm text-gray-900 mb-4 leading-relaxed space-y-1">
+                {sub.compactContent.map((line) => (
+                  <div key={subCompactLineKeyFor(line)}>{line}</div>
+                ))}
+              </div>
+            )}
+          </div>
+        );
+      })}
 
       {/* Bullet points (e.g., prohibited activities list) */}
       {section.bulletPoints && (
         <ul className="list-disc list-inside text-sm text-gray-600 mb-4 space-y-2">
-          {section.bulletPoints.map((point, idx) => (
-            <li key={idx}>{point}</li>
+          {section.bulletPoints.map((point) => (
+            <li key={bulletPointKeyFor(point)}>{point}</li>
           ))}
         </ul>
       )}
