@@ -7,7 +7,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Insight that <span className="italic">drives sales</span>
+            Insight from a <span className="italic">human</span>
           </>
         }
       />

@@ -55,7 +55,7 @@ export const signalsExample: SignalsExample = {
     },
     {
       id: "security-review",
-      title: "Security reviews hasn't move forward at IKEA",
+      title: "Security review hasn't move forward at IKEA",
       summary:
         "The IKEA deal is progressing but their security team is dragging their feet. We might need to make sure infosec doesn't kill the deal",
       sources: [

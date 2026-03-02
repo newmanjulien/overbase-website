@@ -12,8 +12,8 @@ export const slackExample: SlackExample = {
         avatarUrl: "/analyst.jpg",
         paragraphs: [
           "Hey Chris. We're preparing the deal report Laura needs for her deal review meeting with you",
-          "I'm wondering about the dynamics between the economic buyer and the champion in the Acme deal (e.g., what's happening in the background)",
-          "Could you ask a question about this on your call with the Acme team tomorrow? I would prepare notes to make it easy",
+          "I'm wondering about the dynamics between the economic buyer and the champion in the IKEA deal (e.g., what's happening in the background)",
+          "Could you ask a question about this on your call with the IKEA team tomorrow? I would prepare notes to make it easy",
         ],
       },
       composerPlaceholder: "Message Howard",
@@ -26,7 +26,7 @@ export const slackExample: SlackExample = {
         userName: "Howard @ Overbase",
         avatarUrl: "/analyst.jpg",
         paragraphs: [
-          "I couldn't find any engagement from Acme in the past two weeks, or from Whirlpool.",
+          "I couldn't find any engagement from FedEx in the past two weeks, or from Whirlpool.",
           "If you feel we should reach back out ahead of your deal review meeting with Laura, I could propose emails you could send to each account to make it easier.",
           "Or if there's a good reason we didn't hear back that I didn't find, let me know so I can flag it to Laura and save you guys time.",
         ],
