@@ -58,7 +58,7 @@ export function Letter() {
               </p>
 
               <p>
-                A data scientist examines every detail of each deal in your
+                A data scientist audits the evidence behind each deal in your
                 rep's pipeline: calls, emails, Docusign, demo usage, and more.
                 Then we tell you what’s happening, what’s missing, and where
                 opportunities are hiding.

@@ -61,8 +61,8 @@ export default function HowItWorksSections() {
           An in-depth audit
         </h2>
         <p className="mt-6 text-gray-500">
-          A data scientist examines every detail of each deal, then collaborates
-          with your reps to fill in critical gaps
+          An Overbase data scientist audits the evidence behind each deal, then
+          works with your reps to fill in critical gaps
         </p>
       </div>
 
@@ -72,8 +72,8 @@ export default function HowItWorksSections() {
             step="01"
             title="A data scientist examines every detail"
             description={[
-              "A data scientist examines every detail of each deal your reps are managing",
-              "We review sales calls, read emails with prospects, check DocuSign, investigate demo usage, and more",
+              "A data scientist audits the evidence behind each deal: calls, emails, DocuSign, demo usage, and more",
+              "This lets us find hidden opportunities that aren't visible in the CRM",
             ]}
             reverse
           >

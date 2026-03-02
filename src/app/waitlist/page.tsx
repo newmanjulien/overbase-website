@@ -42,7 +42,7 @@ export default function WaitlistRoute() {
           Join waitlist
         </h1>
       }
-      description="We currently work with a handful of design partners (mostly our friends)"
+      description="We currently work with a handful of design partners"
       onLogoClick={() => router.push("/")}
       onSubmit={handleSubmit}
       primaryActionText="Submit"
