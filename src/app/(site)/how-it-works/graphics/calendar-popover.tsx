@@ -1,6 +1,5 @@
 "use client";
 
-import type { CSSProperties } from "react";
 import { Link2, Mail, MoreVertical, Pencil, Trash2 } from "lucide-react";
 
 import {
@@ -14,24 +13,22 @@ import { calendarPopoverContent } from "./calendar-data";
 type CalendarPopoverProps = {
   title: string;
   className?: string;
-  style?: CSSProperties;
 };
 
 const linkClassName =
   "text-blue-600 underline underline-offset-2 hover:text-blue-700";
 const iconClassName = "rounded-full p-1 text-gray-400";
 
-export function CalendarPopover({ title, className, style }: CalendarPopoverProps) {
+export function CalendarPopover({ title, className }: CalendarPopoverProps) {
   return (
     <HoverCard openDelay={0} closeDelay={120}>
       <HoverCardTrigger asChild>
         <button
           type="button"
           className={cn(
+            "h-full w-full cursor-pointer text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-200",
             className,
-            "cursor-pointer text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-200",
           )}
-          style={style}
           aria-label={`${title} details`}
         >
           <span className="min-w-0 truncate font-semibold">{title}</span>

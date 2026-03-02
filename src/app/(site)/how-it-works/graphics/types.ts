@@ -50,11 +50,7 @@ export type QuadrantChartData = {
 };
 
 type CalendarEventLayout = {
-  topPx: number;
-  heightPx: number;
-  widthPercent: number;
-  leftPercent: number;
-  zIndex: number;
+  layoutClassName: string;
 };
 
 type CalendarBaseEvent = CalendarEventLayout & {
@@ -75,9 +71,9 @@ export type CalendarEvent = CalendarDefaultEvent | CalendarPopoverEvent;
 export type CalendarGraphicDay = {
   id: string;
   label: string;
-  bodyHeightPx: number;
+  bodyClassName: string;
   hourLabels: string[];
-  hourBoundaries: { id: string; topPx: number }[];
+  hourBoundaries: { id: string; className: string }[];
   events: CalendarEvent[];
 };
 

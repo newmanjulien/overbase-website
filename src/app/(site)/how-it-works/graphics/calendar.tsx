@@ -1,4 +1,3 @@
-import type { CSSProperties, ReactElement } from "react";
 import type {
   CalendarDefaultEvent,
   CalendarEvent,
@@ -15,39 +14,37 @@ type CalendarProps = {
 };
 
 export function Calendar({ day, className }: CalendarProps) {
-  const getEventLayoutStyle = (
-    event: CalendarEvent,
-  ): CSSProperties => ({
-    top: event.topPx,
-    height: event.heightPx,
-    width: `${event.widthPercent}%`,
-    left: `${event.leftPercent}%`,
-    zIndex: event.zIndex,
-  });
-
   const eventRenderers = {
     default: (event: CalendarDefaultEvent) => (
       <div
         key={event.id}
-        className="absolute flex min-w-0 items-start rounded-lg bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm"
-        style={getEventLayoutStyle(event)}
+        className={cn(
+          "absolute flex min-w-0 items-start rounded-lg bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm",
+          event.layoutClassName,
+        )}
       >
         <span className="min-w-0 truncate font-semibold">{event.title}</span>
       </div>
     ),
     popover: (event: CalendarPopoverEvent) => (
-      <CalendarPopover
+      <div
         key={event.id}
-        title={event.title}
-        className="absolute flex min-w-0 items-start rounded-lg border border-white bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm"
-        style={getEventLayoutStyle(event)}
-      />
+        className={cn("absolute", event.layoutClassName)}
+      >
+        <CalendarPopover
+          title={event.title}
+          className="flex min-w-0 items-start rounded-lg border border-white bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm"
+        />
+      </div>
     ),
   };
 
   const renderEvent = (event: CalendarEvent) => {
-    const renderer = eventRenderers[event.variant] as (value: CalendarEvent) => ReactElement;
-    return renderer(event);
+    if (event.variant === "default") {
+      return eventRenderers.default(event);
+    }
+
+    return eventRenderers.popover(event);
   };
 
   return (
@@ -85,15 +82,19 @@ export function Calendar({ day, className }: CalendarProps) {
           </div>
 
           <div
-            className="relative overflow-hidden rounded-xl border border-gray-100 bg-gradient-to-b from-white via-white to-gray-50/60 px-3"
+            className={cn(
+              "relative overflow-hidden rounded-xl border border-gray-100 bg-gradient-to-b from-white via-white to-gray-50/60 px-3",
+              day.bodyClassName,
+            )}
             data-calendar-body
-            style={{ height: day.bodyHeightPx }}
           >
             {day.hourBoundaries.map((boundary) => (
               <div
                 key={boundary.id}
-                className="absolute left-0 right-0 border-t border-gray-100"
-                style={{ top: boundary.topPx }}
+                className={cn(
+                  "absolute left-0 right-0 border-t border-gray-100",
+                  boundary.className,
+                )}
               />
             ))}
 
