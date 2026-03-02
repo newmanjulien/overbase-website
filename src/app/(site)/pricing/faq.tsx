@@ -16,7 +16,7 @@ const FAQ_ITEMS = [
   {
     id: "role-of-ai",
     q: "What's the role of AI in your service?",
-    a: "we build custom AI tools for analyzing sales deals and for forecasting revenue and our human data scientists use these tools",
+    a: "We build custom AI tools for analyzing sales deals and for forecasting revenue. And our human data scientists use these tools",
   },
   {
     id: "security",

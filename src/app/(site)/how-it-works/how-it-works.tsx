@@ -56,9 +56,9 @@ function HowItWorksSection({
 export default function HowItWorksSections() {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
-      <div className="max-w-xl mx-auto text-center">
+      <div className="max-w-lg mx-auto text-center">
         <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
-          Audit then forecast
+          Accurate forecast with an in-depth audit
         </h2>
         <p className="mt-6 text-gray-500">
           Overbase audits the evidence behind each deal, works with reps to fill
