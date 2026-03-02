@@ -282,7 +282,7 @@ export const termsSections: LegalSection[] = [
       {
         title: "13.8. Entire Agreement",
         content: [
-          "This Agreement is the complete and exclusive statement of the mutual understanding of the parties and supersedes and cancels all previous written and oral agreements and communications relating to the subject matter of this Agreement. Notwithstanding the foregoing, Optional Offerings may be made available for Customer’s use in its sole discretion. Overbase may change and update the Service (in which case Overbase may update the applicable Documentation accordingly), subject to the warranty in Section 8.1 (Service Warranty). For clarity, all URL terms expressly referenced herein include any updates made thereto, as posted to https://www.overabse.app/legal or a successor website designated by Overbase.",
+          "This Agreement is the complete and exclusive statement of the mutual understanding of the parties and supersedes and cancels all previous written and oral agreements and communications relating to the subject matter of this Agreement. Notwithstanding the foregoing, Optional Offerings may be made available for Customer’s use in its sole discretion. Overbase may change and update the Service (in which case Overbase may update the applicable Documentation accordingly), subject to the warranty in Section 8.1 (Service Warranty). For clarity, all URL terms expressly referenced herein include any updates made thereto, as posted to https://www.overbase.app/legal or a successor website designated by Overbase.",
         ],
       },
       {
