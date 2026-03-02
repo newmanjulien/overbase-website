@@ -84,7 +84,7 @@ export default function HowItWorksSections() {
         <div className="pt-10">
           <HowItWorksSection
             step="02"
-            title="We collaborates with reps to fill in gaps"
+            title="We collaborate with reps to fill in gaps"
             description={[
               "The data you need to truly understand each deal is often missing from your systems",
               "We work with your reps to get missing details and make it easy to ask buyers the right questions",
