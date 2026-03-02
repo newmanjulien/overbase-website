@@ -18,7 +18,7 @@ const PLANS: Plan[] = [
     name: "Per rep",
     price: "$300",
     description:
-      "Pay a fee per rep to drive more sales at every deal review meeting",
+      "Pay a fee per rep and a human data scientist prepares their deal review meetings",
     subtext:
       "Per rep per month with annual subscription discount. $500 if billed monthly",
     valueLabel: "More ROI",
