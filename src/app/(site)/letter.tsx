@@ -39,9 +39,9 @@ export function Letter() {
 
               <p>
                 Deals close faster when managers have a clear read on every
-                rep’s pipeline. But understanding one single deal can take
-                hours. Multiply that by 20 deals and 8 reps, and you're working
-                a second full-time job.
+                rep’s pipeline. But truly understanding one single deal can take
+                over an hour. Multiply that by 20 deals and 8 reps, and you're
+                working a second full-time job.
               </p>
 
               <p>
@@ -52,14 +52,14 @@ export function Letter() {
               <p>Not anymore.</p>
 
               <p>
-                Overbase does all the analysis work then puts the data sales
-                managers need for deal review meetings directly in their
-                calendar invite.
+                Overbase does all the analysis work then puts the deal data your
+                sales managers need for deal review meetings directly in their
+                meeting's calendar invite.
               </p>
 
               <p>
-                A data scientist examines every detail of each deal your reps
-                are managing: calls, emails, Docusign, demo usage, and more.
+                A data scientist examines every detail of each deal in your
+                rep's pipeline: calls, emails, Docusign, demo usage, and more.
                 Then we tell you what’s happening, what’s missing, and where
                 opportunities are hiding.
               </p>

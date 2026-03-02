@@ -21,13 +21,13 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-md text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Deal reviews that{" "}
-            <span className="bg-[#ffffcc] px-1">drive sales</span>
+            Deal reviews with{" "}
+            <span className="bg-[#ffffcc] px-1">deal data</span>
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase puts the data sales managers need for deal review meetings
-            directly in their calendar invite
+            Overbase gives your sales managers the deal data they need for their
+            deal review meetings
           </h2>
 
           <div className={newLocal}>
