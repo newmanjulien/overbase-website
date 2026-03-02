@@ -32,6 +32,88 @@ interface CachedElement {
   target: Element;
 }
 
+function buildCache(sectionIds: string[]): Map<string, CachedElement> {
+  const cache = new Map<string, CachedElement>();
+
+  for (const id of sectionIds) {
+    const section = document.getElementById(id);
+    if (!section) {
+      continue;
+    }
+
+    const target = section.querySelector(TOC_SCROLL_SPY_TARGET_SELECTOR) || section;
+    cache.set(id, { section, target });
+  }
+
+  return cache;
+}
+
+function getVisibleIds(
+  sectionIds: string[],
+  cache: Map<string, CachedElement>,
+  topOffset: number,
+  viewportHeight: number,
+): string[] {
+  const active: string[] = [];
+
+  for (const id of sectionIds) {
+    const cached = cache.get(id);
+    if (!cached) {
+      continue;
+    }
+
+    const rect = cached.target.getBoundingClientRect();
+    const isVisible =
+      (rect.top >= topOffset && rect.top < viewportHeight) ||
+      (rect.bottom > topOffset && rect.bottom <= viewportHeight) ||
+      (rect.top < topOffset && rect.bottom > viewportHeight);
+
+    if (isVisible) {
+      active.push(id);
+    }
+  }
+
+  return active;
+}
+
+function getFallbackId(
+  sectionIds: string[],
+  cache: Map<string, CachedElement>,
+  topOffset: number,
+): string | null {
+  let currentSection: string | null = null;
+
+  for (const id of sectionIds) {
+    const cached = cache.get(id);
+    if (!cached) {
+      continue;
+    }
+
+    const rect = cached.target.getBoundingClientRect();
+    if (rect.bottom < topOffset) {
+      currentSection = id;
+    }
+  }
+
+  return currentSection;
+}
+
+function rafThrottle(callback: () => void): () => void {
+  let ticking = false;
+
+  return () => {
+    if (ticking) {
+      return;
+    }
+
+    window.requestAnimationFrame(() => {
+      callback();
+      ticking = false;
+    });
+    ticking = true;
+  };
+}
+
 /**
  * Custom hook that tracks which sections are currently visible in the viewport.
  * Returns an array of section IDs, enabling multi-section highlighting.
@@ -66,80 +148,25 @@ export function useTOCScrollSpy(
     if (typeof window === "undefined") return;
     if (!enabled) return;
 
-    // Build element cache on mount (or when IDs change)
-    const cache = new Map<string, CachedElement>();
-    for (const id of sectionIds) {
-      const section = document.getElementById(id);
-      if (section) {
-        const target =
-          section.querySelector(TOC_SCROLL_SPY_TARGET_SELECTOR) || section;
-        cache.set(id, { section, target });
-      }
-    }
+    const cache = buildCache(sectionIds);
 
     const handleScroll = () => {
-      const active: string[] = [];
       const viewportHeight = window.innerHeight;
+      const active = getVisibleIds(sectionIds, cache, topOffset, viewportHeight);
 
-      // Use cached elements - no DOM queries during scroll!
-      for (const id of sectionIds) {
-        const cached = cache.get(id);
-        if (!cached) continue;
-
-        const rect = cached.target.getBoundingClientRect();
-
-        // Target is visible if:
-        // - Its top is below the fixed header AND above the bottom of viewport
-        // - OR its bottom is below the fixed header AND above the bottom of viewport
-        const isVisible =
-          (rect.top >= topOffset && rect.top < viewportHeight) ||
-          (rect.bottom > topOffset && rect.bottom <= viewportHeight) ||
-          (rect.top < topOffset && rect.bottom > viewportHeight);
-
-        if (isVisible) {
-          active.push(id);
-        }
-      }
-
-      // Fallback: if nothing is visible, show the current section based on scroll position
       if (active.length === 0) {
-        let currentSection: string | null = null;
-
-        for (const id of sectionIds) {
-          const cached = cache.get(id);
-          if (!cached) continue;
-
-          const rect = cached.target.getBoundingClientRect();
-
-          // If target is above the viewport, we're past it
-          if (rect.bottom < topOffset) {
-            currentSection = id;
-          }
-        }
-
-        if (currentSection) {
-          active.push(currentSection);
+        const fallbackId = getFallbackId(sectionIds, cache, topOffset);
+        if (fallbackId) {
+          active.push(fallbackId);
         }
       }
 
-      // Only update state if the active sections actually changed
       setActiveIds((prev) => (arraysEqual(prev, active) ? prev : active));
     };
 
-    // Initial check
     handleScroll();
 
-    // Add scroll listener with throttling via requestAnimationFrame
-    let ticking = false;
-    const onScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          handleScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
+    const onScroll = rafThrottle(handleScroll);
 
     window.addEventListener("scroll", onScroll, { passive: true });
 

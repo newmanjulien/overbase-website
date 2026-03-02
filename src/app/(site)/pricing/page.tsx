@@ -4,10 +4,10 @@ import FAQ from "./faq";
 
 export default function PricingPage() {
   return (
-    <div>
+    <>
       <Pricing />
       <Tiers />
       <FAQ />
-    </div>
+    </>
   );
 }

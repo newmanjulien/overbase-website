@@ -67,7 +67,10 @@ export function TableOfContents({
 }: TableOfContentsProps) {
   const [isDesktop, setIsDesktop] = useState(false);
   const sectionIds = useMemo(() => items.map((item) => item.id), [items]);
-  const activeIds = useTOCScrollSpy(sectionIds, { enabled: isDesktop });
+  const activeIds = useTOCScrollSpy(sectionIds, {
+    enabled: isDesktop,
+    topOffset: scrollOffset,
+  });
   const activeIdSet = useMemo(() => new Set(activeIds), [activeIds]);
 
   useEffect(() => {
