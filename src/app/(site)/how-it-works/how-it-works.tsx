@@ -5,7 +5,7 @@ import { Signals } from "./graphics/signals";
 import { quadrantExample } from "./graphics/quadrant-data";
 import { signalsExample } from "./graphics/signals-data";
 import { slackExample } from "./graphics/slack-data";
-import { SlackPreview } from "./graphics/slack";
+import { SlackPreview } from "./graphics/slack-controller";
 
 type HowItWorksSectionProps = {
   step: string;

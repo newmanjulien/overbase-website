@@ -62,8 +62,9 @@ export function Signals({
                   </div>
                 ))}
               </div>
-              <span className="text-[11px] text-gray-500">
-                Sources: {signal.sources.map((source) => source.name).join(" & ")}
+              <span className="text-xs text-gray-500">
+                Sources:{" "}
+                {signal.sources.map((source) => source.name).join(" & ")}
               </span>
             </div>
           </div>
@@ -86,7 +87,7 @@ export function Signals({
                     pages.length
                   }`}
                   aria-current={isActive ? "page" : undefined}
-                  className="group flex h-6 w-6 items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-200"
+                  className="group flex h-5 w-5 items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-200"
                   onClick={() => setActivePage(index)}
                 >
                   <span
