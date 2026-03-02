@@ -35,7 +35,7 @@ export function Letter() {
 
               <p>
                 Which means you need to get your hands dirty. Dig into every
-                deal. See what's' missing. Find which timelines are suspicious.
+                deal. See what's missing. Find which timelines are suspicious.
                 And ideally, you'd look at emails, documents and call recordings
                 to actually get the full picture.
               </p>

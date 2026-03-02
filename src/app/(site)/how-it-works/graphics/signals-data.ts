@@ -55,7 +55,7 @@ export const signalsExample: SignalsExample = {
     },
     {
       id: "security-review",
-      title: "Security review hasn't move forward at IKEA",
+      title: "Security review hasn't moved forward at IKEA",
       summary:
         "The IKEA deal is progressing but their security team is dragging their feet. We might need to make sure infosec doesn't kill the deal",
       sources: [
@@ -87,7 +87,7 @@ export const signalsExample: SignalsExample = {
       id: "doc-turnaround",
       title: "FedEx's engagement is way up",
       summary:
-        "The last call with FedEx with their VP seems to have changed the tone of the conversation. We might want to strike while the iron is hot",
+        "The last call with FedEx which their VP attended seems to have changed the tone of the conversation. We might want to strike while the iron is hot",
       sources: [
         { name: "Gong", logo: "/logos/gong.png" },
         { name: "Salesforce", logo: "/logos/salesforce.png" },
