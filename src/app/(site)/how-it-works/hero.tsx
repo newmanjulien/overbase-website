@@ -19,9 +19,10 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Know what happened since your last meeting, where to focus,
-                what’s missing, timelines to ask about, and get a clear list of
-                risks and opportunities
+                Quickly know what happened since your last meeting, which deals
+                are actually likely to close and where to focus your time.
+                Immediately see what’s missing and notice suspicious timelines
+                to ask about
               </p>
             </div>
           </div>

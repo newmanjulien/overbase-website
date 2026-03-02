@@ -58,11 +58,11 @@ export default function HowItWorksSections() {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <div className="max-w-xl mx-auto text-center">
         <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
-          An in-depth audit
+          Audit then forecast
         </h2>
         <p className="mt-6 text-gray-500">
-          An Overbase data scientist audits the evidence behind each deal, then
-          works with your reps to fill in critical gaps
+          Overbase audits the evidence behind each deal, works with reps to fill
+          in gaps, then builds an accurate forecast
         </p>
       </div>
 
@@ -70,9 +70,9 @@ export default function HowItWorksSections() {
         <div className="pt-22">
           <HowItWorksSection
             step="01"
-            title="A data scientist examines every detail"
+            title="We audit the evidence behind each deal"
             description={[
-              "A data scientist audits the evidence behind each deal: calls, emails, DocuSign, demo usage, and more",
+              "We audit the evidence behind each deal: calls, emails, DocuSign, demo usage, and more",
               "This lets us find hidden opportunities that aren't visible in the CRM",
             ]}
             reverse
@@ -84,7 +84,7 @@ export default function HowItWorksSections() {
         <div className="pt-10">
           <HowItWorksSection
             step="02"
-            title="Collaborates with reps to fill in critical gaps"
+            title="We collaborates with reps to fill in gaps"
             description={[
               "The data you need to truly understand each deal is often missing from your systems",
               "We work with your reps to get missing details and make it easy to ask buyers the right questions",
@@ -101,10 +101,10 @@ export default function HowItWorksSections() {
         <div className="pt-6">
           <HowItWorksSection
             step="03"
-            title="Gives a second opinion on which deals are likely to close"
+            title="Then we forecast which deals are likely to close"
             description={[
               "This in-depth audit lets us give a second opinion on how likely it is that each deal will close",
-              "Comparing the CRM's opinion with our opinion reveals hidden sales opportunities",
+              "Comparing your CRM's forecast with Overbase's forecast reveals hidden revenue opportunities",
             ]}
             reverse
           >

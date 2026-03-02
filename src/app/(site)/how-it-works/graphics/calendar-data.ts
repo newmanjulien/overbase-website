@@ -47,7 +47,7 @@ export const calendarPopoverContent = {
         "See what has happened with Chris's deals since your last deal review meeting",
     },
     {
-      label: "Deal quadrant",
+      label: "Forecast",
       description:
         "Focus on the right deals by seeing where Overbase disagrees with your CRM",
     },

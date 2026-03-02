@@ -9,14 +9,14 @@ export function Hero() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
-          <h1 className="max-w-md text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Deal reviews with{" "}
-            <span className="bg-[#ffffcc] px-1">deal data</span>
+          <h1 className="max-w-sm text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
+            Deal reviews that{" "}
+            <span className="bg-[#ffffcc] px-1">drive revenue</span>
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase gives your sales managers the deal data they need for their
-            deal review meetings
+            Overbase gives sales managers the information they need to drive
+            revenue at deal review meetings
           </h2>
 
           <div className={newLocal}>

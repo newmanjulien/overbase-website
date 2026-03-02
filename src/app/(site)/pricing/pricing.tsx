@@ -14,24 +14,23 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Get insight from a human data scientist
+              A human data scientist using specialized AI tools
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              A data scientist examines every detail of each deal: calls,
+              A human data scientist examines every detail of each deal: calls,
               emails, DocuSign, demo usage, and more
             </p>
 
             <p>
-              This audit is both thorough and reliable. It's run by a human who
-              leverages specialized AI tools to dig deeper than any software or
-              human could alone
+              This human uses specialized AI tools to understand each deal
+              in-depth. And to forecast accurately
             </p>
 
             <p>
-              Then we tell you what’s happening, what’s missing, and where
-              opportunities are hiding
+              Then we package up the insight and put it in a convenient calendar
+              invite
             </p>
           </div>
         </div>

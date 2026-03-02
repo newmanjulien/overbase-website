@@ -22,46 +22,46 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The hardest part of deal review meetings isn't the meeting
-                itself. It's the investigative hours sales managers spend before
-                the rep even walks into the room.
+                The hardest part of deal review isn't the meeting itself. It's
+                the investigative hours sales managers spend before the rep even
+                walks into the room.
               </p>
 
               <p>
-                You can't just ask, "Is this deal real?" You need something
-                specific like,{" "}
-                <i>
-                  "I wonder why the champion hasn't logged into their sandbox
-                  for two weeks"
-                </i>
-                .
+                CRM dashboards don't give you an accurate enough read on which
+                deals are likely to close. Or on which levers to pull to
+                accelerate revenue.
               </p>
 
               <p>
-                Deals close faster when managers have a clear read on every
-                rep’s pipeline. But truly understanding one single deal can take
-                over an hour. Multiply that by 20 deals and 8 reps, and you're
-                working a second full-time job.
+                Which means you need to get your hands dirty. Dig into every
+                deal. See what's' missing. Find which timelines are suspicious.
+                And ideally, you'd look at emails, documents and call recordings
+                to actually get the full picture.
               </p>
 
               <p>
-                Which is why most sales managers have to cut corners. And why
-                easy revenue gets left on the table.
+                Doing this type of investigation properly takes hours. Multiply
+                that by 8 reps, and you're working a second full-time job.
+              </p>
+
+              <p>
+                Which is why most sales managers have no choice but to cut
+                corners. And why easy revenue gets left on the table at every
+                deal review meeting.
               </p>
 
               <p>Not anymore.</p>
 
               <p>
-                Overbase does all the analysis work then puts the deal data your
-                sales managers need for deal review meetings directly in their
-                meeting's calendar invite.
+                Overbase puts the information sales managers need for deal
+                review meetings directly in their meeting's calendar invite.
               </p>
 
               <p>
-                A data scientist audits the evidence behind each deal in your
-                rep's pipeline: calls, emails, Docusign, demo usage, and more.
-                Then we tell you what’s happening, what’s missing, and where
-                opportunities are hiding.
+                You quickly get an accurate forecast. You immediately know where
+                to focus. And you clearly see what levers to pull to close more
+                deals faster.
               </p>
             </div>
 
