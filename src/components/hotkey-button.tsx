@@ -4,6 +4,21 @@ import Link from "next/link";
 import { useEffect, useRef, forwardRef } from "react";
 import { Button } from "@/components/ui/button";
 
+const EDITABLE_ROLES = new Set([
+  "textbox",
+  "searchbox",
+  "combobox",
+  "spinbutton",
+]);
+
+function isEditableTarget(target: EventTarget | null) {
+  if (!(target instanceof HTMLElement)) return false;
+  if (target.isContentEditable) return true;
+  if (["INPUT", "TEXTAREA", "SELECT"].includes(target.tagName)) return true;
+  const role = target.getAttribute("role");
+  return role ? EDITABLE_ROLES.has(role) : false;
+}
+
 export function HotkeyBadge({
   keyChar,
   variant = "light",
@@ -13,7 +28,8 @@ export function HotkeyBadge({
 }) {
   const baseClasses =
     "hidden md:inline-flex items-center justify-center w-5 h-5 rounded-sm text-xs font-semibold";
-  const variantClasses = "bg-gray-200 text-gray-700";
+  const variantClasses =
+    variant === "ghost" ? "bg-gray-100 text-gray-600" : "bg-gray-200 text-gray-700";
 
   return <span className={`${baseClasses} ${variantClasses}`}>{keyChar}</span>;
 }
@@ -47,6 +63,7 @@ export const HotkeyButton = forwardRef<
     externalRef,
   ) => {
     const internalRef = useRef<HTMLElement | null>(null);
+    const normalizedHotkey = hotkey.toLowerCase();
 
     const setRef = (node: HTMLElement | null) => {
       internalRef.current = node;
@@ -56,27 +73,22 @@ export const HotkeyButton = forwardRef<
 
     useEffect(() => {
       const handler = (e: KeyboardEvent) => {
-        const target = e.target;
-        if (!(target instanceof HTMLElement)) return;
-        if (
-          target.isContentEditable ||
-          ["INPUT", "TEXTAREA"].includes(target.tagName) ||
-          (target as HTMLInputElement).type === "text"
-        )
-          return;
-
-        if (e.key.toLowerCase() !== hotkey.toLowerCase()) return;
+        if (e.defaultPrevented || e.repeat) return;
+        if (e.metaKey || e.ctrlKey || e.altKey || e.shiftKey) return;
+        if (isEditableTarget(e.target)) return;
+        if (e.key.toLowerCase() !== normalizedHotkey) return;
 
         const el = internalRef.current;
         if (!el) return;
 
+        e.preventDefault();
         el.focus();
         el.click();
       };
 
       window.addEventListener("keydown", handler);
       return () => window.removeEventListener("keydown", handler);
-    }, [hotkey]);
+    }, [normalizedHotkey]);
 
     return (
       <Button
@@ -86,6 +98,7 @@ export const HotkeyButton = forwardRef<
         size={size}
         className={className}
         asChild={Boolean(href)}
+        aria-keyshortcuts={normalizedHotkey}
       >
         {href ? (
           <Link href={href} target={target} rel={rel}>

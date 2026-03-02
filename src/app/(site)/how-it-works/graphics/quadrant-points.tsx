@@ -2,12 +2,8 @@ import type { QuadrantPoint } from "./types";
 
 type QuadrantPointsProps = {
   points: QuadrantPoint[];
-  onHover: (
-    point: QuadrantPoint,
-    position: { x: number; y: number },
-    bounds: { width: number; height: number }
-  ) => void;
-  onMove: (position: { x: number; y: number }) => void;
+  onHover: (point: QuadrantPoint, clientPosition: { x: number; y: number }) => void;
+  onMove: (clientPosition: { x: number; y: number }) => void;
 };
 
 export function QuadrantPoints({
@@ -22,23 +18,15 @@ export function QuadrantPoints({
           <g
             key={point.id}
             onMouseEnter={(event) => {
-              const rect = event.currentTarget.ownerSVGElement?.getBoundingClientRect();
-              if (!rect) return;
-              onHover(
-                point,
-                {
-                  x: event.clientX - rect.left,
-                  y: event.clientY - rect.top,
-                },
-                { width: rect.width, height: rect.height }
-              );
+              onHover(point, {
+                x: event.clientX,
+                y: event.clientY,
+              });
             }}
             onMouseMove={(event) => {
-              const rect = event.currentTarget.ownerSVGElement?.getBoundingClientRect();
-              if (!rect) return;
               onMove({
-                x: event.clientX - rect.left,
-                y: event.clientY - rect.top,
+                x: event.clientX,
+                y: event.clientY,
               });
             }}
           >

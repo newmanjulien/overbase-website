@@ -1,7 +1,6 @@
-"use client";
-
 import { TableOfContents } from "@/components/layouts/table-of-contents";
 import { LegalBreadcrumb } from "@/components/layouts/legal-breadcrumb";
+import { TOC_SCROLL_SPY_TARGET_PROPS } from "@/lib/toc-scroll-spy";
 
 export interface LegalSection {
   id: string;
@@ -37,7 +36,7 @@ function Section({ section }: { section: LegalSection }) {
       <h2
         id={section.id}
         className="text-lg font-medium text-gray-900 mb-4 scroll-mt-24"
-        data-scroll-spy-target
+        {...TOC_SCROLL_SPY_TARGET_PROPS}
       >
         {section.title}
       </h2>

@@ -1,0 +1,7 @@
+export const TOC_SCROLL_SPY_TARGET_ATTRIBUTE = "data-scroll-spy-target";
+
+export const TOC_SCROLL_SPY_TARGET_SELECTOR = `[${TOC_SCROLL_SPY_TARGET_ATTRIBUTE}]`;
+
+export const TOC_SCROLL_SPY_TARGET_PROPS = {
+  [TOC_SCROLL_SPY_TARGET_ATTRIBUTE]: "",
+} as const;

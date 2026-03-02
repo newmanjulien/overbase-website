@@ -1,5 +1,11 @@
 "use client";
 
+import {
+  type MouseEvent,
+  useEffect,
+  useMemo,
+  useState,
+} from "react";
 import { useTOCScrollSpy, scrollToSection } from "@/hooks/use-toc-scroll-spy";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { cn } from "@/lib/utils";
@@ -23,14 +29,14 @@ interface TableOfContentsProps {
 function getActiveRoundingClasses(
   index: number,
   items: TOCItem[],
-  activeIds: string[],
+  activeIdSet: Set<string>,
 ): string {
-  const isActive = activeIds.includes(items[index].id);
+  const isActive = activeIdSet.has(items[index].id);
   if (!isActive) return "rounded-md"; // Inactive items get normal rounding
 
-  const prevActive = index > 0 && activeIds.includes(items[index - 1].id);
+  const prevActive = index > 0 && activeIdSet.has(items[index - 1].id);
   const nextActive =
-    index < items.length - 1 && activeIds.includes(items[index + 1].id);
+    index < items.length - 1 && activeIdSet.has(items[index + 1].id);
 
   // Determine rounding based on position in active group
   if (!prevActive && !nextActive) {
@@ -59,10 +65,23 @@ export function TableOfContents({
   className,
   scrollOffset = 100,
 }: TableOfContentsProps) {
-  const sectionIds = items.map((item) => item.id);
-  const activeIds = useTOCScrollSpy(sectionIds);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const sectionIds = useMemo(() => items.map((item) => item.id), [items]);
+  const activeIds = useTOCScrollSpy(sectionIds, { enabled: isDesktop });
+  const activeIdSet = useMemo(() => new Set(activeIds), [activeIds]);
 
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>, id: string) => {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mql = window.matchMedia("(min-width: 1024px)");
+    const onChange = () => setIsDesktop(mql.matches);
+
+    onChange();
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
+  }, []);
+
+  const handleClick = (e: MouseEvent<HTMLButtonElement>, id: string) => {
     e.preventDefault();
     scrollToSection(id, scrollOffset);
   };
@@ -81,9 +100,9 @@ export function TableOfContents({
           const roundingClasses = getActiveRoundingClasses(
             index,
             items,
-            activeIds,
+            activeIdSet,
           );
-          const isActive = activeIds.includes(item.id);
+          const isActive = activeIdSet.has(item.id);
 
           return (
             <ToggleGroupItem

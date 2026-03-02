@@ -1,155 +1,62 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-import { Link2, Mail, MoreVertical, Pencil, Trash2, X } from "lucide-react";
+import type { CSSProperties } from "react";
+import { Link2, Mail, MoreVertical, Pencil, Trash2 } from "lucide-react";
 
 import {
   HoverCard,
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { cn } from "@/components/ui/utils";
+import { cn } from "@/lib/utils";
 import { calendarPopoverContent } from "./calendar-data";
-import type { CalendarEvent } from "./types";
 
 type CalendarPopoverProps = {
-  event: CalendarEvent;
+  title: string;
   className?: string;
+  style?: CSSProperties;
 };
 
 const linkClassName =
   "text-blue-600 underline underline-offset-2 hover:text-blue-700";
+const iconClassName = "rounded-full p-1 text-gray-400";
 
-export function CalendarPopover({ event, className }: CalendarPopoverProps) {
-  const iconButtonClass =
-    "rounded-full p-1 text-gray-400 transition hover:bg-gray-100 hover:text-gray-600";
-  const [open, setOpen] = useState(false);
-  const lastPointerPosition = useRef<{ x: number; y: number } | null>(null);
-  const scrollFrame = useRef<number | null>(null);
-  const triggerSelector = `[data-calendar-popover-trigger="${event.id}"]`;
-  const contentSelector = `[data-calendar-popover-content="${event.id}"]`;
-
-  useEffect(() => {
-    const handlePointerMove = (pointerEvent: PointerEvent) => {
-      lastPointerPosition.current = {
-        x: pointerEvent.clientX,
-        y: pointerEvent.clientY,
-      };
-    };
-
-    window.addEventListener("pointermove", handlePointerMove, {
-      passive: true,
-    });
-
-    return () => {
-      window.removeEventListener("pointermove", handlePointerMove);
-    };
-  }, []);
-
-  useEffect(() => {
-    const updateOpenFromPointer = () => {
-      const pointer = lastPointerPosition.current;
-      if (!pointer) {
-        return;
-      }
-
-      const element = document.elementFromPoint(pointer.x, pointer.y);
-      if (!element) {
-        setOpen(false);
-        return;
-      }
-
-      const shouldOpen =
-        Boolean(element.closest(triggerSelector)) ||
-        Boolean(element.closest(contentSelector));
-
-      setOpen((prevOpen) => (prevOpen === shouldOpen ? prevOpen : shouldOpen));
-    };
-
-    const handleScroll = () => {
-      if (scrollFrame.current !== null) {
-        return;
-      }
-
-      scrollFrame.current = window.requestAnimationFrame(() => {
-        scrollFrame.current = null;
-        updateOpenFromPointer();
-      });
-    };
-
-    const options = { passive: true, capture: true } as const;
-    window.addEventListener("scroll", handleScroll, options);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll, options);
-      if (scrollFrame.current !== null) {
-        window.cancelAnimationFrame(scrollFrame.current);
-      }
-    };
-  }, [contentSelector, triggerSelector]);
-
+export function CalendarPopover({ title, className, style }: CalendarPopoverProps) {
   return (
-    <HoverCard
-      open={open}
-      onOpenChange={setOpen}
-      openDelay={0}
-      closeDelay={120}
-    >
+    <HoverCard openDelay={0} closeDelay={120}>
       <HoverCardTrigger asChild>
-        <div
+        <button
+          type="button"
           className={cn(
             className,
-            "cursor-pointer focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-200",
+            "cursor-pointer text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-200",
           )}
-          role="button"
-          tabIndex={0}
-          aria-label={`${event.title} details`}
-          data-event-id={event.id}
-          data-calendar-popover-trigger={event.id}
+          style={style}
+          aria-label={`${title} details`}
         >
-          <span className="min-w-0 truncate font-semibold">{event.title}</span>
-        </div>
+          <span className="min-w-0 truncate font-semibold">{title}</span>
+        </button>
       </HoverCardTrigger>
       <HoverCardContent
         align="center"
         side="right"
         sideOffset={18}
         className="w-92 rounded-2xl border border-gray-200 bg-gray-50/95 p-0 shadow-2xl backdrop-blur-sm"
-        data-calendar-popover-content={event.id}
       >
         <div className="px-6 pb-5 pt-4">
-          <div className="flex items-center justify-end gap-2">
-            <button type="button" className={iconButtonClass} aria-label="Edit">
+          <div className="flex items-center justify-end gap-2" aria-hidden>
+            <span className={iconClassName}>
               <Pencil className="h-4 w-4" strokeWidth={1.6} />
-            </button>
-            <button
-              type="button"
-              className={iconButtonClass}
-              aria-label="Delete"
-            >
+            </span>
+            <span className={iconClassName}>
               <Trash2 className="h-4 w-4" strokeWidth={1.6} />
-            </button>
-            <button
-              type="button"
-              className={iconButtonClass}
-              aria-label="Email"
-            >
+            </span>
+            <span className={iconClassName}>
               <Mail className="h-4 w-4" strokeWidth={1.6} />
-            </button>
-            <button
-              type="button"
-              className={iconButtonClass}
-              aria-label="More options"
-            >
+            </span>
+            <span className={iconClassName}>
               <MoreVertical className="h-4 w-4" strokeWidth={1.6} />
-            </button>
-            <button
-              type="button"
-              className={iconButtonClass}
-              aria-label="Close"
-            >
-              <X className="h-4 w-4" strokeWidth={1.6} />
-            </button>
+            </span>
           </div>
 
           <div className="mt-3 flex items-start gap-3">
@@ -164,25 +71,16 @@ export function CalendarPopover({ event, className }: CalendarPopoverProps) {
           </div>
 
           <div className="mt-4">
-            <button
-              type="button"
-              className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-blue-600 transition hover:bg-gray-50"
-            >
+            <div className="inline-flex items-center gap-2 rounded-full border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-blue-600">
               <Link2 className="h-4 w-4" strokeWidth={1.6} />
               {calendarPopoverContent.inviteLabel}
-            </button>
+            </div>
           </div>
 
           <div className="mt-4 space-y-3 text-sm leading-relaxed text-gray-600">
             {calendarPopoverContent.notes.map((note) => (
               <p key={note.label}>
-                <a
-                  href="#"
-                  className={linkClassName}
-                  onClick={(event) => event.preventDefault()}
-                >
-                  {note.label}
-                </a>{" "}
+                <span className={linkClassName}>{note.label}</span>{" "}
                 - {note.description}
               </p>
             ))}

@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { cn } from "@/components/ui/utils";
+import { cn } from "@/lib/utils";
 import { Quadrant } from "./graphics/quadrant";
 import { Signals } from "./graphics/signals";
 import { quadrantExample } from "./graphics/quadrant-data";

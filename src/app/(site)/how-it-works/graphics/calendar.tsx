@@ -1,6 +1,12 @@
-import type { CalendarGraphicDay } from "./types";
+import type { CSSProperties, ReactElement } from "react";
+import type {
+  CalendarDefaultEvent,
+  CalendarEvent,
+  CalendarGraphicDay,
+  CalendarPopoverEvent,
+} from "./types";
 
-import { cn } from "@/components/ui/utils";
+import { cn } from "@/lib/utils";
 import { CalendarPopover } from "./calendar-popover";
 
 type CalendarProps = {
@@ -9,17 +15,40 @@ type CalendarProps = {
 };
 
 export function Calendar({ day, className }: CalendarProps) {
-  const calendarStyles = [
-    `#${day.id} [data-calendar-body] { height: ${day.bodyHeightPx}px; }`,
-    ...day.hourBoundaries.map(
-      (boundary) =>
-        `#${day.id} [data-boundary-id="${boundary.id}"] { top: ${boundary.topPx}px; }`,
+  const getEventLayoutStyle = (
+    event: CalendarEvent,
+  ): CSSProperties => ({
+    top: event.topPx,
+    height: event.heightPx,
+    width: `${event.widthPercent}%`,
+    left: `${event.leftPercent}%`,
+    zIndex: event.zIndex,
+  });
+
+  const eventRenderers = {
+    default: (event: CalendarDefaultEvent) => (
+      <div
+        key={event.id}
+        className="absolute flex min-w-0 items-start rounded-lg bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm"
+        style={getEventLayoutStyle(event)}
+      >
+        <span className="min-w-0 truncate font-semibold">{event.title}</span>
+      </div>
     ),
-    ...day.events.map(
-      (event) =>
-        `#${day.id} [data-event-id="${event.id}"] { top: ${event.topPx}px; height: ${event.heightPx}px; width: ${event.widthPercent}%; left: ${event.leftPercent}%; z-index: ${event.zIndex}; }`,
+    popover: (event: CalendarPopoverEvent) => (
+      <CalendarPopover
+        key={event.id}
+        title={event.title}
+        className="absolute flex min-w-0 items-start rounded-lg border border-white bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm"
+        style={getEventLayoutStyle(event)}
+      />
     ),
-  ].join("\n");
+  };
+
+  const renderEvent = (event: CalendarEvent) => {
+    const renderer = eventRenderers[event.variant] as (value: CalendarEvent) => ReactElement;
+    return renderer(event);
+  };
 
   return (
     <div
@@ -58,49 +87,22 @@ export function Calendar({ day, className }: CalendarProps) {
           <div
             className="relative overflow-hidden rounded-xl border border-gray-100 bg-gradient-to-b from-white via-white to-gray-50/60 px-3"
             data-calendar-body
+            style={{ height: day.bodyHeightPx }}
           >
             {day.hourBoundaries.map((boundary) => (
               <div
                 key={boundary.id}
                 className="absolute left-0 right-0 border-t border-gray-100"
-                data-boundary-id={boundary.id}
+                style={{ top: boundary.topPx }}
               />
             ))}
 
             {day.events.map((event) => {
-              const className = cn(
-                "absolute min-w-0 rounded-lg bg-blue-500 px-3 pt-1.5 pb-1 text-left text-xs leading-tight text-white shadow-sm",
-                event.isOverlay && "border border-white",
-                "flex items-start",
-              );
-              const isNotesEvent = event.id === "notes";
-
-              if (isNotesEvent) {
-                return (
-                  <CalendarPopover
-                    key={event.id}
-                    event={event}
-                    className={className}
-                  />
-                );
-              }
-
-              return (
-                <div
-                  key={event.id}
-                  className={className}
-                  data-event-id={event.id}
-                >
-                  <span className="min-w-0 truncate font-semibold">
-                    {event.title}
-                  </span>
-                </div>
-              );
+              return renderEvent(event);
             })}
           </div>
         </div>
       </div>
-      <style>{calendarStyles}</style>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { cn } from "@/components/ui/utils";
+import { cn } from "@/lib/utils";
 
 export type PanelProps = React.HTMLAttributes<HTMLElement> & {
   as?: React.ElementType;

@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export function Letter() {
   return (
@@ -69,9 +69,11 @@ export function Letter() {
             <div className="mt-8">
               <div className="font-medium text-gray-900">Julien Newman</div>
               <div className="text-gray-400">Founder & CEO, Overbase</div>
-              <img
+              <Image
                 src="/signature.png"
                 alt="Julien Newman signature"
+                width={180}
+                height={90}
                 className="mt-4 h-25 w-auto"
               />
             </div>

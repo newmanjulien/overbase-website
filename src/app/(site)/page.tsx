@@ -1,5 +1,3 @@
-"use client";
-
 import { Hero } from "@/app/(site)/hero";
 import { Letter } from "@/app/(site)/letter";
 

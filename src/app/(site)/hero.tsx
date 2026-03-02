@@ -1,18 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 
 export function Hero() {
-  // Preload the test page video and datasource logos in the background
-  useEffect(() => {
-    // Preload video
-    const video = document.createElement("video");
-    video.preload = "auto";
-    video.src = "/form.mp4";
-  }, []);
-
   const newLocal =
     "mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start";
   return (

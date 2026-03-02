@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { HotkeyButton } from "@/components/hotkey-button";
 import { HeaderNav } from "@/components/header-nav";
-import { cn } from "@/components/ui/utils";
+import { cn } from "@/lib/utils";
 
 // --- Base props shared by all pages ---
 interface BaseHeaderProps {
@@ -51,7 +51,6 @@ export function Header({
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     if (!isTinted) {
-      setIsScrolled(false);
       return;
     }
 
@@ -67,6 +66,16 @@ export function Header({
   const activeId = navItems.find((item) => isActive(item.href))?.id ?? null;
 
   const backgroundClass = isTinted && !isScrolled ? "bg-[#f9f9f9]" : "bg-white";
+  const logoImage = (
+    <Image
+      src={logoSrc ?? "/logo.png"}
+      alt="Logo"
+      width={logoWidth}
+      height={logoHeight}
+      className="object-contain"
+      priority
+    />
+  );
 
   return (
     <header
@@ -81,31 +90,19 @@ export function Header({
           {/* Logo */}
           {logoHref ? (
             <Link href={logoHref} className="h-8 w-auto flex items-center">
-              <Image
-                src={logoSrc ?? "/logo.png"}
-                alt="Logo"
-                width={logoWidth}
-                height={logoHeight}
-                className="object-contain"
-                priority
-              />
+              {logoImage}
             </Link>
-          ) : (
-            <div
-              className={`h-8 w-auto flex items-center ${
-                onLogoClick ? "cursor-pointer" : ""
-              }`}
+          ) : onLogoClick ? (
+            <button
+              type="button"
+              aria-label="Go to previous page"
+              className="h-8 w-auto flex items-center cursor-pointer"
               onClick={onLogoClick}
             >
-              <Image
-                src={logoSrc ?? "/logo.png"}
-                alt="Logo"
-                width={logoWidth}
-                height={logoHeight}
-                className="object-contain"
-                priority
-              />
-            </div>
+              {logoImage}
+            </button>
+          ) : (
+            <div className="h-8 w-auto flex items-center">{logoImage}</div>
           )}
 
           <HeaderNav items={navItems} activeId={activeId} />

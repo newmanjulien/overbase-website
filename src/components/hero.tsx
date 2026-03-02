@@ -1,6 +1,5 @@
-"use client";
-
 import type { ReactNode } from "react";
+import Link from "next/link";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -33,14 +32,10 @@ export default function Hero({
           {cta ? (
             <div className="pt-2">
               <Button
-                className="bg-gray-100 hover:bg-gray-200/50 text-gray-900 rounded-full px-3 py-1 cursor-pointer"
-                onClick={() => {
-                  document
-                    .getElementById(cta.targetId)
-                    ?.scrollIntoView({ behavior: "smooth" });
-                }}
+                className="bg-gray-100 hover:bg-gray-200/50 text-gray-900 rounded-full px-3 py-1"
+                asChild
               >
-                {cta.label}
+                <Link href={`#${cta.targetId}`}>{cta.label}</Link>
               </Button>
             </div>
           ) : null}

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useCallback, useLayoutEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/components/ui/utils";
+import { cn } from "@/lib/utils";
 
 type HeaderNavItem = {
   id: string;

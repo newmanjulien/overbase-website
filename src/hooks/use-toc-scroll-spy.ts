@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
+import { TOC_SCROLL_SPY_TARGET_SELECTOR } from "@/lib/toc-scroll-spy";
 
 interface UseTOCScrollSpyOptions {
   /**
@@ -8,6 +9,11 @@ interface UseTOCScrollSpyOptions {
    * Default: 100
    */
   topOffset?: number;
+  /**
+   * Controls whether scroll spy listeners should be active.
+   * Default: true
+   */
+  enabled?: boolean;
 }
 
 /**
@@ -16,13 +22,6 @@ interface UseTOCScrollSpyOptions {
 function arraysEqual(a: string[], b: string[]): boolean {
   return a.length === b.length && a.every((val, i) => val === b[i]);
 }
-
-/**
- * Data attribute used to mark the observable target within a section.
- * If present, this element's visibility determines the section's active state.
- * Falls back to the section element itself if not found.
- */
-const TOC_SCROLL_SPY_TARGET_ATTR = "[data-toc-scroll-spy-target]";
 
 /**
  * Cached element reference for performance.
@@ -43,9 +42,6 @@ interface CachedElement {
  * Within each section, looks for a child with `data-scroll-spy-target` attribute
  * to determine visibility. Falls back to the section element itself if not found.
  *
- * This hook is robust to array reference changes - it compares values
- * internally, so callers don't need to memoize the sectionIds array.
- *
  * @param sectionIds - Array of element IDs to observe
  * @param options - Configuration options
  * @returns Array of currently visible section IDs
@@ -63,43 +59,30 @@ export function useTOCScrollSpy(
 ): string[] {
   const [activeIds, setActiveIds] = useState<string[]>([]);
 
-  // Store a stable reference to section IDs, only updating when values change
-  const stableIdsRef = useRef<string[]>(sectionIds);
-
-  // Cache for element references - avoids DOM queries during scroll
-  const elementCacheRef = useRef<Map<string, CachedElement>>(new Map());
-
-  // Update stable ref only if the actual values changed (not just reference)
-  if (!arraysEqual(sectionIds, stableIdsRef.current)) {
-    stableIdsRef.current = sectionIds;
-  }
-
   const topOffset = options?.topOffset ?? 100;
+  const enabled = options?.enabled ?? true;
 
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    const ids = stableIdsRef.current;
+    if (!enabled) return;
 
     // Build element cache on mount (or when IDs change)
     const cache = new Map<string, CachedElement>();
-    for (const id of ids) {
+    for (const id of sectionIds) {
       const section = document.getElementById(id);
       if (section) {
         const target =
-          section.querySelector(TOC_SCROLL_SPY_TARGET_ATTR) || section;
+          section.querySelector(TOC_SCROLL_SPY_TARGET_SELECTOR) || section;
         cache.set(id, { section, target });
       }
     }
-    elementCacheRef.current = cache;
 
     const handleScroll = () => {
       const active: string[] = [];
       const viewportHeight = window.innerHeight;
-      const cache = elementCacheRef.current;
 
       // Use cached elements - no DOM queries during scroll!
-      for (const id of ids) {
+      for (const id of sectionIds) {
         const cached = cache.get(id);
         if (!cached) continue;
 
@@ -122,7 +105,7 @@ export function useTOCScrollSpy(
       if (active.length === 0) {
         let currentSection: string | null = null;
 
-        for (const id of ids) {
+        for (const id of sectionIds) {
           const cached = cache.get(id);
           if (!cached) continue;
 
@@ -163,9 +146,9 @@ export function useTOCScrollSpy(
     return () => {
       window.removeEventListener("scroll", onScroll);
     };
-  }, [stableIdsRef.current, topOffset]);
+  }, [enabled, sectionIds, topOffset]);
 
-  return activeIds;
+  return enabled ? activeIds : [];
 }
 
 /**

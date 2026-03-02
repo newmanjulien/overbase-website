@@ -16,6 +16,7 @@ export const dealReviewCalendar: CalendarGraphicDay = {
     {
       id: "review",
       title: "Deal review with Chris",
+      variant: "default",
       topPx: 84,
       heightPx: 46.6667,
       widthPercent: 100,
@@ -30,7 +31,7 @@ export const dealReviewCalendar: CalendarGraphicDay = {
       widthPercent: 55,
       leftPercent: 45,
       zIndex: 3,
-      isOverlay: true,
+      variant: "popover",
     },
   ],
 };

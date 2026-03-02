@@ -21,14 +21,14 @@ export function Signals({
   id: string;
   signals: PreviewSignal[];
 }) {
-  if (signals.length === 0) {
+  const pages = useMemo(() => chunkSignals(signals), [signals]);
+  const [activePage, setActivePage] = useState(0);
+  if (pages.length === 0) {
     return null;
   }
 
-  const pages = useMemo(() => chunkSignals(signals), [signals]);
-  const [activePage, setActivePage] = useState(0);
   const pageIndex = Math.min(activePage, pages.length - 1);
-  const visibleSignals = pages[pageIndex];
+  const visibleSignals = pages[pageIndex] ?? [];
 
   return (
     <div id={id} className="mt-4">
@@ -56,6 +56,7 @@ export function Signals({
                       alt={`${source.name} logo`}
                       width={24}
                       height={24}
+                      sizes="24px"
                       className="h-full w-full object-cover"
                     />
                   </div>

@@ -49,16 +49,28 @@ export type QuadrantChartData = {
   points: QuadrantPoint[];
 };
 
-export type CalendarEvent = {
-  id: string;
-  title: string;
+type CalendarEventLayout = {
   topPx: number;
   heightPx: number;
   widthPercent: number;
   leftPercent: number;
   zIndex: number;
-  isOverlay?: boolean;
 };
+
+type CalendarBaseEvent = CalendarEventLayout & {
+  id: string;
+  title: string;
+};
+
+export type CalendarDefaultEvent = CalendarBaseEvent & {
+  variant: "default";
+};
+
+export type CalendarPopoverEvent = CalendarBaseEvent & {
+  variant: "popover";
+};
+
+export type CalendarEvent = CalendarDefaultEvent | CalendarPopoverEvent;
 
 export type CalendarGraphicDay = {
   id: string;

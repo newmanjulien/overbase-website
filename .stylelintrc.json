@@ -1,0 +1,27 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "rules": {
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": ["theme", "layer"]
+      }
+    ],
+    "import-notation": null,
+    "lightness-notation": null,
+    "hue-degree-notation": null,
+    "alpha-value-notation": null,
+    "color-hex-length": null,
+    "selector-no-vendor-prefix": null,
+    "selector-class-pattern": null,
+    "keyframes-name-pattern": null,
+    "at-rule-empty-line-before": null,
+    "rule-empty-line-before": null,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}
