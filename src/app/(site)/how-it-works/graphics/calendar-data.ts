@@ -41,7 +41,7 @@ export const calendarPopoverContent = {
     {
       label: "Forecast",
       description:
-        "Focus on the right deals by seeing where Overbase disagrees with your CRM",
+        "Focus on the right deals by seeing where Overbase disagrees with your current forecast",
     },
     {
       label: "Missing data and timelines",

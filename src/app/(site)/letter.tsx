@@ -22,46 +22,41 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The hardest part of deal review isn't the meeting itself. It's
-                the investigative hours sales managers spend before the rep even
-                walks into the room.
+                The hardest part of helping your team drive sales isn't the
+                coaching or the support. It's figuring out what's actually going
+                on with their deals.
               </p>
 
               <p>
-                CRM dashboards don't give you an accurate enough read on which
-                deals are likely to close. Or on which levers to pull to
-                accelerate revenue.
+                Some businesses force sellers to input everything in a
+                complicated CRM. But that's just not your culture.
               </p>
 
               <p>
-                Which means you need to get your hands dirty. Dig into every
-                deal. See what's missing. Find which timelines are suspicious.
-                And ideally, you'd look at emails, documents and call recordings
-                to actually get the full picture.
+                Which means you end up running after sellers so they tell you
+                what's going on. And what they tell you is usually wrong
+                anyways.
               </p>
 
               <p>
-                Doing this type of investigation properly takes hours. Multiply
-                that by 8 reps, and you're working a second full-time job.
+                In real life, you don't get an accurate read on which deals are
+                likely to close. You can't know which levers to pull to
+                accelerate revenue. And you leave easy revenue on the table.
+              </p>
+
+              <p>Not anymore</p>
+
+              <p>
+                Overbase gets all the information managers need. We get it in a
+                way that requires no data input, no CRM and no new tools for
+                your sellers.
               </p>
 
               <p>
-                Which is why most sales managers have no choice but to cut
-                corners. And why easy revenue gets left on the table at every
-                deal review meeting.
-              </p>
-
-              <p>Not anymore.</p>
-
-              <p>
-                Overbase puts the information sales managers need for deal
-                review meetings directly in their meeting's calendar invite.
-              </p>
-
-              <p>
-                You quickly get an accurate forecast. You immediately know where
-                to focus. And you clearly see what levers to pull to close more
-                deals faster.
+                We add that information to the calendar invites for your 1:1s
+                with each seller. You easily get an accurate forecast. You
+                quickly know where to focus. And you immediately pull the levers
+                that get sellers to close more deals faster.
               </p>
             </div>
 

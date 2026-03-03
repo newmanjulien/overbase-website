@@ -58,11 +58,11 @@ export default function HowItWorksSections() {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <div className="max-w-lg mx-auto text-center">
         <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
-          Accurate forecast with an in-depth audit
+          Easy data collection
         </h2>
         <p className="mt-6 text-gray-500">
-          Overbase audits the evidence behind each deal, works with reps to fill
-          in gaps, then builds an accurate forecast
+          Overbase gathers information on every deal with no data input, no CRM
+          and no new tools for your sellers
         </p>
       </div>
 
@@ -70,10 +70,10 @@ export default function HowItWorksSections() {
         <div className="pt-22">
           <HowItWorksSection
             step="01"
-            title="We audit the evidence behind each deal"
+            title="We gather all the information with 0 data input"
             description={[
-              "We audit the evidence behind each deal: calls, emails, DocuSign, demo usage, and more",
-              "This lets us find hidden opportunities that aren't visible in the CRM",
+              "We automatically gather data from Excel, Outlook, PDFs, email, calendar, phone calls. And from any internal systems you currently use",
+              "We gather this in a way that requires 0 data input from your sellers",
             ]}
             reverse
           >
@@ -84,10 +84,10 @@ export default function HowItWorksSections() {
         <div className="pt-10">
           <HowItWorksSection
             step="02"
-            title="We collaborate with reps to fill in gaps"
+            title="We collaborate with sellers to fill in gaps"
             description={[
-              "The data you need to truly understand each deal is often missing from your systems",
-              "We work with your reps to get missing details and make it easy to ask buyers the right questions",
+              "The data you need to truly understand each deal sometimes lives in the heads of your sellers",
+              "We work with your reps to get missing details ahead of your 1:1s and make it easy for them to ask buyers the right questions",
             ]}
           >
             <SlackPreview
@@ -103,8 +103,8 @@ export default function HowItWorksSections() {
             step="03"
             title="Then we forecast which deals are likely to close"
             description={[
-              "This in-depth audit lets us give a second opinion on how likely it is that each deal will close",
-              "Comparing your CRM's forecast with Overbase's forecast reveals hidden revenue opportunities",
+              "Gathering this information lets us give a second opinion on how likely it is that each deal will close",
+              "Comparing your current forecast with Overbase's forecast reveals hidden revenue opportunities",
             ]}
             reverse
           >
