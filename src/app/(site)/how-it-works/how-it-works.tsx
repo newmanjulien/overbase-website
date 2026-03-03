@@ -58,10 +58,10 @@ export default function HowItWorksSections() {
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
       <div className="max-w-lg mx-auto text-center">
         <h2 className="text-5xl text-gray-900 font-medium tracking-tight">
-          Easy data collection
+          0 data input
         </h2>
         <p className="mt-6 text-gray-500">
-          Overbase gathers information on every deal with no data input, no CRM
+          Overbase gathers information on every deal with 0 data input, no CRM
           and no new tools for your sellers
         </p>
       </div>
@@ -72,7 +72,7 @@ export default function HowItWorksSections() {
             step="01"
             title="We gather all the information with 0 data input"
             description={[
-              "We automatically gather data from Excel, Outlook, PDFs, email, calendar, phone calls. And from any internal systems you currently use",
+              "We automatically gather data from Excel, Outlook, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
               "We gather this in a way that requires 0 data input from your sellers",
             ]}
             reverse
@@ -86,8 +86,8 @@ export default function HowItWorksSections() {
             step="02"
             title="We collaborate with sellers to fill in gaps"
             description={[
-              "The data you need to truly understand each deal sometimes lives in the heads of your sellers",
-              "We work with your reps to get missing details ahead of your 1:1s and make it easy for them to ask buyers the right questions",
+              "The data you need to understand deals sometimes lives in the heads of your sellers or of your buyers",
+              "We work with sellers to get missing details ahead of your 1:1s. And make it easy for them to ask buyers the right questions",
             ]}
           >
             <SlackPreview
@@ -103,7 +103,7 @@ export default function HowItWorksSections() {
             step="03"
             title="Then we forecast which deals are likely to close"
             description={[
-              "Gathering this information lets us give a second opinion on how likely it is that each deal will close",
+              "Gathering this granular information lets us give a second opinion on how likely it is that each deal will close",
               "Comparing your current forecast with Overbase's forecast reveals hidden revenue opportunities",
             ]}
             reverse

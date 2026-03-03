@@ -23,8 +23,8 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 The hardest part of helping your team drive sales isn't the
-                coaching or the support. It's figuring out what's actually going
-                on with their conversations.
+                coaching or the support. It's figuring out what's going on with
+                their deals.
               </p>
 
               <p>
@@ -34,32 +34,33 @@ export function Letter() {
 
               <p className="font-medium">
                 Which means you end up running after sellers so they tell you
-                what's going on. And what they tell you is usually wrong
-                anyways.
+                what's going on. And your sellers are usually too optimistic so
+                what they tell you is often wrong.
               </p>
 
               <p>
                 In real life, you don't get an accurate read on which deals are
-                likely to close. You can't know which levers to pull to
+                actually likely to close. You can't know which levers to pull to
                 accelerate revenue.{" "}
                 <span className="font-medium">
                   And you leave easy revenue on the table.
                 </span>
               </p>
 
-              <p>Now you can get that easy revenue.</p>
+              <p>You can now get this easy revenue.</p>
 
               <p>
-                Overbase gathers all the information managers need. We get it in
-                a way that requires no data input, no CRM and no new tools for
-                your sellers. Then we add that information to the calendar
-                invites for your 1:1s with each seller.
+                Overbase gathers all the information managers need. We get this
+                information in a way that requires 0 data input, no CRM and no
+                new tools for your sellers. Then we add that information to the
+                calendar invites for your 1:1s with each seller.
               </p>
 
               <p>
                 You easily get an accurate forecast. You quickly know where to
-                focus. And you immediately pull the levers that get sellers to
-                close more deals faster.
+                focus. You immediately pull the levers that get sellers to close
+                more deals faster. Without needing to convince your team to
+                spend hours inputting data in a CRM.
               </p>
             </div>
 

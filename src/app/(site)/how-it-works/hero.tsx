@@ -22,7 +22,7 @@ export default function HowItWorksHero() {
                 Quickly know what happened since your last meeting, which deals
                 are actually likely to close and where to focus your time.
                 Immediately see what’s missing and notice suspicious timelines
-                to ask about
+                to ask sellers about
               </p>
             </div>
           </div>
