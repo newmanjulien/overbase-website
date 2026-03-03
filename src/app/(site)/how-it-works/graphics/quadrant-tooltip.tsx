@@ -19,13 +19,14 @@ export function QuadrantTooltip({
 
   const delta = hoveredPoint.y - hoveredPoint.x;
   const absDelta = Math.abs(delta);
-  const body = absDelta <= disagreeThreshold ? undefined : hoveredPoint.description;
+  const body =
+    absDelta <= disagreeThreshold ? undefined : hoveredPoint.description;
 
   return (
     <ChartTooltip
       title={`${hoveredPoint.label} deal`}
       rows={[
-        { label: "CRM", value: `${hoveredPoint.x}%` },
+        { label: "Current", value: `${hoveredPoint.x}%` },
         { label: "Overbase", value: `${hoveredPoint.y}%` },
         {
           label: "Gap",

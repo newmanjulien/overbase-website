@@ -86,7 +86,7 @@ export function Header({
       )}
     >
       <div className="w-full px-6 md:px-12 lg:px-24">
-        <div className="relative flex items-center justify-between h-13">
+        <div className="relative flex items-center justify-between h-12">
           {/* Logo */}
           {logoHref ? (
             <Link href={logoHref} className="h-8 w-auto flex items-center">
