@@ -50,16 +50,16 @@ export function Letter() {
               <p>Now you can get that easy revenue.</p>
 
               <p>
-                Overbase gets all the information managers need. We get it in a
-                way that requires no data input, no CRM and no new tools for
-                your sellers.
+                Overbase gathers all the information managers need. We get it in
+                a way that requires no data input, no CRM and no new tools for
+                your sellers. Then we add that information to the calendar
+                invites for your 1:1s with each seller.
               </p>
 
               <p>
-                We add that information to the calendar invites for your 1:1s
-                with each seller. You easily get an accurate forecast. You
-                quickly know where to focus. And you immediately pull the levers
-                that get sellers to close more deals faster.
+                You easily get an accurate forecast. You quickly know where to
+                focus. And you immediately pull the levers that get sellers to
+                close more deals faster.
               </p>
             </div>
 
