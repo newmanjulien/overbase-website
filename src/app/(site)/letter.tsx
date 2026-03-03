@@ -24,7 +24,7 @@ export function Letter() {
               <p>
                 The hardest part of helping your team drive sales isn't the
                 coaching or the support. It's figuring out what's actually going
-                on with their deals.
+                on with their conversations.
               </p>
 
               <p>
@@ -32,7 +32,7 @@ export function Letter() {
                 complicated CRM. But that's just not your culture.
               </p>
 
-              <p>
+              <p className="font-medium">
                 Which means you end up running after sellers so they tell you
                 what's going on. And what they tell you is usually wrong
                 anyways.
@@ -41,10 +41,13 @@ export function Letter() {
               <p>
                 In real life, you don't get an accurate read on which deals are
                 likely to close. You can't know which levers to pull to
-                accelerate revenue. And you leave easy revenue on the table.
+                accelerate revenue.{" "}
+                <span className="font-medium">
+                  And you leave easy revenue on the table.
+                </span>
               </p>
 
-              <p>Not anymore</p>
+              <p>Now you can get that easy revenue.</p>
 
               <p>
                 Overbase gets all the information managers need. We get it in a
