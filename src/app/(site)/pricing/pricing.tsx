@@ -19,8 +19,9 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              A human data scientist examines every detail of each deal: calls,
-              emails, DocuSign, demo usage, and more
+              A human data scientist gather data from Excel, Outlook, PDFs,
+              RFPs, email, calendar, phone calls. And from any internal systems
+              you currently use
             </p>
 
             <p>
@@ -29,8 +30,8 @@ export function Pricing() {
             </p>
 
             <p>
-              Then we package up the insight and put it in a convenient calendar
-              invite
+              Your sellers do 0 data input, don't need to use a CRM or learn any
+              new tools
             </p>
           </div>
         </div>

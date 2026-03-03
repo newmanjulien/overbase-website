@@ -26,7 +26,7 @@ const FAQ_ITEMS = [
   {
     id: "attribution-3-percent",
     q: "How does attribution work for the 3% tier?",
-    a: "Your reps and managers decide what revenue gets attributed to Overbase. And you only pay after you realize the revenue",
+    a: "Your reps and managers decide what revenue gets attributed to Overbase and you only pay after you realize the revenue. We create a custom process for attributing revenue that's custom to your business and tracks with how your sales process works",
   },
 ];
 
