@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import { HotkeyButton } from "@/components/hotkey-button";
+import { HotkeyButton } from "./hotkey-button";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 

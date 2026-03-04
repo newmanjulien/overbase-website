@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { HotkeyButton } from "@/components/hotkey-button";
-import { MobileHeaderDrawer } from "@/components/mobile-header-drawer";
-import { HeaderNav } from "@/components/header-nav";
+import { HotkeyButton } from "./hotkey-button";
+import { MobileHeaderDrawer } from "./mobile-header-drawer";
+import { HeaderNav } from "./header-nav";
 import { cn } from "@/lib/utils";
 
 // --- Base props shared by all pages ---
