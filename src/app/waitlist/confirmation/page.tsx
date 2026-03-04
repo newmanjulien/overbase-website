@@ -9,13 +9,12 @@ export default function ConfirmationRoute() {
   return (
     <FormPageLayout
       title={
-        <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
+        <h1 className="text-4xl text-gray-900 tracking-tight font-medium">
           We&apos;ll reach out soon
         </h1>
       }
       description="Thank you for signing up. We look forward to collaborating soon."
       onLogoClick={() => router.push("/")}
-      showVideoOnMobile
     />
   );
 }

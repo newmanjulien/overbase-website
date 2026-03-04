@@ -38,7 +38,7 @@ export default function WaitlistRoute() {
   return (
     <FormPageLayout
       title={
-        <h1 className="text-xl md:text-4xl text-gray-900 tracking-tight font-medium">
+        <h1 className="text-4xl text-gray-900 tracking-tight font-medium">
           Join waitlist
         </h1>
       }
@@ -48,7 +48,6 @@ export default function WaitlistRoute() {
       primaryActionText="Submit"
       isLoading={loading}
       loadingText="Adding to waitlist..."
-      showVideoOnMobile
     >
       <div className="space-y-3">
         <label htmlFor="email" className="sr-only">

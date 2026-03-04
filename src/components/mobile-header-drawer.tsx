@@ -157,7 +157,7 @@ export function MobileHeaderDrawer({
             </Dialog.Close>
           </div>
 
-          <div className="flex flex-1 flex-col px-4 py-4">
+          <div className="flex flex-1 flex-col px-3 py-3">
             <div className="flex-1 overflow-y-auto">
               <nav className="space-y-2" aria-label="Mobile site navigation">
                 {items.map((item) => {
@@ -170,7 +170,7 @@ export function MobileHeaderDrawer({
                       aria-current={active ? "page" : undefined}
                       onClick={closeMenu}
                       className={cn(
-                        "flex h-12 w-full items-center rounded-md px-4 text-sm font-medium transition-colors",
+                        "flex h-10 w-full items-center rounded-md px-3 text-sm font-medium transition-colors",
                         active
                           ? "bg-gray-100 text-gray-900"
                           : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
