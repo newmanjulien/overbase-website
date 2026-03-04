@@ -34,9 +34,9 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                Which means you end up running after sellers so they tell you
-                what's going on. And your sellers are usually too optimistic so
-                what they tell you is often wrong.
+                Which means you rely entirely on what your sellers tell you. And
+                sellers are notoriously optimistic so what they tell you is
+                often wrong.
               </p>
 
               <p>
@@ -48,11 +48,12 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>Overbase gets the information managers need.</p>
+              <p>Overbase gets that information for you.</p>
 
               <p>
-                We get this information with 0 data input and no CRM. Then we
-                put it in the calendar invites you have with your sellers.
+                We get the information you need in a way where sellers never
+                need to input any data. Then we put it in the calendar invites
+                you have with sellers.
               </p>
 
               <p>
