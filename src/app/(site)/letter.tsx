@@ -58,7 +58,7 @@ export function Letter() {
 
               <p>
                 The result is that you easily get an accurate forecast, quickly
-                know where to focus and immediately pull the levers that get
+                know where to focus, and immediately pull the levers that get
                 sellers to close more deals faster. Without needing to convince
                 your team to update a CRM.
               </p>

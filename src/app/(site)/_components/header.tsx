@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 interface BaseHeaderProps {
   logoSrc: string;
   logoHref?: string;
-  onLogoClick?: () => void;
+  onLogoClickAction?: () => void;
   navItems: HeaderNavItem[];
   tintedPaths: TintedPaths;
   logoWidth?: number;
@@ -35,7 +35,7 @@ interface TintedPaths {
 export function Header({
   logoSrc,
   logoHref = "/",
-  onLogoClick,
+  onLogoClickAction,
   navItems,
   tintedPaths,
   logoWidth = 50,
@@ -110,7 +110,7 @@ export function Header({
             logoWidth={logoWidth}
             logoHeight={logoHeight}
             logoHref={logoHref}
-            onLogoClick={onLogoClick}
+            onLogoClickAction={onLogoClickAction}
           />
         </div>
 
@@ -120,12 +120,12 @@ export function Header({
             <Link href={logoHref} className="h-8 w-auto flex items-center">
               {logoImage}
             </Link>
-          ) : onLogoClick ? (
+          ) : onLogoClickAction ? (
             <button
               type="button"
               aria-label="Go to previous page"
               className="h-8 w-auto flex items-center cursor-pointer"
-              onClick={onLogoClick}
+              onClick={onLogoClickAction}
             >
               {logoImage}
             </button>

@@ -23,7 +23,7 @@ type MobileHeaderDrawerProps = {
   logoWidth?: number;
   logoHeight?: number;
   logoHref?: string;
-  onLogoClick?: () => void;
+  onLogoClickAction?: () => void;
 };
 
 export function MobileHeaderDrawer({
@@ -33,7 +33,7 @@ export function MobileHeaderDrawer({
   logoWidth = 50,
   logoHeight = 32,
   logoHref = "/",
-  onLogoClick,
+  onLogoClickAction,
 }: MobileHeaderDrawerProps) {
   const pathname = usePathname() ?? "";
   const [openPath, setOpenPath] = useState<string | null>(null);
@@ -61,12 +61,12 @@ export function MobileHeaderDrawer({
           <Link href={logoHref} className="h-8 w-auto flex items-center">
             {logoImage}
           </Link>
-        ) : onLogoClick ? (
+        ) : onLogoClickAction ? (
           <button
             type="button"
             aria-label="Go to previous page"
             className="h-8 w-auto flex items-center cursor-pointer"
-            onClick={onLogoClick}
+            onClick={onLogoClickAction}
           >
             {logoImage}
           </button>
@@ -129,14 +129,14 @@ export function MobileHeaderDrawer({
               >
                 {logoImage}
               </Link>
-            ) : onLogoClick ? (
+            ) : onLogoClickAction ? (
               <button
                 type="button"
                 aria-label="Go to previous page"
                 className="h-8 w-auto flex items-center cursor-pointer"
                 onClick={() => {
                   closeMenu();
-                  onLogoClick();
+                  onLogoClickAction();
                 }}
               >
                 {logoImage}
