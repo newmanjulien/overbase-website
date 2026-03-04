@@ -5,31 +5,24 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { HotkeyButton } from "./hotkey-button";
-import { MobileHeaderDrawer } from "./mobile-header-drawer";
+import { MobileHeader } from "./mobile-header";
 import { HeaderNav } from "./header-nav";
+import {
+  SITE_QUICK_ACTIONS,
+  type SiteNavItem,
+  type SiteTintedPaths,
+} from "@/lib/site-nav";
 import { cn } from "@/lib/utils";
 
-// --- Base props shared by all pages ---
-interface BaseHeaderProps {
+interface HeaderProps {
   logoSrc: string;
   logoHref?: string;
   onLogoClickAction?: () => void;
-  navItems: HeaderNavItem[];
-  tintedPaths: TintedPaths;
+  navItems: SiteNavItem[];
+  tintedPaths: SiteTintedPaths;
   logoWidth?: number;
   logoHeight?: number;
   className?: string;
-}
-
-interface HeaderNavItem {
-  id: string;
-  href: string;
-  label: string;
-}
-
-interface TintedPaths {
-  exact: string[];
-  prefix: string[];
 }
 
 export function Header({
@@ -41,7 +34,7 @@ export function Header({
   logoWidth = 50,
   logoHeight = 32,
   className,
-}: BaseHeaderProps) {
+}: HeaderProps) {
   const pathname = usePathname() ?? "";
   const isTinted =
     tintedPaths.exact.includes(pathname) ||
@@ -103,7 +96,7 @@ export function Header({
     >
       <div className="w-full px-6 md:px-12 lg:px-24">
         <div className="md:hidden">
-          <MobileHeaderDrawer
+          <MobileHeader
             items={navItems}
             activeId={activeId}
             logoSrc={logoSrc}
@@ -137,25 +130,18 @@ export function Header({
 
           {/* Right side buttons */}
           <div className="flex items-center justify-end">
-            <HotkeyButton
-              hotkey="l"
-              variant="ghost"
-              size="sm"
-              className="rounded-sm text-sm scale-[0.92] text-secondary-foreground"
-              href="/login"
-            >
-              Login
-            </HotkeyButton>
-
-            <HotkeyButton
-              hotkey="j"
-              variant="light"
-              size="sm"
-              className="rounded-sm text-sm scale-[0.92]"
-              href="/waitlist"
-            >
-              Join Waitlist
-            </HotkeyButton>
+            {SITE_QUICK_ACTIONS.map((action) => (
+              <HotkeyButton
+                key={action.hotkey}
+                hotkey={action.hotkey}
+                variant={action.variant}
+                size="sm"
+                className={action.className}
+                href={action.href}
+              >
+                {action.label}
+              </HotkeyButton>
+            ))}
           </div>
         </div>
       </div>

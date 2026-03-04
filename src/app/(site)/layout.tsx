@@ -1,16 +1,9 @@
 import type { ReactNode } from "react";
 import { Header } from "./_components/header";
 import { Footer } from "./_components/footer";
+import { SITE_NAV_ITEMS, SITE_TINTED_PATHS } from "@/lib/site-nav";
 
 export default function SiteLayout({ children }: { children: ReactNode }) {
-  const navItems = [
-    { id: "how-it-works", href: "/how-it-works", label: "How it works" },
-    { id: "pricing", href: "/pricing", label: "Pricing" },
-  ];
-  const tintedPaths = {
-    exact: ["/", "/legal"],
-    prefix: ["/legal/"],
-  };
   const logo = {
     src: "/logo.png",
     width: 46,
@@ -20,11 +13,11 @@ export default function SiteLayout({ children }: { children: ReactNode }) {
   return (
     <>
       <Header
-        navItems={navItems}
+        navItems={SITE_NAV_ITEMS}
         logoSrc={logo.src}
         logoWidth={logo.width}
         logoHeight={logo.height}
-        tintedPaths={tintedPaths}
+        tintedPaths={SITE_TINTED_PATHS}
       />
       <div className="min-h-screen flex flex-col">
         <main className="flex-1">{children}</main>

@@ -1,86 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { useCallback, useLayoutEffect, useRef, useState } from "react";
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
+import { useHeaderNavIndicator } from "@/lib/header-nav-indicator";
+import type { SiteNavItem } from "@/lib/site-nav";
 import { cn } from "@/lib/utils";
 
-type HeaderNavItem = {
-  id: string;
-  href: string;
-  label: string;
-};
-
 type HeaderNavProps = {
-  items: HeaderNavItem[];
+  items: SiteNavItem[];
   activeId: string | null;
 };
 
 export function HeaderNav({ items, activeId }: HeaderNavProps) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const navRef = useRef<HTMLDivElement>(null);
-  const indicatorRef = useRef<HTMLSpanElement>(null);
-  const itemRefs = useRef<Record<string, HTMLSpanElement | null>>({});
-
-  const setIndicatorVars = useCallback(
-    (vars: { left?: number; width?: number; opacity?: number }) => {
-      const indicatorEl = indicatorRef.current;
-      if (!indicatorEl) return;
-      if (typeof vars.left === "number") {
-        indicatorEl.style.setProperty("--nav-indicator-left", `${vars.left}px`);
-      }
-      if (typeof vars.width === "number") {
-        indicatorEl.style.setProperty(
-          "--nav-indicator-width",
-          `${vars.width}px`,
-        );
-      }
-      if (typeof vars.opacity === "number") {
-        indicatorEl.style.setProperty(
-          "--nav-indicator-opacity",
-          `${vars.opacity}`,
-        );
-      }
-    },
-    [],
-  );
-
-  const updateIndicator = useCallback(
-    (id: string | null) => {
-      const container = navRef.current;
-      if (!container || !id) {
-        setIndicatorVars({ opacity: 0 });
-        return;
-      }
-      const el = itemRefs.current[id];
-      if (!el) {
-        setIndicatorVars({ opacity: 0 });
-        return;
-      }
-
-      const containerRect = container.getBoundingClientRect();
-      const rect = el.getBoundingClientRect();
-      setIndicatorVars({
-        left: rect.left - containerRect.left,
-        width: rect.width,
-        opacity: 1,
-      });
-    },
-    [setIndicatorVars],
-  );
-
-  useLayoutEffect(() => {
-    updateIndicator(hoveredId ?? activeId);
-  }, [activeId, hoveredId, updateIndicator]);
-
-  useLayoutEffect(() => {
-    if (!navRef.current) return;
-    const ro = new ResizeObserver(() => {
-      updateIndicator(hoveredId ?? activeId);
-    });
-    ro.observe(navRef.current);
-    return () => ro.disconnect();
-  }, [activeId, hoveredId, updateIndicator]);
+  const { navRef, indicatorRef, registerItemRef } = useHeaderNavIndicator({
+    activeId,
+    hoveredId,
+  });
 
   return (
     <div
@@ -98,9 +35,7 @@ export function HeaderNav({ items, activeId }: HeaderNavProps) {
         return (
           <span
             key={item.id}
-            ref={(el) => {
-              itemRefs.current[item.id] = el;
-            }}
+            ref={(el) => registerItemRef(item.id, el)}
             onMouseEnter={() => setHoveredId(item.id)}
             className="relative z-10 inline-flex"
           >
