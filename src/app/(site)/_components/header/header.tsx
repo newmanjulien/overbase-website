@@ -1,12 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { HotkeyButton } from "./hotkey-button";
+import { HeaderLogo } from "./header-logo";
 import { MobileHeader } from "./mobile-header";
 import { HeaderNav } from "./header-nav";
+import { HotkeyButton } from "./hotkey-button";
 import {
   SITE_QUICK_ACTIONS,
   type SiteNavItem,
@@ -108,39 +108,16 @@ export function Header({
         </div>
 
         <div className="relative hidden h-12 items-center justify-between md:flex">
-          {/* Logo */}
-          {logoHref ? (
-            <Link href={logoHref} className="h-8 w-auto flex items-center">
-              {logoImage}
-            </Link>
-          ) : onLogoClickAction ? (
-            <button
-              type="button"
-              aria-label="Go to previous page"
-              className="h-8 w-auto flex items-center cursor-pointer"
-              onClick={onLogoClickAction}
-            >
-              {logoImage}
-            </button>
-          ) : (
-            <div className="h-8 w-auto flex items-center">{logoImage}</div>
-          )}
+          <HeaderLogo logoHref={logoHref} onLogoClickAction={onLogoClickAction}>
+            {logoImage}
+          </HeaderLogo>
 
           <HeaderNav items={navItems} activeId={activeId} />
 
           {/* Right side buttons */}
           <div className="flex items-center justify-end">
             {SITE_QUICK_ACTIONS.map((action) => (
-              <HotkeyButton
-                key={action.hotkey}
-                hotkey={action.hotkey}
-                variant={action.variant}
-                size="sm"
-                className={action.className}
-                href={action.href}
-              >
-                {action.label}
-              </HotkeyButton>
+              <HotkeyButton key={action.hotkey} action={action} size="sm" />
             ))}
           </div>
         </div>

@@ -14,8 +14,8 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
-            Overbase gives managers the information they need to drive sales
-            when sellers won't use their CRM
+            Overbase gives managers the visibility you need to drive sales even
+            when your sellers won't use a CRM
           </h2>
 
           <div className={newLocal}>

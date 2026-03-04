@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { Header } from "./_components/header";
+import { Header } from "./_components/header/header";
 import { Footer } from "./_components/footer";
 import { SITE_NAV_ITEMS, SITE_TINTED_PATHS } from "@/lib/site-nav";
 

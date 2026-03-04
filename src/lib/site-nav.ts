@@ -12,6 +12,12 @@ export type SiteQuickAction = {
   className: string;
 };
 
+export type SiteDrawerCtaAction = {
+  hotkey: string;
+  href: string;
+  label: string;
+};
+
 export type SiteTintedPaths = {
   exact: string[];
   prefix: string[];
@@ -38,6 +44,12 @@ export const SITE_QUICK_ACTIONS = [
     className: "rounded-sm text-sm scale-[0.92]",
   },
 ] satisfies SiteQuickAction[];
+
+export const SITE_DRAWER_CTA_ACTION = {
+  hotkey: "j",
+  href: "/waitlist",
+  label: "Join Waitlist",
+} satisfies SiteDrawerCtaAction;
 
 export const SITE_TINTED_PATHS = {
   exact: ["/", "/legal"],

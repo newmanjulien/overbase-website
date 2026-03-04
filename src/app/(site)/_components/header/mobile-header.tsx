@@ -3,9 +3,9 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { Menu } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, type ReactNode } from "react";
+import { useState } from "react";
+import { HeaderLogo } from "./header-logo";
 import { HotkeyButton } from "./hotkey-button";
 import { MobileDrawer } from "./mobile-drawer";
 import { Button } from "@/components/ui/button";
@@ -20,41 +20,6 @@ type MobileHeaderProps = {
   logoHref?: string;
   onLogoClickAction?: () => void;
 };
-
-const logoContainerClass = "h-8 w-auto flex items-center";
-
-function TopLogo({
-  logoHref,
-  onLogoClickAction,
-  logoImage,
-}: {
-  logoHref?: string;
-  onLogoClickAction?: () => void;
-  logoImage: ReactNode;
-}) {
-  if (logoHref) {
-    return (
-      <Link href={logoHref} className={logoContainerClass}>
-        {logoImage}
-      </Link>
-    );
-  }
-
-  if (onLogoClickAction) {
-    return (
-      <button
-        type="button"
-        aria-label="Go to previous page"
-        className={`${logoContainerClass} cursor-pointer`}
-        onClick={onLogoClickAction}
-      >
-        {logoImage}
-      </button>
-    );
-  }
-
-  return <div className={logoContainerClass}>{logoImage}</div>;
-}
 
 export function MobileHeader({
   items,
@@ -92,24 +57,21 @@ export function MobileHeader({
   return (
     <Dialog.Root open={open} onOpenChange={handleOpenChange}>
       <div className="flex h-12 items-center gap-2">
-        <TopLogo
+        <HeaderLogo
           logoHref={logoHref}
           onLogoClickAction={onLogoClickAction}
-          logoImage={logoImage}
-        />
+        >
+          {logoImage}
+        </HeaderLogo>
 
         <div className="ml-auto flex items-center gap-1.5">
           {SITE_QUICK_ACTIONS.map((action) => (
             <HotkeyButton
               key={action.hotkey}
-              hotkey={action.hotkey}
-              variant={action.variant}
+              action={action}
               size="sm"
-              className={action.className}
-              href={action.href}
-            >
-              {action.label}
-            </HotkeyButton>
+              enabled={!open}
+            />
           ))}
 
           <Dialog.Trigger asChild>
@@ -133,6 +95,7 @@ export function MobileHeader({
         onLogoClickAction={onLogoClickAction}
         logoImage={logoImage}
         closeMenu={closeMenu}
+        open={open}
       />
     </Dialog.Root>
   );

@@ -30,7 +30,7 @@ export function Letter() {
               <p>
                 Some businesses force sellers to input everything in a CRM. But
                 forcing the hand of your team is just not appropriate in your
-                business' your culture.
+                business' culture.
               </p>
 
               <p className="font-medium">
@@ -48,19 +48,20 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>Overbase gets that information for you.</p>
+              <p>Overbase gives you the visibility you need.</p>
 
               <p>
-                We get the information you need in a way where sellers never
-                need to input any data. Then we put it in the calendar invites
-                you have with sellers.
+                We get information in a way where sellers never input any data,
+                never use a CRM and never do anything new. Then we put this
+                information in the calendar invites you have with sellers so
+                it's easy and quick to access.
               </p>
 
               <p>
                 The result is that you easily get an accurate forecast, quickly
                 know where to focus, and immediately pull the levers that get
                 sellers to close more deals faster. Without needing to convince
-                your team to update a CRM.
+                your team to do anything.
               </p>
             </div>
 
