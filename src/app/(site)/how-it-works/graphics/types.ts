@@ -64,6 +64,7 @@ export type CalendarDefaultEvent = CalendarBaseEvent & {
 
 export type CalendarPopoverEvent = CalendarBaseEvent & {
   variant: "popover";
+  interactive?: boolean;
 };
 
 export type CalendarEvent = CalendarDefaultEvent | CalendarPopoverEvent;

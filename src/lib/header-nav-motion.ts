@@ -1,27 +1,30 @@
+//animantion that makes the navigation look nice
+//the bg shifts in an elegant way between nav items
+
 "use client";
 
 import { useCallback, useLayoutEffect, useRef, type RefObject } from "react";
 
-type UseHeaderNavIndicatorParams = {
+type HeaderNavMotionOptions = {
   activeId: string | null;
   hoveredId: string | null;
 };
 
-type UseHeaderNavIndicatorResult = {
+type HeaderNavMotionResult = {
   navRef: RefObject<HTMLDivElement | null>;
   indicatorRef: RefObject<HTMLSpanElement | null>;
-  registerItemRef: (id: string, el: HTMLSpanElement | null) => void;
+  setItemRef: (id: string, el: HTMLSpanElement | null) => void;
 };
 
-export function useHeaderNavIndicator({
+export function useHeaderNavMotion({
   activeId,
   hoveredId,
-}: UseHeaderNavIndicatorParams): UseHeaderNavIndicatorResult {
+}: HeaderNavMotionOptions): HeaderNavMotionResult {
   const navRef = useRef<HTMLDivElement>(null);
   const indicatorRef = useRef<HTMLSpanElement>(null);
   const itemRefs = useRef<Record<string, HTMLSpanElement | null>>({});
 
-  const registerItemRef = useCallback(
+  const setItemRef = useCallback(
     (id: string, el: HTMLSpanElement | null) => {
       itemRefs.current[id] = el;
     },
@@ -99,5 +102,5 @@ export function useHeaderNavIndicator({
     return () => resizeObserver.disconnect();
   }, [activeId, hoveredId, updateIndicator]);
 
-  return { navRef, indicatorRef, registerItemRef };
+  return { navRef, indicatorRef, setItemRef };
 }

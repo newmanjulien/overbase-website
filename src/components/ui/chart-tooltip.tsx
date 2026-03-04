@@ -1,11 +1,11 @@
 import type { CSSProperties } from "react";
 
-export type ChartTooltipRow = {
+type ChartTooltipRow = {
   label: string;
   value: string;
 };
 
-export type ChartTooltipProps = {
+type ChartTooltipProps = {
   title?: string;
   rows?: ChartTooltipRow[];
   body?: string;

@@ -9,7 +9,7 @@ type SlackMessageTextProps = {
   className?: string;
 };
 
-export type SlackPreviewViewProps = {
+type SlackPreviewViewProps = {
   id: string;
   thread: SlackThread;
   previousThread: SlackThread | null;

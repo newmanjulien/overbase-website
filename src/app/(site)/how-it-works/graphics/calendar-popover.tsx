@@ -1,5 +1,6 @@
 "use client";
 
+import * as React from "react";
 import { Link2, Mail, MoreVertical, Pencil, Trash2 } from "lucide-react";
 
 import {
@@ -7,12 +8,12 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
-import { useIsMobile } from "@/components/ui/use-mobile";
 import { cn } from "@/lib/utils";
 import { calendarPopoverContent } from "./calendar-data";
 
 type CalendarPopoverProps = {
   title: string;
+  interactive?: boolean;
   className?: string;
 };
 
@@ -20,8 +21,39 @@ const linkClassName =
   "text-blue-600 underline underline-offset-2 hover:text-blue-700";
 const iconClassName = "rounded-full p-1 text-gray-400";
 
-export function CalendarPopover({ title, className }: CalendarPopoverProps) {
-  const isMobile = useIsMobile();
+function useCanHover() {
+  const [canHover, setCanHover] = React.useState(false);
+
+  React.useEffect(() => {
+    const mediaQuery = window.matchMedia("(hover: hover) and (pointer: fine)");
+    const onChange = () => {
+      setCanHover(mediaQuery.matches);
+    };
+
+    onChange();
+    mediaQuery.addEventListener("change", onChange);
+    return () => mediaQuery.removeEventListener("change", onChange);
+  }, []);
+
+  return canHover;
+}
+
+export function CalendarPopover({
+  title,
+  interactive = true,
+  className,
+}: CalendarPopoverProps) {
+  const canHover = useCanHover();
+  const isInteractive = interactive && canHover;
+  const content = <span className="min-w-0 truncate font-semibold">{title}</span>;
+
+  if (!isInteractive) {
+    return (
+      <div className={cn("h-full w-full text-left", className)} aria-label={title}>
+        {content}
+      </div>
+    );
+  }
 
   const triggerButton = (
     <button
@@ -32,13 +64,9 @@ export function CalendarPopover({ title, className }: CalendarPopoverProps) {
       )}
       aria-label={`${title} details`}
     >
-      <span className="min-w-0 truncate font-semibold">{title}</span>
+      {content}
     </button>
   );
-
-  if (isMobile) {
-    return triggerButton;
-  }
 
   return (
     <HoverCard openDelay={0} closeDelay={120}>

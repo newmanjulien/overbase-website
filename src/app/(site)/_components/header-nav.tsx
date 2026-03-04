@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
-import { useHeaderNavIndicator } from "@/lib/header-nav-indicator";
+import { useHeaderNavMotion } from "@/lib/header-nav-motion";
 import type { SiteNavItem } from "@/lib/site-nav";
 import { cn } from "@/lib/utils";
 
@@ -14,7 +14,7 @@ type HeaderNavProps = {
 
 export function HeaderNav({ items, activeId }: HeaderNavProps) {
   const [hoveredId, setHoveredId] = useState<string | null>(null);
-  const { navRef, indicatorRef, registerItemRef } = useHeaderNavIndicator({
+  const { navRef, indicatorRef, setItemRef } = useHeaderNavMotion({
     activeId,
     hoveredId,
   });
@@ -35,7 +35,7 @@ export function HeaderNav({ items, activeId }: HeaderNavProps) {
         return (
           <span
             key={item.id}
-            ref={(el) => registerItemRef(item.id, el)}
+            ref={(el) => setItemRef(item.id, el)}
             onMouseEnter={() => setHoveredId(item.id)}
             className="relative z-10 inline-flex"
           >

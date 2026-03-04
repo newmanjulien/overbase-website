@@ -33,6 +33,7 @@ export function Calendar({ day, className }: CalendarProps) {
       >
         <CalendarPopover
           title={event.title}
+          interactive={event.interactive}
           className="flex min-w-0 items-start rounded-lg border border-white bg-blue-500 px-3 pb-1 pt-1.5 text-left text-xs leading-tight text-white shadow-sm"
         />
       </div>

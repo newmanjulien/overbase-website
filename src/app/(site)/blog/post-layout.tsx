@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export interface PostHero {
+interface PostHero {
   title: ReactNode;
   introduction: string | string[];
 }
