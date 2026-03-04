@@ -50,6 +50,21 @@ export function Header({
 
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
+    const existingPrefetch = document.querySelector(
+      'link[rel="prefetch"][as="video"][href="/form.mp4"]',
+    );
+    if (existingPrefetch) {
+      return;
+    }
+
+    const prefetch = document.createElement("link");
+    prefetch.rel = "prefetch";
+    prefetch.as = "video";
+    prefetch.href = "/form.mp4";
+    document.head.appendChild(prefetch);
+  }, []);
+
+  useEffect(() => {
     if (!isTinted) {
       return;
     }
