@@ -24,16 +24,10 @@ function arraysEqual(a: string[], b: string[]): boolean {
 }
 
 /**
- * Cached element reference for performance.
- * Stores both the section and its scroll spy target.
+ * Cached target element reference for performance.
  */
-interface CachedElement {
-  section: HTMLElement;
-  target: Element;
-}
-
-function buildCache(sectionIds: string[]): Map<string, CachedElement> {
-  const cache = new Map<string, CachedElement>();
+function buildCache(sectionIds: string[]): Map<string, Element> {
+  const cache = new Map<string, Element>();
 
   for (const id of sectionIds) {
     const section = document.getElementById(id);
@@ -42,60 +36,48 @@ function buildCache(sectionIds: string[]): Map<string, CachedElement> {
     }
 
     const target = section.querySelector(TOC_SCROLL_SPY_TARGET_SELECTOR) || section;
-    cache.set(id, { section, target });
+    cache.set(id, target);
   }
 
   return cache;
 }
 
-function getVisibleIds(
+function getActiveIds(
   sectionIds: string[],
-  cache: Map<string, CachedElement>,
+  cache: Map<string, Element>,
   topOffset: number,
   viewportHeight: number,
 ): string[] {
-  const active: string[] = [];
+  const activeIds: string[] = [];
+  let fallbackId: string | null = null;
 
   for (const id of sectionIds) {
-    const cached = cache.get(id);
-    if (!cached) {
+    const target = cache.get(id);
+    if (!target) {
       continue;
     }
 
-    const rect = cached.target.getBoundingClientRect();
+    const rect = target.getBoundingClientRect();
     const isVisible =
       (rect.top >= topOffset && rect.top < viewportHeight) ||
       (rect.bottom > topOffset && rect.bottom <= viewportHeight) ||
       (rect.top < topOffset && rect.bottom > viewportHeight);
 
     if (isVisible) {
-      active.push(id);
-    }
-  }
-
-  return active;
-}
-
-function getFallbackId(
-  sectionIds: string[],
-  cache: Map<string, CachedElement>,
-  topOffset: number,
-): string | null {
-  let currentSection: string | null = null;
-
-  for (const id of sectionIds) {
-    const cached = cache.get(id);
-    if (!cached) {
+      activeIds.push(id);
       continue;
     }
 
-    const rect = cached.target.getBoundingClientRect();
     if (rect.bottom < topOffset) {
-      currentSection = id;
+      fallbackId = id;
     }
   }
 
-  return currentSection;
+  if (activeIds.length > 0) {
+    return activeIds;
+  }
+
+  return fallbackId ? [fallbackId] : [];
 }
 
 function rafThrottle(callback: () => void): () => void {
@@ -152,14 +134,7 @@ export function useTOCScrollSpy(
 
     const handleScroll = () => {
       const viewportHeight = window.innerHeight;
-      const active = getVisibleIds(sectionIds, cache, topOffset, viewportHeight);
-
-      if (active.length === 0) {
-        const fallbackId = getFallbackId(sectionIds, cache, topOffset);
-        if (fallbackId) {
-          active.push(fallbackId);
-        }
-      }
+      const active = getActiveIds(sectionIds, cache, topOffset, viewportHeight);
 
       setActiveIds((prev) => (arraysEqual(prev, active) ? prev : active));
     };

@@ -66,9 +66,17 @@ export function MobileHeader({
   onLogoClickAction,
 }: MobileHeaderProps) {
   const pathname = usePathname() ?? "";
-  const [openPath, setOpenPath] = useState<string | null>(null);
-  const open = openPath === pathname;
-  const closeMenu = () => setOpenPath(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [openedPathname, setOpenedPathname] = useState<string | null>(null);
+  const open = isOpen && openedPathname === pathname;
+  const closeMenu = () => {
+    setIsOpen(false);
+    setOpenedPathname(null);
+  };
+  const handleOpenChange = (nextOpen: boolean) => {
+    setIsOpen(nextOpen);
+    setOpenedPathname(nextOpen ? pathname : null);
+  };
 
   const logoImage = (
     <Image
@@ -82,10 +90,7 @@ export function MobileHeader({
   );
 
   return (
-    <Dialog.Root
-      open={open}
-      onOpenChange={(nextOpen) => setOpenPath(nextOpen ? pathname : null)}
-    >
+    <Dialog.Root open={open} onOpenChange={handleOpenChange}>
       <div className="flex h-12 items-center gap-2">
         <TopLogo
           logoHref={logoHref}

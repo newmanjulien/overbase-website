@@ -90,6 +90,20 @@ export const HotkeyButton = forwardRef<
       return () => window.removeEventListener("keydown", handler);
     }, [normalizedHotkey]);
 
+    const contentWithBadge = (
+      <span className="inline-flex items-center gap-1">
+        {children}
+        <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
+      </span>
+    );
+    const renderedContent = href ? (
+      <Link href={href} target={target} rel={rel}>
+        {contentWithBadge}
+      </Link>
+    ) : (
+      contentWithBadge
+    );
+
     return (
       <Button
         ref={setRef}
@@ -100,19 +114,7 @@ export const HotkeyButton = forwardRef<
         asChild={Boolean(href)}
         aria-keyshortcuts={normalizedHotkey}
       >
-        {href ? (
-          <Link href={href} target={target} rel={rel}>
-            <span className="inline-flex items-center gap-1">
-              {children}
-              <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
-            </span>
-          </Link>
-        ) : (
-          <span className="inline-flex items-center gap-1">
-            {children}
-            <HotkeyBadge keyChar={hotkey.toUpperCase()} variant={variant} />
-          </span>
-        )}
+        {renderedContent}
       </Button>
     );
   },

@@ -16,6 +16,16 @@ type HowItWorksSectionProps = {
   gridClassName?: string;
 };
 
+type HowItWorksStep = {
+  id: string;
+  step: string;
+  title: string;
+  description: string[];
+  reverse?: boolean;
+  containerClassName: string;
+  graphic: ReactNode;
+};
+
 function HowItWorksSection({
   step,
   title,
@@ -53,6 +63,50 @@ function HowItWorksSection({
   );
 }
 
+const HOW_IT_WORKS_STEPS: HowItWorksStep[] = [
+  {
+    id: "capture-signals",
+    step: "01",
+    title: "We gather all the information with 0 data input",
+    description: [
+      "We automatically gather data from Excel, Outlook, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
+      "We gather this in a way that requires 0 data input from your sellers",
+    ],
+    reverse: true,
+    containerClassName: "pt-22",
+    graphic: <Signals id={signalsExample.id} signals={signalsExample.signals} />,
+  },
+  {
+    id: "fill-gaps",
+    step: "02",
+    title: "We collaborate with sellers to fill in gaps",
+    description: [
+      "The data you need to understand deals sometimes lives in the heads of your sellers or of your buyers",
+      "We work with sellers to get missing details ahead of your 1:1s. And make it easy for them to ask buyers the right questions",
+    ],
+    containerClassName: "pt-10",
+    graphic: (
+      <SlackPreview
+        id={slackExample.id}
+        threads={slackExample.threads}
+        className="mt-0"
+      />
+    ),
+  },
+  {
+    id: "forecast-outcomes",
+    step: "03",
+    title: "Then we forecast which deals are likely to close",
+    description: [
+      "Gathering this granular information lets us give a second opinion on how likely it is that each deal will close",
+      "Comparing your current forecast with Overbase's forecast reveals hidden revenue opportunities",
+    ],
+    reverse: true,
+    containerClassName: "pt-6",
+    graphic: <Quadrant chart={quadrantExample} />,
+  },
+];
+
 export default function HowItWorksSections() {
   return (
     <section className="px-6 md:px-12 lg:px-24 pb-24 max-w-7xl mx-auto">
@@ -67,50 +121,18 @@ export default function HowItWorksSections() {
       </div>
 
       <div className="space-y-24">
-        <div className="pt-22">
-          <HowItWorksSection
-            step="01"
-            title="We gather all the information with 0 data input"
-            description={[
-              "We automatically gather data from Excel, Outlook, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
-              "We gather this in a way that requires 0 data input from your sellers",
-            ]}
-            reverse
-          >
-            <Signals id={signalsExample.id} signals={signalsExample.signals} />
-          </HowItWorksSection>
-        </div>
-
-        <div className="pt-10">
-          <HowItWorksSection
-            step="02"
-            title="We collaborate with sellers to fill in gaps"
-            description={[
-              "The data you need to understand deals sometimes lives in the heads of your sellers or of your buyers",
-              "We work with sellers to get missing details ahead of your 1:1s. And make it easy for them to ask buyers the right questions",
-            ]}
-          >
-            <SlackPreview
-              id={slackExample.id}
-              threads={slackExample.threads}
-              className="mt-0"
-            />
-          </HowItWorksSection>
-        </div>
-
-        <div className="pt-6">
-          <HowItWorksSection
-            step="03"
-            title="Then we forecast which deals are likely to close"
-            description={[
-              "Gathering this granular information lets us give a second opinion on how likely it is that each deal will close",
-              "Comparing your current forecast with Overbase's forecast reveals hidden revenue opportunities",
-            ]}
-            reverse
-          >
-            <Quadrant chart={quadrantExample} />
-          </HowItWorksSection>
-        </div>
+        {HOW_IT_WORKS_STEPS.map((item) => (
+          <div key={item.id} className={item.containerClassName}>
+            <HowItWorksSection
+              step={item.step}
+              title={item.title}
+              description={item.description}
+              reverse={item.reverse}
+            >
+              {item.graphic}
+            </HowItWorksSection>
+          </div>
+        ))}
       </div>
     </section>
   );
