@@ -29,7 +29,7 @@ export function Letter() {
 
               <p>
                 Some businesses force sellers to input everything in a CRM. But
-                forcing the hand of your sellers is just not appropriate in your
+                forcing the hand of your team is just not appropriate in your
                 business' your culture.
               </p>
 
@@ -40,28 +40,26 @@ export function Letter() {
               </p>
 
               <p>
-                In real life, you don't get an accurate read on which deals are
-                actually likely to close. You can't know which levers to pull to
-                accelerate revenue.{" "}
+                In real life, you can't get an accurate read on which deals are
+                actually likely to close. You often don't know which levers to
+                pull to accelerate revenue.{" "}
                 <span className="font-medium">
                   And you leave easy revenue on the table.
                 </span>
               </p>
 
-              <p>Overbase gathers all the information managers need.</p>
+              <p>Overbase gets the information managers need.</p>
 
               <p>
-                We get this information in a way that requires 0 data input, no
-                CRM and no new tools for your sellers. Then we add that
-                information to the calendar invites for your 1:1s with each
-                seller.
+                We get this information with 0 data input and no CRM. Then we
+                put it in the calendar invites you have with your sellers.
               </p>
 
               <p>
-                You easily get an accurate forecast. You quickly know where to
-                focus. You immediately pull the levers that get sellers to close
-                more deals faster. Without needing to convince your team to
-                spend hours inputting data in a CRM.
+                The result is that you easily get an accurate forecast, quickly
+                know where to focus and immediately pull the levers that get
+                sellers to close more deals faster. Without needing to convince
+                your team to update a CRM.
               </p>
             </div>
 
