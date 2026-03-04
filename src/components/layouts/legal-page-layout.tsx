@@ -150,14 +150,16 @@ export function LegalPageLayout({
       {/* Hero Section with Title */}
       <section className="w-full pt-18 border-b border-gray-100 bg-[#f9f9f9]">
         <div className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24">
-          <LegalBreadcrumb currentPageTitle={metadata.title} />
+          <div className="hidden md:block">
+            <LegalBreadcrumb currentPageTitle={metadata.title} />
+          </div>
           <h1 className="text-4xl font-medium text-gray-900 mt-26 mb-26">
             {metadata.title}
           </h1>
         </div>
       </section>
 
-      <main className="max-w-6xl mx-auto md:px-12 lg:px-24 py-18">
+      <main className="max-w-6xl mx-auto px-6 md:px-12 lg:px-24 py-18">
         {/* Two-column layout */}
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-24">
           {/* Main Content */}

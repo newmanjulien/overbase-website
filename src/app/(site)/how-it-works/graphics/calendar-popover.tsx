@@ -7,6 +7,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { useIsMobile } from "@/components/ui/use-mobile";
 import { cn } from "@/lib/utils";
 import { calendarPopoverContent } from "./calendar-data";
 
@@ -20,19 +21,29 @@ const linkClassName =
 const iconClassName = "rounded-full p-1 text-gray-400";
 
 export function CalendarPopover({ title, className }: CalendarPopoverProps) {
+  const isMobile = useIsMobile();
+
+  const triggerButton = (
+    <button
+      type="button"
+      className={cn(
+        "h-full w-full cursor-pointer text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-200",
+        className,
+      )}
+      aria-label={`${title} details`}
+    >
+      <span className="min-w-0 truncate font-semibold">{title}</span>
+    </button>
+  );
+
+  if (isMobile) {
+    return triggerButton;
+  }
+
   return (
     <HoverCard openDelay={0} closeDelay={120}>
       <HoverCardTrigger asChild>
-        <button
-          type="button"
-          className={cn(
-            "h-full w-full cursor-pointer text-left focus-visible:outline-hidden focus-visible:ring-2 focus-visible:ring-blue-200",
-            className,
-          )}
-          aria-label={`${title} details`}
-        >
-          <span className="min-w-0 truncate font-semibold">{title}</span>
-        </button>
+        {triggerButton}
       </HoverCardTrigger>
       <HoverCardContent
         align="center"

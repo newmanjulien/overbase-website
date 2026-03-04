@@ -23,7 +23,7 @@ export default function Hero({
   cta,
 }: HeroProps) {
   return (
-    <section className={cn("px-6 pt-48 max-w-5xl mx-auto", className)}>
+    <section className={cn("px-6 pt-28 md:pt-48 max-w-5xl mx-auto", className)}>
       <div className="max-w-md mx-auto text-center space-y-12">
         <div className={cn("space-y-6 mx-auto", titleMaxWidthClass)}>
           <h1 className="text-5xl text-gray-900 font-medium tracking-tight">

@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { HotkeyButton } from "@/components/hotkey-button";
+import { MobileHeaderDrawer } from "@/components/mobile-header-drawer";
 import { HeaderNav } from "@/components/header-nav";
 import { cn } from "@/lib/utils";
 
@@ -101,7 +102,19 @@ export function Header({
       )}
     >
       <div className="w-full px-6 md:px-12 lg:px-24">
-        <div className="relative flex items-center justify-between h-12">
+        <div className="md:hidden">
+          <MobileHeaderDrawer
+            items={navItems}
+            activeId={activeId}
+            logoSrc={logoSrc}
+            logoWidth={logoWidth}
+            logoHeight={logoHeight}
+            logoHref={logoHref}
+            onLogoClick={onLogoClick}
+          />
+        </div>
+
+        <div className="relative hidden h-12 items-center justify-between md:flex">
           {/* Logo */}
           {logoHref ? (
             <Link href={logoHref} className="h-8 w-auto flex items-center">

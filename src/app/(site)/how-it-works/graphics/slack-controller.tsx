@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useState } from "react";
 
+import { useIsMobile } from "@/components/ui/use-mobile";
 import { SlackPreviewView } from "./slack";
 import type { SlackThread } from "./types";
 
@@ -22,6 +23,7 @@ const messageCleanupDelayMs = Math.max(
 );
 
 function useSlackThreadCycle(threads: SlackThread[]) {
+  const isMobile = useIsMobile();
   const [activeIndex, setActiveIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
   const [userInteracted, setUserInteracted] = useState(false);
@@ -29,9 +31,11 @@ function useSlackThreadCycle(threads: SlackThread[]) {
     null,
   );
 
-  const canCycle = threads.length > 1;
-  const thread = threads[activeIndex] ?? threads[0] ?? null;
-  const messageTime = previewTimeOptions[activeIndex % previewTimeOptions.length];
+  const canCycle = threads.length > 1 && !isMobile;
+  const visibleIndex = isMobile ? 0 : activeIndex;
+  const thread = threads[visibleIndex] ?? threads[0] ?? null;
+  const visiblePreviousThread = isMobile ? null : previousThread;
+  const messageTime = previewTimeOptions[visibleIndex % previewTimeOptions.length];
 
   const advanceThread = useCallback(() => {
     if (!thread || !canCycle) {
@@ -79,7 +83,7 @@ function useSlackThreadCycle(threads: SlackThread[]) {
     canCycle,
     handleRefresh,
     messageTime,
-    previousThread,
+    previousThread: visiblePreviousThread,
     setIsHovered,
     thread,
   };

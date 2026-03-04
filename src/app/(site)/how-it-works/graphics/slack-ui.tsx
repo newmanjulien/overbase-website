@@ -72,7 +72,7 @@ export function SlackHeader({ dayLabel, canCycle, onRefresh }: SlackHeaderProps)
           aria-label="Refresh Slack example"
           disabled={!canCycle}
           className={cn(
-            "flex h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition hover:border-gray-300 hover:text-gray-700",
+            "hidden h-8 w-8 items-center justify-center rounded-full border border-gray-200 text-gray-500 transition hover:border-gray-300 hover:text-gray-700 md:flex",
             !canCycle && "cursor-default opacity-40 hover:text-gray-500",
           )}
         >

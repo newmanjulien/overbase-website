@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 import Image from "next/image";
+
+import { useIsMobile } from "@/components/ui/use-mobile";
 import type { PreviewSignal } from "./types";
 
 const PAGE_SIZE = 3;
@@ -21,13 +23,15 @@ export function Signals({
   id: string;
   signals: PreviewSignal[];
 }) {
+  const isMobile = useIsMobile();
   const pages = useMemo(() => chunkSignals(signals), [signals]);
   const [activePage, setActivePage] = useState(0);
+
   if (pages.length === 0) {
     return null;
   }
 
-  const pageIndex = Math.min(activePage, pages.length - 1);
+  const pageIndex = isMobile ? 0 : Math.min(activePage, pages.length - 1);
   const visibleSignals = pages[pageIndex] ?? [];
 
   return (
@@ -70,7 +74,7 @@ export function Signals({
           </div>
         ))}
       </div>
-      {pages.length > 1 ? (
+      {pages.length > 1 && !isMobile ? (
         <div className="mt-2 flex justify-center">
           <div
             className="flex items-center gap-2"
