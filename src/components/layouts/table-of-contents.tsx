@@ -113,13 +113,13 @@ export function TableOfContents({
               value={item.id}
               onClick={(e) => handleClick(e, item.id)}
               className={cn(
-                "justify-start text-left h-auto py-1.5 px-3 font-normal text-gray-500 text-sm w-full",
+                "justify-start text-left h-auto py-1.5 px-3 font-normal text-gray-500 text-sm w-full overflow-hidden",
                 "data-[state=on]:bg-accent",
                 roundingClasses,
               )}
               aria-current={isActive ? "location" : undefined}
             >
-              {item.title}
+              <span className="block min-w-0 w-full truncate">{item.title}</span>
             </ToggleGroupItem>
           );
         })}

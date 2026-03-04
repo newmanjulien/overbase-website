@@ -47,7 +47,7 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>You can now get this easy revenue.</p>
+              <p>You can get this revenue.</p>
 
               <p>
                 Overbase gathers all the information managers need. We get this
