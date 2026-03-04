@@ -47,13 +47,13 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>You can get this revenue.</p>
+              <p>Overbase gathers all the information managers need.</p>
 
               <p>
-                Overbase gathers all the information managers need. We get this
-                information in a way that requires 0 data input, no CRM and no
-                new tools for your sellers. Then we add that information to the
-                calendar invites for your 1:1s with each seller.
+                We get this information in a way that requires 0 data input, no
+                CRM and no new tools for your sellers. Then we add that
+                information to the calendar invites for your 1:1s with each
+                seller.
               </p>
 
               <p>
