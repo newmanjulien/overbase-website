@@ -28,8 +28,9 @@ export function Letter() {
               </p>
 
               <p>
-                Some businesses force sellers to input everything in a
-                complicated CRM. But that's just not your culture.
+                Some businesses force sellers to input everything in a CRM. But
+                forcing the hand of your sellers is just not appropriate in your
+                business' your culture.
               </p>
 
               <p className="font-medium">

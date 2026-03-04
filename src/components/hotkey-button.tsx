@@ -27,7 +27,7 @@ export function HotkeyBadge({
   variant?: "ghost" | "light";
 }) {
   const baseClasses =
-    "hidden md:inline-flex items-center justify-center w-5 h-5 rounded-sm text-xs font-semibold";
+    "inline-flex items-center justify-center w-5 h-5 rounded-sm text-xs font-semibold";
   const variantClasses =
     variant === "ghost" ? "bg-gray-100 text-gray-600" : "bg-gray-200 text-gray-700";
 
