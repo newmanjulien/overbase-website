@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
+import { Header } from "./_components/header";
+import { Footer } from "./_components/footer";
 
 export default function SiteLayout({ children }: { children: ReactNode }) {
   const navItems = [
