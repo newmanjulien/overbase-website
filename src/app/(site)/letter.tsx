@@ -34,9 +34,8 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                Which means you rely entirely on what your sellers tell you. And
-                sellers are notoriously optimistic so what they tell you is
-                often wrong.
+                Which means you rely on what your sellers tell you. And sellers
+                are optimistic so what they tell you can often be wrong.
               </p>
 
               <p>
@@ -48,20 +47,23 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>Overbase gives you the visibility you need.</p>
+              <p>
+                Overbase gives you the visibility you need to get this easy
+                revenue.
+              </p>
 
               <p>
-                We get information in a way where sellers never input any data,
-                never use a CRM and never do anything new. Then we put this
-                information in the calendar invites you have with sellers so
-                it's easy and quick to access.
+                We gather detailed information about each deal in a way where
+                sellers never input any data and never use a CRM. Then we make
+                the information easy and quick to access by putting it in the
+                calendar invites you have with your sellers.
               </p>
 
               <p>
                 The result is that you easily get an accurate forecast, quickly
                 know where to focus, and immediately pull the levers that get
-                sellers to close more deals faster. Without needing to convince
-                your team to do anything.
+                sellers to close more deals faster. And your team doesn't need
+                to input any data in a CRM.
               </p>
             </div>
 
