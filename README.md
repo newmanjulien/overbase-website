@@ -2,6 +2,12 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
+Set your LogoKit publishable key in `.env.local`:
+
+```bash
+NEXT_PUBLIC_LOGOKIT_PUBLISHABLE_KEY=your_logokit_publishable_key
+```
+
 First, run the development server:
 
 ```bash

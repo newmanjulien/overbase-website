@@ -60,6 +60,7 @@ export function Signals({
                       alt={`${source.name} logo`}
                       width={24}
                       height={24}
+                      unoptimized
                       sizes="24px"
                       className="h-full w-full object-cover"
                     />
