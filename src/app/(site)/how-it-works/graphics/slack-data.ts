@@ -41,7 +41,7 @@ export const slackExample: SlackExample = {
         userName: "Howard @ Overbase",
         avatarUrl: "/analyst.jpg",
         paragraphs: [
-          "There are a couple of deals with potentially missing data which I put in Laura's list for your deal review meeting",
+          "There are a couple of deals with potentially missing data that I put in Laura's list for your deal review meeting",
           "Do you want me to send you a summary?",
           "If you have the data, you could just tell me and I would update the CRM for you. I'd also update Laura's list so she has the most up-to-date information when she prepares for your meeting. That would help you use your time together more productively.",
         ],

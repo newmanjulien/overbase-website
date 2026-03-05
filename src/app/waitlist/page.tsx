@@ -39,7 +39,7 @@ export default function WaitlistRoute() {
     <FormPageLayout
       title={
         <h1 className="text-4xl text-gray-900 tracking-tight font-medium">
-          Join waitlist
+          Join Waitlist
         </h1>
       }
       description="We currently work with a handful of design partners"

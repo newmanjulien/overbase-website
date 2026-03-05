@@ -65,7 +65,7 @@ export const signalsExample: SignalsExample = {
     },
     {
       id: "champion-change",
-      title: "Our champion at Delta Airlines' changed jobs",
+      title: "Our champion at Delta Airlines changed jobs",
       summary:
         "Your main Delta Airlines contact updated their title and department in the last week and is no longer listed as the owner on the internal project doc. Their out-of-office reply points to a new lead in Procurement as the interim point of contact.",
       sources: [sourceLogos.linkedIn, sourceLogos.pdf],

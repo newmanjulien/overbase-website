@@ -19,7 +19,7 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              A human data scientist gather data from Excel, PDFs, RFPs, email,
+              A human data scientist gathers data from Excel, PDFs, RFPs, email,
               calendar, phone calls. And from any internal systems you currently
               use
             </p>

@@ -15,7 +15,7 @@ export function Hero() {
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium">
             Overbase gives managers the visibility you need to drive sales even
-            when your sellers won't use a CRM
+            when your sellers don't use a CRM
           </h2>
 
           <div className={newLocal}>
@@ -25,7 +25,7 @@ export function Hero() {
               className="w-full max-w-lg p-6 text-base rounded-lg sm:w-auto"
               asChild
             >
-              <Link href="/waitlist">Join Waitlist</Link>
+              <Link href="/waitlist">Join waitlist</Link>
             </Button>
 
             <Button

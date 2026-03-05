@@ -28,7 +28,7 @@ export function Letter() {
               </p>
 
               <p>
-                Some businesses force sellers to input everything in a CRM. But
+                Some businesses get sellers to input everything in a CRM. But
                 forcing the hand of your team is just not appropriate in your
                 business' culture.
               </p>
@@ -56,7 +56,7 @@ export function Letter() {
                 We gather detailed information about each deal in a way where
                 sellers never input any data and never use a CRM. Then we make
                 the information easy and quick to access by putting it in the
-                calendar invites of your 1:1 meetings with your sellers.
+                calendar invites of your 1:1 meetings with sellers.
               </p>
 
               <p>
