@@ -26,7 +26,7 @@ export default function HowItWorksSections() {
             step="01"
             title="Your sellers never input any new data"
             description={[
-              "We automatically gather data from Excel, Outlook, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
+              "We automatically gather data from Excel, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
               "We gather this in a way that requires 0 data input from your sellers",
             ]}
             reverse

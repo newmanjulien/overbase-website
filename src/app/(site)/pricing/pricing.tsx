@@ -19,9 +19,9 @@ export function Pricing() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              A human data scientist gather data from Excel, Outlook, PDFs,
-              RFPs, email, calendar, phone calls. And from any internal systems
-              you currently use
+              A human data scientist gather data from Excel, PDFs, RFPs, email,
+              calendar, phone calls. And from any internal systems you currently
+              use
             </p>
 
             <p>
@@ -30,8 +30,8 @@ export function Pricing() {
             </p>
 
             <p>
-              Your sellers do 0 data input, don't need to use a CRM or learn any
-              new tools
+              Your sellers do 0 data input and don't need to track their deals
+              in a CRM
             </p>
           </div>
         </div>

@@ -56,14 +56,13 @@ export function Letter() {
                 We gather detailed information about each deal in a way where
                 sellers never input any data and never use a CRM. Then we make
                 the information easy and quick to access by putting it in the
-                calendar invites you have with your sellers.
+                calendar invites of your 1:1 meetings with your sellers.
               </p>
 
               <p>
                 The result is that you easily get an accurate forecast, quickly
                 know where to focus, and immediately pull the levers that get
-                sellers to close more deals faster. And your team doesn't need
-                to input any data in a CRM.
+                sellers to close more deals faster.
               </p>
             </div>
 
