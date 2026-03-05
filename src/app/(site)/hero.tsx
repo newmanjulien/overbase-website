@@ -25,7 +25,7 @@ export function Hero() {
               className="w-full max-w-lg p-6 text-base rounded-lg sm:w-auto"
               asChild
             >
-              <Link href="/waitlist">Join waitlist</Link>
+              <Link href="/waitlist">Join Waitlist</Link>
             </Button>
 
             <Button
