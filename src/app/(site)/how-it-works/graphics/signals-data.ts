@@ -4,93 +4,94 @@ export const signalsExample: SignalsExample = {
   id: "how-it-works-signals",
   signals: [
     {
-      id: "coo",
-      title: "Whirlpool hasn't gotten past welcome screens",
+      id: "repeat-doc-review",
+      title: "Whirlpool just looped in their CFO",
       summary:
-        "The CRM says Whirlpool's buyers logged in multiple times to their demo environment. But they actually never got past the welcome screens",
+        "Whirlpool added their CFO to the email thread and the calendar invite for the next call. A few minutes later, the CFO replied asking for the latest pricing sheet, payment terms, and a one-page summary they can review before the meeting.",
       sources: [
-        { name: "PostHog", logo: "/logos/posthog.png" },
-        { name: "Snowflake", logo: "/logos/snowflake.png" },
+        { name: "Outlook", logo: "/logos/posthog.png" },
+        { name: "Calendar", logo: "/logos/snowflake.png" },
       ],
     },
     {
-      id: "teammates",
-      title: "Laura is selling the AI Teammates add-on more than other reps",
+      id: "competitor-mention",
+      title: "Tyson Foods' conversation has slowed down",
       summary:
-        "Most reps struggle with selling the AI Teammates add-ons. But Laura seems to be selling it easily. There might be an opportunity for the team to learn from Laura",
+        "Tyson Foods was replying same-day last week; it’s been 9 days since their last message. The last two meetings were moved, and the open questions on implementation timeline and support SLAs haven’t been answered.",
       sources: [
-        { name: "Salesforce", logo: "/logos/salesforce.png" },
-        { name: "Gong", logo: "/logos/gong.png" },
+        { name: "DocuSign", logo: "/logos/salesforce.png" },
+        { name: "Gmail", logo: "/logos/gong.png" },
       ],
     },
     {
-      id: "icp",
-      title: "ICP in the manufacturing sector might be wrong",
+      id: "renewal-at-risk",
+      title: "IKEA's finance director used to work at a competitor",
       summary:
-        "The manufacturing deals get signed by Directors without C-Suite involvement. But we're targeting C-Suite execs in our process which might be slowing several deals",
+        "IKEA’s finance director previously spent 6 years at a competitor and referenced their process on the last call (“we handled this in one approval step”). They asked pointed questions about auditability, rollups by region, and how pricing changes at higher volume.",
       sources: [
-        { name: "Marketo", logo: "/logos/marketo.png" },
-        { name: "Clari", logo: "/logos/clari.png" },
+        { name: "LinkedIn", logo: "/logos/marketo.png" },
+        { name: "Excel", logo: "/logos/clari.png" },
       ],
     },
     {
-      id: "pricing-engagement",
-      title: "Kroger's CFO opened pricing emails eight times this week",
+      id: "new-contract-change",
+      title: "United Rentals responded to our RFP submission within 2 days",
       summary:
-        "The pricing email sent to Kroger was opened eight times by their CFO. They haven't responded. But it might make sense to send a follow up",
+        "United Rentals responded in 2 days with a clarification list and a requested demo window. They asked for security documentation (SOC 2, data retention), a detailed implementation plan, and a revised pricing table in their RFP template.",
       sources: [
-        { name: "Outreach", logo: "/logos/outreach.png" },
-        { name: "Salesforce", logo: "/logos/salesforce.png" },
+        { name: "PDF", logo: "/logos/outreach.png" },
+        { name: "Google Docs", logo: "/logos/salesforce.png" },
       ],
     },
     {
-      id: "trial-usage",
-      title: "Tyson Foods is a one month ahead of the mutual success plan",
+      id: "growth-signal",
+      title: "John Deere keeps on pushing back meetings",
       summary:
-        "Tyson Foods' team seems to be aggressively moving forward on the evaluation. There might be an opportunity to accelerate the deal",
+        "John Deere has rescheduled the main stakeholder meeting three times in two weeks, most recently pushing it out another 10 days. Notes from the coordinator mention “internal alignment” and “budget review,” and the same agenda items keep carrying forward.",
       sources: [
-        { name: "Google Sheets", logo: "/logos/sheets.png" },
-        { name: "Hubspot", logo: "/logos/hubspot.png" },
+        { name: "Calendar", logo: "/logos/sheets.png" },
+        { name: "Gmail", logo: "/logos/hubspot.png" },
       ],
     },
     {
-      id: "security-review",
-      title: "Security review hasn't moved forward at IKEA",
+      id: "new-commitment",
+      title: "Hilton's CFO left our meeting after 15 minutes",
       summary:
-        "The IKEA deal is progressing but their security team is dragging their feet. We might need to make sure infosec doesn't kill the deal",
+        "Hilton’s CFO joined the call, asked for the topline numbers (annual cost, payback period, and contract length), then dropped after 15 minutes and handed off to their FP&A lead. The FP&A lead stayed on and requested the model in spreadsheet form for review.",
       sources: [
-        { name: "DocuSign", logo: "/logos/docusign.png" },
+        { name: "Gong", logo: "/logos/docusign.png" },
         { name: "Outlook", logo: "/logos/outlook.png" },
       ],
     },
     {
-      id: "champion-left",
-      title: "Northwind's champion just changed jobs",
+      id: "champion-change",
+      title: "Our champion at Delta Airlines' changed jobs",
       summary:
-        "The main contact at Northwind hasn't answered recent emails. This might be because he changed jobs and we may need a new champion",
+        "Your main Delta Airlines contact updated their title and department in the last week and is no longer listed as the owner on the internal project doc. Their out-of-office reply points to a new lead in Procurement as the interim point of contact.",
       sources: [
         { name: "LinkedIn", logo: "/logos/linkedin.png" },
-        { name: "Salesforce", logo: "/logos/salesforce.png" },
+        { name: "PDF", logo: "/logos/salesforce.png" },
       ],
     },
     {
-      id: "demo-length",
-      title: "Hilton's champion might not be the decision-maker",
+      id: "major-change",
+      title: "Republic Services hinted at a major acquisition",
       summary:
-        "The champion on the Hilton deal is marked as the economic buyer too. But it seems that someone else might be piloting the conversation in the background",
+        "On the last call, Republic Services mentioned they’re evaluating an acquisition and expect a decision “in the next 60–90 days.” They asked whether the current plan can scale to additional regions and how contract terms would apply if a new subsidiary is added mid-term.",
       sources: [
         { name: "Gong", logo: "/logos/gong.png" },
         { name: "Outlook", logo: "/logos/outlook.png" },
       ],
     },
     {
-      id: "doc-turnaround",
-      title: "FedEx's engagement is way up",
+      id: "incident-cluster",
+      title:
+        "3M is expanding to a new site and doing a big shift in operations",
       summary:
-        "The last call with FedEx which their VP attended seems to have changed the tone of the conversation. We might want to strike while the iron is hot",
+        "3M confirmed a new site is coming online next quarter, plus a shift to a different operating model for two teams. They flagged new onboarding volume (about 120 users), asked about SSO for the additional site, and requested an updated rollout plan tied to the launch date.",
       sources: [
         { name: "Gong", logo: "/logos/gong.png" },
-        { name: "Salesforce", logo: "/logos/salesforce.png" },
+        { name: "Gmail", logo: "/logos/salesforce.png" },
       ],
     },
   ],
