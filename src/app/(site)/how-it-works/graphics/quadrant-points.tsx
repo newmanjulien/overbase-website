@@ -4,12 +4,14 @@ type QuadrantPointsProps = {
   points: QuadrantPoint[];
   onHover: (point: QuadrantPoint, clientPosition: { x: number; y: number }) => void;
   onMove: (clientPosition: { x: number; y: number }) => void;
+  interactive?: boolean;
 };
 
 export function QuadrantPoints({
   points,
   onHover,
   onMove,
+  interactive = true,
 }: QuadrantPointsProps) {
   return (
     <>
@@ -17,18 +19,26 @@ export function QuadrantPoints({
         return (
           <g
             key={point.id}
-            onMouseEnter={(event) => {
-              onHover(point, {
-                x: event.clientX,
-                y: event.clientY,
-              });
-            }}
-            onMouseMove={(event) => {
-              onMove({
-                x: event.clientX,
-                y: event.clientY,
-              });
-            }}
+            onMouseEnter={
+              interactive
+                ? (event) => {
+                    onHover(point, {
+                      x: event.clientX,
+                      y: event.clientY,
+                    });
+                  }
+                : undefined
+            }
+            onMouseMove={
+              interactive
+                ? (event) => {
+                    onMove({
+                      x: event.clientX,
+                      y: event.clientY,
+                    });
+                  }
+                : undefined
+            }
           >
             <circle
               cx={point.xPx}

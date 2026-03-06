@@ -8,6 +8,7 @@ import {
   HoverCardContent,
   HoverCardTrigger,
 } from "@/components/ui/hover-card";
+import { useIsMobile } from "@/components/ui/use-mobile";
 import { cn } from "@/lib/utils";
 import { calendarPopoverContent } from "./calendar-data";
 
@@ -44,7 +45,8 @@ export function CalendarPopover({
   className,
 }: CalendarPopoverProps) {
   const canHover = useCanHover();
-  const isInteractive = interactive && canHover;
+  const isMobile = useIsMobile();
+  const isInteractive = interactive && canHover && !isMobile;
   const content = <span className="min-w-0 truncate font-semibold">{title}</span>;
 
   if (!isInteractive) {

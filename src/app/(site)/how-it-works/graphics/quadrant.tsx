@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
+import { useIsMobile } from "@/components/ui/use-mobile";
 import { QuadrantAxes } from "./quadrant-axes";
 import { QuadrantPoints } from "./quadrant-points";
 import { QuadrantTooltip } from "./quadrant-tooltip";
@@ -11,6 +12,7 @@ type ClientPosition = { x: number; y: number };
 type SvgBounds = { left: number; top: number; width: number; height: number };
 
 export function Quadrant({ chart }: { chart: QuadrantChartData }) {
+  const isMobile = useIsMobile();
   const [hoveredPoint, setHoveredPoint] = useState<QuadrantPoint | null>(null);
   const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(
     null
@@ -80,21 +82,31 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
     };
   }, []);
 
-  const displayedHoveredPoint =
-    hoveredPoint ?? (!hasInteracted ? defaultPoint ?? null : null);
-  const displayedHoverPosition =
-    hoverPosition ??
-    (!hasInteracted && defaultPoint
+  const displayedHoveredPoint = isMobile
+    ? defaultPoint ?? null
+    : hoveredPoint ?? (!hasInteracted ? defaultPoint ?? null : null);
+  const displayedHoverPosition = isMobile
+    ? defaultPoint
       ? { x: defaultPoint.xPx, y: defaultPoint.yPx }
-      : null);
-  const displayedHoverBounds =
-    hoverBounds ??
-    (!hasInteracted && defaultPoint
+      : null
+    : hoverPosition ??
+      (!hasInteracted && defaultPoint
+        ? { x: defaultPoint.xPx, y: defaultPoint.yPx }
+        : null);
+  const displayedHoverBounds = isMobile
+    ? defaultPoint
       ? {
           width: chart.layout.dimensions.width,
           height: chart.layout.dimensions.height,
         }
-      : null);
+      : null
+    : hoverBounds ??
+      (!hasInteracted && defaultPoint
+        ? {
+            width: chart.layout.dimensions.width,
+            height: chart.layout.dimensions.height,
+          }
+        : null);
 
   return (
     <div className="relative mt-5 w-full rounded-xl border border-gray-100 bg-white p-4">
@@ -106,20 +118,32 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
         className="h-auto w-full text-gray-400"
         role="img"
         aria-label={chart.title}
-        onMouseEnter={() => {
-          measureBounds();
-        }}
-        onMouseMove={() => {
-          if (!hasInteracted) {
-            setHasInteracted(true);
-          }
-        }}
-        onMouseLeave={() => {
-          svgBoundsRef.current = null;
-          setHoveredPoint(null);
-          setHoverPosition(null);
-          setHoverBounds(null);
-        }}
+        onMouseEnter={
+          isMobile
+            ? undefined
+            : () => {
+                measureBounds();
+              }
+        }
+        onMouseMove={
+          isMobile
+            ? undefined
+            : () => {
+                if (!hasInteracted) {
+                  setHasInteracted(true);
+                }
+              }
+        }
+        onMouseLeave={
+          isMobile
+            ? undefined
+            : () => {
+                svgBoundsRef.current = null;
+                setHoveredPoint(null);
+                setHoverPosition(null);
+                setHoverBounds(null);
+              }
+        }
       >
         <QuadrantAxes
           chart={chart}
@@ -128,7 +152,11 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
 
         <QuadrantPoints
           points={chart.points}
+          interactive={!isMobile}
           onHover={(point, clientPosition) => {
+            if (isMobile) {
+              return;
+            }
             const resolved = resolvePointer(clientPosition);
             if (!resolved) {
               return;
@@ -141,6 +169,9 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
             setHoverBounds(resolved.bounds);
           }}
           onMove={(clientPosition) => {
+            if (isMobile) {
+              return;
+            }
             const resolved = resolvePointer(clientPosition);
             if (!resolved) {
               return;
