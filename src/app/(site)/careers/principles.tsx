@@ -1,6 +1,6 @@
-import ArcPattern from "./patterns/ArcPattern";
-import CrossPattern from "./patterns/CrossPattern";
-import DotPattern from "./patterns/DotPattern";
+import ArcPattern from "./patterns/arc-pattern";
+import CrossPattern from "./patterns/cross-pattern";
+import DotPattern from "./patterns/dot-pattern";
 
 interface Principle {
   id: string;
