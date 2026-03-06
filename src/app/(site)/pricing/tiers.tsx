@@ -35,10 +35,10 @@ const PLANS: Plan[] = [
 
 export default function Tiers() {
   return (
-    <section id="pricing-cards" className="px-6 py-20 max-w-5xl mx-auto">
+    <section id="pricing-cards" className="px-6 py-20 max-w-6xl mx-auto">
       <div className="mb-22 border-t border-gray-100"></div>
 
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8">
           {PLANS.map((plan) => (
             <PlanCard key={plan.id} plan={plan} />

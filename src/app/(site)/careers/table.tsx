@@ -29,7 +29,7 @@ export default function CareersTable() {
   return (
     <section
       id="careers-table"
-      className="px-6 md:px-22 pt-20 md:pt-30 pb-33 max-w-6xl mx-auto"
+      className="px-6 md:px-22 pt-20 md:pt-30 pb-33 max-w-7xl mx-auto"
     >
       <div className="text-sm text-gray-400 mb-4 px-3">Open Roles</div>
       <div className="border-t border-gray-100 mx-3"></div>

@@ -234,7 +234,7 @@ function Pattern({ pattern }: Pick<Principle, "pattern">) {
 
 export default function CareersPrinciples() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 pt-18 md:pt-30 max-w-6xl mx-auto">
+    <section className="px-6 md:px-12 lg:px-24 pt-18 md:pt-30 max-w-7xl mx-auto">
       <div className="grid gap-10 lg:grid-cols-3 lg:gap-8">
         {PRINCIPLES.map((principle) => (
           <article key={principle.id}>

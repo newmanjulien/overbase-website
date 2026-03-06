@@ -33,6 +33,12 @@ export function Pricing() {
               Your sellers do 0 data input and don't need to track their deals
               in a CRM
             </p>
+
+            <p>
+              This is only now becoming possible with the latest tech. And only
+              by combining this tech with human expertise, supervision and
+              guidance
+            </p>
           </div>
         </div>
       </section>

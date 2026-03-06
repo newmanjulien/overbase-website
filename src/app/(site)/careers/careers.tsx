@@ -31,6 +31,11 @@ export default function Careers() {
               Long term, we'll apply this AI-native approach to all databases
               and data systems
             </p>
+            <p>
+              Join one of the only teams in the world which is truly building
+              the future. And be part of one of the few businesses where you'll
+              actually be working with your peers
+            </p>
           </div>
         </div>
       </section>
