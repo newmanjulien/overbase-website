@@ -14,7 +14,7 @@ const PRINCIPLES: Principle[] = [
     id: "difficulty",
     title: "Talent is paretto distributed",
     description:
-      "A handful of people are smart and more capable than everyone else combined. We work with those people",
+      "A handful of people are smarter and more capable than everyone else combined. We work with those people",
     pattern: "crosses",
   },
   {

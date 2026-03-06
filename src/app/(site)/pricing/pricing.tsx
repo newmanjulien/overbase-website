@@ -25,8 +25,8 @@ export function Pricing() {
             </p>
 
             <p>
-              This human uses specialized AI tools to understand each deal
-              in-depth. And to forecast accurately
+              This data scientist uses specialized AI tools to understand each
+              deal in-depth. And to forecast accurately
             </p>
 
             <p>
