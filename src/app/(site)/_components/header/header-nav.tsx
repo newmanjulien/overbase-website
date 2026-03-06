@@ -43,15 +43,12 @@ export function HeaderNav({ items, activeId }: HeaderNavProps) {
               variant="ghost"
               size="sm"
               className={cn(
-                "rounded-sm text-sm scale-[0.92] text-secondary-foreground hover:bg-transparent",
+                "rounded-sm p-1.5 text-sm scale-[0.92] text-secondary-foreground hover:bg-transparent",
                 active && "text-accent-foreground",
               )}
               asChild
             >
-              <Link
-                href={item.href}
-                aria-current={active ? "page" : undefined}
-              >
+              <Link href={item.href} aria-current={active ? "page" : undefined}>
                 {item.label}
               </Link>
             </Button>

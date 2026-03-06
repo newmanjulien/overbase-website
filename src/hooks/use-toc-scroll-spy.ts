@@ -152,21 +152,3 @@ export function useTOCScrollSpy(
 
   return enabled ? activeIds : [];
 }
-
-/**
- * Smoothly scrolls to a section by ID
- * @param id - The element ID to scroll to
- * @param offset - Optional offset from top (for fixed headers)
- */
-export function scrollToSection(id: string, offset: number = 100): void {
-  const element = document.getElementById(id);
-  if (element) {
-    const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.scrollY - offset;
-
-    window.scrollTo({
-      top: offsetPosition,
-      behavior: "smooth",
-    });
-  }
-}

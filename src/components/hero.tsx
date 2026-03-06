@@ -1,8 +1,7 @@
 import type { ReactNode } from "react";
-import Link from "next/link";
 
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
+import { HeroCTAButton } from "@/components/hero-cta-button";
 
 type HeroProps = {
   title: ReactNode;
@@ -31,12 +30,7 @@ export default function Hero({
           </h1>
           {cta ? (
             <div className="pt-2">
-              <Button
-                className="bg-gray-100 hover:bg-gray-200/50 text-gray-900 rounded-full px-3 py-1"
-                asChild
-              >
-                <Link href={`#${cta.targetId}`}>{cta.label}</Link>
-              </Button>
+              <HeroCTAButton label={cta.label} targetId={cta.targetId} />
             </div>
           ) : null}
         </div>

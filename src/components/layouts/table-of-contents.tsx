@@ -6,7 +6,8 @@ import {
   useMemo,
   useState,
 } from "react";
-import { useTOCScrollSpy, scrollToSection } from "@/hooks/use-toc-scroll-spy";
+import { useTOCScrollSpy } from "@/hooks/use-toc-scroll-spy";
+import { scrollToSection } from "@/lib/scroll-motion";
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { cn } from "@/lib/utils";
 
