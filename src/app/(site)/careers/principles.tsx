@@ -48,12 +48,12 @@ const PRINCIPLES: Principle[] = [
     pattern: "dots",
   },
   {
-    id: "speed",
-    title: "Speed without mistakes",
+    id: "learn",
+    title: "10x yourself every year",
     description: (
       <>
-        We aim huge, go fast, and we stay in control. Doing this means being
-        grounded in truth and honesty (
+        We hold each other accountable to an exponentiating pace of learning
+        that isn't sustainable for most people (
         <a
           href="https://drive.google.com/file/d/1ksgWWMjjQtvu4HBTJqYVJEtb5jP45ZDH/view"
           className="underline"
