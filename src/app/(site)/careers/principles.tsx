@@ -31,9 +31,20 @@ const PRINCIPLES: Principle[] = [
   },
   {
     id: "average",
-    title: "Great gets you fired",
-    description:
-      "We're not here to do great work. We're here to do exceptional work. If your work is merely great, you're fired",
+    title: "Exceptional isn't good enough",
+    description: (
+      <>
+        We're here to do work that's much better than exceptional. If your work
+        is merely exceptional, you'll start again (
+        <a
+          href="https://drive.google.com/file/d/1y0RXd-1DeeTFJ80e_Dcs3sLzu9e3svDV/view"
+          className="underline"
+        >
+          link
+        </a>
+        )
+      </>
+    ),
     pattern: "dots",
   },
   {
@@ -68,7 +79,7 @@ export default function CareersPrinciples() {
       <div className="grid gap-10 lg:grid-cols-3 lg:gap-8">
         {PRINCIPLES.map((principle) => (
           <article key={principle.id}>
-            <div className="relative h-52 md:h-56 rounded-3xl border border-gray-200 bg-[#f7f7f8]">
+            <div className="relative h-52 md:h-56 rounded-lg border border-gray-200 bg-zinc-50">
               <Pattern pattern={principle.pattern} />
             </div>
             <h3 className="mt-5 text-sm text-gray-900 font-medium leading-tight">
