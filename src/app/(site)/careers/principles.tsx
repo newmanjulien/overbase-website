@@ -20,6 +20,8 @@ const PRINCIPLES: Principle[] = [
         combined. We work with those people (
         <a
           href="https://drive.google.com/file/d/16uhq5ibxdItJj5IIHqH0kSC-FltpcK_K/view"
+          target="_blank"
+          rel="noopener noreferrer"
           className="underline"
         >
           link
@@ -34,10 +36,12 @@ const PRINCIPLES: Principle[] = [
     title: "Exceptional isn't good enough",
     description: (
       <>
-        We're here to do work that's much better than exceptional. If your work
-        is merely exceptional, you'll start again (
+        We're here to do work that's much better than exceptional. If work is
+        merely exceptional, we start again (
         <a
           href="https://drive.google.com/file/d/1y0RXd-1DeeTFJ80e_Dcs3sLzu9e3svDV/view"
+          target="_blank"
+          rel="noopener noreferrer"
           className="underline"
         >
           link
@@ -48,14 +52,16 @@ const PRINCIPLES: Principle[] = [
     pattern: "dots",
   },
   {
-    id: "learn",
-    title: "10x yourself every year",
+    id: "trust",
+    title: "Trust and collaboration",
     description: (
       <>
-        We hold each other accountable to an exponentiating pace of learning
-        that isn't sustainable for most people (
+        Low IQ people front on each other because they can't engage with the
+        content at hand. Our team is smart enough to be trustworhy (
         <a
-          href="https://drive.google.com/file/d/1ksgWWMjjQtvu4HBTJqYVJEtb5jP45ZDH/view"
+          href="https://drive.google.com/file/d/1i6BepM49--IKvrbD7bzhprxpq-tu9p78/view"
+          target="_blank"
+          rel="noopener noreferrer"
           className="underline"
         >
           link

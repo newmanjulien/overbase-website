@@ -9,7 +9,7 @@ export default function ArcPattern() {
   const markerOffset = markerSize / 2;
   const cutoutSize = 28;
   const cutoutOffset = cutoutSize / 2;
-  const panelFill = "#f7f7f8";
+  const panelFill = "var(--color-zinc-50)";
 
   return (
     <div className="relative h-full w-full">
