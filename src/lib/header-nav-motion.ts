@@ -1,5 +1,5 @@
-//animantion that makes the navigation look nice
-//the bg shifts in an elegant way between nav items
+// Animation that makes the navigation look nice
+// The bg shifts in an elegant way between nav items
 
 "use client";
 

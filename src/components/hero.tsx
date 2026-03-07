@@ -35,7 +35,7 @@ export default function Hero({
           ) : null}
         </div>
       </div>
-      {divider ? <div className="mt-25 border-t border-gray-100"></div> : null}
+      {divider ? <div className="mt-[6.25rem] border-t border-gray-100"></div> : null}
     </section>
   );
 }

@@ -34,7 +34,7 @@ export function Footer() {
               href="/legal/sub-processors"
               className="text-sm text-gray-400 hover:text-gray-900 transition-colors duration-200"
             >
-              Subprocessors
+              Sub-processors
             </Link>
           </div>
         </div>

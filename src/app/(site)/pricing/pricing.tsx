@@ -10,7 +10,7 @@ export function Pricing() {
           </>
         }
       />
-      <section className="px-6 md:px-12 lg:px-24 pt-18 max-w-6xl mx-auto">
+      <section className="px-6 md:px-12 lg:px-24 pt-[4.5rem] max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">

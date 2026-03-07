@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Letter() {
   return (
-    <section className="pb-22 px-6 md:px-12 lg:px-24 bg-white">
+    <section className="pb-[5.5rem] px-6 md:px-12 lg:px-24 bg-white">
       <div className="max-w-3xl mx-auto scale-[0.95]">
         {/* Paper Stack Container */}
         <div className="relative mx-auto max-w-3xl">
@@ -30,7 +30,7 @@ export function Letter() {
               <p>
                 Some businesses get sellers to input everything in a CRM. But
                 forcing the hand of your team is just not appropriate in your
-                business' culture.
+                business's culture.
               </p>
 
               <p className="font-medium">
@@ -75,7 +75,7 @@ export function Letter() {
                 alt="Julien Newman signature"
                 width={180}
                 height={90}
-                className="mt-4 h-25 w-auto"
+                className="mt-4 h-[6.25rem] w-auto"
               />
             </div>
           </div>

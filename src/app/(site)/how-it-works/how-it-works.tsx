@@ -21,7 +21,7 @@ export default function HowItWorksSections() {
       </div>
 
       <div className="space-y-24">
-        <div className="pt-22">
+        <div className="pt-[5.5rem]">
           <HowItWorksSection
             step="01"
             title="Your sellers never input any new data"

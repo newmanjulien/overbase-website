@@ -9,12 +9,12 @@ export default function Careers() {
       />
       <section
         id="careers-details"
-        className="px-6 md:px-12 lg:px-24 pt-18 max-w-6xl mx-auto"
+        className="px-6 md:px-12 lg:px-24 pt-[4.5rem] max-w-6xl mx-auto"
       >
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Leapfrog over databases and over legacy systems
+              Be part of leapfrogging databases and legacy systems
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
@@ -25,7 +25,7 @@ export default function Careers() {
             <p>
               Today, we're replacing CRMs which are the most important and
               valuable databases. And we're doing this by working with
-              businesses who aren't anchored in 90s era tech
+              businesses who aren't anchored in ’90s-era tech
             </p>
             <p>
               Long term, we'll apply this AI-native approach to all databases

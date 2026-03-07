@@ -13,7 +13,7 @@ interface Principle {
 const PRINCIPLES: Principle[] = [
   {
     id: "difficulty",
-    title: "Talent is paretto distributed",
+    title: "Talent is Pareto distributed",
     description: (
       <>
         A handful of people are smarter and more capable than everyone else
@@ -31,7 +31,7 @@ const PRINCIPLES: Principle[] = [
   },
   {
     id: "average",
-    title: "Great gets your fired",
+    title: "Great gets you fired",
     description:
       "We're not here to do great work. We're here to do exceptional work. If your work is merely great, you're fired",
     pattern: "dots",
@@ -39,8 +39,19 @@ const PRINCIPLES: Principle[] = [
   {
     id: "accountability",
     title: "Speed without mistakes",
-    description:
-      "We go faster and make fewer mistakes than everyone else. Sound impossible? Maybe Overbase isn't for you",
+    description: (
+      <>
+        We go faster and make fewer mistakes than everyone else. Sound
+        impossible? Maybe Overbase isn't for you (
+        <a
+          href="https://drive.google.com/file/d/1ksgWWMjjQtvu4HBTJqYVJEtb5jP45ZDH/view"
+          className="underline"
+        >
+          link
+        </a>
+        )
+      </>
+    ),
     pattern: "arc",
   },
 ];
@@ -53,7 +64,7 @@ function Pattern({ pattern }: Pick<Principle, "pattern">) {
 
 export default function CareersPrinciples() {
   return (
-    <section className="px-6 md:px-12 lg:px-24 pt-18 md:pt-30 max-w-7xl mx-auto">
+    <section className="px-6 md:px-12 lg:px-24 pt-[4.5rem] md:pt-[7.5rem] max-w-7xl mx-auto">
       <div className="grid gap-10 lg:grid-cols-3 lg:gap-8">
         {PRINCIPLES.map((principle) => (
           <article key={principle.id}>

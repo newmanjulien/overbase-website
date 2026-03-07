@@ -14,8 +14,8 @@ export default function HowItWorksHero() {
         titleMaxWidthClass="max-w-lg"
         divider={false}
       />
-      <section className="mb-34 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-        <div className="pt-12 pb-22">
+      <section className="mb-[8.5rem] px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+        <div className="pt-12 pb-[5.5rem]">
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
