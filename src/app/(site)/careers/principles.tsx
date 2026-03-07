@@ -53,13 +53,14 @@ const PRINCIPLES: Principle[] = [
   },
   {
     id: "trust",
-    title: "Trust and collaboration",
+    title: "Learning with the best",
     description: (
       <>
-        Low IQ people front on each other because they can't engage with the
-        content at hand. Our team is smart enough to be trustworhy (
+        We help each other learn and we hold each other accountable an
+        exponenting amount of personal growth that's not possible anywhere else
+        (
         <a
-          href="https://drive.google.com/file/d/1i6BepM49--IKvrbD7bzhprxpq-tu9p78/view"
+          href="https://drive.google.com/file/d/1BCWhO2YK0UMhWqukDNKN_pzF8xyblVhu/view"
           target="_blank"
           rel="noopener noreferrer"
           className="underline"
