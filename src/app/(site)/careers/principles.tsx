@@ -12,7 +12,7 @@ interface Principle {
 
 const PRINCIPLES: Principle[] = [
   {
-    id: "difficulty",
+    id: "pareto",
     title: "Talent is Pareto distributed",
     description: (
       <>
@@ -30,7 +30,7 @@ const PRINCIPLES: Principle[] = [
     pattern: "crosses",
   },
   {
-    id: "average",
+    id: "exceptional",
     title: "Exceptional isn't good enough",
     description: (
       <>
@@ -48,12 +48,12 @@ const PRINCIPLES: Principle[] = [
     pattern: "dots",
   },
   {
-    id: "accountability",
+    id: "speed",
     title: "Speed without mistakes",
     description: (
       <>
-        We go faster and make fewer mistakes than everyone else. Sound
-        impossible? Maybe Overbase isn't for you (
+        We aim huge, go fast, and we stay in control. Doing this means being
+        grounded in truth and honesty (
         <a
           href="https://drive.google.com/file/d/1ksgWWMjjQtvu4HBTJqYVJEtb5jP45ZDH/view"
           className="underline"
