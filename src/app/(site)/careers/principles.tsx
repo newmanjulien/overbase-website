@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import ArcPattern from "./patterns/arc-pattern";
 import CrossPattern from "./patterns/cross-pattern";
 import DotPattern from "./patterns/dot-pattern";
@@ -5,7 +6,7 @@ import DotPattern from "./patterns/dot-pattern";
 interface Principle {
   id: string;
   title: string;
-  description: string;
+  description: ReactNode;
   pattern: "dots" | "arc" | "crosses";
 }
 
@@ -13,8 +14,19 @@ const PRINCIPLES: Principle[] = [
   {
     id: "difficulty",
     title: "Talent is paretto distributed",
-    description:
-      "A handful of people are smarter and more capable than everyone else combined. We work with those people",
+    description: (
+      <>
+        A handful of people are smarter and more capable than everyone else
+        combined. We work with those people (
+        <a
+          href="https://drive.google.com/file/d/16uhq5ibxdItJj5IIHqH0kSC-FltpcK_K/view"
+          className="underline"
+        >
+          link
+        </a>
+        )
+      </>
+    ),
     pattern: "crosses",
   },
   {
