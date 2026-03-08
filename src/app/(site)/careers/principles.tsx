@@ -1,13 +1,13 @@
 import type { ReactNode } from "react";
-import ArcPattern from "./patterns/arc-pattern";
 import CrossPattern from "./patterns/cross-pattern";
 import DotPattern from "./patterns/dot-pattern";
+import OverlapPattern from "./patterns/overlap-pattern";
 
 interface Principle {
   id: string;
   title: string;
   description: ReactNode;
-  pattern: "dots" | "arc" | "crosses";
+  pattern: "dots" | "overlap" | "crosses";
 }
 
 const PRINCIPLES: Principle[] = [
@@ -70,13 +70,13 @@ const PRINCIPLES: Principle[] = [
         )
       </>
     ),
-    pattern: "arc",
+    pattern: "overlap",
   },
 ];
 
 function Pattern({ pattern }: Pick<Principle, "pattern">) {
   if (pattern === "dots") return <DotPattern />;
-  if (pattern === "arc") return <ArcPattern />;
+  if (pattern === "overlap") return <OverlapPattern />;
   return <CrossPattern />;
 }
 
