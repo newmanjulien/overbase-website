@@ -12,11 +12,11 @@ export default function HowItWorksSections() {
     <section className="mx-auto max-w-7xl px-6 pb-24 md:px-12 lg:px-24">
       <div className="mx-auto max-w-lg text-center">
         <h2 className="text-5xl font-medium tracking-tight text-gray-900">
-          0 data input
+          Reliable information with 0 data input
         </h2>
         <p className="mt-6 text-gray-500">
-          We gather detailed information about each deal in a way where your
-          sellers never input any data
+          We gather detailed and granular information by analyzing PDFs, emails,
+          calendar and other documents
         </p>
       </div>
 
@@ -24,10 +24,10 @@ export default function HowItWorksSections() {
         <div className="pt-[5.5rem]">
           <HowItWorksSection
             step="01"
-            title="Your sellers never input any new data"
+            title="Easy and reliable data collection you can trust"
             description={[
-              "We automatically gather data from Excel, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
-              "We gather this in a way that requires 0 data input from your sellers",
+              "We analyze Excel, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
+              "We gather this in a way that requires 0 data input and which is consistently reliable",
             ]}
             reverse
           >
