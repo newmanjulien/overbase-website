@@ -35,7 +35,7 @@ export function Letter() {
 
               <p className="font-medium">
                 Which means you rely on what your sellers tell you. And sellers
-                are optimistic so what they tell you can often be wrong.
+                are optimistic so what they tell you can often be unreliable.
               </p>
 
               <p>
@@ -53,10 +53,10 @@ export function Letter() {
               </p>
 
               <p>
-                We gather detailed information about each deal in a way where
-                sellers never input any data and never use a CRM. Then we make
-                the information easy and quick to access by putting it in the
-                calendar invites of your 1:1 meetings with sellers.
+                We gather detailed information about each deal in a reliable way
+                where sellers never input any data. Then we make the information
+                easy and quick to access by putting it in the calendar invites
+                of your 1:1 meetings with sellers.
               </p>
 
               <p>
