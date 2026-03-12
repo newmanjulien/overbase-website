@@ -56,7 +56,7 @@ const PRINCIPLES: Principle[] = [
     title: "Learning with the best",
     description: (
       <>
-        We help each other learn and we hold each other accountable an
+        We help each other learn and we hold each other accountable to an
         exponenting amount of personal growth that's not possible anywhere else
         (
         <a
