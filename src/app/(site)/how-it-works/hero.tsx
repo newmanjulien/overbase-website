@@ -20,9 +20,7 @@ export default function HowItWorksHero() {
             <div className="space-y-4 text-gray-500">
               <p>
                 Quickly know what happened since your last meeting, which deals
-                are actually likely to close and where to focus your time.
-                Immediately see what’s missing and notice suspicious timelines
-                to ask sellers about
+                are actually likely to close and where to focus your time
               </p>
             </div>
           </div>

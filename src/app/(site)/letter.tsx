@@ -34,8 +34,8 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                Which means you rely on what your sellers tell you. And sellers
-                are optimistic so what they tell you can often be unreliable.
+                Which means you rely on what your sellers tell you. And what
+                sellers tell you is often inconsistent and unreliable.
               </p>
 
               <p>
@@ -47,10 +47,7 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>
-                Overbase gives you the visibility you need to get this easy
-                revenue.
-              </p>
+              <p>Overbase gives you the visibility to get this easy revenue.</p>
 
               <p>
                 We gather detailed information about each deal in a reliable way

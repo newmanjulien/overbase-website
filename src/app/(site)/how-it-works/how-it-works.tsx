@@ -24,7 +24,7 @@ export default function HowItWorksSections() {
         <div className="pt-[5.5rem]">
           <HowItWorksSection
             step="01"
-            title="Easy and reliable data collection you can trust"
+            title="Consistently reliable information you trust"
             description={[
               "We analyze Excel, PDFs, RFPs, email, calendar, phone calls. And any internal systems you use",
               "We gather this in a way that requires 0 data input and which is consistently reliable",
@@ -55,7 +55,7 @@ export default function HowItWorksSections() {
         <div className="pt-6">
           <HowItWorksSection
             step="03"
-            title="Then we forecast which deals are likely to close"
+            title="We forecast which deals are likely to close"
             description={[
               "Gathering this granular information lets us give a second opinion on how likely it is that each deal will close",
               "Comparing your current forecast with Overbase's forecast reveals hidden revenue opportunities",
