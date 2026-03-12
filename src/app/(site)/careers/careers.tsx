@@ -1,4 +1,5 @@
 import Hero from "@/components/hero";
+import Link from "next/link";
 
 export default function Careers() {
   return (
@@ -19,22 +20,23 @@ export default function Careers() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              We're building the future of data management in a way that's
-              decentralized, elegant and isn't limited by legacy systems
+              We're building the future of data with a new approach that's
+              decentralized, elegant and intuitive
             </p>
             <p>
-              Today, we're replacing CRMs which are the most important and
+              Today, we're leapfrogging CRMs which are the most important and
               valuable databases. And we're doing this by working with
               businesses who aren't anchored in ’90s-era tech
             </p>
             <p>
-              Long term, we'll apply this AI-native approach to all databases
-              and data systems
-            </p>
-            <p>
-              Join one of the only teams in the world which is truly building
-              the future. And be part of one of the few businesses where you'll
-              actually be working with your peers
+              We'll apply this AI-native approach to all databases and all data
+              systems.{" "}
+              <Link
+                href="/blog/decentralized-data"
+                className="text-[#4F769E] underline decoration-[#4F769E]/65"
+              >
+                Read our vision
+              </Link>
             </p>
           </div>
         </div>

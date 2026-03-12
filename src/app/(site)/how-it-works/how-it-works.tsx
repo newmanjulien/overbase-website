@@ -12,11 +12,11 @@ export default function HowItWorksSections() {
     <section className="mx-auto max-w-7xl px-6 pb-24 md:px-12 lg:px-24">
       <div className="mx-auto max-w-lg text-center">
         <h2 className="text-5xl font-medium tracking-tight text-gray-900">
-          Reliable information with 0 data input
+          Consistent and reliable
         </h2>
         <p className="mt-6 text-gray-500">
-          We gather detailed and granular information by analyzing PDFs, emails,
-          calendar and other documents
+          We analyze PDFs, emails, calendar, Excel and other documents to
+          consistently give you reliable information on what's happening
         </p>
       </div>
 
