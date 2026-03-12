@@ -26,7 +26,7 @@ export default function HowItWorksSections() {
             step="01"
             title="Easy and reliable data collection you can trust"
             description={[
-              "We analyze Excel, PDFs, RFPs, email, calendar, phone calls. And from any internal systems you currently use",
+              "We analyze Excel, PDFs, RFPs, email, calendar, phone calls. And any internal systems you use",
               "We gather this in a way that requires 0 data input and which is consistently reliable",
             ]}
             reverse

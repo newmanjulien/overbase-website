@@ -25,12 +25,17 @@ export default function Careers() {
             </p>
             <p>
               Today, we're leapfrogging CRMs which are the most important and
-              valuable databases. And we're doing this by working with
-              businesses who aren't anchored in ’90s-era tech
+              valuable databases
             </p>
+
             <p>
-              We'll apply this AI-native approach to all databases and all data
-              systems.{" "}
+              We're doing this by working with businesses who aren't anchored in
+              ’90s-era tech because they never fully adopted it
+            </p>
+
+            <p>
+              Later, we'll apply this AI-native approach to all databases and
+              all data systems.{" "}
               <Link
                 href="/blog/decentralized-data"
                 className="text-[#4F769E] underline decoration-[#4F769E]/65"
