@@ -34,14 +34,14 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                Which means you rely on what your sellers tell you. And what
-                sellers tell you is often inconsistent and unreliable.
+                That means you rely on what sellers tell you, which is
+                inconsistent and often unreliable.
               </p>
 
               <p>
                 In real life, you can't get an accurate read on which deals are
-                actually likely to close. You often don't know which levers to
-                pull to accelerate revenue.{" "}
+                likely to close. You don't know which levers to pull to
+                accelerate revenue.{" "}
                 <span className="font-medium">
                   And you leave easy revenue on the table.
                 </span>
