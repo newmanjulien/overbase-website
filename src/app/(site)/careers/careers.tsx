@@ -15,33 +15,30 @@ export default function Careers() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Be part of leapfrogging databases and legacy systems
+              Be part of leapfrogging legacy data systems
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              We're building the future of data with a new approach that's
-              decentralized, elegant and intuitive
+              For decades, data centralizers promised insight but delivered
+              frustration, slow processes, and costly complexity
             </p>
             <p>
-              Today, we're leapfrogging CRMs which are the most important and
-              valuable databases
-            </p>
-
-            <p>
-              We're doing this by working with businesses who aren't anchored in
-              ’90s-era tech because they never fully adopted it
+              Overbase gets reliable answers from even the most disconnected
+              data. We aren’t just patching ‘90s tech with LLMs, we're
+              reimagining data management from first principles
             </p>
 
             <p>
-              Later, we'll apply this AI-native approach to all databases and
-              all data systems.{" "}
+              We're leapfrogging CRMs first, then we'll replace all data systems
+              (
               <Link
                 href="/blog/decentralized-data"
                 className="text-[#4F769E] underline decoration-[#4F769E]/65"
               >
-                Read our vision
+                link
               </Link>
+              )
             </p>
           </div>
         </div>
