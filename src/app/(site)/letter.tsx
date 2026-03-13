@@ -23,12 +23,12 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 The hardest part of helping your team drive sales isn't the
-                coaching or the support. It's figuring out what's going on with
-                their deals.
+                coaching or the strategy. It's knowing what's actually going on
+                with their deals.
               </p>
 
               <p>
-                Some businesses get sellers to input everything in a CRM. But
+                Some businesses get sellers to input every detail in a CRM. But
                 forcing the hand of your team is just not appropriate in your
                 business's culture.
               </p>
@@ -47,7 +47,7 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>Overbase gives you the visibility to get this easy revenue.</p>
+              <p>Overbase gives you the visibility to drive sales.</p>
 
               <p>
                 We gather detailed information about each deal in a reliable way

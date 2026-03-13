@@ -1,8 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/raffle",
-      "destination": "https://docs.google.com/forms/d/e/1FAIpQLSckXVOiaNwzx8rNQSxrGoMdv3ulxzTLIBhokbUYvex4wykTBQ/viewform?usp=header",
+      "source": "/style",
+      "destination": "https://drive.google.com/file/d/1HUVrKQVj9eEcrW8OyBvt8bn6yE542hV1/view",
+      "permanent": true
+    },
+    {
+      "source": "/anti-style",
+      "destination": "https://drive.google.com/file/d/1OVFLaUSV6ZFVllwva2L9nFWpxnGoBTn5/view",
       "permanent": true
     }
   ]
