@@ -40,7 +40,7 @@ export default function HowItWorksSections() {
             step="02"
             title="We collaborate with sellers to fill in gaps"
             description={[
-              "The data you need to understand deals sometimes lives in the heads of your sellers or of your buyers",
+              "The data you need to understand deals sometimes lives in the heads of your sellers or of the buyers",
               "We work with sellers to get missing details ahead of your 1:1s. And make it easy for them to ask buyers the right questions",
             ]}
           >

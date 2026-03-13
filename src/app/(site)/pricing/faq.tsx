@@ -14,10 +14,10 @@ const FAQ_ITEMS: FAQItem[] = [
       "We build custom AI tools for analyzing sales deals and for forecasting revenue. And our human data scientists use these tools",
   },
   {
-    id: "security",
-    question: "Why is Overbase so secure?",
+    id: "meetings",
+    question: "How many meetings do you prepare for each seller?",
     answer:
-      "We never store your data for more than 30 days and all access requires human approval. This makes Overbase safer than fully automated solutions. We also only use low-risk data about prospective customers",
+      "As many as you have with them. In most cases, we prepare one meeting per week",
   },
   {
     id: "attribution-3-percent",

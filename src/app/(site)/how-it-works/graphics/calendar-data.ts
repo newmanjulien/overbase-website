@@ -44,11 +44,6 @@ export const calendarPopoverContent = {
         "Focus on the right deals by seeing where Overbase disagrees with your current forecast",
     },
     {
-      label: "Missing data and timelines",
-      description:
-        "Missing data and questions around timelines you may want to dig into with Chris",
-    },
-    {
       label: "Opportunities and risks",
       description: "List of opportunities and risks you might help Chris with",
     },
