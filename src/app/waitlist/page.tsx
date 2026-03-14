@@ -39,10 +39,10 @@ export default function WaitlistRoute() {
     <FormPageLayout
       title={
         <h1 className="text-4xl text-gray-900 tracking-tight font-medium">
-          Join Waitlist
+          Join waitlist
         </h1>
       }
-      description="We currently work with a handful of design partners"
+      description="We'd love to meet if your business doesn't actively use a CRM"
       onLogoClick={() => router.push("/")}
       onSubmit={handleSubmit}
       primaryActionText="Submit"
