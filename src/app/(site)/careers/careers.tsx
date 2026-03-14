@@ -30,8 +30,8 @@ export default function Careers() {
             </p>
 
             <p>
-              We're leapfrogging CRMs first, then we'll replace all data systems
-              (
+              Together we'll leapfrog CRMs first. Then we'll replace all data
+              systems with a decentralized alternative (
               <Link
                 href="/blog/decentralized-data"
                 className="text-[#4F769E] underline decoration-[#4F769E]/65"
