@@ -33,18 +33,18 @@ export function Letter() {
                 business's culture.
               </p>
 
-              <p className="font-medium">
-                That means you rely on what sellers tell you, which is
-                inconsistent and often unreliable.
+              <p>
+                That means you rely on what sellers tell you.{" "}
+                <span className="font-medium">
+                  And what sellers tell you is inconsistent and it's often
+                  unreliable.{" "}
+                </span>
               </p>
 
               <p>
                 In real life, you can't get an accurate read on which deals are
                 likely to close. You don't know which levers to pull to
-                accelerate revenue.{" "}
-                <span className="font-medium">
-                  And you leave easy revenue on the table.
-                </span>
+                accelerate revenue. And you leave easy revenue on the table.
               </p>
 
               <p>Overbase gives you the visibility to drive sales.</p>
