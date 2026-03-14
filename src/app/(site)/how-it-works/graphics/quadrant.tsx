@@ -14,12 +14,14 @@ type SvgBounds = { left: number; top: number; width: number; height: number };
 export function Quadrant({ chart }: { chart: QuadrantChartData }) {
   const isMobile = useIsMobile();
   const [hoveredPoint, setHoveredPoint] = useState<QuadrantPoint | null>(null);
-  const [hoverPosition, setHoverPosition] = useState<{ x: number; y: number } | null>(
-    null
-  );
-  const [hoverBounds, setHoverBounds] = useState<{ width: number; height: number } | null>(
-    null
-  );
+  const [hoverPosition, setHoverPosition] = useState<{
+    x: number;
+    y: number;
+  } | null>(null);
+  const [hoverBounds, setHoverBounds] = useState<{
+    width: number;
+    height: number;
+  } | null>(null);
   const [hasInteracted, setHasInteracted] = useState(false);
   const svgRef = useRef<SVGSVGElement | null>(null);
   const svgBoundsRef = useRef<SvgBounds | null>(null);
@@ -83,16 +85,16 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
   }, []);
 
   const displayedHoveredPoint = isMobile
-    ? defaultPoint ?? null
-    : hoveredPoint ?? (!hasInteracted ? defaultPoint ?? null : null);
+    ? (defaultPoint ?? null)
+    : (hoveredPoint ?? (!hasInteracted ? (defaultPoint ?? null) : null));
   const displayedHoverPosition = isMobile
     ? defaultPoint
       ? { x: defaultPoint.xPx, y: defaultPoint.yPx }
       : null
-    : hoverPosition ??
+    : (hoverPosition ??
       (!hasInteracted && defaultPoint
         ? { x: defaultPoint.xPx, y: defaultPoint.yPx }
-        : null);
+        : null));
   const displayedHoverBounds = isMobile
     ? defaultPoint
       ? {
@@ -100,13 +102,13 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
           height: chart.layout.dimensions.height,
         }
       : null
-    : hoverBounds ??
+    : (hoverBounds ??
       (!hasInteracted && defaultPoint
         ? {
             width: chart.layout.dimensions.width,
             height: chart.layout.dimensions.height,
           }
-        : null);
+        : null));
 
   return (
     <div className="relative mt-5 w-full rounded-xl border border-gray-100 bg-white p-4">
@@ -145,10 +147,7 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
               }
         }
       >
-        <QuadrantAxes
-          chart={chart}
-          layout={chart.layout}
-        />
+        <QuadrantAxes chart={chart} layout={chart.layout} />
 
         <QuadrantPoints
           points={chart.points}
@@ -180,7 +179,6 @@ export function Quadrant({ chart }: { chart: QuadrantChartData }) {
             setHoverBounds(resolved.bounds);
           }}
         />
-
       </svg>
 
       <QuadrantTooltip

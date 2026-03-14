@@ -26,6 +26,9 @@ export function Signals({
   const isMobile = useIsMobile();
   const pages = useMemo(() => chunkSignals(signals), [signals]);
   const [activePage, setActivePage] = useState(0);
+  const [transitionDirection, setTransitionDirection] = useState<
+    "next" | "previous"
+  >("next");
 
   if (pages.length === 0) {
     return null;
@@ -33,10 +36,25 @@ export function Signals({
 
   const pageIndex = isMobile ? 0 : Math.min(activePage, pages.length - 1);
   const visibleSignals = pages[pageIndex] ?? [];
+  const handlePageChange = (nextPage: number) => {
+    if (nextPage === pageIndex) {
+      return;
+    }
+
+    setTransitionDirection(nextPage > pageIndex ? "next" : "previous");
+    setActivePage(nextPage);
+  };
 
   return (
     <div id={id} className="mt-4">
-      <div className="flex flex-col divide-y divide-gray-100 overflow-hidden rounded-2xl border border-gray-100 bg-white">
+      <div
+        key={`signals-content-${pageIndex}`}
+        className={`flex flex-col divide-y divide-gray-100 overflow-hidden rounded-2xl border border-gray-100 bg-white animate-in fade-in-0 duration-300 motion-reduce:animate-none ${
+          transitionDirection === "next"
+            ? "slide-in-from-right-2"
+            : "slide-in-from-left-2"
+        }`}
+      >
         {visibleSignals.map((signal) => (
           <div
             key={signal.id}
@@ -93,7 +111,7 @@ export function Signals({
                   }`}
                   aria-current={isActive ? "page" : undefined}
                   className="group flex h-5 w-5 items-center justify-center rounded-full focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-200"
-                  onClick={() => setActivePage(index)}
+                  onClick={() => handlePageChange(index)}
                 >
                   <span
                     className={`h-2 w-2 rounded-full transition duration-200 ${

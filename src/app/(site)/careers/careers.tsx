@@ -25,13 +25,13 @@ export default function Careers() {
             </p>
             <p>
               Overbase gets reliable answers from even the most disconnected
-              data. We aren’t just patching ‘90s tech with LLMs, we're
+              data. We aren’t just patching retro ‘90s tech with LLMs, we're
               reimagining data management from first principles
             </p>
 
             <p>
-              Together we'll leapfrog CRMs first. Then we'll replace all data
-              systems with a decentralized alternative (
+              Together we'll start by leapfrogging CRMs. Then we'll replace all
+              legacy data systems with a modern decentralized alternative (
               <Link
                 href="/blog/decentralized-data"
                 className="text-[#4F769E] underline decoration-[#4F769E]/65"
