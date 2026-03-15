@@ -10,8 +10,30 @@ const FAQ_ITEMS: FAQItem[] = [
   {
     id: "access",
     question: "How do you access that information?",
-    answer:
-      "We can pull data from any system. But we usually start by integrating with each seller's Outlook, OneDrive, Excel and Docusign",
+    answer: (
+      <>
+        We easily pull data from any system. But we usually start by getting set
+        up with a personal assistant login for each seller's Outlook or Gmail
+        account. This is called 'delegate access' in{" "}
+        <a
+          href="https://support.microsoft.com/en-us/office/share-and-access-a-calendar-with-edit-or-delegate-permissions-in-outlook-532e6410-ee80-42b5-9b1b-a09345ccef1b"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
+        >
+          Outlook
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://support.google.com/mail/answer/138350?hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
+        >
+          Gmail
+        </a>
+      </>
+    ),
   },
   {
     id: "reliable",

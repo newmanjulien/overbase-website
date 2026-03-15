@@ -22,7 +22,7 @@ const PRINCIPLES: Principle[] = [
           href="https://drive.google.com/file/d/16uhq5ibxdItJj5IIHqH0kSC-FltpcK_K/view"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#4F769E] underline decoration-[#4F769E]/65"
+          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
         >
           link
         </a>
@@ -42,7 +42,7 @@ const PRINCIPLES: Principle[] = [
           href="https://drive.google.com/file/d/1y0RXd-1DeeTFJ80e_Dcs3sLzu9e3svDV/view"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#4F769E] underline decoration-[#4F769E]/65"
+          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
         >
           link
         </a>
@@ -63,7 +63,7 @@ const PRINCIPLES: Principle[] = [
           href="https://drive.google.com/file/d/1BCWhO2YK0UMhWqukDNKN_pzF8xyblVhu/view"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#4F769E] underline decoration-[#4F769E]/65"
+          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
         >
           link
         </a>

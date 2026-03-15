@@ -34,7 +34,7 @@ export default function Careers() {
               legacy data systems with a modern decentralized alternative (
               <Link
                 href="/blog/decentralized-data"
-                className="text-[#4F769E] underline decoration-[#4F769E]/65"
+                className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
               >
                 link
               </Link>

@@ -1,5 +1,7 @@
 "use client";
 
+import type { ReactNode } from "react";
+
 import {
   Accordion,
   AccordionContent,
@@ -10,7 +12,7 @@ import {
 export type FAQItem = {
   id: string;
   question: string;
-  answer: string;
+  answer: ReactNode;
 };
 
 type FAQSectionProps = {
