@@ -22,19 +22,19 @@ export function Hero() {
             <Button
               variant="default"
               size="lg"
-              className="w-full max-w-lg p-6 text-base rounded-lg sm:w-auto"
+              className="w-full max-w-lg p-6 text-base rounded-lg sm:w-46"
               asChild
             >
-              <Link href="/waitlist">Join Waitlist</Link>
+              <Link href="/waitlist">Join waitlist</Link>
             </Button>
 
             <Button
               variant="secondary"
               size="lg"
-              className="w-full max-w-lg p-6 text-base rounded-lg sm:w-auto"
+              className="w-full max-w-lg p-6 text-base rounded-lg sm:w-46"
               asChild
             >
-              <Link href="https://cal.com/juliennewman">Demo with our CEO</Link>
+              <Link href="https://cal.com/juliennewman">Request a demo</Link>
             </Button>
           </div>
         </div>
