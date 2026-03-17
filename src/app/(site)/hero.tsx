@@ -10,12 +10,14 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-sm text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Drive sales <span className="bg-[#ffffcc] px-1">without a CRM</span>
+            Get the visibility to drive sales
           </h1>
 
-          <h2 className="mt-4 max-w-xl text-2xl text-gray-600 font-medium">
-            Overbase gives managers the visibility to drive sales when sellers
-            don't actively use a CRM
+          <h2 className="mt-4 max-w-xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Overbase brings visibility to sales teams that{" "}
+            <span className="bg-[#ffffcc] px-1">
+              don't take full advantage of CRMs
+            </span>
           </h2>
 
           <div className={newLocal}>

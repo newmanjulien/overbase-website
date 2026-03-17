@@ -19,8 +19,9 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                Quickly know what happened since your last meeting, which deals
-                are actually likely to close and where to focus your time
+                We gather detailed information about each deal, then we put the
+                information in the calendar invites of your 1:1 meetings with
+                sellers
               </p>
             </div>
           </div>

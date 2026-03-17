@@ -22,44 +22,50 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The hardest part of helping your team drive sales isn't the
-                coaching or the strategy. It's knowing what's actually going on
-                with their deals.
+                Some companies require sellers to log every detail in their CRM.
+                But sellers don't respond to heavy handed enforcement in your
+                culture.
               </p>
 
               <p>
-                Some businesses get sellers to input every detail in a CRM. But
-                forcing the hand of your team is just not appropriate in your
-                business's culture.
-              </p>
-
-              <p>
-                That means you rely on what sellers tell you.{" "}
+                This means sellers don't take full advantage of your CRM and
+                often{" "}
                 <span className="font-medium">
-                  And what sellers tell you is inconsistent and it's often
-                  unreliable.{" "}
+                  the only information managers get is what sellers tell them.
                 </span>
               </p>
 
-              <p>
-                In real life, you can't get an accurate read on which deals are
-                likely to close. You don't know which levers to pull to
-                accelerate revenue. And you leave easy revenue on the table.
-              </p>
-
-              <p>Overbase gives you the visibility to drive sales.</p>
-
-              <p>
-                We gather detailed information about each deal in a reliable way
-                where sellers never input any data. Then we make the information
-                easy and quick to access by putting it in the calendar invites
-                of your 1:1 meetings with sellers.
+              <p className="font-medium">
+                Which is a real problem because sellers are notoriously
+                unreliable when it comes to reporting on their sales
+                conversations.
               </p>
 
               <p>
-                The result is that you easily get an accurate forecast, quickly
-                know where to focus, and immediately pull the levers that get
-                sellers to close more deals faster.
+                Not taking full advantage of your CRM means you can't get an
+                accurate read on which deals are likely to close. And you don't
+                know which levers to pull to accelerate revenue.
+              </p>
+
+              <p>Overbase gives you visibility.</p>
+
+              <p>
+                We gather detailed information about deals in a reliable and
+                consistent way. We analyze each seller's emails, calendar
+                invites, PDFs and other activities. Sellers never input any
+                data.
+              </p>
+
+              <p>
+                Then we make the information easy and quick for managers to
+                access by putting it in the calendar invites of meetings they
+                have with sellers.
+              </p>
+
+              <p>
+                The result is that managers know what levers to pull to drive
+                sales. Sellers save time on meeting preparing and on data input.
+                And your business easily gets more revenue
               </p>
             </div>
 
