@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 export function Hero() {
   const newLocal =
-    "mt-10 flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center md:justify-start";
+    "mt-10 flex w-full flex-col items-center gap-2.5 sm:flex-row sm:justify-center md:items-start md:justify-start";
   return (
     <section className="flex flex-col px-6 sm:px-4 md:px-8 lg:px-12 xl:px-24 pt-20 pb-[4.5rem] bg-white">
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
