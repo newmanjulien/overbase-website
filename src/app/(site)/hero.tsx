@@ -10,13 +10,14 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-sm text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Get the visibility{" "}
-            <span className="bg-[#ffffcc] px-1">to drive sales</span>
+            Get the visibility to drive sales
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            We let sales managers get visibility in businesses who don't require
-            that sellers log every detail in a CRM
+            We let sales managers get visibility in businesses who{" "}
+            <span className="bg-[#ffffcc] px-1">
+              don't require that sellers use a CRM
+            </span>
           </h2>
 
           <div className={newLocal}>
