@@ -14,9 +14,9 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            We let sales managers get visibility in businesses who{" "}
+            We let managers get visibility, clarity and consistency{" "}
             <span className="bg-[#ffffcc] px-1">
-              don't require that sellers use a CRM
+              without requiring that sellers use a CRM
             </span>
           </h2>
 
