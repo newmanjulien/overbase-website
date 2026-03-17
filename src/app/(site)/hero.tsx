@@ -14,7 +14,7 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            We let managers get visibility, clarity and consistency{" "}
+            Overbase lets managers get visibility and consistency{" "}
             <span className="bg-[#ffffcc] px-1">
               without requiring that sellers use a CRM
             </span>

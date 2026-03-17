@@ -46,7 +46,7 @@ export function Letter() {
                 to drive more sales.
               </p>
 
-              <p>Overbase brings you visibility, clarity and consistency.</p>
+              <p>Overbase brings you visibility and consistency.</p>
 
               <p>
                 We gather detailed, granular and reliable information by
