@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { HeaderLogo } from "./header-logo";
 import { MobileHeader } from "./mobile-header";
-import { HeaderNav } from "./header-nav";
+// import { HeaderNav } from "./header-nav";
 import { HotkeyButton } from "./hotkey-button";
 import {
   SITE_QUICK_ACTIONS,
@@ -112,7 +112,7 @@ export function Header({
             {logoImage}
           </HeaderLogo>
 
-          <HeaderNav items={navItems} activeId={activeId} />
+          {/* <HeaderNav items={navItems} activeId={activeId} /> */}
 
           {/* Right side buttons */}
           <div className="flex items-center justify-end">

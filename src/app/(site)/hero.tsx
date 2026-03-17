@@ -13,10 +13,10 @@ export function Hero() {
             Get the visibility to drive sales
           </h1>
 
-          <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Overbase lets managers get visibility and consistency{" "}
+          <h2 className="mt-4 max-w-xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Overbase delivers the visibility and consistency{" "}
             <span className="bg-[#ffffcc] px-1">
-              without requiring that sellers use a CRM
+              that your CRM hasn't delivered
             </span>
           </h2>
 

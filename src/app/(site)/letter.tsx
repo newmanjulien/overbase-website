@@ -22,49 +22,40 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                Some businesses require that sellers log every detail in a CRM.
-                But in your culture, sellers don't respond to enforcement.
+                CRMs work well in many industries, but in yours, getting every
+                seller to log every detail reliably just doesn’t happen.
               </p>
 
               <p>
-                This means that your business doesn't take full advantage of
-                your CRM and often{" "}
-                <span className="font-medium">
-                  the only information you get as a manager is what sellers tell
-                  you.
-                </span>
-              </p>
-
-              <p className="font-medium">
-                But sellers are notoriously optimistic, and what they tell you
-                is often unreliable.
+                As a result, businesses in your industry never take full
+                advantage of their CRM.
               </p>
 
               <p>
-                As a manager, you can't get an accurate read on which deals are
-                likely to close. And you don't truly know which levers to pull
-                to drive more sales.
+                Forecasts remain unreliable, and getting your entire sales team
+                to communicate the same value proposition feels impossible.
+                Managers rely on what sellers say in meetings, but sellers are
+                naturally optimistic, and their reports often don’t reflect
+                reality.
               </p>
 
-              <p>Overbase brings you visibility and consistency.</p>
+              <p>Overbase delivers what your CRM promised.</p>
 
               <p>
-                We gather detailed, granular and reliable information by
-                analyzing each seller's emails, calendar invites, PDFs and other
-                activities. We gather this information in a way where sellers
-                never input any data.
-              </p>
-
-              <p>
-                Then we make the information easy and quick for managers to
-                access by adding it in the calendar invites of meetings you have
-                with sellers.
+                We gather detailed, reliable information automatically from
+                emails, calendar invites, PDFs, and other activity. No data
+                entry required.
               </p>
 
               <p>
-                The result is that you know which levers to pull to drive more
-                sales. And your sellers spend less time on meeting preparation
-                and on data input.
+                That information is delivered in a way managers can act on
+                immediately and is integrated into your existing systems.
+              </p>
+
+              <p>
+                Finally, you get the visibility and consistency CRMs promised.
+                Managers know what’s real, sellers spend less time on busywork,
+                and your team can focus on selling.
               </p>
             </div>
 

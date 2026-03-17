@@ -19,7 +19,7 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                We gather detailed, granular and reliable information, then we
+                We gather detailed, consistent and reliable information. Then we
                 make the information easy and quick for managers to access by
                 adding it in the calendar invites of meetings you have with
                 sellers
