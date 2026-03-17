@@ -36,17 +36,17 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                This is a problem because sellers are notoriously optimistic
-                which often makes what they tell you unreliable.
+                But sellers are notoriously optimistic, and what they tell you
+                is often unreliable.
               </p>
 
               <p>
-                As a manager, this means you can't get an accurate read on which
-                deals are likely to close. And you don't truly know which levers
-                to pull to drive more sales.
+                As a manager, you can't get an accurate read on which deals are
+                likely to close. And you don't truly know which levers to pull
+                to drive more sales.
               </p>
 
-              <p>Overbase gives managers like you the visibility you need.</p>
+              <p>Overbase brings you visibility, clarity and consistency.</p>
 
               <p>
                 We gather detailed, granular and reliable information by
