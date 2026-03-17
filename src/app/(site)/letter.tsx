@@ -33,10 +33,12 @@ export function Letter() {
 
               <p>
                 Forecasts remain unreliable, and getting your entire sales team
-                to communicate the same value proposition feels impossible.
-                Managers rely on what sellers say in meetings, but sellers are
-                naturally optimistic, and their reports often don’t reflect
-                reality.
+                to communicate the same value proposition feels impossible.{" "}
+                <span className="font-medium">
+                  Managers rely on what sellers say in meetings, but sellers are
+                  naturally optimistic, and their reports often don’t reflect
+                  reality.
+                </span>
               </p>
 
               <p>Overbase delivers what your CRM promised.</p>
