@@ -41,7 +41,7 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>Overbase delivers what your CRM promised.</p>
+              <p>Overbase delivers what CRMs promised.</p>
 
               <p>
                 We gather detailed, reliable information automatically from
@@ -55,9 +55,9 @@ export function Letter() {
               </p>
 
               <p>
-                Finally, you get the visibility and consistency CRMs promised.
-                Managers know what’s real, sellers spend less time on busywork,
-                and your team can focus on selling.
+                You get the visibility and consistency CRMs promised, managers
+                know what’s real, sellers spend less time on busywork, and your
+                team can focus on selling.
               </p>
             </div>
 
