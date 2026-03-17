@@ -9,14 +9,14 @@ export function Hero() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
-          <h1 className="max-w-sm text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Get the visibility to drive sales
+          <h1 className="max-w-xs text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
+            Fill your CRM's gaps
           </h1>
 
-          <h2 className="mt-4 max-w-xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Overbase delivers the visibility and consistency{" "}
+          <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            We fill the gaps to deliver visibility and consistency for{" "}
             <span className="bg-[#ffffcc] px-1">
-              that your CRM hasn't delivered
+              businesses where CRMs don't deliver
             </span>
           </h2>
 

@@ -41,7 +41,7 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>Overbase delivers what CRMs promised.</p>
+              <p>Overbase works with your CRM to fill the gaps.</p>
 
               <p>
                 We gather detailed, reliable information automatically from
