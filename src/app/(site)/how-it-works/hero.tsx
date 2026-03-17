@@ -19,8 +19,9 @@ export default function HowItWorksHero() {
           <div className="mx-auto flex flex-col items-center text-center gap-6 max-w-xl">
             <div className="space-y-4 text-gray-500">
               <p>
-                We gather detailed information about each deal, then we put the
-                information in the calendar invites of your 1:1 meetings with
+                We gather detailed, granular and reliable information, then we
+                make the information easy and quick for managers to access by
+                adding it in the calendar invites of meetings you have with
                 sellers
               </p>
             </div>

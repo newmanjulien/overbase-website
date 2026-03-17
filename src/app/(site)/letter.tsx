@@ -22,50 +22,49 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                Some companies require sellers to log every detail in their CRM.
-                But sellers don't respond to heavy handed enforcement in your
-                culture.
+                Some businesses require sellers to log every detail in their
+                CRM. But in your culture, sellers don't respond to enforcement.
               </p>
 
               <p>
-                This means sellers don't take full advantage of your CRM and
-                often{" "}
+                This means that your sellers don't take full advantage of your
+                CRM and often{" "}
                 <span className="font-medium">
-                  the only information managers get is what sellers tell them.
+                  the only information you get as a manager is what sellers tell
+                  you.
                 </span>
               </p>
 
               <p className="font-medium">
-                Which is a real problem because sellers are notoriously
-                unreliable when it comes to reporting on their sales
-                conversations.
+                Which is a problem because sellers are notoriously optimistic
+                and this makes what they tell you often unreliable.
               </p>
 
               <p>
-                Not taking full advantage of your CRM means you can't get an
-                accurate read on which deals are likely to close. And you don't
-                know which levers to pull to accelerate revenue.
+                As a manager, this means you can't get an accurate read on which
+                deals are likely to close. And you don't truly know which levers
+                to pull to drive more sales.
               </p>
 
-              <p>Overbase brings visibility.</p>
+              <p>Overbase gives managers like you the visibility you need.</p>
 
               <p>
-                We gather detailed information about deals in a reliable and
-                consistent way. We analyze each seller's emails, calendar
-                invites, PDFs and other activities. Sellers never input any
-                data.
+                We gather detailed, granular and reliable information by
+                analyzing each seller's emails, calendar invites, PDFs and other
+                activities. We gather this information in a way where sellers
+                never input any data.
               </p>
 
               <p>
                 Then we make the information easy and quick for managers to
-                access by putting it in the calendar invites of meetings they
-                have with sellers.
+                access by adding it in the calendar invites of meetings you have
+                with sellers.
               </p>
 
               <p>
-                The result is that managers know what levers to pull to drive
-                sales. Sellers save time on meeting preparation and on data
-                input. And your business easily gets more revenue.
+                The result is that you know what levers to pull to drive more
+                sales. And your sellers save time on meeting preparation and on
+                data input.
               </p>
             </div>
 
