@@ -47,7 +47,7 @@ export function Letter() {
                 know which levers to pull to accelerate revenue.
               </p>
 
-              <p>Overbase gives you visibility.</p>
+              <p>Overbase brings visibility.</p>
 
               <p>
                 We gather detailed information about deals in a reliable and
@@ -64,8 +64,8 @@ export function Letter() {
 
               <p>
                 The result is that managers know what levers to pull to drive
-                sales. Sellers save time on meeting preparing and on data input.
-                And your business easily gets more revenue
+                sales. Sellers save time on meeting preparation and on data
+                input. And your business easily gets more revenue.
               </p>
             </div>
 
