@@ -40,7 +40,7 @@ export const SITE_QUICK_ACTIONS = [
   {
     hotkey: "j",
     href: "/waitlist",
-    label: "Join Waitlist",
+    label: "Join waitlist",
     variant: "light",
     className: "rounded-sm text-sm scale-[0.92]",
   },
@@ -49,7 +49,7 @@ export const SITE_QUICK_ACTIONS = [
 export const SITE_DRAWER_CTA_ACTION = {
   hotkey: "j",
   href: "/waitlist",
-  label: "Join Waitlist",
+  label: "Join waitlist",
 } satisfies SiteDrawerCtaAction;
 
 export const SITE_TINTED_PATHS = {

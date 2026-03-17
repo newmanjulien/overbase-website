@@ -22,13 +22,13 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                Some businesses require sellers to log every detail in their
-                CRM. But in your culture, sellers don't respond to enforcement.
+                Some businesses require that sellers log every detail in a CRM.
+                But in your culture, sellers don't respond to enforcement.
               </p>
 
               <p>
-                This means that your sellers don't take full advantage of your
-                CRM and often{" "}
+                This means that your business doesn't take full advantage of
+                your CRM and often{" "}
                 <span className="font-medium">
                   the only information you get as a manager is what sellers tell
                   you.
@@ -36,8 +36,8 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                Which is a problem because sellers are notoriously optimistic
-                and this makes what they tell you often unreliable.
+                This is a problem because sellers are notoriously optimistic
+                which often makes what they tell you unreliable.
               </p>
 
               <p>
@@ -62,9 +62,9 @@ export function Letter() {
               </p>
 
               <p>
-                The result is that you know what levers to pull to drive more
-                sales. And your sellers save time on meeting preparation and on
-                data input.
+                The result is that you know which levers to pull to drive more
+                sales. And your sellers spend less time on meeting preparation
+                and on data input.
               </p>
             </div>
 

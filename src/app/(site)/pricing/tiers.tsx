@@ -81,7 +81,7 @@ function PlanCard({ plan }: { plan: Plan }) {
           className="w-full text-sm rounded-md"
           asChild
         >
-          <Link href="/waitlist">Join Waitlist</Link>
+          <Link href="/waitlist">Join waitlist</Link>
         </Button>
       </div>
     </div>
