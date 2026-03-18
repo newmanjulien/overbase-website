@@ -35,9 +35,9 @@ export function Letter() {
                 Forecasts remain unreliable. Communicating a consistent value
                 proposition across the team feels impossible.{" "}
                 <span className="font-medium">
-                  Managers are left relying on what sellers report in meetings,
-                  but sellers are naturally optimistic, and their updates rarely
-                  reflect reality.
+                  Managers end up relying on what sellers share in meetings—but
+                  those updates are often too optimistic and rarely reflect
+                  what’s really happening.
                 </span>
               </p>
 
