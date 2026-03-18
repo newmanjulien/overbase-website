@@ -22,20 +22,20 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                CRMs work well in many industries, but in yours, getting every
+                CRMs work magic in many industries, but in yours, getting every
                 seller to log every detail reliably just doesn’t happen.
               </p>
 
               <p>
-                As a result, the promise of a fully aligned, predictable sales
-                process is never realized.
+                As a result, the promise of a fully aligned, transparent and
+                consistent sales process is never realized.
               </p>
 
               <p>
                 Forecasts remain unreliable. Communicating a consistent value
                 proposition across the team feels impossible.{" "}
                 <span className="font-medium">
-                  Managers are left relying on what sellers report in meetings
+                  Managers are left relying on what sellers report in meetings,
                   but sellers are naturally optimistic, and their updates rarely
                   reflect reality.
                 </span>
@@ -43,7 +43,7 @@ export function Letter() {
 
               <p>
                 Overbase fills the gaps to deliver the visibility and
-                consistency your CRM promised.
+                consistency CRMs promise.
               </p>
 
               <p>
@@ -54,14 +54,14 @@ export function Letter() {
 
               <p>
                 That information is delivered in a way managers can act on
-                immediately, integrated seamlessly with your existing systems.
+                immediately and it's integrated seamlessly with your existing
+                systems.
               </p>
 
               <p>
-                Finally, your sales process works the way it was meant to:
+                And finally, your sales process works the way it was meant to:
                 visibility and consistency are real, managers see what’s
-                actually happening, sellers spend less time on busywork, and
-                your team can focus on selling.
+                actually happening, and sellers spend less time on busywork.
               </p>
             </div>
 
