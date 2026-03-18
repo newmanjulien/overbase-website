@@ -27,21 +27,24 @@ export function Letter() {
               </p>
 
               <p>
-                As a result, businesses in your industry never take full
-                advantage of their CRM.
+                As a result, the promise of a fully aligned, predictable sales
+                process is never realized.
               </p>
 
               <p>
-                Forecasts remain unreliable, and getting your entire sales team
-                to communicate the same value proposition feels impossible.{" "}
+                Forecasts remain unreliable. Communicating a consistent value
+                proposition across the team feels impossible.{" "}
                 <span className="font-medium">
-                  Managers rely on what sellers say in meetings, but sellers are
-                  naturally optimistic, and their reports often don’t reflect
-                  reality.
+                  Managers are left relying on what sellers report in meetings
+                  but sellers are naturally optimistic, and their updates rarely
+                  reflect reality.
                 </span>
               </p>
 
-              <p>Overbase works with your CRM to fill the gaps.</p>
+              <p>
+                Overbase fills the gaps to deliver the visibility and
+                consistency your CRM promised.
+              </p>
 
               <p>
                 We gather detailed, reliable information automatically from
@@ -51,13 +54,14 @@ export function Letter() {
 
               <p>
                 That information is delivered in a way managers can act on
-                immediately and is integrated into your existing systems.
+                immediately, integrated seamlessly with your existing systems.
               </p>
 
               <p>
-                You get the visibility and consistency CRMs promised, managers
-                know what’s real, sellers spend less time on busywork, and your
-                team can focus on selling.
+                Finally, your sales process works the way it was meant to:
+                visibility and consistency are real, managers see what’s
+                actually happening, sellers spend less time on busywork, and
+                your team can focus on selling.
               </p>
             </div>
 

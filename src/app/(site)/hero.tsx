@@ -13,11 +13,9 @@ export function Hero() {
             Fill your CRM's gaps
           </h1>
 
-          <h2 className="mt-4 max-w-2xl text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            We fill the gaps to deliver visibility and consistency for{" "}
-            <span className="bg-[#ffffcc] px-1">
-              businesses where CRMs don't deliver
-            </span>
+          <h2 className="mt-4 max-w-lg text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Visibility and consistency for businesses{" "}
+            <span className="bg-[#ffffcc] px-1">where CRMs don't deliver</span>
           </h2>
 
           <div className={newLocal}>
