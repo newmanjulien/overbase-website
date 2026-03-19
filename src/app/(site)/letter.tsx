@@ -62,7 +62,8 @@ export function Letter() {
 
               <p>
                 Then we partner with your team to deliver the information in
-                ways that are customized to your unique workflows.
+                ways that are customized to your unique workflows. And that
+                integrate with your existing systems.
               </p>
 
               <p>
