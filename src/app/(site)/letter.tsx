@@ -28,8 +28,7 @@ export function Letter() {
 
               <p>
                 As a result, the promise of a fully aligned, transparent and
-                consistent sales process is never realized. No matter how good
-                your CRM is.
+                consistent sales process is never realized.
               </p>
 
               <p>
@@ -46,8 +45,13 @@ export function Letter() {
               </p>
 
               <p>
-                Overbase is a data collection service that fills your CRM's
-                gaps.
+                CRMs don't fully deliver for your industry no matter how good
+                your CRM is, no matter how well you manage the rollout and no
+                matter how much effort your team invests.
+              </p>
+
+              <p>
+                Overbase is a data gathering service that fills your CRM's gaps.
               </p>
 
               <p>
@@ -57,8 +61,8 @@ export function Letter() {
               </p>
 
               <p>
-                That information is delivered in a way that's easy, actionable
-                and seamlessly integrated with your existing systems.
+                Then we partner with your team to deliver the information in
+                ways that are customized to your unique workflows.
               </p>
 
               <p>
