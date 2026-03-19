@@ -39,9 +39,9 @@ export function Letter() {
               </p>
 
               <p>
-                Managers end up relying on what sellers share in meetings—but
-                those updates rarely reflect what’s really happening. Reporting
-                is hard, slow, often needs to be done multiple times because of
+                Managers rely on what sellers share in meetings—but those
+                updates rarely reflect what’s really happening. Reporting is
+                hard, slow, often needs to be done multiple times because of
                 unreliable data.
               </p>
 
