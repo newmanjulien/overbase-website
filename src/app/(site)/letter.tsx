@@ -28,7 +28,8 @@ export function Letter() {
 
               <p>
                 As a result, the promise of a fully aligned, transparent and
-                consistent sales process is never realized.
+                consistent sales process is never realized. No matter how good
+                your CRM is.
               </p>
 
               <p>

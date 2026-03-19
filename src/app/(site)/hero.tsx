@@ -15,9 +15,7 @@ export function Hero() {
 
           <h2 className="mt-4 max-w-lg text-2xl text-gray-600 font-medium mx-auto md:mx-0">
             Data collection service for businesses{" "}
-            <span className="bg-[#ffffcc] px-1">
-              where CRMs can't fully deliver
-            </span>
+            <span className="bg-[#ffffcc] px-1">where CRMs don't deliver</span>
           </h2>
 
           <div className={newLocal}>
