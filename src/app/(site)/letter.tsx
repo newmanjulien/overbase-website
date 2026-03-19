@@ -41,21 +41,16 @@ export function Letter() {
                 </span>
               </p>
 
-              <p>
-                Overbase fills the gaps to deliver the visibility and
-                consistency CRMs promise.
-              </p>
+              <p>Overbase fills the gaps. No data entry required.</p>
 
               <p>
                 We gather detailed, reliable information automatically from
-                emails, calendar invites, PDFs, and other activity. No data
-                entry required.
+                emails, calendar invites, PDFs, and other activity.
               </p>
 
               <p>
-                That information is delivered in a way managers can act on
-                immediately and it's integrated seamlessly with your existing
-                systems.
+                That information is delivered in a way that's easy, actionable
+                and seamlessly integrated with your existing systems and CRM.
               </p>
 
               <p>
