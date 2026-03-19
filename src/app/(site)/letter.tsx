@@ -55,7 +55,7 @@ export function Letter() {
               </p>
 
               <p>
-                We gather detailed, reliable information automatically from
+                We gather detailed and reliable information from each seller's
                 emails, calendar invites, PDFs, and other activity. No data
                 entry required.
               </p>
@@ -66,8 +66,8 @@ export function Letter() {
               </p>
 
               <p>
-                Finally, your sales process is going to work the way it was
-                meant to.
+                Finally, your sales process is going to work the way you want it
+                to.
               </p>
             </div>
 
