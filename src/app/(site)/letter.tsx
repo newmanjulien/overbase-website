@@ -32,31 +32,37 @@ export function Letter() {
               </p>
 
               <p>
-                Forecasts remain unreliable. Communicating a consistent value
-                proposition across the team feels impossible.{" "}
-                <span className="font-medium">
-                  Managers end up relying on what sellers share in meetings—but
-                  those updates are often too optimistic and rarely reflect
-                  what’s really happening.
-                </span>
+                Forecasts remain unreliable so you can't know what levers to
+                pull to accelerate revenue. Communicating a consistent value
+                proposition across the team feels impossible.
               </p>
 
-              <p>Overbase fills the gaps. No data entry required.</p>
+              <p>
+                Managers end up relying on what sellers share in meetings—but
+                those updates rarely reflect what’s really happening. Reporting
+                is hard, slow, often needs to be done multiple times because of
+                unreliable data.
+              </p>
+
+              <p>
+                Overbase is a data collection service that fills your CRM's
+                gaps.
+              </p>
 
               <p>
                 We gather detailed, reliable information automatically from
-                emails, calendar invites, PDFs, and other activity.
+                emails, calendar invites, PDFs, and other activity. No data
+                entry required.
               </p>
 
               <p>
                 That information is delivered in a way that's easy, actionable
-                and seamlessly integrated with your existing systems and CRM.
+                and seamlessly integrated with your existing systems.
               </p>
 
               <p>
-                And finally, your sales process works the way it was meant to:
-                visibility and consistency are real, managers see what’s
-                actually happening, and sellers spend less time on busywork.
+                Finally, your sales process is going to work the way it was
+                meant to.
               </p>
             </div>
 
