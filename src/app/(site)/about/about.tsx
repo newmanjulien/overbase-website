@@ -15,12 +15,12 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Partnering with customer-centered businesses
+              Partnering with customer-centered teams
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Overbase partners with the best teams who have the most
+              Overbase partners with the sales teams who have the most
               customer-centered culture
             </p>
 
@@ -31,8 +31,13 @@ export default function About() {
 
             <p>
               We are machine learning engineers who have been building sales
-              tech together over a decade. Today, we're building the future of
-              sales with the sales teams who stayed the most customer-centered
+              tech together for over 10 years
+            </p>
+
+            <p>
+              Today, we're building the future by partnering with the teams who
+              stayed customer-centered, and who may not have adopted all the
+              legacy tech from previous decades as aggressively as some others
             </p>
           </div>
         </div>

@@ -46,7 +46,7 @@ export function Letter() {
 
               <p className="font-medium">
                 CRMs don't fully deliver for your business because CRMs can't
-                fully deliver for your industry.
+                fully deliver for any business in your industry.
               </p>
 
               <p>
