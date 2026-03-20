@@ -32,7 +32,7 @@ export function Letter() {
               </p>
 
               <p>
-                Forecasts remain unreliable so you can't know what levers to
+                Forecasts remain unreliable and you can't know what levers to
                 pull to accelerate revenue. Communicating a consistent value
                 proposition across the team feels impossible.
               </p>
@@ -40,14 +40,13 @@ export function Letter() {
               <p>
                 Managers rely on what sellers share in meetings—but those
                 updates rarely reflect what’s really happening. Reporting is
-                hard, slow, often needs to be done multiple times because of
+                hard, slow and often needs to be done multiple times because of
                 unreliable data.
               </p>
 
-              <p>
-                CRMs don't fully deliver for your industry no matter how good
-                your CRM is, no matter how well you manage the rollout and no
-                matter how much effort your team invests.
+              <p className="font-medium">
+                CRMs don't fully deliver for your business because CRMs can't
+                fully deliever for your industry.
               </p>
 
               <p>
