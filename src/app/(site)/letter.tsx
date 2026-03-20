@@ -55,18 +55,18 @@ export function Letter() {
 
               <p>
                 We gather detailed and reliable information from each seller's
-                emails, calendar invites, PDFs, and other activity. No data
-                entry required.
+                emails, calendar, PDFs, and other activity. No data entry
+                required.
               </p>
 
               <p>
-                Then we partner with your team to deliver the information in
-                ways that are customized to your unique workflows. And that
-                integrate with your existing systems.
+                Then we partner with you to deliver the information in ways that
+                are customized to your unique workflows and that integrate with
+                your existing systems.
               </p>
 
               <p>
-                Finally, your sales process is going to work the way you want it
+                Finally, your sales process is going to work the way you need it
                 to.
               </p>
             </div>
