@@ -5,7 +5,11 @@ export default function Careers() {
   return (
     <>
       <Hero
-        title="Help us build the future of data"
+        title={
+          <>
+            Help us build the future of <span className="italic">data</span>
+          </>
+        }
         cta={{ label: "See roles", targetId: "careers-table" }}
       />
       <section
