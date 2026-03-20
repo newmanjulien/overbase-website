@@ -1,0 +1,43 @@
+import Hero from "@/components/hero";
+import FounderSection from "./founder-section";
+
+export default function About() {
+  return (
+    <>
+      <Hero
+        title={
+          <>
+            Build the <span className="italic">future</span> of sales
+          </>
+        }
+      />{" "}
+      <section className="px-6 md:px-12 lg:px-24 pt-[4.5rem] max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-14 md:gap-30">
+          <div>
+            <h2 className="text-2xl text-gray-900 font-medium leading-tight">
+              Partnering with customer-centered businesses
+            </h2>
+          </div>
+          <div className="space-y-6 text-gray-500 text-[15px]">
+            <p>
+              Overbase is building the future of sales by partnering with the
+              best teams whose customer-centered culture helped them avoid the
+              mistakes others have made
+            </p>
+
+            <p>
+              We are machine learning engineers who have been building advanced
+              AI systems together for decades
+            </p>
+
+            <p>
+              And we are repeat founders who have been building the best sales
+              technology together for decades
+            </p>
+          </div>
+        </div>
+      </section>
+      <FounderSection />
+    </>
+  );
+}
