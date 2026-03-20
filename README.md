@@ -2,11 +2,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-Set your LogoKit publishable key in `.env.local`:
+Set the required environment variables in `.env.local`:
 
 ```bash
 NEXT_PUBLIC_LOGOKIT_PUBLISHABLE_KEY=your_logokit_publishable_key
+SMTP_USER=your_gmail_address
+SMTP_PASS=your_gmail_app_password
 ```
+
+`SMTP_USER` and `SMTP_PASS` are required for the waitlist and contact form email flows.
 
 First, run the development server:
 

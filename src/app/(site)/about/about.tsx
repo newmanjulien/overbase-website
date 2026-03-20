@@ -20,19 +20,19 @@ export default function About() {
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Overbase is building the future of sales by partnering with the
-              best teams whose customer-centered culture helped them avoid the
-              mistakes others have made
+              Overbase partners with the best teams who have the most
+              customer-centered culture
             </p>
 
             <p>
-              We are machine learning engineers who have been building advanced
-              AI systems together for decades
+              Sales tech has enabled many meaningful advances. But somewhere
+              along the way, the focus shifted away from customers
             </p>
 
             <p>
-              And we are repeat founders who have been building the best sales
-              technology together for decades
+              We are machine learning engineers who have been building sales
+              tech together over a decade. Today, we're building the future of
+              sales with the sales teams who stayed the most customer-centered
             </p>
           </div>
         </div>

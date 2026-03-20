@@ -28,9 +28,8 @@ export default function FounderSection() {
             </p>
 
             <p>
-              He teaches at Princeton University and has spent his career
-              working on advanced AI systems with a focus on accelerating the
-              best sales teams
+              He teaches at Princeton University and has focused his career on
+              building tech that accelerates sales
             </p>
 
             <p>
