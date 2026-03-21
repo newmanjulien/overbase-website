@@ -24,11 +24,11 @@ const PLANS: Plan[] = [
   {
     id: "percent",
     name: "Delivery",
-    price: "$9+",
+    price: "$5+",
     description:
       "Pay for data delivery tools and integrations which we build custom for you",
     subtext:
-      "Custom per month fee which starts as low as $9 per user per month",
+      "Custom per month fee which starts as low as $5 per user per month",
     valueLabel: "Pay for data delivery",
   },
 ];
