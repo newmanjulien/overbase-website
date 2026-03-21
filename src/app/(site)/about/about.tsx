@@ -35,9 +35,8 @@ export default function About() {
             </p>
 
             <p>
-              Today, we're building the future by partnering with the teams who
-              stayed customer-centered, and who may not have adopted all the
-              legacy tech from previous decades as aggressively as some others
+              Today, we're building the future of sales with the
+              customer-centered teams who already embody the ethos of the future
             </p>
           </div>
         </div>
