@@ -1,6 +1,17 @@
-import { FAQSection, type FAQItem } from "@/components/faq-section";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 
-const FAQ_ITEMS: FAQItem[] = [
+type PricingFAQItem = {
+  id: string;
+  question: string;
+  answer: string;
+};
+
+const FAQ_ITEMS: PricingFAQItem[] = [
   {
     id: "human-service",
     question: "Is Overbase a human service?",
@@ -28,5 +39,32 @@ const FAQ_ITEMS: FAQItem[] = [
 ];
 
 export default function FAQ() {
-  return <FAQSection items={FAQ_ITEMS} />;
+  return (
+    <section className="px-6 md:px-12 lg:px-24 py-12 lg:py-24">
+      <div className="max-w-3xl mx-auto space-y-12">
+        <div className="text-center">
+          <h2 className="text-4xl font-medium text-gray-900 mb-4">
+            Frequently asked questions
+          </h2>
+        </div>
+
+        <Accordion type="single" collapsible className="space-y-4">
+          {FAQ_ITEMS.map((item) => (
+            <AccordionItem
+              key={item.id}
+              value={item.id}
+              className="border border-gray-100 rounded-md px-4"
+            >
+              <AccordionTrigger className="text-left text-sm font-normal text-gray-800 hover:no-underline">
+                {item.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-600 leading-relaxed">
+                {item.answer}
+              </AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
+      </div>
+    </section>
+  );
 }
