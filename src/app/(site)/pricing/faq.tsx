@@ -13,26 +13,32 @@ type PricingFAQItem = {
 
 const FAQ_ITEMS: PricingFAQItem[] = [
   {
-    id: "human-service",
-    question: "Is Overbase a human service?",
+    id: "is-data-gathering-fully-free",
+    question: "Is data gathering fully free?",
     answer:
       "Yes. We're a human service. We hire top data scientists and equip them with AI tools designed for analyzing sales deals and for forecasting revenue",
   },
   {
-    id: "role-of-ai",
-    question: "What's the role of AI in your service?",
+    id: "how-much-data-gathering-can-i-do-for-free",
+    question: "How much data gathering can I do for free?",
     answer:
       "We build custom AI tools for analyzing sales deals and for forecasting revenue. And our human data scientists use these tools",
   },
   {
-    id: "meetings",
-    question: "How many meetings do you prepare for each seller?",
+    id: "how-do-you-gather-data-from-my-team",
+    question: "How do you gather data from my team?",
     answer:
       "As many as you have with them. In most cases, we prepare one meeting per week",
   },
   {
-    id: "attribution-3-percent",
-    question: "How does attribution work for the 3% tier?",
+    id: "how-much-does-the-data-delivery-cost",
+    question: "How much does the data delivery cost?",
+    answer:
+      "Your reps and managers decide what revenue gets attributed to Overbase and you only pay after you realize the revenue. We create a custom process for attributing revenue that's custom to your business and tracks with how your sales process works",
+  },
+  {
+    id: "how-do-you-customize-data-delivery-for-my-business",
+    question: "How do you customize data delivery for my business?",
     answer:
       "Your reps and managers decide what revenue gets attributed to Overbase and you only pay after you realize the revenue. We create a custom process for attributing revenue that's custom to your business and tracks with how your sales process works",
   },

@@ -6,7 +6,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Insight from a <span className="italic">human</span>
+            Insight that's <span className="italic">customized</span>
           </>
         }
       />
@@ -14,25 +14,30 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              A human data scientist using specialized AI tools
+              Fully customized and integrated with your systems
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              A human data scientist gathers data from Excel, PDFs, RFPs, email,
-              calendar, phone calls. And from any internal systems you currently
-              use
+              Your business has unique workflows and your team needs to receive
+              insight in ways that match your workflows
             </p>
 
             <p>
-              This data scientist uses specialized AI tools to understand each
-              deal in-depth. And to forecast accurately
+              You also use several existing data systems and they need to be
+              integrated
             </p>
 
             <p>
-              Visibility without a CRM is only now becoming possible with the
-              latest tech. And only by combining this tech with human expertise,
-              supervision and guidance
+              Overbase gathers detailed and reliable information from each
+              seller's emails, calendar, PDFs, and other activity. No data entry
+              required
+            </p>
+
+            <p>
+              Then we build custom delivery tools for your business. These
+              custom tools match your workflows and integrate with your existing
+              systems
             </p>
           </div>
         </div>
