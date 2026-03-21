@@ -15,8 +15,7 @@ const PLANS: Plan[] = [
     id: "per-rep",
     name: "Gathering",
     price: "$0",
-    description:
-      "Overbase gathers reliable and detailed information from your sellers for free",
+    description: "Overbase gathers reliable and detailed information for free",
     subtext:
       "Data gathering for your full team is entirely free. You only pay for the data delivery",
     valueLabel: "Free data gathering",
@@ -26,7 +25,7 @@ const PLANS: Plan[] = [
     name: "Delivery",
     price: "$5+",
     description:
-      "Pay for data delivery tools and integrations which we build custom for you",
+      "Pay for data delivery tools and integrations that are built custom for you",
     subtext:
       "Custom per month fee which starts as low as $5 per user per month",
     valueLabel: "Pay for data delivery",
