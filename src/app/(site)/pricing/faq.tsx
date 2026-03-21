@@ -13,34 +13,28 @@ type PricingFAQItem = {
 
 const FAQ_ITEMS: PricingFAQItem[] = [
   {
-    id: "is-data-gathering-fully-free",
+    id: "fully-free",
     question: "Is data gathering fully free?",
     answer:
-      "Yes. We're a human service. We hire top data scientists and equip them with AI tools designed for analyzing sales deals and for forecasting revenue",
+      "Yes. It's fully free. Overbase will gather detailed, thorough and reliable information from as many sellers as you want as many systems as you want. There's no limit and it's fully free",
   },
   {
-    id: "how-much-data-gathering-can-i-do-for-free",
-    question: "How much data gathering can I do for free?",
-    answer:
-      "We build custom AI tools for analyzing sales deals and for forecasting revenue. And our human data scientists use these tools",
-  },
-  {
-    id: "how-do-you-gather-data-from-my-team",
+    id: "how-do-you-gather",
     question: "How do you gather data from my team?",
     answer:
-      "As many as you have with them. In most cases, we prepare one meeting per week",
+      "We usually start with Office 365 or GSuite but we integrate with any system. Overbase typically starts by getting delegate access to the Office 365 accounts of your sellers - this is the same access you already give to personal assistants. But we also integrate with your CRM and any other existing system",
   },
   {
-    id: "how-much-does-the-data-delivery-cost",
-    question: "How much does the data delivery cost?",
+    id: "delivery-cost",
+    question: "How much does data delivery cost?",
     answer:
-      "Your reps and managers decide what revenue gets attributed to Overbase and you only pay after you realize the revenue. We create a custom process for attributing revenue that's custom to your business and tracks with how your sales process works",
+      "It starts at $9 per user per month. We build custom tools for you and we agree to a per month cost for each tool. These tools can cost as little as $9 per user per month",
   },
   {
-    id: "how-do-you-customize-data-delivery-for-my-business",
+    id: "how-do-you-customize",
     question: "How do you customize data delivery for my business?",
     answer:
-      "Your reps and managers decide what revenue gets attributed to Overbase and you only pay after you realize the revenue. We create a custom process for attributing revenue that's custom to your business and tracks with how your sales process works",
+      "We define the most important problems together before deciding to partner. And we agree to data delivery tools or integrations which Overbase will build to solve the problems we identify together",
   },
 ];
 
