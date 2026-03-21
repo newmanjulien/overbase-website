@@ -14,7 +14,7 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Fully customized and integrated with your systems
+              Customized and integrated with your systems
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
