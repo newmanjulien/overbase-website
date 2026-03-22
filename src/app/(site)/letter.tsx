@@ -37,7 +37,7 @@ export function Letter() {
                   proposition across the team feels impossible.{" "}
                 </span>
                 Managers rely on what sellers share in meetings—which rarely
-                reflect what’s happening. Reporting needs to be done multiple
+                reflect what’s happening. Reports need to be done multiple
                 times.
               </p>
 
@@ -55,7 +55,7 @@ export function Letter() {
                 systems.
               </p>
 
-              <p>Finally, you'll get more sales, faster, and consistently.</p>
+              <p>Finally, you'll get more sales, fast and consistently.</p>
             </div>
 
             {/* Signature */}
