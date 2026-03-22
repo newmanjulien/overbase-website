@@ -26,16 +26,18 @@ export function Letter() {
                 getting every seller to log every detail just doesn’t happen.
               </p>
 
-              <p>
-                As a result, the promise of an aligned, transparent and
-                consistent sales process is never realized.
+              <p className="font-medium">
+                As a result, the promise of a scalable sales process is never
+                realized.
               </p>
 
               <p>
-                Forecasts remain unreliable. Communicating a consistent value
-                proposition across the team feels impossible. Managers rely on
-                what sellers share in meetings—which rarely reflect what’s
-                really happening. Reporting often needs to be done multiple
+                <span className="font-medium">
+                  Forecasts remain unreliable. Communicating a consistent value
+                  proposition across the team feels impossible.{" "}
+                </span>
+                Managers rely on what sellers share in meetings—which rarely
+                reflect what’s happening. Reporting needs to be done multiple
                 times.
               </p>
 
