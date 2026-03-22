@@ -27,20 +27,16 @@ export function Letter() {
               </p>
 
               <p>
-                As a result, the promise of a fully aligned, transparent and
+                As a result, the promise of an aligned, transparent and
                 consistent sales process is never realized.
               </p>
 
               <p>
-                Forecasts remain unreliable and you can't know what levers to
-                pull. Communicating a consistent value proposition across the
-                team feels impossible.
-              </p>
-
-              <p>
-                Managers rely on what sellers share in meetings—which rarely
-                reflect what’s really happening. Reporting is slow and often
-                needs to be done multiple times because of unreliable data.
+                Forecasts remain unreliable. Communicating a consistent value
+                proposition across the team feels impossible. Managers rely on
+                what sellers share in meetings—which rarely reflect what’s
+                really happening. Reporting often needs to be done multiple
+                times.
               </p>
 
               <p>
