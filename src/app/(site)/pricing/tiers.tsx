@@ -13,19 +13,20 @@ interface Plan {
 const PLANS: Plan[] = [
   {
     id: "per-rep",
-    name: "Gathering",
+    name: "Gather",
     price: "$0",
-    description: "Overbase gathers reliable and detailed information for free",
+    description:
+      "We gather reliable, consistent and detailed information for free",
     subtext:
-      "Data gathering for your full team is entirely free. You only pay for the data delivery",
+      "Data gathering is entirely free for your full team and for all your systems",
     valueLabel: "Free data gathering",
   },
   {
     id: "percent",
-    name: "Delivery",
+    name: "Deliver",
     price: "$5+",
     description:
-      "Pay for data delivery tools and integrations that are built custom for you",
+      "Pay for custom tools and integrations that are built just for you",
     subtext:
       "Custom per month fee which starts as low as $5 per user per month",
     valueLabel: "Pay for data delivery",
