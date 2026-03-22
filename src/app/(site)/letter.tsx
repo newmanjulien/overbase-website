@@ -41,9 +41,7 @@ export function Letter() {
                 times.
               </p>
 
-              <p>
-                Overbase is a data gathering service that fills your CRM's gaps.
-              </p>
+              <p>Overbase gathers data to fill these gaps.</p>
 
               <p>
                 We gather detailed and reliable information from each seller's
@@ -58,8 +56,7 @@ export function Letter() {
               </p>
 
               <p>
-                Finally, your sales process is going to work the way you need it
-                to.
+                Finally, you'll get more sales, faster and more consistently.
               </p>
             </div>
 
