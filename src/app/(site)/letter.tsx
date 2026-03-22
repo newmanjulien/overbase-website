@@ -33,15 +33,14 @@ export function Letter() {
 
               <p>
                 Forecasts remain unreliable and you can't know what levers to
-                pull to accelerate revenue. Communicating a consistent value
-                proposition across the team feels impossible.
+                pull. Communicating a consistent value proposition across the
+                team feels impossible.
               </p>
 
               <p>
-                Managers rely on what sellers share in meetings—but those
-                updates rarely reflect what’s really happening. Reporting is
-                hard, slow and often needs to be done multiple times because of
-                unreliable data.
+                Managers rely on what sellers share in meetings—which rarely
+                reflect what’s really happening. Reporting is slow and often
+                needs to be done multiple times because of unreliable data.
               </p>
 
               <p className="font-medium">
@@ -60,9 +59,9 @@ export function Letter() {
               </p>
 
               <p>
-                Then we partner with you to deliver the information in ways that
-                are customized for your unique workflows and that integrate with
-                your existing systems.
+                Then we deliver the information in ways that are customized for
+                your unique workflows and that integrate with your existing
+                systems.
               </p>
 
               <p>

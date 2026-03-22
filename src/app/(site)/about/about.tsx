@@ -7,7 +7,7 @@ export default function About() {
       <Hero
         title={
           <>
-            Join the <span className="italic">future</span> of sales
+            You are the <span className="italic">future</span> of sales
           </>
         }
       />

@@ -16,25 +16,25 @@ const FAQ_ITEMS: PricingFAQItem[] = [
     id: "fully-free",
     question: "Is data gathering fully free?",
     answer:
-      "Yes. It's fully free. Overbase will gather detailed, thorough and reliable information from as many sellers as you want as many systems as you want. There's no limit and it's fully free",
+      "Yes. It's fully free. Overbase will gather detailed, thorough and reliable information from as many sellers as you want and as many systems as you want. There's no limit and it's fully free",
   },
   {
     id: "how-do-you-gather",
     question: "How do you gather data from my team?",
     answer:
-      "We usually start with Office 365 or GSuite but we integrate with any system. Overbase typically starts by getting delegate access to the Office 365 accounts of your sellers - this is the same access you already give to personal assistants. But we also integrate with your CRM and any other existing system",
+      "We usually start with Office 365 or GSuite but we integrate with any system. Overbase typically starts by getting delegate access to the Office 365 accounts of your sellers - this is the same access you already give to personal assistants. But we also integrate with your CRM and any other existing system. Gathering data in a seamless, granular and reliable way is the hardest part of Overbase's service. It's only possible because of advanced technology which wasn't possible until now and building this advanced technology is most of what our engineering team works on",
   },
   {
     id: "delivery-cost",
     question: "How much does data delivery cost?",
     answer:
-      "It starts at $5 per user per month. We build custom tools for you and we agree to a per month cost for each tool. These tools can cost as little as $5 per user per month",
+      "It starts at $5 per user per month. We build custom tools for you and we agree to a per month cost for each tool. The tools most businesses start with typically cost $5 per user per month",
   },
   {
     id: "how-do-you-customize",
     question: "How do you customize data delivery for my business?",
     answer:
-      "We define the most important problems together before deciding to partner. And we agree to data delivery tools or integrations which Overbase will build to solve the problems we identify together",
+      "By partnering with you. We define the most important problems together before deciding to partner. And we agree to data delivery tools or integrations which Overbase will build to solve the problems we identified together",
   },
 ];
 

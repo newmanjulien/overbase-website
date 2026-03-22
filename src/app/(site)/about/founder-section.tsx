@@ -29,13 +29,13 @@ export default function FounderSection() {
 
             <p>
               He teaches at Princeton University and has focused his career on
-              building tech that accelerates sales
+              building sales tech
             </p>
 
             <p>
-              His previous startups were backed by Village Global, the VC
-              chaired by Reid Hoffman. He also co-hosted the Blitzscaling
-              Podcast, which is based on Reid's book
+              His startups have been backed by the best investors including
+              Village Global, the VC chaired by Reid Hoffman. He also co-hosted
+              the Blitzscaling Podcast, which is based on Reid's book
             </p>
           </div>
         </div>
