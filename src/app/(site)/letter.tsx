@@ -55,9 +55,7 @@ export function Letter() {
                 systems.
               </p>
 
-              <p>
-                Finally, you'll get more sales, faster and more consistently.
-              </p>
+              <p>Finally, you'll get more sales, faster, and consistently.</p>
             </div>
 
             {/* Signature */}
