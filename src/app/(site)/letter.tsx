@@ -22,10 +22,8 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                CRMs work magic in many industries, but in your industry{" "}
-                <span className="font-medium">
-                  getting every seller to log every detail just doesn’t happen.
-                </span>
+                CRMs work magic in many industries. But in your industry,
+                getting every seller to log every detail just doesn’t happen.
               </p>
 
               <p>
@@ -45,7 +43,7 @@ export function Letter() {
                 needs to be done multiple times because of unreliable data.
               </p>
 
-              <p className="font-medium">
+              <p>
                 Overbase is a data gathering service that fills your CRM's gaps.
               </p>
 
