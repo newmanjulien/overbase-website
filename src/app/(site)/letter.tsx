@@ -26,7 +26,7 @@ export function Letter() {
                 getting every seller to log every detail just doesn’t happen.
               </p>
 
-              <p className="font-medium">
+              <p>
                 As a result, the promise of a scalable sales process is never
                 realized.
               </p>
@@ -44,9 +44,11 @@ export function Letter() {
               <p>Overbase gathers data to fill these gaps.</p>
 
               <p>
-                We gather detailed and reliable information from each seller's
-                emails, calendar, PDFs, and other activity. No data entry
-                required.
+                We gather detailed and reliable information{" "}
+                <span className="font-medium">
+                  from each seller's emails, calendar, PDFs, and other activity.
+                  No data entry required.{" "}
+                </span>
               </p>
 
               <p>
