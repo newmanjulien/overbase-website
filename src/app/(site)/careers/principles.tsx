@@ -57,8 +57,8 @@ const PRINCIPLES: Principle[] = [
     description: (
       <>
         We help each other learn and we hold each other accountable to an
-        exponenting amount of personal growth that's not possible anywhere else
-        (
+        exponentiating amount of personal growth that's not possible anywhere
+        else (
         <a
           href="https://drive.google.com/file/d/1BCWhO2YK0UMhWqukDNKN_pzF8xyblVhu/view"
           target="_blank"
