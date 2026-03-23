@@ -22,8 +22,8 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                CRMs work magic in many industries. But in your industry,
-                getting every seller to log every detail just doesn’t happen.
+                CRMs work magic—but only if your team logs everything. In your
+                industry, that simply doesn’t happen.
               </p>
 
               <p>
@@ -33,12 +33,12 @@ export function Letter() {
 
               <p>
                 <span className="font-medium">
-                  Forecasts remain unreliable. Communicating a consistent value
+                  Forecasts stay unreliable. Communicating a consistent value
                   proposition across the team feels impossible.{" "}
                 </span>
-                Managers rely on what sellers share in meetings—which rarely
-                reflect what’s happening. Reports need to be done multiple
-                times.
+                Managers are forced to rely on what sellers share in
+                meetings—which often doesn’t match reality. Reports have to be
+                generated again and again.
               </p>
 
               <p>Overbase gathers data to fill these gaps.</p>
