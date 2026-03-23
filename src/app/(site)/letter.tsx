@@ -56,8 +56,8 @@ export function Letter() {
               </p>
 
               <p>
-                Finally, you'll a consistent sales process that delivers more
-                sales faster.
+                Finally, you'll get a consistent sales process that delivers
+                more sales faster.
               </p>
             </div>
 
