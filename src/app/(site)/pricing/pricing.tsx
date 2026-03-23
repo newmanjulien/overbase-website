@@ -6,7 +6,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Insight that's <span className="italic">customized</span>
+            <span className="italic">Tailored</span> for your business
           </>
         }
       />
@@ -29,15 +29,15 @@ export function Pricing() {
             </p>
 
             <p>
-              Overbase gathers detailed and reliable information from each
-              seller's emails, calendar, PDFs, and other activity. No data entry
-              required
+              Overbase automatically captures detailed, reliable information
+              from every seller’s emails, calendar, PDFs, and other activity. No
+              manual data entry required.
             </p>
 
             <p>
-              Then we build custom delivery tools for your business. These
-              custom tools match your workflows and integrate with your existing
-              systems
+              Then we build custom tools that deliver insight to your team.
+              These custom tools are tailored to match your workflows and
+              integrate with your existing systems
             </p>
           </div>
         </div>

@@ -44,17 +44,17 @@ export function Letter() {
               <p>Overbase gathers data to fill these gaps.</p>
 
               <p>
-                We gather detailed and reliable information{" "}
+                We automatically capture detailed, reliable information{" "}
                 <span className="font-medium">
-                  from each seller's emails, calendar, PDFs, and other activity.
-                  No data entry required.{" "}
+                  from every seller’s emails, calendar, PDFs, and other
+                  activity. No manual data entry required.
                 </span>
               </p>
 
               <p>
-                Then we deliver the information in ways that are customized for
-                your unique workflows and that integrate with your existing
-                systems.
+                We then deliver the information through custom tools tailored to
+                your unique workflows, and with seamless integrations that fit
+                right into your existing systems.
               </p>
 
               <p>

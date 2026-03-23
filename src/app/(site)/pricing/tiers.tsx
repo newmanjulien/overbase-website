@@ -16,9 +16,9 @@ const PLANS: Plan[] = [
     name: "Gather",
     price: "$0",
     description:
-      "We gather reliable, consistent and detailed information for free",
+      "We capture reliable, consistent and detailed information for free",
     subtext:
-      "Data gathering is entirely free for your full team and for all your systems",
+      "Data gathering is entirely free. Add as many team members and as many systems as you want",
     valueLabel: "Free data gathering",
   },
   {
@@ -26,9 +26,9 @@ const PLANS: Plan[] = [
     name: "Deliver",
     price: "$5+",
     description:
-      "Pay for custom tools and integrations that are built just for you",
+      "Only pay for the custom tools and integrations we build just for you",
     subtext:
-      "Custom per month fee which starts as low as $5 per user per month",
+      "Custom per month fee for each tool and integration. Starts as low as $5 per user per month",
     valueLabel: "Pay for data delivery",
   },
 ];
