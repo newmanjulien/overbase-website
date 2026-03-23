@@ -59,7 +59,7 @@ export function Letter() {
 
               <p>
                 Finally, you'll get a consistent sales process that delivers
-                more sales faster.
+                more revenue faster.
               </p>
             </div>
 
