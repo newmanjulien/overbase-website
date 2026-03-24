@@ -53,13 +53,13 @@ export function Letter() {
 
               <p>
                 We gather realtime signals from press releases, LinkedIn,
-                financial reports and other public data.
+                financial reports, job postings, website changes, and other
+                high-impact public data sources.
               </p>
 
               <p>
-                Then we deliver the insight you need in a way that's tailored to
-                your unique workflows, and that fits right into your existing
-                systems.
+                Then we deliver insight in a way that's tailored to your unique
+                workflows, and that fits right into your existing systems.
               </p>
 
               <p>
