@@ -14,7 +14,7 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Sales insight for businesses where{" "}
+            Sales insight for industries where{" "}
             <span className="bg-[#ffffcc] px-1">CRMs don't fully deliver</span>
           </h2>
 
