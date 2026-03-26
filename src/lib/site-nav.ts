@@ -25,7 +25,7 @@ export type SiteTintedPaths = {
 
 export const SITE_NAV_ITEMS = [
   { id: "about", href: "/about", label: "About us" },
-  { id: "careers", href: "/careers", label: "Careers" },
+  { id: "contact", href: "/contact", label: "Contact" },
   { id: "pricing", href: "/pricing", label: "Pricing" },
 ] satisfies SiteNavItem[];
 

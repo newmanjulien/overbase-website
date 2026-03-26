@@ -10,12 +10,12 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-xs text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Fill your CRM's gaps
+            Your CRM isn't broken
           </h1>
 
-          <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Sales insight for industries where{" "}
-            <span className="bg-[#ffffcc] px-1">CRMs don't fully deliver</span>
+          <h2 className="mt-4 max-w-sm text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Your team just isn’t updating it{" "}
+            <span className="bg-[#ffffcc] px-1">and that’s okay</span>
           </h2>
 
           <div className={newLocal}>

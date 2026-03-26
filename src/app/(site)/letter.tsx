@@ -27,24 +27,25 @@ export function Letter() {
               </p>
 
               <p>
-                As a result, the promise of a scalable sales process is never
-                realized.
+                So the data you need never makes it into the system, and easy
+                revenue slips through the cracks.
               </p>
 
               <p>
                 <span className="font-medium">
-                  Forecasts stay unreliable. Communicating a consistent value
-                  proposition across the team feels impossible.{" "}
+                  Forecasts stay unreliable. Messaging varies from seller to
+                  seller. Managers rely on what sellers say in meetings, not
+                  what’s actually happening.{" "}
                 </span>
-                Managers are forced to rely on what sellers share in
-                meetings—which often doesn’t match reality. Reports have to be
-                generated again and again.
+                Reporting becomes a constant chase for updates.
               </p>
 
-              <p>Overbase gets you the data to fill these gaps.</p>
+              <p>
+                Overbase gets you the data you've been missing—automatically.
+              </p>
 
               <p>
-                We automatically capture detailed, reliable information{" "}
+                We capture detailed, reliable information{" "}
                 <span className="font-medium">
                   from each seller’s emails, calendar, PDFs, and other activity.
                   No manual data entry required.
@@ -63,8 +64,8 @@ export function Letter() {
               </p>
 
               <p>
-                Finally, you'll get a consistent sales process that delivers
-                more revenue faster.
+                Finally, your sales process is going to live up to its
+                potential.
               </p>
             </div>
 
