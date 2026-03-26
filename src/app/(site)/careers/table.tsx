@@ -10,18 +10,18 @@ interface Opening {
 
 const OPENING: Opening[] = [
   {
-    id: "data-scientist",
-    name: "Data Scientist 1",
+    id: "delhi",
+    name: "Data Scientist 1 - Delhi",
     degree: "JEE 1–100 rankers",
     school: "₹24 LPA",
-    href: "https://drive.google.com/file/d/1oPwehfFi6QrE6oxySgQEl9JWn7rQ3Prt/view",
+    href: "https://drive.google.com/file/d/1r5VA47s88AcbrOfl6j1taoqCmJ4Bs1TQ/view",
   },
   {
-    id: "recruiter",
-    name: "Technical Recruiter 1",
-    degree: "JEE 1–100 rankers",
-    school: "₹30 LPA",
-    href: "https://drive.google.com/file/d/11eMBULwO-XfCwEtpCihgsBw9PyXmmXvb/view",
+    id: "israel",
+    name: "Data Scientist 1 - Tel Aviv",
+    degree: "Dapar 90",
+    school: "₪300,000 per year",
+    href: "https://drive.google.com/file/d/1kKJznxg52URF44hNzlsu0YXxRFwYMIyo/view",
   },
 ];
 
