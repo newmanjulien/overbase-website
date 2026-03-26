@@ -40,9 +40,7 @@ export function Letter() {
                 Reporting becomes a constant chase for updates.
               </p>
 
-              <p>
-                Overbase gets you the data you've been missing—automatically.
-              </p>
+              <p>Overbase gets the data you've been missing—automatically.</p>
 
               <p>
                 We capture detailed, reliable information{" "}
@@ -50,12 +48,6 @@ export function Letter() {
                   from each seller’s emails, calendar, PDFs, and other activity.
                   No manual data entry required.
                 </span>
-              </p>
-
-              <p>
-                We gather realtime signals from press releases, LinkedIn,
-                financial reports, job postings, website changes, and other
-                high-impact public data sources.
               </p>
 
               <p>
