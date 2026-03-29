@@ -24,11 +24,11 @@ const PLANS: Plan[] = [
   {
     id: "percent",
     name: "Deliver",
-    price: "$5+",
+    price: "$900",
     description:
-      "Only pay for the custom tools and integrations we build just for you",
+      "Only pay for the custom tool or integration we build just for you",
     subtext:
-      "Custom per month fee for each tool and integration. Starts as low as $5 per user per month",
+      "Pay $900 per month to receive the data we collect for you in a custom tool we design together",
     valueLabel: "Pay for data delivery",
   },
 ];
@@ -50,6 +50,9 @@ export default function Tiers() {
 }
 
 function PlanCard({ plan }: { plan: Plan }) {
+  const hasTrailingPlus = plan.price.endsWith("+");
+  const basePrice = hasTrailingPlus ? plan.price.slice(0, -1) : plan.price;
+
   return (
     <div className="bg-white rounded-lg p-6 flex flex-col h-full border border-gray-100">
       <div className="mb-4">
@@ -67,7 +70,8 @@ function PlanCard({ plan }: { plan: Plan }) {
       <div className="space-y-4">
         <div>
           <span className="text-3xl font-medium text-gray-900">
-            {plan.price}
+            {basePrice}
+            {hasTrailingPlus ? <span className="font-normal">+</span> : null}
           </span>
         </div>
 

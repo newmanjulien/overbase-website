@@ -28,7 +28,7 @@ const FAQ_ITEMS: PricingFAQItem[] = [
     id: "delivery-cost",
     question: "How much does data delivery cost?",
     answer:
-      "It starts at $5 per user per month. We build custom tools for you and we agree to a per month cost for each tool. The tools most businesses start with typically cost $5 per user per month",
+      "$900 per month. We build a custom tool or integration which delivers the data you need and you pay $900 per month",
   },
   {
     id: "how-do-you-customize",
