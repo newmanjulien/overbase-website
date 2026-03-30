@@ -12,7 +12,7 @@ const OPENING: Opening[] = [
   {
     id: "israel",
     name: "Data Scientist 1 - Tel Aviv",
-    degree: "Dapar 90",
+    degree: "8200",
     school: "₪300,000 per year",
     href: "https://drive.google.com/file/d/1kKJznxg52URF44hNzlsu0YXxRFwYMIyo/view",
   },
