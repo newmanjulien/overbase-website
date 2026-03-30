@@ -10,6 +10,13 @@ interface Opening {
 
 const OPENING: Opening[] = [
   {
+    id: "israel",
+    name: "Data Scientist 1 - Tel Aviv",
+    degree: "Dapar 90",
+    school: "₪300,000 per year",
+    href: "https://drive.google.com/file/d/1kKJznxg52URF44hNzlsu0YXxRFwYMIyo/view",
+  },
+  {
     id: "delhi",
     name: "Data Scientist 1 - Delhi",
     degree: "JEE 1–100 rankers",
@@ -17,11 +24,18 @@ const OPENING: Opening[] = [
     href: "https://drive.google.com/file/d/1r5VA47s88AcbrOfl6j1taoqCmJ4Bs1TQ/view",
   },
   {
-    id: "israel",
-    name: "Data Scientist 1 - Tel Aviv",
-    degree: "Dapar 90",
-    school: "₪300,000 per year",
-    href: "https://drive.google.com/file/d/1kKJznxg52URF44hNzlsu0YXxRFwYMIyo/view",
+    id: "mumbai",
+    name: "Data Scientist 1 - Mumbai",
+    degree: "JEE 1–100 rankers",
+    school: "₹24 LPA",
+    href: "https://drive.google.com/file/d/1FKm3lnOQ2fTwzpn6CubMZsERTOOI4O67/view",
+  },
+  {
+    id: "istanbul",
+    name: "Data Scientist 1 - Istanbul",
+    degree: "YKS 1–100 rankers",
+    school: "₺120,000 per month",
+    href: "https://drive.google.com/file/d/1WYcnH8qkRbmXEPTVtJlbB7O4aBaIa9Px/view",
   },
 ];
 
