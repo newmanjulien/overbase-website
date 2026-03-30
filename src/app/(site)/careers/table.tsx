@@ -12,7 +12,7 @@ const OPENING: Opening[] = [
   {
     id: "israel",
     name: "Data Scientist 1 - Tel Aviv",
-    degree: "8200",
+    degree: "8200 alumni",
     school: "₪300,000 per year",
     href: "https://drive.google.com/file/d/1kKJznxg52URF44hNzlsu0YXxRFwYMIyo/view",
   },
@@ -29,13 +29,6 @@ const OPENING: Opening[] = [
     degree: "JEE 1–100 rankers",
     school: "₹24 LPA",
     href: "https://drive.google.com/file/d/1FKm3lnOQ2fTwzpn6CubMZsERTOOI4O67/view",
-  },
-  {
-    id: "istanbul",
-    name: "Data Scientist 1 - Istanbul",
-    degree: "YKS 1–100 rankers",
-    school: "₺120,000 per month",
-    href: "https://drive.google.com/file/d/1WYcnH8qkRbmXEPTVtJlbB7O4aBaIa9Px/view",
   },
 ];
 
