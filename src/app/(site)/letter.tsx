@@ -43,7 +43,7 @@ export function Letter() {
               <p>Overbase gets the data you've been missing—automatically.</p>
 
               <p>
-                We capture detailed, reliable information{" "}
+                We capture detailed, accurate information{" "}
                 <span className="font-medium">
                   from each seller’s emails, calendar, PDFs, and other activity.
                   No manual data entry required.
@@ -51,13 +51,14 @@ export function Letter() {
               </p>
 
               <p>
-                Then we deliver insight in a way that's tailored to your unique
-                workflows, and that fits right into your existing systems.
+                Then we deliver reliable insight in a way that's tailored to
+                your unique workflows, and that fits right into your existing
+                systems.
               </p>
 
               <p>
-                Finally, your sales process is going to live up to its
-                potential.
+                You keep your workflows and tools exactly as they are—just with
+                accurate, reliable data powering them.
               </p>
             </div>
 
