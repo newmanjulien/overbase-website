@@ -58,7 +58,7 @@ export function Letter() {
 
               <p>
                 You keep your workflows and tools exactly as they are—just with
-                accurate, reliable data powering them.
+                accurate, reliable information powering them.
               </p>
             </div>
 

@@ -6,7 +6,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            <span className="italic">Tailored</span> for your business
+            Keep things the <span className="italic">same</span>
           </>
         }
       />
@@ -14,30 +14,28 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Customized for your workflows and integrated with your systems
+              Keep your workflows and tools exactly as they are
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Your business has unique workflows and your team needs to receive
-              insight in ways that match your workflows
+              Your team is already successful and already uses good software
+              that works
             </p>
 
             <p>
-              You use several existing systems and data needs to integrate
-              seamlessly with those systems
+              Overbase lets you keep the same workflows and keep the same tools
             </p>
 
             <p>
-              Overbase automatically captures detailed, reliable information
-              from every seller’s emails, calendar, PDFs, and other activity. No
-              manual data entry required.
+              We automatically capture detailed, accurate information in a way
+              that matches your existing workflows. And with no manual data
+              entry required
             </p>
 
             <p>
-              Then we build custom tools that deliver insight to your team.
-              These custom tools are tailored to match your workflows and
-              integrate with your existing systems
+              Then we simply update your existing tools with reliable
+              information
             </p>
           </div>
         </div>
