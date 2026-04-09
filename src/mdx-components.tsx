@@ -1,1 +1,1 @@
-export { useMDXComponents } from "@/app/(site)/blog/mdx-components";
+export { useMDXComponents } from "@/content/mdx";

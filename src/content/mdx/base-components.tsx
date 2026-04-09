@@ -1,12 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { MDXComponents } from "mdx/types";
-import { PostLayout } from "@/app/(site)/blog/post-layout";
-import { FullBleedImage } from "@/app/(site)/blog/full-bleed-image";
+
 import { TOC_SCROLL_SPY_TARGET_PROPS } from "@/lib/toc-scroll-spy";
 
-const mdxComponents: MDXComponents = {
-  PostLayout,
+export const baseMdxComponents: MDXComponents = {
   h2: (props) => (
     <h2
       className="text-3xl font-medium text-gray-900 scroll-mt-24 mb-4 mt-14"
@@ -15,10 +13,10 @@ const mdxComponents: MDXComponents = {
     />
   ),
   h3: (props) => (
-    <h3 className="text-xl font-medium text-gray-900 mb-3" {...props} />
+    <h3 className="mb-3 text-xl font-medium text-gray-900" {...props} />
   ),
   p: (props) => (
-    <p className="text-md text-gray-900 mb-4 leading-relaxed" {...props} />
+    <p className="mb-4 text-md leading-relaxed text-gray-900" {...props} />
   ),
   a: ({ href, className, target, rel, ...props }) => {
     const linkClassName = [
@@ -52,25 +50,24 @@ const mdxComponents: MDXComponents = {
   },
   ul: (props) => (
     <ul
-      className="my-4 list-disc pl-5 text-md text-gray-900 leading-relaxed space-y-1"
+      className="my-4 list-disc space-y-1 pl-5 text-md leading-relaxed text-gray-900"
       {...props}
     />
   ),
   ol: (props) => (
     <ol
-      className="my-4 list-decimal pl-5 text-md text-gray-900 leading-relaxed space-y-1"
+      className="my-4 list-decimal space-y-1 pl-5 text-md leading-relaxed text-gray-900"
       {...props}
     />
   ),
   li: (props) => <li className="leading-relaxed" {...props} />,
   blockquote: (props) => (
     <blockquote
-      className="my-6 border-l-2 border-gray-200 pl-4 text-gray-700 italic"
+      className="my-6 border-l-2 border-gray-200 pl-4 italic text-gray-700"
       {...props}
     />
   ),
   hr: (props) => <hr className="my-10 border-gray-100" {...props} />,
-  FullBleedImage,
   img: ({ src, alt, width, height, className, ...props }) => {
     if (!src) {
       return null;
@@ -120,7 +117,3 @@ const mdxComponents: MDXComponents = {
     <strong className="font-medium text-gray-900" {...props} />
   ),
 };
-
-export function useMDXComponents(): MDXComponents {
-  return mdxComponents;
-}

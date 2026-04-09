@@ -41,25 +41,26 @@ export function Letter() {
               </p>
 
               <p className="font-medium">
-                Overbase is the invisible CRM backend that works quietly in the
-                background to automatically get the data you've been missing.
+                Overbase is the invisible backend for your CRM that works
+                quietly behind the scenes to gather the data you've been
+                missing.
               </p>
 
               <p>
-                We capture detailed, accurate information from each seller’s
+                We capture detailed and accurate information from each seller’s
                 emails, calendar, PDFs, and other communication. No manual data
                 entry required.
               </p>
 
               <p>
                 Then we deliver reliable insight to your CRM, Power BI or any
-                dashboard and tool you're already using.
+                dashboard you use.
               </p>
 
               <p>
-                Sellers keep working exactly as they are. Leadership keeps using
-                the same dashboards. Except now, there's complete and up-to-date
-                information in those dashboards.
+                Sellers keep selling exactly as they do and leadership keeps the
+                same dashboards. Except now, there's accurate information in
+                those dashboards.
               </p>
             </div>
 

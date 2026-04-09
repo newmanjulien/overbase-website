@@ -23,7 +23,7 @@ export function FullBleedImage({
   priority,
   quality,
 }: FullBleedImageProps) {
-  const imageClassName = ["w-full h-auto rounded-xl scroll-mt-28", className]
+  const imageClassName = ["h-auto w-full rounded-xl scroll-mt-28", className]
     .filter(Boolean)
     .join(" ");
   const shouldBypassOptimization =
@@ -45,9 +45,9 @@ export function FullBleedImage({
             unoptimized={shouldBypassOptimization}
             className={imageClassName}
           />
-          {caption && (
-            <p className="mt-6 text-sm text-gray-900 text-center">{caption}</p>
-          )}
+          {caption ? (
+            <p className="mt-6 text-center text-sm text-gray-900">{caption}</p>
+          ) : null}
         </div>
       </div>
     </div>

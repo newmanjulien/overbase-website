@@ -50,7 +50,7 @@ export const SITE_NAV_ITEMS = [
     children: [
       {
         id: "proactive",
-        href: "/challenges/practive",
+        href: "/challenges/proactive",
         label: "Important accounts aren't managed proactively",
         section: "lost-revenue",
       },
@@ -63,7 +63,7 @@ export const SITE_NAV_ITEMS = [
       {
         id: "updates",
         href: "/challenges/updates",
-        label: "Updates rarely reflect what’s really happening ",
+        label: "Updates rarely reflect what’s really happening",
         section: "lack-of-visibility",
       },
       {
@@ -115,3 +115,11 @@ export const SITE_TINTED_PATHS = {
   exact: ["/", "/legal"],
   prefix: ["/legal/"],
 } satisfies SiteTintedPaths;
+
+export function getChallengeProblemLabel(slug: string) {
+  const challengeItem = SITE_NAV_ITEMS.find((item) => item.id === "challenges");
+
+  return challengeItem?.children
+    ?.find((child) => child.id === slug)
+    ?.label.trim();
+}
