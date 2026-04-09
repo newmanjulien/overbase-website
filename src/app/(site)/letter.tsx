@@ -32,33 +32,34 @@ export function Letter() {
               </p>
 
               <p>
+                Multiple sellers approach the same customer. Many of the best
+                prospects aren’t on your radar at all.{" "}
                 <span className="font-medium">
-                  Forecasts stay unreliable. Messaging varies from seller to
-                  seller. Managers rely on what sellers say in meetings, not
-                  what’s actually happening.{" "}
-                </span>
-                Reporting becomes a constant chase for updates.
-              </p>
-
-              <p>Overbase gets the data you've been missing—automatically.</p>
-
-              <p>
-                We capture detailed, accurate information{" "}
-                <span className="font-medium">
-                  from each seller’s emails, calendar, PDFs, and other activity.
-                  No manual data entry required.
+                  Important accounts aren't managed proactively. Opportunities
+                  to bundle multiple offerings are missed.
                 </span>
               </p>
 
-              <p>
-                Then we deliver reliable insight in a way that's tailored to
-                your unique workflows, and that fits right into your existing
-                systems.
+              <p className="font-medium">
+                Overbase is the invisible CRM backend that works quietly in the
+                background to automatically get the data you've been missing.
               </p>
 
               <p>
-                You keep your workflows and tools exactly as they are—just with
-                accurate, reliable information powering them.
+                We capture detailed, accurate information from each seller’s
+                emails, calendar, PDFs, and other communication. No manual data
+                entry required.
+              </p>
+
+              <p>
+                Then we deliver reliable insight to your CRM, Power BI or any
+                dashboard and tool you're already using.
+              </p>
+
+              <p>
+                Sellers keep working exactly as they are. Leadership keeps using
+                the same dashboards. Except now, there's complete and up-to-date
+                information in those dashboards.
               </p>
             </div>
 
