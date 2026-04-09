@@ -8,6 +8,3 @@ export const DEFAULT_CHALLENGE_QUOTE_SECTION: ChallengeQuoteSection = {
   avatarInitials: "KE",
   avatarSrc: "/julien.png",
 };
-
-export const CHALLENGE_OPERATIONAL_STATUS_LABEL =
-  "All systems operational";

@@ -4,8 +4,6 @@ import type {
   ChallengeBottomCtaLinks,
   ChallengeCtaPlatformName,
 } from "@/content/challenges/types";
-import { CHALLENGE_OPERATIONAL_STATUS_LABEL } from "@/content/challenges/defaults";
-import { OperationalStatusBadge } from "@/content/challenges/components/operational-status-badge";
 import { getChallengeProblemLabel } from "@/lib/site-nav";
 import { cn } from "@/lib/utils";
 
@@ -33,25 +31,21 @@ export function BottomCtaSection({ slug }: BottomCtaSectionProps) {
 
   return (
     <section className="mx-auto hidden max-w-6xl px-12 pt-2 pb-16 md:block lg:px-24">
-      <div className="flex items-center justify-between gap-6">
-        <div className="flex items-center gap-3">
-          <p className="text-sm leading-tight tracking-tight text-gray-400">
-            Ask about Overbase on
-          </p>
+      <div className="flex items-center gap-3">
+        <p className="text-sm leading-tight tracking-tight text-gray-400">
+          Ask about Overbase on
+        </p>
 
-          <div className="flex items-center gap-1.5">
-            {CTA_PLATFORMS.map(({ platform, label }) => (
-              <PlatformTile
-                key={platform}
-                platform={platform}
-                label={label}
-                href={links[platform]}
-              />
-            ))}
-          </div>
+        <div className="flex items-center gap-1.5">
+          {CTA_PLATFORMS.map(({ platform, label }) => (
+            <PlatformTile
+              key={platform}
+              platform={platform}
+              label={label}
+              href={links[platform]}
+            />
+          ))}
         </div>
-
-        <OperationalStatusBadge label={CHALLENGE_OPERATIONAL_STATUS_LABEL} />
       </div>
     </section>
   );
