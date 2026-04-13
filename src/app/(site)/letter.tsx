@@ -22,43 +22,47 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                CRMs work magic—but only if your team logs everything. In your
-                industry, that simply doesn’t happen.
+                The fastest way to accelerate revenue for most businesses isn’t
+                to generate more demand. It’s to increase revenue from your
+                existing demand.
               </p>
 
               <p>
-                So the data you need never makes it into the system, and easy
-                revenue slips through the cracks.
+                Most businesses grow by getting good at finding new clients.{" "}
+                <a className="font-medium">
+                  But the real opportunities are often already sitting in your
+                  current book of business.
+                </a>
               </p>
 
               <p>
-                <span className="font-medium">
-                  Forecasts stay unreliable. Messaging varies from seller to
-                  seller. Managers rely on what sellers say in meetings, not
-                  what’s actually happening.{" "}
-                </span>
-                Reporting becomes a constant chase for updates.
+                The problem is your own success. As you offer more services, it
+                becomes harder for account managers to know and sell everything
+                you do. And the bigger you get, the harder it is to know your
+                clients well enough to see their biggest needs.
               </p>
 
-              <p>Overbase gets the data you've been missing—automatically.</p>
-
-              <p>
-                We capture detailed, accurate information{" "}
-                <span className="font-medium">
-                  from each seller’s emails, calendar, PDFs, and other activity.
-                  No manual data entry required.
-                </span>
+              <p className="font-medium">
+                Overbase finds and lets you fulfill the biggest needs your
+                clients already have.
               </p>
 
               <p>
-                Then we deliver reliable insight in a way that's tailored to
-                your unique workflows, and that fits right into your existing
-                systems.
+                We use advanced analysis to flag the most profitable untapped
+                revenue in each account. We find then put a price tag on the
+                invisible gaps where a client has a need but no current
+                solution.
               </p>
 
               <p>
-                You keep your workflows and tools exactly as they are—just with
-                accurate, reliable information powering them.
+                Then, we integrate into your team’s existing workflows. We give
+                them the background, resources and expertise they need to close
+                these gaps naturally and at the perfect time.
+              </p>
+
+              <p>
+                You grow revenue quickly without hunting for clients. Your
+                clients get more value from a partner they already trust (you!).
               </p>
             </div>
 

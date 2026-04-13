@@ -3,12 +3,18 @@
 import * as Dialog from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useCallback, useRef, type ReactNode } from "react";
+import { MOBILE_NAV_DIALOG_CONTENT_ID } from "./mobile-header";
 import { HeaderLogo } from "./header-logo";
 import { Button } from "@/components/ui/button";
 import { HotkeyBadge } from "@/components/ui/hotkey-badge";
 import { useHotkeyAction } from "@/hooks/use-hotkey-action";
-import { SITE_DRAWER_CTA_ACTION, type SiteNavItem } from "@/lib/site-nav";
+import {
+  SITE_DRAWER_CTA_ACTION,
+  SITE_NAV_CHILD_SECTIONS,
+  type SiteNavItem,
+} from "@/lib/site-nav";
 import { cn } from "@/lib/utils";
 
 type MobileDrawerProps = {
@@ -23,6 +29,7 @@ type MobileDrawerProps = {
 
 const navItemBaseClass =
   "flex h-10 w-full items-center rounded-md px-3 text-sm font-medium transition-colors";
+const MOBILE_NAV_DIALOG_TITLE_ID = "mobile-navigation-dialog-title";
 
 export function MobileDrawer({
   items,
@@ -33,6 +40,7 @@ export function MobileDrawer({
   closeMenu,
   open,
 }: MobileDrawerProps) {
+  const pathname = usePathname() ?? "";
   const ctaLinkRef = useRef<HTMLAnchorElement | null>(null);
   const normalizedCtaHotkey = SITE_DRAWER_CTA_ACTION.hotkey.toLowerCase();
 
@@ -53,8 +61,15 @@ export function MobileDrawer({
   return (
     <Dialog.Portal>
       <Dialog.Overlay className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/35 duration-200" />
-      <Dialog.Content className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-[60] flex flex-col bg-white duration-200 focus-visible:outline-none">
-        <Dialog.Title className="sr-only">Navigation menu</Dialog.Title>
+      <Dialog.Content
+        id={MOBILE_NAV_DIALOG_CONTENT_ID}
+        aria-labelledby={MOBILE_NAV_DIALOG_TITLE_ID}
+        aria-describedby={undefined}
+        className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-[60] flex flex-col bg-white duration-200 focus-visible:outline-none"
+      >
+        <Dialog.Title id={MOBILE_NAV_DIALOG_TITLE_ID} className="sr-only">
+          Navigation menu
+        </Dialog.Title>
 
         <div className="flex h-12 shrink-0 items-center justify-between border-b border-gray-100 px-6">
           <HeaderLogo
@@ -83,6 +98,74 @@ export function MobileDrawer({
             <nav className="space-y-2" aria-label="Mobile site navigation">
               {items.map((item) => {
                 const isActive = activeId === item.id;
+                const childSections = SITE_NAV_CHILD_SECTIONS.map((section) => ({
+                  ...section,
+                  items: item.children?.filter((child) => child.section === section.id) ?? [],
+                })).filter((section) => section.items.length > 0);
+                const shouldGroupChildren =
+                  (item.children?.length ?? 0) > 0 &&
+                  childSections.length > 0 &&
+                  item.children?.every((child) => child.section);
+
+                if (item.children?.length) {
+                  return (
+                    <div key={item.id} className="space-y-1">
+                      <div className="px-3 py-2 text-xs font-semibold uppercase tracking-[0.18em] text-gray-500">
+                        {item.label}
+                      </div>
+                      {shouldGroupChildren
+                        ? childSections.map((section) => (
+                            <div key={section.id} className="space-y-0.5">
+                              <div className="px-6 py-0.5 text-[11px] font-normal text-gray-400">
+                                {section.label}
+                              </div>
+                              {section.items.map((child) => {
+                                const isChildActive = pathname === child.href;
+
+                                return (
+                                  <Link
+                                    key={child.id}
+                                    href={child.href}
+                                    aria-current={isChildActive ? "page" : undefined}
+                                    onClick={closeMenu}
+                                    className={cn(
+                                      navItemBaseClass,
+                                      "h-9 pl-8",
+                                      isChildActive
+                                        ? "bg-gray-100 text-gray-900"
+                                        : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+                                    )}
+                                  >
+                                    {child.label}
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          ))
+                        : item.children.map((child) => {
+                            const isChildActive = pathname === child.href;
+
+                            return (
+                              <Link
+                                key={child.id}
+                                href={child.href}
+                                aria-current={isChildActive ? "page" : undefined}
+                                onClick={closeMenu}
+                                className={cn(
+                                  navItemBaseClass,
+                                  "pl-6",
+                                  isChildActive
+                                    ? "bg-gray-100 text-gray-900"
+                                    : "text-gray-600 hover:bg-gray-50 hover:text-gray-900",
+                                )}
+                              >
+                                {child.label}
+                              </Link>
+                            );
+                          })}
+                    </div>
+                  );
+                }
 
                 return (
                   <Link

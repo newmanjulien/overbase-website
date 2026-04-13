@@ -6,8 +6,7 @@
 import { useCallback, useLayoutEffect, useRef, type RefObject } from "react";
 
 type HeaderNavMotionOptions = {
-  activeId: string | null;
-  hoveredId: string | null;
+  targetId: string | null;
 };
 
 type HeaderNavMotionResult = {
@@ -17,8 +16,7 @@ type HeaderNavMotionResult = {
 };
 
 export function useHeaderNavMotion({
-  activeId,
-  hoveredId,
+  targetId,
 }: HeaderNavMotionOptions): HeaderNavMotionResult {
   const navRef = useRef<HTMLDivElement>(null);
   const indicatorRef = useRef<HTMLSpanElement>(null);
@@ -85,8 +83,8 @@ export function useHeaderNavMotion({
   );
 
   useLayoutEffect(() => {
-    updateIndicator(hoveredId ?? activeId);
-  }, [activeId, hoveredId, updateIndicator]);
+    updateIndicator(targetId);
+  }, [targetId, updateIndicator]);
 
   useLayoutEffect(() => {
     const container = navRef.current;
@@ -95,12 +93,12 @@ export function useHeaderNavMotion({
     }
 
     const resizeObserver = new ResizeObserver(() => {
-      updateIndicator(hoveredId ?? activeId);
+      updateIndicator(targetId);
     });
 
     resizeObserver.observe(container);
     return () => resizeObserver.disconnect();
-  }, [activeId, hoveredId, updateIndicator]);
+  }, [targetId, updateIndicator]);
 
   return { navRef, indicatorRef, setItemRef };
 }

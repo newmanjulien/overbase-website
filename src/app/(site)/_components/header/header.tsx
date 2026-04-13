@@ -112,7 +112,7 @@ export function Header({
             {logoImage}
           </HeaderLogo>
 
-          <HeaderNav items={navItems} activeId={activeId} />
+          <HeaderNav key={pathname} items={navItems} activeId={activeId} />
 
           {/* Right side buttons */}
           <div className="flex items-center justify-end">
