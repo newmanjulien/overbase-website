@@ -40,53 +40,66 @@ export const SITE_NAV_CHILD_SECTIONS = [
 export type SiteNavChildSectionId =
   (typeof SITE_NAV_CHILD_SECTIONS)[number]["id"];
 
-export const SITE_NAV_ITEMS = [
-  { id: "about", href: "/about", label: "About us" },
-  { id: "careers", href: "/careers", label: "Careers" },
-  {
-    id: "challenges",
-    href: "/challenges",
-    label: "Challenges",
-    children: [
-      {
-        id: "proactive",
-        href: "/challenges/proactive",
-        label: "Important accounts aren't managed proactively",
-        section: "lost-revenue",
-      },
-      {
-        id: "bundle",
-        href: "/challenges/bundle",
-        label: "Opportunities to bundle multiple offerings are missed",
-        section: "lost-revenue",
-      },
-      {
-        id: "updates",
-        href: "/challenges/updates",
-        label: "Updates rarely reflect what’s really happening",
-        section: "lack-of-visibility",
-      },
-      {
-        id: "reports",
-        href: "/challenges/reports",
-        label: "Reporting means running after manual updates",
-        section: "lack-of-visibility",
-      },
-      {
-        id: "multiple",
-        href: "/challenges/multiple",
-        label: "Multiple sellers approach the same client",
-        section: "prospecting",
-      },
-      {
-        id: "radar",
-        href: "/challenges/radar",
-        label: "Many of the best prospects aren’t on your radar at all",
-        section: "prospecting",
-      },
-    ],
-  },
-] satisfies SiteNavItem[];
+const CHALLENGES_NAV_ITEM = {
+  id: "challenges",
+  href: "/challenges",
+  label: "Challenges",
+  children: [
+    {
+      id: "proactive",
+      href: "/challenges/proactive",
+      label: "Important accounts aren't managed proactively",
+      section: "lost-revenue",
+    },
+    {
+      id: "bundle",
+      href: "/challenges/bundle",
+      label: "Opportunities to bundle multiple offerings are missed",
+      section: "lost-revenue",
+    },
+    {
+      id: "updates",
+      href: "/challenges/updates",
+      label: "Updates rarely reflect what’s really happening",
+      section: "lack-of-visibility",
+    },
+    {
+      id: "reports",
+      href: "/challenges/reports",
+      label: "Reporting means running after manual updates",
+      section: "lack-of-visibility",
+    },
+    {
+      id: "multiple",
+      href: "/challenges/multiple",
+      label: "Multiple sellers approach the same client",
+      section: "prospecting",
+    },
+    {
+      id: "radar",
+      href: "/challenges/radar",
+      label: "Many of the best prospects aren’t on your radar at all",
+      section: "prospecting",
+    },
+  ],
+} satisfies SiteNavItem;
+
+const NAV_ITEM_REGISTRY = {
+  about: { id: "about", href: "/about", label: "About us" },
+  careers: { id: "careers", href: "/careers", label: "Careers" },
+  contact: { id: "contact", href: "/contact", label: "Contact" },
+  challenges: CHALLENGES_NAV_ITEM,
+} satisfies Record<string, SiteNavItem>;
+
+const HEADER_NAV_ITEM_IDS = [
+  "about",
+  "careers",
+  "contact",
+] as const satisfies readonly (keyof typeof NAV_ITEM_REGISTRY)[];
+
+export const SITE_NAV_ITEMS = HEADER_NAV_ITEM_IDS.map(
+  (id) => NAV_ITEM_REGISTRY[id],
+);
 
 export const SITE_QUICK_ACTIONS = [
   {
@@ -117,9 +130,5 @@ export const SITE_TINTED_PATHS = {
 } satisfies SiteTintedPaths;
 
 export function getChallengeProblemLabel(slug: string) {
-  const challengeItem = SITE_NAV_ITEMS.find((item) => item.id === "challenges");
-
-  return challengeItem?.children
-    ?.find((child) => child.id === slug)
-    ?.label.trim();
+  return CHALLENGES_NAV_ITEM.children?.find((child) => child.id === slug)?.label.trim();
 }

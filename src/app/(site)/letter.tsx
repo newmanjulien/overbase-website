@@ -22,45 +22,47 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                CRMs work magic—but only if your team logs everything. In your
-                industry, that simply doesn’t happen.
+                The fastest way to accelerate revenue for most businesses isn’t
+                to generate more demand. It’s to increase revenue from your
+                existing demand.
               </p>
 
               <p>
-                So the data you need never makes it into the system, and easy
-                revenue slips through the cracks.
+                Most businesses grow by getting good at finding new clients.{" "}
+                <a className="font-medium">
+                  But the real opportunities are often already sitting in your
+                  current book of business.
+                </a>
               </p>
 
               <p>
-                Multiple sellers approach the same customer. Many of the best
-                prospects aren’t on your radar at all.{" "}
-                <span className="font-medium">
-                  Important accounts aren't managed proactively. Opportunities
-                  to bundle multiple offerings are missed.
-                </span>
+                The problem is your own success. As you offer more services, it
+                becomes harder for account managers to know and sell everything
+                you do. And the bigger you get, the harder it is to know your
+                clients well enough to see their biggest needs.
               </p>
 
               <p className="font-medium">
-                Overbase is the invisible backend for your CRM that works
-                quietly behind the scenes to gather the data you've been
-                missing.
+                Overbase finds and lets you fulfill the biggest needs your
+                clients already have.
               </p>
 
               <p>
-                We capture detailed and accurate information from each seller’s
-                emails, calendar, PDFs, and other communication. No manual data
-                entry required.
+                We use advanced analysis to flag the most profitable untapped
+                revenue in each account. We find then put a price tag on the
+                invisible gaps where a client has a need but no current
+                solution.
               </p>
 
               <p>
-                Then we deliver reliable insight to your CRM, Power BI or any
-                dashboard you use.
+                Then, we integrate into your team’s existing workflows. We give
+                them the background, resources and expertise they need to close
+                these gaps naturally and at the perfect time.
               </p>
 
               <p>
-                Sellers keep selling exactly as they do and leadership keeps the
-                same dashboards. Except now, there's accurate information in
-                those dashboards.
+                You grow revenue quickly without hunting for clients. Your
+                clients get more value from a partner they already trust (you!).
               </p>
             </div>
 

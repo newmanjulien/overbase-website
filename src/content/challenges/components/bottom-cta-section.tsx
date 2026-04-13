@@ -58,7 +58,7 @@ function buildChallengeCtaLinks(slug: string): ChallengeBottomCtaLinks {
     return {};
   }
 
-  const prompt = `Overbase is the invisible backend for my CRM. How can it help when ${problemLabel}?`;
+  const prompt = `Overbase uncaps my revenue. How can it help when ${lowerFirst(problemLabel)}?`;
 
   return {
     openai: buildPlatformHref("openai", prompt),
@@ -72,6 +72,10 @@ function buildPlatformHref(
   prompt: string,
 ): string {
   return `${CTA_PLATFORM_URLS[platform]}${encodeURIComponent(prompt)}`;
+}
+
+function lowerFirst(value: string): string {
+  return value.charAt(0).toLowerCase() + value.slice(1);
 }
 
 interface PlatformTileProps {
@@ -113,11 +117,7 @@ function PlatformTile({ platform, label, href }: PlatformTileProps) {
   );
 }
 
-function PlatformIcon({
-  platform,
-}: {
-  platform: ChallengeCtaPlatformName;
-}) {
+function PlatformIcon({ platform }: { platform: ChallengeCtaPlatformName }) {
   switch (platform) {
     case "openai":
       return <OpenAiIcon className="size-4" />;
