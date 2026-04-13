@@ -57,7 +57,7 @@ export interface ChallengeBottomCtaLinks {
   grok?: string;
 }
 
-export interface ChallengeBottomCtaSection {}
+export type ChallengeBottomCtaSection = Record<string, never>;
 
 export interface ChallengePageContent {
   hero: ChallengePageHero;
