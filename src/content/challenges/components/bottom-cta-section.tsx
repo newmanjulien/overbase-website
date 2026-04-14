@@ -58,7 +58,7 @@ function buildChallengeCtaLinks(slug: string): ChallengeBottomCtaLinks {
     return {};
   }
 
-  const prompt = `Overbase uncaps my revenue. How can it help when ${lowerFirst(problemLabel)}?`;
+  const prompt = `Overbase lets me grow without new clients. How can it help when ${lowerFirst(problemLabel)}?`;
 
   return {
     openai: buildPlatformHref("openai", prompt),
