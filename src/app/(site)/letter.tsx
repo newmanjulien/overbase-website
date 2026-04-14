@@ -22,47 +22,48 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                The fastest way to accelerate revenue for most businesses isn’t
-                to generate more demand. It’s to increase revenue from your
-                existing demand.
+                For most businesses, the fastest way to grow revenue isn’t
+                getting new clients. It’s doing more with the ones you already
+                have.
               </p>
 
               <p>
-                Most businesses grow by getting good at finding new clients.{" "}
+                Businesses tend to get good at winning new clients. But a lot of
+                revenue is left on the table inside existing accounts.{" "}
                 <a className="font-medium">
-                  But the real opportunities are often already sitting in your
-                  current book of business.
+                  Not because the opportunity isn’t there, but because it’s hard
+                  to see and even harder to act on.{" "}
                 </a>
               </p>
 
               <p>
-                The problem is your own success. As you offer more services, it
-                becomes harder for account managers to know and sell everything
-                you do. And the bigger you get, the harder it is to know your
-                clients well enough to see their biggest needs.
+                <a className="font-medium">
+                  As you grow, you offer more services. Your account teams can’t
+                  keep all of it top of mind, and they’re not always equipped to
+                  speak to everything you sell.{" "}
+                </a>
+                At the same time, it gets harder to stay close enough to clients
+                to really understand what they need next.
               </p>
 
-              <p className="font-medium">
-                Overbase finds and lets you fulfill the biggest needs your
-                clients already have.
+              <p>That’s where Overbase comes in.</p>
+
+              <p>
+                We look at your accounts and identify where there’s real, unmet
+                demand. Not every gap is worth solving. We find the ones that
+                are, estimate what they’re worth, and help you prioritize them.
               </p>
 
               <p>
-                We use advanced analysis to flag the most profitable untapped
-                revenue in each account. We find then put a price tag on the
-                invisible gaps where a client has a need but no current
-                solution.
+                Then we work within your existing workflows so your team can act
+                on those opportunities at the right time, with the right
+                context.
               </p>
 
               <p>
-                Then, we integrate into your team’s existing workflows. We give
-                them the background, resources and expertise they need to close
-                these gaps naturally and at the perfect time.
-              </p>
-
-              <p>
-                You grow revenue quickly without hunting for clients. Your
-                clients get more value from a partner they already trust (you!).
+                The result is straightforward. You grow revenue from accounts
+                you already have, and your clients get more value from a partner
+                they already trust.
               </p>
             </div>
 
