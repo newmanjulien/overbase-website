@@ -23,7 +23,7 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 For most businesses, the fastest way to grow revenue isn’t
-                finding new customers. It’s doing more with the ones you already
+                getting new clients. It’s doing more with the ones you already
                 have.
               </p>
 

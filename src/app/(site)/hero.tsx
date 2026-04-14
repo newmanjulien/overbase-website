@@ -10,13 +10,13 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-xs text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Uncap your revenue
+            Grow without new clients
           </h1>
 
-          <h2 className="mt-4 max-w-sm text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Tap the best sales opportunities{" "}
+          <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Find the most valuable opportunities in{" "}
             <span className="bg-[#ffffcc] px-1">
-              from your existing clients
+              the accounts you already have
             </span>
           </h2>
 
