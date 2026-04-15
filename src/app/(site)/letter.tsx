@@ -22,42 +22,40 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                For most businesses, the fastest way to grow revenue isn’t
-                getting new clients. It’s doing more with the ones you already
-                have.
+                For most businesses, the fastest way to grow revenue is not by
+                finding new clients. It’s by selling more to the client you
+                already have.
               </p>
 
               <p>
-                Businesses tend to get good at winning new clients. But a lot of
-                revenue is left on the table inside existing accounts.{" "}
+                You likely already know that current clients are your best
+                growth opportunity.{" "}
                 <a className="font-medium">
-                  Not because the opportunity isn’t there, but because it’s hard
-                  to see and even harder to act on.{" "}
+                  But turning that potential into revenue is harder than it
+                  looks.
                 </a>
               </p>
 
               <p>
-                <a className="font-medium">
-                  As you grow, you offer more services. Your account teams can’t
-                  keep all of it top of mind, and they’re not always equipped to
-                  speak to everything you sell.{" "}
-                </a>
-                At the same time, it gets harder to stay close enough to clients
-                to really understand what they need next.
+                As you grow, it gets harder to stay close enough to each client
+                to understand what they need next. And it gets harder for any
+                one account manager to carry a full understanding of everything
+                your company can do, let alone speak about it confidently with
+                clients.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We look at your accounts and identify where there’s real, unmet
+                We look at your accounts and identify where there’s unmet
                 demand. Not every gap is worth solving. We find the ones that
-                are, estimate what they’re worth, and help you prioritize them.
+                are, estimate what they’re worth, and help prioritize them.
               </p>
 
               <p>
-                Then we work within your existing workflows so your team can act
-                on those opportunities at the right time, with the right
-                context.
+                Then we fit into the way your team already works, helping them
+                act on opportunities with clear context and the right subject
+                matter experts at the table.
               </p>
 
               <p>
