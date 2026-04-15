@@ -23,39 +23,37 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 For most businesses, the fastest way to grow revenue is not by
-                finding new clients. It’s by selling more to the client you
+                getting new clients. It’s by selling more to the clients you
                 already have.
               </p>
 
               <p>
-                You likely already know that current clients are your best
-                growth opportunity.{" "}
+                You likely know that current clients hold the most upside.{" "}
                 <a className="font-medium">
-                  But turning that potential into revenue is harder than it
-                  looks.
+                  But turning that potential into actual revenue is harder than
+                  it looks.
                 </a>
               </p>
 
               <p>
-                As you grow, it gets harder to stay close enough to each client
-                to understand what they need next. And it gets harder for any
-                one account manager to carry a full understanding of everything
-                your company can do, let alone speak about it confidently with
-                clients.
+                The challenge is twofold: surfacing needs that are not always
+                visible within complex client organizations, and ensuring
+                internal teams know your capabilities well enough to bring them
+                forward with confidence.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We look at your accounts and identify where there’s unmet
-                demand. Not every gap is worth solving. We find the ones that
-                are, estimate what they’re worth, and help prioritize them.
+                We analyze your accounts to find unmet demand, put a dollar
+                value on each opportunity, and help you prioritize the ones most
+                likely to drive serious revenue.
               </p>
 
               <p>
-                Then we fit into the way your team already works, helping them
-                act on opportunities with clear context and the right subject
-                matter experts at the table.
+                Then we help your team act on opportunities by equipping them
+                with the right context and bringing the right internal experts
+                into the process at the right time.
               </p>
 
               <p>
