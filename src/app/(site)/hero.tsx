@@ -16,7 +16,7 @@ export function Hero() {
           <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
             Find the most valuable opportunities in{" "}
             <span className="bg-[#ffffcc] px-1">
-              the accounts you already have
+              the clients you already have
             </span>
           </h2>
 
