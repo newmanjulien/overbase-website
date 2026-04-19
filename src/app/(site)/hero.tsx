@@ -9,15 +9,13 @@ export function Hero() {
       <div className="w-full max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12 md:gap-8 lg:gap-12 xl:gap-24 scale-[0.98]">
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
-          <h1 className="max-w-xs text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Grow without new clients
+          <h1 className="max-w-sm text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
+            Sell to current clients
           </h1>
 
           <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Find the most valuable opportunities in{" "}
-            <span className="bg-[#ffffcc] px-1">
-              the clients you already have
-            </span>
+            Tap the best revenue opportunities in{" "}
+            <span className="bg-[#ffffcc] px-1">clients you already have</span>
           </h2>
 
           <div className={newLocal}>
