@@ -11,14 +11,14 @@ interface Opening {
 const OPENING: Opening[] = [
   {
     id: "israel",
-    name: "Data Scientist 1 - Israel",
+    name: "Product Engineer 1 - Israel",
     qualification: "8200 alumni",
     comp: "₪300,000/year + visa sponsorship",
     href: "https://drive.google.com/file/d/1N5K_w-Tk21D2qfeBXZCe-fHQBsYQItqa/view?usp=sharing",
   },
   {
     id: "india",
-    name: "Data Scientist 1 - India",
+    name: "Product Engineer 1 - India",
     qualification: "JEE 1–100 rankers",
     comp: "₹24 LPA + visa sponsorship",
     href: "https://drive.google.com/file/d/11chLFScixDu3RtAG5jKFw6UphwMp4FMF/view?usp=sharing",
