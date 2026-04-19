@@ -14,10 +14,8 @@ export function Hero() {
           </h1>
 
           <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Find the most valuable opportunities in{" "}
-            <span className="bg-[#ffffcc] px-1">
-              the clients you already have
-            </span>
+            Tap the best revenue opportunities in{" "}
+            <span className="bg-[#ffffcc] px-1">clients you already have</span>
           </h2>
 
           <div className={newLocal}>
