@@ -11,8 +11,6 @@ import { MobileDrawer } from "./mobile-drawer";
 import { Button } from "@/components/ui/button";
 import { SITE_QUICK_ACTIONS, type SiteNavItem } from "@/lib/site-nav";
 
-export const MOBILE_NAV_DIALOG_CONTENT_ID = "mobile-navigation-dialog-content";
-
 type MobileHeaderProps = {
   items: SiteNavItem[];
   activeId: string | null;
@@ -36,7 +34,7 @@ export function MobileHeader({
   const [isOpen, setIsOpen] = useState(false);
   const [openedPathname, setOpenedPathname] = useState<string | null>(null);
   const open = isOpen && openedPathname === pathname;
-  const closeMenu = () => {
+  const closeMenuAction = () => {
     setIsOpen(false);
     setOpenedPathname(null);
   };
@@ -83,7 +81,6 @@ export function MobileHeader({
               size="icon"
               className="h-8 w-8 rounded-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900"
               aria-label="Open navigation menu"
-              aria-controls={MOBILE_NAV_DIALOG_CONTENT_ID}
             >
               <Menu className="h-4 w-4" strokeWidth={2.1} />
             </Button>
@@ -92,12 +89,13 @@ export function MobileHeader({
       </div>
 
       <MobileDrawer
+        key={`${pathname}:${open ? "open" : "closed"}`}
         items={items}
         activeId={activeId}
         logoHref={logoHref}
         onLogoClickAction={onLogoClickAction}
         logoImage={logoImage}
-        closeMenu={closeMenu}
+        closeMenuAction={closeMenuAction}
         open={open}
       />
     </Dialog.Root>

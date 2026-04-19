@@ -8,9 +8,9 @@ import type { ChallengePageContent } from "@/content/challenges/types";
 export const CHALLENGE_BASE_PATH = "/challenges";
 
 export const CHALLENGE_NAV_SECTIONS = [
-  { id: "visibility", label: "Gaps are hidden" },
-  { id: "expertise", label: "Expertise is siloed" },
-  { id: "execution", label: "Leadership can't supervise" },
+  { id: "visibility", label: "Whitespace is hidden" },
+  { id: "expertise", label: "Cross-selling doesn't happen" },
+  { id: "execution", label: "Leadership has no visibility" },
 ] as const;
 
 export type ChallengeNavSectionId =

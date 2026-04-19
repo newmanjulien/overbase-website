@@ -10,8 +10,8 @@ export function QuoteSection({ section }: QuoteSectionProps) {
   const avatarLabel = section.avatarAlt ?? section.author;
 
   return (
-    <section className="mx-auto max-w-6xl px-6 pb-32 md:px-24">
-      <div className="relative overflow-hidden rounded-[2rem] border border-gray-200/80 bg-white px-6 py-16 sm:px-10 md:px-16 md:py-20">
+    <section className="mx-auto max-w-5xl pt-18 pb-32 md:pt-22">
+      <div className="relative overflow-hidden rounded-lg border border-gray-200/80 bg-white px-6 py-22 sm:px-10 md:px-16 md:py-30">
         <div
           aria-hidden="true"
           className="absolute inset-x-8 inset-y-0 hidden md:block"

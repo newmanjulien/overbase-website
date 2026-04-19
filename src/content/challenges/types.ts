@@ -31,7 +31,6 @@ export interface ChallengeComparisonSection {
 export type ChallengeWorkflowScreenshotVariant = "board" | "detail";
 
 export interface ChallengeWorkflowStep {
-  eyebrow: string;
   title: string;
   description: string;
   points: string[];
@@ -61,12 +60,9 @@ export interface ChallengeBottomCtaLinks {
   grok?: string;
 }
 
-export type ChallengeBottomCtaSection = Record<string, never>;
-
 export interface ChallengePageContent {
   hero: ChallengePageHero;
   comparison: ChallengeComparisonSection;
   workflowSection: ChallengeWorkflowSection;
   quoteSection: ChallengeQuoteSection;
-  bottomCtaSection: ChallengeBottomCtaSection;
 }

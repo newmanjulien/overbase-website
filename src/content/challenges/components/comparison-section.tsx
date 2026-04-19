@@ -23,10 +23,8 @@ const COMPARISON_CARD_STYLES: Record<
   before: {
     surface:
       "border-[#ece2dc] bg-[linear-gradient(180deg,rgba(255,250,248,0.99)_0%,rgba(255,247,244,0.994)_100%)]",
-    glow:
-      "bg-[linear-gradient(90deg,rgba(228,86,52,0.072)_0%,rgba(239,118,79,0.052)_44%,rgba(255,196,151,0.032)_100%)]",
-    wash:
-      "bg-[radial-gradient(circle_at_top,rgba(255,211,191,0.095),transparent_55%)]",
+    glow: "bg-[linear-gradient(90deg,rgba(228,86,52,0.072)_0%,rgba(239,118,79,0.052)_44%,rgba(255,196,151,0.032)_100%)]",
+    wash: "bg-[radial-gradient(circle_at_top,rgba(255,211,191,0.095),transparent_55%)]",
     badge: "border-[#dfc5bb]/35 bg-white/7 text-[#6d4337]",
     iconWrap: "bg-[#4b3430]",
     icon: "text-[#ffe0d2]",
@@ -34,10 +32,8 @@ const COMPARISON_CARD_STYLES: Record<
   after: {
     surface:
       "border-[#dfe8ef] bg-[linear-gradient(180deg,rgba(249,253,255,0.99)_0%,rgba(245,249,253,0.994)_100%)]",
-    glow:
-      "bg-[linear-gradient(90deg,rgba(44,121,225,0.064)_0%,rgba(62,173,235,0.048)_48%,rgba(128,225,255,0.032)_100%)]",
-    wash:
-      "bg-[radial-gradient(circle_at_top,rgba(197,232,255,0.095),transparent_55%)]",
+    glow: "bg-[linear-gradient(90deg,rgba(44,121,225,0.064)_0%,rgba(62,173,235,0.048)_48%,rgba(128,225,255,0.032)_100%)]",
+    wash: "bg-[radial-gradient(circle_at_top,rgba(197,232,255,0.095),transparent_55%)]",
     badge: "border-[#bccfe0]/33 bg-white/7 text-[#25455f]",
     iconWrap: "bg-[#334657]",
     icon: "text-[#def4ff]",
@@ -103,7 +99,9 @@ function ComparisonCard({
           styles.glow,
         )}
       />
-      <div className={cn("pointer-events-none absolute inset-0", styles.wash)} />
+      <div
+        className={cn("pointer-events-none absolute inset-0", styles.wash)}
+      />
       <div className="pointer-events-none absolute inset-px rounded-[inherit] bg-white/7" />
 
       <div className="relative">
@@ -128,7 +126,9 @@ function ComparisonCard({
                 iconClassName="size-2.5"
               />
               <div className="space-y-0">
-                <p className="text-md leading-tight font-medium">{item.title}</p>
+                <p className="text-md leading-tight font-medium">
+                  {item.title}
+                </p>
                 <p className="text-sm leading-snug text-gray-800/90">
                   {item.description}
                 </p>
@@ -162,10 +162,7 @@ function StatusIcon({
       )}
     >
       <Icon
-        className={cn(
-          iconClassName ?? "size-3.5",
-          styles.icon,
-        )}
+        className={cn(iconClassName ?? "size-3.5", styles.icon)}
         strokeWidth={3}
       />
     </span>
