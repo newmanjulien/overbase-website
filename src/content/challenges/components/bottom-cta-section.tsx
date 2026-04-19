@@ -4,11 +4,10 @@ import type {
   ChallengeBottomCtaLinks,
   ChallengeCtaPlatformName,
 } from "@/content/challenges/types";
-import { getChallengeProblemLabel } from "@/lib/site-nav";
 import { cn } from "@/lib/utils";
 
 interface BottomCtaSectionProps {
-  slug: string;
+  problemLabel?: string;
 }
 
 const CTA_PLATFORMS: ReadonlyArray<{
@@ -26,8 +25,8 @@ const CTA_PLATFORM_URLS: Record<ChallengeCtaPlatformName, string> = {
   grok: "https://grok.com/?q=",
 };
 
-export function BottomCtaSection({ slug }: BottomCtaSectionProps) {
-  const links = buildChallengeCtaLinks(slug);
+export function BottomCtaSection({ problemLabel }: BottomCtaSectionProps) {
+  const links = buildChallengeCtaLinks(problemLabel);
 
   return (
     <section className="mx-auto hidden max-w-6xl px-12 pt-2 pb-16 md:block lg:px-24">
@@ -51,9 +50,7 @@ export function BottomCtaSection({ slug }: BottomCtaSectionProps) {
   );
 }
 
-function buildChallengeCtaLinks(slug: string): ChallengeBottomCtaLinks {
-  const problemLabel = getChallengeProblemLabel(slug);
-
+function buildChallengeCtaLinks(problemLabel?: string): ChallengeBottomCtaLinks {
   if (!problemLabel) {
     return {};
   }

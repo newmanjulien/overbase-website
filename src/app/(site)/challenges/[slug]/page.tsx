@@ -5,21 +5,16 @@ import { ChallengeLayout } from "@/content/challenges/components/challenge-layou
 import { ComparisonSection } from "@/content/challenges/components/comparison-section";
 import { QuoteSection } from "@/content/challenges/components/quote-section";
 import { ScrollCardsSection } from "@/content/challenges/components/scroll-cards-section";
-import { DEFAULT_CHALLENGE_QUOTE_SECTION } from "@/content/challenges/defaults";
 import {
   getChallengeEntry,
-  getChallengeSlugs,
+  getChallengeStaticParams,
 } from "@/content/challenges/registry";
-import {
-  getRequiredEntry,
-  getStaticSlugParams,
-  type SlugRouteProps,
-} from "@/content/core";
+import { getRequiredEntry, type SlugRouteProps } from "@/content/core";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getStaticSlugParams(getChallengeSlugs);
+  return getChallengeStaticParams();
 }
 
 export async function generateMetadata({
@@ -36,9 +31,9 @@ export default async function ChallengePage({ params }: SlugRouteProps) {
   return (
     <ChallengeLayout hero={challenge.content.hero}>
       <ComparisonSection section={challenge.content.comparison} />
-      <ScrollCardsSection section={challenge.content.cardsSection} />
-      <QuoteSection section={DEFAULT_CHALLENGE_QUOTE_SECTION} />
-      <BottomCtaSection slug={challenge.slug} />
+      <ScrollCardsSection section={challenge.content.workflowSection} />
+      <QuoteSection section={challenge.content.quoteSection} />
+      <BottomCtaSection problemLabel={challenge.navLabel} />
     </ChallengeLayout>
   );
 }

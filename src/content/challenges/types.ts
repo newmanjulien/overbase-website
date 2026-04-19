@@ -28,16 +28,20 @@ export interface ChallengeComparisonSection {
   after: ChallengeComparisonCard;
 }
 
-export interface ChallengeScrollCard {
-  label: string;
-  title: string;
-  subtitle: string;
-}
+export type ChallengeWorkflowScreenshotVariant = "board" | "detail";
 
-export interface ChallengeCardsSection {
+export interface ChallengeWorkflowStep {
+  eyebrow: string;
   title: string;
   description: string;
-  cards: ChallengeScrollCard[];
+  points: string[];
+  screenshotSrc: string;
+  screenshotAlt: string;
+  screenshotVariant: ChallengeWorkflowScreenshotVariant;
+}
+
+export interface ChallengeWorkflowSection {
+  steps: ChallengeWorkflowStep[];
 }
 
 export interface ChallengeQuoteSection {
@@ -62,6 +66,7 @@ export type ChallengeBottomCtaSection = Record<string, never>;
 export interface ChallengePageContent {
   hero: ChallengePageHero;
   comparison: ChallengeComparisonSection;
-  cardsSection: ChallengeCardsSection;
+  workflowSection: ChallengeWorkflowSection;
+  quoteSection: ChallengeQuoteSection;
   bottomCtaSection: ChallengeBottomCtaSection;
 }

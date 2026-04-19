@@ -1,0 +1,101 @@
+export const metadata = {
+  description:
+    "Show teams which parts of your offering are relevant in each account so they do not keep selling only the same few things.",
+};
+
+export const challenge = {
+  hero: {
+    title: (
+      <>
+        Propose the right <span className="italic">offerings</span>
+      </>
+    ),
+  },
+  comparison: {
+    before: {
+      eyebrow: "Before",
+      title: "Teams only bring forward offerings they already know",
+      items: [
+        {
+          title: "Teams default to what is familiar",
+          description:
+            "Account teams usually sell the same products or services because those are the ones they understand well enough to discuss without help.",
+        },
+        {
+          title: "Teams aren't comfortable with the best offerings",
+          description:
+            "Other relevant offerings sit in separate product lines, service teams, or specialist groups and never make it into the account conversation.",
+        },
+        {
+          title: "Clients do not hear about good fits",
+          description:
+            "A client may be a strong fit for more of what you offer, but the account team does not know to bring it forward.",
+        },
+      ],
+    },
+    after: {
+      eyebrow: "After",
+      title: "Teams have the confidence to propose the best offerings",
+      items: [
+        {
+          title: "The best offering is surfaced for each client",
+          description:
+            "Overbase shows which products or services fit the client based on the needs already visible in that account.",
+        },
+        {
+          title: "It's easy to learn about any offering",
+          description:
+            "Capabilities that were previously buried in other teams become visible to the people managing the relationship.",
+        },
+        {
+          title: "And your experts are easily available",
+          description:
+            "The team can bring forward a broader set of relevant offerings instead of staying inside a narrow slice of the business.",
+        },
+      ],
+    },
+  },
+  workflowSection: {
+    steps: [
+      {
+        eyebrow: "01",
+        title: "See the accounts that need attention first",
+        description:
+          "Overbase brings the most important account signals into one view so the team can spot momentum, whitespace, and risk before the opportunity gets buried.",
+        points: [
+          "Account-level visibility",
+          "Prioritized opportunities",
+          "Relationship signals",
+          "Early warning on risk",
+        ],
+        screenshotSrc: "/blog/poster.png",
+        screenshotAlt: "Placeholder screenshot showing an account overview board.",
+        screenshotVariant: "board",
+      },
+      {
+        eyebrow: "02",
+        title: "Open the account and understand what is going on",
+        description:
+          "From there, the team can review the context behind the signal, see what changed, and decide what to do next without stitching the story together manually.",
+        points: [
+          "Recommended next step",
+          "Key people involved",
+          "Commercial context",
+          "Supporting evidence",
+        ],
+        screenshotSrc: "/blog/google.jpg",
+        screenshotAlt: "Placeholder screenshot showing an account detail view.",
+        screenshotVariant: "detail",
+      },
+    ],
+  },
+  quoteSection: {
+    quote:
+      "With Overbase, my team can build executive-ready account views in minutes. We can see real momentum, understand who is actually involved, and act before strong opportunities slip away. It gives the team a real advantage.",
+    author: "Ken Edwards",
+    authorTitle: "VP Sales, Rewind",
+    avatarInitials: "KE",
+    avatarSrc: "/julien.png",
+  },
+  bottomCtaSection: {},
+};

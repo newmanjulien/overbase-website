@@ -1,138 +1,98 @@
-"use client";
-
-import { ArrowLeft, ArrowRight } from "lucide-react";
-import { useRef } from "react";
+import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import type { ChallengeCardsSection } from "@/content/challenges/types";
+import type { ChallengeWorkflowSection } from "@/content/challenges/types";
 
 interface ScrollCardsSectionProps {
-  section: ChallengeCardsSection;
+  section: ChallengeWorkflowSection;
 }
 
-const SCROLL_CARD_STYLES = [
-  {
-    surface:
-      "border-[#eee6c5] bg-[linear-gradient(180deg,rgba(255,252,246,0.99)_0%,rgba(255,249,236,0.994)_100%)]",
-    glow:
-      "bg-[linear-gradient(90deg,rgba(238,196,74,0.058)_0%,rgba(248,214,118,0.042)_52%,rgba(255,239,186,0.026)_100%)]",
-    wash:
-      "bg-[radial-gradient(circle_at_top,rgba(255,235,170,0.075),transparent_55%)]",
-    badge: "border-[#e1cf8b]/33 bg-white/7 text-[#685724]",
-  },
-  {
-    surface:
-      "border-[#ede3b9] bg-[linear-gradient(180deg,rgba(255,252,243,0.99)_0%,rgba(255,248,230,0.994)_100%)]",
-    glow:
-      "bg-[linear-gradient(90deg,rgba(226,186,64,0.054)_0%,rgba(244,208,103,0.04)_50%,rgba(255,237,176,0.025)_100%)]",
-    wash:
-      "bg-[radial-gradient(circle_at_top,rgba(255,231,153,0.072),transparent_55%)]",
-    badge: "border-[#dbc97d]/33 bg-white/7 text-[#65521d]",
-  },
-  {
-    surface:
-      "border-[#eee7ca] bg-[linear-gradient(180deg,rgba(255,252,246,0.99)_0%,rgba(255,250,238,0.994)_100%)]",
-    glow:
-      "bg-[linear-gradient(90deg,rgba(245,206,92,0.054)_0%,rgba(250,221,136,0.04)_50%,rgba(255,242,198,0.025)_100%)]",
-    wash:
-      "bg-[radial-gradient(circle_at_top,rgba(255,238,181,0.072),transparent_55%)]",
-    badge: "border-[#dfcf90]/33 bg-white/7 text-[#6a5928]",
-  },
-] as const;
-
 export function ScrollCardsSection({ section }: ScrollCardsSectionProps) {
-  const railRef = useRef<HTMLDivElement | null>(null);
+  return (
+    <section className="mx-auto max-w-[78rem] px-6 pt-18 pb-22 md:px-12 md:pt-22 md:pb-26 lg:px-24">
+      <div className="space-y-18 md:space-y-26">
+        {section.steps.map((step, index) => (
+          <article
+            key={step.title}
+            className={cn(
+              "grid gap-10 md:grid-cols-[minmax(0,0.82fr)_minmax(0,1.18fr)] md:items-start md:gap-14",
+              index > 0 && "border-t border-gray-200/80 pt-18 md:pt-24",
+            )}
+          >
+            <div className="max-w-sm">
+              <p className="text-[11px] font-medium tracking-[0.18em] text-gray-400">
+                {step.eyebrow}
+              </p>
+              <h2 className="mt-3 text-3xl leading-tight tracking-tight text-gray-900 md:text-[2.15rem]">
+                {step.title}
+              </h2>
+              <p className="mt-4 text-[15px] leading-7 text-gray-600">
+                {step.description}
+              </p>
 
-  const handleScroll = (direction: "left" | "right") => {
-    const rail = railRef.current;
-    if (!rail) return;
+              <div className="mt-16 grid grid-cols-2 gap-x-10 gap-y-3 border-t border-gray-200/80 pt-6 text-[12px] leading-5 text-gray-500">
+                {step.points.map((point) => (
+                  <p key={point}>{point}</p>
+                ))}
+              </div>
+            </div>
 
-    const amount = rail.clientWidth * 0.82;
-    rail.scrollBy({
-      left: direction === "left" ? -amount : amount,
-      behavior: "smooth",
-    });
-  };
+            <ScreenshotFrame step={step} />
+          </article>
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function ScreenshotFrame({
+  step,
+}: {
+  step: ChallengeWorkflowSection["steps"][number];
+}) {
+  const isDetail = step.screenshotVariant === "detail";
 
   return (
-    <section className="mx-auto max-w-[74rem] px-6 pt-16 pb-22 md:px-12 md:pb-26 lg:px-24">
-      <div className="flex items-end justify-between gap-6">
-        <div className="max-w-3xl">
-          <h2 className="text-4xl leading-none tracking-tight text-gray-900 md:text-4xl">
-            {section.title}
-          </h2>
-          <p className="mt-4 max-w-2xl text-md leading-snug text-gray-700">
-            {section.description}
-          </p>
-        </div>
-
-        <div className="hidden items-center gap-2 md:flex">
-          <button
-            type="button"
-            onClick={() => handleScroll("left")}
-            className="inline-flex size-10 items-center justify-center rounded-full border border-gray-300 text-gray-900 transition-colors hover:bg-gray-50"
-            aria-label="Scroll cards left"
-          >
-            <ArrowLeft className="size-5" strokeWidth={1.8} />
-          </button>
-          <button
-            type="button"
-            onClick={() => handleScroll("right")}
-            className="inline-flex size-10 items-center justify-center rounded-full border border-gray-300 text-gray-900 transition-colors hover:bg-gray-50"
-            aria-label="Scroll cards right"
-          >
-            <ArrowRight className="size-5" strokeWidth={1.8} />
-          </button>
-        </div>
+    <div
+      className={cn(
+        "relative overflow-hidden rounded-[1.9rem] border border-gray-200/80 bg-[linear-gradient(180deg,#ffffff_0%,#f7f8fb_100%)] p-4 shadow-[0_30px_90px_-55px_rgba(15,23,42,0.35)]",
+        isDetail ? "md:mt-4" : "",
+      )}
+    >
+      <div className="mb-3 flex items-center gap-2 px-2">
+        <span className="size-2.5 rounded-full bg-gray-200" />
+        <span className="size-2.5 rounded-full bg-gray-200" />
+        <span className="size-2.5 rounded-full bg-gray-200" />
+        <div className="ml-3 h-7 w-40 rounded-full border border-gray-200/80 bg-white/90" />
       </div>
 
       <div
-        ref={railRef}
-        className="no-scrollbar mt-10 flex snap-x snap-mandatory gap-3 overflow-x-auto pb-2 md:gap-4"
+        className={cn(
+          "relative overflow-hidden rounded-[1.35rem] border border-gray-200/80 bg-white",
+          isDetail ? "aspect-[16/10]" : "aspect-[16/9]",
+        )}
       >
-        {section.cards.map((card, index) => {
-          const styles = SCROLL_CARD_STYLES[index % SCROLL_CARD_STYLES.length];
+        <div className="absolute inset-y-0 left-0 z-10 w-10 border-r border-gray-200/70 bg-gray-50/90" />
+        <div className="absolute left-3 top-4 z-20 space-y-2">
+          <div className="size-4 rounded-md bg-gray-200/90" />
+          <div className="size-4 rounded-md bg-gray-200/80" />
+          <div className="size-4 rounded-md bg-gray-200/70" />
+          <div className="size-4 rounded-md bg-gray-200/60" />
+        </div>
 
-          return (
-            <article
-              key={card.title}
-              className={cn(
-                "relative isolate flex h-80 w-72 shrink-0 snap-start flex-col justify-between overflow-hidden rounded-xl border p-6 md:h-90 md:w-80",
-                styles.surface,
-              )}
-            >
-              <div
-                className={cn(
-                  "pointer-events-none absolute top-0 left-1/2 h-38 w-[113%] -translate-x-1/2 -translate-y-[41%] rounded-full blur-[78px]",
-                  styles.glow,
-                )}
-              />
-              <div
-                className={cn("pointer-events-none absolute inset-0", styles.wash)}
-              />
-              <div className="pointer-events-none absolute inset-px rounded-[inherit] bg-white/7" />
+        <Image
+          src={step.screenshotSrc}
+          alt={step.screenshotAlt}
+          fill
+          className={cn(
+            "object-cover object-top pl-10",
+            isDetail ? "scale-[1.02]" : "scale-[1.01]",
+          )}
+          sizes="(min-width: 1024px) 56rem, 100vw"
+        />
 
-              <div className="relative">
-                <div
-                  className={cn(
-                    "inline-flex rounded-full border px-3 py-1 text-sm leading-none",
-                    styles.badge,
-                  )}
-                >
-                  {card.label}
-                </div>
-                <h3 className="mt-4 text-2xl leading-none tracking-tight text-gray-900">
-                  {card.title}
-                </h3>
-              </div>
-
-              <p className="relative max-w-xs text-md leading-snug text-gray-900/88">
-                {card.subtitle}
-              </p>
-            </article>
-          );
-        })}
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.18)_100%)]" />
       </div>
-    </section>
+    </div>
   );
 }

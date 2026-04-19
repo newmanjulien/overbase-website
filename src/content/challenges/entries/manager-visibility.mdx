@@ -1,0 +1,101 @@
+export const metadata = {
+  description:
+    "Give managers a clear view of where expansion is active, missing, or stuck so they can coach teams and step in before opportunities drift.",
+};
+
+export const challenge = {
+  hero: {
+    title: (
+      <>
+        Make expansion visible to <span className="italic">managers</span>
+      </>
+    ),
+  },
+  comparison: {
+    before: {
+      eyebrow: "Before",
+      title: "Managers cannot really supervise expansion",
+      items: [
+        {
+          title: "Expansion work is scattered across systems and side conversations",
+          description:
+            "A manager may know there is upside in the book, but it is hard to see which accounts have a real expansion motion, which ones are stalled, and which ones have no motion at all.",
+        },
+        {
+          title: "Good opportunities stay invisible until they become urgent",
+          description:
+            "By the time a team asks for help, the opportunity is often already tied to a renewal, a budget deadline, or a late-stage ask that leaves little room to shape the account well.",
+        },
+        {
+          title: "Coaching stays generic instead of account-specific",
+          description:
+            "Without a clear view into the account, managers cannot tell where the team needs better context, a specialist, or a push to move the opportunity forward.",
+        },
+      ],
+    },
+    after: {
+      eyebrow: "After",
+      title: "Managers can see where to intervene and what to do next",
+      items: [
+        {
+          title: "The best expansion opportunities are visible",
+          description:
+            "Overbase shows which accounts have meaningful unmet demand, which offering fits, and where the commercial upside is worth attention.",
+        },
+        {
+          title: "Missing or stalled motion is easy to spot",
+          description:
+            "Managers can quickly see where a team has not started the right conversation yet, or where an opportunity exists but is losing momentum.",
+        },
+        {
+          title: "Coaching becomes specific and useful",
+          description:
+            "With the account context in front of them, managers can direct next steps, involve the right internal experts, and supervise expansion with much more precision.",
+        },
+      ],
+    },
+  },
+  workflowSection: {
+    steps: [
+      {
+        eyebrow: "01",
+        title: "See the accounts that need attention first",
+        description:
+          "Overbase brings the most important account signals into one view so the team can spot momentum, whitespace, and risk before the opportunity gets buried.",
+        points: [
+          "Account-level visibility",
+          "Prioritized opportunities",
+          "Relationship signals",
+          "Early warning on risk",
+        ],
+        screenshotSrc: "/blog/poster.png",
+        screenshotAlt: "Placeholder screenshot showing an account overview board.",
+        screenshotVariant: "board",
+      },
+      {
+        eyebrow: "02",
+        title: "Open the account and understand what is going on",
+        description:
+          "From there, the team can review the context behind the signal, see what changed, and decide what to do next without stitching the story together manually.",
+        points: [
+          "Recommended next step",
+          "Key people involved",
+          "Commercial context",
+          "Supporting evidence",
+        ],
+        screenshotSrc: "/blog/google.jpg",
+        screenshotAlt: "Placeholder screenshot showing an account detail view.",
+        screenshotVariant: "detail",
+      },
+    ],
+  },
+  quoteSection: {
+    quote:
+      "With Overbase, my team can build executive-ready account views in minutes. We can see real momentum, understand who is actually involved, and act before strong opportunities slip away. It gives the team a real advantage.",
+    author: "Ken Edwards",
+    authorTitle: "VP Sales, Rewind",
+    avatarInitials: "KE",
+    avatarSrc: "/julien.png",
+  },
+  bottomCtaSection: {},
+};

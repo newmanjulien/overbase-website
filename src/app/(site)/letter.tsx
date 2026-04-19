@@ -23,23 +23,20 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 For most businesses, the fastest way to grow revenue is not by
-                getting new clients. It’s by selling more to the clients you
-                already have.
+                getting new clients. It’s by selling more to your current
+                clients.
               </p>
 
               <p>
-                You likely know that current clients hold the most upside.{" "}
-                <a className="font-medium">
-                  But turning that potential into actual revenue is harder than
-                  it looks.
-                </a>
+                But turning that potential into actual revenue is harder than it
+                looks.
               </p>
 
               <p>
-                The challenge is twofold: surfacing needs that are not always
-                visible within complex client organizations, and ensuring
-                internal teams know your capabilities well enough to bring them
-                forward with confidence.
+                It’s hard to surface invisible needs in large, complex clients.
+                And it’s hard for internal teams to bring forward your
+                capabilities confidently when expertise is spread across people
+                and functions.
               </p>
 
               <p>That’s where Overbase comes in.</p>
