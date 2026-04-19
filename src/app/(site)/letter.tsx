@@ -23,18 +23,16 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 For most businesses, the fastest way to grow revenue is not by
-                getting new clients. It’s by selling more to your current
-                clients.
+                getting new clients. It’s by selling more to current clients.
               </p>
 
               <p>
-                But turning that potential into actual revenue is harder than it
-                looks.
+                But turning that potential into revenue is harder than it looks.
               </p>
 
               <p>
                 It’s hard to surface invisible needs in large, complex clients.
-                And it’s hard for internal teams to bring forward your
+                And it’s hard for internal teams to bring forward all your
                 capabilities confidently when expertise is spread across people
                 and functions.
               </p>
