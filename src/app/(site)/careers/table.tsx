@@ -11,24 +11,17 @@ interface Opening {
 const OPENING: Opening[] = [
   {
     id: "israel",
-    name: "Data Scientist 1 - Tel Aviv",
+    name: "Data Scientist 1 - Israel",
     qualification: "8200 alumni",
     comp: "₪300,000/year + visa sponsorship",
-    href: "https://drive.google.com/file/d/1kKJznxg52URF44hNzlsu0YXxRFwYMIyo/view",
+    href: "https://drive.google.com/file/d/1N5K_w-Tk21D2qfeBXZCe-fHQBsYQItqa/view?usp=sharing",
   },
   {
-    id: "delhi",
-    name: "Data Scientist 1 - Delhi",
+    id: "india",
+    name: "Data Scientist 1 - India",
     qualification: "JEE 1–100 rankers",
     comp: "₹24 LPA + visa sponsorship",
-    href: "https://drive.google.com/file/d/1r5VA47s88AcbrOfl6j1taoqCmJ4Bs1TQ/view",
-  },
-  {
-    id: "mumbai",
-    name: "Data Scientist 1 - Mumbai",
-    qualification: "JEE 1–100 rankers",
-    comp: "₹24 LPA + visa sponsorship",
-    href: "https://drive.google.com/file/d/1FKm3lnOQ2fTwzpn6CubMZsERTOOI4O67/view",
+    href: "https://drive.google.com/file/d/11chLFScixDu3RtAG5jKFw6UphwMp4FMF/view?usp=sharing",
   },
 ];
 
