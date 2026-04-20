@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { HeaderLogo } from "./header-logo";
 import { HotkeyButton } from "./hotkey-button";
-import { MobileDrawer } from "./mobile-drawer";
+import { MOBILE_NAV_DIALOG_ID, MobileDrawer } from "./mobile-drawer";
 import { Button } from "@/components/ui/button";
 import { SITE_QUICK_ACTIONS, type SiteNavItem } from "@/lib/site-nav";
 
@@ -81,6 +81,7 @@ export function MobileHeader({
               size="icon"
               className="h-8 w-8 rounded-sm text-gray-600 hover:bg-gray-100 hover:text-gray-900"
               aria-label="Open navigation menu"
+              aria-controls={MOBILE_NAV_DIALOG_ID}
             >
               <Menu className="h-4 w-4" strokeWidth={2.1} />
             </Button>

@@ -26,6 +26,8 @@ type MobileDrawerProps = {
   open: boolean;
 };
 
+export const MOBILE_NAV_DIALOG_ID = "site-mobile-navigation-dialog";
+
 const mobileNavRowClass =
   "flex min-h-14 w-full items-center justify-between gap-4 py-3 text-left text-[15px] font-medium tracking-[-0.01em] text-gray-900 transition-colors hover:text-gray-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gray-300 focus-visible:ring-offset-2";
 
@@ -68,6 +70,7 @@ export function MobileDrawer({
     <Dialog.Portal>
       <Dialog.Overlay className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/35 duration-200" />
       <Dialog.Content
+        id={MOBILE_NAV_DIALOG_ID}
         aria-describedby={undefined}
         className="data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-[60] flex flex-col bg-white duration-200 focus-visible:outline-none"
       >

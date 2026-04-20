@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import type { ChallengeQuoteSection } from "@/content/challenges/types";
+import { QuoteReveal } from "@/content/challenges/components/quote-reveal.client";
 
 interface QuoteSectionProps {
   section: ChallengeQuoteSection;
@@ -11,16 +12,8 @@ export function QuoteSection({ section }: QuoteSectionProps) {
 
   return (
     <section className="mx-auto max-w-5xl pt-18 pb-32 md:pt-22">
-      <div className="relative overflow-hidden rounded-lg border border-gray-200/80 bg-white px-6 py-22 sm:px-10 md:px-16 md:py-30">
-        <div
-          aria-hidden="true"
-          className="absolute inset-x-8 inset-y-0 hidden md:block"
-        >
-          <div className="absolute left-0 top-0 h-1/2 w-[28%] rounded-br-[8rem] border-b border-r border-gray-200/60" />
-          <div className="absolute bottom-0 left-0 h-1/2 w-[28%] rounded-tr-[8rem] border-r border-t border-gray-200/60" />
-          <div className="absolute right-0 top-0 h-1/2 w-[28%] rounded-bl-[8rem] border-b border-l border-gray-200/60" />
-          <div className="absolute bottom-0 right-0 h-1/2 w-[28%] rounded-tl-[8rem] border-l border-t border-gray-200/60" />
-        </div>
+      <div className="relative overflow-hidden rounded-lg border border-gray-200/80 bg-white px-6 py-27 sm:px-10 md:px-16 md:py-33">
+        <QuoteBackdropPattern />
 
         <div
           aria-hidden="true"
@@ -36,11 +29,7 @@ export function QuoteSection({ section }: QuoteSectionProps) {
         />
 
         <div className="relative mx-auto flex max-w-4xl flex-col items-center text-center">
-          <blockquote className="max-w-xl text-balance text-[1.4rem] leading-[1.2] tracking-[-0.03em] text-gray-950">
-            <span aria-hidden="true">“</span>
-            {section.quote}
-            <span aria-hidden="true">”</span>
-          </blockquote>
+          <QuoteReveal quote={section.quote} />
 
           <div className="mt-10 inline-flex items-center gap-4 text-left">
             <div className="relative">
@@ -63,6 +52,38 @@ export function QuoteSection({ section }: QuoteSectionProps) {
         </div>
       </div>
     </section>
+  );
+}
+
+function QuoteBackdropPattern() {
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none absolute inset-0 hidden md:block"
+    >
+      <svg
+        viewBox="0 0 1200 520"
+        preserveAspectRatio="none"
+        className="absolute inset-0 size-full"
+      >
+        <g
+          fill="none"
+          stroke="rgb(209 213 219)"
+          strokeWidth="1"
+          opacity="0.34"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        >
+          <path d="M154 0Q316 114 316 154V366Q316 406 154 520" />
+          <path d="M8 156L128 260L8 364" />
+          <path d="M1046 0Q884 114 884 154V366Q884 406 1046 520" />
+          <path d="M1192 156L1072 260L1192 364" />
+          <rect x="440" y="0" width="320" height="520" rx="84" />
+        </g>
+      </svg>
+      <div className="absolute inset-x-24 top-0 h-28 bg-gradient-to-b from-white via-white/92 to-transparent" />
+      <div className="absolute inset-x-20 bottom-0 h-36 bg-gradient-to-t from-white/92 via-white/60 to-transparent" />
+    </div>
   );
 }
 

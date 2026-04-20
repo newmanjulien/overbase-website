@@ -40,9 +40,9 @@ export function Letter() {
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We analyze your accounts to find unmet demand, put a dollar
-                value on each opportunity, and help you prioritize the ones most
-                likely to drive serious revenue.
+                We analyze your current clients to find unmet demand, put a
+                dollar value on each opportunity, and help you prioritize the
+                ones most likely to drive serious revenue.
               </p>
 
               <p>
@@ -52,9 +52,9 @@ export function Letter() {
               </p>
 
               <p>
-                The result is straightforward. You grow revenue from accounts
-                you already have, and your clients get more value from a partner
-                they already trust.
+                You'll turn advanced whitespace analysis into a prioritized
+                revenue map. Your team will cross-sell and upsell with
+                confidence.
               </p>
             </div>
 

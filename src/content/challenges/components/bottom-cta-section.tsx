@@ -50,12 +50,14 @@ export function BottomCtaSection({ problemLabel }: BottomCtaSectionProps) {
   );
 }
 
-function buildChallengeCtaLinks(problemLabel?: string): ChallengeBottomCtaLinks {
+function buildChallengeCtaLinks(
+  problemLabel?: string,
+): ChallengeBottomCtaLinks {
   if (!problemLabel) {
     return {};
   }
 
-  const prompt = `Overbase lets me grow without new clients. How can it help when ${lowerFirst(problemLabel)}?`;
+  const prompt = `Overbase lets me sell to the clients I already have. How can it help when ${lowerFirst(problemLabel)}?`;
 
   return {
     openai: buildPlatformHref("openai", prompt),
