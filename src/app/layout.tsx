@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { inter } from "./fonts";
 import "./globals.css";
 
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
-});
-
 export const metadata: Metadata = {
-  title: "Overbase › Grow without new clients",
+  title: "Overbase › Sell to current clients",
   description:
-    "Overbase lets you find the most valuable opportunities in the accounts you already have",
+    "Overbase lets you tap the best revenue opportunities in clients you already have",
   icons: {
     icon: "/favicon.ico",
   },

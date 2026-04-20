@@ -3,18 +3,14 @@ import type { Metadata } from "next";
 import { PostLayout } from "@/content/blog/components/post-layout";
 import {
   getBlogEntry,
-  getBlogSlugs,
+  getBlogStaticParams,
 } from "@/content/blog/registry";
-import {
-  getRequiredEntry,
-  getStaticSlugParams,
-  type SlugRouteProps,
-} from "@/content/core";
+import { getRequiredEntry, type SlugRouteProps } from "@/content/core";
 
 export const dynamicParams = false;
 
 export function generateStaticParams() {
-  return getStaticSlugParams(getBlogSlugs);
+  return getBlogStaticParams();
 }
 
 export async function generateMetadata({
