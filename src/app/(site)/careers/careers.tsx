@@ -1,7 +1,4 @@
 import Hero from "@/components/hero";
-import Link from "next/link";
-
-import { getBlogHref } from "@/content/blog/registry";
 
 export default function Careers() {
   return (
