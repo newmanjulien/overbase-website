@@ -28,14 +28,22 @@ export default function FounderSection() {
             </p>
 
             <p>
-              He teaches at Princeton University and has focused his career on
-              building sales tech
-            </p>
-
-            <p>
               His startups have been backed by the best investors including
               Village Global, the VC chaired by Reid Hoffman. He also co-hosted
               the Blitzscaling Podcast, which is based on Reid's book
+            </p>
+
+            <p>
+              He teaches at Princeton University and has focused his career on
+              building sales tech. Check out:{" "}
+              <a
+                href="https://juliennewman.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
+              >
+                juliennewman.com
+              </a>
             </p>
           </div>
         </div>
