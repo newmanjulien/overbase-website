@@ -20,7 +20,7 @@ const OPENING: Opening[] = [
     id: "india",
     name: "Product Engineer 1 - India",
     qualification: "JEE 1–100",
-    comp: "₹75 LPA + we sponsor you for a visa",
+    comp: "₹65 LPA + we sponsor you for a visa",
     href: "https://drive.google.com/file/d/11chLFScixDu3RtAG5jKFw6UphwMp4FMF/view?usp=sharing",
   },
 ];
