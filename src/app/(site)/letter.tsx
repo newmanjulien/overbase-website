@@ -22,35 +22,34 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                For most businesses, the fastest revenue growth doesn’t come
-                from new clients. It comes from expanding existing ones.
+                For your businesses, the fastest growth doesn’t come from new
+                clients. It comes from expanding current clients.
               </p>
 
-              <p>But turning that potential into revenue is difficult.</p>
+              <p>But turning that potential into revenue is hard.</p>
 
               <p>
                 In large, complex clients, invisible needs are hard to surface.
                 Client data is difficult to access. Internal data sits across
-                disconnected systems that don’t naturally work together.
+                disconnected systems or isn't captured at all.
               </p>
 
               <p>
                 How you bring forward new capabilities depends on how your team
-                works and how your clients buy. Most software doesn’t match
-                those realities. Manual processes don’t scale beyond a point.
+                works and how your clients buy. Most software doesn’t match and
+                manual processes don’t scale.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We analyze your current clients using advanced methods to
-                identify unmet demand. Then we build custom interfaces that let
-                your team act on those opportunities within their existing
-                workflows.
+                We analyze your current clients with modern methods to identify
+                unmet demand. Then we build custom interfaces that let your team
+                act on opportunities within their existing workflows.
               </p>
 
               <p>
-                You turn advanced data analysis into actionable revenue
+                You'll turn modern data analysis into actionable revenue
                 opportunities, so your team can cross-sell and upsell with
                 confidence.
               </p>
