@@ -22,38 +22,36 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                For most businesses, the fastest way to grow revenue is not by
-                getting new clients. It’s by selling more to current clients.
+                For most businesses, the fastest revenue growth doesn’t come
+                from new clients. It comes from expanding existing ones.
+              </p>
+
+              <p>But turning that potential into revenue is difficult.</p>
+
+              <p>
+                In large, complex clients, invisible needs are hard to surface.
+                Client data is difficult to access. Internal data sits across
+                disconnected systems that don’t naturally work together.
               </p>
 
               <p>
-                But turning that potential into revenue is harder than it looks.
-              </p>
-
-              <p>
-                It’s hard to surface invisible needs in large, complex clients.
-                And it’s hard for internal teams to bring forward all your
-                capabilities confidently when expertise is spread across people
-                and functions.
+                How you bring forward new capabilities depends on how your team
+                works and how your clients buy. Most software doesn’t match
+                those realities. Manual processes don’t scale beyond a point.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We analyze your current clients to find unmet demand, put a
-                dollar value on each opportunity, and help you prioritize the
-                ones most likely to drive serious revenue.
+                We analyze your current clients using advanced methods to
+                identify unmet demand. Then we build custom interfaces that let
+                your team act on those opportunities within their existing
+                workflows.
               </p>
 
               <p>
-                Then we help your team act on opportunities by equipping them
-                with the right context and bringing the right internal experts
-                into the process at the right time.
-              </p>
-
-              <p>
-                You'll turn advanced whitespace analysis into a prioritized
-                revenue map. Your team will cross-sell and upsell with
+                You turn advanced data analysis into actionable revenue
+                opportunities, so your team can cross-sell and upsell with
                 confidence.
               </p>
             </div>
