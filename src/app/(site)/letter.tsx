@@ -30,22 +30,22 @@ export function Letter() {
 
               <p>
                 In large, complex clients, invisible needs are hard to surface.
-                Client data is difficult to access. Internal data sits across
-                disconnected systems or isn't captured at all.
+                Client data is difficult to access. Your internal data sits
+                across disconnected systems or isn't captured at all.
               </p>
 
               <p>
                 How you bring forward new capabilities depends on how your team
-                works and how your clients buy. Most software doesn’t match and
-                manual processes don’t scale.
+                works and how your clients buy. Most software doesn’t match your
+                realities and manual processes don’t scale.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We analyze your current clients with modern methods to identify
-                unmet demand. Then we build custom interfaces that let your team
-                act on opportunities within their existing workflows.
+                We analyze your clients with modern methods to identify unmet
+                needs. Then we build custom interfaces that let your team act on
+                opportunities within their existing workflows.
               </p>
 
               <p>
