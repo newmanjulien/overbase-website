@@ -42,7 +42,7 @@ export default function Waitlist() {
           Join waitlist
         </h1>
       }
-      description="We'd love to meet if your business doesn't actively use a CRM"
+      description="We love to collaborate with client-centered teams"
       onLogoClick={() => router.push("/")}
       onSubmit={handleSubmit}
       primaryActionText="Submit"
