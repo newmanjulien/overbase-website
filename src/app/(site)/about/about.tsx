@@ -15,18 +15,18 @@ export default function About() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              We partner with customer-centered sales teams
+              We partner with client-centered sales teams
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
               Overbase partners with the sales teams who have the most
-              customer-centered culture
+              client-centered culture
             </p>
 
             <p>
               Sales tech has enabled many meaningful advances. But somewhere
-              along the way, the focus shifted away from customers
+              along the way, the focus shifted away from clients
             </p>
 
             <p>
@@ -35,8 +35,9 @@ export default function About() {
             </p>
 
             <p>
-              Today, we're building the future of sales with the
-              customer-centered teams who already embody the ethos of the future
+              Today, we're building a better way of selling by partnering with
+              the most client-centered teams and helping to spread their best
+              practices
             </p>
           </div>
         </div>

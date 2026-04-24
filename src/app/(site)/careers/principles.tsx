@@ -17,7 +17,7 @@ const PRINCIPLES: Principle[] = [
     description: (
       <>
         A handful of people are smarter and more capable than everyone else
-        combined. We work with those people (
+        combined. Join if you're one of those people (
         <a
           href="https://drive.google.com/file/d/16uhq5ibxdItJj5IIHqH0kSC-FltpcK_K/view"
           target="_blank"
@@ -32,14 +32,14 @@ const PRINCIPLES: Principle[] = [
     pattern: "crosses",
   },
   {
-    id: "exceptional",
-    title: "Exceptional isn't good enough",
+    id: "good",
+    title: "Actually good engineers",
     description: (
       <>
-        We're here to do work that's much better than exceptional. If work is
-        merely exceptional, we start again (
+        Almost no engineers even try to be good at their job. Join if you're
+        actually trying to be good at engineering (
         <a
-          href="https://drive.google.com/file/d/1y0RXd-1DeeTFJ80e_Dcs3sLzu9e3svDV/view"
+          href="https://drive.google.com/file/d/1goXlfE8MOjjiMro_sEC45FNAyUdQJH70/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
@@ -52,13 +52,12 @@ const PRINCIPLES: Principle[] = [
     pattern: "dots",
   },
   {
-    id: "trust",
+    id: "learn",
     title: "Learning with the best",
     description: (
       <>
-        We help each other learn and we hold each other accountable to an
-        exponentiating amount of personal growth that's not possible anywhere
-        else (
+        Learning happens when you're with the best people and they're helping
+        you improve. Join if you're going to help us learn (
         <a
           href="https://drive.google.com/file/d/1BCWhO2YK0UMhWqukDNKN_pzF8xyblVhu/view"
           target="_blank"
