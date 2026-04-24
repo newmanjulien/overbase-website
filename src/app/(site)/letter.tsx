@@ -22,8 +22,8 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                For your businesses, the fastest growth doesn’t come from new
-                clients. It comes from expanding current clients.
+                In professional services, the fastest growth doesn’t come from
+                new clients. It comes from expanding current clients.
               </p>
 
               <p>But turning that potential into revenue is hard.</p>

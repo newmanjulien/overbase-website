@@ -13,8 +13,8 @@ export function Hero() {
             Sell to current clients
           </h1>
 
-          <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Tap the best revenue opportunities in{" "}
+          <h2 className="mt-4 max-w-lg text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Overbase lets professional services firms grow with{" "}
             <span className="bg-[#ffffcc] px-1">clients you already have</span>
           </h2>
 
