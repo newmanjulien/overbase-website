@@ -29,7 +29,7 @@ export function Letter() {
               <p>But turning that potential into revenue is hard.</p>
 
               <p>
-                In large, complex clients, invisible needs are hard to surface.
+                Finding the invisble needs of large, complex clients is hard.
                 Client data is difficult to access. Your internal data sits
                 across disconnected systems or isn't captured at all.
               </p>
@@ -37,21 +37,20 @@ export function Letter() {
               <p>
                 How you bring forward new capabilities depends on how your team
                 works and how your clients buy. Most software doesn’t match your
-                realities and manual processes don’t scale.
+                reality and manual processes don’t scale.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
                 We analyze your clients with modern methods to identify unmet
-                needs. Then we build custom interfaces that let your team act on
-                opportunities within their existing workflows.
+                needs. Then we build custom interfaces that let your team take
+                action within existing workflows.
               </p>
 
               <p>
-                You'll turn modern data analysis into actionable revenue
-                opportunities, so your team can cross-sell and upsell with
-                confidence.
+                You'll find actionable revenue opportunities, then your team
+                will upsell naturally and with confidence.
               </p>
             </div>
 
