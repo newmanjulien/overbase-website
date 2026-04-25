@@ -22,30 +22,32 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                In professional services, the fastest growth doesn’t come from
-                new clients. It comes from expanding current clients.
-              </p>
-
-              <p>But turning that potential into revenue is hard.</p>
+                In professional services, the fastest growth comes from expanding current clients. But turning that potential into revenue is exceptionally hard.</p>
 
               <p>
-                Finding the invisble needs of large, complex clients is hard.
+                Finding the invisible needs of complex clients is hard.
                 Client data is difficult to access. Your internal data sits
-                across disconnected systems or isn't captured at all.
+                across disconnected systems. <a className="font-medium">And your
+                clients' real needs are buried several layers deep.</a>
               </p>
 
               <p>
-                How you bring forward new capabilities depends on how your team
-                works and how your clients buy. Most software doesn’t match your
-                reality and manual processes don’t scale.
+               <a className="font-medium">But asking your team to build new habits is even harder.</a> The revenue opportunity may be known, but it gets missed if it
+                sits outside the way people already work.
               </p>
 
               <p>That’s where Overbase comes in.</p>
 
               <p>
-                We analyze your clients with modern methods to identify unmet
-                needs. Then we build custom interfaces that let your team take
-                action within existing workflows.
+                We find your clients' unmet needs by bringing together external
+                signals that are not yet on your radar with the
+                internal data that's scattered across your systems.
+              </p>
+
+              <p>
+                Then we build custom interfaces that bring those opportunities
+                into the workflows your team already uses, so action happens
+                without new behaviors.
               </p>
 
               <p>
