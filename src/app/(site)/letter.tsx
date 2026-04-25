@@ -22,17 +22,25 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                In professional services, the fastest growth comes from expanding existing clients. But turning that potential into revenue is exceptionally hard.</p>
+                In professional services, the fastest growth comes from
+                expanding existing clients. But turning that potential into
+                revenue is exceptionally hard.
+              </p>
 
               <p>
                 Finding the unseen needs of complex clients is hard.
                 Client data is difficult to access. Your internal data sits
-                across disconnected systems. <a className="font-medium">And your
-                clients' real needs are buried several layers deep.</a>
+                across disconnected systems.{" "}
+                <span className="font-medium">
+                  And your clients' real needs are buried several layers deep.
+                </span>
               </p>
 
               <p>
-               <a className="font-medium">But asking your team to build new habits is even harder.</a> The revenue opportunity may be known, but it gets missed if it
+                <span className="font-medium">
+                  But asking your team to build new habits is even harder.
+                </span>{" "}
+                The revenue opportunity may be known, but it gets missed if it
                 sits outside the way people already work.
               </p>
 
@@ -51,7 +59,7 @@ export function Letter() {
               </p>
 
               <p>
-                You’ll surface
+                You’ll easily surface
     actionable revenue opportunities, then your team will upsell naturally and with confidence.
               </p>
             </div>
