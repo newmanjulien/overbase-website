@@ -28,9 +28,9 @@ export function Letter() {
               </p>
 
               <p>
-                Finding the unseen needs of complex clients is hard.
-                Client data is difficult to access. Your internal data sits
-                across disconnected systems.{" "}
+                Finding the unseen needs of complex clients is hard. Client data
+                is difficult to access. Your internal data sits across
+                disconnected systems.{" "}
                 <span className="font-medium">
                   And your clients' real needs are buried several layers deep.
                 </span>
@@ -48,8 +48,8 @@ export function Letter() {
 
               <p>
                 We find your clients' unmet needs by bringing together external
-                signals that are not yet on your radar with the
-                internal data that's scattered across your systems.
+                signals that are not yet on your radar with the internal data
+                that's scattered across your systems.
               </p>
 
               <p>
@@ -59,8 +59,9 @@ export function Letter() {
               </p>
 
               <p>
-                You’ll easily surface
-    actionable revenue opportunities, then your team will upsell naturally and with confidence.
+                You’ll immediately surface actionable revenue opportunities,
+                then your team will upsell or cross-sell naturally and with
+                confidence.
               </p>
             </div>
 
