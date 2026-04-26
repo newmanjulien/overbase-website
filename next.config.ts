@@ -10,6 +10,45 @@ const withMDX = createMDX({
 
 const nextConfig: NextConfig = {
   pageExtensions: ["ts", "tsx", "md", "mdx"],
+  async redirects() {
+    return [
+      {
+        source: "/challenges",
+        destination: "/industries/insurance",
+        permanent: true,
+      },
+      {
+        source: "/challenges/unmet-demand",
+        destination: "/industries/insurance",
+        permanent: true,
+      },
+      {
+        source: "/challenges/prioritize-needs",
+        destination: "/industries/insurance",
+        permanent: true,
+      },
+      {
+        source: "/challenges/capability-awareness",
+        destination: "/industries/consulting",
+        permanent: true,
+      },
+      {
+        source: "/challenges/capability-confidence",
+        destination: "/industries/consulting",
+        permanent: true,
+      },
+      {
+        source: "/challenges/manager-visibility",
+        destination: "/industries/law",
+        permanent: true,
+      },
+      {
+        source: "/challenges/executive-visibility",
+        destination: "/industries/law",
+        permanent: true,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {

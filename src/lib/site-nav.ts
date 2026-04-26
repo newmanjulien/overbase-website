@@ -1,8 +1,8 @@
 import {
-  CHALLENGE_NAV_SECTIONS,
-  getChallengeNavItems,
-  type ChallengeNavSectionId,
-} from "@/content/challenges/definitions";
+  INDUSTRY_NAV_SECTIONS,
+  getIndustryNavItems,
+  type IndustryNavSectionId,
+} from "@/content/industries/definitions";
 
 export type SiteNavChildItem = {
   id: string;
@@ -37,28 +37,28 @@ export type SiteTintedPaths = {
   prefix: string[];
 };
 
-export const SITE_NAV_CHILD_SECTIONS = CHALLENGE_NAV_SECTIONS;
+export const SITE_NAV_CHILD_SECTIONS = INDUSTRY_NAV_SECTIONS;
 
-export type SiteNavChildSectionId = ChallengeNavSectionId;
+export type SiteNavChildSectionId = IndustryNavSectionId;
 
-const CHALLENGES_NAV_ITEM = {
-  id: "challenges",
-  href: "/challenges",
-  label: "Challenges",
-  children: getChallengeNavItems(),
+const INDUSTRIES_NAV_ITEM = {
+  id: "industries",
+  href: "/industries",
+  label: "Industries",
+  children: getIndustryNavItems(),
 } satisfies SiteNavItem;
 
 const NAV_ITEM_REGISTRY = {
   about: { id: "about", href: "/about", label: "About us" },
   careers: { id: "careers", href: "/careers", label: "Careers" },
   contact: { id: "contact", href: "/contact", label: "Contact" },
-  challenges: CHALLENGES_NAV_ITEM,
+  industries: INDUSTRIES_NAV_ITEM,
 } satisfies Record<string, SiteNavItem>;
 
 const HEADER_NAV_ITEM_IDS = [
   "about",
   "careers",
-  "contact",
+  "industries",
 ] as const satisfies readonly (keyof typeof NAV_ITEM_REGISTRY)[];
 
 export const SITE_NAV_ITEMS = HEADER_NAV_ITEM_IDS.map(

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import type { ChallengeQuoteSection } from "@/content/challenges/types";
-import { QuoteReveal } from "@/content/challenges/components/quote-reveal.client";
+import type { IndustryQuoteSection } from "@/content/industries/types";
+import { QuoteReveal } from "@/content/industries/components/quote-reveal.client";
 
 interface QuoteSectionProps {
-  section: ChallengeQuoteSection;
+  section: IndustryQuoteSection;
 }
 
 export function QuoteSection({ section }: QuoteSectionProps) {

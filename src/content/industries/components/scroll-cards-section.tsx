@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import type { ChallengeWorkflowSection } from "@/content/challenges/types";
+import type { IndustryWorkflowSection } from "@/content/industries/types";
 
 interface ScrollCardsSectionProps {
-  section: ChallengeWorkflowSection;
+  section: IndustryWorkflowSection;
 }
 
 export function ScrollCardsSection({ section }: ScrollCardsSectionProps) {
@@ -47,7 +47,7 @@ export function ScrollCardsSection({ section }: ScrollCardsSectionProps) {
 function ScreenshotFrame({
   step,
 }: {
-  step: ChallengeWorkflowSection["steps"][number];
+  step: IndustryWorkflowSection["steps"][number];
 }) {
   return (
     <div className="relative isolate h-[22rem] w-full overflow-hidden sm:h-[25rem] md:h-full md:min-h-0 md:w-[165%] md:max-w-none">

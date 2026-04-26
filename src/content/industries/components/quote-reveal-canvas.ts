@@ -1,4 +1,4 @@
-import type { QuoteLayout } from "@/content/challenges/components/quote-reveal-types";
+import type { QuoteLayout } from "@/content/industries/components/quote-reveal-types";
 
 interface DrawQuoteRevealOptions {
   canvas: HTMLCanvasElement;

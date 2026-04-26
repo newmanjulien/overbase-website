@@ -1,14 +1,14 @@
 import type { ReactNode } from "react";
 
 import Hero from "@/components/hero";
-import type { ChallengePageHero } from "@/content/challenges/types";
+import type { IndustryPageHero } from "@/content/industries/types";
 
-interface ChallengeLayoutProps {
-  hero: ChallengePageHero;
+interface IndustryLayoutProps {
+  hero: IndustryPageHero;
   children: ReactNode;
 }
 
-export function ChallengeLayout({ hero, children }: ChallengeLayoutProps) {
+export function IndustryLayout({ hero, children }: IndustryLayoutProps) {
   return (
     <>
       <Hero

@@ -3,10 +3,10 @@
 import { useEffect, useMemo, useRef, type CSSProperties } from "react";
 
 import { quoteFont } from "@/app/fonts";
-import { drawQuoteReveal } from "@/content/challenges/components/quote-reveal-canvas";
-import { mapRevealTimeline } from "@/content/challenges/components/quote-reveal-timeline";
-import { useQuoteLayout } from "@/content/challenges/components/use-quote-layout";
-import { useViewportProgress } from "@/content/challenges/components/use-viewport-progress";
+import { drawQuoteReveal } from "@/content/industries/components/quote-reveal-canvas";
+import { mapRevealTimeline } from "@/content/industries/components/quote-reveal-timeline";
+import { useQuoteLayout } from "@/content/industries/components/use-quote-layout";
+import { useViewportProgress } from "@/content/industries/components/use-viewport-progress";
 
 interface QuoteRevealProps {
   quote: string;

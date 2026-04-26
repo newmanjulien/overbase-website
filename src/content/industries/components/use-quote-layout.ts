@@ -2,7 +2,7 @@
 
 import { useLayoutEffect, useState, type RefObject } from "react";
 
-import type { QuoteLayout, QuoteLineLayout } from "@/content/challenges/components/quote-reveal-types";
+import type { QuoteLayout, QuoteLineLayout } from "@/content/industries/components/quote-reveal-types";
 
 interface UseQuoteLayoutOptions {
   quoteRef: RefObject<HTMLQuoteElement | null>;
