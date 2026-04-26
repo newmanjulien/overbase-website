@@ -3,9 +3,9 @@ import { inter } from "./fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Overbase › Sell to current clients",
+  title: "Overbase › Sell to existing clients",
   description:
-    "Overbase lets you tap the best revenue opportunities in clients you already have",
+    "Overbase lets professional services firms grow with clients you already have",
   icons: {
     icon: "/favicon.ico",
   },
