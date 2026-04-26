@@ -1,4 +1,7 @@
 import type { ReactNode } from "react";
+
+import { InlineTextLink } from "@/components/inline-text-link";
+
 import CrossPattern from "./patterns/cross-pattern";
 import DotPattern from "./patterns/dot-pattern";
 import OverlapPattern from "./patterns/overlap-pattern";
@@ -18,14 +21,12 @@ const PRINCIPLES: Principle[] = [
       <>
         A handful of people are smarter and more capable than everyone else
         combined. Join if you're one of those people (
-        <a
+        <InlineTextLink
           href="https://drive.google.com/file/d/16uhq5ibxdItJj5IIHqH0kSC-FltpcK_K/view"
           target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
         >
           link
-        </a>
+        </InlineTextLink>
         )
       </>
     ),
@@ -38,14 +39,12 @@ const PRINCIPLES: Principle[] = [
       <>
         Almost no engineers even try to be good at their job. Join if you're
         actually trying to be good at engineering (
-        <a
+        <InlineTextLink
           href="https://drive.google.com/file/d/1goXlfE8MOjjiMro_sEC45FNAyUdQJH70/view?usp=sharing"
           target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
         >
           link
-        </a>
+        </InlineTextLink>
         )
       </>
     ),
@@ -58,14 +57,12 @@ const PRINCIPLES: Principle[] = [
       <>
         Learning happens when you're with the best people and they're helping
         you improve. Join if you're going to help us learn (
-        <a
+        <InlineTextLink
           href="https://drive.google.com/file/d/1BCWhO2YK0UMhWqukDNKN_pzF8xyblVhu/view"
           target="_blank"
-          rel="noopener noreferrer"
-          className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
         >
           link
-        </a>
+        </InlineTextLink>
         )
       </>
     ),

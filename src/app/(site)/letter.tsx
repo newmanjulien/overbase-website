@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { InlineTextLink } from "@/components/inline-text-link";
+
 export function Letter() {
   return (
     <section className="pb-[5.5rem] px-6 md:px-12 lg:px-24 bg-white">
@@ -55,7 +57,16 @@ export function Letter() {
               <p>
                 Then we build custom interfaces that bring those opportunities
                 into the workflows your team already uses, so action happens
-                without new behaviors.
+                without new behaviors. Check out what interfaces often look like
+                in <InlineTextLink href="/industries/law">law</InlineTextLink>,{" "}
+                <InlineTextLink href="/industries/consulting">
+                  consulting
+                </InlineTextLink>{" "}
+                and{" "}
+                <InlineTextLink href="/industries/insurance">
+                  insurance
+                </InlineTextLink>
+                .
               </p>
 
               <p>
