@@ -51,7 +51,7 @@ export const INDUSTRY_ENTRY_DEFINITIONS = [
   },
   {
     slug: "law",
-    navLabel: "Help rainmakers leverage their relationships",
+    navLabel: "Support partners to better leverage their relationships",
     navSection: "law",
     load: async () => {
       const { industry, metadata } =

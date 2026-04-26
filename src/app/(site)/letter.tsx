@@ -70,9 +70,9 @@ export function Letter() {
               </p>
 
               <p>
-                You’ll immediately surface actionable revenue opportunities,
-                then your team will upsell or cross-sell naturally and with
-                confidence.
+                The result is that you’ll immediately surface actionable revenue
+                opportunities, then your team will upsell or cross-sell
+                naturally and with confidence.
               </p>
             </div>
 
