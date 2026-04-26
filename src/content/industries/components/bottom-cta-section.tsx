@@ -7,7 +7,8 @@ import type {
 import { cn } from "@/lib/utils";
 
 interface BottomCtaSectionProps {
-  industryLabel?: string;
+  industryActionLabel?: string;
+  industryAudienceLabel?: string;
 }
 
 const CTA_PLATFORMS: ReadonlyArray<{
@@ -25,8 +26,14 @@ const CTA_PLATFORM_URLS: Record<IndustryCtaPlatformName, string> = {
   grok: "https://grok.com/?q=",
 };
 
-export function BottomCtaSection({ industryLabel }: BottomCtaSectionProps) {
-  const links = buildIndustryCtaLinks(industryLabel);
+export function BottomCtaSection({
+  industryActionLabel,
+  industryAudienceLabel,
+}: BottomCtaSectionProps) {
+  const links = buildIndustryCtaLinks({
+    actionLabel: industryActionLabel,
+    audienceLabel: industryAudienceLabel,
+  });
 
   return (
     <section className="mx-auto hidden max-w-6xl px-12 pt-2 pb-16 md:block lg:px-24">
@@ -50,14 +57,22 @@ export function BottomCtaSection({ industryLabel }: BottomCtaSectionProps) {
   );
 }
 
-function buildIndustryCtaLinks(
-  industryLabel?: string,
-): IndustryBottomCtaLinks {
-  if (!industryLabel) {
+function buildIndustryCtaLinks({
+  actionLabel,
+  audienceLabel,
+}: {
+  actionLabel?: string;
+  audienceLabel?: string;
+}): IndustryBottomCtaLinks {
+  const promptSubject = [audienceLabel, actionLabel && lowerFirst(actionLabel)]
+    .filter(Boolean)
+    .join(" ");
+
+  if (!promptSubject) {
     return {};
   }
 
-  const prompt = `Overbase lets me sell more to the clients I already have. How can it help with ${lowerFirst(industryLabel)}?`;
+  const prompt = `Overbase lets me sell more to the clients I already have. How can it help ${promptSubject}?`;
 
   return {
     openai: buildPlatformHref("openai", prompt),

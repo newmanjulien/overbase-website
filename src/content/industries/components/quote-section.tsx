@@ -11,8 +11,8 @@ export function QuoteSection({ section }: QuoteSectionProps) {
   const avatarLabel = section.avatarAlt ?? section.author;
 
   return (
-    <section className="mx-auto max-w-5xl pt-18 pb-32 md:pt-22">
-      <div className="relative overflow-hidden rounded-lg border border-gray-200/80 bg-white px-6 py-27 sm:px-10 md:px-16 md:py-33">
+    <section className="mx-auto max-w-5xl pt-12 pb-14 md:pt-14 md:pb-16">
+      <div className="relative overflow-hidden rounded-lg border border-gray-200/80 bg-white px-6 py-24 sm:px-10 md:px-16 md:py-30">
         <QuoteBackdropPattern />
 
         <div

@@ -1,6 +1,7 @@
 export {
   getIndustryEntry,
   getIndustryHref,
+  getIndustryNavSectionLabel,
   getIndustryPathname,
   getIndustrySlugs,
   getIndustryStaticParams,

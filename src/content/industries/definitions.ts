@@ -96,6 +96,16 @@ export function getIndustryHref(slug: IndustrySlug) {
   return industryCollection.getHref(slug);
 }
 
+export function getIndustryNavSectionLabel(sectionId: IndustryNavSectionId) {
+  const section = INDUSTRY_NAV_SECTIONS.find(({ id }) => id === sectionId);
+
+  if (!section) {
+    throw new Error(`Unknown industry nav section "${sectionId}".`);
+  }
+
+  return section.label;
+}
+
 export function getIndustryNavItems() {
   return industryCollection.getDefinitions().map((entry) => ({
     id: entry.slug,

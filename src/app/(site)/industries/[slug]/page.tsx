@@ -7,6 +7,7 @@ import { QuoteSection } from "@/content/industries/components/quote-section";
 import { ScrollCardsSection } from "@/content/industries/components/scroll-cards-section";
 import {
   getIndustryEntry,
+  getIndustryNavSectionLabel,
   getIndustryStaticParams,
 } from "@/content/industries/registry";
 import { getRequiredEntry, type SlugRouteProps } from "@/content/core";
@@ -31,9 +32,12 @@ export default async function IndustryPage({ params }: SlugRouteProps) {
   return (
     <IndustryLayout hero={industry.content.hero}>
       <ComparisonSection section={industry.content.comparison} />
-      <ScrollCardsSection section={industry.content.workflowSection} />
       <QuoteSection section={industry.content.quoteSection} />
-      <BottomCtaSection industryLabel={industry.navLabel} />
+      <ScrollCardsSection section={industry.content.workflowSection} />
+      <BottomCtaSection
+        industryActionLabel={industry.navLabel}
+        industryAudienceLabel={getIndustryNavSectionLabel(industry.navSection)}
+      />
     </IndustryLayout>
   );
 }

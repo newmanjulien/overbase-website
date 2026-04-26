@@ -33,6 +33,7 @@ export type IndustryWorkflowScreenshotVariant = "board" | "detail";
 export interface IndustryWorkflowStep {
   title: string;
   description: string;
+  pointsLabel?: string;
   points: string[];
   screenshotSrc: string;
   screenshotAlt: string;
@@ -63,6 +64,6 @@ export interface IndustryBottomCtaLinks {
 export interface IndustryPageContent {
   hero: IndustryPageHero;
   comparison: IndustryComparisonSection;
-  workflowSection: IndustryWorkflowSection;
   quoteSection: IndustryQuoteSection;
+  workflowSection: IndustryWorkflowSection;
 }

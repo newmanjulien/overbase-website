@@ -58,15 +58,15 @@ export function Letter() {
                 Then we build custom interfaces that bring those opportunities
                 into the workflows your team already uses, so action happens
                 without new behaviors. Check out what interfaces often look like
-                in <InlineTextLink href="/industries/law">law</InlineTextLink>,{" "}
-                <InlineTextLink href="/industries/consulting">
-                  consulting
-                </InlineTextLink>{" "}
-                and{" "}
+                in{" "}
                 <InlineTextLink href="/industries/insurance">
                   insurance
                 </InlineTextLink>
-                .
+                ,{" "}
+                <InlineTextLink href="/industries/consulting">
+                  consulting
+                </InlineTextLink>{" "}
+                and <InlineTextLink href="/industries/law">law</InlineTextLink>.
               </p>
 
               <p>
