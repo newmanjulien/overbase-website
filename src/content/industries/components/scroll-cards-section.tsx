@@ -1,10 +1,10 @@
 import Image from "next/image";
 
 import { cn } from "@/lib/utils";
-import type { ChallengeWorkflowSection } from "@/content/challenges/types";
+import type { IndustryWorkflowSection } from "@/content/industries/types";
 
 interface ScrollCardsSectionProps {
-  section: ChallengeWorkflowSection;
+  section: IndustryWorkflowSection;
 }
 
 export function ScrollCardsSection({ section }: ScrollCardsSectionProps) {
@@ -27,10 +27,23 @@ export function ScrollCardsSection({ section }: ScrollCardsSectionProps) {
               </h2>
               <p className="mt-4 text-sm text-gray-600">{step.description}</p>
 
-              <div className="mt-46 hidden grid-cols-2 gap-x-10 gap-y-3 border-t border-gray-200/80 pt-6 text-[12px] leading-5 text-gray-500 md:grid">
-                {step.points.map((point) => (
-                  <p key={point}>{point}</p>
-                ))}
+              <div className="mt-46 hidden md:block">
+                {step.pointsLabel ? (
+                  <div>
+                    <span className="block text-xs font-medium text-gray-500">
+                      {step.pointsLabel}
+                    </span>
+                    <div className="mt-3 h-px w-full bg-gray-200/80" />
+                  </div>
+                ) : (
+                  <div className="border-t border-gray-200/80" />
+                )}
+
+                <div className="grid grid-cols-2 gap-x-10 gap-y-3 pt-6 text-[12px] leading-5 text-gray-500">
+                  {step.points.map((point) => (
+                    <p key={point}>{point}</p>
+                  ))}
+                </div>
               </div>
             </div>
 
@@ -47,7 +60,7 @@ export function ScrollCardsSection({ section }: ScrollCardsSectionProps) {
 function ScreenshotFrame({
   step,
 }: {
-  step: ChallengeWorkflowSection["steps"][number];
+  step: IndustryWorkflowSection["steps"][number];
 }) {
   return (
     <div className="relative isolate h-[22rem] w-full overflow-hidden sm:h-[25rem] md:h-full md:min-h-0 md:w-[165%] md:max-w-none">

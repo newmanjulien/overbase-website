@@ -1,17 +1,18 @@
 import Link from "next/link";
 
 import type {
-  ChallengeBottomCtaLinks,
-  ChallengeCtaPlatformName,
-} from "@/content/challenges/types";
+  IndustryBottomCtaLinks,
+  IndustryCtaPlatformName,
+} from "@/content/industries/types";
 import { cn } from "@/lib/utils";
 
 interface BottomCtaSectionProps {
-  problemLabel?: string;
+  industryActionLabel?: string;
+  industryAudienceLabel?: string;
 }
 
 const CTA_PLATFORMS: ReadonlyArray<{
-  platform: ChallengeCtaPlatformName;
+  platform: IndustryCtaPlatformName;
   label: string;
 }> = [
   { platform: "openai", label: "ChatGPT" },
@@ -19,14 +20,20 @@ const CTA_PLATFORMS: ReadonlyArray<{
   { platform: "grok", label: "Grok" },
 ];
 
-const CTA_PLATFORM_URLS: Record<ChallengeCtaPlatformName, string> = {
+const CTA_PLATFORM_URLS: Record<IndustryCtaPlatformName, string> = {
   openai: "https://chatgpt.com/?q=",
   claude: "https://claude.ai/new?q=",
   grok: "https://grok.com/?q=",
 };
 
-export function BottomCtaSection({ problemLabel }: BottomCtaSectionProps) {
-  const links = buildChallengeCtaLinks(problemLabel);
+export function BottomCtaSection({
+  industryActionLabel,
+  industryAudienceLabel,
+}: BottomCtaSectionProps) {
+  const links = buildIndustryCtaLinks({
+    actionLabel: industryActionLabel,
+    audienceLabel: industryAudienceLabel,
+  });
 
   return (
     <section className="mx-auto hidden max-w-6xl px-12 pt-2 pb-16 md:block lg:px-24">
@@ -50,14 +57,22 @@ export function BottomCtaSection({ problemLabel }: BottomCtaSectionProps) {
   );
 }
 
-function buildChallengeCtaLinks(
-  problemLabel?: string,
-): ChallengeBottomCtaLinks {
-  if (!problemLabel) {
+function buildIndustryCtaLinks({
+  actionLabel,
+  audienceLabel,
+}: {
+  actionLabel?: string;
+  audienceLabel?: string;
+}): IndustryBottomCtaLinks {
+  const promptSubject = [audienceLabel, actionLabel && lowerFirst(actionLabel)]
+    .filter(Boolean)
+    .join(" ");
+
+  if (!promptSubject) {
     return {};
   }
 
-  const prompt = `Overbase lets me sell to the clients I already have. How can it help when ${lowerFirst(problemLabel)}?`;
+  const prompt = `Overbase lets me sell more to the clients I already have. How can it help ${promptSubject}?`;
 
   return {
     openai: buildPlatformHref("openai", prompt),
@@ -67,7 +82,7 @@ function buildChallengeCtaLinks(
 }
 
 function buildPlatformHref(
-  platform: ChallengeCtaPlatformName,
+  platform: IndustryCtaPlatformName,
   prompt: string,
 ): string {
   return `${CTA_PLATFORM_URLS[platform]}${encodeURIComponent(prompt)}`;
@@ -78,7 +93,7 @@ function lowerFirst(value: string): string {
 }
 
 interface PlatformTileProps {
-  platform: ChallengeCtaPlatformName;
+  platform: IndustryCtaPlatformName;
   label: string;
   href?: string;
 }
@@ -116,7 +131,7 @@ function PlatformTile({ platform, label, href }: PlatformTileProps) {
   );
 }
 
-function PlatformIcon({ platform }: { platform: ChallengeCtaPlatformName }) {
+function PlatformIcon({ platform }: { platform: IndustryCtaPlatformName }) {
   switch (platform) {
     case "openai":
       return <OpenAiIcon className="size-4" />;

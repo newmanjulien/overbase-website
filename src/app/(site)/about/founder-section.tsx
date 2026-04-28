@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { InlineTextLink } from "@/components/inline-text-link";
+
 export default function FounderSection() {
   return (
     <section className="px-6 md:px-12 lg:px-24 pt-28 pb-30 max-w-6xl mx-auto">
@@ -36,14 +38,12 @@ export default function FounderSection() {
             <p>
               He teaches at Princeton University and has focused his career on
               building sales tech. Check out:{" "}
-              <a
+              <InlineTextLink
                 href="https://juliennewman.com/"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="text-[#4F769E] underline underline-offset-2 decoration-[#4F769E]/65"
               >
                 juliennewman.com
-              </a>
+              </InlineTextLink>
             </p>
           </div>
         </div>

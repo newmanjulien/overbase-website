@@ -1,10 +1,10 @@
 import { Check, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import type { ChallengeComparisonSection } from "@/content/challenges/types";
+import type { IndustryComparisonSection } from "@/content/industries/types";
 
 interface ComparisonSectionProps {
-  section: ChallengeComparisonSection;
+  section: IndustryComparisonSection;
 }
 
 type ComparisonTone = "before" | "after";
@@ -73,7 +73,7 @@ interface ComparisonCardProps {
   title: string;
   tone: ComparisonTone;
   className?: string;
-  items: ChallengeComparisonSection["before"]["items"];
+  items: IndustryComparisonSection["before"]["items"];
 }
 
 function ComparisonCard({

@@ -10,12 +10,14 @@ export function Hero() {
         {/* === Left Section: Headings & CTA === */}
         <div className="w-full text-center md:text-left scale-[0.89]">
           <h1 className="max-w-sm text-5xl text-gray-900 tracking-tight leading-tight font-semibold mx-auto md:mx-0">
-            Sell to existing clients
+            Ecosystem-led growth
           </h1>
 
-          <h2 className="mt-4 max-w-lg text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Overbase lets professional services firms grow with{" "}
-            <span className="bg-[#ffffcc] px-1">clients you already have</span>
+          <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Find hidden revenue by sharing data{" "}
+            <span className="bg-[#ffffcc] px-1">
+              with your ecosystem partners
+            </span>
           </h2>
 
           <div className={newLocal}>

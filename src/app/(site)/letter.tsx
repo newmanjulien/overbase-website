@@ -22,46 +22,45 @@ export function Letter() {
 
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
-                In professional services, the fastest growth comes from
-                expanding existing clients. But turning that potential into
-                revenue is exceptionally hard.
+                Selling with ecosystem partners should create a steady stream of
+                warm, high-fit opportunities.
               </p>
 
               <p>
-                Finding the unseen needs of complex clients is hard. Client data
-                is difficult to access. Your internal data sits across
-                disconnected systems.{" "}
+                You share the same ICP and you're not competing.{" "}
                 <span className="font-medium">
-                  And your clients' real needs are buried several layers deep.
+                  You should be able to see where accounts overlap and turn that
+                  overlap into revenue.
                 </span>
               </p>
 
               <p>
                 <span className="font-medium">
-                  But asking your team to build new habits is even harder.
+                  But in practice, this win-win rarely works.
                 </span>{" "}
-                The revenue opportunity may be known, but it gets missed if it
-                sits outside the way people already work.
+                Coordination is messy, overlap is hard to spot, and partners
+                don't have the right incentives.
               </p>
 
-              <p>That’s where Overbase comes in.</p>
+              <p>It doesn't have to be like this.</p>
 
               <p>
-                We find your clients' unmet needs by bringing together external
-                signals that are not yet on your radar with the internal data
-                that's scattered across your systems.
-              </p>
-
-              <p>
-                Then we build custom interfaces that bring those opportunities
-                into the workflows your team already uses, so action happens
-                without new behaviors.
+                Overbase lets you and your partners securely share sales data
+                from the places it already lives: emails, spreadsheets, PDFs,
+                CRM, ERP. Then we compare both sides, pull in public data and
+                find revenue opportunities neither team would see alone.
               </p>
 
               <p>
-                The result is that you’ll immediately surface actionable revenue
-                opportunities, then your team will upsell or cross-sell
-                naturally and with confidence.
+                The right next move is then delivered in the tools each team
+                already uses, so no one has to change how they work or learn a
+                new tool. And outreach starts only after both sides agree on who
+                does what.
+              </p>
+
+              <p>
+                The result: pipeline surfaces automatically, gets actioned
+                naturally, and moves forward with both sides aligned.
               </p>
             </div>
 

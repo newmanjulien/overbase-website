@@ -1,0 +1,102 @@
+export const metadata = {
+  description:
+    "Show how Overbase helps insurance teams identify account whitespace, understand coverage gaps, and focus producers on the opportunities most likely to expand existing relationships.",
+};
+
+export const industry = {
+  hero: {
+    title: (
+      <>
+        Find <span className="italic">whitespace</span> in existing clients
+      </>
+    ),
+  },
+  comparison: {
+    before: {
+      eyebrow: "Problem",
+      title: "Clients don't know they're under-insured",
+      items: [
+        {
+          title: "Clients don't know what insurance they need",
+          description:
+            "Clients aren't experts in insurance and they often don't all the details needed to spot risk",
+        },
+        {
+          title: "You can't always see a client's needs",
+          description:
+            "Each client's needs are buried deep in their business and hard to find without full access",
+        },
+        {
+          title: "Brokers can't be experts in all policies",
+          description:
+            "Each of your brokers is a top expert in their field but it takes the whole firm to fully support clients",
+        },
+      ],
+    },
+    after: {
+      eyebrow: "Solution",
+      title: "Find the gaps and empower brokers",
+      items: [
+        {
+          title: "Bring together all client data",
+          description:
+            "Financial data, news data, regulation data but also internal data from your BMS, CRM and Office 365",
+        },
+        {
+          title: "Find likely gaps for each client",
+          description:
+            "Flag a missing coverage or if a client has less coverage than their industry's standard",
+        },
+        {
+          title: "Support and empower brokers",
+          description:
+            "Broker easily receive gaps, quickly learn about policies and get support from the right experts",
+        },
+      ],
+    },
+  },
+  quoteSection: {
+    quote:
+      "Overbase helped us generate millions in new revenue by surfacing opportunities we were missing and giving our team a consistent, confident way to present the right policies to clients.",
+    author: "Tonny Grippa",
+    authorTitle: "Chief Strategy Officer, BMS Re",
+    avatarInitials: "KE",
+    avatarSrc: "/tony.jpeg",
+  },
+  workflowSection: {
+    steps: [
+      {
+        title: "Find the gaps in each client's coverage",
+        description:
+          "Overbase finds the spots where a client has no coverage then we prioritize by putting a price tag on each gap. Our models get more precise as they learn from how much revenue we actually land when we close those gaps.",
+        pointsLabel: "Deep analysis",
+        points: [
+          "Data from your BMS",
+          "Financial data about clients",
+          "Data from your CRM",
+          "News data about clients",
+        ],
+        screenshotSrc: "/screens/1.png",
+        screenshotAlt:
+          "Overbase screenshot showing an insurance account workspace with coverage opportunity signals.",
+        screenshotVariant: "board",
+      },
+      {
+        title: "Help brokers confidently discuss policies",
+        description:
+          "Brokers get an email three months before a client’s renewal. There’s an attached report that lists potential additional coverage for the client and the report includes details on each policy we propose",
+        pointsLabel: "Seamlessly gain expertise",
+        points: [
+          "No new interfaces to learn",
+          "Easily learn about policies",
+          "Fits into how brokers work",
+          "Pull in the right expert",
+        ],
+        screenshotSrc: "/screens/2.png",
+        screenshotAlt:
+          "Overbase screenshot showing account details, questions, and supporting documents for an insurance opportunity.",
+        screenshotVariant: "detail",
+      },
+    ],
+  },
+};
