@@ -15,9 +15,7 @@ export function Hero() {
 
           <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
             Find hidden revenue by sharing data{" "}
-            <span className="bg-[#ffffcc] px-1">
-              with your ecosystem partners
-            </span>
+            <span className="bg-[#ffffcc] px-1">with ecosystem partners</span>
           </h2>
 
           <div className={newLocal}>

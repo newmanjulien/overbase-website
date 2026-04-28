@@ -47,15 +47,15 @@ export function Letter() {
               <p>
                 Overbase lets you and your partners securely share sales data
                 from the places it already lives: emails, spreadsheets, PDFs,
-                CRM, ERP. Then we compare both sides, pull in public data and
-                find revenue opportunities neither team would see alone.
+                CRM, ERP. We compare both sides, pull in public data and find
+                revenue opportunities neither team would see alone.
               </p>
 
               <p>
-                The right next move is then delivered in the tools each team
-                already uses, so no one has to change how they work or learn a
-                new tool. And outreach starts only after both sides agree on who
-                does what.
+                The next move is then packaged up and delivered in the tools
+                each team already uses, so no one has to change how they work.
+                And opportunities are structured so that outreach starts only
+                after both sides agree on who does what.
               </p>
 
               <p>

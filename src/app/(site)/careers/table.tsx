@@ -13,14 +13,14 @@ const OPENING: Opening[] = [
     id: "israel",
     name: "Product Engineer 1 - Israel",
     qualification: "8200",
-    comp: "₪250,000 per year + we sponsor you for a visa",
+    comp: "₪250,000 per year + 3% of revenue",
     href: "https://drive.google.com/file/d/1N5K_w-Tk21D2qfeBXZCe-fHQBsYQItqa/view?usp=sharing",
   },
   {
     id: "india",
     name: "Product Engineer 1 - India",
     qualification: "JEE 1–100",
-    comp: "₹65 LPA + we sponsor you for a visa",
+    comp: "₹38 LPA + 3% of revenue",
     href: "https://drive.google.com/file/d/11chLFScixDu3RtAG5jKFw6UphwMp4FMF/view?usp=sharing",
   },
 ];

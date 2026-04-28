@@ -7,7 +7,13 @@ export const metadata: Metadata = {
   description:
     "Find unseen revenue by sharing sales data with your ecosystem partners",
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    apple: [
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    ],
   },
 };
 
