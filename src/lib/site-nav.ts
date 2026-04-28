@@ -58,7 +58,7 @@ const NAV_ITEM_REGISTRY = {
 const HEADER_NAV_ITEM_IDS = [
   "about",
   "careers",
-  "industries",
+  "contact",
 ] as const satisfies readonly (keyof typeof NAV_ITEM_REGISTRY)[];
 
 export const SITE_NAV_ITEMS = HEADER_NAV_ITEM_IDS.map(
