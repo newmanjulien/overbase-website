@@ -27,19 +27,20 @@ export function Letter() {
               </p>
 
               <p>
-                You share the same ICP and you're not competing.{" "}
+                On paper, you sell to the same kinds of companies without
+                competing. You should be able to{" "}
                 <span className="font-medium">
-                  You should be able to see where accounts overlap and turn that
-                  overlap into revenue.
+                  spot shared accounts and coordinate on new deals, expansions,
+                  and complementary services.
                 </span>
               </p>
 
               <p>
                 <span className="font-medium">
-                  But in practice, this win-win rarely works.
+                  But in practice, it rarely works that cleanly.
                 </span>{" "}
-                Coordination is messy, overlap is hard to spot, and partners
-                don't have the right incentives.
+                Coordination is messy, overlap is hard to spot, and partners can
+                end up working against each other.
               </p>
 
               <p>It doesn't have to be like this.</p>
@@ -47,20 +48,19 @@ export function Letter() {
               <p>
                 Overbase lets you and your partners securely share sales data
                 from the places it already lives: emails, spreadsheets, PDFs,
-                CRM, ERP. We compare both sides, pull in public data and find
-                revenue opportunities neither team would see alone.
+                CRM, ERP. We compare both sides and find revenue opportunities
+                neither team would see alone.
               </p>
 
               <p>
                 The next move is then packaged up and delivered in the tools
                 each team already uses, so no one has to change how they work.
-                And opportunities are structured so that outreach starts only
-                after both sides agree on who does what.
               </p>
 
               <p>
-                The result: pipeline surfaces automatically, gets actioned
-                naturally, and moves forward with both sides aligned.
+                Ecosystem-led growth is not just about sharing leads. It is
+                helping each team understand its own accounts better by seeing
+                them through the context of a trusted partner.
               </p>
             </div>
 
