@@ -23,21 +23,22 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 Selling with ecosystem partners should create a steady stream of
-                warm, high-fit opportunities that you close easily.
+                warm, high-fit opportunities that are easier to start and faster
+                to close.
               </p>
 
               <p>
-                Your ecoystem partners sell to the same kinds of companies
-                without competing.{" "}
+                Your partners are already in the accounts you want to reach,
+                often talking to the same buyers from a different angle.{" "}
                 <span className="font-medium">
-                  On paper, you should spot shared accounts, coordinate on deals
-                  and sell complementary services together.
+                  On paper, that should make it obvious where to team up and how
+                  to bring each other in.
                 </span>
               </p>
 
               <p>
                 <span className="font-medium">
-                  But in practice, it rarely works that cleanly.
+                  But in practice, partnerships rarely work cleanly.
                 </span>{" "}
                 Coordination is hard, overlap is hidden, and incentives get in
                 the way.
@@ -47,14 +48,14 @@ export function Letter() {
 
               <p>
                 Overbase lets you and your partners securely share sales data
-                from the places it already lives: emails, spreadsheets, CRM,
-                ERP, etc. We compare both sides to find opportunities. Then we
-                send clear next steps by email with the right people CCed.
+                from where it already lives: email, spreadsheets, CRM, etc. We
+                compare both sides to find overlap, then send opportunities by
+                email with the right people CCed.
               </p>
 
               <p>
-                Pipeline surfaces automatically, gets actioned naturally, and
-                moves forward with both sides aligned.
+                Pipeline surfaces automatically, the right people know what to
+                do next, and deals move forward with both sides aligned.
               </p>
             </div>
 
