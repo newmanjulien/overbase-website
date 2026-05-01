@@ -52,13 +52,14 @@ const NAV_ITEM_REGISTRY = {
   about: { id: "about", href: "/about", label: "About us" },
   careers: { id: "careers", href: "/careers", label: "Careers" },
   contact: { id: "contact", href: "/contact", label: "Contact" },
+  pricing: { id: "pricing", href: "/pricing", label: "Pricing" },
   industries: INDUSTRIES_NAV_ITEM,
 } satisfies Record<string, SiteNavItem>;
 
 const HEADER_NAV_ITEM_IDS = [
   "about",
   "careers",
-  "contact",
+  "pricing",
 ] as const satisfies readonly (keyof typeof NAV_ITEM_REGISTRY)[];
 
 export const SITE_NAV_ITEMS = HEADER_NAV_ITEM_IDS.map(

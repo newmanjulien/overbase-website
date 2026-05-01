@@ -14,27 +14,27 @@ type PricingFAQItem = {
 const FAQ_ITEMS: PricingFAQItem[] = [
   {
     id: "fully-free",
-    question: "Is data gathering fully free?",
+    question: "Is sharing data fully free?",
     answer:
-      "Yes. It's fully free. Overbase will gather detailed, thorough and reliable information from as many sellers as you want and as many systems as you want. There's no limit and it's fully free",
+      "Yes. It's fully free. You and your ecosystems partners can share data from as many systems as you want for free. You only pay if you select to receive revenue opportunities, and that's perfomance-based",
   },
   {
     id: "how-do-you-gather",
-    question: "How do you gather data from my team?",
+    question: "Do my ecosystem partners need to pay anything?",
     answer:
-      "We usually start with Office 365 or GSuite but we integrate with any system. Overbase typically starts by getting delegate access to the Office 365 accounts of your sellers - this is the same access you already give to personal assistants. But we also integrate with your CRM and any other existing system. Gathering data in a seamless, granular and reliable way is the hardest part of Overbase's service. It's only possible because of advanced technology which wasn't possible until now and building this advanced technology is most of what our engineering team works on",
+      "No. Your ecosystem partners can share any data with you for free. They would only pay if they selected to receive revenue opportunities, and that's perfomance-based",
   },
   {
     id: "delivery-cost",
-    question: "How much does data delivery cost?",
+    question: "Are there any upfront costs at all?",
     answer:
-      "$900 per month. We build a custom tool or integration which delivers the data you need and you pay $900 per month",
+      "In most cases, no. Overbase sometimes builds custom tools to help businesses better integrate opportunities into their team's unique workflows. And businesses who request this custom work pay for the custom work",
   },
   {
     id: "how-do-you-customize",
-    question: "How do you customize data delivery for my business?",
+    question: "How does your performance pricing work?",
     answer:
-      "By partnering with you. We define the most important problems together before deciding to partner. And we agree to data delivery tools or integrations which Overbase will build to solve the problems we identified together",
+      "You pay 5% of the net new revenue we generate together, and you only pay after you get paid. The specific mechanics are customized to best fit your business model and to reduce administrative overhead. Typically, the revenue is attributed to Overbase by your team in a self-reported way",
   },
 ];
 

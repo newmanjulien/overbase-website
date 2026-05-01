@@ -27,16 +27,17 @@ export default function Careers() {
               to our work with mixed results
             </p>
             <p>
-              Overbase makes the promise of business software real by turning it
-              invisible and just delivering the value in a seamless and
-              automatic manner
+              Overbase believes that business software is too complex for visual
+              interfaces. And we're turning all of it invisible
             </p>
 
             <p>
               Together we'll start by turning sales software invisible. Then
-              we'll replace all legacy vendors by turning the entire business
-              software stack into an invisible layer
+              we'll turn all business software into an invisible layer that just
+              works
             </p>
+
+            <p>Join us to be part of building the future of software</p>
           </div>
         </div>
       </section>

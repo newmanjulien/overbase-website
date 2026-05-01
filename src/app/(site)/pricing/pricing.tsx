@@ -6,7 +6,7 @@ export function Pricing() {
       <Hero
         title={
           <>
-            Keep things the <span className="italic">same</span>
+            Only pay after you <span className="italic">get paid</span>
           </>
         }
       />
@@ -14,28 +14,24 @@ export function Pricing() {
         <div className="grid md:grid-cols-2 gap-14 md:gap-30">
           <div>
             <h2 className="text-2xl text-gray-900 font-medium leading-tight">
-              Keep your workflows and tools exactly as they are
+              Performance-based pricing that's self-funded
             </h2>
           </div>
           <div className="space-y-6 text-gray-500 text-[15px]">
             <p>
-              Your team is already successful and already uses good software
-              that works
+              On top of quickly driving near-term revenue, turning your
+              ecosystem-led growth into a true system is a way to accelerate
+              your long-term market position
             </p>
 
             <p>
-              Overbase lets you keep the same workflows and keep the same tools
+              You pay a percentage of the net new revenue which we generate
+              together
             </p>
 
             <p>
-              We automatically capture detailed, accurate information in a way
-              that matches your existing workflows. And with no manual data
-              entry required
-            </p>
-
-            <p>
-              Then we simply update your existing tools with reliable
-              information
+              And you only pay us after you get paid, meaning that our
+              collaboration is self-funded
             </p>
           </div>
         </div>

@@ -13,22 +13,23 @@ interface Plan {
 const PLANS: Plan[] = [
   {
     id: "per-rep",
-    name: "Gather",
+    name: "Free",
     price: "$0",
     description:
-      "We capture reliable, consistent and detailed information for free",
+      "Share sales data safely and seamlessly with your ecosystem partners for free",
     subtext:
-      "Data gathering is entirely free. Add as many team members and as many systems as you want",
-    valueLabel: "Free data gathering",
+      "Sharing data is entirely free for you and your partners. Connect as many systems as you want",
+    valueLabel: "Free data sharing",
   },
   {
     id: "percent",
-    name: "Deliver",
-    price: "$1,200",
-    description: "Only pay for the custom integration we build just for you",
+    name: "Performance",
+    price: "5%",
+    description:
+      "Pay to accelerate revenue with a self-funding and performance-based model",
     subtext:
-      "Pay $1,200 per month to receive the data we collect for you in a custom way",
-    valueLabel: "Pay for data delivery",
+      "Pay 5% of the revenue we help you generate and only pay after you get paid",
+    valueLabel: "Performance pricing",
   },
 ];
 

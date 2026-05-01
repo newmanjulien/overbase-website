@@ -13,8 +13,8 @@ export function Hero() {
             Ecosystem-led growth
           </h1>
 
-          <h2 className="mt-4 max-w-lg text-2xl text-gray-600 font-medium mx-auto md:mx-0">
-            Find hidden revenue by sharing sales data{" "}
+          <h2 className="mt-4 max-w-md text-2xl text-gray-600 font-medium mx-auto md:mx-0">
+            Drive revenue by sharing sales data{" "}
             <span className="bg-[#ffffcc] px-1">
               with your ecosystem partners
             </span>

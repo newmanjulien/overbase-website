@@ -23,15 +23,15 @@ export function Letter() {
             <div className="space-y-6 text-gray-900 leading-relaxed">
               <p>
                 Selling with ecosystem partners should create a steady stream of
-                warm, high-fit opportunities.
+                warm, high-fit opportunities that you close easily.
               </p>
 
               <p>
-                On paper, you sell to the same kinds of companies without
-                competing. You should be able to{" "}
+                Your ecoystem partners sell to the same kinds of companies
+                without competing.{" "}
                 <span className="font-medium">
-                  spot shared accounts and coordinate on new deals, expansions,
-                  and complementary services.
+                  On paper, you should spot shared accounts, coordinate on deals
+                  and sell complementary services together.
                 </span>
               </p>
 
@@ -39,27 +39,22 @@ export function Letter() {
                 <span className="font-medium">
                   But in practice, it rarely works that cleanly.
                 </span>{" "}
-                Coordination is messy, overlap is hard to spot, and partners can
-                end up working against each other.
+                Coordination is hard, overlap is hidden, and incentives get in
+                the way.
               </p>
 
               <p>It doesn't have to be like this.</p>
 
               <p>
-                Overbase lets you and your ecosystem partners securely share
-                sales data from the places it already lives: emails,
-                spreadsheets, PDFs, CRM, ERP, etc.
+                Overbase lets you and your partners securely share sales data
+                from the places it already lives: emails, spreadsheets, CRM,
+                ERP, etc. We compare both sides to find opportunities. Then we
+                send clear next steps by email with the right people CCed.
               </p>
 
               <p>
-                We compare both sides, find revenue opportunities, then send
-                clear next steps packaged up in a simple email with the right
-                people CCed.
-              </p>
-
-              <p>
-                The result: pipeline surfaces automatically, gets actioned
-                naturally, and moves forward with both sides aligned.
+                Pipeline surfaces automatically, gets actioned naturally, and
+                moves forward with both sides aligned.
               </p>
             </div>
 
