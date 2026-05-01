@@ -46,21 +46,20 @@ export function Letter() {
               <p>It doesn't have to be like this.</p>
 
               <p>
-                Overbase lets you and your partners securely share sales data
-                from the places it already lives: emails, spreadsheets, PDFs,
-                CRM, ERP. We compare both sides and find revenue opportunities
-                neither team would see alone.
+                Overbase lets you and your ecosystem partners securely share
+                sales data from the places it already lives: emails,
+                spreadsheets, PDFs, CRM, ERP, etc.
               </p>
 
               <p>
-                The next move is then packaged up and delivered in the tools
-                each team already uses, so no one has to change how they work.
+                We compare both sides, find revenue opportunities, then send
+                clear next steps packaged up in a simple email with the right
+                people CCed.
               </p>
 
               <p>
-                Ecosystem-led growth is not just about sharing leads. It is
-                helping each team understand its own accounts better by seeing
-                them through the context of a trusted partner.
+                The result: pipeline surfaces automatically, gets actioned
+                naturally, and moves forward with both sides aligned.
               </p>
             </div>
 
