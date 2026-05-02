@@ -1,12 +1,20 @@
 import type { Metadata } from "next";
 
-import Register from "./register";
+import { RegisterFlowLayout } from "@/components/layouts/register-flow-layout";
+import {
+  getRegisterStartStep,
+  getRegisterStepNavigation,
+} from "@/app/register/register-flow";
 
-export const metadata: Metadata = {
-  title: "Register | Overbase",
-  description: "Register for Overbase with your work email.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const startStep = getRegisterStartStep();
 
-export default function RegisterPage() {
-  return <Register />;
+  return startStep.metadata;
+}
+
+export default async function RegisterPage() {
+  const startStep = getRegisterStartStep();
+  const navigation = getRegisterStepNavigation(startStep.slug);
+
+  return <RegisterFlowLayout {...startStep.content} {...navigation} />;
 }
