@@ -69,10 +69,10 @@ const fieldStackClass =
 const fieldStackWithSubtitleClass = "mt-[clamp(26px,4vh,52px)] grid gap-3.5";
 
 const inputClass =
-  "h-[42px] w-full box-border rounded-lg border border-[#e2e3e6] bg-white px-3.5 text-sm leading-none text-[#202124] outline-none transition-[border-color,box-shadow] duration-150 placeholder:text-[#8f9297] focus:border-[#1296f7] focus:shadow-[0_0_0_2px_#1296f7]";
+  "h-[42px] w-full box-border rounded-lg border border-[#e2e3e6] bg-white px-3.5 text-sm leading-none text-[#202124] outline-none transition-[border-color,box-shadow] duration-150 placeholder:text-[#8f9297] focus:border-[#6bbdf8] focus:shadow-[0_0_0_1px_#6bbdf8]";
 
 const footerClass =
-  "mx-auto mt-0 flex w-full max-w-[480px] items-center justify-between gap-6 border-t border-[#eeeeee] pt-7";
+  "mx-auto mt-0 flex w-full max-w-[480px] items-center justify-between gap-6 border-t border-[#eeeeee] pt-5 pb-8";
 
 const footerLinksClass =
   "flex flex-wrap items-center gap-x-[18px] gap-y-3 [&_a]:text-sm [&_a]:font-medium [&_a]:leading-none [&_a]:text-[#666a70] [&_a]:no-underline [&_a]:transition-colors [&_a:hover]:text-[#202124]";

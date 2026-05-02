@@ -19,7 +19,7 @@ export function RegisterQuotePanel({ quote }: QuotePanelProps) {
       <div className="relative z-[1] flex min-h-[calc(100dvh-16px)] flex-col items-center justify-center px-[clamp(72px,7.8vw,224px)] text-center">
         <div
           aria-hidden="true"
-          className="absolute -z-10 h-[260px] w-[min(820px,88%)] rounded-full bg-gray-200/60 blur-[42px]"
+          className="absolute -z-10 h-[260px] w-[min(1040px,118%)] rounded-full bg-gray-200/60 blur-[42px]"
         />
 
         <blockquote
