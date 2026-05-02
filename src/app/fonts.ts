@@ -1,9 +1,9 @@
-import { Inter, Newsreader } from "next/font/google";
+import { Geist, Newsreader } from "next/font/google";
 
-export const inter = Inter({
+export const sansFont = Geist({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-geist",
 });
 
 export const quoteFont = Newsreader({

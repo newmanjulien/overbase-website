@@ -1,6 +1,7 @@
-import { TableOfContents } from "@/components/layouts/table-of-contents";
-import { LegalBreadcrumb } from "@/components/layouts/legal-breadcrumb";
 import { TOC_SCROLL_SPY_TARGET_PROPS } from "@/lib/toc-scroll-spy";
+
+import { LegalBreadcrumb } from "./legal-breadcrumb";
+import { TableOfContents } from "./table-of-contents";
 
 export interface LegalSection {
   id: string;
